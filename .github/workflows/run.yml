@@ -1,0 +1,36 @@
+name: Update the cache
+
+on:
+  schedule:
+    # build monday mornings.
+    - cron:  '0 2 * * 1'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.7'
+          architecture: 'x64'
+
+      - name: Install dependencies
+        run: |
+          pip install bioblend tqdm
+
+      - name: Build
+        run: |
+          python tmp.py > tool-version-database.tsv
+
+      - name: Commit
+        run: |
+            git config --global user.email "bot@hexylena.github.io"
+            git config --global user.name "Github Actions Bot"
+            git add tool-version-database.tsv
+            git commit -a -m 'Automated commit'
+            git push
+        continue-on-error: true
