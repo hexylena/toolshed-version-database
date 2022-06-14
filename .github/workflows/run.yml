@@ -24,7 +24,7 @@ jobs:
 
       - name: Build
         run: |
-          python tmp.py > tool-version-database.tsv
+          python fetch.py > tool-version-database.tsv
           python convert.py tool-version-database.tsv
 
       - name: Commit
