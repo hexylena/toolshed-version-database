@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import sys
 # this is how to get tool info from the toolshed
 import bioblend
 from bioblend import toolshed
@@ -32,7 +33,7 @@ for repo in tqdm.tqdm(ts.repositories.get_repositories()):
         try:
             e = ts.repositories.get_repository_revision_install_info(repo['name'], repo['owner'], rev)
         except bioblend.ConnectionError:
-            print(f"Could not fetch the results of {repo['name']} {repo['owner']} {rev}")
+            sys.stderr.write(f"Could not fetch the results of {repo['name']} {repo['owner']} {rev}\n")
 
         if 'valid_tools' not in e[1]:
             res = [
