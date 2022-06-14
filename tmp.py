@@ -21,8 +21,46 @@ if len(processed) > 0:
     processed = list(set(processed))
     processed.remove(last_processed)
 
+from multiprocessing import Pool
+
+def fetch_versions(x):
+    ret = []
+    for rev in ts.repositories.get_ordered_installable_revisions(repo['name'], repo['owner']):
+        try:
+            e = ts.repositories.get_repository_revision_install_info(repo['name'], repo['owner'], rev)
+        except bioblend.ConnectionError:
+            sys.stderr.write(f"Could not fetch the results of {repo['name']} {repo['owner']} {rev}\n")
+
+        if 'valid_tools' not in e[1]:
+            res = [
+                repo['name'],
+                repo['owner'],
+                rev,
+                'invalid',
+                'invalid',
+                'invalid',
+            ]
+            print('\t'.join(res))
+
+            continue
+
+        for valid_tool in e[1]['valid_tools']:
+            res = [
+                repo['name'],
+                repo['owner'],
+                rev,
+                valid_tool['id'],
+                valid_tool['guid'],
+                valid_tool['version'],
+            ]
+            print('\t'.join(res))
+
+
 
 ts = toolshed.ToolShedInstance(url=toolshed_url)
+
+with Pool(4) as p:
+    print(p.map(fetch_versions, ts.repositories.get_repositories()))
 
 for repo in tqdm.tqdm(ts.repositories.get_repositories()):
     key = (repo['name'], repo['owner'])
