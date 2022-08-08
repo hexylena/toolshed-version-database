@@ -7,9 +7,6 @@
 2d_feature_extraction	imgteam	5791a7f65275	ip_2d_feature_extraction	toolshed.g2.bx.psu.edu/repos/imgteam/2d_feature_extraction/ip_2d_feature_extraction/0.1.1	0.1.1
 2d_filter_segmentation_by_features	imgteam	e576b73a2e2f	ip_2d_filter_segmentation_by_features	toolshed.g2.bx.psu.edu/repos/imgteam/2d_filter_segmentation_by_features/ip_2d_filter_segmentation_by_features/0.0.1	0.0.1
 2d_histogram_equalization	imgteam	70316d792fc9	ip_histogram_equalization	toolshed.g2.bx.psu.edu/repos/imgteam/2d_histogram_equalization/ip_histogram_equalization/0.0.1	0.0.1
-2d_local_threshold	imgteam	a20c14eb5f98	ip_localthreshold	toolshed.g2.bx.psu.edu/repos/imgteam/2d_local_threshold/ip_localthreshold/0.0.1	0.0.1
-2d_local_threshold	imgteam	497dcd834bb3	ip_localthreshold	toolshed.g2.bx.psu.edu/repos/imgteam/2d_local_threshold/ip_localthreshold/0.0.2	0.0.2
-2d_local_threshold	imgteam	be2d3ce89c0f	ip_localthreshold	toolshed.g2.bx.psu.edu/repos/imgteam/2d_local_threshold/ip_localthreshold/0.0.3	0.0.3
 2dnmrannotation	marie-tremblay-metatoul	dff7bde22102	2DNmrAnnotation	toolshed.g2.bx.psu.edu/repos/marie-tremblay-metatoul/2dnmrannotation/2DNmrAnnotation/1.0.0	1.0.0
 2dnmrannotation	marie-tremblay-metatoul	546c7ccd2ed4	2DNmrAnnotation	toolshed.g2.bx.psu.edu/repos/marie-tremblay-metatoul/2dnmrannotation/2DNmrAnnotation/2.0.0	2.0.0
 2d_simple_filter	imgteam	f264ae82f735	ip_filter_standard	toolshed.g2.bx.psu.edu/repos/imgteam/2d_simple_filter/ip_filter_standard/0.0.2	0.0.2
@@ -580,7 +577,7 @@ autospill	azomics	7f5bf24d5aeb	autospill	toolshed.g2.bx.psu.edu/repos/azomics/au
 autospill	azomics	3293c160f73c	autospill	toolshed.g2.bx.psu.edu/repos/azomics/autospill/autospill/0.2.0+galaxy1	0.2.0+galaxy1
 awkscript	brinkmanlab	7966a43dbc9e	awkscript	toolshed.g2.bx.psu.edu/repos/brinkmanlab/awkscript/awkscript/1.0	1.0
 awkscript	brinkmanlab	df0c8f33c8ea	awkscript	toolshed.g2.bx.psu.edu/repos/brinkmanlab/awkscript/awkscript/1.1	1.1
-b2btools_single_sequence	adrian.diaz	cacb90cde53e	b2btools_single_sequence	toolshed.g2.bx.psu.edu/repos/adrian.diaz/b2btools_single_sequence/b2btools_single_sequence/3.0.4+galaxy0	3.0.4+galaxy0
+b2btools_single_sequence	adrian.diaz	a9db23ac113f	b2btools_single_sequence	toolshed.g2.bx.psu.edu/repos/adrian.diaz/b2btools_single_sequence/b2btools_single_sequence/3.0.4+galaxy0	3.0.4+galaxy0
 ball	luis	605370bc1def	ExtractProteinSequence	toolshed.g2.bx.psu.edu/repos/luis/ball/ExtractProteinSequence/1.1.0	1.1.0
 ball	luis	605370bc1def	GridBuilder	toolshed.g2.bx.psu.edu/repos/luis/ball/GridBuilder/1.1.0	1.1.0
 ball	luis	605370bc1def	ExtractProteinChains	toolshed.g2.bx.psu.edu/repos/luis/ball/ExtractProteinChains/1.1.0	1.1.0
@@ -3874,6 +3871,7 @@ ceas	pjbriggs	cd6a48ffd093	ceas	toolshed.g2.bx.psu.edu/repos/pjbriggs/ceas/ceas/
 ceas	pjbriggs	cd6a48ffd093	data_manager_fetch_ceas_annotations	toolshed.g2.bx.psu.edu/repos/pjbriggs/ceas/data_manager_fetch_ceas_annotations/0.0.1	0.0.1
 cellprofiler	bgruening	25cd86dc038f	invalid	invalid	invalid
 cellprofiler4	bgruening	c7179a5c1699	invalid	invalid	invalid
+cellranger_atac_galaxy	gaelcge	a62bafb1aaf8	cellranger_atac	toolshed.g2.bx.psu.edu/repos/gaelcge/cellranger_atac_galaxy/cellranger_atac/0.1.0	0.1.0
 centrifuge	thanhlv	a33c3356b8cf	centrifuge	toolshed.g2.bx.psu.edu/repos/thanhlv/centrifuge/centrifuge/1.0.4_beta	1.0.4_beta
 centrifuge	jvolkening	be7bba8229c6	centrifuge	toolshed.g2.bx.psu.edu/repos/jvolkening/centrifuge/centrifuge/1.0.4_beta	1.0.4_beta
 cesm	climate	7a7ba86e95a4	cesm	toolshed.g2.bx.psu.edu/repos/climate/cesm/cesm/2.1.3+galaxy0	2.1.3+galaxy0
@@ -4853,18 +4851,23 @@ concat_text_files	mandorodriguez	8bf77d768a2b	concat_text_files	toolshed.g2.bx.p
 concoct	iuc	031f84cb2fd3	concoct	toolshed.g2.bx.psu.edu/repos/iuc/concoct/concoct/1.0.0+galaxy0	1.0.0+galaxy0
 concoct	iuc	7a145c72d375	concoct	toolshed.g2.bx.psu.edu/repos/iuc/concoct/concoct/1.0.0+galaxy1	1.0.0+galaxy1
 concoct	iuc	28e8d2bd6aba	concoct	toolshed.g2.bx.psu.edu/repos/iuc/concoct/concoct/1.1.0+galaxy0	1.1.0+galaxy0
+concoct	iuc	147577841bb8	concoct	toolshed.g2.bx.psu.edu/repos/iuc/concoct/concoct/1.1.0+galaxy1	1.1.0+galaxy1
 concoct_coverage_table	iuc	7e01297a3b4a	concoct_coverage_table	toolshed.g2.bx.psu.edu/repos/iuc/concoct_coverage_table/concoct_coverage_table/1.0.0+galaxy0	1.0.0+galaxy0
 concoct_coverage_table	iuc	052e6bc06ea3	concoct_coverage_table	toolshed.g2.bx.psu.edu/repos/iuc/concoct_coverage_table/concoct_coverage_table/1.0.0+galaxy1	1.0.0+galaxy1
 concoct_coverage_table	iuc	6302656ed45d	concoct_coverage_table	toolshed.g2.bx.psu.edu/repos/iuc/concoct_coverage_table/concoct_coverage_table/1.1.0+galaxy0	1.1.0+galaxy0
+concoct_coverage_table	iuc	5ded3318cf8a	concoct_coverage_table	toolshed.g2.bx.psu.edu/repos/iuc/concoct_coverage_table/concoct_coverage_table/1.1.0+galaxy1	1.1.0+galaxy1
 concoct_cut_up_fasta	iuc	b9d37d30731e	concoct_cut_up_fasta	toolshed.g2.bx.psu.edu/repos/iuc/concoct_cut_up_fasta/concoct_cut_up_fasta/1.0.0+galaxy0	1.0.0+galaxy0
 concoct_cut_up_fasta	iuc	137ede2b48c0	concoct_cut_up_fasta	toolshed.g2.bx.psu.edu/repos/iuc/concoct_cut_up_fasta/concoct_cut_up_fasta/1.0.0+galaxy1	1.0.0+galaxy1
 concoct_cut_up_fasta	iuc	0132036a530a	concoct_cut_up_fasta	toolshed.g2.bx.psu.edu/repos/iuc/concoct_cut_up_fasta/concoct_cut_up_fasta/1.1.0+galaxy0	1.1.0+galaxy0
+concoct_cut_up_fasta	iuc	989f1256d7a9	concoct_cut_up_fasta	toolshed.g2.bx.psu.edu/repos/iuc/concoct_cut_up_fasta/concoct_cut_up_fasta/1.1.0+galaxy1	1.1.0+galaxy1
 concoct_extract_fasta_bins	iuc	a04028a8181d	concoct_extract_fasta_bins	toolshed.g2.bx.psu.edu/repos/iuc/concoct_extract_fasta_bins/concoct_extract_fasta_bins/1.0.0+galaxy0	1.0.0+galaxy0
 concoct_extract_fasta_bins	iuc	92a2d9109528	concoct_extract_fasta_bins	toolshed.g2.bx.psu.edu/repos/iuc/concoct_extract_fasta_bins/concoct_extract_fasta_bins/1.0.0+galaxy1	1.0.0+galaxy1
 concoct_extract_fasta_bins	iuc	bcd8d64f82b7	concoct_extract_fasta_bins	toolshed.g2.bx.psu.edu/repos/iuc/concoct_extract_fasta_bins/concoct_extract_fasta_bins/1.1.0+galaxy0	1.1.0+galaxy0
+concoct_extract_fasta_bins	iuc	505111e8aca5	concoct_extract_fasta_bins	toolshed.g2.bx.psu.edu/repos/iuc/concoct_extract_fasta_bins/concoct_extract_fasta_bins/1.1.0+galaxy1	1.1.0+galaxy1
 concoct_merge_cut_up_clustering	iuc	b546422c9128	concoct_merge_cut_up_clustering	toolshed.g2.bx.psu.edu/repos/iuc/concoct_merge_cut_up_clustering/concoct_merge_cut_up_clustering/1.0.0+galaxy0	1.0.0+galaxy0
 concoct_merge_cut_up_clustering	iuc	ce1a3ce0e807	concoct_merge_cut_up_clustering	toolshed.g2.bx.psu.edu/repos/iuc/concoct_merge_cut_up_clustering/concoct_merge_cut_up_clustering/1.0.0+galaxy1	1.0.0+galaxy1
 concoct_merge_cut_up_clustering	iuc	21ccf9548e2c	concoct_merge_cut_up_clustering	toolshed.g2.bx.psu.edu/repos/iuc/concoct_merge_cut_up_clustering/concoct_merge_cut_up_clustering/1.1.0+galaxy0	1.1.0+galaxy0
+concoct_merge_cut_up_clustering	iuc	794d4e27925b	concoct_merge_cut_up_clustering	toolshed.g2.bx.psu.edu/repos/iuc/concoct_merge_cut_up_clustering/concoct_merge_cut_up_clustering/1.1.0+galaxy1	1.1.0+galaxy1
 concordance_report	yusuf	2d601bd04c93	concordance_report_1	toolshed.g2.bx.psu.edu/repos/yusuf/concordance_report/concordance_report_1/1.0.0	1.0.0
 condense_characters	devteam	381ed54c5e39	Condense characters1	toolshed.g2.bx.psu.edu/repos/devteam/condense_characters/Condense characters1/1.0.0	1.0.0
 confab	bgruening	731ad135ddb4	ctb_confab	toolshed.g2.bx.psu.edu/repos/bgruening/confab/ctb_confab/0.1	0.1
@@ -5698,7 +5701,7 @@ data_manager_mothur_toolsuite	iuc	9d09724f2bf1	data_manager_fetch_mothur_referen
 data_manager_mothur_toolsuite	iuc	0db22932bc39	data_manager_fetch_mothur_reference_data	toolshed.g2.bx.psu.edu/repos/iuc/data_manager_mothur_toolsuite/data_manager_fetch_mothur_reference_data/0.2.1	0.2.1
 data_manager_ncbi_taxonomy_sqlite	iuc	7a76cd412252	data_manager_ncbi_taxonomy_sqlite	toolshed.g2.bx.psu.edu/repos/iuc/data_manager_ncbi_taxonomy_sqlite/data_manager_ncbi_taxonomy_sqlite/1.0.5+galaxy1	1.0.5+galaxy1
 data_manager_ncbi_taxonomy_sqlite	iuc	37560eebb5ce	data_manager_ncbi_taxonomy_sqlite	toolshed.g2.bx.psu.edu/repos/iuc/data_manager_ncbi_taxonomy_sqlite/data_manager_ncbi_taxonomy_sqlite/1.0.5+galaxy2	1.0.5+galaxy2
-data_manager_nextclade	iuc	4de9e77bcc9e	data_manager_nextclade	toolshed.g2.bx.psu.edu/repos/iuc/data_manager_nextclade/data_manager_nextclade/0.0.1+galaxy0	0.0.1+galaxy0
+data_manager_nextclade	iuc	c8b67693199e	data_manager_nextclade	toolshed.g2.bx.psu.edu/repos/iuc/data_manager_nextclade/data_manager_nextclade/0.0.1+galaxy0	0.0.1+galaxy0
 data_manager_packaged_annotation_data	iuc	2a546f92b1ba	data_manager_packaged_annotation_data	toolshed.g2.bx.psu.edu/repos/iuc/data_manager_packaged_annotation_data/data_manager_packaged_annotation_data/0.1	0.1
 data_manager_pangolearn	iuc	112bb7a9da3c	data_manager_pangolearn	toolshed.g2.bx.psu.edu/repos/iuc/data_manager_pangolearn/data_manager_pangolearn/0.0.1	0.0.1
 data_manager_pangolearn	iuc	ed7a967cb11b	data_manager_pangolearn	toolshed.g2.bx.psu.edu/repos/iuc/data_manager_pangolearn/data_manager_pangolearn/0.0.2	0.0.2
@@ -10034,8 +10037,9 @@ hamronization	thanhlv	5fca34360c12	hamronize_summarize	toolshed.g2.bx.psu.edu/re
 hamronization	thanhlv	5fca34360c12	hamronize_tool	toolshed.g2.bx.psu.edu/repos/thanhlv/hamronization/hamronize_tool/1.0.3+galaxy0	1.0.3+galaxy0
 hamronize_summarize	iuc	ef76d74a7171	hamronize_summarize	toolshed.g2.bx.psu.edu/repos/iuc/hamronize_summarize/hamronize_summarize/1.0.3+galaxy0	1.0.3+galaxy0
 hamronize_summarize	iuc	6e2731b13533	hamronize_summarize	toolshed.g2.bx.psu.edu/repos/iuc/hamronize_summarize/hamronize_summarize/1.0.3+galaxy1	1.0.3+galaxy1
+hamronize_summarize	iuc	243c87f34f39	hamronize_summarize	toolshed.g2.bx.psu.edu/repos/iuc/hamronize_summarize/hamronize_summarize/1.0.3+galaxy2	1.0.3+galaxy2
 hamronize_tool	iuc	d2590ecc4189	hamronize_tool	toolshed.g2.bx.psu.edu/repos/iuc/hamronize_tool/hamronize_tool/1.0.3+galaxy0	1.0.3+galaxy0
-hamronize_tool	iuc	ec82fac4eb4b	hamronize_tool	toolshed.g2.bx.psu.edu/repos/iuc/hamronize_tool/hamronize_tool/1.0.3+galaxy1	1.0.3+galaxy1
+hamronize_tool	iuc	41c7e03b3eab	hamronize_tool	toolshed.g2.bx.psu.edu/repos/iuc/hamronize_tool/hamronize_tool/1.0.3+galaxy1	1.0.3+galaxy1
 hapcut2	galaxy-australia	271eb7f4b8bc	hapcut2	toolshed.g2.bx.psu.edu/repos/galaxy-australia/hapcut2/hapcut2/1.3.3+galaxy0+ga1	1.3.3+galaxy0+ga1
 haplophyle	dereeper	d6281dc90e20	haplophyle	toolshed.g2.bx.psu.edu/repos/dereeper/haplophyle/haplophyle/1.0.0	1.0.0
 haplotype_analysis_workflow	dereeper	bd20187f16c5	invalid	invalid	invalid
@@ -12075,8 +12079,7 @@ landmark_registration	imgteam	b0503eec7bd6	ip_landmark_registration	toolshed.g2.
 landmark_registration	imgteam	4e089a0983b1	ip_landmark_registration	toolshed.g2.bx.psu.edu/repos/imgteam/landmark_registration/ip_landmark_registration/0.0.3	0.0.3
 landmark_registration	imgteam	9ccd642e7ae2	ip_landmark_registration	toolshed.g2.bx.psu.edu/repos/imgteam/landmark_registration/ip_landmark_registration/0.0.4	0.0.4
 landmark_registration	imgteam	aee73493bf53	ip_landmark_registration	toolshed.g2.bx.psu.edu/repos/imgteam/landmark_registration/ip_landmark_registration/0.0.5	0.0.5
-landmark_registration_ls	imgteam	2f36165c49fb	ip_landmark_registration_ls	toolshed.g2.bx.psu.edu/repos/imgteam/landmark_registration_ls/ip_landmark_registration_ls/0.0.1	0.0.1
-landmark_registration_ls	imgteam	69db8c7d4244	ip_landmark_registration_ls	toolshed.g2.bx.psu.edu/repos/imgteam/landmark_registration_ls/ip_landmark_registration_ls/0.0.2	0.0.2
+landmark_registration	imgteam	12997d4c5b00	ip_landmark_registration	toolshed.g2.bx.psu.edu/repos/imgteam/landmark_registration/ip_landmark_registration/0.1.0	0.1.0
 last	iuc	9a7e91fc6562	last_al	toolshed.g2.bx.psu.edu/repos/iuc/last/last_al/1021+galaxy0	1021+galaxy0
 last	iuc	9a7e91fc6562	last_db	toolshed.g2.bx.psu.edu/repos/iuc/last/last_db/1021+galaxy0	1021+galaxy0
 last	iuc	9a7e91fc6562	last_split	toolshed.g2.bx.psu.edu/repos/iuc/last/last_split/1021+galaxy0	1021+galaxy0
@@ -12443,7 +12446,7 @@ maker	iuc	96ac930d84fa	maker	toolshed.g2.bx.psu.edu/repos/iuc/maker/maker/2.31.1
 maker	iuc	5e96efe6e6c6	maker	toolshed.g2.bx.psu.edu/repos/iuc/maker/maker/2.31.10+galaxy1	2.31.10+galaxy1
 maker	iuc	d46d803ca6cc	maker	toolshed.g2.bx.psu.edu/repos/iuc/maker/maker/2.31.11	2.31.11
 maker	iuc	3c1a01127868	maker	toolshed.g2.bx.psu.edu/repos/iuc/maker/maker/2.31.11+galaxy1	2.31.11+galaxy1
-maker	iuc	a444254e9a57	maker	toolshed.g2.bx.psu.edu/repos/iuc/maker/maker/2.31.11+galaxy2	2.31.11+galaxy2
+maker	iuc	370c210d9541	maker	toolshed.g2.bx.psu.edu/repos/iuc/maker/maker/2.31.11+galaxy2	2.31.11+galaxy2
 maker_map_ids	iuc	1b3626164087	maker_map_ids	toolshed.g2.bx.psu.edu/repos/iuc/maker_map_ids/maker_map_ids/2.31.9	2.31.9
 maker_map_ids	iuc	326f9c294b09	maker_map_ids	toolshed.g2.bx.psu.edu/repos/iuc/maker_map_ids/maker_map_ids/2.31.10	2.31.10
 maker_map_ids	iuc	e906fa778440	maker_map_ids	toolshed.g2.bx.psu.edu/repos/iuc/maker_map_ids/maker_map_ids/2.31.11	2.31.11
@@ -12972,8 +12975,10 @@ met4j	metexplore	6bd9aad9626d	met4j_ScopeNetwork	toolshed.g2.bx.psu.edu/repos/me
 meta_autocluster	azomics	c744db871f90	metacyto_autocluster	toolshed.g2.bx.psu.edu/repos/azomics/meta_autocluster/metacyto_autocluster/1.0+galaxy0	1.0+galaxy0
 metabat2	iuc	76bc4efa1aeb	metabat2	toolshed.g2.bx.psu.edu/repos/iuc/metabat2/metabat2/2.15+galaxy0	2.15+galaxy0
 metabat2	iuc	01f02c5ddff8	metabat2	toolshed.g2.bx.psu.edu/repos/iuc/metabat2/metabat2/2.15+galaxy1	2.15+galaxy1
+metabat2	iuc	708abf08a626	metabat2	toolshed.g2.bx.psu.edu/repos/iuc/metabat2/metabat2/2.15+galaxy2	2.15+galaxy2
 metabat2_jgi_summarize_bam_contig_depths	iuc	d27a4ed006ee	metabat2_jgi_summarize_bam_contig_depths	toolshed.g2.bx.psu.edu/repos/iuc/metabat2_jgi_summarize_bam_contig_depths/metabat2_jgi_summarize_bam_contig_depths/2.15+galaxy0	2.15+galaxy0
 metabat2_jgi_summarize_bam_contig_depths	iuc	1592150e38d2	metabat2_jgi_summarize_bam_contig_depths	toolshed.g2.bx.psu.edu/repos/iuc/metabat2_jgi_summarize_bam_contig_depths/metabat2_jgi_summarize_bam_contig_depths/2.15+galaxy1	2.15+galaxy1
+metabat2_jgi_summarize_bam_contig_depths	iuc	a4441f35f17b	metabat2_jgi_summarize_bam_contig_depths	toolshed.g2.bx.psu.edu/repos/iuc/metabat2_jgi_summarize_bam_contig_depths/metabat2_jgi_summarize_bam_contig_depths/2.15+galaxy2	2.15+galaxy2
 metacyto_checkpanel	azomics	67d79ba0f7aa	metacyto_checkpanel	toolshed.g2.bx.psu.edu/repos/azomics/metacyto_checkpanel/metacyto_checkpanel/1.0+galaxy0	1.0+galaxy0
 metacyto_histogram	azomics	f5526d97056c	metacyto_histogram	toolshed.g2.bx.psu.edu/repos/azomics/metacyto_histogram/metacyto_histogram/1.0+galaxy0	1.0+galaxy0
 metacyto_preprocess	azomics	bf6470882a15	metacyto_preprocess	toolshed.g2.bx.psu.edu/repos/azomics/metacyto_preprocess/metacyto_preprocess/1.0+galaxy0	1.0+galaxy0
@@ -13754,6 +13759,7 @@ ms2snoop	workflow4metabolomics	df2672c37732	ms2snoop	toolshed.g2.bx.psu.edu/repo
 ms2snoop	workflow4metabolomics	a35fde23940e	ms2snoop	toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/ms2snoop/ms2snoop/1.0.1+galaxy1	1.0.1+galaxy1
 ms2snoop	workflow4metabolomics	c68c94865667	ms2snoop	toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/ms2snoop/ms2snoop/1.1.0+galaxy0	1.1.0+galaxy0
 ms2snoop	workflow4metabolomics	856001213966	ms2snoop	toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/ms2snoop/ms2snoop/2.0.0+galaxy0	2.0.0+galaxy0
+ms2snoop	workflow4metabolomics	78d5a12406c2	ms2snoop	toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/ms2snoop/ms2snoop/2.1.0+galaxy0	2.1.0+galaxy0
 msaboot	iuc	48b414c7d38e	msaboot	toolshed.g2.bx.psu.edu/repos/iuc/msaboot/msaboot/0.1.0	0.1.0
 msaboot	iuc	5892ac21ab6c	msaboot	toolshed.g2.bx.psu.edu/repos/iuc/msaboot/msaboot/0.1.1	0.1.1
 msaboot	iuc	99f8b4e631e5	msaboot	toolshed.g2.bx.psu.edu/repos/iuc/msaboot/msaboot/0.1.2	0.1.2
@@ -14812,6 +14818,7 @@ nextalign	iuc	6f6a2cb188cf	nextalign	toolshed.g2.bx.psu.edu/repos/iuc/nextalign/
 nextalign	iuc	9ad6e80ea21f	nextalign	toolshed.g2.bx.psu.edu/repos/iuc/nextalign/nextalign/1.10.2+galaxy0	1.10.2+galaxy0
 nextalign	iuc	c318aef17dc0	nextalign	toolshed.g2.bx.psu.edu/repos/iuc/nextalign/nextalign/1.10.3+galaxy0	1.10.3+galaxy0
 nextalign	iuc	e5ed60c823a7	nextalign	toolshed.g2.bx.psu.edu/repos/iuc/nextalign/nextalign/1.11.0+galaxy0	1.11.0+galaxy0
+nextalign	iuc	4d93e708218c	nextalign	toolshed.g2.bx.psu.edu/repos/iuc/nextalign/nextalign/2.4.0+galaxy0	2.4.0+galaxy0
 nextclade	iuc	615f484bdb4a	nextclade	toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/0.14.2+galaxy0	0.14.2+galaxy0
 nextclade	iuc	0f20ed06ed6c	nextclade	toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/0.14.2+galaxy1	0.14.2+galaxy1
 nextclade	iuc	6cd62b6d2b5c	nextclade	toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/0.14.3+galaxy1	0.14.3+galaxy1
@@ -14828,6 +14835,7 @@ nextclade	iuc	64be7ff9b97b	nextclade	toolshed.g2.bx.psu.edu/repos/iuc/nextclade/
 nextclade	iuc	b60593baff7d	nextclade	toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/1.10.2+galaxy0	1.10.2+galaxy0
 nextclade	iuc	daddf188c13f	nextclade	toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/1.10.3+galaxy0	1.10.3+galaxy0
 nextclade	iuc	9e10ba792be2	nextclade	toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/1.11.0+galaxy0	1.11.0+galaxy0
+nextclade	iuc	07ab9bd68a02	nextclade	toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/2.4.0+galaxy0	2.4.0+galaxy0
 nextgenmap	dnbenso	1a24072a6eb7	nextgenmap	toolshed.g2.bx.psu.edu/repos/dnbenso/nextgenmap/nextgenmap/0.5.5+galaxy0	0.5.5+galaxy0
 nextgen_variant_identification	ryanmorin	a4975ec34575	snp_filters	toolshed.g2.bx.psu.edu/repos/ryanmorin/nextgen_variant_identification/snp_filters/1.0.0	1.0.0
 nextgen_variant_identification	ryanmorin	a4975ec34575	snvmix	toolshed.g2.bx.psu.edu/repos/ryanmorin/nextgen_variant_identification/snvmix/0.12.1-rc1	0.12.1-rc1
@@ -17004,8 +17012,8 @@ package_samtools_0_1_19	iuc	c9bd782f5342	invalid	invalid	invalid
 package_samtools_0_1_19_custom	biomonika	a6c82a5d0b51	invalid	invalid	invalid
 package_samtools_1_0	iuc	2d1ce13600b5	invalid	invalid	invalid
 package_samtools_1_1	iuc	f0c7bc0159e9	invalid	invalid	invalid
-package_samtools_1_2	iuc	f6ae3ba3f3c1	invalid	invalid	invalid
 package_samtools_1_2	anmoljh	0918c21d2f6d	invalid	invalid	invalid
+package_samtools_1_2	iuc	f6ae3ba3f3c1	invalid	invalid	invalid
 package_scikit_learn_0_13	iuc	4229f8f239b3	invalid	invalid	invalid
 package_scikit_learn_0_13_with_atlas	iuc	6a4f25a9fbf4	invalid	invalid	invalid
 package_scikit_learn_0_14	iuc	4a79a4465418	invalid	invalid	invalid
@@ -17199,7 +17207,6 @@ pangolin	iuc	abf6dbe8c9d7	pangolin	toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pan
 pangolin	iuc	14ae456b8cc5	pangolin	toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/4.0.5+galaxy1	4.0.5+galaxy1
 pangolin	iuc	81804a978fc0	pangolin	toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/4.0.5+galaxy2	4.0.5+galaxy2
 pangolin	iuc	a2099fb98cdb	pangolin	toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/4.1.1+galaxy0	4.1.1+galaxy0
-pangolin	iuc	77402759b866	pangolin	toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/4.1.2+galaxy0	4.1.2+galaxy0
 pangolin	iss	a12ffc700e29	pangolin	toolshed.g2.bx.psu.edu/repos/iss/pangolin/pangolin/2	2
 panisa	bvalot	349c2fbd38a0	panisa2_wrapper	toolshed.g2.bx.psu.edu/repos/bvalot/panisa/panisa2_wrapper/0.1.6	0.1.6
 panisa	bvalot	349c2fbd38a0	isfinder_search_wrapper	toolshed.g2.bx.psu.edu/repos/bvalot/panisa/isfinder_search_wrapper/0.1.6	0.1.6
@@ -18654,6 +18661,7 @@ proteomiqon_psmbasedquantification	galaxyp	65ce27f0fa01	proteomiqon_psmbasedquan
 proteomiqon_psmbasedquantification	galaxyp	4abcc674fc0b	proteomiqon_psmbasedquantification	toolshed.g2.bx.psu.edu/repos/galaxyp/proteomiqon_psmbasedquantification/proteomiqon_psmbasedquantification/0.0.8	0.0.8
 proteomiqon_psmstatistics	galaxyp	b8590dea5e2d	proteomiqon_psmstatistics	toolshed.g2.bx.psu.edu/repos/galaxyp/proteomiqon_psmstatistics/proteomiqon_psmstatistics/0.0.6	0.0.6
 proteomiqon_psmstatistics	galaxyp	f831f7d721f8	proteomiqon_psmstatistics	toolshed.g2.bx.psu.edu/repos/galaxyp/proteomiqon_psmstatistics/proteomiqon_psmstatistics/0.0.7	0.0.7
+proteomiqon_psmstatistics	galaxyp	9ac2e8232c5c	proteomiqon_psmstatistics	toolshed.g2.bx.psu.edu/repos/galaxyp/proteomiqon_psmstatistics/proteomiqon_psmstatistics/0.0.8	0.0.8
 proteore_build_protein_interaction_maps	proteore	b0ac71686b99	build_protein_interaction_maps	toolshed.g2.bx.psu.edu/repos/proteore/proteore_build_protein_interaction_maps/build_protein_interaction_maps/2019.03.08	2019.03.08
 proteore_build_protein_interaction_maps	proteore	0a85d709c4ae	build_protein_interaction_maps	toolshed.g2.bx.psu.edu/repos/proteore/proteore_build_protein_interaction_maps/build_protein_interaction_maps/2019.03.12.2	2019.03.12.2
 proteore_build_protein_interaction_maps	proteore	99f6a94c1ade	build_protein_interaction_maps	toolshed.g2.bx.psu.edu/repos/proteore/proteore_build_protein_interaction_maps/build_protein_interaction_maps/2019.06.27	2019.06.27
@@ -19182,6 +19190,7 @@ quast	iuc	342a1d1fed7b	quast	toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.0.2+
 quast	iuc	7594365c546b	quast	toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.0.2+galaxy3	5.0.2+galaxy3
 quast	iuc	875d0f36d66f	quast	toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.0.2+galaxy4	5.0.2+galaxy4
 quast	iuc	675488238c96	quast	toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.0.2+galaxy5	5.0.2+galaxy5
+quast	iuc	3061c8b029e5	quast	toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/5.2.0+galaxy0	5.2.0+galaxy0
 quast	aafc-mbb	f74009e6e1e1	quast	toolshed.g2.bx.psu.edu/repos/aafc-mbb/quast/quast/1.0.0	1.0.0
 query_crapome	bornea	f1459638e1bc	CRAPomeQuery	toolshed.g2.bx.psu.edu/repos/bornea/query_crapome/CRAPomeQuery/1.0.0	1.0.0
 query_tabular	iuc	3708ff0198b7	query_tabular	toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/1.0.0	1.0.0
@@ -20499,6 +20508,18 @@ rseqc	nilesh	dbedfc5f5a3c	rseqc_deletion_profile	toolshed.g2.bx.psu.edu/repos/ni
 rseqc	nilesh	dbedfc5f5a3c	rseqc_read_GC	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_read_GC/2.6.4	2.6.4
 rseqc	nilesh	dbedfc5f5a3c	rseqc_insertion_profile	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_insertion_profile/2.6.4	2.6.4
 rseqc	nilesh	dbedfc5f5a3c	rseqc_tin	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_tin/2.6.4.1	2.6.4.1
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_createObject	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_createObject/0.1.0	0.1.0
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_geneactivity	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_geneactivity/0.1.0	0.1.0
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_umap	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_umap/0.1.0	0.1.0
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_dimplot	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_dimplot/0.1.0	0.1.0
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_subset	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_subset/0.1.0	0.1.0
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_lsi	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_lsi/0.1.0	0.1.0
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_runQC	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_runQC/0.1.0	0.1.0
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_find_clusters	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_find_clusters/0.1.0	0.1.0
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_vlnplot	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_vlnplot/0.1.0	0.1.0
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_createAssayObject	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_createAssayObject/0.1.0	0.1.0
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_add_gene_annotations	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_add_gene_annotations/0.1.0	0.1.0
+r_signac_galaxy	gaelcge	6e0b320d8b6a	signac_find_neighbours	toolshed.g2.bx.psu.edu/repos/gaelcge/r_signac_galaxy/signac_find_neighbours/0.1.0	0.1.0
 rtg_investigator	diego	8593828f91e7	rtg_format_fastq	toolshed.g2.bx.psu.edu/repos/diego/rtg_investigator/rtg_format_fastq/1.0.0	1.0.0
 rtg_investigator	diego	8593828f91e7	rtg_cgsim	toolshed.g2.bx.psu.edu/repos/diego/rtg_investigator/rtg_cgsim/1.0.0	1.0.0
 rtg_investigator	diego	8593828f91e7	rtg_snp	toolshed.g2.bx.psu.edu/repos/diego/rtg_investigator/rtg_snp/1.0.0	1.0.0
@@ -21639,9 +21660,9 @@ sendmail	geert-vandeweyer	0b1cdae7ad5b	VCF_to_DB_rev	toolshed.g2.bx.psu.edu/repo
 sendmail	geert-vandeweyer	5f5cd5d373cb	sendemail	toolshed.g2.bx.psu.edu/repos/geert-vandeweyer/sendmail/sendemail/0.0.1	0.0.1
 seq2hla	iuc	52bba1cd3823	seq2hla	toolshed.g2.bx.psu.edu/repos/iuc/seq2hla/seq2hla/2.2.0	2.2.0
 seq2hla	iuc	5a7cd6c39085	seq2hla	toolshed.g2.bx.psu.edu/repos/iuc/seq2hla/seq2hla/2.2.0+galaxy1	2.2.0+galaxy1
+seq2hla	sebastian-boegel	155b796033b6	seqhla	toolshed.g2.bx.psu.edu/repos/sebastian-boegel/seq2hla/seqhla/1.0.0	1.0.0
 seq2hla	jjohnson	262d5334c786	seq2hla	toolshed.g2.bx.psu.edu/repos/jjohnson/seq2hla/seq2hla/0.1.0	0.1.0
 seq2hla	jjohnson	6ecaa71a5aa3	seq2hla	toolshed.g2.bx.psu.edu/repos/jjohnson/seq2hla/seq2hla/2.2.0	2.2.0
-seq2hla	sebastian-boegel	155b796033b6	seqhla	toolshed.g2.bx.psu.edu/repos/sebastian-boegel/seq2hla/seqhla/1.0.0	1.0.0
 seqcomplexity	iuc	f14a21f3d5b1	seqcomplexity	toolshed.g2.bx.psu.edu/repos/iuc/seqcomplexity/seqcomplexity/0.1.0	0.1.0
 seq_composition	peterjc	087a226e501e	seq_composition	toolshed.g2.bx.psu.edu/repos/peterjc/seq_composition/seq_composition/0.0.1	0.0.1
 seq_composition	peterjc	c0eb0e5792f3	seq_composition	toolshed.g2.bx.psu.edu/repos/peterjc/seq_composition/seq_composition/0.0.2	0.0.2
@@ -22586,15 +22607,15 @@ sicer	devteam	74c9214cc8e6	peakcalling_sicer	toolshed.g2.bx.psu.edu/repos/devtea
 sicer	devteam	5c2cc3b58c7d	peakcalling_sicer	toolshed.g2.bx.psu.edu/repos/devteam/sicer/peakcalling_sicer/1.1	1.1
 sickle	nikhil-joshi	f6ebdaca9925	sickle	toolshed.g2.bx.psu.edu/repos/nikhil-joshi/sickle/sickle/1.0.0	1.0.0
 sickle	nikhil-joshi	b105c7163a5b	sickle	toolshed.g2.bx.psu.edu/repos/nikhil-joshi/sickle/sickle/1.33	1.33
+sickle	iuc	edaa8572219d	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33	1.33
+sickle	iuc	3905ccd5c631	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33.1	1.33.1
+sickle	iuc	6756c87dc2d4	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33.2	1.33.2
 sickle	amol	56885290945c	sickle	toolshed.g2.bx.psu.edu/repos/amol/sickle/sickle/1.0.0	1.0.0
 sickle	amol	8335256dea97	sickle	toolshed.g2.bx.psu.edu/repos/amol/sickle/sickle/1.0.0	1.0.0
 sickle	nilesh	c522aaea6880	sickle	toolshed.g2.bx.psu.edu/repos/nilesh/sickle/sickle/1.0.0	1.0.0
 sickle	nilesh	8d697edc2f55	sickle	toolshed.g2.bx.psu.edu/repos/nilesh/sickle/sickle/1.0.0	1.0.0
 sickle	nilesh	4f6349319c0a	sickle	toolshed.g2.bx.psu.edu/repos/nilesh/sickle/sickle/1.0.0	1.0.0
 sickle	nilesh	dd2ec1b37e96	sickle	toolshed.g2.bx.psu.edu/repos/nilesh/sickle/sickle/1.0.0	1.0.0
-sickle	iuc	edaa8572219d	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33	1.33
-sickle	iuc	3905ccd5c631	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33.1	1.33.1
-sickle	iuc	6756c87dc2d4	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33.2	1.33.2
 sickle_1_33	slegras	1405432d1b9c	sickle	toolshed.g2.bx.psu.edu/repos/slegras/sickle_1_33/sickle/1.33	1.33
 sift_web	saket-choudhary	697e66764209	sift_web	toolshed.g2.bx.psu.edu/repos/saket-choudhary/sift_web/sift_web/1.0.0	1.0.0
 sigqc	adhawan	5e65b8e6c20c	sigqc	toolshed.g2.bx.psu.edu/repos/adhawan/sigqc/sigqc/0.1.14	0.1.14
@@ -23167,6 +23188,11 @@ snpeff	iuc	cfcf33df7fc0	snpEff	toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.
 snpeff	iuc	cfcf33df7fc0	snpEff_download	toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_download/4.3+T.galaxy2	4.3+T.galaxy2
 snpeff	iuc	cfcf33df7fc0	snpEff_databases	toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_databases/4.3+T.galaxy2	4.3+T.galaxy2
 snpeff	iuc	cfcf33df7fc0	snpEff_get_chr_names	toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_get_chr_names/4.3+T.galaxy2	4.3+T.galaxy2
+snpeff	iuc	5c7b70713fb5	snpEff_build_gb	toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_build_gb/4.3+T.galaxy5	4.3+T.galaxy5
+snpeff	iuc	5c7b70713fb5	snpEff	toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.3+T.galaxy1	4.3+T.galaxy1
+snpeff	iuc	5c7b70713fb5	snpEff_download	toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_download/4.3+T.galaxy2	4.3+T.galaxy2
+snpeff	iuc	5c7b70713fb5	snpEff_databases	toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_databases/4.3+T.galaxy2	4.3+T.galaxy2
+snpeff	iuc	5c7b70713fb5	snpEff_get_chr_names	toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_get_chr_names/4.3+T.galaxy2	4.3+T.galaxy2
 snpeff_3_2	jjohnson	8ece49cfe180	invalid	invalid	invalid
 snpeff_3_3	jjohnson	9d35993e61c7	invalid	invalid	invalid
 snpeff_3_6c	takakoron	216d02ec973a	snpEff_docker	toolshed.g2.bx.psu.edu/repos/takakoron/snpeff_3_6c/snpEff_docker/3.6c (build 2014-05-20)	3.6c (build 2014-05-20)
@@ -24025,7 +24051,7 @@ suite_chembl	bgruening	837b5c0a4be1	invalid	invalid	invalid
 suite_chira	iuc	439158855f26	invalid	invalid	invalid
 suite_cmv	rnateam	7c27af26281b	invalid	invalid	invalid
 suite_colibread	iuc	7019feb7cc0d	invalid	invalid	invalid
-suite_concoct	iuc	0515453983e4	invalid	invalid	invalid
+suite_concoct	iuc	529b7ab11f2f	invalid	invalid	invalid
 suite_coverm	iuc	480c37c9048b	invalid	invalid	invalid
 suite_crossmap	iuc	b366c9b09e79	invalid	invalid	invalid
 suite_csvtk	nml	d2bb6610c93e	invalid	invalid	invalid
@@ -24111,7 +24137,7 @@ suite_gprofiler	iuc	09fcf1595ade	invalid	invalid	invalid
 suite_graphlan	iuc	69dba7f09e05	invalid	invalid	invalid
 suite_graphmap	bgruening	01fb0119eb25	invalid	invalid	invalid
 suite_gwastools	iuc	45a0da53d704	invalid	invalid	invalid
-suite_hamronization	iuc	94836251f3b7	invalid	invalid	invalid
+suite_hamronization	iuc	08bc877b2c5b	invalid	invalid	invalid
 suite_hhsuite	guerler	be81497c0bf7	invalid	invalid	invalid
 suite_hicexplorer	bgruening	0598b7a832fe	invalid	invalid	invalid
 suite_hicup	bgruening	c2fd6fc8afe5	invalid	invalid	invalid
@@ -24134,13 +24160,13 @@ suite_locarna	rnateam	b1d21be458d1	invalid	invalid	invalid
 suite_lofreq	iuc	d77682b95c92	invalid	invalid	invalid
 suite_maaslin	iuc	e9e9577a4c19	invalid	invalid	invalid
 suite_mageck	iuc	1aaea8924858	invalid	invalid	invalid
-suite_maker	iuc	49b55e185c3b	invalid	invalid	invalid
+suite_maker	iuc	602dd75aa83d	invalid	invalid	invalid
 suite_maldiquant	galaxyp	efdfa97135e6	invalid	invalid	invalid
 suite_mdanalysis	chemteam	bea96914ce6a	invalid	invalid	invalid
 suite_mdtraj	chemteam	74d22419c46b	invalid	invalid	invalid
 suite_medaka	iuc	a4f17896a499	invalid	invalid	invalid
 suite_megan	iuc	6507dbcd5461	invalid	invalid	invalid
-suite_metabat2	iuc	d2bdd83f4edc	invalid	invalid	invalid
+suite_metabat2	iuc	57cf129c4c71	invalid	invalid	invalid
 suite_metaeuk	iuc	2e22749acb38	invalid	invalid	invalid
 suite_metams	workflow4metabolomics	8d5d8fccee27	invalid	invalid	invalid
 suite_metaphlan	iuc	e45d1be62bdd	invalid	invalid	invalid
@@ -24171,7 +24197,7 @@ suite_ncbi_entrez	iuc	446c7e375a05	invalid	invalid	invalid
 suite_ncbi_entrez	iuc	6e1d390230fa	invalid	invalid	invalid
 suite_ncbi_entrez	iuc	6dd63011ccd6	invalid	invalid	invalid
 suite_ncbi_entrez_direct	iuc	750bb4fcc396	invalid	invalid	invalid
-suite_nextclade	iuc	dc777dbab019	invalid	invalid	invalid
+suite_nextclade	iuc	485f04e18ff7	invalid	invalid	invalid
 suite_ngsutils	iuc	e5a7857ccad7	invalid	invalid	invalid
 suite_ngsutils	iuc	2638cc46bca2	invalid	invalid	invalid
 suite_ngsutils	iuc	21eb841891f7	invalid	invalid	invalid
@@ -24458,6 +24484,7 @@ t_coffee	earlhaminst	0a189243186d	t_coffee	toolshed.g2.bx.psu.edu/repos/earlhami
 t_coffee	earlhaminst	ae69d14b6fbf	t_coffee	toolshed.g2.bx.psu.edu/repos/earlhaminst/t_coffee/t_coffee/13.45.0.4846264	13.45.0.4846264
 tcoffee	ayllon	e65eb41717b4	T_coffee	toolshed.g2.bx.psu.edu/repos/ayllon/tcoffee/T_coffee/10.00.r1613	10.00.r1613
 td	mheinzl	3e56058d9552	td	toolshed.g2.bx.psu.edu/repos/mheinzl/td/td/1.0.5	1.0.5
+te_finder_1	namhsuya	c3c69d999e74	te_finder_1	toolshed.g2.bx.psu.edu/repos/namhsuya/te_finder_1/te_finder_1/1.0.1	1.0.1
 teiso	urgi-team	15d6811e6bf5	CufflinksGTFToBed	toolshed.g2.bx.psu.edu/repos/urgi-team/teiso/CufflinksGTFToBed/1.0	1.0
 teiso	urgi-team	15d6811e6bf5	ClosestToStartSite	toolshed.g2.bx.psu.edu/repos/urgi-team/teiso/ClosestToStartSite/1.0	1.0
 teiso	urgi-team	15d6811e6bf5	GFFToBed	toolshed.g2.bx.psu.edu/repos/urgi-team/teiso/GFFToBed/1.0	1.0
@@ -25943,9 +25970,9 @@ variant_analyzer2	mheinzl	6ccff403db8a	mut2read	toolshed.g2.bx.psu.edu/repos/mhe
 variant_analyzer2	mheinzl	1797e461d674	mut2sscs	toolshed.g2.bx.psu.edu/repos/mheinzl/variant_analyzer2/mut2sscs/2.1.1	2.1.1
 variant_analyzer2	mheinzl	1797e461d674	read2mut	toolshed.g2.bx.psu.edu/repos/mheinzl/variant_analyzer2/read2mut/2.1.4	2.1.4
 variant_analyzer2	mheinzl	1797e461d674	mut2read	toolshed.g2.bx.psu.edu/repos/mheinzl/variant_analyzer2/mut2read/2.1.1	2.1.1
-variant_analyzer2	mheinzl	c2e8932b4d8d	mut2sscs	toolshed.g2.bx.psu.edu/repos/mheinzl/variant_analyzer2/mut2sscs/3.0.0	3.0.0
-variant_analyzer2	mheinzl	c2e8932b4d8d	read2mut	toolshed.g2.bx.psu.edu/repos/mheinzl/variant_analyzer2/read2mut/3.0.0	3.0.0
-variant_analyzer2	mheinzl	c2e8932b4d8d	mut2read	toolshed.g2.bx.psu.edu/repos/mheinzl/variant_analyzer2/mut2read/3.0.0	3.0.0
+variant_analyzer2	mheinzl	8cec772c0bf1	mut2sscs	toolshed.g2.bx.psu.edu/repos/mheinzl/variant_analyzer2/mut2sscs/3.0.0	3.0.0
+variant_analyzer2	mheinzl	8cec772c0bf1	read2mut	toolshed.g2.bx.psu.edu/repos/mheinzl/variant_analyzer2/read2mut/3.0.0	3.0.0
+variant_analyzer2	mheinzl	8cec772c0bf1	mut2read	toolshed.g2.bx.psu.edu/repos/mheinzl/variant_analyzer2/mut2read/3.0.0	3.0.0
 variant_annotator	devteam	ae9d0a543e9b	gatk_variant_annotator	toolshed.g2.bx.psu.edu/repos/devteam/variant_annotator/gatk_variant_annotator/0.0.5	0.0.5
 variant_apply_recalibration	devteam	350a4d0d1678	gatk_variant_apply_recalibration	toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4	0.0.4
 variant_combine	devteam	1a6e16391727	gatk_variant_combine	toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4	0.0.4
