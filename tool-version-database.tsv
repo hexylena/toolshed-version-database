@@ -6704,6 +6704,8 @@ dwt_var_perclass	devteam	781e68074f84	compute_p-values_max_variances_feature_occ
 dwt_var_perfeature	devteam	cb1c59d69557	dwt_var1	toolshed.g2.bx.psu.edu/repos/devteam/dwt_var_perfeature/dwt_var1/1.0.0	1.0.0
 dwt_var_perfeature	devteam	7a15159140d1	dwt_var1	toolshed.g2.bx.psu.edu/repos/devteam/dwt_var_perfeature/dwt_var1/1.0.1	1.0.1
 dwt_var_perfeature	devteam	6c29c7e347e8	dwt_var1	toolshed.g2.bx.psu.edu/repos/devteam/dwt_var_perfeature/dwt_var1/1.0.2	1.0.2
+ebcsgen_generate_transition_system	sybila	f13bdc5f4409	eBCSgen_generate_transition_system	toolshed.g2.bx.psu.edu/repos/sybila/ebcsgen_generate_transition_system/eBCSgen_generate_transition_system/2.0.3_galaxy0	2.0.3_galaxy0
+ebcsgen_pctl_model_checking	sybila	ea5108514910	eBCSgen_PCTL_model_checking	toolshed.g2.bx.psu.edu/repos/sybila/ebcsgen_pctl_model_checking/eBCSgen_PCTL_model_checking/2.0.3_galaxy0	2.0.3_galaxy0
 ebi_metagenomics_run_downloader	iuc	a1ef6c88ee37	ebi_metagenomics_run_downloader	toolshed.g2.bx.psu.edu/repos/iuc/ebi_metagenomics_run_downloader/ebi_metagenomics_run_downloader/0.1.0	0.1.0
 ebi_search_rest_results	iuc	b6029f2c71cb	ebi_search_rest_results	toolshed.g2.bx.psu.edu/repos/iuc/ebi_search_rest_results/ebi_search_rest_results/0.1.0	0.1.0
 ebi_search_rest_results	iuc	42d5e40fcd0b	ebi_search_rest_results	toolshed.g2.bx.psu.edu/repos/iuc/ebi_search_rest_results/ebi_search_rest_results/0.1.1	0.1.1
@@ -8760,6 +8762,7 @@ garnett_train_classifier	ebi-gxa	e7bb0bf34f26	garnett_train_classifier	toolshed.
 garnett_train_classifier	ebi-gxa	9be21507358d	garnett_train_classifier	toolshed.g2.bx.psu.edu/repos/ebi-gxa/garnett_train_classifier/garnett_train_classifier/0.2.8+galaxy1	0.2.8+galaxy1
 garnett_transform_markers	ebi-gxa	b35eef6b1fcc	garnett_transform_markers	toolshed.g2.bx.psu.edu/repos/ebi-gxa/garnett_transform_markers/garnett_transform_markers/0.2.8+galaxy0	0.2.8+galaxy0
 garnett_transform_markers	ebi-gxa	1dc49d16e96c	garnett_transform_markers	toolshed.g2.bx.psu.edu/repos/ebi-gxa/garnett_transform_markers/garnett_transform_markers/0.2.8+galaxy1	0.2.8+galaxy1
+gate_finder	goeckslab	6df8d6e42152	gate_finder	toolshed.g2.bx.psu.edu/repos/goeckslab/gate_finder/gate_finder/1.0.4+galaxy0	1.0.4+galaxy0
 gatk	avowinkel	b80ff7f43ad1	gatk	toolshed.g2.bx.psu.edu/repos/avowinkel/gatk/gatk/3.4-0.d9	3.4-0.d9
 gatk2	iuc	2553f84b8174	gatk2_depth_of_coverage	toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_depth_of_coverage/0.0.7	0.0.7
 gatk2	iuc	2553f84b8174	gatk2_reduce_reads	toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_reduce_reads/0.0.7	0.0.7
@@ -12017,6 +12020,7 @@ king	iuc	ec2bc87ebd7b	king	toolshed.g2.bx.psu.edu/repos/iuc/king/king/2.2.4+gala
 king	iuc	1932808c6fab	king	toolshed.g2.bx.psu.edu/repos/iuc/king/king/2.2.7+galaxy0	2.2.7+galaxy0
 kinwalker	rnateam	cb66f1d643e4	rbc_kinwalker	toolshed.g2.bx.psu.edu/repos/rnateam/kinwalker/rbc_kinwalker/1.0	1.0
 kleborate	dazeone	cac4ae7bc7cf	kleboratetool	toolshed.g2.bx.psu.edu/repos/dazeone/kleborate/kleboratetool/0.1.0	0.1.0
+kleborate	iuc	383036561810	kleborate	toolshed.g2.bx.psu.edu/repos/iuc/kleborate/kleborate/2.2.0+galaxy0	2.2.0+galaxy0
 kma	iuc	2595c27071c2	kma_map	toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.2.21+galaxy0	1.2.21+galaxy0
 kma	iuc	95ab864b281a	kma_map	toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.2.21+galaxy1	1.2.21+galaxy1
 kmerfinder	thanhlv	b868a5fd2653	kmerfinder	toolshed.g2.bx.psu.edu/repos/thanhlv/kmerfinder/kmerfinder/3.0.2+galaxy0	3.0.2+galaxy0
@@ -12074,6 +12078,7 @@ kraken2tax	devteam	065938419efe	Kraken2Tax	toolshed.g2.bx.psu.edu/repos/devteam/
 kraken2tax	devteam	d844fdcce44e	Kraken2Tax	toolshed.g2.bx.psu.edu/repos/devteam/kraken2tax/Kraken2Tax/1.1	1.1
 kraken2tax	devteam	f03c7ba8d8bc	Kraken2Tax	toolshed.g2.bx.psu.edu/repos/devteam/kraken2tax/Kraken2Tax/1.2	1.2
 kraken_biom	iuc	3ff4712dc111	kraken_biom	toolshed.g2.bx.psu.edu/repos/iuc/kraken_biom/kraken_biom/1.0.1+galaxy0	1.0.1+galaxy0
+kraken_biom	iuc	65eb9962d272	kraken_biom	toolshed.g2.bx.psu.edu/repos/iuc/kraken_biom/kraken_biom/1.2.0+galaxy1	1.2.0+galaxy1
 kraken_filter	devteam	cbb802a726fd	kraken-filter	toolshed.g2.bx.psu.edu/repos/devteam/kraken_filter/kraken-filter/1.1.0	1.1.0
 kraken_filter	devteam	7dfb0218e838	kraken-filter	toolshed.g2.bx.psu.edu/repos/devteam/kraken_filter/kraken-filter/1.2.0	1.2.0
 kraken_filter	devteam	fe94f318048c	kraken-filter	toolshed.g2.bx.psu.edu/repos/devteam/kraken_filter/kraken-filter/1.2.1	1.2.1
@@ -12645,9 +12650,10 @@ masurca_simple	dnbenso	86aa445e75d6	masurca_simple	toolshed.g2.bx.psu.edu/repos/
 match	xuebing	2d8f6cdba2f7	match	toolshed.g2.bx.psu.edu/repos/xuebing/match/match/1.0.0	1.0.0
 matchms	recetox	30e680e555d4	matchms	toolshed.g2.bx.psu.edu/repos/recetox/matchms/matchms/0.14.0+galaxy1	0.14.0+galaxy1
 matchms	recetox	f680068b7863	matchms	toolshed.g2.bx.psu.edu/repos/recetox/matchms/matchms/0.15.0+galaxy0	0.15.0+galaxy0
+matchms	recetox	67ed0d4f3724	matchms	toolshed.g2.bx.psu.edu/repos/recetox/matchms/matchms/0.15.0+galaxy1	0.15.0+galaxy1
 matchms_filtering	recetox	3d275fbdf741	matchms_filtering	toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.14.0+galaxy1	0.14.0+galaxy1
 matchms_filtering	recetox	b8e9a7c7add2	matchms_filtering	toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.15.0+galaxy0	0.15.0+galaxy0
-matchms_formatter	recetox	28a252f3b682	matchms_formatter	toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.1.3	0.1.3
+matchms_formatter	recetox	a5c84c9c1a28	matchms_formatter	toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.1.3	0.1.3
 match_plasmid_to_reference	public-health-bioinformatics	c917ef6807d7	match_plasmid_to_reference	toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/match_plasmid_to_reference/match_plasmid_to_reference/0.1.0	0.1.0
 matrix_manipulation	md-anderson-bioinformatics	f1bcd79cd923	Matrix_Validations	toolshed.g2.bx.psu.edu/repos/md-anderson-bioinformatics/matrix_manipulation/Matrix_Validations/2.2	2.2
 matrix_manipulation	md-anderson-bioinformatics	f1bcd79cd923	Matrix_Filters	toolshed.g2.bx.psu.edu/repos/md-anderson-bioinformatics/matrix_manipulation/Matrix_Filters/2.1.12	2.1.12
@@ -12898,6 +12904,7 @@ meryl	iuc	51c2360aa807	meryl	toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+ga
 meryl	iuc	eadfd71dde37	meryl	toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy4	1.3+galaxy4
 meryl	iuc	9cd178127b19	meryl	toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy5	1.3+galaxy5
 meryl	iuc	29dabd8db6f2	meryl	toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy6	1.3+galaxy6
+mesmer	goeckslab	53240d7c1fc5	mesmer	toolshed.g2.bx.psu.edu/repos/goeckslab/mesmer/mesmer/0.3.1+galaxy0	0.3.1+galaxy0
 met4j	metexplore	dcd16521b969	met4j_Sbml2Graph	toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Graph/0.11.0	0.11.0
 met4j	metexplore	dcd16521b969	met4j_Tab2Sbml	toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Tab2Sbml/0.11.0	0.11.0
 met4j	metexplore	dcd16521b969	met4j_Sbml2Tab	toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/0.11.0	0.11.0
@@ -15085,7 +15092,8 @@ obi_uniq	iuc	c0f7b58b4ce4	obi_uniq	toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi
 obi_uniq	iuc	ec215ed98831	obi_uniq	toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/1.2.13	1.2.13
 ococo	iuc	03cabb6711c5	ococo	toolshed.g2.bx.psu.edu/repos/iuc/ococo/ococo/0.1.2.6	0.1.2.6
 odgi_build	iuc	7fb3bb1e221e	odgi_build	toolshed.g2.bx.psu.edu/repos/iuc/odgi_build/odgi_build/0.3	0.3
-odgi_viz	iuc	536768de4748	odgi_viz	toolshed.g2.bx.psu.edu/repos/iuc/odgi_viz/odgi_viz/0.3	0.3
+odgi_build	iuc	6584dfcc7165	odgi_build	toolshed.g2.bx.psu.edu/repos/iuc/odgi_build/odgi_build/0.3+galaxy1	0.3+galaxy1
+odgi_viz	iuc	911a3517b738	odgi_viz	toolshed.g2.bx.psu.edu/repos/iuc/odgi_viz/odgi_viz/0.3	0.3
 oghma	nicolas	f3f230290ffe	computeR2	toolshed.g2.bx.psu.edu/repos/nicolas/oghma/computeR2/1.0.0	1.0.0
 oghma	nicolas	62e7a8d66b1f	computeR2	toolshed.g2.bx.psu.edu/repos/nicolas/oghma/computeR2/1.0.0	1.0.0
 oghma	nicolas	62e7a8d66b1f	encode	toolshed.g2.bx.psu.edu/repos/nicolas/oghma/encode/1.0.0	1.0.0
@@ -17211,6 +17219,7 @@ pal_finder	pjbriggs	4e625d3672ba	microsat_pal_finder	toolshed.g2.bx.psu.edu/repo
 pal_finder	pjbriggs	52dbe2089d14	microsat_pal_finder	toolshed.g2.bx.psu.edu/repos/pjbriggs/pal_finder/microsat_pal_finder/0.02.04.8	0.02.04.8
 palom	watsocam	b66b59713319	palom	toolshed.g2.bx.psu.edu/repos/watsocam/palom/palom/2021.12.0.0	2021.12.0.0
 palom	watsocam	69f8e01b2e17	palom	toolshed.g2.bx.psu.edu/repos/watsocam/palom/palom/2021.12.0.1	2021.12.0.1
+palom	watsocam	e30f622ef2c3	palom	toolshed.g2.bx.psu.edu/repos/watsocam/palom/palom/2022.8.2+galaxy0	2022.8.2+galaxy0
 pampa_communitymetrics	ecology	5873ac1a5a44	pampa_communitymetrics	toolshed.g2.bx.psu.edu/repos/ecology/pampa_communitymetrics/pampa_communitymetrics/0.0.1	0.0.1
 pampa_communitymetrics	ecology	c67ece97d4b1	pampa_communitymetrics	toolshed.g2.bx.psu.edu/repos/ecology/pampa_communitymetrics/pampa_communitymetrics/0.0.2	0.0.2
 pampa_glmcomm	ecology	97967fbcf6da	pampa_glmcomm	toolshed.g2.bx.psu.edu/repos/ecology/pampa_glmcomm/pampa_glmcomm/0.0.1	0.0.1
@@ -19342,6 +19351,7 @@ quantification	perssond	928db0f952e3	quantification	toolshed.g2.bx.psu.edu/repos
 quantification	perssond	aba3655fdef0	quantification	toolshed.g2.bx.psu.edu/repos/perssond/quantification/quantification/1.5.1.5	1.5.1.5
 quantification	perssond	46b897eb2c8e	quantification	toolshed.g2.bx.psu.edu/repos/perssond/quantification/quantification/1.5.1.6	1.5.1.6
 quantification	perssond	c09e444635d9	quantification	toolshed.g2.bx.psu.edu/repos/perssond/quantification/quantification/1.5.1.7	1.5.1.7
+quantification	perssond	261464223fa3	quantification	toolshed.g2.bx.psu.edu/repos/perssond/quantification/quantification/1.5.1+galaxy0	1.5.1+galaxy0
 quantp	galaxyp	75faf9a89f5b	quantp	toolshed.g2.bx.psu.edu/repos/galaxyp/quantp/quantp/1.0.0	1.0.0
 quantp	galaxyp	bcc7a4c4cc29	quantp	toolshed.g2.bx.psu.edu/repos/galaxyp/quantp/quantp/1.1.0	1.1.0
 quantp	galaxyp	ed0bb50d7ffe	quantp	toolshed.g2.bx.psu.edu/repos/galaxyp/quantp/quantp/1.1.1	1.1.1
@@ -20168,8 +20178,8 @@ rgi	card	f96cbb663aa9	rgi	toolshed.g2.bx.psu.edu/repos/card/rgi/rgi/5.1.0	5.1.0
 rgi	card	f96cbb663aa9	rgi_database_builder	toolshed.g2.bx.psu.edu/repos/card/rgi/rgi_database_builder/1.0.0	1.0.0
 rgi	card	bfbfc24c5af2	rgi	toolshed.g2.bx.psu.edu/repos/card/rgi/rgi/5.1.1	5.1.1
 rgi	card	bfbfc24c5af2	rgi_database_builder	toolshed.g2.bx.psu.edu/repos/card/rgi/rgi_database_builder/1.1.0	1.1.0
-rgi	card	ce852ee2c394	rgi	toolshed.g2.bx.psu.edu/repos/card/rgi/rgi/5.2.1	5.2.1
-rgi	card	ce852ee2c394	rgi_database_builder	toolshed.g2.bx.psu.edu/repos/card/rgi/rgi_database_builder/1.2.0	1.2.0
+rgi	card	84bd24ac33fd	rgi	toolshed.g2.bx.psu.edu/repos/card/rgi/rgi/5.2.1	5.2.1
+rgi	card	84bd24ac33fd	rgi_database_builder	toolshed.g2.bx.psu.edu/repos/card/rgi/rgi_database_builder/1.2.0	1.2.0
 r_goseq_1_22_0	mvdbeek	8d08f14b82fd	goseq	toolshed.g2.bx.psu.edu/repos/mvdbeek/r_goseq_1_22_0/goseq/0.1.1	0.1.1
 r_goseq_1_22_0	mvdbeek	8ce951313688	length_and_gc_content	toolshed.g2.bx.psu.edu/repos/mvdbeek/r_goseq_1_22_0/length_and_gc_content/0.1.0	0.1.0
 r_goseq_1_22_0	mvdbeek	8ce951313688	goseq	toolshed.g2.bx.psu.edu/repos/mvdbeek/r_goseq_1_22_0/goseq/0.1.1	0.1.1
@@ -23942,6 +23952,7 @@ srst2	estrain	efc202baae1f	srst2	toolshed.g2.bx.psu.edu/repos/estrain/srst2/srst
 srst2	estrain	43cc60256036	srst2	toolshed.g2.bx.psu.edu/repos/estrain/srst2/srst2/0.2.3	0.2.3
 srst2	estrain	77bea815cb74	srst2	toolshed.g2.bx.psu.edu/repos/estrain/srst2/srst2/0.2.0	0.2.0
 srst2	iuc	f9a0855c792d	srst2	toolshed.g2.bx.psu.edu/repos/iuc/srst2/srst2/0.2.0+galaxy0	0.2.0+galaxy0
+srst2	iuc	46c5d7a0393b	srst2	toolshed.g2.bx.psu.edu/repos/iuc/srst2/srst2/0.2.0+galaxy1	0.2.0+galaxy1
 ss2v110	cstrittmatter	b1943f530c7b	seqsero2v110	toolshed.g2.bx.psu.edu/repos/cstrittmatter/ss2v110/seqsero2v110/1.1.0	1.1.0
 ss2v110	cstrittmatter	7a62fe8e3e5e	seqsero2v110	toolshed.g2.bx.psu.edu/repos/cstrittmatter/ss2v110/seqsero2v110/2	2
 ss2v110	cstrittmatter	357e38526e2a	seqsero2v110	toolshed.g2.bx.psu.edu/repos/cstrittmatter/ss2v110/seqsero2v110/3	3
@@ -24523,7 +24534,7 @@ suite_ngsutils	iuc	026f304454f8	invalid	invalid	invalid
 suite_ngsutils	iuc	28bf5a1daea3	invalid	invalid	invalid
 suite_ngsutils	iuc	adda06ce764f	invalid	invalid	invalid
 suite_obitools	iuc	fdbe46f06a3a	invalid	invalid	invalid
-suite_odgi	iuc	e5369d6eaf31	invalid	invalid	invalid
+suite_odgi	iuc	7310f598a963	invalid	invalid	invalid
 suite_ont_fast5_api	iuc	234c6862f0f7	invalid	invalid	invalid
 suite_onto_toolkit	iuc	b530aec42ec1	invalid	invalid	invalid
 suite_openbabel	bgruening	4e41a0d2c2b8	invalid	invalid	invalid
@@ -24607,7 +24618,7 @@ suite_snvphyl_1_2_2	nml	77a9422303ce	invalid	invalid	invalid
 suite_snvphyl_1_2_3	nml	bc72925159fc	invalid	invalid	invalid
 suite_spades	iuc	41e856a38e71	invalid	invalid	invalid
 suite_springsuite	guerler	48fd07b48b14	invalid	invalid	invalid
-suite_srst2	iuc	46085264ec09	invalid	invalid	invalid
+suite_srst2	iuc	017182c6f095	invalid	invalid	invalid
 suite_stacks	iuc	d99cf2a9f28e	invalid	invalid	invalid
 suite_stacks	iuc	08260e9829ff	invalid	invalid	invalid
 suite_stacks	iuc	3bfdeb8cea80	invalid	invalid	invalid
@@ -24641,6 +24652,7 @@ suite_vcflib_14_08	devteam	acca1b3f6c8f	invalid	invalid	invalid
 suite_vegan	iuc	62f9d016811e	invalid	invalid	invalid
 suite_vg	iuc	aed346d1866c	invalid	invalid	invalid
 suite_viennarna	rnateam	6aca8446c85c	invalid	invalid	invalid
+suite_vitessce	goeckslab	5091d5975997	invalid	invalid	invalid
 suite_vmd	chemteam	d3305a694cd4	invalid	invalid	invalid
 suite_vsnp	iuc	aaab310b6970	invalid	invalid	invalid
 suite_wtdbg	bgruening	bbcdb59a80fc	invalid	invalid	invalid
@@ -25216,6 +25228,25 @@ text_processing	bgruening	60edf2f8c28f	tp_head_tool	toolshed.g2.bx.psu.edu/repos
 text_processing	bgruening	60edf2f8c28f	tp_tac	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tac/1.1.0	1.1.0
 text_processing	bgruening	60edf2f8c28f	tp_sorted_uniq	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/1.1.0	1.1.0
 text_processing	bgruening	60edf2f8c28f	tp_sed_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_tail_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_easyjoin_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1	1.1.1
+text_processing	bgruening	e39fceb6ab85	tp_awk_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_uniq_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_uniq_tool/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_replace_in_line	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_replace_in_column	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_column/1.1.1	1.1.1
+text_processing	bgruening	e39fceb6ab85	tp_find_and_replace	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.1	1.1.1
+text_processing	bgruening	e39fceb6ab85	tp_sort_header_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_cut_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_sort_rows	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_rows/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_cat	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0	0.1.0
+text_processing	bgruening	e39fceb6ab85	tp_unfold_column_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_unfold_column_tool/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_multijoin_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_multijoin_tool/1.1.1	1.1.1
+text_processing	bgruening	e39fceb6ab85	tp_grep_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_text_file_with_recurring_lines	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_head_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_head_tool/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_tac	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tac/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_sorted_uniq	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/1.1.0	1.1.0
+text_processing	bgruening	e39fceb6ab85	tp_sed_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.0	1.1.0
 text_processing	bgruening	74a8bef53a00	tp_tail_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_tail_tool/1.1.0	1.1.0
 text_processing	bgruening	74a8bef53a00	tp_easyjoin_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1	1.1.1
 text_processing	bgruening	74a8bef53a00	tp_awk_tool	toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.1	1.1.1
@@ -26178,6 +26209,7 @@ univariate	ethevenot	09799fc16bc6	Univariate	toolshed.g2.bx.psu.edu/repos/etheve
 univariate	ethevenot	140290de7986	Univariate	toolshed.g2.bx.psu.edu/repos/ethevenot/univariate/Univariate/2.2.0	2.2.0
 univariate	ethevenot	5687435b182c	Univariate	toolshed.g2.bx.psu.edu/repos/ethevenot/univariate/Univariate/2.2.4	2.2.4
 unmicst	perssond	6bec4fef6b2e	unmicst	toolshed.g2.bx.psu.edu/repos/perssond/unmicst/unmicst/3.1.1.1	3.1.1.1
+unmicst	perssond	74fe58ff55a5	unmicst	toolshed.g2.bx.psu.edu/repos/perssond/unmicst/unmicst/2.7.1+galaxy0	2.7.1+galaxy0
 unzip	imgteam	ec30427e0d42	unzip	toolshed.g2.bx.psu.edu/repos/imgteam/unzip/unzip/0.1	0.1
 unzip	imgteam	38eec75fbe9b	unzip	toolshed.g2.bx.psu.edu/repos/imgteam/unzip/unzip/0.2	0.2
 update_marker_file	ebi-gxa	3a1cfbb8aa56	update_marker_file	toolshed.g2.bx.psu.edu/repos/ebi-gxa/update_marker_file/update_marker_file/0.2.8+galaxy0	0.2.8+galaxy0
@@ -26668,6 +26700,7 @@ viscorvar	ppericard	88c1fd2ac110	viscorvar_networkvar	toolshed.g2.bx.psu.edu/rep
 viscorvar	ppericard	88c1fd2ac110	mixomics_plotvar	toolshed.g2.bx.psu.edu/repos/ppericard/viscorvar/mixomics_plotvar/6.14+galaxy0	6.14+galaxy0
 viscorvar	ppericard	88c1fd2ac110	viscorvar_matcoraddvar	toolshed.g2.bx.psu.edu/repos/ppericard/viscorvar/viscorvar_matcoraddvar/0.9+galaxy0	0.9+galaxy0
 viscorvar	ppericard	88c1fd2ac110	viscorvar_computematsimilarity	toolshed.g2.bx.psu.edu/repos/ppericard/viscorvar/viscorvar_computematsimilarity/0.9+galaxy0	0.9+galaxy0
+vitessce_spatial	goeckslab	9f60ef2d586e	vitessce_spatial	toolshed.g2.bx.psu.edu/repos/goeckslab/vitessce_spatial/vitessce_spatial/1.0.4+galaxy0	1.0.4+galaxy0
 vkmz	eslerm	99fbaa14a69e	VKMZ	toolshed.g2.bx.psu.edu/repos/eslerm/vkmz/VKMZ/1.0	1.0
 vkmz	eslerm	1c2fe3a17065	VKMZ	toolshed.g2.bx.psu.edu/repos/eslerm/vkmz/VKMZ/1.1	1.1
 vkmz	eslerm	04079c34452a	VKMZ	toolshed.g2.bx.psu.edu/repos/eslerm/vkmz/VKMZ/1.1.1	1.1.1
