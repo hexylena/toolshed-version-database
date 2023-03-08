@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+import time
 import bioblend
 from bioblend import toolshed
 from tqdm.contrib.concurrent import thread_map
@@ -11,8 +12,12 @@ def fetch_versions(repo):
         try:
             e = ts.repositories.get_repository_revision_install_info(repo['name'], repo['owner'], rev)
         except bioblend.ConnectionError:
-            sys.stderr.write(f"Could not fetch the results of {repo['name']} {repo['owner']} {rev}\n")
-            continue
+            time.sleep(10)
+            try:
+                e = ts.repositories.get_repository_revision_install_info(repo['name'], repo['owner'], rev)
+            except bioblend.ConnectionError:
+                sys.stderr.write(f"Could not fetch the results of {repo['name']} {repo['owner']} {rev}\n")
+                continue
 
         if 'valid_tools' not in e[1]:
             res = [
