@@ -240,6 +240,7 @@ amrfinderplus	thanhlv	a9e5d593228e	amrfinder	toolshed.g2.bx.psu.edu/repos/thanhl
 amrfinderplus_data_manager_build	iuc	592ef3959907	data_manager_build_amrfinderplus	toolshed.g2.bx.psu.edu/repos/iuc/amrfinderplus_data_manager_build/data_manager_build_amrfinderplus/3.10.45+galaxy0	3.10.45+galaxy0
 amrfinderplus_db	estrain	5ba68abd41f6	data_manager_amrfinderplus	toolshed.g2.bx.psu.edu/repos/estrain/amrfinderplus_db/data_manager_amrfinderplus/0.0.3	0.0.3
 amrfinderplus_db	estrain	d453f732f264	amrfinderplus_db	toolshed.g2.bx.psu.edu/repos/estrain/amrfinderplus_db/amrfinderplus_db/3.10.23+galaxy1	3.10.23+galaxy1
+amrfinderplus_db	estrain	b09b80e54642	amrfinderplus_db	toolshed.g2.bx.psu.edu/repos/estrain/amrfinderplus_db/amrfinderplus_db/3.11.11+galaxy1	3.11.11+galaxy1
 analyze_covariates	devteam	738bc749f9a3	gatk_analyze_covariates	toolshed.g2.bx.psu.edu/repos/devteam/analyze_covariates/gatk_analyze_covariates/0.0.5	0.0.5
 ancombc	iuc	939c59ab61cf	ancombc	toolshed.g2.bx.psu.edu/repos/iuc/ancombc/ancombc/1.4.0+galaxy0	1.4.0+galaxy0
 anisotropic_diffusion	imgteam	d13e26f576bc	ip_anisotropic_diffusion	toolshed.g2.bx.psu.edu/repos/imgteam/anisotropic_diffusion/ip_anisotropic_diffusion/0.1	0.1
@@ -6272,6 +6273,7 @@ decoyfasta	galaxyp	b6b2ac0716eb	decoyfasta	toolshed.g2.bx.psu.edu/repos/galaxyp/
 decoyfasta	galaxyp	c15d72720643	decoyfasta	toolshed.g2.bx.psu.edu/repos/galaxyp/decoyfasta/decoyfasta/0.2.0	0.2.0
 dedup_hash	mvdbeek	f33e9e6a6c88	dedup_hash	toolshed.g2.bx.psu.edu/repos/mvdbeek/dedup_hash/dedup_hash/0.1.1	0.1.1
 dedup_realign_bam	yusuf	6b673ffd9e38	dedup_realign_bam_1	toolshed.g2.bx.psu.edu/repos/yusuf/dedup_realign_bam/dedup_realign_bam_1/1.0.0	1.0.0
+deepmicro	iuc	77cbfe3e1b0d	deepmicro	toolshed.g2.bx.psu.edu/repos/iuc/deepmicro/deepmicro/1.4+galaxy0	1.4+galaxy0
 deepstats_dscomparecurves	gtrichard	cbeae0f83ff8	deepstats_compare_curves	toolshed.g2.bx.psu.edu/repos/gtrichard/deepstats_dscomparecurves/deepstats_compare_curves/1.0.0.0	1.0.0.0
 deeptools_alignmentsieve	bgruening	dfc5a344e2c2	deeptools_alignmentsieve	toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_alignmentsieve/deeptools_alignmentsieve/3.0.0.0	3.0.0.0
 deeptools_alignmentsieve	bgruening	48d08791d4f2	deeptools_alignmentsieve	toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_alignmentsieve/deeptools_alignmentsieve/3.0.1.0	3.0.1.0
@@ -6997,7 +6999,7 @@ dram_merge_annotations	iuc	2675f8d7b2a5	dram_merge_annotations	toolshed.g2.bx.ps
 dram_neighborhoods	iuc	fc93558da540	dram_neighborhoods	toolshed.g2.bx.psu.edu/repos/iuc/dram_neighborhoods/dram_neighborhoods/1.3.5+galaxy0	1.3.5+galaxy0
 dram_set_database_locations	iuc	6e52f03e612d	dram_set_database_locations	toolshed.g2.bx.psu.edu/repos/iuc/dram_set_database_locations/dram_set_database_locations/1.3.5+galaxy0	1.3.5+galaxy0
 dram_strainer	iuc	5b577e90f822	dram_strainer	toolshed.g2.bx.psu.edu/repos/iuc/dram_strainer/dram_strainer/1.3.5+galaxy0	1.3.5+galaxy0
-draw_amr_matrix	greg	c5e80637cf3d	draw_amr_matrix	toolshed.g2.bx.psu.edu/repos/greg/draw_amr_matrix/draw_amr_matrix/1.0.0+galaxy0	1.0.0+galaxy0
+draw_amr_matrix	greg	eb86b4bf140e	draw_amr_matrix	toolshed.g2.bx.psu.edu/repos/greg/draw_amr_matrix/draw_amr_matrix/1.0.0+galaxy0	1.0.0+galaxy0
 draw_circos	greg	b73148507037	draw_circos	toolshed.g2.bx.psu.edu/repos/greg/draw_circos/draw_circos/0.69.8+galaxy0	0.69.8+galaxy0
 draw_features	greg	fcf01dad2ceb	draw_features	toolshed.g2.bx.psu.edu/repos/greg/draw_features/draw_features/1.0.0+galaxy0	1.0.0+galaxy0
 draw_features	greg	67520145696f	draw_features	toolshed.g2.bx.psu.edu/repos/greg/draw_features/draw_features/1.0.1+galaxy0	1.0.1+galaxy0
@@ -13422,14 +13424,15 @@ matchms	recetox	30e680e555d4	matchms	toolshed.g2.bx.psu.edu/repos/recetox/matchm
 matchms	recetox	f680068b7863	matchms	toolshed.g2.bx.psu.edu/repos/recetox/matchms/matchms/0.15.0+galaxy0	0.15.0+galaxy0
 matchms	recetox	67ed0d4f3724	matchms	toolshed.g2.bx.psu.edu/repos/recetox/matchms/matchms/0.15.0+galaxy1	0.15.0+galaxy1
 matchms	recetox	9f8532c99845	matchms	toolshed.g2.bx.psu.edu/repos/recetox/matchms/matchms/0.15.0+galaxy2	0.15.0+galaxy2
-matchms	recetox	ff2455f76a26	matchms	toolshed.g2.bx.psu.edu/repos/recetox/matchms/matchms/0.17.0+galaxy0	0.17.0+galaxy0
+matchms	recetox	b768248c37d0	matchms	toolshed.g2.bx.psu.edu/repos/recetox/matchms/matchms/0.17.0+galaxy0	0.17.0+galaxy0
+matchms_convert	recetox	f0ad1b8685fd	matchms_convert	toolshed.g2.bx.psu.edu/repos/recetox/matchms_convert/matchms_convert/0.17.0+galaxy0	0.17.0+galaxy0
 matchms_filtering	recetox	3d275fbdf741	matchms_filtering	toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.14.0+galaxy1	0.14.0+galaxy1
 matchms_filtering	recetox	b8e9a7c7add2	matchms_filtering	toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.15.0+galaxy0	0.15.0+galaxy0
 matchms_filtering	recetox	357df6c47d92	matchms_filtering	toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.17.0+galaxy0	0.17.0+galaxy0
 matchms_formatter	recetox	a5c84c9c1a28	matchms_formatter	toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.1.3	0.1.3
-matchms_formatter	recetox	e1ee139b279a	matchms_formatter	toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.1.4	0.1.4
-matchms_networking	recetox	0009acc67c12	matchms_networking	toolshed.g2.bx.psu.edu/repos/recetox/matchms_networking/matchms_networking/0.17.0+galaxy0	0.17.0+galaxy0
-matchms_split	recetox	169c72b2ce79	matchms_split	toolshed.g2.bx.psu.edu/repos/recetox/matchms_split/matchms_split/0.17.0+galaxy0	0.17.0+galaxy0
+matchms_formatter	recetox	d7271ecb6a6a	matchms_formatter	toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.1.4	0.1.4
+matchms_networking	recetox	641109702e5f	matchms_networking	toolshed.g2.bx.psu.edu/repos/recetox/matchms_networking/matchms_networking/0.17.0+galaxy0	0.17.0+galaxy0
+matchms_split	recetox	13b3e835aded	matchms_split	toolshed.g2.bx.psu.edu/repos/recetox/matchms_split/matchms_split/0.17.0+galaxy0	0.17.0+galaxy0
 match_plasmid_to_reference	public-health-bioinformatics	c917ef6807d7	match_plasmid_to_reference	toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/match_plasmid_to_reference/match_plasmid_to_reference/0.1.0	0.1.0
 matrix_manipulation	md-anderson-bioinformatics	f1bcd79cd923	Matrix_Validations	toolshed.g2.bx.psu.edu/repos/md-anderson-bioinformatics/matrix_manipulation/Matrix_Validations/2.2	2.2
 matrix_manipulation	md-anderson-bioinformatics	f1bcd79cd923	Matrix_Filters	toolshed.g2.bx.psu.edu/repos/md-anderson-bioinformatics/matrix_manipulation/Matrix_Filters/2.1.12	2.1.12
@@ -14059,8 +14062,8 @@ microarray_report	yusuf	882d119ede1f	microarray_reports_1	toolshed.g2.bx.psu.edu
 microarrays	taoufik	cf862e6a6ddb	Get_Datasets	toolshed.g2.bx.psu.edu/repos/taoufik/microarrays/Get_Datasets/20181028	20181028
 microbedb	brinkmanlab	7c2f036e13a7	microbedb_all_fasta	toolshed.g2.bx.psu.edu/repos/brinkmanlab/microbedb/microbedb_all_fasta/1.0	1.0
 microbedb	brinkmanlab	2f6ef3a184df	microbedb_all_fasta	toolshed.g2.bx.psu.edu/repos/brinkmanlab/microbedb/microbedb_all_fasta/1.1	1.1
-micropita	george-weingart	b4cf8c75305b	micropita	toolshed.g2.bx.psu.edu/repos/george-weingart/micropita/micropita/1.0.1	1.0.1
 micropita	sagun98	8fb4630ab314	micropita	toolshed.g2.bx.psu.edu/repos/sagun98/micropita/micropita/1.0.1	1.0.1
+micropita	george-weingart	b4cf8c75305b	micropita	toolshed.g2.bx.psu.edu/repos/george-weingart/micropita/micropita/1.0.1	1.0.1
 micropita_v2	sagun98	0de566f21448	micropita	toolshed.g2.bx.psu.edu/repos/sagun98/micropita_v2/micropita/1.0.1	1.0.1
 microrunqc	estrain	a53acd38d77e	microrunqc	toolshed.g2.bx.psu.edu/repos/estrain/microrunqc/microrunqc/0.0.1	0.0.1
 microrunqc	estrain	50867379763d	microrunqc	toolshed.g2.bx.psu.edu/repos/estrain/microrunqc/microrunqc/1.0.0	1.0.0
@@ -14144,6 +14147,7 @@ minimap2	iuc	7db8d4bc1eea	minimap2	toolshed.g2.bx.psu.edu/repos/iuc/minimap2/min
 minimap2	iuc	6b1e195506a3	minimap2	toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.22+galaxy0	2.22+galaxy0
 minimap2	iuc	c0c2d0941de8	minimap2	toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.23+galaxy0	2.23+galaxy0
 minimap2	iuc	11a0d50a54e6	minimap2	toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.24+galaxy0	2.24+galaxy0
+minimap2	iuc	be1d967337e4	minimap2	toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.26+galaxy0	2.26+galaxy0
 minimus2	edward-kirton	937ba44abdb7	minimus2	toolshed.g2.bx.psu.edu/repos/edward-kirton/minimus2/minimus2/1.0.1	1.0.1
 minipolish	bgruening	1f9f2edc8cf4	minipolish	toolshed.g2.bx.psu.edu/repos/bgruening/minipolish/minipolish/0.1.3+galaxy0	0.1.3+galaxy0
 miniprot	iuc	ef712a5e9834	miniprot	toolshed.g2.bx.psu.edu/repos/iuc/miniprot/miniprot/0.2+galaxy0	0.2+galaxy0
@@ -14251,6 +14255,7 @@ mismatch_frequencies	mvdbeek	3613460e891e	mismatch_frequencies	toolshed.g2.bx.ps
 mismatch_frequencies	mvdbeek	2974c382105c	mismatch_frequencies	toolshed.g2.bx.psu.edu/repos/mvdbeek/mismatch_frequencies/mismatch_frequencies/0.1.0	0.1.0
 mitobim	iuc	ea46115c7f1e	mitobim	toolshed.g2.bx.psu.edu/repos/iuc/mitobim/mitobim/1.9.1	1.9.1
 mitohifi	bgruening	f6065bc6e428	mitohifi	toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi/2+galaxy0	2+galaxy0
+mitohifi	bgruening	99ddbf037d98	mitohifi	toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi/3+galaxy0	3+galaxy0
 mitokmer	cstrittmatter	3c3520289da4	mitokmer_v1	toolshed.g2.bx.psu.edu/repos/cstrittmatter/mitokmer/mitokmer_v1/1.0	1.0
 mitos	iuc	52742626480e	mitos	toolshed.g2.bx.psu.edu/repos/iuc/mitos/mitos/1.0.5	1.0.5
 mitos	iuc	f20804c311de	mitos	toolshed.g2.bx.psu.edu/repos/iuc/mitos/mitos/1.0.5+galaxy1	1.0.5+galaxy1
@@ -17775,8 +17780,8 @@ package_freebayes_0_9_20_b040236	devteam	059e6e3d99cc	invalid	invalid	invalid
 package_freebayes_0_9_6_9608597d	devteam	7615ee9e216d	invalid	invalid	invalid
 package_freetype_2_4	iuc	b32452aa80dc	invalid	invalid	invalid
 package_freetype_2_5_2	boris	f349e776ca59	invalid	invalid	invalid
-package_freetype_2_5_2	devteam	a65217367e4a	invalid	invalid	invalid
 package_freetype_2_5_2	iuc	1e86d1cf79a4	invalid	invalid	invalid
+package_freetype_2_5_2	devteam	a65217367e4a	invalid	invalid	invalid
 package_freetype_2_5_2_matplotlib_fix	iuc	26586565bc22	invalid	invalid	invalid
 package_fuma_2_10_0	yhoogstrate	48783f711368	invalid	invalid	invalid
 package_fuma_2_10_1	yhoogstrate	bd66bc0860db	invalid	invalid	invalid
@@ -19458,7 +19463,7 @@ pileup_to_vcf	jjohnson	07cd87e94fbe	pileup_to_vcf	toolshed.g2.bx.psu.edu/repos/j
 pileup_to_vcf	jjohnson	c0a6e8f595ec	pileup_to_vcf	toolshed.g2.bx.psu.edu/repos/jjohnson/pileup_to_vcf/pileup_to_vcf/2.2	2.2
 pilon	iuc	fe0dc27e6327	pilon	toolshed.g2.bx.psu.edu/repos/iuc/pilon/pilon/0.1	0.1
 pilon	iuc	11e5408fd238	pilon	toolshed.g2.bx.psu.edu/repos/iuc/pilon/pilon/1.20.1	1.20.1
-pima_report	greg	27485e70ed2b	pima_report	toolshed.g2.bx.psu.edu/repos/greg/pima_report/pima_report/1.0.0+galaxy0	1.0.0+galaxy0
+pima_report	greg	134a0879d0b6	pima_report	toolshed.g2.bx.psu.edu/repos/greg/pima_report/pima_report/1.0.0+galaxy0	1.0.0+galaxy0
 pindel	portiahollyoak	374bb08157ca	pindel	toolshed.g2.bx.psu.edu/repos/portiahollyoak/pindel/pindel/0.2.5b8	0.2.5b8
 pindel	artbio	decc6b5631dc	pindel	toolshed.g2.bx.psu.edu/repos/artbio/pindel/pindel/0.2.5b8+galaxy1	0.2.5b8+galaxy1
 pindel2vcf	portiahollyoak	f8f8dbf89999	pindel2vcf	toolshed.g2.bx.psu.edu/repos/portiahollyoak/pindel2vcf/pindel2vcf/0.6.3	0.6.3
@@ -21258,7 +21263,7 @@ recetox_aplcms_adjust_time	recetox	18eadec69334	recetox_aplcms_adjust_time	tools
 recetox_aplcms_align_features	recetox	57c644d3f24c	recetox_aplcms_align_features	toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.9.4+galaxy0	0.9.4+galaxy0
 recetox_aplcms_align_features	recetox	b07fd3d7ffd0	recetox_aplcms_align_features	toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.9.4+galaxy1	0.9.4+galaxy1
 recetox_aplcms_align_features	recetox	abe783e0daca	recetox_aplcms_align_features	toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.10.1+galaxy0	0.10.1+galaxy0
-recetox_aplcms_align_features	recetox	1e2a13bcb5a7	recetox_aplcms_align_features	toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.10.3+galaxy0	0.10.3+galaxy0
+recetox_aplcms_align_features	recetox	a85b9670051c	recetox_aplcms_align_features	toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.10.3+galaxy0	0.10.3+galaxy0
 recetox_aplcms_compute_clusters	recetox	82737757f3d5	recetox_aplcms_compute_clusters	toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_compute_clusters/recetox_aplcms_compute_clusters/0.10.1+galaxy0	0.10.1+galaxy0
 recetox_aplcms_compute_clusters	recetox	092bbb03a217	recetox_aplcms_compute_clusters	toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_compute_clusters/recetox_aplcms_compute_clusters/0.10.3+galaxy0	0.10.3+galaxy0
 recetox_aplcms_compute_template	recetox	38469e025939	recetox_aplcms_compute_template	toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_compute_template/recetox_aplcms_compute_template/0.10.1+galaxy0	0.10.1+galaxy0
@@ -21369,11 +21374,16 @@ repeat_annotation_pipeline3	petr-novak	eca9213923b1	repeat_annotate	toolshed.g2.
 repeat_annotation_pipeline3	petr-novak	eca9213923b1	annotate_contigs	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/annotate_contigs/0.1.0	0.1.0
 repeat_annotation_pipeline3	petr-novak	eca9213923b1	summarize_gff_by_attribute	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/summarize_gff_by_attribute/0.1.0	0.1.0
 repeat_annotation_pipeline3	petr-novak	eca9213923b1	extract_re_contigs	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/extract_re_contigs/0.1.1	0.1.1
-repeat_annotation_pipeline3	petr-novak	acf12f2e8355	repeat_annotate	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/repeat_annotate/0.1.3	0.1.3
-repeat_annotation_pipeline3	petr-novak	acf12f2e8355	annotate_contigs	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/annotate_contigs/0.1.0	0.1.0
-repeat_annotation_pipeline3	petr-novak	acf12f2e8355	summarize_gff_by_attribute	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/summarize_gff_by_attribute/0.1.0	0.1.0
-repeat_annotation_pipeline3	petr-novak	acf12f2e8355	compare_gff	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/compare_gff/0.1.0	0.1.0
-repeat_annotation_pipeline3	petr-novak	acf12f2e8355	extract_re_contigs	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/extract_re_contigs/0.1.1	0.1.1
+repeat_annotation_pipeline3	petr-novak	4a068d23fda6	repeat_annotate	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/repeat_annotate/0.1.3	0.1.3
+repeat_annotation_pipeline3	petr-novak	4a068d23fda6	annotate_contigs	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/annotate_contigs/0.1.0	0.1.0
+repeat_annotation_pipeline3	petr-novak	4a068d23fda6	summarize_gff_by_attribute	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/summarize_gff_by_attribute/0.1.0	0.1.0
+repeat_annotation_pipeline3	petr-novak	4a068d23fda6	compare_gff	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/compare_gff/0.1.0	0.1.0
+repeat_annotation_pipeline3	petr-novak	4a068d23fda6	extract_re_contigs	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/extract_re_contigs/0.1.1	0.1.1
+repeat_annotation_pipeline3	petr-novak	276efc4cb17f	repeat_annotate	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/repeat_annotate/0.1.5	0.1.5
+repeat_annotation_pipeline3	petr-novak	276efc4cb17f	annotate_contigs	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/annotate_contigs/0.1.0	0.1.0
+repeat_annotation_pipeline3	petr-novak	276efc4cb17f	summarize_gff_by_attribute	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/summarize_gff_by_attribute/0.1.0	0.1.0
+repeat_annotation_pipeline3	petr-novak	276efc4cb17f	compare_gff	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/compare_gff/0.1.0	0.1.0
+repeat_annotation_pipeline3	petr-novak	276efc4cb17f	extract_re_contigs	toolshed.g2.bx.psu.edu/repos/petr-novak/repeat_annotation_pipeline3/extract_re_contigs/0.1.1	0.1.1
 repeatexplorer2	petr-novak	2f52966cbaf1	repeatexplorer2	toolshed.g2.bx.psu.edu/repos/petr-novak/repeatexplorer2/repeatexplorer2/2.3.7	2.3.7
 repeatexplorer2	petr-novak	2f52966cbaf1	tarean	toolshed.g2.bx.psu.edu/repos/petr-novak/repeatexplorer2/tarean/2.3.7	2.3.7
 repeatexplorer2	petr-novak	fe2220ee2fd1	repeatexplorer2	toolshed.g2.bx.psu.edu/repos/petr-novak/repeatexplorer2/repeatexplorer2/2.3.8	2.3.8
@@ -21416,6 +21426,7 @@ repeatmodeler	csbl	4f0c878b36d4	repeatmodeler	toolshed.g2.bx.psu.edu/repos/csbl/
 repeatmodeler	csbl	41bfbaf3c959	repeatmodeler	toolshed.g2.bx.psu.edu/repos/csbl/repeatmodeler/repeatmodeler/2.0.2a+galaxy0	2.0.2a+galaxy0
 repeatmodeler	csbl	1e10310ce195	repeatmodeler	toolshed.g2.bx.psu.edu/repos/csbl/repeatmodeler/repeatmodeler/2.0.3+galaxy0	2.0.3+galaxy0
 repeatmodeler	csbl	a9fb165808c8	repeatmodeler	toolshed.g2.bx.psu.edu/repos/csbl/repeatmodeler/repeatmodeler/2.0.4+galaxy0	2.0.4+galaxy0
+repeatmodeler	csbl	8661b2607b7e	repeatmodeler	toolshed.g2.bx.psu.edu/repos/csbl/repeatmodeler/repeatmodeler/2.0.4+galaxy1	2.0.4+galaxy1
 repeatrxplorer	petr-novak	54897aa887fe	repeatexplorer2	toolshed.g2.bx.psu.edu/repos/petr-novak/repeatrxplorer/repeatexplorer2/1.0.0	1.0.0
 repeatrxplorer	petr-novak	54897aa887fe	tarean	toolshed.g2.bx.psu.edu/repos/petr-novak/repeatrxplorer/tarean/1.0.0	1.0.0
 repeatrxplorer	petr-novak	394a697ffa49	repeatexplorer2x	toolshed.g2.bx.psu.edu/repos/petr-novak/repeatrxplorer/repeatexplorer2x/2.3.6	2.3.6
@@ -24950,6 +24961,7 @@ smina	earlhaminst	7c0bb0c48a27	smina	toolshed.g2.bx.psu.edu/repos/earlhaminst/sm
 smoukbel	smokbel	de7c97828817	haplotype_analyser	toolshed.g2.bx.psu.edu/repos/smokbel/smoukbel/haplotype_analyser/1.0.0	1.0.0
 smudgeplot	galaxy-australia	24e471d13fe9	smudgeplot	toolshed.g2.bx.psu.edu/repos/galaxy-australia/smudgeplot/smudgeplot/0.2.5+galaxy+1	0.2.5+galaxy+1
 smudgeplot	galaxy-australia	5e0825476fb7	smudgeplot	toolshed.g2.bx.psu.edu/repos/galaxy-australia/smudgeplot/smudgeplot/0.2.5+galaxy+2	0.2.5+galaxy+2
+smudgeplot	galaxy-australia	5a0ddb4dc3a4	smudgeplot	toolshed.g2.bx.psu.edu/repos/galaxy-australia/smudgeplot/smudgeplot/0.2.5+galaxy3	0.2.5+galaxy3
 snap	yating-l	57299471d6c1	snap	toolshed.g2.bx.psu.edu/repos/yating-l/snap/snap/1.0	1.0
 snap	iuc	d398b2e6b2ff	snap	toolshed.g2.bx.psu.edu/repos/iuc/snap/snap/2013_11_29	2013_11_29
 snap_training	iuc	821bf8bc5623	snap_training	toolshed.g2.bx.psu.edu/repos/iuc/snap_training/snap_training/2013_11_29	2013_11_29
@@ -26315,7 +26327,7 @@ suite_query_tabular	iuc	884790646b80	invalid	invalid	invalid
 suite_raceid	iuc	e37e339c9a55	invalid	invalid	invalid
 suite_rdkit	bgruening	592e83e672ac	invalid	invalid	invalid
 suite_rdock	bgruening	bc8da7d9f970	invalid	invalid	invalid
-suite_recetox_aplcms	recetox	d1d9bdeddace	invalid	invalid	invalid
+suite_recetox_aplcms	recetox	32f5454bc548	invalid	invalid	invalid
 suite_regionalgam	ecology	77372f802c23	invalid	invalid	invalid
 suite_reshape2	iuc	134789173b18	invalid	invalid	invalid
 suite_rgrnastar	iuc	8f1a1b8e50e9	invalid	invalid	invalid
@@ -28393,6 +28405,7 @@ vep_rest	saket-choudhary	de145ceb3ac0	invalid	invalid	invalid
 vep_rest	saket-choudhary	3645d1bcc7bb	vep_rest	toolshed.g2.bx.psu.edu/repos/saket-choudhary/vep_rest/vep_rest/1.0.0	1.0.0
 verify_map	nml	12f1714f7716	verify_map	toolshed.g2.bx.psu.edu/repos/nml/verify_map/verify_map/1.8.2	1.8.2
 verify_map	nml	80b7566e62ec	verify_map	toolshed.g2.bx.psu.edu/repos/nml/verify_map/verify_map/1.8.2+galaxy1	1.8.2+galaxy1
+verkko	iuc	b9a78a7ca2f3	verkko	toolshed.g2.bx.psu.edu/repos/iuc/verkko/verkko/1.2+galaxy1	1.2+galaxy1
 versioned_data	damion	d31a1bd74e63	ffp_phylogeny	toolshed.g2.bx.psu.edu/repos/damion/versioned_data/ffp_phylogeny/0.1.04	0.1.04
 versioned_data	damion	269d246ce6d0	versioned_data	toolshed.g2.bx.psu.edu/repos/damion/versioned_data/versioned_data/0.1.03	0.1.03
 vg_convert	iuc	7366704232b6	vg_convert	toolshed.g2.bx.psu.edu/repos/iuc/vg_convert/vg_convert/1.23.0	1.23.0
