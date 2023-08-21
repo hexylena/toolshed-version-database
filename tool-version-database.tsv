@@ -249,6 +249,7 @@ ampvis2_venn	iuc	36d4584a5ceb	ampvis2_venn	toolshed.g2.bx.psu.edu/repos/iuc/ampv
 ampvis2_venn	iuc	62c6d4c55190	ampvis2_venn	toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_venn/ampvis2_venn/2.7.22+galaxy0	2.7.22+galaxy0
 amrfinderplus	iuc	a37bb163d05d	amrfinderplus	toolshed.g2.bx.psu.edu/repos/iuc/amrfinderplus/amrfinderplus/3.11.14+galaxy0	3.11.14+galaxy0
 amrfinderplus	iuc	a140f9826f3a	amrfinderplus	toolshed.g2.bx.psu.edu/repos/iuc/amrfinderplus/amrfinderplus/3.11.17+galaxy0	3.11.17+galaxy0
+amrfinderplus	iuc	8904f2ae4788	amrfinderplus	toolshed.g2.bx.psu.edu/repos/iuc/amrfinderplus/amrfinderplus/3.11.18+galaxy0	3.11.18+galaxy0
 amrfinderplus	thanhlv	a9e5d593228e	amrfinder	toolshed.g2.bx.psu.edu/repos/thanhlv/amrfinderplus/amrfinder/3.1.1b+galaxy1	3.1.1b+galaxy1
 amrfinderplus_data_manager_build	iuc	592ef3959907	data_manager_build_amrfinderplus	toolshed.g2.bx.psu.edu/repos/iuc/amrfinderplus_data_manager_build/data_manager_build_amrfinderplus/3.10.45+galaxy0	3.10.45+galaxy0
 amrfinderplus_db	estrain	5ba68abd41f6	data_manager_amrfinderplus	toolshed.g2.bx.psu.edu/repos/estrain/amrfinderplus_db/data_manager_amrfinderplus/0.0.3	0.0.3
@@ -5183,6 +5184,8 @@ cmpfastq	amol	234e2fb5de01	cmpfastq	toolshed.g2.bx.psu.edu/repos/amol/cmpfastq/c
 cmpfastq	amol	fcf6244ff26e	cmpfastq	toolshed.g2.bx.psu.edu/repos/amol/cmpfastq/cmpfastq/1.0.0	1.0.0
 cmpfastq	amol	9aa4873089df	cmpfastq	toolshed.g2.bx.psu.edu/repos/amol/cmpfastq/cmpfastq/1.0.0	1.0.0
 cmpfastq	nilesh	54ab39950f59	cmpfastq	toolshed.g2.bx.psu.edu/repos/nilesh/cmpfastq/cmpfastq/1.0.0	1.0.0
+cmsearch_deoverlap	rnateam	54b16c794341	cmsearch_deoverlap	toolshed.g2.bx.psu.edu/repos/rnateam/cmsearch_deoverlap/cmsearch_deoverlap/0.08+galaxy0	0.08+galaxy0
+cmsearch_tblout_deoverlap_tool	fubar	ef644fd49e98	cmsearchtbloutdeoverlap	toolshed.g2.bx.psu.edu/repos/fubar/cmsearch_tblout_deoverlap_tool/cmsearchtbloutdeoverlap/0.001	0.001
 cmv	rnateam	6baa763b77ba	cmv	toolshed.g2.bx.psu.edu/repos/rnateam/cmv/cmv/1.0.6.1	1.0.6.1
 cmv	rnateam	6e36667f1729	cmv	toolshed.g2.bx.psu.edu/repos/rnateam/cmv/cmv/1.0.8	1.0.8
 cnvkit_access	iuc	22878d2aff05	cnvkit_access	toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_access/cnvkit_access/0.9.10+galaxy0	0.9.10+galaxy0
@@ -5418,9 +5421,11 @@ coverage_stats	peterjc	ed501717f6cd	coverage_stats	toolshed.g2.bx.psu.edu/repos/
 coverm_contig	iuc	6941d0d453ba	coverm_contig	toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.2.1	0.2.1
 coverm_contig	iuc	f8cb3f0a19fa	coverm_contig	toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.6.1+galaxy0	0.6.1+galaxy0
 coverm_contig	iuc	c2a5823e4763	coverm_contig	toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.6.1+galaxy1	0.6.1+galaxy1
+coverm_contig	iuc	1dcea261abbe	coverm_contig	toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.6.1+galaxy2	0.6.1+galaxy2
 coverm_genome	iuc	134e4e78e754	coverm_genome	toolshed.g2.bx.psu.edu/repos/iuc/coverm_genome/coverm_genome/0.2.1+galaxy0	0.2.1+galaxy0
 coverm_genome	iuc	5bf5792b0996	coverm_genome	toolshed.g2.bx.psu.edu/repos/iuc/coverm_genome/coverm_genome/0.6.1+galaxy0	0.6.1+galaxy0
 coverm_genome	iuc	bb3f59096c8e	coverm_genome	toolshed.g2.bx.psu.edu/repos/iuc/coverm_genome/coverm_genome/0.6.1+galaxy1	0.6.1+galaxy1
+coverm_genome	iuc	0ff4b0e5a3bc	coverm_genome	toolshed.g2.bx.psu.edu/repos/iuc/coverm_genome/coverm_genome/0.6.1+galaxy2	0.6.1+galaxy2
 cpat	bgruening	8e9e228c54c4	cpat	toolshed.g2.bx.psu.edu/repos/bgruening/cpat/cpat/3.0.4+galaxy0	3.0.4+galaxy0
 cp_cellprofiler	bgruening	e917a2424690	cp_cellprofiler	toolshed.g2.bx.psu.edu/repos/bgruening/cp_cellprofiler/cp_cellprofiler/3.1.9	3.1.9
 cp_cellprofiler	bgruening	0e4dccaafef5	cp_cellprofiler	toolshed.g2.bx.psu.edu/repos/bgruening/cp_cellprofiler/cp_cellprofiler/3.1.9+galaxy0	3.1.9+galaxy0
@@ -16998,6 +17003,7 @@ oncoenrichr	sigven	fb035154d720	oncoenrichr_wrapper	toolshed.g2.bx.psu.edu/repos
 oncoenrichr	sigven	3c61ef74a176	oncoenrichr_wrapper	toolshed.g2.bx.psu.edu/repos/sigven/oncoenrichr/oncoenrichr_wrapper/1.3.2	1.3.2
 oncoenrichr	sigven	781e1a7160d8	oncoenrichr_wrapper	toolshed.g2.bx.psu.edu/repos/sigven/oncoenrichr/oncoenrichr_wrapper/1.4.0	1.4.0
 oncoenrichr	sigven	162b7482ae84	oncoenrichr_wrapper	toolshed.g2.bx.psu.edu/repos/sigven/oncoenrichr/oncoenrichr_wrapper/1.4.1	1.4.1
+oncoenrichr	sigven	60dde5746a5e	oncoenrichr_wrapper	toolshed.g2.bx.psu.edu/repos/sigven/oncoenrichr/oncoenrichr_wrapper/1.4.2	1.4.2
 ont_fast5_api_compress_fast5	iuc	52da1e2c82d3	ont_fast5_api_compress_fast5	toolshed.g2.bx.psu.edu/repos/iuc/ont_fast5_api_compress_fast5/ont_fast5_api_compress_fast5/3.1.3+galaxy0	3.1.3+galaxy0
 ont_fast5_api_compress_fast5	iuc	82c6009bc120	ont_fast5_api_compress_fast5	toolshed.g2.bx.psu.edu/repos/iuc/ont_fast5_api_compress_fast5/ont_fast5_api_compress_fast5/3.1.3+galaxy1	3.1.3+galaxy1
 ont_fast5_api_fast5_subset	iuc	eb1f4aa80c72	ont_fast5_api_fast5_subset	toolshed.g2.bx.psu.edu/repos/iuc/ont_fast5_api_fast5_subset/ont_fast5_api_fast5_subset/3.1.3+galaxy0	3.1.3+galaxy0
@@ -18819,8 +18825,8 @@ package_searchgui_1_28	iracooke	0d8bbd52ae42	invalid	invalid	invalid
 package_searchgui_2_1	galaxyp	42249a2266ba	invalid	invalid	invalid
 package_searchgui_2_8	galaxyp	33a7c9c42472	invalid	invalid	invalid
 package_searchgui_2_9	galaxyp	a04e562f2ff0	invalid	invalid	invalid
-package_segemehl_0_1_6	rnateam	7078b80ffc12	invalid	invalid	invalid
 package_segemehl_0_1_6	iuc	96b24d5337be	invalid	invalid	invalid
+package_segemehl_0_1_6	rnateam	7078b80ffc12	invalid	invalid	invalid
 package_segemehl_0_2_0	iuc	11cce9ae6cc6	invalid	invalid	invalid
 package_segmentation_fold_1_0_0	yhoogstrate	f4fce0d27352	invalid	invalid	invalid
 package_segmentation_fold_1_1_0	yhoogstrate	2c69127ea0cd	invalid	invalid	invalid
@@ -25464,15 +25470,15 @@ sicer	devteam	74c9214cc8e6	peakcalling_sicer	toolshed.g2.bx.psu.edu/repos/devtea
 sicer	devteam	5c2cc3b58c7d	peakcalling_sicer	toolshed.g2.bx.psu.edu/repos/devteam/sicer/peakcalling_sicer/1.1	1.1
 sickle	nikhil-joshi	f6ebdaca9925	sickle	toolshed.g2.bx.psu.edu/repos/nikhil-joshi/sickle/sickle/1.0.0	1.0.0
 sickle	nikhil-joshi	b105c7163a5b	sickle	toolshed.g2.bx.psu.edu/repos/nikhil-joshi/sickle/sickle/1.33	1.33
+sickle	iuc	edaa8572219d	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33	1.33
+sickle	iuc	3905ccd5c631	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33.1	1.33.1
+sickle	iuc	6756c87dc2d4	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33.2	1.33.2
 sickle	amol	56885290945c	sickle	toolshed.g2.bx.psu.edu/repos/amol/sickle/sickle/1.0.0	1.0.0
 sickle	amol	8335256dea97	sickle	toolshed.g2.bx.psu.edu/repos/amol/sickle/sickle/1.0.0	1.0.0
 sickle	nilesh	c522aaea6880	sickle	toolshed.g2.bx.psu.edu/repos/nilesh/sickle/sickle/1.0.0	1.0.0
 sickle	nilesh	8d697edc2f55	sickle	toolshed.g2.bx.psu.edu/repos/nilesh/sickle/sickle/1.0.0	1.0.0
 sickle	nilesh	4f6349319c0a	sickle	toolshed.g2.bx.psu.edu/repos/nilesh/sickle/sickle/1.0.0	1.0.0
 sickle	nilesh	dd2ec1b37e96	sickle	toolshed.g2.bx.psu.edu/repos/nilesh/sickle/sickle/1.0.0	1.0.0
-sickle	iuc	edaa8572219d	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33	1.33
-sickle	iuc	3905ccd5c631	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33.1	1.33.1
-sickle	iuc	6756c87dc2d4	sickle	toolshed.g2.bx.psu.edu/repos/iuc/sickle/sickle/1.33.2	1.33.2
 sickle_1_33	slegras	1405432d1b9c	sickle	toolshed.g2.bx.psu.edu/repos/slegras/sickle_1_33/sickle/1.33	1.33
 sift_web	saket-choudhary	697e66764209	sift_web	toolshed.g2.bx.psu.edu/repos/saket-choudhary/sift_web/sift_web/1.0.0	1.0.0
 sigqc	adhawan	5e65b8e6c20c	sigqc	toolshed.g2.bx.psu.edu/repos/adhawan/sigqc/sigqc/0.1.14	0.1.14
@@ -27060,7 +27066,7 @@ suite_cnvkit	iuc	f26bdc4da1fd	invalid	invalid	invalid
 suite_cojac	iuc	fb2dcf6b3217	invalid	invalid	invalid
 suite_colibread	iuc	7019feb7cc0d	invalid	invalid	invalid
 suite_concoct	iuc	529b7ab11f2f	invalid	invalid	invalid
-suite_coverm	iuc	6a489bac67ce	invalid	invalid	invalid
+suite_coverm	iuc	3fe2e4aa6984	invalid	invalid	invalid
 suite_crossmap	iuc	b366c9b09e79	invalid	invalid	invalid
 suite_csvtk	nml	d2bb6610c93e	invalid	invalid	invalid
 suite_ctat_fusion_tools	trinity_ctat	31c1e729fe44	invalid	invalid	invalid
@@ -27544,6 +27550,7 @@ tb_variant_filter	iuc	3b1e7c170b10	tb_variant_filter	toolshed.g2.bx.psu.edu/repo
 tb_variant_filter	iuc	40f0591deda0	tb_variant_filter	toolshed.g2.bx.psu.edu/repos/iuc/tb_variant_filter/tb_variant_filter/0.3.5+galaxy1	0.3.5+galaxy1
 tb_variant_filter	iuc	e7aff4a85df5	tb_variant_filter	toolshed.g2.bx.psu.edu/repos/iuc/tb_variant_filter/tb_variant_filter/0.3.5+galaxy2	0.3.5+galaxy2
 tb_variant_filter	iuc	ee4a90760848	tb_variant_filter	toolshed.g2.bx.psu.edu/repos/iuc/tb_variant_filter/tb_variant_filter/0.3.6+galaxy0	0.3.6+galaxy0
+tb_variant_filter	iuc	32f14a2723ec	tb_variant_filter	toolshed.g2.bx.psu.edu/repos/iuc/tb_variant_filter/tb_variant_filter/0.4.0+galaxy0	0.4.0+galaxy0
 tbvcfreport	iuc	02d81b994ef5	tbvcfreport	toolshed.g2.bx.psu.edu/repos/iuc/tbvcfreport/tbvcfreport/0.1.7+galaxy0	0.1.7+galaxy0
 tbvcfreport	iuc	adc0645b945c	tbvcfreport	toolshed.g2.bx.psu.edu/repos/iuc/tbvcfreport/tbvcfreport/0.1.8+galaxy0	0.1.8+galaxy0
 tbvcfreport	iuc	4934c0ac6197	tbvcfreport	toolshed.g2.bx.psu.edu/repos/iuc/tbvcfreport/tbvcfreport/0.1.10+galaxy0	0.1.10+galaxy0
@@ -28113,6 +28120,9 @@ thermo_raw_file_converter	galaxyp	b9b385097f13	thermo_raw_file_converter	toolshe
 thermo_raw_file_converter	galaxyp	19e45916daf9	thermo_raw_file_converter	toolshed.g2.bx.psu.edu/repos/galaxyp/thermo_raw_file_converter/thermo_raw_file_converter/1.3.4+galaxy0	1.3.4+galaxy0
 tidecluster	petr-novak	eac66eb6a5cf	tidecluster	toolshed.g2.bx.psu.edu/repos/petr-novak/tidecluster/tidecluster/0.8.1	0.8.1
 tidecluster	petr-novak	eac66eb6a5cf	tidecluster_annotation	toolshed.g2.bx.psu.edu/repos/petr-novak/tidecluster/tidecluster_annotation/0.8.1	0.8.1
+tidecluster	petr-novak	299f14a6050a	tc_reannotate	toolshed.g2.bx.psu.edu/repos/petr-novak/tidecluster/tc_reannotate/@TOOL_VERSION	@TOOL_VERSION
+tidecluster	petr-novak	299f14a6050a	tidecluster	toolshed.g2.bx.psu.edu/repos/petr-novak/tidecluster/tidecluster/1.1	1.1
+tidecluster	petr-novak	299f14a6050a	tidecluster_annotation	toolshed.g2.bx.psu.edu/repos/petr-novak/tidecluster/tidecluster_annotation/1.1	1.1
 timeseries_extraction	ecology	810820a0d45c	timeseries_extraction	toolshed.g2.bx.psu.edu/repos/ecology/timeseries_extraction/timeseries_extraction/2022.3.0+galaxy0	2022.3.0+galaxy0
 tleap	chemteam	3de1359b86cc	tleap	toolshed.g2.bx.psu.edu/repos/chemteam/tleap/tleap/21.10+galaxy0	21.10+galaxy0
 tmap_wrapper	nilshomer	40ade4f81a30	tmap_wrapper	toolshed.g2.bx.psu.edu/repos/nilshomer/tmap_wrapper/tmap_wrapper/0.0.19	0.0.19
