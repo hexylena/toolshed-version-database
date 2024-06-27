@@ -27,12 +27,17 @@ jobs:
           python fetch.py > tool-version-database.tsv
           python convert.py tool-version-database.tsv
           python fetch2.py
+          cat tool-meta.json | jq -c > tmp;
+          mv tmp tool-meta.json
 
       - name: Commit
         run: |
             git config --global user.email "bot@hexylena.github.io"
             git config --global user.name "Github Actions Bot"
             git add tool-version-database.tsv
+            git add guid-rev.json
+            git add tool-meta.tsv
+            git add tool-meta.json
             git commit -a -m 'Automated commit'
             git push
         continue-on-error: true
