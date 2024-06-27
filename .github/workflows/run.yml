@@ -26,6 +26,7 @@ jobs:
         run: |
           python fetch.py > tool-version-database.tsv
           python convert.py tool-version-database.tsv
+          python fetch2.py
 
       - name: Commit
         run: |
