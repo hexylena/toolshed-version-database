@@ -14729,3 +14729,298 @@ toolshed.g2.bx.psu.edu/repos/iuc/yahs/yahs/1.2a+galaxy1	YAHS	yet another HI-C sc
 toolshed.g2.bx.psu.edu/repos/iuc/yahs/yahs/1.2a.2+galaxy0	YAHS	yet another HI-C scaffolding tool		
 toolshed.g2.bx.psu.edu/repos/iuc/yahs/yahs/1.2a.2+galaxy1	YAHS	yet another HI-C scaffolding tool		
 toolshed.g2.bx.psu.edu/repos/ecology/zoo_project_ogc_api_processes/zoo_project_ogc_api_processes/0.1.0	Zoo Project OGC API Processes	executes remote OTB processes		
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_apply_recalibration/0.0.7	Apply Variant Recalibration			
+toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/1.2.3+galaxy0	Nextclade			topic_3324,topic_3305,topic_0084
+toolshed.g2.bx.psu.edu/repos/galaxyp/dbbuilder/dbbuilder/0.1.0	Protein Database Downloader			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_fasta_to_gspan/gspan/0.1	fasta_to_gspan			
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_cluster_reduce_dimension/scanpy_cluster_reduce_dimension/1.4+galaxy0	Cluster and reduce dimension with scanpy			
+toolshed.g2.bx.psu.edu/repos/iuc/tag_pileup_frequency/tag_pileup_frequency/1.0.2	Tag pileup frequency			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.1	cluster_collection_report			
+toolshed.g2.bx.psu.edu/repos/devteam/megablast_xml_parser/megablast_xml_parser/1.0.1	Parse blast XML output			
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_montage/graphicsmagick_image_montage/1.3.42+galaxy0	Image Montage			
+toolshed.g2.bx.psu.edu/repos/rnateam/footprint/footprint/1.0.0	footprint			
+toolshed.g2.bx.psu.edu/repos/devteam/megablast_xml_parser/megablast_xml_parser/1.0.0	Parse blast XML output			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_motif_finder_plot/motifFinderPlot/0.4	Motif_Finder_Plot			
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_convert/graphicsmagick_image_convert/1.3.31	Image Converter			
+toolshed.g2.bx.psu.edu/repos/iuc/trimns/trimns/0.1.0	TrimN			
+toolshed.g2.bx.psu.edu/repos/iuc/jcvi_gff_stats/jcvi_gff_stats/0.8.4	Genome annotation statistics			
+toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.3.0+galaxy0	Arriba Draw Fusions			
+toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/0.14.2+galaxy1	Nextclade			topic_3305,topic_3324,topic_0084
+toolshed.g2.bx.psu.edu/repos/iuc/bbgbigwig/bbgtobigwig/0.1	BAM BED GFF coverage bigWigs			
+toolshed.g2.bx.psu.edu/repos/recetox/biotransformer/biotransformer/3.0_20230403+galaxy0	BioTransformer			
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.4+galaxy0	Plot with scanpy			
+toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.2.1	CoverM-CONTIG			
+toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regex1/1.0.1	Regex Find And Replace			
+toolshed.g2.bx.psu.edu/repos/iuc/bedops_sortbed/bedops-sort-bed/2.4.41	bedops sort-bed			
+toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357	Convert GTF to BED12			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/nspdk_sparse/9.2	NSPDK_sparseVect			
+toolshed.g2.bx.psu.edu/repos/iuc/te_finder/te_finder/1.0.1	TEfinder	Transposable element insertions finder		
+toolshed.g2.bx.psu.edu/repos/gga/genenotebook_genenotebook_build/genenotebook_build/0.4.9+galaxy0	Build a GeneNoteBook			
+toolshed.g2.bx.psu.edu/repos/bgruening/circexplorer/circexplorer/0.1.0	CIRCexplorer			
+toolshed.g2.bx.psu.edu/repos/galaxyp/dbbuilder/dbbuilder/0.2.0	Protein Database Downloader			
+toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.4.0+galaxy1	Arriba Draw Fusions			
+toolshed.g2.bx.psu.edu/repos/devteam/picard/rgEstLibComp/1.56.0	Estimate Library Complexity			
+toolshed.g2.bx.psu.edu/repos/bgruening/circexplorer/circexplorer/1.1.9.0	CIRCexplorer			
+toolshed.g2.bx.psu.edu/repos/iuc/malt_run/malt_run/0.5.3+galaxy1	MALT analyzer			
+toolshed.g2.bx.psu.edu/repos/iuc/vardict_java/vardict_java/1.8.3+galaxy1	VarDict	calls SNVs and indels for tumor-normal pairs	operation_3227	
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_normalize/scanpy_normalize/1.4+galaxy0	Normalize with scanpy			
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_montage/graphicsmagick_image_montage/1.3.43+galaxy0	Image Montage			
+toolshed.g2.bx.psu.edu/repos/iuc/trinotate/trinotate/3.1.1	Trinotate			
+toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regexColumn1/1.0.3	Column Regex Find And Replace			
+toolshed.g2.bx.psu.edu/repos/astroteam/cta_astro_tool/cta_astro_tool/0.0.1+galaxy0	CTA			
+toolshed.g2.bx.psu.edu/repos/devteam/fastx_renamer/cshl_fastx_renamer/0.0.11	Rename sequences			
+toolshed.g2.bx.psu.edu/repos/devteam/fastx_renamer/cshl_fastx_renamer/0.0.14+galaxy0	Rename sequences			
+toolshed.g2.bx.psu.edu/repos/ecology/map_shp/Map_shp/0.1.0+galaxy0	Make a map with a shapefile			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_annotator/0.0.7	Variant Annotator			
+toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regex1/1.0.0	Regex Find And Replace			
+toolshed.g2.bx.psu.edu/repos/devteam/count_gff_features/count_gff_features/0.2	Count GFF Features			
+toolshed.g2.bx.psu.edu/repos/iuc/tag_pileup_frequency/tag_pileup_frequency/1.0.0	Tag pileup frequency			
+toolshed.g2.bx.psu.edu/repos/iuc/kc_align/kc-align/0.1.4	Kc-Align		operation_0492	topic_0102
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_preprocessing/preproc/0.1	Preprocessing			
+toolshed.g2.bx.psu.edu/repos/yhoogstrate/segmentation_fold/smf_utils_estimate-energy/smf-v1.7-0_utils-v2.1.1-2	estimate-energy	Estimates whether a certain Segment(Loop) is present and for which delta-G this transistion takes place		
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.2	pgma_graphclust			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_apply_recalibration/2.8.0	Apply Variant Recalibration			
+toolshed.g2.bx.psu.edu/repos/iuc/pretext_map/pretext_map/0.1.7+galaxy0	PretextMap			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2.3	NSPDK_candidateClusters			
+toolshed.g2.bx.psu.edu/repos/devteam/best_regression_subsets/BestSubsetsRegression1/0.0.1	Perform Best-subsets Regression			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.4	pgma_graphclust			
+toolshed.g2.bx.psu.edu/repos/galaxyp/dbbuilder/dbbuilder/0.3.2	Protein Database Downloader			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_eval/2.8.1	Eval Variants			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_fasta_to_gspan/gspan/0.3	fasta_to_gspan			
+toolshed.g2.bx.psu.edu/repos/iuc/bio_hansel/bio_hansel/0.1.0	Salmonella Subtyping			
+toolshed.g2.bx.psu.edu/repos/iuc/pretext_snapshot/pretext_snapshot/0.0.3+galaxy0	Pretext Snapshot			
+toolshed.g2.bx.psu.edu/repos/iuc/fasta_nucleotide_color_plot/fasta_nucleotide_color_plot/1.0.0	Fasta nucleotide color plot			
+toolshed.g2.bx.psu.edu/repos/devteam/gi2taxonomy/Fetch Taxonomic Ranks/1.1.0	Fetch taxonomic representation			
+toolshed.g2.bx.psu.edu/repos/iuc/homer_annotatepeaks/homer_annotatePeaks/4.11+galaxy2	annotatePeaks			
+toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regex1/1.0.2	Regex Find And Replace			
+toolshed.g2.bx.psu.edu/repos/iuc/malt_run/malt_run/0.5.3+galaxy0	MALT analyzer			
+toolshed.g2.bx.psu.edu/repos/iuc/sarscov2formatter/sarscov2formatter/0.1	sarscov2formatter			
+toolshed.g2.bx.psu.edu/repos/iuc/jellyfish/jellyfish/2.3.0+galaxy1	jellyfish			
+toolshed.g2.bx.psu.edu/repos/devteam/fastx_renamer/cshl_fastx_renamer/0.0.14+galaxy2	Rename sequences			
+toolshed.g2.bx.psu.edu/repos/devteam/picard/PicardGCBiasMetrics/1.56.0	SAM/BAM GC Bias Metrics			
+toolshed.g2.bx.psu.edu/repos/iuc/getorganelle/get_annotated_regions_from_gb/0.1.0	Get annotated regions from genbank files (getorganelle)			
+toolshed.g2.bx.psu.edu/repos/iuc/homer_annotatepeaks/homer_annotatePeaks/4.11+galaxy0	annotatePeaks			
+toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/2.0.0	Filter Tabular			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.3	locarna_graphclust			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2.2	NSPDK_candidateClusters			
+toolshed.g2.bx.psu.edu/repos/iuc/jellyfish/jellyfish/2.3.0+galaxy0	jellyfish			
+toolshed.g2.bx.psu.edu/repos/cpt/cpt_gbk_to_5col/edu.tamu.cpt.genbank.GBKtoFiveCol/1.0	Genbank to Five Column Format			
+toolshed.g2.bx.psu.edu/repos/iuc/abricate/abricate/0.1.0	ABRicate			
+toolshed.g2.bx.psu.edu/repos/iuc/fasta_nucleotide_color_plot/fasta_nucleotide_color_plot/1.0.1	Fasta nucleotide color plot			
+toolshed.g2.bx.psu.edu/repos/iuc/sarscov2formatter/sarscov2formatter/0.5.3+galaxy1	sarscov2formatter			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_motif_finder_plot/motifFinderPlot/0.3	Motif_Finder_Plot			
+toolshed.g2.bx.psu.edu/repos/cpt/cpt_gff_split/edu.tamu.cpt2.gff3.splitGff/22.0.0	Split GFF3+Fasta into separate parts			
+toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_point/ggplot2_point/2.2.1+galaxy1	Scatterplot w ggplot2			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_eval/2.8.0	Eval Variants			
+toolshed.g2.bx.psu.edu/repos/devteam/best_regression_subsets/BestSubsetsRegression1/1.0.0	Perform Best-subsets Regression			
+toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file/0.1.0	Compress file(s)			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.1.0	cmfinder			
+toolshed.g2.bx.psu.edu/repos/rnateam/splitfasta/rbc_splitfasta/0.1.0	SplitFasta			
+toolshed.g2.bx.psu.edu/repos/iuc/artic_minion/artic_minion/1.1.0_rc2+galaxy0	ARTIC minion			
+toolshed.g2.bx.psu.edu/repos/cpt/cpt_xmfa_to_table/xmfa2tbl/19.1.0.0	Convert XMFA to percent identity table			
+toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/0.14.4+galaxy0	Nextclade			topic_0084,topic_3324,topic_3305
+toolshed.g2.bx.psu.edu/repos/devteam/find_diag_hits/find_diag_hits/1.0.0	Find diagnostic hits			
+toolshed.g2.bx.psu.edu/repos/iuc/trycycler_partition/trycycler_partition/0.5.1	Trycycler partition	assign the reads to the clusters	operation_0525	topic_0196
+toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/0.14.3+galaxy1	Nextclade			topic_3324,topic_3305,topic_0084
+toolshed.g2.bx.psu.edu/repos/devteam/t_test_two_samples/t_test_two_samples/1.0.1	T Test for Two Samples			
+toolshed.g2.bx.psu.edu/repos/jjohnson/rsem/rsem_prepare_reference/1.1.17	RSEM prepare reference		operation_3800	topic_3170
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_motif_finder_plot/motifFinderPlot/0.1	Motif_Finder_Plot			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.3	cmfinder			
+toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_plotting/snapatac2_plotting/2.5.3+galaxy1	SnapATAC2 Plotting			
+toolshed.g2.bx.psu.edu/repos/iuc/kc_align/kc-align/1.0	Kc-Align			
+toolshed.g2.bx.psu.edu/repos/bgruening/split_file_on_column/tp_split_on_column/0.6	Split by group			
+toolshed.g2.bx.psu.edu/repos/bgruening/hicup2juicer/hicup2juicer/0.8.3+galaxy0	Hicup to juicer converter			
+toolshed.g2.bx.psu.edu/repos/iuc/tag_pileup_frequency/tag_pileup_frequency/1.0.1	Tag pileup frequency			
+toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.3.0+galaxy2	Arriba Draw Fusions			
+toolshed.g2.bx.psu.edu/repos/gga/genenotebook_genenotebook_build/genenotebook_build/0.4.13+galaxy0	Build a GeneNoteBook			
+toolshed.g2.bx.psu.edu/repos/iuc/kc_align/kc-align/0.2	Kc-Align			
+toolshed.g2.bx.psu.edu/repos/bgruening/bismark/bismark_bowtie2/0.20.0	Bismark Mapper	Bisulfite reads mapper	operation_3198,operation_3186,operation_3204	topic_3173,topic_3295,topic_0622
+toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_ReorderSam/1.56.0	Reorder SAM/BAM			
+toolshed.g2.bx.psu.edu/repos/devteam/t2ps/Draw_phylogram/1.0.0	Draw phylogeny			
+toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.3.0+galaxy3	Arriba Draw Fusions			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_eval/0.0.7	Eval Variants			
+toolshed.g2.bx.psu.edu/repos/devteam/picard/rgPicardMarkDups/1.56.0	Mark Duplicate reads			
+toolshed.g2.bx.psu.edu/repos/iuc/dada2_seqcounts/dada2_seqCounts/1.12+galaxy1	dada2: sequence counts			
+toolshed.g2.bx.psu.edu/repos/galaxyp/dbbuilder/dbbuilder/0.3.4	Protein Database Downloader			
+toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_remions/openbabel_remIons/2.4.1.0	Remove counterions and fragments			
+toolshed.g2.bx.psu.edu/repos/recetox/rmassbank/rmassbank/3.0.0+galaxy2	RMassBank			
+toolshed.g2.bx.psu.edu/repos/bgruening/cp_measure_granularity/cp_measure_granularity/3.1.9	MeasureGranularity	output spectra of size measurements of the textures		
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_preprocessing/preproc/0.2	Preprocessing			
+toolshed.g2.bx.psu.edu/repos/ecology/aligned_to_consensus/aligned_to_consensus/1.0.0	Consensus sequence from aligned FASTA			
+toolshed.g2.bx.psu.edu/repos/rnateam/structure_to_gspan/structure_to_gspan/0.1	Structure to GSPAN			
+toolshed.g2.bx.psu.edu/repos/iuc/pretext_map/pretext_map/0.1.6+galaxy0	PretextMap			
+toolshed.g2.bx.psu.edu/repos/rnateam/structure_to_gspan/structure_to_gspan/0.2	Structure to GSPAN			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_fasta_to_gspan/gspan/0.2	fasta_to_gspan			
+toolshed.g2.bx.psu.edu/repos/bgruening/protein_properties/bg_protein_properties/0.1.0	Calculate protein properties			
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/1.3.0	MetaboRank	Compute the MetaboRank, a custom personalized PageRank for metabolic network.		
+toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fits2bitmap/astropy_fits2bitmap/0.1.0+galaxy0	astropy fits2bitmap			
+toolshed.g2.bx.psu.edu/repos/iuc/dada2_seqcounts/dada2_seqCounts/1.20+galaxy0	dada2: sequence counts			
+toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_databases/4.1.0	SnpEff Available Databases			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.3	pgma_graphclust			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_recalibrator/0.0.7	Variant Recalibrator			
+toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.22.0	Convert from BAM to BED			
+toolshed.g2.bx.psu.edu/repos/galaxyp/dbbuilder/dbbuilder/0.3.0	Protein Database Downloader			
+toolshed.g2.bx.psu.edu/repos/iuc/sarscov2formatter/sarscov2formatter/1.0+galaxy0	sarscov2formatter			
+toolshed.g2.bx.psu.edu/repos/gga/genenotebook_genenotebook_build/genenotebook_build/0.4.15+galaxy0	Build a GeneNoteBook			
+toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fits2csv/astropy_fits2csv/0.1.0+galaxy0	astropy fits2csv			
+toolshed.g2.bx.psu.edu/repos/devteam/lca_wrapper/lca1/1.0.1	Find lowest diagnostic rank			
+toolshed.g2.bx.psu.edu/repos/astroteam/hess_astro_tool/hess_astro_tool/0.0.1+galaxy0	HESS			
+toolshed.g2.bx.psu.edu/repos/rnateam/structure_to_gspan/structure_to_gspan/0.4	Structure to GSPAN			
+toolshed.g2.bx.psu.edu/repos/bgruening/hicup2juicer/hicup2juicer/0.9.2+galaxy0	Hicup to juicer converter			
+toolshed.g2.bx.psu.edu/repos/devteam/short_reads_figure_score/quality_score_distribution/1.0.2	Build base quality distribution			
+toolshed.g2.bx.psu.edu/repos/proteore/proteore_clusterprofiler/cluter_profiler/2019.01.23	Classification and enrichment analysis	(Human, Mouse, Rat)[clusterProfiler]		
+toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_databases/4.0.0	SnpEff Available Databases			
+toolshed.g2.bx.psu.edu/repos/bgruening/bismark/bismark_bowtie/0.7.12.1	Bismark	bisulfite mapper (bowtie)	operation_3198,operation_3204,operation_3186	topic_3295,topic_0622,topic_3173
+toolshed.g2.bx.psu.edu/repos/genouest/braker/braker/2.1.6+galaxy1	Braker genome annotation			
+toolshed.g2.bx.psu.edu/repos/iuc/plink/plink/1.9.b618+galaxy2	plink			
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_montage/graphicsmagick_image_montage/1.3.31+galaxy1	Image Montage			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.4	cmfinder			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_recalibrator/2.8.1	Variant Recalibrator			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/nspdk_sparse/9.2.2	NSPDK_sparseVect			
+toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_remsmall/openbabel_remSmall/2.4.1.0	Remove small molecules			
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_montage/graphicsmagick_image_montage/1.3.26	Image Montage			
+toolshed.g2.bx.psu.edu/repos/iuc/cherri_train/cherri_train/0.7+galaxy0	Train a CheRRI model using RRIs			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.1.0	locarna_graphclust			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_preprocessing/preproc/0.5	Preprocessing			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_combine/0.0.7	Combine Variants			
+toolshed.g2.bx.psu.edu/repos/devteam/fastx_renamer/cshl_fastx_renamer/0.0.14+galaxy1	Rename sequences			
+toolshed.g2.bx.psu.edu/repos/iuc/concoct_coverage_table/concoct_coverage_table/1.0.0+galaxy0	CONCOCT coverage table			
+toolshed.g2.bx.psu.edu/repos/iuc/dada2_seqcounts/dada2_seqCounts/1.14+galaxy0	dada2: sequence counts			
+toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/3.1.0	Filter Tabular			
+toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3	Map with BWA for Illumina			
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_montage/graphicsmagick_image_montage/1.3.40+galaxy0	Image Montage			
+toolshed.g2.bx.psu.edu/repos/devteam/short_reads_trim_seq/trim_reads/1.0.0	Select high quality segments			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_motif_finder_plot/motifFinderPlot/0.2	Motif_Finder_Plot			
+toolshed.g2.bx.psu.edu/repos/astroteam/hess_astro_tool/hess_astro_tool/0.0.2+galaxy0	HESS			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.2	cluster_collection_report			
+toolshed.g2.bx.psu.edu/repos/rnateam/epicseg/epicseg_segment/1.0	EpiCSeg - Chromatin segmentation			
+toolshed.g2.bx.psu.edu/repos/iuc/pretext_map/pretext_map/0.1.8+galaxy0	PretextMap			
+toolshed.g2.bx.psu.edu/repos/genouest/braker/braker/3.0.3+galaxy0	Braker genome annotation			
+toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_point/ggplot2_point/2.2.1	Scatterplot w ggplot2			
+toolshed.g2.bx.psu.edu/repos/gga/genenotebook_genenotebook_build/genenotebook_build/0.4.12+galaxy0	Build a GeneNoteBook			
+toolshed.g2.bx.psu.edu/repos/bgruening/split_file_on_column/tp_split_on_column/0.1.1	Split by group			
+toolshed.g2.bx.psu.edu/repos/iuc/bam_to_scidx/bam_to_scidx/1.0.1	Convert BAM to ScIdx			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2.3.1	NSPDK_candidateClusters			
+toolshed.g2.bx.psu.edu/repos/gga/genenotebook_genenotebook_build/genenotebook_build/0.4.7+galaxy0	Build a GeneNoteBook			
+toolshed.g2.bx.psu.edu/repos/iuc/dada2_seqcounts/dada2_seqCounts/1.12+galaxy0	dada2: sequence counts			
+toolshed.g2.bx.psu.edu/repos/cpt/cpt_convert_mga/edu.tamu.cpt2.util.mga_to_gff3/19.1.0.0	MGA to GFF3			
+toolshed.g2.bx.psu.edu/repos/iuc/concoct_coverage_table/concoct_coverage_table/1.0.0+galaxy1	CONCOCT coverage table			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_annotator/2.8.0	Variant Annotator			
+toolshed.g2.bx.psu.edu/repos/gga/genenotebook_genenotebook_build/genenotebook_build/0.3.2+galaxy0	Build a GeneNoteBook			
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_montage/graphicsmagick_image_montage/1.3.31	Image Montage			
+toolshed.g2.bx.psu.edu/repos/devteam/kernel_canonical_correlation_analysis/kcca1/1.0.0	Kernel Canonical Correlation Analysis			
+toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/1.0.0	Filter Tabular			
+toolshed.g2.bx.psu.edu/repos/devteam/t_test_two_samples/t_test_two_samples/1.0.0	T Test for Two Samples			
+toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_plotting/snapatac2_plotting/2.5.3+galaxy0	SnapATAC2 Plotting			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.4	locarna_graphclust			
+toolshed.g2.bx.psu.edu/repos/ecology/ab1_fastq_converter/ab1_fastq_converter/1.20.0	ab1 to FASTQ converter			
+toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schicinfo/schicexplorer_schicinfo/1.0	scHicInfo	information about a single-cell mcool matrix	operation_3435,operation_2428,operation_0337	topic_0654,topic_3169,topic_3295,topic_3940,topic_0769
+toolshed.g2.bx.psu.edu/repos/bgruening/numeric_clustering/numeric_clustering/0.9	Numeric Clustering			
+toolshed.g2.bx.psu.edu/repos/bgruening/split_file_on_column/tp_split_on_column/0.5	Split by group			
+toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_violin/ggplot2_violin/2.2.1	Violin plot w ggplot2			
+toolshed.g2.bx.psu.edu/repos/iuc/nextclade/nextclade/0.14.2+galaxy0	Nextclade			topic_0084,topic_3305,topic_3324
+toolshed.g2.bx.psu.edu/repos/devteam/kernel_principal_component_analysis/kpca1/1.0.0	Kernel Principal Component Analysis			
+toolshed.g2.bx.psu.edu/repos/galaxyp/validate_fasta_database/validate_fasta_database/0.1.4	Validate FASTA Database			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_preprocessing/preproc/0.4	Preprocessing			
+toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/2.0.1	Filter Tabular			
+toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regexColumn1/1.0.1	Column Regex Find And Replace			
+toolshed.g2.bx.psu.edu/repos/iuc/plink/plink/1.9.b618+galaxy1	plink			
+toolshed.g2.bx.psu.edu/repos/iuc/bam_to_scidx/bam_to_scidx/1.0.0	Convert BAM to ScIdx			
+toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_groupbybed/2.22.0	bedtools GroupByBed	group by common cols and summarize other cols		
+toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regexColumn1/1.0.2	Column Regex Find And Replace			
+toolshed.g2.bx.psu.edu/repos/devteam/fasta_filter_by_length/fasta_filter_by_length/1.1	Filter sequences by length			
+toolshed.g2.bx.psu.edu/repos/devteam/t2t_report/t2t_report/1.0.0	Summarize taxonomy			
+toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/3.3.0	Filter Tabular			
+toolshed.g2.bx.psu.edu/repos/ebi-gxa/sc3_calc_consens/sc3_calc_consens/1.8.0+galaxy0	SC3 Calculate Consensus	from multiple runs of k-means clustering		
+toolshed.g2.bx.psu.edu/repos/iuc/zerone/zerone/1.0	zerone			
+toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regex1/1.0.3	Regex Find And Replace			
+toolshed.g2.bx.psu.edu/repos/cpt/cpt_fix_aragorn/edu.tamu.cpt.external.aragorn-gff3/19.1.0.0	Fix tRNA model			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_apply_recalibration/2.8.1	Apply Variant Recalibration			
+toolshed.g2.bx.psu.edu/repos/galaxyp/dbbuilder/dbbuilder/0.3.3	Protein Database Downloader			
+toolshed.g2.bx.psu.edu/repos/recetox/rmassbank/rmassbank/3.0.0+galaxy3	RMassBank			
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Graph/0.12.0	Sbml2Graph	Create a graph representation of a SBML file content, and export it in graph file format.		
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.4	cluster_collection_report			
+toolshed.g2.bx.psu.edu/repos/rnateam/structure_to_gspan/structure_to_gspan/0.3	Structure to GSPAN			
+toolshed.g2.bx.psu.edu/repos/iuc/nextalign/nextalign/0.1.6+galaxy0	NextAlign			
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/dimspy_hdf5_to_txt/dimspy_hdf5_to_txt/1.4.0+galaxy0	Convert DIMSpy-based HDF5 to tsv			
+toolshed.g2.bx.psu.edu/repos/iuc/cherri_eval/cherri_eval/0.7	Evaluation of RRIs using CheRRI			
+toolshed.g2.bx.psu.edu/repos/frogs/frogs/FROGS_tsv_to_biom/4.1.0+galaxy2	FROGS TSV_to_BIOM	Converts a TSV file in a BIOM file 1		
+toolshed.g2.bx.psu.edu/repos/gga/genenotebook_genenotebook_build/genenotebook_build/0.4.5+galaxy0	Build a GeneNoteBook			
+toolshed.g2.bx.psu.edu/repos/iuc/sarscov2summary/sarscov2summary/0.1	sarscov2summary			
+toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_remduplicates/openbabel_remDuplicates/2.4.1.0	Remove duplicated molecules			
+toolshed.g2.bx.psu.edu/repos/bgruening/nucleosome_prediction/Nucleosome/3.0	Nucleosome Predictions			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_validate/0.0.7	Validate Variants			
+toolshed.g2.bx.psu.edu/repos/iuc/trinotate/trinotate/3.2.1	Trinotate			
+toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regexColumn1/1.0.0	Column Regex Find And Replace			
+toolshed.g2.bx.psu.edu/repos/devteam/canonical_correlation_analysis/cca1/1.0.0	Canonical Correlation Analysis			
+toolshed.g2.bx.psu.edu/repos/iuc/tsne/tsne/0.0.2	rtsne			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/nspdk_sparse/9.2.3	NSPDK_sparseVect			
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_inspect/scanpy_inspect/1.4+galaxy0	Inspect with scanpy			
+toolshed.g2.bx.psu.edu/repos/devteam/principal_component_analysis/pca1/1.0.2	Principal Component Analysis			
+toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_histogram/ggplot2_histogram/2.2.1	Histogram w ggplot2			
+toolshed.g2.bx.psu.edu/repos/bgruening/10x_bamtofastq/10x_bamtofastq/1.4.1	Convert a 10X BAM file to FASTQ			
+toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.3.0+galaxy1	Arriba Draw Fusions			
+toolshed.g2.bx.psu.edu/repos/galaxyp/dbbuilder/dbbuilder/0.2.1	Protein Database Downloader			
+toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/nl/9.3+galaxy0	Number lines			
+toolshed.g2.bx.psu.edu/repos/devteam/bowtie_color_wrappers/bowtie_color_wrapper/1.1.2	Map with Bowtie for SOLiD			
+toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.4.0+galaxy0	Arriba Draw Fusions			
+toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.1.0	Pick parameter value			
+toolshed.g2.bx.psu.edu/repos/devteam/count_gff_features/count_gff_features/0.1	Count GFF Features			
+toolshed.g2.bx.psu.edu/repos/devteam/poisson2test/poisson2test/1.0.0	Poisson two-sample test			
+toolshed.g2.bx.psu.edu/repos/gga/genenotebook_genenotebook_build/genenotebook_build/0.4.8+galaxy0	Build a GeneNoteBook			
+toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/nl/9.3+galaxy1	Number lines			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_preprocessing/preproc/0.3	Preprocessing			
+toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schicmergematrixbins/schicexplorer_schicmergematrixbins/4.1	scHicMergeMatrixBins	change the resolution of the scHi-C matrices	operation_0337,operation_3435,operation_2428	topic_0769,topic_3940,topic_0654,topic_3169,topic_3295
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2	NSPDK_candidateClusters			
+toolshed.g2.bx.psu.edu/repos/iuc/dada2_seqcounts/dada2_seqCounts/1.18+galaxy0	dada2: sequence counts			
+toolshed.g2.bx.psu.edu/repos/rnateam/atactk_trim_adapters/atactk_trim_adapters/0.1.6	Trim putative adapter sequence			
+toolshed.g2.bx.psu.edu/repos/iuc/map_param_value/map_param_value/0.2.0	Map parameter value			
+toolshed.g2.bx.psu.edu/repos/gga/genenotebook_genenotebook_build/genenotebook_build/0.4.2+galaxy0	Build a GeneNoteBook			
+toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_ReplaceSamHeader/1.56.0	Replace SAM/BAM Header			
+toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_ARRG/1.56.0	Add or Replace Groups			
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_convert/graphicsmagick_image_convert/1.3.31+galaxy1	Image Converter			
+toolshed.g2.bx.psu.edu/repos/devteam/fasta_filter_by_length/fasta_filter_by_length/1.2	Filter sequences by length			
+toolshed.g2.bx.psu.edu/repos/devteam/picard/PicardASMetrics/1.56.0	SAM/BAM Alignment Summary Metrics			
+toolshed.g2.bx.psu.edu/repos/iuc/read_it_and_keep/read_it_and_keep/0.2.2+galaxy0	Read It and Keep			
+toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.19.0	Convert from BAM to BED			
+toolshed.g2.bx.psu.edu/repos/iuc/abricate/abricate_list/0.1.0	ABRicate List			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_combine/2.8.0	Combine Variants			
+toolshed.g2.bx.psu.edu/repos/iuc/fasta_nucleotide_color_plot/four_color_plot/1.0.0	Fasta nucleotide color plot			
+toolshed.g2.bx.psu.edu/repos/iuc/plink/plink/1.9.b618+galaxy0	plink			
+toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_BamIndexStats/1.56.0	BAM Index Statistics			
+toolshed.g2.bx.psu.edu/repos/devteam/featurecounter/featureCoverage1/2.0.0	Feature coverage			
+toolshed.g2.bx.psu.edu/repos/iuc/map_param_value/map_param_value/0.1.1	Map parameter value			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_fasta_to_gspan/gspan/0.4	fasta_to_gspan			
+toolshed.g2.bx.psu.edu/repos/genouest/braker/braker/2.1.6+galaxy0	Braker genome annotation			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_validate/2.8.0	Validate Variants			
+toolshed.g2.bx.psu.edu/repos/gga/genenotebook_genenotebook_build/genenotebook_build/0.4.1+galaxy0	Build a GeneNoteBook			
+toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fitsinfo/astropy_fitsinfo/0.1.0+galaxy0	astropy fitsinfo			
+toolshed.g2.bx.psu.edu/repos/iuc/clair3/clair3/0.1.11+galaxy0	Clair3			
+toolshed.g2.bx.psu.edu/repos/iuc/homer_annotatepeaks/homer_annotatePeaks/4.11+galaxy1	annotatePeaks			
+toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_databases/4.3k.0	SnpEff available databases			
+toolshed.g2.bx.psu.edu/repos/astroteam/sgwb_astro_tool/sgwb_astro_tool/0.0.1+galaxy0	SGWB			
+toolshed.g2.bx.psu.edu/repos/miller-lab/genome_diversity/gd_diversity_pi/1.0.0	Diversity	: pi, allowing for unsequenced intervals		
+toolshed.g2.bx.psu.edu/repos/galaxyp/openms_mrmtransitiongrouppicker/MRMTransitionGroupPicker/2.1.0	MRMTransitionGroupPicker			
+toolshed.g2.bx.psu.edu/repos/iuc/cherri_train/cherri_train/0.7	Train a CheRRI model using RRIs			
+toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0	Pick parameter value			
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/dimspy_hdf5_to_txt/dimspy_hdf5_to_txt/2.0.0+galaxy0	Convert DIMSpy-based HDF5 to tsv			
+toolshed.g2.bx.psu.edu/repos/galaxyp/validate_fasta_database/validate_fasta_database/0.1.5	Validate FASTA Database			
+toolshed.g2.bx.psu.edu/repos/iuc/pretext_map/pretext_map/0.1.5+galaxy0	PretextMap			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.1.0	pgma_graphclust			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.5	cluster_collection_report			
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_remove_confounders/scanpy_remove_confounders/1.4	Remove confounders with scanpy			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.3	cluster_collection_report			
+toolshed.g2.bx.psu.edu/repos/iuc/homer_annotatepeaks/homer_annotatePeaks/4.11+galaxy3	annotatePeaks			
+toolshed.g2.bx.psu.edu/repos/iuc/bio_hansel/bio_hansel/2.6.1+galaxy0	Salmonella Subtyping			
+toolshed.g2.bx.psu.edu/repos/galaxyp/dbbuilder/dbbuilder/0.3.1	Protein Database Downloader			
+toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_color_wrapper/1.0.2	Map with BWA for SOLiD			
+toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_point/ggplot2_point/2.2.1+galaxy0	Scatterplot w ggplot2			
+toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/3.1.2	Filter Tabular			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing_no_align/graphclust_glob_report_no_align/0.5	Graphclust glob_report collect clusters			
+toolshed.g2.bx.psu.edu/repos/iuc/map_param_value/map_param_value/0.1.0	Map parameter value			
+toolshed.g2.bx.psu.edu/repos/iuc/read_it_and_keep/read_it_and_keep/0.1.0+galaxy0	Read It and Keep			
+toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.2	locarna_graphclust			
+toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_recalibrator/2.8.0	Variant Recalibrator			
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_convert/graphicsmagick_image_convert/1.3.26	Image Converter			
+toolshed.g2.bx.psu.edu/repos/jjohnson/rsem/rsem_calculate_expression/1.1.17	RSEM calculate expression	RNA-Seq by Expectation-Maximization	operation_3800	topic_3170
+toolshed.g2.bx.psu.edu/repos/muon-spectroscopy-computational-project/muspinsim_plot/muspinsim_plot/3.5.1+galaxy0	MuSpinSim Plot			

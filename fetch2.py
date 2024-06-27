@@ -65,14 +65,14 @@ with open("guid-rev.json") as f:
     tool_ids = set(guid_rev.keys())
 print(f"Found {len(tool_ids)} tools")
 
-if os.path.exists("tool_meta.tsv"):
-    with open("tool_meta.tsv") as f:
+if os.path.exists("tool-meta.tsv"):
+    with open("tool-meta.tsv") as f:
         existing = set([line.split("\t")[0] for line in f])
         tool_ids = tool_ids - existing
-print(f"Fetching {len(tool_ids)} tools")
+print(f"{len(tool_ids)} tools are missing metadata")
 
 r = thread_map(fetch_name, list(tool_ids), max_workers=10)
-with open("tool_meta.tsv", "a") as f:
+with open("tool-meta.tsv", "a") as f:
     results = [x for x in list(r) if x is not None]
     print(f"Fetched {len(results)} updates")
     for repo_result in results:
