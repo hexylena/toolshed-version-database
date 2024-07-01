@@ -15024,3 +15024,19 @@ toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_variant_recalibrator/2.8.0	Variant 
 toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_convert/graphicsmagick_image_convert/1.3.26	Image Converter			
 toolshed.g2.bx.psu.edu/repos/jjohnson/rsem/rsem_calculate_expression/1.1.17	RSEM calculate expression	RNA-Seq by Expectation-Maximization	operation_3800	topic_3170
 toolshed.g2.bx.psu.edu/repos/muon-spectroscopy-computational-project/muspinsim_plot/muspinsim_plot/3.5.1+galaxy0	MuSpinSim Plot			
+toolshed.g2.bx.psu.edu/repos/iuc/brew3r_r/brew3r_r/1.0.2+galaxy0	BREW3R.r	Extend GTF		
+toolshed.g2.bx.psu.edu/repos/gga/genenotebook_genenotebook_build/genenotebook_build/0.4.16+galaxy0	Build a GeneNoteBook			
+toolshed.g2.bx.psu.edu/repos/iuc/funannotate_sort/funannotate_sort/1.8.15+galaxy5	Sort assembly		operation_0362	topic_0622
+toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/3.3.1	Filter Tabular			
+toolshed.g2.bx.psu.edu/repos/iuc/falco/falco/1.2.2+galaxy1	Falco	An alternative, more performant implementation of FastQC for high throughput sequence quality control	operation_3218,operation_0337,operation_3198	topic_0102,topic_3382,topic_0769
+toolshed.g2.bx.psu.edu/repos/imgteam/points2binaryimage/ip_points_to_binaryimage/0.2+galaxy3	Convert point coordinates to binary image		operation_3443	topic_3382,topic_0091
+toolshed.g2.bx.psu.edu/repos/iuc/brew3r_r/brew3r_r/1.0.1+galaxy0	BREW3R.r	Extend GTF		
+toolshed.g2.bx.psu.edu/repos/iuc/kc_align/kc-align/1.0.2	Kc-Align			
+toolshed.g2.bx.psu.edu/repos/iuc/funannotate_compare/funannotate_compare/1.8.15+galaxy5	Funannotate compare	annotations	operation_0362	topic_0622
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_filter/scanpy_filter/1.4+galaxy0	Filter with scanpy			
+toolshed.g2.bx.psu.edu/repos/iuc/maaslin2/maaslin2/1.16.0+galaxy0	MaAsLin 2	Microbiome Multivariable Association with Linear Models		topic_3941,topic_3301,topic_3305
+toolshed.g2.bx.psu.edu/repos/iuc/funannotate_predict/funannotate_predict/1.8.15+galaxy5	Funannotate predict annotation		operation_0362	topic_0622
+toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.3.2	Query Tabular	using sqlite sql		
+toolshed.g2.bx.psu.edu/repos/iuc/funannotate_clean/funannotate_clean/1.8.15+galaxy5	Funannotate assembly clean		operation_0362	topic_0622
+toolshed.g2.bx.psu.edu/repos/iuc/sqlite_to_tabular/sqlite_to_tabular/3.2.1	SQLite to tabular	for SQL query		
+toolshed.g2.bx.psu.edu/repos/fubar/jbrowse2/jbrowse2/2.12.3+galaxy0	JBrowse2	genome browser	operation_0573,operation_0564	topic_3307,topic_0092
