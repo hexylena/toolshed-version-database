@@ -34,7 +34,7 @@ SERVERS = [
 ]
 
 headers = {
-    'User-Agent': 'hexylena-bot@1 (https://github.com/hexylena/toolshed-version-database/)',
+    'User-Agent': 'tsvdb@1 (https://github.com/hexylena/toolshed-version-database/)',
 }
 
 def seq_try(path, servers):
