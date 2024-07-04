@@ -29,6 +29,7 @@ jobs:
           python fetch2.py
           cat tool-meta.json | jq -c > tmp;
           mv tmp tool-meta.json
+          python fetch2a.py
 
       - name: Commit
         run: |
@@ -38,6 +39,7 @@ jobs:
             git add guid-rev.json
             git add tool-meta.tsv
             git add tool-meta.json
+            git add api/
             git commit -a -m 'Automated commit'
             git push
         continue-on-error: true
