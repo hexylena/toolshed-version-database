@@ -1,0 +1,79 @@
+{
+  "model_class": "ApplyRulesTool",
+  "id": "__APPLY_RULES__",
+  "name": "Apply rules",
+  "version": "1.1.0",
+  "description": "",
+  "labels": [],
+  "edam_operations": [
+    "operation_2409",
+    "operation_3695"
+  ],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataCollectionToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data_collection",
+      "label": "Input Collection",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": [],
+        "dce": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "RulesListToolParameter",
+      "name": "rules",
+      "argument": null,
+      "type": "rules",
+      "label": "Rules",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output",
+      "format": null,
+      "label": "${input.name} (re-organized)",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": null,
+        "collection_type_source": null,
+        "collection_type_from_rules": "rules",
+        "structured_like": null,
+        "discover_datasets": []
+      }
+    }
+  ],
+  "panel_section_id": "collection_operations",
+  "panel_section_name": "Collection Operations",
+  "form_style": "regular"
+}

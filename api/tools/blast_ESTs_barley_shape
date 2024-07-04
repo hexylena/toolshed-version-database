@@ -1,0 +1,426 @@
+{
+  "model_class": "Tool",
+  "id": "blast_ESTs_barley_shape",
+  "name": "BLAST transcripts, ESTs in SHAPE barley",
+  "version": "0.1",
+  "description": "to get fasta file of hits",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "in_fasta",
+      "argument": null,
+      "type": "data",
+      "label": "Input file in FASTA format",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "fasta"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "db_opts",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "nucl",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "database",
+              "argument": null,
+              "type": "select",
+              "label": "Nucleotide BLAST database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "shape_barke_cds",
+              "options": [
+                [
+                  "Barley cultivar 'Barke' CDS from denovo gene prediction (internal, Feb 2019)",
+                  "shape_barke_cds",
+                  false
+                ],
+                [
+                  "Barley accession HOR 10350 CDS from denovo gene prediction (internal, Feb 2019)",
+                  "shape_h10350_cds",
+                  false
+                ],
+                [
+                  "Barley cultivar 'Morex' CDS from denovo gene prediction (internal, Feb 2019)",
+                  "shape_mores_cds",
+                  false
+                ],
+                [
+                  "Barley cultivar 'Akashinriki' CDS from gene projection (internal, Mar 2020)",
+                  "shape_aka.cds",
+                  false
+                ],
+                [
+                  "Barley genotype B1K_04_12_FT11 CDS from gene projection (internal, Mar 2020)",
+                  "shape_b1k.cds",
+                  false
+                ],
+                [
+                  "Barley cultivar 'Hockett' CDS from gene projection (internal, Mar 2020)",
+                  "shape_hockett.cds",
+                  false
+                ],
+                [
+                  "Barley accession HOR 13821 CDS from gene projection (internal, Mar 2020)",
+                  "shape_h13821.cds",
+                  false
+                ],
+                [
+                  "Barley accession HOR 13942 CDS from gene projection (internal, Mar 2020)",
+                  "shape_h13942.cds",
+                  false
+                ],
+                [
+                  "Barley accession HOR 21599 CDS from gene projection (internal, Mar 2020)",
+                  "shape_h21599.cds",
+                  false
+                ],
+                [
+                  "Barley accession HOR 3081 CDS from gene projection (internal, Mar 2020)",
+                  "shape_h3081.cds",
+                  false
+                ],
+                [
+                  "Barley accession HOR 3365 CDS from gene projection (internal, Mar 2020)",
+                  "shape_h3365.cds",
+                  false
+                ],
+                [
+                  "Barley accession HOR 7552 CDS from gene projection (internal, Mar 2020)",
+                  "shape_h7552.cds",
+                  false
+                ],
+                [
+                  "Barley accession HOR 8148 CDS from gene projection (internal, Mar 2020)",
+                  "shape_8184.cds",
+                  false
+                ],
+                [
+                  "Barley accession HOR 9043 CDS from gene projection (internal, Mar 2020)",
+                  "shape_h9043.cds",
+                  false
+                ],
+                [
+                  "Barley cultivar 'Igri' CDS from gene projection (internal, Mar 2020)",
+                  "shape_igri.cds",
+                  false
+                ],
+                [
+                  "Barley genotype OUN_333_BCC_747 CDS from gene projection (internal, Mar 2020)",
+                  "shape_oun333.cds",
+                  false
+                ],
+                [
+                  "Barley cultivar 'RGT Planet' CDS from gene projection (internal, Mar 2020)",
+                  "shape_rgt.cds",
+                  false
+                ],
+                [
+                  "Barley genotype ZDM01467 CDS from gene projection (internal, Mar 2020)",
+                  "shape_zdm01467.cds",
+                  false
+                ],
+                [
+                  "Barley genotype ZDM02064 CDS from gene projection (internal, Mar 2020)",
+                  "shape_zdm02064.cds",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "prot",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "p_database",
+              "argument": null,
+              "type": "select",
+              "label": "Protein BLAST database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "shape_aka_pep",
+              "options": [
+                [
+                  "Barley cultivar 'Akashinriki' proteins (ENA, Mar 2020)",
+                  "shape_aka_pep",
+                  false
+                ],
+                [
+                  "Barley genotype B1K_04_12_FT11 proteins (ENA, Mar 2020)",
+                  "shape_b1k_pep",
+                  false
+                ],
+                [
+                  "Barley cultivar 'Barke' proteins (ENA, Mar 2020)",
+                  "shape_barke_pep",
+                  false
+                ],
+                [
+                  "Barley cultivar 'Hockett' proteins (ENA, Mar 2020)",
+                  "shape_hockett_pep",
+                  false
+                ],
+                [
+                  "Barley accession HOR 10350 proteins (ENA, Mar 2020)",
+                  "shape_h10350_pep",
+                  false
+                ],
+                [
+                  "Barley accession HOR 13821 proteins, internal IDs version! (ENA update, Mar 2020)",
+                  "shape_h13821_pep",
+                  false
+                ],
+                [
+                  "Barley accession HOR 13942 proteins, internal IDs version! (ENA update, Mar 2020)",
+                  "shape_h13942_pep",
+                  false
+                ],
+                [
+                  "Barley accession HOR 21599 proteins (ENA, Mar 2020)",
+                  "shape_h21599_pep",
+                  false
+                ],
+                [
+                  "Barley accession HOR 3081 proteins (ENA, Mar 2020)",
+                  "shape_h3081_pep",
+                  false
+                ],
+                [
+                  "Barley accession HOR 3365 proteins (ENA, Mar 2020)",
+                  "shape_h3365_pep",
+                  false
+                ],
+                [
+                  "Barley accession HOR 7552 proteins (ENA, Mar 2020)",
+                  "shape_h7552_pep",
+                  false
+                ],
+                [
+                  "Barley accession HOR 8148 proteins (ENA, Mar 2020)",
+                  "shape_8184_pep",
+                  false
+                ],
+                [
+                  "Barley accession HOR 9043 proteins (ENA, Mar 2020)",
+                  "shape_h9043_pep",
+                  false
+                ],
+                [
+                  "Barley cultivar 'Igri' proteins (ENA, Mar 2020)",
+                  "shape_igri_pep",
+                  false
+                ],
+                [
+                  "Barley genotype OUN_333_BCC_747 proteins (ENA, Mar 2020)",
+                  "shape_oun333_pep",
+                  false
+                ],
+                [
+                  "Barley cultivar 'RGT Planet' proteins (ENA, Mar 2020)",
+                  "shape_rgt_pep",
+                  false
+                ],
+                [
+                  "Barley cultivar 'Golden Promise' proteins (ENA, Apr 2021)",
+                  "shape_golden_promise_pep",
+                  false
+                ],
+                [
+                  "Barley cultivar 'Barke' protein sequences from denovo gene prediction (internal, Feb 2019)",
+                  "shape_barke_pep",
+                  false
+                ],
+                [
+                  "Barley accession HOR 10350 protein sequences from denovo gene prediction (internal, Feb 2019)",
+                  "shape_h10350_pep",
+                  false
+                ],
+                [
+                  "Barley cultivar 'Morex' protein sequences from denovo gene prediction (internal, Feb 2019)",
+                  "shape_morex_pep",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "db_type",
+        "argument": null,
+        "type": "select",
+        "label": "Type of BLAST database",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "nucl",
+        "options": [
+          [
+            "Nucleotide",
+            "nucl",
+            true
+          ],
+          [
+            "Protein",
+            "prot",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "identity",
+      "argument": null,
+      "type": "integer",
+      "label": "Percental Identity Cut-off",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "80",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "max_hit",
+      "argument": null,
+      "type": "integer",
+      "label": "Maximum number of hits to show",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "20",
+      "area": false,
+      "datalist": []
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "fasta",
+      "label": "${tool.name} on ${on_string}: FASTA sequences",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "out_tab",
+      "format": "tabular",
+      "label": "${tool.name} on ${on_string}: BLAST results",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "blast_barley_shape",
+  "panel_section_name": "Blast barley pan-genome v1",
+  "form_style": "regular"
+}

@@ -1,0 +1,2110 @@
+{
+  "model_class": "Tool",
+  "id": "ncbi_blastx_wrapper_wheat_pan",
+  "name": "NCBI BLAST+ blastx",
+  "version": "@WRAPPER_VERSION@",
+  "description": "Search protein database with translated nucleotide query sequence(s)",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "query",
+      "argument": "-query",
+      "type": "data",
+      "label": "Nucleotide query sequence(s)",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "fasta",
+        "fasta.gz"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1929",
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044",
+          "data_2044"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "db_opts",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "db",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "database",
+              "argument": null,
+              "type": "select",
+              "label": "Protein BLAST database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [
+                [
+                  "Wheat cv. 'Arina Lrfor' gene projection proteins (Jul 2019)",
+                  "Arina_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Chinese spring' gene projection proteins (Jul 2019)",
+                  "SY Mattis_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Jagger'  gene projection proteins (Jul 2019)",
+                  "Jagger_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Julius' gene projection proteins (Jul 2019)",
+                  "Julius_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Longreach Lancer' gene projection proteins (Jul 2019)",
+                  "Lancer_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Landmark' gene projection proteins (Jul 2019)",
+                  "Landmark_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Mace' gene projection proteins (Jul 2019)",
+                  "Mace_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Norin61' gene projection proteins (Jul 2019)",
+                  "Norin61_gp_pep",
+                  false
+                ],
+                [
+                  "Triticum spelta accession PI:190962 gene projection proteins (Jul 2019)",
+                  "Spelt_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Stanley' gene projection proteins (Jul 2019)",
+                  "Stanley_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'SY Mattis' gene projection proteins (Jul 2019)",
+                  "SY Mattis_gp_pep",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": true,
+              "textable": false
+            },
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "histdb",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            },
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "subject",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "histdb",
+          "inputs": [
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "database",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            },
+            {
+              "model_class": "DataToolParameter",
+              "name": "histdb",
+              "argument": null,
+              "type": "data",
+              "label": "Protein BLAST database",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "blastdbp"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_1915"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "subject",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "file",
+          "inputs": [
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "database",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            },
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "histdb",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            },
+            {
+              "model_class": "DataToolParameter",
+              "name": "subject",
+              "argument": "-subject",
+              "type": "data",
+              "label": "Protein FASTA subject file to use instead of a database",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "fasta"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_1929"
+                ],
+                "edam_data": [
+                  "data_2044"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "db_opts_selector",
+        "argument": null,
+        "type": "select",
+        "label": "Subject database/sequences",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "db",
+        "options": [
+          [
+            "Locally installed BLAST database",
+            "db",
+            true
+          ],
+          [
+            "BLAST database from your history",
+            "histdb",
+            false
+          ],
+          [
+            "FASTA file from your history (see warning note below)",
+            "file",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "query_gencode",
+      "argument": "-query_gencode",
+      "type": "select",
+      "label": "Query genetic code",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "1",
+      "options": [
+        [
+          "1. Standard",
+          "1",
+          true
+        ],
+        [
+          "2. Vertebrate Mitochondrial",
+          "2",
+          false
+        ],
+        [
+          "3. Yeast Mitochondrial",
+          "3",
+          false
+        ],
+        [
+          "4. Mold, Protozoan, and Coelenterate Mitochondrial Code and the Mycoplasma/Spiroplasma Code",
+          "4",
+          false
+        ],
+        [
+          "5. Invertebrate Mitochondrial",
+          "5",
+          false
+        ],
+        [
+          "6. Ciliate, Dasycladacean and Hexamita Nuclear Code",
+          "6",
+          false
+        ],
+        [
+          "9. Echinoderm Mitochondrial",
+          "9",
+          false
+        ],
+        [
+          "10. Euplotid Nuclear",
+          "10",
+          false
+        ],
+        [
+          "11. Bacteria and Archaea",
+          "11",
+          false
+        ],
+        [
+          "12. Alternative Yeast Nuclear",
+          "12",
+          false
+        ],
+        [
+          "13. Ascidian Mitochondrial",
+          "13",
+          false
+        ],
+        [
+          "14. Flatworm Mitochondrial",
+          "14",
+          false
+        ],
+        [
+          "15. Blepharisma Macronuclear",
+          "15",
+          false
+        ],
+        [
+          "16. Chlorophycean Mitochondrial Code",
+          "16",
+          false
+        ],
+        [
+          "21. Trematode Mitochondrial Code",
+          "21",
+          false
+        ],
+        [
+          "22. Scenedesmus obliquus mitochondrial Code",
+          "22",
+          false
+        ],
+        [
+          "23. Thraustochytrium Mitochondrial Code",
+          "23",
+          false
+        ],
+        [
+          "24. Pterobranchia mitochondrial code",
+          "24",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "blast_type",
+      "argument": "-task",
+      "type": "select",
+      "label": "Type of BLAST",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "blastx",
+      "options": [
+        [
+          "blastx - Traditional BLASTX to compare translated nucleotide query to protein database",
+          "blastx",
+          false
+        ],
+        [
+          "blastx-fast - Use longer words for seeding, faster but less accurate",
+          "blastx-fast",
+          false
+        ]
+      ],
+      "display": "radio",
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "FloatToolParameter",
+      "name": "evalue_cutoff",
+      "argument": "-evalue",
+      "type": "float",
+      "label": "Set expectation value cutoff",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0.001",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "Conditional",
+      "name": "output",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "6",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "ext",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "cols",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "std_cols",
+              "argument": null,
+              "type": "select",
+              "label": "Standard columns",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": [
+                "qseqid",
+                "sseqid",
+                "pident",
+                "length",
+                "mismatch",
+                "gapopen",
+                "qstart",
+                "qend",
+                "sstart",
+                "send",
+                "evalue",
+                "bitscore"
+              ],
+              "options": [
+                [
+                  "qseqid = Query Seq-id (ID of your sequence)",
+                  "qseqid",
+                  true
+                ],
+                [
+                  "sseqid = Subject Seq-id (ID of the database hit)",
+                  "sseqid",
+                  true
+                ],
+                [
+                  "pident = Percentage of identical matches",
+                  "pident",
+                  true
+                ],
+                [
+                  "length = Alignment length",
+                  "length",
+                  true
+                ],
+                [
+                  "mismatch = Number of mismatches",
+                  "mismatch",
+                  true
+                ],
+                [
+                  "gapopen = Number of gap openings",
+                  "gapopen",
+                  true
+                ],
+                [
+                  "qstart = Start of alignment in query",
+                  "qstart",
+                  true
+                ],
+                [
+                  "qend = End of alignment in query",
+                  "qend",
+                  true
+                ],
+                [
+                  "sstart = Start of alignment in subject (database hit)",
+                  "sstart",
+                  true
+                ],
+                [
+                  "send = End of alignment in subject (database hit)",
+                  "send",
+                  true
+                ],
+                [
+                  "evalue = Expectation value (E-value)",
+                  "evalue",
+                  true
+                ],
+                [
+                  "bitscore = Bit score",
+                  "bitscore",
+                  true
+                ]
+              ],
+              "display": "checkboxes",
+              "multiple": true,
+              "textable": false
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "ext_cols",
+              "argument": null,
+              "type": "select",
+              "label": "Extended columns",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "options": [
+                [
+                  "sallseqid = All subject Seq-id(s), separated by a ';'",
+                  "sallseqid",
+                  false
+                ],
+                [
+                  "score = Raw score",
+                  "score",
+                  false
+                ],
+                [
+                  "nident = Number of identical matches",
+                  "nident",
+                  false
+                ],
+                [
+                  "positive = Number of positive-scoring matches",
+                  "positive",
+                  false
+                ],
+                [
+                  "gaps = Total number of gaps",
+                  "gaps",
+                  false
+                ],
+                [
+                  "ppos = Percentage of positive-scoring matches",
+                  "ppos",
+                  false
+                ],
+                [
+                  "qframe = Query frame",
+                  "qframe",
+                  false
+                ],
+                [
+                  "sframe = Subject frame",
+                  "sframe",
+                  false
+                ],
+                [
+                  "qseq = Aligned part of query sequence",
+                  "qseq",
+                  false
+                ],
+                [
+                  "sseq = Aligned part of subject sequence",
+                  "sseq",
+                  false
+                ],
+                [
+                  "qlen = Query sequence length",
+                  "qlen",
+                  false
+                ],
+                [
+                  "slen = Subject sequence length",
+                  "slen",
+                  false
+                ],
+                [
+                  "salltitles = All subject title(s), separated by a '<>'",
+                  "salltitles",
+                  false
+                ]
+              ],
+              "display": "checkboxes",
+              "multiple": true,
+              "textable": false
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "ids_cols",
+              "argument": null,
+              "type": "select",
+              "label": "Other identifier columns",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "options": [
+                [
+                  "qgi = Query GI",
+                  "qgi",
+                  false
+                ],
+                [
+                  "qacc = Query accesion",
+                  "qacc",
+                  false
+                ],
+                [
+                  "qaccver = Query accesion.version",
+                  "qaccver",
+                  false
+                ],
+                [
+                  "sallseqid = All subject Seq-id(s), separated by a ';'",
+                  "sallseqid",
+                  false
+                ],
+                [
+                  "sgi = Subject GI",
+                  "sgi",
+                  false
+                ],
+                [
+                  "sallgi = All subject GIs",
+                  "sallgi",
+                  false
+                ],
+                [
+                  "sacc = Subject accession",
+                  "sacc",
+                  false
+                ],
+                [
+                  "saccver = Subject accession.version",
+                  "saccver",
+                  false
+                ],
+                [
+                  "sallacc = All subject accessions",
+                  "sallacc",
+                  false
+                ],
+                [
+                  "stitle = Subject Title",
+                  "stitle",
+                  false
+                ]
+              ],
+              "display": "checkboxes",
+              "multiple": true,
+              "textable": false
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "misc_cols",
+              "argument": null,
+              "type": "select",
+              "label": "Miscellaneous columns",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "options": [
+                [
+                  "sstrand = Subject Strand",
+                  "sstrand",
+                  false
+                ],
+                [
+                  "frames = Query and subject frames separated by a '/'",
+                  "frames",
+                  false
+                ],
+                [
+                  "btop = Blast traceback operations (BTOP)",
+                  "btop",
+                  false
+                ],
+                [
+                  "qcovs = Query Coverage Per Subject",
+                  "qcovs",
+                  false
+                ],
+                [
+                  "qcovhsp = Query Coverage Per HSP",
+                  "qcovhsp",
+                  false
+                ]
+              ],
+              "display": "checkboxes",
+              "multiple": true,
+              "textable": false
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "tax_cols",
+              "argument": null,
+              "type": "select",
+              "label": "Taxonomy columns",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "options": [
+                [
+                  "staxids = unique Subject Taxonomy ID(s), separated by a ';' (in numerical order)",
+                  "staxids",
+                  false
+                ],
+                [
+                  "sscinames = unique Subject Scientific Name(s), separated by a ';'",
+                  "sscinames",
+                  false
+                ],
+                [
+                  "scomnames = unique Subject Common Name(s), separated by a ';'",
+                  "scomnames",
+                  false
+                ],
+                [
+                  "sblastnames = unique Subject Blast Name(s), separated by a ';' (in alphabetical order)",
+                  "sblastnames",
+                  false
+                ],
+                [
+                  "sskingdoms = unique Subject Super Kingdom(s), separated by a ';' (in alphabetical order)",
+                  "sskingdoms",
+                  false
+                ]
+              ],
+              "display": "checkboxes",
+              "multiple": true,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "5",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "0",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "0 -html",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "2",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "2 -html",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "4",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "4 -html",
+          "inputs": []
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "out_format",
+        "argument": "-outfmt",
+        "type": "select",
+        "label": "Output format",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "ext",
+        "options": [
+          [
+            "Tabular (standard 12 columns)",
+            "6",
+            false
+          ],
+          [
+            "Tabular (extended 25 columns)",
+            "ext",
+            true
+          ],
+          [
+            "Tabular (select which columns)",
+            "cols",
+            false
+          ],
+          [
+            "BLAST XML",
+            "5",
+            false
+          ],
+          [
+            "Pairwise text",
+            "0",
+            false
+          ],
+          [
+            "Pairwise HTML",
+            "0 -html",
+            false
+          ],
+          [
+            "Query-anchored text",
+            "2",
+            false
+          ],
+          [
+            "Query-anchored HTML",
+            "2 -html",
+            false
+          ],
+          [
+            "Flat query-anchored text",
+            "4",
+            false
+          ],
+          [
+            "Flat query-anchored HTML",
+            "4 -html",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "adv_opts",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "basic",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "advanced",
+          "inputs": [
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "filter_query",
+              "argument": "-seg",
+              "type": "boolean",
+              "label": "Filter out low complexity regions (with SEG)",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "true",
+              "truevalue": "-seg yes",
+              "falsevalue": "-seg no"
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "strand",
+              "argument": "-strand",
+              "type": "select",
+              "label": "Query strand(s) to search against database/subject",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "-strand both",
+              "options": [
+                [
+                  "Both",
+                  "-strand both",
+                  false
+                ],
+                [
+                  "Plus (forward)",
+                  "-strand plus",
+                  false
+                ],
+                [
+                  "Minus (reverse complement)",
+                  "-strand minus",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            },
+            {
+              "model_class": "Conditional",
+              "name": "matrix_gapcosts",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "BLOSUM90",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "gap_costs",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Gap Costs",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "",
+                      "options": [
+                        [
+                          "Use defaults",
+                          "",
+                          true
+                        ],
+                        [
+                          "Existence: 9  Extension: 2",
+                          "-gapopen 9 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 8  Extension: 2",
+                          "-gapopen 8 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 7  Extension: 2",
+                          "-gapopen 7 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 6  Extension: 2",
+                          "-gapopen 6 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 11  Extension: 1",
+                          "-gapopen 11 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 10  Extension: 1",
+                          "-gapopen 10 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 9  Extension: 1",
+                          "-gapopen 9 -gapextend 1",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "BLOSUM80",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "gap_costs",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Gap Costs",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "",
+                      "options": [
+                        [
+                          "Use defaults",
+                          "",
+                          true
+                        ],
+                        [
+                          "Existence: 8  Extension: 2",
+                          "-gapopen 8 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 7  Extension: 2",
+                          "-gapopen 7 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 6  Extension: 2",
+                          "-gapopen 6 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 11  Extension: 1",
+                          "-gapopen 11 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 10  Extension: 1",
+                          "-gapopen 10 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 9  Extension: 1",
+                          "-gapopen 9 -gapextend 1",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "BLOSUM62",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "gap_costs",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Gap Costs",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "",
+                      "options": [
+                        [
+                          "Use defaults",
+                          "",
+                          true
+                        ],
+                        [
+                          "Existence: 11  Extension: 2",
+                          "-gapopen 11 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 10  Extension: 2",
+                          "-gapopen 10 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 9  Extension: 2",
+                          "-gapopen 9 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 8  Extension: 2",
+                          "-gapopen 8 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 7  Extension: 2",
+                          "-gapopen 7 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 6  Extension: 2",
+                          "-gapopen 6 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 13  Extension: 1",
+                          "-gapopen 13 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 12  Extension: 1",
+                          "-gapopen 12 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 11  Extension: 1",
+                          "-gapopen 11 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 10  Extension: 1",
+                          "-gapopen 10 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 9  Extension: 1",
+                          "-gapopen 9 -gapextend 1",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "BLOSUM50",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "gap_costs",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Gap Costs",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "",
+                      "options": [
+                        [
+                          "Use defaults",
+                          "",
+                          true
+                        ],
+                        [
+                          "Existence: 13  Extension: 3",
+                          "-gapopen 13 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 12  Extension: 3",
+                          "-gapopen 12 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 11  Extension: 3",
+                          "-gapopen 11 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 10  Extension: 3",
+                          "-gapopen 10 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 9  Extension: 3",
+                          "-gapopen 9 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 16  Extension: 2",
+                          "-gapopen 16 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 15  Extension: 2",
+                          "-gapopen 15 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 14  Extension: 2",
+                          "-gapopen 14 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 13  Extension: 2",
+                          "-gapopen 13 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 12  Extension: 2",
+                          "-gapopen 12 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 19  Extension: 1",
+                          "-gapopen 19 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 18  Extension: 1",
+                          "-gapopen 18 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 17  Extension: 1",
+                          "-gapopen 17 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 16  Extension: 1",
+                          "-gapopen 16 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 15  Extension: 1",
+                          "-gapopen 15 -gapextend 1",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "BLOSUM45",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "gap_costs",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Gap Costs",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "",
+                      "options": [
+                        [
+                          "Use defaults",
+                          "",
+                          true
+                        ],
+                        [
+                          "Existence: 13  Extension: 3",
+                          "-gapopen 13 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 12  Extension: 3",
+                          "-gapopen 12 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 11  Extension: 3",
+                          "-gapopen 11 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 10  Extension: 3",
+                          "-gapopen 10 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 15  Extension: 2",
+                          "-gapopen 15 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 14  Extension: 2",
+                          "-gapopen 14 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 13  Extension: 2",
+                          "-gapopen 13 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 12  Extension: 2",
+                          "-gapopen 12 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 19  Extension: 1",
+                          "-gapopen 19 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 18  Extension: 1",
+                          "-gapopen 18 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 17  Extension: 1",
+                          "-gapopen 17 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 16  Extension: 1",
+                          "-gapopen 16 -gapextend 1",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "PAM250",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "gap_costs",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Gap Costs",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "",
+                      "options": [
+                        [
+                          "Use defaults",
+                          "",
+                          true
+                        ],
+                        [
+                          "Existence: 15  Extension: 3",
+                          "-gapopen 15 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 14  Extension: 3",
+                          "-gapopen 14 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 13  Extension: 3",
+                          "-gapopen 13 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 12  Extension: 3",
+                          "-gapopen 12 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 17  Extension: 2",
+                          "-gapopen 17 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 16  Extension: 2",
+                          "-gapopen 16 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 15  Extension: 2",
+                          "-gapopen 15 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 14  Extension: 2",
+                          "-gapopen 14 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 13  Extension: 2",
+                          "-gapopen 13 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 21  Extension: 1",
+                          "-gapopen 21 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 20  Extension: 1",
+                          "-gapopen 20 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 19  Extension: 1",
+                          "-gapopen 19 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 18  Extension: 1",
+                          "-gapopen 18 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 17  Extension: 1",
+                          "-gapopen 17 -gapextend 1",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "PAM70",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "gap_costs",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Gap Costs",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "",
+                      "options": [
+                        [
+                          "Use defaults",
+                          "",
+                          true
+                        ],
+                        [
+                          "Existence: 12 Extension: 3",
+                          "-gapopen 12 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 11 Extension: 2",
+                          "-gapopen 11 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 8  Extension: 2",
+                          "-gapopen 8 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 7  Extension: 2",
+                          "-gapopen 7 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 6  Extension: 2",
+                          "-gapopen 6 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 11  Extension: 1",
+                          "-gapopen 11 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 10  Extension: 1",
+                          "-gapopen 10 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 9  Extension: 1",
+                          "-gapopen 9 -gapextend 1",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "PAM30",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "gap_costs",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Gap Costs",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "",
+                      "options": [
+                        [
+                          "Use defaults",
+                          "",
+                          true
+                        ],
+                        [
+                          "Existence: 15 Extension: 3",
+                          "-gapopen 15 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 13 Extension: 3",
+                          "-gapopen 13 -gapextend 3",
+                          false
+                        ],
+                        [
+                          "Existence: 14 Extension: 2",
+                          "-gapopen 14 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 7  Extension: 2",
+                          "-gapopen 7 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 6  Extension: 2",
+                          "-gapopen 6 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 5  Extension: 2",
+                          "-gapopen 5 -gapextend 2",
+                          false
+                        ],
+                        [
+                          "Existence: 14 Extension: 1",
+                          "-gapopen 14 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 10  Extension: 1",
+                          "-gapopen 10 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 9  Extension: 1",
+                          "-gapopen 9 -gapextend 1",
+                          false
+                        ],
+                        [
+                          "Existence: 8  Extension: 1",
+                          "-gapopen 8 -gapextend 1",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "matrix",
+                "argument": "-matrix",
+                "type": "select",
+                "label": "Scoring matrix and gap costs",
+                "help": "",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "",
+                "options": [
+                  [
+                    "Use Defaults",
+                    "",
+                    true
+                  ],
+                  [
+                    "BLOSUM90",
+                    "BLOSUM90",
+                    false
+                  ],
+                  [
+                    "BLOSUM80",
+                    "BLOSUM80",
+                    false
+                  ],
+                  [
+                    "BLOSUM62",
+                    "BLOSUM62",
+                    false
+                  ],
+                  [
+                    "BLOSUM50",
+                    "BLOSUM50",
+                    false
+                  ],
+                  [
+                    "BLOSUM45",
+                    "BLOSUM45",
+                    false
+                  ],
+                  [
+                    "PAM250",
+                    "PAM250",
+                    false
+                  ],
+                  [
+                    "PAM70",
+                    "PAM70",
+                    false
+                  ],
+                  [
+                    "PAM30",
+                    "PAM30",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "max_hits",
+              "argument": null,
+              "type": "integer",
+              "label": "Maximum hits to consider/show",
+              "help": "Use zero for default limits. For HTML and plain text output this value is passed -num_descriptions and -num_alignments but for XML and tabular etc, this is used with -max_target_seqs instead. In either case, in addition to limiting the final output, this alters internal limits during the search, which can in some cases exclude matches which would otherwise become the best hit.",
+              "refresh_on_change": false,
+              "min": 0,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "max_hsps",
+              "argument": "-max_hsps",
+              "type": "integer",
+              "label": "Maximum number of HSPs (alignments) to keep for any single query-subject pair",
+              "help": "The HSPs shown will be the best as judged by expect value. If this option is not set, BLAST shows all HSPs meeting the expect value criteria",
+              "refresh_on_change": false,
+              "min": 1,
+              "max": null,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "word_size",
+              "argument": "-word_size",
+              "type": "integer",
+              "label": "Word size for wordfinder algorithm",
+              "help": "Leave blank for default, otherwise minimum 2",
+              "refresh_on_change": false,
+              "min": 2,
+              "max": null,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "ungapped",
+              "argument": "-ungapped",
+              "type": "boolean",
+              "label": "Perform ungapped alignment only?",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "false",
+              "truevalue": "-ungapped",
+              "falsevalue": ""
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "parse_deflines",
+              "argument": "-parse_deflines",
+              "type": "boolean",
+              "label": "Should the query and subject defline(s) be parsed?",
+              "help": "This affects the formatting of the query/subject ID strings",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "false",
+              "truevalue": "-parse_deflines",
+              "falsevalue": ""
+            },
+            {
+              "model_class": "Conditional",
+              "name": "adv_optional_id_files_opts",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "none",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "gilist",
+                  "inputs": [
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "gilist",
+                      "argument": "-gilist",
+                      "type": "data",
+                      "label": "Restrict search of database to GI's listed in this file",
+                      "help": "This option is only available for database searches.",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "txt"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_2330"
+                        ],
+                        "edam_data": [
+                          "data_0006"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "negative_gilist",
+                  "inputs": [
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "negative_gilist",
+                      "argument": "-negative_gilist",
+                      "type": "data",
+                      "label": "Restrict search of database to everything except the GI's listed in this file",
+                      "help": "This option is only available for database searches.",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "txt"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_2330"
+                        ],
+                        "edam_data": [
+                          "data_0006"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "seqidlist",
+                  "inputs": [
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "seqidlist",
+                      "argument": "-seqidlist",
+                      "type": "data",
+                      "label": " Restrict search of database to list of SeqId's",
+                      "help": "This option is only available for database searches.",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "txt"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_2330"
+                        ],
+                        "edam_data": [
+                          "data_0006"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "adv_optional_id_files_opts_selector",
+                "argument": null,
+                "type": "select",
+                "label": "Restrict search of database to a given set of ID's",
+                "help": "This feature provides a means to exclude ID's from a BLAST database search. The expectation values in the BLAST results are based upon the sequences actually searched, and not on the underlying database. Note this cannot be used when comparing against a FASTA file.",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "none",
+                "options": [
+                  [
+                    "No restriction, search the entire database",
+                    "none",
+                    true
+                  ],
+                  [
+                    "GI identifiers",
+                    "gilist",
+                    false
+                  ],
+                  [
+                    "Negative GI identifiers",
+                    "negative_gilist",
+                    false
+                  ],
+                  [
+                    "Sequence identifiers (SeqId's)",
+                    "seqidlist",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "qcov_hsp_perc",
+              "argument": "-qcov_hsp_perc",
+              "type": "float",
+              "label": "Minimum query coverage per hsp (percentage, 0 to 100)",
+              "help": "See also the output column qcovhsp",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 100.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "window_size",
+              "argument": "-window_size",
+              "type": "integer",
+              "label": "Multiple hits window size: use 0 to specify 1-hit algorithm, leave blank for default",
+              "help": "Default window size varies with substitution matrix and BLAST type. Enter an integer to override the default.",
+              "refresh_on_change": false,
+              "min": 0,
+              "max": null,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "threshold",
+              "argument": "-threshold",
+              "type": "integer",
+              "label": "Minimum score to add a word to the BLAST lookup table.",
+              "help": "Leave blank for default, which varies based on application.",
+              "refresh_on_change": false,
+              "min": 0,
+              "max": null,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "comp_based_stats",
+              "argument": "-comp_based_stats",
+              "type": "select",
+              "label": "Composition-based statistics",
+              "help": "The default value varies based on application and task. Most common default is 2.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "",
+              "options": [
+                [
+                  "Use default",
+                  "",
+                  false
+                ],
+                [
+                  "0: No composition-based statistics",
+                  "0",
+                  false
+                ],
+                [
+                  "1: Composition-based statistics as in NAR 29:2994-3005, 2001",
+                  "1",
+                  false
+                ],
+                [
+                  "2: Composition-based score adjustment as in Bioinformatics\n                21:902-911, 2005, conditioned on sequence properties",
+                  "2",
+                  false
+                ],
+                [
+                  "3: Composition-based score adjustment as in Bioinformatics 21:902-911, 2005, unconditionally",
+                  "3",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "adv_opts_selector",
+        "argument": null,
+        "type": "select",
+        "label": "Advanced Options",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "basic",
+        "options": [
+          [
+            "Hide Advanced Options",
+            "basic",
+            true
+          ],
+          [
+            "Show Advanced Options",
+            "advanced",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output1",
+      "format": "tabular",
+      "label": "blastx $query.name vs \n#if str($db_opts.db_opts_selector)=='db'\n'${db_opts.database}'\n#elif str($db_opts.db_opts_selector)=='histdb'\n'${db_opts.histdb.name}'\n#else\n'${db_opts.subject.name}'\n#end if\n",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "blast_wheat_pan",
+  "panel_section_name": "Blast wheat pan-genome",
+  "form_style": "regular"
+}

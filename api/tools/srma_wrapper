@@ -1,0 +1,387 @@
+{
+  "model_class": "Tool",
+  "id": "srma_wrapper",
+  "name": "Re-align with SRMA",
+  "version": "0.2.5",
+  "description": "",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "refGenomeSource",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "built-in",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "ref",
+              "argument": null,
+              "type": "select",
+              "label": "Select a reference genome",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "TAIR10",
+              "options": [
+                [
+                  "Arabidopsis thaliana (TAIR10)",
+                  "TAIR10",
+                  false
+                ],
+                [
+                  "Human (Homo sapiens): hg19",
+                  "hg19",
+                  false
+                ],
+                [
+                  "Human (Homo sapiens): hg19 (GATK-version)",
+                  "hg19_gatk",
+                  false
+                ],
+                [
+                  "Mouse (Mus musculus): mm10",
+                  "mm10",
+                  false
+                ],
+                [
+                  "Mouse (Mus musculus): mm9",
+                  "mm9",
+                  false
+                ],
+                [
+                  "drosophila melanogaster: dm3",
+                  "dm3",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "history",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "ownFile",
+              "argument": null,
+              "type": "data",
+              "label": "Select a reference from history",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "fasta"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_1929"
+                ],
+                "edam_data": [
+                  "data_2044"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "refGenomeSource_type",
+        "argument": null,
+        "type": "select",
+        "label": "Will you select a reference genome from your history or use a built-in reference?",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "built-in",
+        "options": [
+          [
+            "Use a built-in reference",
+            "built-in",
+            false
+          ],
+          [
+            "Use one from the history",
+            "history",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Input BAM file",
+      "help": "The input BAM file to re-align",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "bam"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_2572"
+        ],
+        "edam_data": [
+          "data_0863"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "params",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "pre_set",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "full",
+          "inputs": [
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "offset",
+              "argument": null,
+              "type": "integer",
+              "label": "Offset",
+              "help": "The alignment offset",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "20",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "minMappingQuality",
+              "argument": null,
+              "type": "integer",
+              "label": "Minimum mapping quality",
+              "help": "The minimum mapping quality",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "minAlleleProbability",
+              "argument": null,
+              "type": "float",
+              "label": "Minimum allele probability",
+              "help": "The minimum allele probability conditioned on coverage (for the binomial quantile).",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.1",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "minAlleleCoverage",
+              "argument": null,
+              "type": "integer",
+              "label": "Minimum allele coverage",
+              "help": "The minimum haploid coverage for the consensus. Default value: 3. This option can be set ",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "2",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "TextToolParameter",
+              "name": "range",
+              "argument": null,
+              "type": "text",
+              "label": "Range",
+              "help": "A range to examine",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "null",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "correctBases",
+              "argument": null,
+              "type": "boolean",
+              "label": "Correct bases",
+              "help": "Correct bases ",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "true",
+              "falsevalue": "false"
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "useSequenceQualities",
+              "argument": null,
+              "type": "boolean",
+              "label": "Use sequence qualities",
+              "help": "Use sequence qualities ",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "true",
+              "falsevalue": "false"
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "maxHeapSize",
+              "argument": null,
+              "type": "integer",
+              "label": "Maximum heap size",
+              "help": "The maximum number of nodes on the heap before re-alignment is ignored",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "8192",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "source_select",
+        "argument": null,
+        "type": "select",
+        "label": "SRMA settings to use",
+        "help": "For most re-alignment needs, use Commonly Used settings. If you want full control use Full Parameter List",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "pre_set",
+        "options": [
+          [
+            "Commonly Used",
+            "pre_set",
+            false
+          ],
+          [
+            "Full Parameter List",
+            "full",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "bam",
+      "label": "${tool.name} on ${on_string}: re-aligned reads",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2572",
+      "edam_data": "data_0863",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "mapping",
+  "panel_section_name": "Mapping",
+  "form_style": "regular"
+}

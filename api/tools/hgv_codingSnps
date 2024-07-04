@@ -1,0 +1,286 @@
+{
+  "id": "hgv_codingSnps",
+  "panel_section_id": "8101b89a-bc7b-4e61-87ab-bc9d5cecb97c",
+  "outputs": [
+    {
+      "from_work_dir": null,
+      "format": "interval",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_3002",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "",
+      "edam_format": "format_3475",
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "output_type": "data",
+      "parent": null
+    }
+  ],
+  "inputs": [
+    {
+      "optional": false,
+      "argument": null,
+      "edam": {
+        "edam_formats": [
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_3002"
+        ]
+      },
+      "help": "",
+      "refresh_on_change": true,
+      "multiple": false,
+      "extensions": [
+        "interval"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "input1",
+      "model_class": "DataToolParameter",
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "SNP dataset"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "options": [],
+      "help": "",
+      "refresh_on_change": false,
+      "multiple": false,
+      "hidden": false,
+      "name": "col1",
+      "display": null,
+      "model_class": "ColumnListParameter",
+      "textable": false,
+      "is_dynamic": true,
+      "numerical": false,
+      "type": "data_column",
+      "value": null,
+      "label": "Column with SNPs",
+      "data_ref": "input1"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "edam": {
+        "edam_formats": [
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_3002"
+        ]
+      },
+      "help": "",
+      "refresh_on_change": true,
+      "multiple": false,
+      "extensions": [
+        "interval"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "input2",
+      "model_class": "DataToolParameter",
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "Gene dataset"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "options": [
+        [
+          "No",
+          "0",
+          true
+        ],
+        [
+          "Yes",
+          "1",
+          false
+        ]
+      ],
+      "help": "",
+      "refresh_on_change": false,
+      "multiple": false,
+      "hidden": false,
+      "name": "keep",
+      "display": null,
+      "model_class": "SelectToolParameter",
+      "textable": false,
+      "is_dynamic": false,
+      "type": "select",
+      "value": "0",
+      "label": "Keep columns from SNP dataset"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "options": [
+        [
+          "Yes",
+          "1",
+          true
+        ],
+        [
+          "No",
+          "0",
+          false
+        ]
+      ],
+      "help": "",
+      "refresh_on_change": false,
+      "multiple": false,
+      "hidden": false,
+      "name": "uniqpos",
+      "display": null,
+      "model_class": "SelectToolParameter",
+      "textable": false,
+      "is_dynamic": false,
+      "type": "select",
+      "value": "1",
+      "label": "Only report each SNP position once"
+    },
+    {
+      "model_class": "Conditional",
+      "type": "conditional",
+      "name": "strand_source",
+      "test_param": {
+        "optional": false,
+        "argument": null,
+        "options": [
+          [
+            "a column in the dataset",
+            "data_column",
+            false
+          ],
+          [
+            "all on sense/forward/+ strand",
+            "all_pos",
+            true
+          ],
+          [
+            "all on antisense/reverse/- strand",
+            "all_neg",
+            false
+          ]
+        ],
+        "help": "",
+        "refresh_on_change": true,
+        "multiple": false,
+        "hidden": false,
+        "name": "strand_choice",
+        "display": null,
+        "model_class": "SelectToolParameter",
+        "textable": false,
+        "is_dynamic": false,
+        "type": "select",
+        "value": "all_pos",
+        "label": "Strand info"
+      },
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "data_column",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "strand_col",
+              "display": null,
+              "model_class": "ColumnListParameter",
+              "textable": false,
+              "is_dynamic": true,
+              "numerical": false,
+              "type": "data_column",
+              "value": null,
+              "label": "Column with strand",
+              "data_ref": "input1"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "all_pos",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "name": "strand_col",
+              "help": "",
+              "refresh_on_change": false,
+              "model_class": "HiddenToolParameter",
+              "is_dynamic": false,
+              "type": "hidden",
+              "hidden": true,
+              "label": "",
+              "value": "+"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "all_neg",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "name": "strand_col",
+              "help": "",
+              "refresh_on_change": false,
+              "model_class": "HiddenToolParameter",
+              "is_dynamic": false,
+              "type": "hidden",
+              "hidden": true,
+              "label": "",
+              "value": "-"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0.1",
+  "labels": [],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "Evolution",
+  "name": "aaChanges",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": "amino-acid changes caused by a set of SNPs"
+}

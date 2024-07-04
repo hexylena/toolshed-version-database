@@ -1,0 +1,336 @@
+{
+  "model_class": "Tool",
+  "id": "extra_flank_seqs_faba",
+  "name": "Extract nucleotide range and flanking sequences",
+  "version": "1.0.0",
+  "description": "Get FASTA sequences from BED interval",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "coord_source",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "direct",
+          "inputs": [
+            {
+              "model_class": "TextToolParameter",
+              "name": "seq",
+              "argument": null,
+              "type": "text",
+              "label": "Contig/Feature name",
+              "help": "Name of the target sequence in the fasta file.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "chr1",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "start",
+              "argument": null,
+              "type": "integer",
+              "label": "Start coordinate",
+              "help": "Maximum range must not exceed 20000 nt!",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "1",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "stop",
+              "argument": null,
+              "type": "integer",
+              "label": "Stop coordinate",
+              "help": "Maximum range must not exceed 20000 nt!",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "999",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "bed_in",
+          "inputs": [
+            {
+              "model_class": "TextToolParameter",
+              "name": "bed",
+              "argument": null,
+              "type": "text",
+              "label": "Coordinate range, format: 'Chr Start Stop'. Use either space or tab as seperator",
+              "help": "Use 3-column bed format, sepearted by space. The following values are allowed for Vicia faba: chr1-chr6.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "",
+              "area": true,
+              "datalist": []
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "table",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "tables",
+              "argument": null,
+              "type": "data",
+              "label": "Select GTF, BED or tab-sperated interval file",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "tabular",
+                " interval",
+                " gtf"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3475",
+                  null,
+                  null
+                ],
+                "edam_data": [
+                  "data_0006",
+                  null,
+                  null
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "ref_source",
+        "argument": null,
+        "type": "select",
+        "label": "Gene annotation file",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "direct",
+        "options": [
+          [
+            "Use single coordinate set as direct input ",
+            "direct",
+            false
+          ],
+          [
+            "Use a 3-column multiline format as direct input",
+            "bed_in",
+            false
+          ],
+          [
+            "Use GFF or BED input from table in your history (for larger number of sequences!)",
+            "table",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "flanks",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "l",
+          "inputs": [
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "l",
+              "argument": null,
+              "type": "integer",
+              "label": "Number of base pairs",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "r",
+          "inputs": [
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "r",
+              "argument": null,
+              "type": "integer",
+              "label": "Number of base pairs",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "lr",
+          "inputs": [
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "l",
+              "argument": null,
+              "type": "integer",
+              "label": "The number of base pairs to subtract from the start coordinate",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "r",
+              "argument": null,
+              "type": "integer",
+              "label": "The number of base pairs to add to the end coordinate",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "flank_select",
+        "argument": null,
+        "type": "select",
+        "label": "Choose what you want to do",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "lr",
+        "options": [
+          [
+            "Increase the BED/GFF/VCF entry by the same number base pairs in each direction.",
+            "lr",
+            true
+          ],
+          [
+            "Get Feature sequence including 5' flanking region ",
+            "l",
+            false
+          ],
+          [
+            "Get Feature sequence including 3' flanking region ",
+            "r",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out",
+      "format": "fasta",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "blast_faba",
+  "panel_section_name": "Blast vicia faba genomes",
+  "form_style": "regular"
+}

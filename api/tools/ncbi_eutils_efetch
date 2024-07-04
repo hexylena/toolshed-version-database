@@ -1,0 +1,3645 @@
+{
+  "id": "ncbi_eutils_efetch",
+  "panel_section_id": "fba2434e-1932-41d7-a632-f4b610ef21e0",
+  "outputs": [
+    {
+      "structure": {
+        "collection_type": "list",
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "visible": false,
+            "directory": "downloads",
+            "format": null,
+            "dbkey": "__input__",
+            "assign_primary_output": false,
+            "pattern": "(?P<designation>.*)\\.(?P<ext>[^\\._]+)?",
+            "recurse": false,
+            "sort_comp": "lexical",
+            "discover_via": "pattern",
+            "sort_key": "filename"
+          }
+        ],
+        "collection_type_source": null
+      },
+      "inherit_metadata": false,
+      "default_format": "data",
+      "format": null,
+      "hidden": false,
+      "default_format_source": null,
+      "name": "output1",
+      "model_class": "ToolOutputCollection",
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "output_type": "collection",
+      "label": "NCBI EFetch results"
+    }
+  ],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "type": "conditional",
+      "name": "db",
+      "test_param": {
+        "optional": false,
+        "argument": null,
+        "options": [
+          [
+            "Annotation Information",
+            "annotinfo",
+            false
+          ],
+          [
+            "Assembly",
+            "assembly",
+            false
+          ],
+          [
+            "BioProject",
+            "bioproject",
+            false
+          ],
+          [
+            "BioSample",
+            "biosample",
+            false
+          ],
+          [
+            "Biosystems",
+            "biosystems",
+            false
+          ],
+          [
+            "Blast Database Information",
+            "blastdbinfo",
+            false
+          ],
+          [
+            "Books",
+            "books",
+            false
+          ],
+          [
+            "Conserved Domains",
+            "cdd",
+            false
+          ],
+          [
+            "Clinical Variants",
+            "clinvar",
+            false
+          ],
+          [
+            "CLone",
+            "clone",
+            false
+          ],
+          [
+            "dbVar",
+            "dbvar",
+            false
+          ],
+          [
+            "dbGaP",
+            "gap",
+            false
+          ],
+          [
+            "gapplus",
+            "gapplus",
+            false
+          ],
+          [
+            "GEO Datasets",
+            "gds",
+            false
+          ],
+          [
+            "Gencoll",
+            "gencoll",
+            false
+          ],
+          [
+            "Gene",
+            "gene",
+            false
+          ],
+          [
+            "Genome",
+            "genome",
+            false
+          ],
+          [
+            "GEO Profiles",
+            "geoprofiles",
+            false
+          ],
+          [
+            "grasp",
+            "grasp",
+            false
+          ],
+          [
+            "Genetic Testing Registry",
+            "gtr",
+            false
+          ],
+          [
+            "HomoloGene",
+            "homologene",
+            false
+          ],
+          [
+            "MedGen",
+            "medgen",
+            false
+          ],
+          [
+            "MeSH",
+            "mesh",
+            false
+          ],
+          [
+            "NCBI Web Site",
+            "ncbisearch",
+            false
+          ],
+          [
+            "NLM Catalog",
+            "nlmcatalog",
+            false
+          ],
+          [
+            "Nuccore",
+            "nuccore",
+            false
+          ],
+          [
+            "EST",
+            "nucest",
+            false
+          ],
+          [
+            "GSS",
+            "nucgss",
+            false
+          ],
+          [
+            "Nucleotide",
+            "nucleotide",
+            false
+          ],
+          [
+            "OMIM",
+            "omim",
+            false
+          ],
+          [
+            "Orgtrack",
+            "orgtrack",
+            false
+          ],
+          [
+            "PubChem BioAssay",
+            "pcassay",
+            false
+          ],
+          [
+            "PubChem Compound",
+            "pccompound",
+            false
+          ],
+          [
+            "PubChem Substance",
+            "pcsubstance",
+            false
+          ],
+          [
+            "PubMed Central",
+            "pmc",
+            false
+          ],
+          [
+            "PopSet",
+            "popset",
+            false
+          ],
+          [
+            "Probe",
+            "probe",
+            false
+          ],
+          [
+            "Protein",
+            "protein",
+            false
+          ],
+          [
+            "Protein Clusters",
+            "proteinclusters",
+            false
+          ],
+          [
+            "PubMed",
+            "pubmed",
+            false
+          ],
+          [
+            "PubMed Health",
+            "pubmedhealth",
+            false
+          ],
+          [
+            "seqannot",
+            "seqannot",
+            false
+          ],
+          [
+            "SNP",
+            "snp",
+            false
+          ],
+          [
+            "SRA",
+            "sra",
+            false
+          ],
+          [
+            "Structure",
+            "structure",
+            false
+          ],
+          [
+            "Taxonomy",
+            "taxonomy",
+            false
+          ],
+          [
+            "UniGene",
+            "unigene",
+            false
+          ]
+        ],
+        "help": "",
+        "refresh_on_change": true,
+        "multiple": false,
+        "hidden": false,
+        "name": "db_select",
+        "display": null,
+        "model_class": "SelectToolParameter",
+        "textable": false,
+        "is_dynamic": false,
+        "type": "select",
+        "value": "annotinfo",
+        "label": "NCBI Database to Use"
+      },
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "annotinfo",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "assembly",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "bioproject",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "BioProject Report",
+                  "native-None",
+                  false
+                ],
+                [
+                  "RecordSet (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "biosample",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "BioSample Report",
+                  "native-None",
+                  false
+                ],
+                [
+                  "BioSampleSet (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "biosystems",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Sys-set (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "blastdbinfo",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "books",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "cdd",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "clinvar",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "clone",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "dbvar",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "gap",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "gapplus",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "gds",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "RecordSet (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Summary (text)",
+                  "summary-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "gencoll",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "gene",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Gene Table (xml)",
+                  "gene_table-xml",
+                  false
+                ],
+                [
+                  "Entrezgene (asn.1)",
+                  "native-asn.1",
+                  false
+                ],
+                [
+                  "Gene Report (text)",
+                  "native-text",
+                  false
+                ],
+                [
+                  "Entrezgene-Set (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Tabular Report (tabular)",
+                  "tabular-tabular",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "genome",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "geoprofiles",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "grasp",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "gtr",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "homologene",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Alignment Scores (text)",
+                  "alignmentscores-text",
+                  false
+                ],
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "FASTA (fasta)",
+                  "fasta-fasta",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Homologene Report (text)",
+                  "homologene-text",
+                  false
+                ],
+                [
+                  "HG-Entry (asn.1)",
+                  "native-asn.1",
+                  false
+                ],
+                [
+                  "Homologene List (text)",
+                  "native-text",
+                  false
+                ],
+                [
+                  "Entrez-Homologene-Set (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "alignmentscores-text",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "medgen",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "mesh",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Record (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "MeSH Report (text)",
+                  "native-text",
+                  false
+                ],
+                [
+                  "RecordSet (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "ncbisearch",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "nlmcatalog",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Full Record (text)",
+                  "native-text",
+                  false
+                ],
+                [
+                  "NLMCatalogRecordSet (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "nuccore",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Accession Number (text)",
+                  "acc-text",
+                  false
+                ],
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "EST Report (xml)",
+                  "est-xml",
+                  false
+                ],
+                [
+                  "FASTA (fasta)",
+                  "fasta-fasta",
+                  false
+                ],
+                [
+                  "TinySeq (xml)",
+                  "fasta-xml",
+                  false
+                ],
+                [
+                  "CDS Products (fasta)",
+                  "fasta_cds_aa-fasta",
+                  false
+                ],
+                [
+                  "Coding Regions (fasta)",
+                  "fasta_cds_na-fasta",
+                  false
+                ],
+                [
+                  "Feature Table (text)",
+                  "ft-text",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "GenBank Flatfile (text)",
+                  "gb-text",
+                  false
+                ],
+                [
+                  "GBSet (xml)",
+                  "gb-xml",
+                  false
+                ],
+                [
+                  "INSDSet (xml)",
+                  "gbc-xml",
+                  false
+                ],
+                [
+                  "GenBank with Contig Sequences (text)",
+                  "gbwithparts-text",
+                  false
+                ],
+                [
+                  "FASTA of Gene (fasta)",
+                  "gene_fasta-fasta",
+                  false
+                ],
+                [
+                  "GenPept Flatfile (text)",
+                  "gp-text",
+                  false
+                ],
+                [
+                  "GBSet (xml)",
+                  "gp-xml",
+                  false
+                ],
+                [
+                  "INSDSet (xml)",
+                  "gpc-xml",
+                  false
+                ],
+                [
+                  "GSS Report (text)",
+                  "gss-text",
+                  false
+                ],
+                [
+                  "Identical Protein Report (text)",
+                  "ipg-text",
+                  false
+                ],
+                [
+                  "IPGReportSet (xml)",
+                  "ipg-xml",
+                  false
+                ],
+                [
+                  "Seq-entry (text)",
+                  "native-text",
+                  false
+                ],
+                [
+                  "Bioseq-set (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Seq-id (asn.1)",
+                  "seqid-asn.1",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "acc-text",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "nucest",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Accession Number (text)",
+                  "acc-text",
+                  false
+                ],
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "EST Report (xml)",
+                  "est-xml",
+                  false
+                ],
+                [
+                  "FASTA (fasta)",
+                  "fasta-fasta",
+                  false
+                ],
+                [
+                  "TinySeq (xml)",
+                  "fasta-xml",
+                  false
+                ],
+                [
+                  "CDS Products (fasta)",
+                  "fasta_cds_aa-fasta",
+                  false
+                ],
+                [
+                  "Coding Regions (fasta)",
+                  "fasta_cds_na-fasta",
+                  false
+                ],
+                [
+                  "Feature Table (text)",
+                  "ft-text",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "GenBank Flatfile (text)",
+                  "gb-text",
+                  false
+                ],
+                [
+                  "GBSet (xml)",
+                  "gb-xml",
+                  false
+                ],
+                [
+                  "INSDSet (xml)",
+                  "gbc-xml",
+                  false
+                ],
+                [
+                  "GenBank with Contig Sequences (text)",
+                  "gbwithparts-text",
+                  false
+                ],
+                [
+                  "FASTA of Gene (fasta)",
+                  "gene_fasta-fasta",
+                  false
+                ],
+                [
+                  "GenPept Flatfile (text)",
+                  "gp-text",
+                  false
+                ],
+                [
+                  "GBSet (xml)",
+                  "gp-xml",
+                  false
+                ],
+                [
+                  "INSDSet (xml)",
+                  "gpc-xml",
+                  false
+                ],
+                [
+                  "GSS Report (text)",
+                  "gss-text",
+                  false
+                ],
+                [
+                  "Identical Protein Report (text)",
+                  "ipg-text",
+                  false
+                ],
+                [
+                  "IPGReportSet (xml)",
+                  "ipg-xml",
+                  false
+                ],
+                [
+                  "Seq-entry (text)",
+                  "native-text",
+                  false
+                ],
+                [
+                  "Bioseq-set (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Seq-id (asn.1)",
+                  "seqid-asn.1",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "acc-text",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "nucgss",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Accession Number (text)",
+                  "acc-text",
+                  false
+                ],
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "EST Report (xml)",
+                  "est-xml",
+                  false
+                ],
+                [
+                  "FASTA (fasta)",
+                  "fasta-fasta",
+                  false
+                ],
+                [
+                  "TinySeq (xml)",
+                  "fasta-xml",
+                  false
+                ],
+                [
+                  "CDS Products (fasta)",
+                  "fasta_cds_aa-fasta",
+                  false
+                ],
+                [
+                  "Coding Regions (fasta)",
+                  "fasta_cds_na-fasta",
+                  false
+                ],
+                [
+                  "Feature Table (text)",
+                  "ft-text",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "GenBank Flatfile (text)",
+                  "gb-text",
+                  false
+                ],
+                [
+                  "GBSet (xml)",
+                  "gb-xml",
+                  false
+                ],
+                [
+                  "INSDSet (xml)",
+                  "gbc-xml",
+                  false
+                ],
+                [
+                  "GenBank with Contig Sequences (text)",
+                  "gbwithparts-text",
+                  false
+                ],
+                [
+                  "FASTA of Gene (fasta)",
+                  "gene_fasta-fasta",
+                  false
+                ],
+                [
+                  "GenPept Flatfile (text)",
+                  "gp-text",
+                  false
+                ],
+                [
+                  "GBSet (xml)",
+                  "gp-xml",
+                  false
+                ],
+                [
+                  "INSDSet (xml)",
+                  "gpc-xml",
+                  false
+                ],
+                [
+                  "GSS Report (text)",
+                  "gss-text",
+                  false
+                ],
+                [
+                  "Identical Protein Report (text)",
+                  "ipg-text",
+                  false
+                ],
+                [
+                  "IPGReportSet (xml)",
+                  "ipg-xml",
+                  false
+                ],
+                [
+                  "Seq-entry (text)",
+                  "native-text",
+                  false
+                ],
+                [
+                  "Bioseq-set (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Seq-id (asn.1)",
+                  "seqid-asn.1",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "acc-text",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "nucleotide",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Accession Number (text)",
+                  "acc-text",
+                  false
+                ],
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "EST Report (xml)",
+                  "est-xml",
+                  false
+                ],
+                [
+                  "FASTA (fasta)",
+                  "fasta-fasta",
+                  false
+                ],
+                [
+                  "TinySeq (xml)",
+                  "fasta-xml",
+                  false
+                ],
+                [
+                  "CDS Products (fasta)",
+                  "fasta_cds_aa-fasta",
+                  false
+                ],
+                [
+                  "Coding Regions (fasta)",
+                  "fasta_cds_na-fasta",
+                  false
+                ],
+                [
+                  "Feature Table (text)",
+                  "ft-text",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "GenBank Flatfile (text)",
+                  "gb-text",
+                  false
+                ],
+                [
+                  "GBSet (xml)",
+                  "gb-xml",
+                  false
+                ],
+                [
+                  "INSDSet (xml)",
+                  "gbc-xml",
+                  false
+                ],
+                [
+                  "GenBank with Contig Sequences (text)",
+                  "gbwithparts-text",
+                  false
+                ],
+                [
+                  "FASTA of Gene (fasta)",
+                  "gene_fasta-fasta",
+                  false
+                ],
+                [
+                  "GenPept Flatfile (text)",
+                  "gp-text",
+                  false
+                ],
+                [
+                  "GBSet (xml)",
+                  "gp-xml",
+                  false
+                ],
+                [
+                  "INSDSet (xml)",
+                  "gpc-xml",
+                  false
+                ],
+                [
+                  "GSS Report (text)",
+                  "gss-text",
+                  false
+                ],
+                [
+                  "Identical Protein Report (text)",
+                  "ipg-text",
+                  false
+                ],
+                [
+                  "IPGReportSet (xml)",
+                  "ipg-xml",
+                  false
+                ],
+                [
+                  "Seq-entry (text)",
+                  "native-text",
+                  false
+                ],
+                [
+                  "Bioseq-set (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Seq-id (asn.1)",
+                  "seqid-asn.1",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "acc-text",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "omim",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "orgtrack",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "pcassay",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "pccompound",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "pcsubstance",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "pmc",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "MEDLINE (text)",
+                  "medline-text",
+                  false
+                ],
+                [
+                  "pmc-articleset (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "popset",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "probe",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "protein",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "FASTA (text)",
+                  "fasta-fasta",
+                  false
+                ],
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "fasta-fasta",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "proteinclusters",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "pubmed",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Abstract (xml)",
+                  "abstract-xml",
+                  false
+                ],
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "MEDLINE (text)",
+                  "medline-text",
+                  false
+                ],
+                [
+                  "Pubmed-entry (asn.1)",
+                  "native-asn.1",
+                  false
+                ],
+                [
+                  "PubmedArticleSet (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "abstract-xml",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "pubmedhealth",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "seqannot",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "snp",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Chromosome Report (text)",
+                  "chr-text",
+                  false
+                ],
+                [
+                  "Summary (text)",
+                  "docset-text",
+                  false
+                ],
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "FASTA (fasta)",
+                  "fasta-fasta",
+                  false
+                ],
+                [
+                  "Flat File (text)",
+                  "flt-text",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Rs (asn.1)",
+                  "native-asn.1",
+                  false
+                ],
+                [
+                  "ExchangeSet (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "RS Cluster Report (tabular)",
+                  "rsr-tabular",
+                  false
+                ],
+                [
+                  "SS Exemplar List (text)",
+                  "ssexemplar-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "chr-text",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "sra",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "EXPERIMENT_PACKAGE_SET (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "SraRunInfo (xml)",
+                  "runinfo-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "structure",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Ncbi-mime-asn1 strucseq (asn.1)",
+                  "mmdb-asn.1",
+                  false
+                ],
+                [
+                  "MMDB Report (text)",
+                  "native-text",
+                  false
+                ],
+                [
+                  "RecordSet (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "taxonomy",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Taxonomy List (text)",
+                  "native-text",
+                  false
+                ],
+                [
+                  "TaxaSet (xml)",
+                  "native-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "unigene",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [
+                [
+                  "Document Summary (json)",
+                  "docsum-json",
+                  false
+                ],
+                [
+                  "Document Summary (xml)",
+                  "docsum-xml",
+                  false
+                ],
+                [
+                  "Full Document (text)",
+                  "full-text",
+                  false
+                ],
+                [
+                  "Full Document (xml)",
+                  "full-xml",
+                  false
+                ],
+                [
+                  "Unique Identifier List (text)",
+                  "uilist-text",
+                  false
+                ],
+                [
+                  "Unique Identifier List (xml)",
+                  "uilist-xml",
+                  false
+                ]
+              ],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "output_format",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": false,
+              "type": "select",
+              "value": "docsum-json",
+              "label": "Output Format"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "model_class": "Conditional",
+      "type": "conditional",
+      "name": "query_source",
+      "test_param": {
+        "optional": false,
+        "argument": null,
+        "options": [
+          [
+            "NCBI WebEnv History",
+            "history",
+            false
+          ],
+          [
+            "File containing IDs (one per line)",
+            "id_file",
+            false
+          ],
+          [
+            "Direct Entry",
+            "id_list",
+            false
+          ]
+        ],
+        "help": "",
+        "refresh_on_change": true,
+        "multiple": false,
+        "hidden": false,
+        "name": "qss",
+        "display": null,
+        "model_class": "SelectToolParameter",
+        "textable": false,
+        "is_dynamic": false,
+        "type": "select",
+        "value": "history",
+        "label": "Select source for IDs"
+      },
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "history",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "edam": {
+                "edam_formats": [
+                  "format_3464"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "help": "",
+              "refresh_on_change": true,
+              "multiple": false,
+              "extensions": [
+                "json"
+              ],
+              "hidden": false,
+              "options": {
+                "hdca": [],
+                "hda": []
+              },
+              "name": "history_file",
+              "model_class": "DataToolParameter",
+              "is_dynamic": false,
+              "type": "data",
+              "value": null,
+              "label": "History File"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "id_file",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "edam": {
+                "edam_formats": [
+                  "format_2330",
+                  "format_3475"
+                ],
+                "edam_data": [
+                  "data_0006",
+                  "data_0006"
+                ]
+              },
+              "help": "",
+              "refresh_on_change": true,
+              "multiple": false,
+              "extensions": [
+                "text",
+                "tabular"
+              ],
+              "hidden": false,
+              "options": {
+                "hdca": [],
+                "hda": []
+              },
+              "name": "id_file",
+              "model_class": "DataToolParameter",
+              "is_dynamic": false,
+              "type": "data",
+              "value": null,
+              "label": "ID List"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "id_list",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "help": "Newline/Comma separated list of IDs",
+              "refresh_on_change": false,
+              "hidden": false,
+              "name": "id_list",
+              "datalist": [],
+              "model_class": "TextToolParameter",
+              "area": true,
+              "is_dynamic": false,
+              "type": "text",
+              "value": "",
+              "label": "ID List"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "optional": true,
+      "argument": null,
+      "help": "",
+      "refresh_on_change": false,
+      "hidden": false,
+      "name": "api_key",
+      "datalist": [],
+      "model_class": "TextToolParameter",
+      "area": false,
+      "is_dynamic": false,
+      "type": "text",
+      "value": "",
+      "label": "NCBI API Key"
+    }
+  ],
+  "version": "1.3",
+  "labels": [],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "Galaxy Tools",
+  "name": "NCBI EFetch",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": "fetch records from NCBI"
+}

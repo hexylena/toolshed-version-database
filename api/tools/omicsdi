@@ -1,0 +1,102 @@
+{
+  "model_class": "DataSourceTool",
+  "id": "omicsdi",
+  "name": "OmicsDI",
+  "version": "1.0.0",
+  "description": "Sync dataset's files from OmicsDI",
+  "labels": [
+    "beta"
+  ],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": false,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "BaseURLToolParameter",
+      "name": "GALAXY_URL",
+      "argument": null,
+      "type": "baseurl",
+      "label": "",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": true,
+      "is_dynamic": false,
+      "value": "https://usegalaxy.eu/tool_runner?tool_id=omicsdi"
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output_coll",
+      "format": null,
+      "label": "OmicsDI datasets",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": null,
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "outputs",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)\\.(?P<ext>[^\\.]+)?",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "json",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3464",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "get_data",
+  "panel_section_name": "Get Data",
+  "form_style": "special"
+}

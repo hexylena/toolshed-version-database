@@ -1,0 +1,206 @@
+{
+  "model_class": "RelabelFromFileTool",
+  "id": "__RELABEL_FROM_FILE__",
+  "name": "Relabel identifiers",
+  "version": "1.0.0",
+  "description": "",
+  "labels": [],
+  "edam_operations": [
+    "operation_3096"
+  ],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataCollectionToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data_collection",
+      "label": "Input Collection",
+      "help": "collection to change identifiers in",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": [],
+        "dce": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "how",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "txt",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "labels",
+              "argument": null,
+              "type": "data",
+              "label": "New Identifiers",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "txt"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_2330"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "strict",
+              "argument": null,
+              "type": "boolean",
+              "label": "Ensure strict mapping",
+              "help": "If selected, the target file must contain exactly the correct number of lines.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "true",
+              "falsevalue": "false"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "tabular",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "labels",
+              "argument": null,
+              "type": "data",
+              "label": "New Identifiers",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "tabular"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3475"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "strict",
+              "argument": null,
+              "type": "boolean",
+              "label": "Ensure strict mapping",
+              "help": "If checked, the target file must contain exactly the correct number of lines and each input identifier must match exactly one element of the input collection.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "true",
+              "falsevalue": "false"
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "how_select",
+        "argument": null,
+        "type": "select",
+        "label": "How should the new labels be specified?",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "txt",
+        "options": [
+          [
+            "Using lines in a simple text file.",
+            "txt",
+            false
+          ],
+          [
+            "Map original identifiers to new ones using a two column table.",
+            "tabular",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output",
+      "format": null,
+      "label": "${on_string} (relabelled)",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": null,
+        "collection_type_source": "input",
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": []
+      }
+    }
+  ],
+  "panel_section_id": "collection_operations",
+  "panel_section_name": "Collection Operations",
+  "form_style": "regular"
+}

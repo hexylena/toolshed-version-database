@@ -1,0 +1,84 @@
+{
+  "model_class": "Tool",
+  "id": "CONVERTER_mol2_to_mol",
+  "name": "Convert MOL2 to MOL",
+  "version": "2.4.1",
+  "description": "",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": false,
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Molecules in MOL2-format",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "mol2"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_2330"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "mol",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2330",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": null,
+  "panel_section_name": null,
+  "form_style": "regular"
+}

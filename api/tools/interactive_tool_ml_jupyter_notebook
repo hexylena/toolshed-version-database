@@ -1,0 +1,970 @@
+{
+  "model_class": "InteractiveTool",
+  "id": "interactive_tool_ml_jupyter_notebook",
+  "name": "GPU-enabled Interactive Jupyter Notebook for Machine Learning",
+  "version": "0.4",
+  "description": "",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "mode",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "scratch",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "pull_repo",
+          "inputs": [
+            {
+              "model_class": "TextToolParameter",
+              "name": "repo_url",
+              "argument": null,
+              "type": "text",
+              "label": "Online code repository (Git-based) URL",
+              "help": "Provide URL of Git-based code repository (for example: GitHub repository URL such as https://github.com/anuprulez/gpu_jupyterlab_ct_image_segmentation)",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "previous",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "ipynb",
+              "argument": null,
+              "type": "data",
+              "label": "IPython Notebook",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "ipynb"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3464"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "run_it",
+              "argument": null,
+              "type": "boolean",
+              "label": "Execute notebook and return a new one.",
+              "help": "This option is useful in workflows when you just want to execute a notebook and not dive into the webfrontend.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "true",
+              "falsevalue": "false"
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "mode_select",
+        "argument": null,
+        "type": "select",
+        "label": "Do you already have a notebook?",
+        "help": "Select a set of default notebooks or load an existing one.",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "scratch",
+        "options": [
+          [
+            "Start with default notebooks",
+            "scratch",
+            false
+          ],
+          [
+            "Start with a code repository",
+            "pull_repo",
+            false
+          ],
+          [
+            "Load an existing notebook",
+            "previous",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Repeat",
+      "name": "user_inputs",
+      "type": "repeat",
+      "title": "User inputs",
+      "help": null,
+      "default": 0,
+      "min": 0,
+      "max": "__Infinity__",
+      "inputs": [
+        {
+          "model_class": "TextToolParameter",
+          "name": "input_name",
+          "argument": null,
+          "type": "text",
+          "label": "Name for parameter",
+          "help": "Required. ASCII letters and numbers only.",
+          "refresh_on_change": false,
+          "optional": false,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": "",
+          "area": false,
+          "datalist": []
+        },
+        {
+          "model_class": "TextToolParameter",
+          "name": "description",
+          "argument": null,
+          "type": "text",
+          "label": "Additional optional description",
+          "help": "",
+          "refresh_on_change": false,
+          "optional": true,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": null,
+          "area": false,
+          "datalist": []
+        },
+        {
+          "model_class": "Conditional",
+          "name": "input_type",
+          "type": "conditional",
+          "cases": [
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_1915"
+                    ],
+                    "edam_data": [
+                      "data_0006"
+                    ]
+                  },
+                  "multiple": false,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset_multiple",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_1915"
+                    ],
+                    "edam_data": [
+                      "data_0006"
+                    ]
+                  },
+                  "multiple": true,
+                  "min": null,
+                  "max": null,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset_collection",
+              "inputs": [
+                {
+                  "model_class": "DataCollectionToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data_collection",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "multiple": false,
+                  "options": {
+                    "hda": [],
+                    "hdca": [],
+                    "dce": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset_collection_list",
+              "inputs": [
+                {
+                  "model_class": "DataCollectionToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data_collection",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "multiple": false,
+                  "options": {
+                    "hda": [],
+                    "hdca": [],
+                    "dce": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset_collection_paired",
+              "inputs": [
+                {
+                  "model_class": "DataCollectionToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data_collection",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "multiple": false,
+                  "options": {
+                    "hda": [],
+                    "hdca": [],
+                    "dce": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset_collection_list_paired",
+              "inputs": [
+                {
+                  "model_class": "DataCollectionToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data_collection",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "multiple": false,
+                  "options": {
+                    "hda": [],
+                    "hdca": [],
+                    "dce": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "text",
+              "inputs": [
+                {
+                  "model_class": "TextToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "text",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "",
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "integer",
+              "inputs": [
+                {
+                  "model_class": "IntegerToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "integer",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "min": null,
+                  "max": null,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "",
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "float",
+              "inputs": [
+                {
+                  "model_class": "FloatToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "float",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "min": null,
+                  "max": null,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "",
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "boolean",
+              "inputs": [
+                {
+                  "model_class": "BooleanToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "boolean",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": false,
+                  "truevalue": "true",
+                  "falsevalue": "false"
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "color",
+              "inputs": [
+                {
+                  "model_class": "ColorToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "color",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "#000000"
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset_optional",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_1915"
+                    ],
+                    "edam_data": [
+                      "data_0006"
+                    ]
+                  },
+                  "multiple": false,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset_multiple_optional",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_1915"
+                    ],
+                    "edam_data": [
+                      "data_0006"
+                    ]
+                  },
+                  "multiple": true,
+                  "min": null,
+                  "max": null,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset_collection_optional",
+              "inputs": [
+                {
+                  "model_class": "DataCollectionToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data_collection",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "multiple": false,
+                  "options": {
+                    "hda": [],
+                    "hdca": [],
+                    "dce": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset_collection_list_optional",
+              "inputs": [
+                {
+                  "model_class": "DataCollectionToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data_collection",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "multiple": false,
+                  "options": {
+                    "hda": [],
+                    "hdca": [],
+                    "dce": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset_collection_paired_optional",
+              "inputs": [
+                {
+                  "model_class": "DataCollectionToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data_collection",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "multiple": false,
+                  "options": {
+                    "hda": [],
+                    "hdca": [],
+                    "dce": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "dataset_collection_list_paired_optional",
+              "inputs": [
+                {
+                  "model_class": "DataCollectionToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "data_collection",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "multiple": false,
+                  "options": {
+                    "hda": [],
+                    "hdca": [],
+                    "dce": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "text_optional",
+              "inputs": [
+                {
+                  "model_class": "TextToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "text",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "",
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "integer_optional",
+              "inputs": [
+                {
+                  "model_class": "IntegerToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "integer",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "min": null,
+                  "max": null,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "float_optional",
+              "inputs": [
+                {
+                  "model_class": "FloatToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "float",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "min": null,
+                  "max": null,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "boolean_optional",
+              "inputs": [
+                {
+                  "model_class": "BooleanToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "boolean",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": false,
+                  "truevalue": "true",
+                  "falsevalue": "false"
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "color_optional",
+              "inputs": [
+                {
+                  "model_class": "ColorToolParameter",
+                  "name": "input_value",
+                  "argument": null,
+                  "type": "color",
+                  "label": "Select value",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "#000000"
+                }
+              ]
+            }
+          ],
+          "test_param": {
+            "model_class": "SelectToolParameter",
+            "name": "input_type_selector",
+            "argument": null,
+            "type": "select",
+            "label": "Choose the input type",
+            "help": "",
+            "refresh_on_change": true,
+            "optional": false,
+            "hidden": false,
+            "is_dynamic": false,
+            "value": "dataset",
+            "options": [
+              [
+                "Dataset",
+                "dataset",
+                true
+              ],
+              [
+                "Multiple datasets",
+                "dataset_multiple",
+                false
+              ],
+              [
+                "Dataset collection",
+                "dataset_collection",
+                false
+              ],
+              [
+                "Dataset collection (list)",
+                "dataset_collection_list",
+                false
+              ],
+              [
+                "Dataset collection (paired)",
+                "dataset_collection_paired",
+                false
+              ],
+              [
+                "Dataset collection (list:paired)",
+                "dataset_collection_list_paired",
+                false
+              ],
+              [
+                "Text",
+                "text",
+                false
+              ],
+              [
+                "Integer",
+                "integer",
+                false
+              ],
+              [
+                "Floating point",
+                "float",
+                false
+              ],
+              [
+                "Boolean",
+                "boolean",
+                false
+              ],
+              [
+                "Color selector",
+                "color",
+                false
+              ],
+              [
+                "Optional Dataset",
+                "dataset_optional",
+                true
+              ],
+              [
+                "Optional Multiple datasets",
+                "dataset_multiple_optional",
+                false
+              ],
+              [
+                "Optional Dataset collection",
+                "dataset_collection_optional",
+                false
+              ],
+              [
+                "Optional Dataset collection (list)",
+                "dataset_collection_list_optional",
+                false
+              ],
+              [
+                "Optional Dataset collection (paired)",
+                "dataset_collection_paired_optional",
+                false
+              ],
+              [
+                "Optional Dataset collection (list:paired)",
+                "dataset_collection_list_paired_optional",
+                false
+              ],
+              [
+                "Optional Text",
+                "text_optional",
+                false
+              ],
+              [
+                "Optional Integer",
+                "integer_optional",
+                false
+              ],
+              [
+                "Optional Floating point",
+                "float_optional",
+                false
+              ],
+              [
+                "Optional Boolean",
+                "boolean_optional",
+                false
+              ],
+              [
+                "Optional Color selector",
+                "color_optional",
+                false
+              ]
+            ],
+            "display": null,
+            "multiple": false,
+            "textable": false
+          }
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output_collection",
+      "format": null,
+      "label": "GPU JupyterLab notebook output collection",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": null,
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "jupyter/outputs",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<designation>.*)\\.(?P<ext>[^\\._]+)?",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "jupyter_notebook",
+      "format": "ipynb",
+      "label": "Executed GPU JupyterLab Notebook",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3464",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": "interactivetools",
+  "panel_section_name": "Interactive tools",
+  "form_style": "regular"
+}

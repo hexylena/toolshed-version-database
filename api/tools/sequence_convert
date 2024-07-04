@@ -1,0 +1,312 @@
+{
+  "model_class": "Tool",
+  "id": "sequence_convert",
+  "name": "Sequence converter",
+  "version": "0.1",
+  "description": "for various sequence formats",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "infile",
+      "argument": null,
+      "type": "data",
+      "label": "Sequence file",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "ace",
+        "embl",
+        "fasta",
+        "fastqsanger",
+        "fastqsolexa",
+        "fastqillumina",
+        "genbank",
+        "igmt",
+        "phd",
+        "pir",
+        "sff",
+        "stockholm",
+        "swiss",
+        "tabular",
+        "uniprot-xml"
+      ],
+      "edam": {
+        "edam_formats": [
+          null,
+          "format_2330",
+          "format_1929",
+          "format_1932",
+          "format_1933",
+          "format_1931",
+          "format_1936",
+          null,
+          null,
+          "format_2330",
+          "format_3284",
+          "format_1961",
+          "format_2330",
+          "format_3475",
+          null
+        ],
+        "edam_data": [
+          null,
+          "data_0006",
+          "data_2044",
+          "data_2044",
+          "data_2044",
+          "data_2044",
+          "data_0849",
+          null,
+          null,
+          "data_0006",
+          "data_0924",
+          "data_0863",
+          "data_0006",
+          "data_0006",
+          null
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "in_format",
+      "argument": null,
+      "type": "select",
+      "label": "Input format",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "fasta",
+      "options": [
+        [
+          "ACE Assembly File",
+          "ace",
+          false
+        ],
+        [
+          "EMBL flat file format",
+          "embl",
+          false
+        ],
+        [
+          "FASTA file format",
+          "fasta",
+          true
+        ],
+        [
+          "FASTQ Sanger file",
+          "fastq-sanger",
+          false
+        ],
+        [
+          "FASTQ Solexa/Ilumina file",
+          "fastq-solexa",
+          false
+        ],
+        [
+          "FASTQ Solexa/Ilumina (from pipline 1.3+)",
+          "fastq-ilumina",
+          false
+        ],
+        [
+          "GenBank or GenPept flat file format",
+          "genbank",
+          false
+        ],
+        [
+          "IMGT variant of the EMBL plain text file format",
+          "igmt",
+          false
+        ],
+        [
+          "PHD files from PHRED",
+          "phd",
+          false
+        ],
+        [
+          "PIR - Protein Information Resource format",
+          "pir",
+          false
+        ],
+        [
+          "Standard Flowgram Format (SFF) files produced by 454 sequencing.",
+          "sff",
+          false
+        ],
+        [
+          "Stockholm alignment format is also known as PFAM format",
+          "stockholm",
+          false
+        ],
+        [
+          "Swiss-Prot",
+          "swiss",
+          false
+        ],
+        [
+          "Simple two column tab separated sequence files",
+          "tab",
+          false
+        ],
+        [
+          "Uniprot XML Format",
+          "uniprot-xml",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "out_format",
+      "argument": null,
+      "type": "select",
+      "label": "Output format",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "embl",
+      "options": [
+        [
+          "ACE Assembly File",
+          "ace",
+          false
+        ],
+        [
+          "EMBL flat file format",
+          "embl",
+          true
+        ],
+        [
+          "FASTA file format",
+          "fasta",
+          false
+        ],
+        [
+          "FASTQ Sanger file",
+          "fastq-samger",
+          false
+        ],
+        [
+          "FASTQ Solexa/Ilumina file",
+          "fastq-solexa",
+          false
+        ],
+        [
+          "FASTQ Solexa/Ilumina (from pipline 1.3+)",
+          "fastq-ilumina",
+          false
+        ],
+        [
+          "GenBank or GenPept flat file format",
+          "genbank",
+          false
+        ],
+        [
+          "IMGT variant of the EMBL plain text file format",
+          "igmt",
+          false
+        ],
+        [
+          "PHD files from PHRED",
+          "phd",
+          false
+        ],
+        [
+          "PIR - Protein Information Resource format",
+          "pir",
+          false
+        ],
+        [
+          "Standard Flowgram Format (SFF) files produced by 454 sequencing.",
+          "sff",
+          false
+        ],
+        [
+          "Stockholm alignment format is also known as PFAM format",
+          "stockholm",
+          false
+        ],
+        [
+          "Swiss-Prot",
+          "swiss",
+          false
+        ],
+        [
+          "Simple two column tab separated sequence files",
+          "tab",
+          false
+        ],
+        [
+          "Uniprot XML Format",
+          "uniprot-xml",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "outfile",
+      "format": "text",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": null,
+      "edam_data": null,
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "test_tools",
+  "panel_section_name": "Test Tools",
+  "form_style": "regular"
+}

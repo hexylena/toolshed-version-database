@@ -1,0 +1,282 @@
+{
+  "model_class": "Tool",
+  "id": "export_remote",
+  "name": "Export datasets",
+  "version": "0.1.0",
+  "description": "to remote files source",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "export_type",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "datasets_auto",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "infiles",
+              "argument": null,
+              "type": "data",
+              "label": "Choose your datasets",
+              "help": "Datasets must have unique names",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "data"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_1915"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": true,
+              "min": null,
+              "max": null,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "collection_auto",
+          "inputs": [
+            {
+              "model_class": "DataCollectionToolParameter",
+              "name": "incollection",
+              "argument": null,
+              "type": "data_collection",
+              "label": "Choose your dataset collection",
+              "help": "Dataset collection will be exported. Collections will become folders and datasets will be files",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "data"
+              ],
+              "multiple": false,
+              "options": {
+                "hda": [],
+                "hdca": [],
+                "dce": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "include_collection_name",
+              "argument": null,
+              "type": "boolean",
+              "label": "Include the collection name as top level directory?",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "true",
+              "falsevalue": "false"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "datasets_named",
+          "inputs": [
+            {
+              "model_class": "Repeat",
+              "name": "datasets",
+              "type": "repeat",
+              "title": "Dataset",
+              "help": null,
+              "default": 0,
+              "min": 0,
+              "max": "__Infinity__",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "infile",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Input dataset",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "data"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_1915"
+                    ],
+                    "edam_data": [
+                      "data_0006"
+                    ]
+                  },
+                  "multiple": false,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                },
+                {
+                  "model_class": "TextToolParameter",
+                  "name": "name",
+                  "argument": null,
+                  "type": "text",
+                  "label": "Enter file name",
+                  "help": "To create a file named \"f1.txt\" in directory named \"dir1\" enter \"dir1/f1.txt\"",
+                  "refresh_on_change": false,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "",
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "export_type_selector",
+        "argument": null,
+        "type": "select",
+        "label": "What would you like to export?",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "datasets_auto",
+        "options": [
+          [
+            "Datasets using their Galaxy name and extension",
+            "datasets_auto",
+            true
+          ],
+          [
+            "Dataset Collection using their name, structure and extension",
+            "collection_auto",
+            false
+          ],
+          [
+            "Datasets specifying their names",
+            "datasets_named",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "DirectoryUriToolParameter",
+      "name": "d_uri",
+      "argument": null,
+      "type": "directory_uri",
+      "label": "Directory URI",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "include_metadata_files",
+      "argument": null,
+      "type": "boolean",
+      "label": "Include metadata files in export?",
+      "help": "Examples of metadata files are bam, cram and vcf indexes that can be regenerated from raw data",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": true,
+      "truevalue": "true",
+      "falsevalue": "false"
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "invalid_chars",
+      "argument": null,
+      "type": "select",
+      "label": "Select which characters should be stripped from the exported paths",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "/",
+      "options": [
+        [
+          "Sanitize /",
+          "/",
+          false
+        ],
+        [
+          "Don't sanitize values",
+          "",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out",
+      "format": "txt",
+      "label": "Export logs",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2330",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": "send_data",
+  "panel_section_name": "Send Data",
+  "form_style": "regular"
+}

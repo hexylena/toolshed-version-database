@@ -1,0 +1,98 @@
+{
+  "model_class": "FlattenTool",
+  "id": "__FLATTEN__",
+  "name": "Flatten collection",
+  "version": "1.0.0",
+  "description": "",
+  "labels": [],
+  "edam_operations": [
+    "operation_2409"
+  ],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataCollectionToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data_collection",
+      "label": "Input Collection",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": [],
+        "dce": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "join_identifier",
+      "argument": null,
+      "type": "select",
+      "label": "Join collection identifiers using",
+      "help": "Separator for merging dataset identifiers",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "_",
+      "options": [
+        [
+          "underscore ( _ )",
+          "_",
+          false
+        ],
+        [
+          "colon ( : )",
+          ":",
+          false
+        ],
+        [
+          "dash ( - )",
+          "-",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output",
+      "format": null,
+      "label": "${on_string} (flattened)",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": []
+      }
+    }
+  ],
+  "panel_section_id": "collection_operations",
+  "panel_section_name": "Collection Operations",
+  "form_style": "regular"
+}

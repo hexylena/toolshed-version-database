@@ -1,0 +1,249 @@
+{
+  "model_class": "InteractiveTool",
+  "id": "interactive_tool_ena_upload_table_builder",
+  "name": "ENA upload table builder",
+  "version": "0.1.0+galaxy0",
+  "description": "create tables for the ENA upload tool from metadata templates",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "input_tsv",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "true",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "input_study_table",
+              "argument": null,
+              "type": "data",
+              "label": "Study table",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "tabular"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3475"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "DataToolParameter",
+              "name": "input_experiment_table",
+              "argument": null,
+              "type": "data",
+              "label": "Experiment table",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "tabular"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3475"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "DataToolParameter",
+              "name": "input_run_table",
+              "argument": null,
+              "type": "data",
+              "label": "Run table",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "tabular"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3475"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "DataToolParameter",
+              "name": "input_sample_table",
+              "argument": null,
+              "type": "data",
+              "label": "Sample table",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "tabular"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3475"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "false",
+          "inputs": []
+        }
+      ],
+      "test_param": {
+        "model_class": "BooleanToolParameter",
+        "name": "select_input_tsvs",
+        "argument": null,
+        "type": "boolean",
+        "label": "Edit existing tables",
+        "help": "If you have partially-filled tables that you would like to complete, you can pass them to the app. You will need to know which metadata template your tables have been built against, and select it when the tool launches. It is HIGHLY recommended that these files come from a previous run of this tool, but any table will work if the schema is correct. You do not have to pass all four table if you don't have data for all of them.",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": false,
+        "truevalue": "true",
+        "falsevalue": "false"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output_study_table",
+      "format": "tabular",
+      "label": "Study table",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "output_experiment_table",
+      "format": "tabular",
+      "label": "Experiment table",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "output_run_table",
+      "format": "tabular",
+      "label": "Run table",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "output_sample_table",
+      "format": "tabular",
+      "label": "Sample table",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": "interactivetools",
+  "panel_section_name": "Interactive Tools",
+  "form_style": "regular"
+}

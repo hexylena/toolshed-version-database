@@ -1,0 +1,286 @@
+{
+  "model_class": "Tool",
+  "id": "proteomics_search_protein_prophet_1",
+  "name": "Protein Prophet",
+  "version": "1.1.1",
+  "description": "Calculate Protein Prophet statistics on search results",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input_files",
+      "argument": null,
+      "type": "data",
+      "label": "Peptide Prophet Results",
+      "help": "These files will typically be outputs from peptide prophet or interprophet",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "peptideprophet_pepxml",
+        "interprophet_pepxml"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3655",
+          "format_3655"
+        ],
+        "edam_data": [
+          "data_2536",
+          "data_2536"
+        ]
+      },
+      "multiple": true,
+      "min": null,
+      "max": null,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "database",
+      "argument": "--database",
+      "type": "data",
+      "label": "Specify the database to use for this search",
+      "help": "Can be a named protk database or the path to a fasta file",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "fasta"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "nooccam",
+      "argument": null,
+      "type": "boolean",
+      "label": "Don't apply Occam's razor",
+      "help": "When selected no attempt will be made to derive the simplest protein list explaining observed peptides",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--no-occam",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "groupwts",
+      "argument": null,
+      "type": "boolean",
+      "label": "Use group weights",
+      "help": "Check peptide's total weight (rather than actual weight) in the Protein Group against the threshold",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--group-wts",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "normprotlen",
+      "argument": null,
+      "type": "boolean",
+      "label": "Normalize NSP using Protein Length",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--norm-protlen",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "logprobs",
+      "argument": null,
+      "type": "boolean",
+      "label": "Use the log of probability in the confidence calculations",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--log-prob",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "confem",
+      "argument": null,
+      "type": "boolean",
+      "label": "Use the EM to compute probability given the confidenct",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--confem",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "allpeps",
+      "argument": null,
+      "type": "boolean",
+      "label": "Consider all possible peptides in the database in the confidence model",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--allpeps",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "unmapped",
+      "argument": null,
+      "type": "boolean",
+      "label": "Report results for unmapped proteins",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--unmapped",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "instances",
+      "argument": null,
+      "type": "boolean",
+      "label": "Use Expected Number of Ion Instances to adjust the peptide probabilities prior to NSP adjustment",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--instances",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "delude",
+      "argument": null,
+      "type": "boolean",
+      "label": "Do NOT use peptide degeneracy information when assessing proteins",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--delude",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "minprob",
+      "argument": null,
+      "type": "text",
+      "label": "Minimum peptide prophet probability for peptides to be considered",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0.05",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "minindep",
+      "argument": null,
+      "type": "text",
+      "label": "Minimum percentage of independent peptides required for a protein",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0",
+      "area": false,
+      "datalist": []
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "protxml",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "protein_prophet_results.prot.xml",
+      "edam_format": "format_2032",
+      "edam_data": "data_2536",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "test_tools",
+  "panel_section_name": "Test Tools",
+  "form_style": "regular"
+}

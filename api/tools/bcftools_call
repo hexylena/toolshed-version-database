@@ -1,0 +1,1366 @@
+{
+  "id": "bcftools_call",
+  "panel_section_id": "cb7b812b-0390-4ddb-928f-eedd367f0fd8",
+  "outputs": [
+    {
+      "from_work_dir": null,
+      "format": "vcf",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "",
+      "edam_format": "format_3016",
+      "model_class": "ToolOutput",
+      "name": "output_file",
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "output_type": "data",
+      "parent": null
+    }
+  ],
+  "inputs": [
+    {
+      "optional": false,
+      "argument": null,
+      "edam": {
+        "edam_formats": [
+          "format_3016",
+          "format_2333",
+          null,
+          null
+        ],
+        "edam_data": [
+          "data_0006",
+          "data_0006",
+          null,
+          null
+        ]
+      },
+      "help": "",
+      "refresh_on_change": true,
+      "multiple": false,
+      "extensions": [
+        "vcf",
+        "vcf_bgzip",
+        "bcf",
+        "bcf_bgzip"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "input_file",
+      "model_class": "DataToolParameter",
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "VCF/BCF Data"
+    },
+    {
+      "title": "Restrict to",
+      "name": "sec_restrict",
+      "help": null,
+      "inputs": [
+        {
+          "model_class": "Conditional",
+          "type": "conditional",
+          "name": "regions",
+          "test_param": {
+            "optional": false,
+            "argument": null,
+            "options": [
+              [
+                "None",
+                "__none__",
+                false
+              ],
+              [
+                "regions",
+                "regions",
+                false
+              ],
+              [
+                "regions-file",
+                "regions_file",
+                false
+              ]
+            ],
+            "help": "",
+            "refresh_on_change": true,
+            "multiple": false,
+            "hidden": false,
+            "name": "regions_src",
+            "display": null,
+            "model_class": "SelectToolParameter",
+            "textable": false,
+            "is_dynamic": false,
+            "type": "select",
+            "value": "__none__",
+            "label": "Regions"
+          },
+          "cases": [
+            {
+              "model_class": "ConditionalWhen",
+              "value": "__none__",
+              "inputs": []
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "regions",
+              "inputs": [
+                {
+                  "optional": true,
+                  "argument": null,
+                  "help": "Each region is specifed as: chr or chr:pos or chr:from-to",
+                  "refresh_on_change": false,
+                  "hidden": false,
+                  "name": "regions",
+                  "datalist": [],
+                  "model_class": "TextToolParameter",
+                  "area": false,
+                  "is_dynamic": false,
+                  "type": "text",
+                  "value": "",
+                  "label": "restrict to comma-separated list of regions"
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "regions_file",
+              "inputs": [
+                {
+                  "optional": true,
+                  "argument": null,
+                  "edam": {
+                    "edam_formats": [
+                      "format_3016",
+                      "format_3003",
+                      "format_3475"
+                    ],
+                    "edam_data": [
+                      "data_0006",
+                      "data_3002",
+                      "data_0006"
+                    ]
+                  },
+                  "help": "restrict to regions listed in a file",
+                  "refresh_on_change": true,
+                  "multiple": false,
+                  "extensions": [
+                    "vcf",
+                    "bed",
+                    "tabular"
+                  ],
+                  "hidden": false,
+                  "options": {
+                    "hdca": [],
+                    "hda": []
+                  },
+                  "name": "regions_file",
+                  "model_class": "DataToolParameter",
+                  "is_dynamic": false,
+                  "type": "data",
+                  "value": null,
+                  "label": "Regions File"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "optional": true,
+          "argument": null,
+          "help": "(-s) comma separated list of samples to annotate (or exclude with \"^\" prefix)",
+          "refresh_on_change": false,
+          "hidden": false,
+          "name": "samples",
+          "datalist": [],
+          "model_class": "TextToolParameter",
+          "area": false,
+          "is_dynamic": false,
+          "type": "text",
+          "value": "",
+          "label": "Samples"
+        },
+        {
+          "optional": false,
+          "argument": null,
+          "truevalue": "^",
+          "help": "inverts the query/filtering applied by Samples",
+          "refresh_on_change": false,
+          "falsevalue": "",
+          "hidden": false,
+          "name": "invert_samples",
+          "model_class": "BooleanToolParameter",
+          "is_dynamic": false,
+          "type": "boolean",
+          "value": "false",
+          "label": "Invert Samples"
+        },
+        {
+          "optional": true,
+          "argument": null,
+          "edam": {
+            "edam_formats": [
+              "format_3475"
+            ],
+            "edam_data": [
+              "data_0006"
+            ]
+          },
+          "help": "(-S) file of samples to include",
+          "refresh_on_change": true,
+          "multiple": false,
+          "extensions": [
+            "tabular"
+          ],
+          "hidden": false,
+          "options": {
+            "hdca": [],
+            "hda": []
+          },
+          "name": "samples_file",
+          "model_class": "DataToolParameter",
+          "is_dynamic": false,
+          "type": "data",
+          "value": null,
+          "label": "Samples File"
+        },
+        {
+          "optional": false,
+          "argument": null,
+          "truevalue": "^",
+          "help": "inverts the query/filtering applied by Samples File",
+          "refresh_on_change": false,
+          "falsevalue": "",
+          "hidden": false,
+          "name": "invert_samples_file",
+          "model_class": "BooleanToolParameter",
+          "is_dynamic": false,
+          "type": "boolean",
+          "value": "false",
+          "label": "Invert Samples File"
+        }
+      ],
+      "model_class": "Section",
+      "type": "section",
+      "expanded": false
+    },
+    {
+      "title": "Consensus/variant calling Options",
+      "name": "sec_consensus_variant_calling",
+      "help": null,
+      "inputs": [
+        {
+          "model_class": "Conditional",
+          "type": "conditional",
+          "name": "variant_calling",
+          "test_param": {
+            "optional": false,
+            "argument": null,
+            "options": [
+              [
+                "Multiallelic and rare-variant Caller",
+                "multiallelic",
+                false
+              ],
+              [
+                "Consensus Caller",
+                "consensus",
+                false
+              ]
+            ],
+            "help": "",
+            "refresh_on_change": true,
+            "multiple": false,
+            "hidden": false,
+            "name": "method",
+            "display": null,
+            "model_class": "SelectToolParameter",
+            "textable": false,
+            "is_dynamic": false,
+            "type": "select",
+            "value": "multiallelic",
+            "label": "calling method"
+          },
+          "cases": [
+            {
+              "model_class": "ConditionalWhen",
+              "value": "multiallelic",
+              "inputs": [
+                {
+                  "model_class": "Conditional",
+                  "type": "conditional",
+                  "name": "genotypes",
+                  "test_param": {
+                    "optional": false,
+                    "argument": null,
+                    "options": [
+                      [
+                        "Do not constrain",
+                        "none",
+                        false
+                      ],
+                      [
+                        "alleles - call genotypes given alleles",
+                        "alleles",
+                        false
+                      ],
+                      [
+                        "trio - call genotypes given the father-mother-child constraint",
+                        "trio",
+                        false
+                      ]
+                    ],
+                    "help": "one of: alleles, trio (see manual)",
+                    "refresh_on_change": true,
+                    "multiple": false,
+                    "hidden": false,
+                    "name": "constrain",
+                    "display": null,
+                    "model_class": "SelectToolParameter",
+                    "textable": false,
+                    "is_dynamic": false,
+                    "type": "select",
+                    "value": "none",
+                    "label": "Constrain"
+                  },
+                  "cases": [
+                    {
+                      "model_class": "ConditionalWhen",
+                      "value": "none",
+                      "inputs": [
+                        {
+                          "model_class": "Conditional",
+                          "type": "conditional",
+                          "name": "targets",
+                          "test_param": {
+                            "optional": false,
+                            "argument": null,
+                            "options": [
+                              [
+                                "None",
+                                "__none__",
+                                false
+                              ],
+                              [
+                                "targets",
+                                "targets",
+                                false
+                              ],
+                              [
+                                "targets-file",
+                                "targets_file",
+                                false
+                              ]
+                            ],
+                            "help": "",
+                            "refresh_on_change": true,
+                            "multiple": false,
+                            "hidden": false,
+                            "name": "targets_src",
+                            "display": null,
+                            "model_class": "SelectToolParameter",
+                            "textable": false,
+                            "is_dynamic": false,
+                            "type": "select",
+                            "value": "__none__",
+                            "label": "Targets"
+                          },
+                          "cases": [
+                            {
+                              "model_class": "ConditionalWhen",
+                              "value": "__none__",
+                              "inputs": []
+                            },
+                            {
+                              "model_class": "ConditionalWhen",
+                              "value": "targets",
+                              "inputs": [
+                                {
+                                  "optional": true,
+                                  "argument": null,
+                                  "help": "Each target is specifed as: chr or chr:pos or chr:from-to",
+                                  "refresh_on_change": false,
+                                  "hidden": false,
+                                  "name": "targets",
+                                  "datalist": [],
+                                  "model_class": "TextToolParameter",
+                                  "area": false,
+                                  "is_dynamic": false,
+                                  "type": "text",
+                                  "value": "",
+                                  "label": "Restrict to comma-separated list of targets"
+                                },
+                                {
+                                  "optional": false,
+                                  "argument": null,
+                                  "truevalue": "^",
+                                  "help": "inverts the query/filtering applied by the targets",
+                                  "refresh_on_change": false,
+                                  "falsevalue": "",
+                                  "hidden": false,
+                                  "name": "invert_targets_file",
+                                  "model_class": "BooleanToolParameter",
+                                  "is_dynamic": false,
+                                  "type": "boolean",
+                                  "value": "false",
+                                  "label": "Invert Targets"
+                                }
+                              ]
+                            },
+                            {
+                              "model_class": "ConditionalWhen",
+                              "value": "targets_file",
+                              "inputs": [
+                                {
+                                  "optional": false,
+                                  "argument": null,
+                                  "edam": {
+                                    "edam_formats": [
+                                      "format_3475"
+                                    ],
+                                    "edam_data": [
+                                      "data_0006"
+                                    ]
+                                  },
+                                  "help": "restrict to targets listed in a file",
+                                  "refresh_on_change": true,
+                                  "multiple": false,
+                                  "extensions": [
+                                    "tabular"
+                                  ],
+                                  "hidden": false,
+                                  "options": {
+                                    "hdca": [],
+                                    "hda": []
+                                  },
+                                  "name": "targets_file",
+                                  "model_class": "DataToolParameter",
+                                  "is_dynamic": false,
+                                  "type": "data",
+                                  "value": null,
+                                  "label": "Targets File"
+                                },
+                                {
+                                  "optional": false,
+                                  "argument": null,
+                                  "truevalue": "^",
+                                  "help": "inverts the query/filtering applied by the target file selection",
+                                  "refresh_on_change": false,
+                                  "falsevalue": "",
+                                  "hidden": false,
+                                  "name": "invert_targets_file",
+                                  "model_class": "BooleanToolParameter",
+                                  "is_dynamic": false,
+                                  "type": "boolean",
+                                  "value": "false",
+                                  "label": "Invert Targets"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "model_class": "ConditionalWhen",
+                      "value": "alleles",
+                      "inputs": [
+                        {
+                          "optional": false,
+                          "argument": null,
+                          "edam": {
+                            "edam_formats": [
+                              "format_3475"
+                            ],
+                            "edam_data": [
+                              "data_0006"
+                            ]
+                          },
+                          "help": "restrict to targets listed in a file",
+                          "refresh_on_change": true,
+                          "multiple": false,
+                          "extensions": [
+                            "tabular"
+                          ],
+                          "hidden": false,
+                          "options": {
+                            "hdca": [],
+                            "hda": []
+                          },
+                          "name": "targets_file",
+                          "model_class": "DataToolParameter",
+                          "is_dynamic": false,
+                          "type": "data",
+                          "value": null,
+                          "label": "Targets File"
+                        },
+                        {
+                          "optional": false,
+                          "argument": null,
+                          "truevalue": "^",
+                          "help": "inverts the query/filtering applied by the target file selection",
+                          "refresh_on_change": false,
+                          "falsevalue": "",
+                          "hidden": false,
+                          "name": "invert_targets_file",
+                          "model_class": "BooleanToolParameter",
+                          "is_dynamic": false,
+                          "type": "boolean",
+                          "value": "false",
+                          "label": "Invert Targets"
+                        },
+                        {
+                          "optional": false,
+                          "argument": null,
+                          "truevalue": "--insert-missed",
+                          "help": "output also sites missed by mpileup but present in -T",
+                          "refresh_on_change": false,
+                          "falsevalue": "",
+                          "hidden": false,
+                          "name": "insert_missed",
+                          "model_class": "BooleanToolParameter",
+                          "is_dynamic": false,
+                          "type": "boolean",
+                          "value": "false",
+                          "label": "Insert Missed"
+                        }
+                      ]
+                    },
+                    {
+                      "model_class": "ConditionalWhen",
+                      "value": "trio",
+                      "inputs": [
+                        {
+                          "model_class": "Conditional",
+                          "type": "conditional",
+                          "name": "targets",
+                          "test_param": {
+                            "optional": false,
+                            "argument": null,
+                            "options": [
+                              [
+                                "None",
+                                "__none__",
+                                false
+                              ],
+                              [
+                                "targets",
+                                "targets",
+                                false
+                              ],
+                              [
+                                "targets-file",
+                                "targets_file",
+                                false
+                              ]
+                            ],
+                            "help": "",
+                            "refresh_on_change": true,
+                            "multiple": false,
+                            "hidden": false,
+                            "name": "targets_src",
+                            "display": null,
+                            "model_class": "SelectToolParameter",
+                            "textable": false,
+                            "is_dynamic": false,
+                            "type": "select",
+                            "value": "__none__",
+                            "label": "Targets"
+                          },
+                          "cases": [
+                            {
+                              "model_class": "ConditionalWhen",
+                              "value": "__none__",
+                              "inputs": []
+                            },
+                            {
+                              "model_class": "ConditionalWhen",
+                              "value": "targets",
+                              "inputs": [
+                                {
+                                  "optional": true,
+                                  "argument": null,
+                                  "help": "Each target is specifed as: chr or chr:pos or chr:from-to",
+                                  "refresh_on_change": false,
+                                  "hidden": false,
+                                  "name": "targets",
+                                  "datalist": [],
+                                  "model_class": "TextToolParameter",
+                                  "area": false,
+                                  "is_dynamic": false,
+                                  "type": "text",
+                                  "value": "",
+                                  "label": "Restrict to comma-separated list of targets"
+                                },
+                                {
+                                  "optional": false,
+                                  "argument": null,
+                                  "truevalue": "^",
+                                  "help": "inverts the query/filtering applied by the targets",
+                                  "refresh_on_change": false,
+                                  "falsevalue": "",
+                                  "hidden": false,
+                                  "name": "invert_targets_file",
+                                  "model_class": "BooleanToolParameter",
+                                  "is_dynamic": false,
+                                  "type": "boolean",
+                                  "value": "false",
+                                  "label": "Invert Targets"
+                                }
+                              ]
+                            },
+                            {
+                              "model_class": "ConditionalWhen",
+                              "value": "targets_file",
+                              "inputs": [
+                                {
+                                  "optional": false,
+                                  "argument": null,
+                                  "edam": {
+                                    "edam_formats": [
+                                      "format_3475"
+                                    ],
+                                    "edam_data": [
+                                      "data_0006"
+                                    ]
+                                  },
+                                  "help": "restrict to targets listed in a file",
+                                  "refresh_on_change": true,
+                                  "multiple": false,
+                                  "extensions": [
+                                    "tabular"
+                                  ],
+                                  "hidden": false,
+                                  "options": {
+                                    "hdca": [],
+                                    "hda": []
+                                  },
+                                  "name": "targets_file",
+                                  "model_class": "DataToolParameter",
+                                  "is_dynamic": false,
+                                  "type": "data",
+                                  "value": null,
+                                  "label": "Targets File"
+                                },
+                                {
+                                  "optional": false,
+                                  "argument": null,
+                                  "truevalue": "^",
+                                  "help": "inverts the query/filtering applied by the target file selection",
+                                  "refresh_on_change": false,
+                                  "falsevalue": "",
+                                  "hidden": false,
+                                  "name": "invert_targets_file",
+                                  "model_class": "BooleanToolParameter",
+                                  "is_dynamic": false,
+                                  "type": "boolean",
+                                  "value": "false",
+                                  "label": "Invert Targets"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "optional": true,
+                          "argument": null,
+                          "help": "likelihood of novel mutation for constrained trio calling, see man page for details",
+                          "refresh_on_change": false,
+                          "value": "",
+                          "min": null,
+                          "name": "novel_rate",
+                          "datalist": [],
+                          "area": false,
+                          "model_class": "FloatToolParameter",
+                          "max": null,
+                          "is_dynamic": false,
+                          "type": "float",
+                          "hidden": false,
+                          "label": "Novel Rate"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "optional": true,
+                  "argument": null,
+                  "help": "group non-variant sites into gVCF blocks by minimum per-sample DP",
+                  "refresh_on_change": false,
+                  "value": "",
+                  "min": null,
+                  "name": "gvcf",
+                  "datalist": [],
+                  "area": false,
+                  "model_class": "IntegerToolParameter",
+                  "max": null,
+                  "is_dynamic": false,
+                  "type": "integer",
+                  "hidden": false,
+                  "label": "gvcf"
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "consensus",
+              "inputs": [
+                {
+                  "model_class": "Conditional",
+                  "type": "conditional",
+                  "name": "genotypes",
+                  "test_param": {
+                    "optional": false,
+                    "argument": null,
+                    "options": [
+                      [
+                        "Do not constrain",
+                        "none",
+                        false
+                      ],
+                      [
+                        "trio - call genotypes given the father-mother-child constraint",
+                        "trio",
+                        false
+                      ]
+                    ],
+                    "help": "one of: alleles, trio (see manual)",
+                    "refresh_on_change": true,
+                    "multiple": false,
+                    "hidden": false,
+                    "name": "constrain",
+                    "display": null,
+                    "model_class": "SelectToolParameter",
+                    "textable": false,
+                    "is_dynamic": false,
+                    "type": "select",
+                    "value": "none",
+                    "label": "Constrain"
+                  },
+                  "cases": [
+                    {
+                      "model_class": "ConditionalWhen",
+                      "value": "none",
+                      "inputs": []
+                    },
+                    {
+                      "model_class": "ConditionalWhen",
+                      "value": "trio",
+                      "inputs": [
+                        {
+                          "optional": true,
+                          "argument": null,
+                          "help": "likelihood of novel mutation for constrained trio calling, see man page for details",
+                          "refresh_on_change": false,
+                          "value": "",
+                          "min": null,
+                          "name": "novel_rate",
+                          "datalist": [],
+                          "area": false,
+                          "model_class": "FloatToolParameter",
+                          "max": null,
+                          "is_dynamic": false,
+                          "type": "float",
+                          "hidden": false,
+                          "label": "Novel Rate"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "model_class": "Conditional",
+                  "type": "conditional",
+                  "name": "targets",
+                  "test_param": {
+                    "optional": false,
+                    "argument": null,
+                    "options": [
+                      [
+                        "None",
+                        "__none__",
+                        false
+                      ],
+                      [
+                        "targets",
+                        "targets",
+                        false
+                      ],
+                      [
+                        "targets-file",
+                        "targets_file",
+                        false
+                      ]
+                    ],
+                    "help": "",
+                    "refresh_on_change": true,
+                    "multiple": false,
+                    "hidden": false,
+                    "name": "targets_src",
+                    "display": null,
+                    "model_class": "SelectToolParameter",
+                    "textable": false,
+                    "is_dynamic": false,
+                    "type": "select",
+                    "value": "__none__",
+                    "label": "Targets"
+                  },
+                  "cases": [
+                    {
+                      "model_class": "ConditionalWhen",
+                      "value": "__none__",
+                      "inputs": []
+                    },
+                    {
+                      "model_class": "ConditionalWhen",
+                      "value": "targets",
+                      "inputs": [
+                        {
+                          "optional": true,
+                          "argument": null,
+                          "help": "Each target is specifed as: chr or chr:pos or chr:from-to",
+                          "refresh_on_change": false,
+                          "hidden": false,
+                          "name": "targets",
+                          "datalist": [],
+                          "model_class": "TextToolParameter",
+                          "area": false,
+                          "is_dynamic": false,
+                          "type": "text",
+                          "value": "",
+                          "label": "Restrict to comma-separated list of targets"
+                        },
+                        {
+                          "optional": false,
+                          "argument": null,
+                          "truevalue": "^",
+                          "help": "inverts the query/filtering applied by the targets",
+                          "refresh_on_change": false,
+                          "falsevalue": "",
+                          "hidden": false,
+                          "name": "invert_targets_file",
+                          "model_class": "BooleanToolParameter",
+                          "is_dynamic": false,
+                          "type": "boolean",
+                          "value": "false",
+                          "label": "Invert Targets"
+                        }
+                      ]
+                    },
+                    {
+                      "model_class": "ConditionalWhen",
+                      "value": "targets_file",
+                      "inputs": [
+                        {
+                          "optional": false,
+                          "argument": null,
+                          "edam": {
+                            "edam_formats": [
+                              "format_3475"
+                            ],
+                            "edam_data": [
+                              "data_0006"
+                            ]
+                          },
+                          "help": "restrict to targets listed in a file",
+                          "refresh_on_change": true,
+                          "multiple": false,
+                          "extensions": [
+                            "tabular"
+                          ],
+                          "hidden": false,
+                          "options": {
+                            "hdca": [],
+                            "hda": []
+                          },
+                          "name": "targets_file",
+                          "model_class": "DataToolParameter",
+                          "is_dynamic": false,
+                          "type": "data",
+                          "value": null,
+                          "label": "Targets File"
+                        },
+                        {
+                          "optional": false,
+                          "argument": null,
+                          "truevalue": "^",
+                          "help": "inverts the query/filtering applied by the target file selection",
+                          "refresh_on_change": false,
+                          "falsevalue": "",
+                          "hidden": false,
+                          "name": "invert_targets_file",
+                          "model_class": "BooleanToolParameter",
+                          "is_dynamic": false,
+                          "type": "boolean",
+                          "value": "false",
+                          "label": "Invert Targets"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "optional": true,
+          "argument": null,
+          "help": "variant if P(ref|D)<FLOAT with -c",
+          "refresh_on_change": false,
+          "value": "",
+          "min": null,
+          "name": "pval_threshold",
+          "datalist": [],
+          "area": false,
+          "model_class": "FloatToolParameter",
+          "max": null,
+          "is_dynamic": false,
+          "type": "float",
+          "hidden": false,
+          "label": "Pval Threshold"
+        },
+        {
+          "optional": true,
+          "argument": null,
+          "help": "mutation rate (use bigger for greater sensitivity)",
+          "refresh_on_change": false,
+          "value": "",
+          "min": null,
+          "name": "prior",
+          "datalist": [],
+          "area": false,
+          "model_class": "FloatToolParameter",
+          "max": null,
+          "is_dynamic": false,
+          "type": "float",
+          "hidden": false,
+          "label": "Prior"
+        }
+      ],
+      "model_class": "Section",
+      "type": "section",
+      "expanded": true
+    },
+    {
+      "title": "File format Options",
+      "name": "sec_file_format",
+      "help": null,
+      "inputs": [
+        {
+          "optional": true,
+          "argument": null,
+          "options": [
+            [
+              "GRCh37 - Human Genome reference assembly GRCh37 / hg19",
+              "GRCh37",
+              false
+            ],
+            [
+              "GRCh37 - Human Genome reference assembly GRCh38 / hg38",
+              "GRCh38",
+              false
+            ],
+            [
+              "X - Treat male samples as haploid and female as diploid regardless of the chromosome name",
+              "X",
+              false
+            ],
+            [
+              "Y - Treat male samples as haploid and female as no-copy, regardless of the chromosome name\"",
+              "Y",
+              false
+            ],
+            [
+              "1 - Treat all samples as haploid",
+              "1",
+              false
+            ]
+          ],
+          "help": "",
+          "refresh_on_change": false,
+          "multiple": false,
+          "hidden": false,
+          "name": "ploidy",
+          "display": null,
+          "model_class": "SelectToolParameter",
+          "textable": false,
+          "is_dynamic": false,
+          "type": "select",
+          "value": null,
+          "label": "Select Predefined Ploidy"
+        },
+        {
+          "optional": true,
+          "argument": null,
+          "edam": {
+            "edam_formats": [
+              "format_3475"
+            ],
+            "edam_data": [
+              "data_0006"
+            ]
+          },
+          "help": "space/tab-delimited list of CHROM,FROM,TO,SEX,PLOIDY",
+          "refresh_on_change": true,
+          "multiple": false,
+          "extensions": [
+            "tabular"
+          ],
+          "hidden": false,
+          "options": {
+            "hdca": [],
+            "hda": []
+          },
+          "name": "ploidy_file",
+          "model_class": "DataToolParameter",
+          "is_dynamic": false,
+          "type": "data",
+          "value": null,
+          "label": "Ploidy File"
+        },
+        {
+          "model_class": "Conditional",
+          "type": "conditional",
+          "name": "regions",
+          "test_param": {
+            "optional": false,
+            "argument": null,
+            "options": [
+              [
+                "None",
+                "__none__",
+                false
+              ],
+              [
+                "regions",
+                "regions",
+                false
+              ],
+              [
+                "regions-file",
+                "regions_file",
+                false
+              ]
+            ],
+            "help": "",
+            "refresh_on_change": true,
+            "multiple": false,
+            "hidden": false,
+            "name": "regions_src",
+            "display": null,
+            "model_class": "SelectToolParameter",
+            "textable": false,
+            "is_dynamic": false,
+            "type": "select",
+            "value": "__none__",
+            "label": "Regions"
+          },
+          "cases": [
+            {
+              "model_class": "ConditionalWhen",
+              "value": "__none__",
+              "inputs": []
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "regions",
+              "inputs": [
+                {
+                  "optional": true,
+                  "argument": null,
+                  "help": "Each region is specifed as: chr or chr:pos or chr:from-to",
+                  "refresh_on_change": false,
+                  "hidden": false,
+                  "name": "regions",
+                  "datalist": [],
+                  "model_class": "TextToolParameter",
+                  "area": false,
+                  "is_dynamic": false,
+                  "type": "text",
+                  "value": "",
+                  "label": "restrict to comma-separated list of regions"
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "regions_file",
+              "inputs": [
+                {
+                  "optional": true,
+                  "argument": null,
+                  "edam": {
+                    "edam_formats": [
+                      "format_3016",
+                      "format_3003",
+                      "format_3475"
+                    ],
+                    "edam_data": [
+                      "data_0006",
+                      "data_3002",
+                      "data_0006"
+                    ]
+                  },
+                  "help": "restrict to regions listed in a file",
+                  "refresh_on_change": true,
+                  "multiple": false,
+                  "extensions": [
+                    "vcf",
+                    "bed",
+                    "tabular"
+                  ],
+                  "hidden": false,
+                  "options": {
+                    "hdca": [],
+                    "hda": []
+                  },
+                  "name": "regions_file",
+                  "model_class": "DataToolParameter",
+                  "is_dynamic": false,
+                  "type": "data",
+                  "value": null,
+                  "label": "Regions File"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "optional": true,
+          "argument": null,
+          "help": "(-s) comma separated list of samples to annotate (or exclude with \"^\" prefix)",
+          "refresh_on_change": false,
+          "hidden": false,
+          "name": "samples",
+          "datalist": [],
+          "model_class": "TextToolParameter",
+          "area": false,
+          "is_dynamic": false,
+          "type": "text",
+          "value": "",
+          "label": "Samples"
+        },
+        {
+          "optional": false,
+          "argument": null,
+          "truevalue": "^",
+          "help": "inverts the query/filtering applied by Samples",
+          "refresh_on_change": false,
+          "falsevalue": "",
+          "hidden": false,
+          "name": "invert_samples",
+          "model_class": "BooleanToolParameter",
+          "is_dynamic": false,
+          "type": "boolean",
+          "value": "false",
+          "label": "Invert Samples"
+        },
+        {
+          "optional": true,
+          "argument": null,
+          "edam": {
+            "edam_formats": [
+              "format_3475"
+            ],
+            "edam_data": [
+              "data_0006"
+            ]
+          },
+          "help": "(-S) file of samples to include",
+          "refresh_on_change": true,
+          "multiple": false,
+          "extensions": [
+            "tabular"
+          ],
+          "hidden": false,
+          "options": {
+            "hdca": [],
+            "hda": []
+          },
+          "name": "samples_file",
+          "model_class": "DataToolParameter",
+          "is_dynamic": false,
+          "type": "data",
+          "value": null,
+          "label": "Samples File"
+        },
+        {
+          "optional": false,
+          "argument": null,
+          "truevalue": "^",
+          "help": "inverts the query/filtering applied by Samples File",
+          "refresh_on_change": false,
+          "falsevalue": "",
+          "hidden": false,
+          "name": "invert_samples_file",
+          "model_class": "BooleanToolParameter",
+          "is_dynamic": false,
+          "type": "boolean",
+          "value": "false",
+          "label": "Invert Samples File"
+        }
+      ],
+      "model_class": "Section",
+      "type": "section",
+      "expanded": false
+    },
+    {
+      "title": "Input/output Options",
+      "name": "sec_input_output",
+      "help": null,
+      "inputs": [
+        {
+          "optional": false,
+          "argument": null,
+          "truevalue": "--keep-alts",
+          "help": "keep all possible alternate alleles at variant sites",
+          "refresh_on_change": false,
+          "falsevalue": "",
+          "hidden": false,
+          "name": "keep_alts",
+          "model_class": "BooleanToolParameter",
+          "is_dynamic": false,
+          "type": "boolean",
+          "value": "false",
+          "label": "Keep Alts"
+        },
+        {
+          "optional": true,
+          "argument": null,
+          "help": "output format fields: GQ,GP",
+          "refresh_on_change": false,
+          "hidden": false,
+          "name": "format_fields",
+          "datalist": [],
+          "model_class": "TextToolParameter",
+          "area": false,
+          "is_dynamic": false,
+          "type": "text",
+          "value": "",
+          "label": "Format Fields"
+        },
+        {
+          "optional": false,
+          "argument": null,
+          "truevalue": "--keep-masked-ref",
+          "help": "keep sites with masked reference allele (REF=N)",
+          "refresh_on_change": false,
+          "falsevalue": "",
+          "hidden": false,
+          "name": "keep_masked_ref",
+          "model_class": "BooleanToolParameter",
+          "is_dynamic": false,
+          "type": "boolean",
+          "value": "false",
+          "label": "Keep Masked Ref"
+        },
+        {
+          "optional": true,
+          "argument": null,
+          "options": [
+            [
+              "indels",
+              "indels",
+              false
+            ],
+            [
+              "snps",
+              "snps",
+              false
+            ]
+          ],
+          "help": "skip indels/snps",
+          "refresh_on_change": false,
+          "multiple": false,
+          "hidden": false,
+          "name": "skip_variants",
+          "display": null,
+          "model_class": "SelectToolParameter",
+          "textable": false,
+          "is_dynamic": false,
+          "type": "select",
+          "value": null,
+          "label": "Skip Variants"
+        },
+        {
+          "optional": false,
+          "argument": null,
+          "truevalue": "--variants-only",
+          "help": "output variant sites only",
+          "refresh_on_change": false,
+          "falsevalue": "",
+          "hidden": false,
+          "name": "variants_only",
+          "model_class": "BooleanToolParameter",
+          "is_dynamic": false,
+          "type": "boolean",
+          "value": "false",
+          "label": "Variants Only"
+        }
+      ],
+      "model_class": "Section",
+      "type": "section",
+      "expanded": false
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "options": [
+        [
+          "compressed BCF",
+          "b",
+          false
+        ],
+        [
+          "uncompressed VCF",
+          "v",
+          false
+        ]
+      ],
+      "help": "",
+      "refresh_on_change": false,
+      "multiple": false,
+      "hidden": false,
+      "name": "output_type",
+      "display": null,
+      "model_class": "SelectToolParameter",
+      "textable": false,
+      "is_dynamic": false,
+      "type": "select",
+      "value": "b",
+      "label": ""
+    }
+  ],
+  "version": "1.3.0",
+  "labels": [],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "BCF Tools",
+  "name": "bcftools call",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": "SNP/indel variant calling from VCF/BCF"
+}

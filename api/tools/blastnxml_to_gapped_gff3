@@ -1,0 +1,79 @@
+{
+  "id": "blastnxml_to_gapped_gff3",
+  "panel_section_id": "1642965e-e98d-4ddb-8fd1-768c3f0563bd",
+  "outputs": [
+    {
+      "from_work_dir": null,
+      "format": "gff3",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_1255",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "",
+      "edam_format": "format_1975",
+      "model_class": "ToolOutput",
+      "name": "output",
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "output_type": "data",
+      "parent": null
+    }
+  ],
+  "inputs": [
+    {
+      "optional": false,
+      "argument": null,
+      "edam": {
+        "edam_formats": [
+          "format_3331"
+        ],
+        "edam_data": [
+          "data_0857"
+        ]
+      },
+      "help": "XML format",
+      "refresh_on_change": true,
+      "multiple": false,
+      "extensions": [
+        "blastxml"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "blast_xml",
+      "model_class": "DataToolParameter",
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "Blast Results"
+    }
+  ],
+  "version": "1.1",
+  "labels": [],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "BLAST output processing",
+  "name": "BlastXML NT to gapped GFF3",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": "converts nucleotide blast results to a JBrowse-compatible file"
+}

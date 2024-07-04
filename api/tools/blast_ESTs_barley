@@ -1,0 +1,366 @@
+{
+  "model_class": "Tool",
+  "id": "blast_ESTs_barley",
+  "name": "Extract FASTA from coding sequences in barley",
+  "version": "0.1",
+  "description": "using BLAST",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "in_fasta",
+      "argument": null,
+      "type": "data",
+      "label": "Input file in FASTA format",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "fasta"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "db_opts",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "nucl",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "database",
+              "argument": null,
+              "type": "select",
+              "label": "Nucleotide BLAST database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "morex_v3.all.cds",
+              "options": [
+                [
+                  "Barley all CDS Morex v3.0 (Jul 2020)",
+                  "morex_v3.all.cds",
+                  false
+                ],
+                [
+                  "Barley all CDS Morex v2.0 (Jul 2019)",
+                  "morex_v2.all.cds",
+                  false
+                ],
+                [
+                  "Barley cv. 'Golden Promise' CDS (Jul 2018)",
+                  "gp_cds.v1",
+                  false
+                ],
+                [
+                  "Barley Morex Exome Capture Regions 10x (Apr 2013)",
+                  "morex_exon10",
+                  false
+                ],
+                [
+                  "Barley Morex Exome Capture Regions 5x (Apr 2013)",
+                  "morex_exon5",
+                  false
+                ],
+                [
+                  "Barley BAC Assemblies (Aug 2015)",
+                  "barley_bac_15",
+                  false
+                ],
+                [
+                  "B454BacContigs Morex IBSC_v1 (2012)",
+                  "morex_12.bac",
+                  false
+                ],
+                [
+                  "BacEndSequences IBSC_v1 (2012)",
+                  "morex_v1.bac",
+                  false
+                ],
+                [
+                  "Barley Morex HC cds IBSC_v1 (Mar 2012)",
+                  "morex_12.hc",
+                  false
+                ],
+                [
+                  "Barley Genomic (start at 1st exon end of last exon) HC Genes Morex v1.0, IBSC_v2 (May 2016))",
+                  "morex_v1.cds.hc",
+                  false
+                ],
+                [
+                  "Barley Morex LC cds IBSC_v1 (Mar 2012)",
+                  "morex_12.lc",
+                  false
+                ],
+                [
+                  "Barley Genomic (start at 1st exon end of last exon) LC Genes Morex v1.0, IBSC_v2 (May 2016)",
+                  "morex_v1.cds.lc",
+                  false
+                ],
+                [
+                  "Barley representative Transcripts HC (including introns) Morex v1.0, IBSC_v2 (May 2016)",
+                  "morex_v1.trans.hc",
+                  false
+                ],
+                [
+                  "Barley full-length cDNAs derived from 12 clone libraries (2011)",
+                  "morex_12.flcdna",
+                  false
+                ],
+                [
+                  "Barley representative Transcripts LC (including introns) Morex v1.0, IBSC_v2 (May 2016)",
+                  "morex_v1.trans.lc",
+                  false
+                ],
+                [
+                  "Barley Illumina BAC Contigs (Jun 2015)",
+                  "barley_bac_ill",
+                  false
+                ],
+                [
+                  "Barley CDS HC Morex v1.0, IBSC_v2 (May 2016)",
+                  "morex_v1.hc",
+                  false
+                ],
+                [
+                  "Barley ipk 206633 barley ESTs, cDNA clones",
+                  "morex_ests",
+                  false
+                ],
+                [
+                  "Barley CDS LC Morex v1.0, IBSC_v2 (May 2016)",
+                  "morex_v1.lc",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "prot",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "p_database",
+              "argument": null,
+              "type": "select",
+              "label": "Protein BLAST database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "morex_v3.all",
+              "options": [
+                [
+                  "Barley all Proteins Morex V3 (Jul 2020)",
+                  "morex_v3.all",
+                  false
+                ],
+                [
+                  "Barley LC Proteins Morex V3 (Jul 2020)",
+                  "morex_v3.LC",
+                  false
+                ],
+                [
+                  "Barley HC Proteins Morex V3 (Jul 2020)",
+                  "morex_v3.HC",
+                  false
+                ],
+                [
+                  "Barley HC Proteins Morex v1.0, IBSC_v2 (May 2016)",
+                  "morex_v1.hc",
+                  false
+                ],
+                [
+                  "Barley HC Proteins IBSC_v1 (Mar 2012)",
+                  "barley_ibcs_1.hc",
+                  false
+                ],
+                [
+                  "Barley LC Proteins Morex v1.0, IBSC_v2 (May 2016)",
+                  "morex_v1.lc",
+                  false
+                ],
+                [
+                  "Barley LC Proteins IBSC_v1 (Mar 2012)",
+                  "barley_ibcs_1.lc",
+                  false
+                ],
+                [
+                  "Barley AA (HC and LC) Morex v2.0 (2019)",
+                  "morex_v2.lc.hc",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "db_type",
+        "argument": null,
+        "type": "select",
+        "label": "Type of BLAST database",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "nucl",
+        "options": [
+          [
+            "Nucleotide",
+            "nucl",
+            true
+          ],
+          [
+            "Protein",
+            "prot",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "identity",
+      "argument": null,
+      "type": "integer",
+      "label": "Percental Identity Cut-off",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "80",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "max_hit",
+      "argument": null,
+      "type": "integer",
+      "label": "Maximum number of hits to show",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "20",
+      "area": false,
+      "datalist": []
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "fasta",
+      "label": "${tool.name} on ${on_string}: FASTA sequences",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "out_tab",
+      "format": "tabular",
+      "label": "${tool.name} on ${on_string}: BLAST results",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "blast_barley",
+  "panel_section_name": "Blast barley genomes",
+  "form_style": "regular"
+}

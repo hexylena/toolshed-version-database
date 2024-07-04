@@ -1,0 +1,323 @@
+{
+  "model_class": "Tool",
+  "id": "qual_stats_boxplot",
+  "name": "Boxplot",
+  "version": "1.0.1",
+  "description": "of quality statistics",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input_file",
+      "argument": null,
+      "type": "data",
+      "label": "Quality Statistics File",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "tabular"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "title",
+      "argument": null,
+      "type": "text",
+      "label": "Title for plot",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "Box plot in Galaxy",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "graph_size",
+      "argument": null,
+      "type": "text",
+      "label": "Dimensions of Graph",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "2048,768",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "xlabel",
+      "argument": null,
+      "type": "text",
+      "label": "X axis label",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "X Axis Label",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "ylabel",
+      "argument": null,
+      "type": "text",
+      "label": "Y axis label",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "Score Value",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "xcol",
+      "argument": null,
+      "type": "data_column",
+      "label": "Column for X axis position",
+      "help": "A unique number; c1 if plotting output of FASTQ summary",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": "1",
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input_file",
+      "numerical": false
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "q1col",
+      "argument": null,
+      "type": "data_column",
+      "label": "Column for Q1",
+      "help": "c7 if plotting output of FASTQ summary",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": "7",
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input_file",
+      "numerical": false
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "medcol",
+      "argument": null,
+      "type": "data_column",
+      "label": "Column for Median",
+      "help": "c8 if plotting output of FASTQ summary",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": "8",
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input_file",
+      "numerical": false
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "q3col",
+      "argument": null,
+      "type": "data_column",
+      "label": "Column for Q3",
+      "help": "c9 if plotting output of FASTQ summary",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": "9",
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input_file",
+      "numerical": false
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "lwcol",
+      "argument": null,
+      "type": "data_column",
+      "label": "Column for left whisker",
+      "help": "c11 if plotting output of FASTQ summary",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": "11",
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input_file",
+      "numerical": false
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "rwcol",
+      "argument": null,
+      "type": "data_column",
+      "label": "Column for right whisker",
+      "help": "c12 if plotting output of FASTQ summary",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": "12",
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input_file",
+      "numerical": false
+    },
+    {
+      "model_class": "Conditional",
+      "name": "use_outliers",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "use_outliers",
+          "inputs": [
+            {
+              "model_class": "ColumnListParameter",
+              "name": "outliercol",
+              "argument": null,
+              "type": "data_column",
+              "label": "Column for Outliers",
+              "help": "c13 if plotting output of FASTQ summary",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "13",
+              "options": [],
+              "display": null,
+              "multiple": false,
+              "textable": false,
+              "data_ref": "input_file",
+              "numerical": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "dont_use_outliers",
+          "inputs": []
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "use_outliers_type",
+        "argument": null,
+        "type": "select",
+        "label": "Plot Outliers",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "use_outliers",
+        "options": [
+          [
+            "Plot Outliers",
+            "use_outliers",
+            true
+          ],
+          [
+            "Don't Plot Outliers",
+            "dont_use_outliers",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output_file",
+      "format": "png",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3603",
+      "edam_data": "data_2968",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "graph_display_data",
+  "panel_section_name": "Graph/Display Data",
+  "form_style": "regular"
+}

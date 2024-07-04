@@ -1,0 +1,208 @@
+{
+  "model_class": "InteractiveTool",
+  "id": "interactive_tool_odv",
+  "name": "ODV",
+  "version": "5.6.5.1",
+  "description": "interactive plotting tool for geo-referenced data",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "method",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "own_data",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "infiles",
+              "argument": null,
+              "type": "data",
+              "label": "Netcdf or tabular text file. For text file, odv format is recommanded.",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "netcdf",
+                "tabular"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3650",
+                  "format_3475"
+                ],
+                "edam_data": [
+                  "data_0943",
+                  "data_0006"
+                ]
+              },
+              "multiple": true,
+              "min": null,
+              "max": null,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "zip",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "folder",
+              "argument": null,
+              "type": "data",
+              "label": "ODV collection in a zip folder.",
+              "help": "Must contain the specific folder structure with file.odv and folder.Data",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "zip"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_2333"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": true,
+              "min": null,
+              "max": null,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "type",
+        "argument": null,
+        "type": "select",
+        "label": "Select if you are using a ODV collection in a zip folder or if you have your own raw data",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "zip",
+        "options": [
+          [
+            "The data you are using are a ODV collection in a zip folder",
+            "zip",
+            false
+          ],
+          [
+            "The data you are using are Netcdf or tabular text files",
+            "own_data",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "outputs_netcdf",
+      "format": null,
+      "label": "ODV netcdf outputs",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "netcdf",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "./output",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<designation>.+)\\.nc",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "outputs_all",
+      "format": null,
+      "label": "ODV all outputs",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": null,
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "./output",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<designation>.*)\\.(?P<ext>[^\\._]+)?",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    }
+  ],
+  "panel_section_id": "earth-system-section-watercoastal",
+  "panel_section_name": "Water Coastal Dynamics",
+  "form_style": "regular"
+}

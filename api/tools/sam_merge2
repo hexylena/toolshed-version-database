@@ -1,0 +1,99 @@
+{
+  "id": "sam_merge2",
+  "panel_section_id": "7e610619-a41d-4f31-aae3-0af0df1b1973",
+  "outputs": [
+    {
+      "from_work_dir": null,
+      "format": "bam",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0863",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "",
+      "edam_format": "format_2572",
+      "model_class": "ToolOutput",
+      "name": "output1",
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "output_type": "data",
+      "parent": null
+    }
+  ],
+  "inputs": [
+    {
+      "optional": false,
+      "argument": null,
+      "edam": {
+        "edam_formats": [
+          "format_2572",
+          "format_2573"
+        ],
+        "edam_data": [
+          "data_0863",
+          "data_0863"
+        ]
+      },
+      "help": "",
+      "refresh_on_change": true,
+      "multiple": true,
+      "extensions": [
+        "bam",
+        "sam"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "inputs",
+      "min": null,
+      "model_class": "DataToolParameter",
+      "max": null,
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "Files to merge"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "true",
+      "help": "Control the MERGE_SEQUENCE_DICTIONARIES flag for Picard MergeSamFiles. Default (true) correctly propagates read groups and other important metadata",
+      "refresh_on_change": false,
+      "falsevalue": "false",
+      "hidden": false,
+      "name": "mergeSD",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "true",
+      "label": "Merge all component bam file headers into the merged bam file"
+    }
+  ],
+  "version": "1.2.0",
+  "labels": [],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "SAM Tools",
+  "name": "Merge BAM Files",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": "merges BAM files together"
+}

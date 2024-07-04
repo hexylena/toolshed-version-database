@@ -1,0 +1,87 @@
+{
+  "model_class": "InteractiveTool",
+  "id": "interactive_tool_ideal",
+  "name": "IDEAL",
+  "version": "1.0.0",
+  "description": "Interactive Differential Expression AnaLysis in RNA-seq data",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Some R object",
+      "help": "I need some help here, how to create this object from within Galaxy",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "rdata"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_2333"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output_collection",
+      "format": null,
+      "label": "RData collection",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": null,
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "./shiny_output",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<designation>.*)\\.(?P<ext>[^\\._]+)?",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    }
+  ],
+  "panel_section_id": "interactivetools",
+  "panel_section_name": "Interactive tools",
+  "form_style": "regular"
+}

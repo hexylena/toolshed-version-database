@@ -1,0 +1,221 @@
+{
+  "id": "blastclust",
+  "panel_section_id": "72a69e48-0bfc-45a0-bb51-e5ad36978a63",
+  "outputs": [
+    {
+      "from_work_dir": null,
+      "format": "txt",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "blastclust on ${on_string}",
+      "edam_format": "format_2330",
+      "model_class": "ToolOutput",
+      "name": "output1",
+      "discover_datasets": [],
+      "output_type": "data",
+      "parent": null
+    }
+  ],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "type": "conditional",
+      "name": "db_opts",
+      "test_param": {
+        "optional": false,
+        "argument": null,
+        "options": [
+          [
+            "BLAST Database in your History",
+            "user_db",
+            false
+          ],
+          [
+            "FASTA file",
+            "fasta",
+            false
+          ]
+        ],
+        "help": "",
+        "refresh_on_change": true,
+        "multiple": false,
+        "hidden": false,
+        "name": "db_opts_selector",
+        "display": null,
+        "model_class": "SelectToolParameter",
+        "textable": false,
+        "is_dynamic": false,
+        "type": "select",
+        "value": "user_db",
+        "label": "Subject database/sequences"
+      },
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "user_db",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "edam": {
+                "edam_formats": [
+                  "format_1915"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "help": "",
+              "refresh_on_change": true,
+              "multiple": false,
+              "extensions": [
+                "blastdbp"
+              ],
+              "hidden": false,
+              "options": {
+                "hdca": [],
+                "hda": []
+              },
+              "name": "db",
+              "model_class": "DataToolParameter",
+              "is_dynamic": false,
+              "type": "data",
+              "value": null,
+              "label": "Blast DB"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "fasta",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "edam": {
+                "edam_formats": [
+                  "format_1929"
+                ],
+                "edam_data": [
+                  "data_2044"
+                ]
+              },
+              "help": "",
+              "refresh_on_change": true,
+              "multiple": false,
+              "extensions": [
+                "fasta"
+              ],
+              "hidden": false,
+              "options": {
+                "hdca": [],
+                "hda": []
+              },
+              "name": "file",
+              "model_class": "DataToolParameter",
+              "is_dynamic": false,
+              "type": "data",
+              "value": null,
+              "label": "FASTA file to use as database"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "help": "",
+      "refresh_on_change": false,
+      "value": "0.9",
+      "min": null,
+      "name": "length_coverage_threshold",
+      "datalist": [],
+      "area": false,
+      "model_class": "FloatToolParameter",
+      "max": null,
+      "is_dynamic": false,
+      "type": "float",
+      "hidden": false,
+      "label": "Length coverage threshold"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "help": "    if <3 then the threshold is set as a BLAST score density (0.0 to 3.0; default = 1.75). if >=3 then the threshold is set as a percent of identical residues (3 to 100)",
+      "refresh_on_change": false,
+      "value": "0.9",
+      "min": null,
+      "name": "score_coverage_threshold",
+      "datalist": [],
+      "area": false,
+      "model_class": "FloatToolParameter",
+      "max": null,
+      "is_dynamic": false,
+      "type": "float",
+      "hidden": false,
+      "label": "Score coverage threshold (bit score / length if <3.0, percentage of identities otherwise)"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "TRUE",
+      "help": "",
+      "refresh_on_change": false,
+      "falsevalue": "FALSE",
+      "hidden": false,
+      "name": "require_coverage_on_both_neighbours",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "false",
+      "label": "Require coverage on both neighbours?"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "TRUE",
+      "help": "",
+      "refresh_on_change": false,
+      "falsevalue": "FALSE",
+      "hidden": false,
+      "name": "proteins_input",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "true",
+      "label": "Is input proteins?"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "TRUE",
+      "help": "This is only advised if your FASTA file follows the NCBI naming conventions using pipe '|' symbols",
+      "refresh_on_change": false,
+      "falsevalue": "FALSE",
+      "hidden": false,
+      "name": "enable_id_parsing_in_db_format",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "false",
+      "label": "Should the query and subject defline(s) be parsed?"
+    }
+  ],
+  "version": "0.0.2",
+  "labels": [],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "Genome comparison",
+  "name": "blastclust",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": "Cluster proteins with blast"
+}

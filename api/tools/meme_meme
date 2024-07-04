@@ -1,0 +1,1721 @@
+{
+  "id": "meme_meme",
+  "panel_section_id": "35cd65bd-c749-4ad0-9ef8-da1a95f17439",
+  "outputs": [
+    {
+      "from_work_dir": null,
+      "format": "html",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "${tool.name} on ${on_string} (html)",
+      "edam_format": "format_2331",
+      "model_class": "ToolOutput",
+      "name": "html_outfile",
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "output_type": "data",
+      "parent": null
+    },
+    {
+      "from_work_dir": null,
+      "format": "txt",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "${tool.name} on ${on_string} (text)",
+      "edam_format": "format_2330",
+      "model_class": "ToolOutput",
+      "name": "txt_outfile",
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "output_type": "data",
+      "parent": null
+    },
+    {
+      "from_work_dir": null,
+      "format": "memexml",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "${tool.name} on ${on_string} (xml)",
+      "edam_format": "format_2332",
+      "model_class": "ToolOutput",
+      "name": "xml_outfile",
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "output_type": "data",
+      "parent": null
+    }
+  ],
+  "inputs": [
+    {
+      "optional": false,
+      "argument": null,
+      "edam": {
+        "edam_formats": [
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "help": "",
+      "refresh_on_change": true,
+      "multiple": false,
+      "extensions": [
+        "fasta"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "input1",
+      "model_class": "DataToolParameter",
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "Sequences"
+    },
+    {
+      "model_class": "Conditional",
+      "type": "conditional",
+      "name": "options_type",
+      "test_param": {
+        "optional": false,
+        "argument": null,
+        "options": [
+          [
+            "Basic",
+            "basic",
+            true
+          ],
+          [
+            "Advanced",
+            "advanced",
+            false
+          ]
+        ],
+        "help": "",
+        "refresh_on_change": true,
+        "multiple": false,
+        "hidden": false,
+        "name": "options_type_selector",
+        "display": null,
+        "model_class": "SelectToolParameter",
+        "textable": false,
+        "is_dynamic": false,
+        "type": "select",
+        "value": "basic",
+        "label": "Options Configuration"
+      },
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "basic",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "advanced",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "refresh_on_change": false,
+              "hidden": false,
+              "name": "sf",
+              "datalist": [],
+              "model_class": "TextToolParameter",
+              "area": false,
+              "is_dynamic": false,
+              "type": "text",
+              "value": "Galaxy FASTA Input",
+              "label": "Name of sequence set"
+            },
+            {
+              "model_class": "Conditional",
+              "type": "conditional",
+              "name": "alphabet_type",
+              "test_param": {
+                "optional": false,
+                "argument": null,
+                "options": [
+                  [
+                    "Protein",
+                    "protein",
+                    false
+                  ],
+                  [
+                    "DNA",
+                    "dna",
+                    true
+                  ]
+                ],
+                "help": "",
+                "refresh_on_change": true,
+                "multiple": false,
+                "hidden": false,
+                "name": "alphabet_type_selector",
+                "display": null,
+                "model_class": "SelectToolParameter",
+                "textable": false,
+                "is_dynamic": false,
+                "type": "select",
+                "value": "dna",
+                "label": "Sequence Alphabet"
+              },
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "protein",
+                  "inputs": [
+                    {
+                      "model_class": "Conditional",
+                      "type": "conditional",
+                      "name": "prior_type",
+                      "test_param": {
+                        "optional": false,
+                        "argument": null,
+                        "options": [
+                          [
+                            "simple Dirichlet prior",
+                            "dirichlet",
+                            false
+                          ],
+                          [
+                            "mixture of Dirichlets prior",
+                            "dmix",
+                            true
+                          ],
+                          [
+                            "extremely low variance dmix",
+                            "mega",
+                            false
+                          ],
+                          [
+                            "mega for all but last iteration of EM; dmix on last iteration",
+                            "megap",
+                            false
+                          ],
+                          [
+                            "add +1 to each observed count",
+                            "addone",
+                            false
+                          ]
+                        ],
+                        "help": "",
+                        "refresh_on_change": true,
+                        "multiple": false,
+                        "hidden": false,
+                        "name": "prior_type_selector",
+                        "display": null,
+                        "model_class": "SelectToolParameter",
+                        "textable": false,
+                        "is_dynamic": false,
+                        "type": "select",
+                        "value": "dmix",
+                        "label": "Choice of prior"
+                      },
+                      "cases": [
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "dirichlet",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "0.01",
+                              "min": null,
+                              "name": "prior_b",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "FloatToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "float",
+                              "hidden": false,
+                              "label": "strength of prior on model parameters"
+                            },
+                            {
+                              "optional": true,
+                              "argument": null,
+                              "edam": {
+                                "edam_formats": [
+                                  "format_2330"
+                                ],
+                                "edam_data": [
+                                  "data_0006"
+                                ]
+                              },
+                              "help": "",
+                              "refresh_on_change": true,
+                              "multiple": false,
+                              "extensions": [
+                                "txt"
+                              ],
+                              "hidden": false,
+                              "options": {
+                                "hdca": [],
+                                "hda": []
+                              },
+                              "name": "plib",
+                              "model_class": "DataToolParameter",
+                              "is_dynamic": false,
+                              "type": "data",
+                              "value": null,
+                              "label": "Dirichlet prior file"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "dmix",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "0.0",
+                              "min": null,
+                              "name": "prior_b",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "FloatToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "float",
+                              "hidden": false,
+                              "label": "strength of prior on model parameters"
+                            },
+                            {
+                              "optional": true,
+                              "argument": null,
+                              "edam": {
+                                "edam_formats": [
+                                  "format_2330"
+                                ],
+                                "edam_data": [
+                                  "data_0006"
+                                ]
+                              },
+                              "help": "",
+                              "refresh_on_change": true,
+                              "multiple": false,
+                              "extensions": [
+                                "txt"
+                              ],
+                              "hidden": false,
+                              "options": {
+                                "hdca": [],
+                                "hda": []
+                              },
+                              "name": "plib",
+                              "model_class": "DataToolParameter",
+                              "is_dynamic": false,
+                              "type": "data",
+                              "value": null,
+                              "label": "Dirichlet prior file"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "mega",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "0.0",
+                              "min": null,
+                              "name": "prior_b",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "FloatToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "float",
+                              "hidden": false,
+                              "label": "strength of prior on model parameters"
+                            },
+                            {
+                              "optional": true,
+                              "argument": null,
+                              "edam": {
+                                "edam_formats": [
+                                  "format_2330"
+                                ],
+                                "edam_data": [
+                                  "data_0006"
+                                ]
+                              },
+                              "help": "",
+                              "refresh_on_change": true,
+                              "multiple": false,
+                              "extensions": [
+                                "txt"
+                              ],
+                              "hidden": false,
+                              "options": {
+                                "hdca": [],
+                                "hda": []
+                              },
+                              "name": "plib",
+                              "model_class": "DataToolParameter",
+                              "is_dynamic": false,
+                              "type": "data",
+                              "value": null,
+                              "label": "Dirichlet prior file"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "megap",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "0.0",
+                              "min": null,
+                              "name": "prior_b",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "FloatToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "float",
+                              "hidden": false,
+                              "label": "strength of prior on model parameters"
+                            },
+                            {
+                              "optional": true,
+                              "argument": null,
+                              "edam": {
+                                "edam_formats": [
+                                  "format_2330"
+                                ],
+                                "edam_data": [
+                                  "data_0006"
+                                ]
+                              },
+                              "help": "",
+                              "refresh_on_change": true,
+                              "multiple": false,
+                              "extensions": [
+                                "txt"
+                              ],
+                              "hidden": false,
+                              "options": {
+                                "hdca": [],
+                                "hda": []
+                              },
+                              "name": "plib",
+                              "model_class": "DataToolParameter",
+                              "is_dynamic": false,
+                              "type": "data",
+                              "value": null,
+                              "label": "Dirichlet prior file"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "addone",
+                          "inputs": []
+                        }
+                      ]
+                    },
+                    {
+                      "model_class": "Conditional",
+                      "type": "conditional",
+                      "name": "spmap_type",
+                      "test_param": {
+                        "optional": false,
+                        "argument": null,
+                        "options": [
+                          [
+                            "uni",
+                            "uni",
+                            false
+                          ],
+                          [
+                            "pam",
+                            "pam",
+                            true
+                          ],
+                          [
+                            "Use starting point from string",
+                            "cons",
+                            false
+                          ]
+                        ],
+                        "help": "",
+                        "refresh_on_change": true,
+                        "multiple": false,
+                        "hidden": false,
+                        "name": "spmap_type_selector",
+                        "display": null,
+                        "model_class": "SelectToolParameter",
+                        "textable": false,
+                        "is_dynamic": false,
+                        "type": "select",
+                        "value": "pam",
+                        "label": "EM starting points"
+                      },
+                      "cases": [
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "uni",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "0.5",
+                              "min": null,
+                              "name": "spfuzz",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "FloatToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "float",
+                              "hidden": false,
+                              "label": "Fuzziness of the mapping"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "pam",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "120",
+                              "min": null,
+                              "name": "spfuzz",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "IntegerToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "integer",
+                              "hidden": false,
+                              "label": "Fuzziness of the mapping"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "cons",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "hidden": false,
+                              "name": "cons",
+                              "datalist": [],
+                              "model_class": "TextToolParameter",
+                              "area": false,
+                              "is_dynamic": false,
+                              "type": "text",
+                              "value": "",
+                              "label": "Starting point from string"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "dna",
+                  "inputs": [
+                    {
+                      "optional": false,
+                      "argument": null,
+                      "truevalue": "-revcomp",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "falsevalue": "",
+                      "hidden": false,
+                      "name": "revcomp",
+                      "model_class": "BooleanToolParameter",
+                      "is_dynamic": false,
+                      "type": "boolean",
+                      "value": "false",
+                      "label": "Check reverse complement"
+                    },
+                    {
+                      "optional": false,
+                      "argument": null,
+                      "truevalue": "-pal",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "falsevalue": "",
+                      "hidden": false,
+                      "name": "pal",
+                      "model_class": "BooleanToolParameter",
+                      "is_dynamic": false,
+                      "type": "boolean",
+                      "value": "false",
+                      "label": "Check for palindromes"
+                    },
+                    {
+                      "model_class": "Conditional",
+                      "type": "conditional",
+                      "name": "prior_type",
+                      "test_param": {
+                        "optional": false,
+                        "argument": null,
+                        "options": [
+                          [
+                            "simple Dirichlet prior",
+                            "dirichlet",
+                            true
+                          ],
+                          [
+                            "mixture of Dirichlets prior",
+                            "dmix",
+                            false
+                          ],
+                          [
+                            "extremely low variance dmix",
+                            "mega",
+                            false
+                          ],
+                          [
+                            "mega for all but last iteration of EM; dmix on last iteration",
+                            "megap",
+                            false
+                          ],
+                          [
+                            "add +1 to each observed count",
+                            "addone",
+                            false
+                          ]
+                        ],
+                        "help": "",
+                        "refresh_on_change": true,
+                        "multiple": false,
+                        "hidden": false,
+                        "name": "prior_type_selector",
+                        "display": null,
+                        "model_class": "SelectToolParameter",
+                        "textable": false,
+                        "is_dynamic": false,
+                        "type": "select",
+                        "value": "dirichlet",
+                        "label": "Sequence Alphabet"
+                      },
+                      "cases": [
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "dirichlet",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "0.01",
+                              "min": null,
+                              "name": "prior_b",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "FloatToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "float",
+                              "hidden": false,
+                              "label": "strength of prior on model parameters"
+                            },
+                            {
+                              "optional": true,
+                              "argument": null,
+                              "edam": {
+                                "edam_formats": [
+                                  "format_2330"
+                                ],
+                                "edam_data": [
+                                  "data_0006"
+                                ]
+                              },
+                              "help": "",
+                              "refresh_on_change": true,
+                              "multiple": false,
+                              "extensions": [
+                                "txt"
+                              ],
+                              "hidden": false,
+                              "options": {
+                                "hdca": [],
+                                "hda": []
+                              },
+                              "name": "plib",
+                              "model_class": "DataToolParameter",
+                              "is_dynamic": false,
+                              "type": "data",
+                              "value": null,
+                              "label": "Dirichlet prior file"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "dmix",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "0.0",
+                              "min": null,
+                              "name": "prior_b",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "FloatToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "float",
+                              "hidden": false,
+                              "label": "strength of prior on model parameters"
+                            },
+                            {
+                              "optional": true,
+                              "argument": null,
+                              "edam": {
+                                "edam_formats": [
+                                  "format_2330"
+                                ],
+                                "edam_data": [
+                                  "data_0006"
+                                ]
+                              },
+                              "help": "",
+                              "refresh_on_change": true,
+                              "multiple": false,
+                              "extensions": [
+                                "txt"
+                              ],
+                              "hidden": false,
+                              "options": {
+                                "hdca": [],
+                                "hda": []
+                              },
+                              "name": "plib",
+                              "model_class": "DataToolParameter",
+                              "is_dynamic": false,
+                              "type": "data",
+                              "value": null,
+                              "label": "Dirichlet prior file"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "mega",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "0.0",
+                              "min": null,
+                              "name": "prior_b",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "FloatToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "float",
+                              "hidden": false,
+                              "label": "strength of prior on model parameters"
+                            },
+                            {
+                              "optional": true,
+                              "argument": null,
+                              "edam": {
+                                "edam_formats": [
+                                  "format_2330"
+                                ],
+                                "edam_data": [
+                                  "data_0006"
+                                ]
+                              },
+                              "help": "",
+                              "refresh_on_change": true,
+                              "multiple": false,
+                              "extensions": [
+                                "txt"
+                              ],
+                              "hidden": false,
+                              "options": {
+                                "hdca": [],
+                                "hda": []
+                              },
+                              "name": "plib",
+                              "model_class": "DataToolParameter",
+                              "is_dynamic": false,
+                              "type": "data",
+                              "value": null,
+                              "label": "Dirichlet prior file"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "megap",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "0.0",
+                              "min": null,
+                              "name": "prior_b",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "FloatToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "float",
+                              "hidden": false,
+                              "label": "strength of prior on model parameters"
+                            },
+                            {
+                              "optional": true,
+                              "argument": null,
+                              "edam": {
+                                "edam_formats": [
+                                  "format_2330"
+                                ],
+                                "edam_data": [
+                                  "data_0006"
+                                ]
+                              },
+                              "help": "",
+                              "refresh_on_change": true,
+                              "multiple": false,
+                              "extensions": [
+                                "txt"
+                              ],
+                              "hidden": false,
+                              "options": {
+                                "hdca": [],
+                                "hda": []
+                              },
+                              "name": "plib",
+                              "model_class": "DataToolParameter",
+                              "is_dynamic": false,
+                              "type": "data",
+                              "value": null,
+                              "label": "Dirichlet prior file"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "addone",
+                          "inputs": []
+                        }
+                      ]
+                    },
+                    {
+                      "model_class": "Conditional",
+                      "type": "conditional",
+                      "name": "spmap_type",
+                      "test_param": {
+                        "optional": false,
+                        "argument": null,
+                        "options": [
+                          [
+                            "uni",
+                            "uni",
+                            true
+                          ],
+                          [
+                            "pam",
+                            "pam",
+                            false
+                          ],
+                          [
+                            "Use starting point from string",
+                            "cons",
+                            false
+                          ]
+                        ],
+                        "help": "",
+                        "refresh_on_change": true,
+                        "multiple": false,
+                        "hidden": false,
+                        "name": "spmap_type_selector",
+                        "display": null,
+                        "model_class": "SelectToolParameter",
+                        "textable": false,
+                        "is_dynamic": false,
+                        "type": "select",
+                        "value": "uni",
+                        "label": "EM starting points"
+                      },
+                      "cases": [
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "uni",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "0.5",
+                              "min": null,
+                              "name": "spfuzz",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "FloatToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "float",
+                              "hidden": false,
+                              "label": "Fuzziness of the mapping"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "pam",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "120",
+                              "min": null,
+                              "name": "spfuzz",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "IntegerToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "integer",
+                              "hidden": false,
+                              "label": "Fuzziness of the mapping"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "cons",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "hidden": false,
+                              "name": "cons",
+                              "datalist": [],
+                              "model_class": "TextToolParameter",
+                              "area": false,
+                              "is_dynamic": false,
+                              "type": "text",
+                              "value": "",
+                              "label": "Starting point from string"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "refresh_on_change": false,
+              "value": "1",
+              "min": null,
+              "name": "nmotifs",
+              "datalist": [],
+              "area": false,
+              "model_class": "IntegerToolParameter",
+              "max": null,
+              "is_dynamic": false,
+              "type": "integer",
+              "hidden": false,
+              "label": "Number of different motifs to search"
+            },
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "refresh_on_change": false,
+              "value": "inf",
+              "min": null,
+              "name": "evt",
+              "datalist": [],
+              "area": false,
+              "model_class": "FloatToolParameter",
+              "max": null,
+              "is_dynamic": false,
+              "type": "float",
+              "hidden": false,
+              "label": "E-value to stop looking for motifs"
+            },
+            {
+              "model_class": "Conditional",
+              "type": "conditional",
+              "name": "mod_type",
+              "test_param": {
+                "optional": false,
+                "argument": null,
+                "options": [
+                  [
+                    "One Occurrence Per Sequence",
+                    "oops",
+                    false
+                  ],
+                  [
+                    "Zero or One Occurrence Per Sequence",
+                    "zoops",
+                    true
+                  ],
+                  [
+                    "Any Number of Repetitions",
+                    "anr",
+                    false
+                  ]
+                ],
+                "help": "",
+                "refresh_on_change": true,
+                "multiple": false,
+                "hidden": false,
+                "name": "mod_type_selector",
+                "display": null,
+                "model_class": "SelectToolParameter",
+                "textable": false,
+                "is_dynamic": false,
+                "type": "select",
+                "value": "zoops",
+                "label": "Expected motif distribution"
+              },
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "oops",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "zoops",
+                  "inputs": [
+                    {
+                      "model_class": "Conditional",
+                      "type": "conditional",
+                      "name": "motif_occurrence_type",
+                      "test_param": {
+                        "optional": false,
+                        "argument": null,
+                        "options": [
+                          [
+                            "Use defaults",
+                            "default",
+                            true
+                          ],
+                          [
+                            "nsites",
+                            "nsites",
+                            false
+                          ],
+                          [
+                            "min and max sites",
+                            "min_max_sites",
+                            false
+                          ]
+                        ],
+                        "help": "",
+                        "refresh_on_change": true,
+                        "multiple": false,
+                        "hidden": false,
+                        "name": "motif_occurrence_type_selector",
+                        "display": null,
+                        "model_class": "SelectToolParameter",
+                        "textable": false,
+                        "is_dynamic": false,
+                        "type": "select",
+                        "value": "default",
+                        "label": "Number of motif occurrences"
+                      },
+                      "cases": [
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "default",
+                          "inputs": []
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "nsites",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "1",
+                              "min": null,
+                              "name": "nsites",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "IntegerToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "integer",
+                              "hidden": false,
+                              "label": "Search nsites number of occurrences"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "min_max_sites",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "1",
+                              "min": null,
+                              "name": "minsites",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "IntegerToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "integer",
+                              "hidden": false,
+                              "label": "minsites"
+                            },
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "50",
+                              "min": null,
+                              "name": "maxsites",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "IntegerToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "integer",
+                              "hidden": false,
+                              "label": "maxsites"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "anr",
+                  "inputs": [
+                    {
+                      "model_class": "Conditional",
+                      "type": "conditional",
+                      "name": "motif_occurrence_type",
+                      "test_param": {
+                        "optional": false,
+                        "argument": null,
+                        "options": [
+                          [
+                            "Use defaults",
+                            "default",
+                            true
+                          ],
+                          [
+                            "nsites",
+                            "nsites",
+                            false
+                          ],
+                          [
+                            "min and max sites",
+                            "min_max_sites",
+                            false
+                          ]
+                        ],
+                        "help": "",
+                        "refresh_on_change": true,
+                        "multiple": false,
+                        "hidden": false,
+                        "name": "motif_occurrence_type_selector",
+                        "display": null,
+                        "model_class": "SelectToolParameter",
+                        "textable": false,
+                        "is_dynamic": false,
+                        "type": "select",
+                        "value": "default",
+                        "label": "Number of motif occurrences"
+                      },
+                      "cases": [
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "default",
+                          "inputs": []
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "nsites",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "1",
+                              "min": null,
+                              "name": "nsites",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "IntegerToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "integer",
+                              "hidden": false,
+                              "label": "Search nsites number of occurrences"
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "min_max_sites",
+                          "inputs": [
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "1",
+                              "min": null,
+                              "name": "minsites",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "IntegerToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "integer",
+                              "hidden": false,
+                              "label": "minsites"
+                            },
+                            {
+                              "optional": false,
+                              "argument": null,
+                              "help": "",
+                              "refresh_on_change": false,
+                              "value": "50",
+                              "min": null,
+                              "name": "maxsites",
+                              "datalist": [],
+                              "area": false,
+                              "model_class": "IntegerToolParameter",
+                              "max": null,
+                              "is_dynamic": false,
+                              "type": "integer",
+                              "hidden": false,
+                              "label": "maxsites"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "refresh_on_change": false,
+              "value": "0.8",
+              "min": null,
+              "name": "wnsites",
+              "datalist": [],
+              "area": false,
+              "model_class": "FloatToolParameter",
+              "max": null,
+              "is_dynamic": false,
+              "type": "float",
+              "hidden": false,
+              "label": "Weight on the prior on nsites"
+            },
+            {
+              "model_class": "Conditional",
+              "type": "conditional",
+              "name": "motif_width_type",
+              "test_param": {
+                "optional": false,
+                "argument": null,
+                "options": [
+                  [
+                    "Exact width",
+                    "exact",
+                    false
+                  ],
+                  [
+                    "Specify a range",
+                    "range",
+                    true
+                  ]
+                ],
+                "help": "",
+                "refresh_on_change": true,
+                "multiple": false,
+                "hidden": false,
+                "name": "motif_width_type_selector",
+                "display": null,
+                "model_class": "SelectToolParameter",
+                "textable": false,
+                "is_dynamic": false,
+                "type": "select",
+                "value": "range",
+                "label": "Motif width type"
+              },
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "exact",
+                  "inputs": [
+                    {
+                      "optional": false,
+                      "argument": null,
+                      "help": "",
+                      "refresh_on_change": false,
+                      "value": "10",
+                      "min": null,
+                      "name": "width",
+                      "datalist": [],
+                      "area": false,
+                      "model_class": "IntegerToolParameter",
+                      "max": null,
+                      "is_dynamic": false,
+                      "type": "integer",
+                      "hidden": false,
+                      "label": "Width of motif to search"
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "range",
+                  "inputs": [
+                    {
+                      "optional": false,
+                      "argument": null,
+                      "help": "",
+                      "refresh_on_change": false,
+                      "value": "8",
+                      "min": null,
+                      "name": "minw",
+                      "datalist": [],
+                      "area": false,
+                      "model_class": "IntegerToolParameter",
+                      "max": null,
+                      "is_dynamic": false,
+                      "type": "integer",
+                      "hidden": false,
+                      "label": "Min width of motif to search"
+                    },
+                    {
+                      "optional": false,
+                      "argument": null,
+                      "help": "",
+                      "refresh_on_change": false,
+                      "value": "50",
+                      "min": null,
+                      "name": "maxw",
+                      "datalist": [],
+                      "area": false,
+                      "model_class": "IntegerToolParameter",
+                      "max": null,
+                      "is_dynamic": false,
+                      "type": "integer",
+                      "hidden": false,
+                      "label": "Max width of motif to search"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "model_class": "Conditional",
+              "type": "conditional",
+              "name": "motif_trim_type",
+              "test_param": {
+                "optional": false,
+                "argument": null,
+                "options": [
+                  [
+                    "No motif trim",
+                    "nomatrim",
+                    false
+                  ],
+                  [
+                    "Trim motif",
+                    "trim",
+                    true
+                  ]
+                ],
+                "help": "",
+                "refresh_on_change": true,
+                "multiple": false,
+                "hidden": false,
+                "name": "motif_trim_type_selector",
+                "display": null,
+                "model_class": "SelectToolParameter",
+                "textable": false,
+                "is_dynamic": false,
+                "type": "select",
+                "value": "trim",
+                "label": "Motif trim type"
+              },
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "nomatrim",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "trim",
+                  "inputs": [
+                    {
+                      "optional": false,
+                      "argument": null,
+                      "help": "",
+                      "refresh_on_change": false,
+                      "value": "11",
+                      "min": null,
+                      "name": "wg",
+                      "datalist": [],
+                      "area": false,
+                      "model_class": "IntegerToolParameter",
+                      "max": null,
+                      "is_dynamic": false,
+                      "type": "integer",
+                      "hidden": false,
+                      "label": "Gap cost"
+                    },
+                    {
+                      "optional": false,
+                      "argument": null,
+                      "help": "",
+                      "refresh_on_change": false,
+                      "value": "1",
+                      "min": null,
+                      "name": "ws",
+                      "datalist": [],
+                      "area": false,
+                      "model_class": "IntegerToolParameter",
+                      "max": null,
+                      "is_dynamic": false,
+                      "type": "integer",
+                      "hidden": false,
+                      "label": "Space cost"
+                    },
+                    {
+                      "optional": false,
+                      "argument": null,
+                      "truevalue": "-noendgaps",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "falsevalue": "",
+                      "hidden": false,
+                      "name": "noendgaps",
+                      "model_class": "BooleanToolParameter",
+                      "is_dynamic": false,
+                      "type": "boolean",
+                      "value": "false",
+                      "label": "Do not penalize endgaps"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "optional": true,
+              "argument": null,
+              "edam": {
+                "edam_formats": [
+                  "format_2330"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "help": "",
+              "refresh_on_change": true,
+              "multiple": false,
+              "extensions": [
+                "txt"
+              ],
+              "hidden": false,
+              "options": {
+                "hdca": [],
+                "hda": []
+              },
+              "name": "bfile",
+              "model_class": "DataToolParameter",
+              "is_dynamic": false,
+              "type": "data",
+              "value": null,
+              "label": "Background Model"
+            },
+            {
+              "optional": true,
+              "argument": null,
+              "edam": {
+                "edam_formats": [
+                  "format_2330"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "help": "",
+              "refresh_on_change": true,
+              "multiple": false,
+              "extensions": [
+                "txt"
+              ],
+              "hidden": false,
+              "options": {
+                "hdca": [],
+                "hda": []
+              },
+              "name": "pspfile",
+              "model_class": "DataToolParameter",
+              "is_dynamic": false,
+              "type": "data",
+              "value": null,
+              "label": "Position-Specific Prior"
+            },
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "refresh_on_change": false,
+              "value": "50",
+              "min": null,
+              "name": "maxiter",
+              "datalist": [],
+              "area": false,
+              "model_class": "IntegerToolParameter",
+              "max": null,
+              "is_dynamic": false,
+              "type": "integer",
+              "hidden": false,
+              "label": "Number of iterations of EM to run"
+            },
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "refresh_on_change": false,
+              "value": "0.001",
+              "min": null,
+              "name": "distance",
+              "datalist": [],
+              "area": false,
+              "model_class": "FloatToolParameter",
+              "max": null,
+              "is_dynamic": false,
+              "type": "float",
+              "hidden": false,
+              "label": "Convergence criterion"
+            },
+            {
+              "model_class": "Conditional",
+              "type": "conditional",
+              "name": "branching_type",
+              "test_param": {
+                "optional": false,
+                "argument": null,
+                "options": [
+                  [
+                    "Perform x-branching",
+                    "x_branch",
+                    false
+                  ],
+                  [
+                    "No x-branching",
+                    "no_x_branch",
+                    true
+                  ]
+                ],
+                "help": "",
+                "refresh_on_change": true,
+                "multiple": false,
+                "hidden": false,
+                "name": "branching_type_selector",
+                "display": null,
+                "model_class": "SelectToolParameter",
+                "textable": false,
+                "is_dynamic": false,
+                "type": "select",
+                "value": "no_x_branch",
+                "label": "x-branching type"
+              },
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "no_x_branch",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "x_branch",
+                  "inputs": [
+                    {
+                      "optional": false,
+                      "argument": null,
+                      "help": "",
+                      "refresh_on_change": false,
+                      "value": "3",
+                      "min": null,
+                      "name": "bfactor",
+                      "datalist": [],
+                      "area": false,
+                      "model_class": "IntegerToolParameter",
+                      "max": null,
+                      "is_dynamic": false,
+                      "type": "integer",
+                      "hidden": false,
+                      "label": "Number of iterations of branching"
+                    },
+                    {
+                      "optional": false,
+                      "argument": null,
+                      "help": "",
+                      "refresh_on_change": false,
+                      "value": "64",
+                      "min": null,
+                      "name": "heapsize",
+                      "datalist": [],
+                      "area": false,
+                      "model_class": "IntegerToolParameter",
+                      "max": null,
+                      "is_dynamic": false,
+                      "type": "integer",
+                      "hidden": false,
+                      "label": "Maximum number of heaps to use"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "NON_COMMERCIAL_USE",
+      "help": "",
+      "refresh_on_change": false,
+      "falsevalue": "COMMERCIAL_USE",
+      "hidden": false,
+      "name": "non_commercial_use",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "false",
+      "label": "I certify that I am not using this tool for commercial purposes."
+    }
+  ],
+  "version": "1.0.0",
+  "labels": [],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "Deprecated",
+  "name": "MEME",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": "- Multiple Em for Motif Elicitation"
+}

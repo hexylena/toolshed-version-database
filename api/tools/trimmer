@@ -1,0 +1,264 @@
+{
+  "model_class": "Tool",
+  "id": "trimmer",
+  "name": "Trim",
+  "version": "0.0.2",
+  "description": "leading or trailing characters",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input1",
+      "argument": null,
+      "type": "data",
+      "label": "Input dataset",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "tabular",
+        "txt"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475",
+          "format_2330"
+        ],
+        "edam_data": [
+          "data_0006",
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "col",
+      "argument": null,
+      "type": "integer",
+      "label": "Trim this column only",
+      "help": "0 = process entire line",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "start",
+      "argument": null,
+      "type": "integer",
+      "label": "Trim from the beginning up to this position",
+      "help": "Only positive positions allowed. 1 = do not trim the beginning",
+      "refresh_on_change": false,
+      "min": 1,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "1",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "end",
+      "argument": null,
+      "type": "integer",
+      "label": "Remove everything from this position to the end",
+      "help": "Use negative position to indicate position starting from the end. 0 = do not trim the end",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "fastq",
+      "argument": null,
+      "type": "select",
+      "label": "Is input dataset in FASTQ format?",
+      "help": "If set to 'Yes', the tool will not trim evenly numbered lines (0, 2, 4, etc...). This allows for trimming the seq and qual lines, only if they are not spread over multiple lines (see warning below)",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "",
+      "options": [
+        [
+          "No",
+          "",
+          true
+        ],
+        [
+          "Yes",
+          "-q",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "ignore",
+      "argument": null,
+      "type": "select",
+      "label": "Ignore lines beginning with these characters",
+      "help": "Lines beginning with these are not trimmed",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "options": [
+        [
+          ">",
+          "62",
+          false
+        ],
+        [
+          "@",
+          "64",
+          false
+        ],
+        [
+          "+",
+          "43",
+          false
+        ],
+        [
+          "<",
+          "60",
+          false
+        ],
+        [
+          "*",
+          "42",
+          false
+        ],
+        [
+          "-",
+          "45",
+          false
+        ],
+        [
+          "=",
+          "61",
+          false
+        ],
+        [
+          "|",
+          "124",
+          false
+        ],
+        [
+          "?",
+          "63",
+          false
+        ],
+        [
+          "$",
+          "36",
+          false
+        ],
+        [
+          ".",
+          "46",
+          false
+        ],
+        [
+          ":",
+          "58",
+          false
+        ],
+        [
+          "&",
+          "38",
+          false
+        ],
+        [
+          "%",
+          "37",
+          false
+        ],
+        [
+          "^",
+          "94",
+          false
+        ],
+        [
+          "#",
+          "35",
+          false
+        ]
+      ],
+      "display": "checkboxes",
+      "multiple": true,
+      "textable": false
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "data",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": "input1",
+      "default_identifier_source": "None",
+      "metadata_source": "input1",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1915",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "text_manipulation",
+  "panel_section_name": "Text Manipulation",
+  "form_style": "regular"
+}

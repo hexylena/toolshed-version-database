@@ -1,0 +1,77 @@
+{
+  "model_class": "SetMetadataTool",
+  "id": "__SET_METADATA__",
+  "name": "Set External Metadata",
+  "version": "1.0.3",
+  "description": "",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input1",
+      "argument": null,
+      "type": "data",
+      "label": "File to set metadata on",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1915"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "HiddenToolParameter",
+      "name": "__ORIGINAL_DATASET_STATE__",
+      "argument": null,
+      "type": "hidden",
+      "label": "",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": true,
+      "is_dynamic": false,
+      "value": ""
+    },
+    {
+      "model_class": "HiddenToolParameter",
+      "name": "__SET_EXTERNAL_METADATA_COMMAND_LINE__",
+      "argument": null,
+      "type": "hidden",
+      "label": "",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": true,
+      "is_dynamic": false,
+      "value": ""
+    }
+  ],
+  "outputs": [],
+  "panel_section_id": null,
+  "panel_section_name": null,
+  "form_style": "special"
+}

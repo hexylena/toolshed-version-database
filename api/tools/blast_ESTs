@@ -1,0 +1,306 @@
+{
+  "model_class": "Tool",
+  "id": "blast_ESTs",
+  "name": "Extract FASTA from coding sequences in rye",
+  "version": "0.1",
+  "description": "using BLAST",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "in_fasta",
+      "argument": null,
+      "type": "data",
+      "label": "Input file in FASTA format",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "fasta"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "db_opts",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "nucl",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "database",
+              "argument": null,
+              "type": "select",
+              "label": "Nucleotide BLAST database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "rye_lo7.cds.all",
+              "options": [
+                [
+                  "Secale cereale Lo7 - all gene models (internal, Feb 2019)",
+                  "rye_lo7.cds.all",
+                  false
+                ],
+                [
+                  "Secale cereale Lo7 - HC gene models (internal, Feb 2019)",
+                  "rye_lo7.cds.HC",
+                  false
+                ],
+                [
+                  "Secale cereale Lo7 - LC gene models (internal, Feb 2019)",
+                  "rye_lo7.cds.LC",
+                  false
+                ],
+                [
+                  "RYE-SELECT Lo7 gene models version 3 (internal, 2016)",
+                  "ryesel_lo7.v3.cds",
+                  false
+                ],
+                [
+                  "RNA-seq contigs v1 - reference for SNP discovery (internal, 2011)",
+                  "ryeexp_assembly2",
+                  false
+                ],
+                [
+                  "RNA-seq contigs v1 - transcriptome reference (internal, 2011)",
+                  "ryeexp_assembly3",
+                  false
+                ],
+                [
+                  "Trinity assembly 0B, Dataset for research of B-chromosomes",
+                  "tri_0B",
+                  false
+                ],
+                [
+                  "Trinity assembly 4B, Dataset for research of B-chromosomes",
+                  "tri_4B",
+                  false
+                ],
+                [
+                  "Assembly results computed at the HMGU for the dataset: All Reads from sorted Rye B chromosomes",
+                  "tri_allB",
+                  false
+                ],
+                [
+                  "TrSc 4B Trinity, Dataset for research of B-chromosomes",
+                  "tri_TrSc4B",
+                  false
+                ],
+                [
+                  "Anth 4B Trinity, Dataset for research of B-chromosomes",
+                  "tri_Anth4B",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "prot",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "p_database",
+              "argument": null,
+              "type": "select",
+              "label": "Protein BLAST database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "rye_lo7.pep.all",
+              "options": [
+                [
+                  "Secale cereale Lo7 - all proteins (intern, Feb 2019)",
+                  "rye_lo7.pep.all",
+                  false
+                ],
+                [
+                  "Secale cereale Lo7 - HC proteins (intern, Feb 2019)",
+                  "rye_lo7.pep.HC",
+                  false
+                ],
+                [
+                  "Secale cereale Lo7 - LC proteins (intern, Feb 2019)",
+                  "rye_lo7.pep.LC",
+                  false
+                ],
+                [
+                  "RYE-SELECT Lo7 gene models version 3 (internal, 2016)",
+                  "ryesel_lo7.v3.pep",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "db_type",
+        "argument": null,
+        "type": "select",
+        "label": "Type of BLAST database",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "nucl",
+        "options": [
+          [
+            "Nucleotide",
+            "nucl",
+            true
+          ],
+          [
+            "Protein",
+            "prot",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "identity",
+      "argument": null,
+      "type": "integer",
+      "label": "Percental Identity Cut-off",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "80",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "max_hit",
+      "argument": null,
+      "type": "integer",
+      "label": "Maximum number of hits to show",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "20",
+      "area": false,
+      "datalist": []
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "fasta",
+      "label": "${tool.name} on ${on_string}: FASTA sequences",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "out_tab",
+      "format": "tabular",
+      "label": "${tool.name} on ${on_string}: BLAST results",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "blast_rye",
+  "panel_section_name": "Blast rye genomes",
+  "form_style": "regular"
+}

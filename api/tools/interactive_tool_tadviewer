@@ -1,0 +1,81 @@
+{
+  "model_class": "InteractiveTool",
+  "id": "interactive_tool_tadviewer",
+  "name": "tadviewer",
+  "version": "0.13.0+galaxy0",
+  "description": "interactive table viewer with SQL enginer for filtering",
+  "labels": [],
+  "edam_operations": [
+    "operation_0571",
+    "operation_3695",
+    "operation_3283",
+    "operation_3802"
+  ],
+  "edam_topics": [
+    "topic_0092"
+  ],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "infiles",
+      "argument": null,
+      "type": "data",
+      "label": "Tabular dataset.",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "csv",
+        "parquet"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475",
+          "format_2333"
+        ],
+        "edam_data": [
+          "data_0006",
+          "data_0006"
+        ]
+      },
+      "multiple": true,
+      "min": null,
+      "max": null,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "logfile",
+      "format": "txt",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2330",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": "interactivetools",
+  "panel_section_name": "Interactive tools",
+  "form_style": "regular"
+}

@@ -1,0 +1,130 @@
+{
+  "model_class": "InteractiveTool",
+  "id": "interactive_tool_mgnify_notebook",
+  "name": "Interactive MGnify Notebook",
+  "version": "1.2.2",
+  "description": "",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "mode",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "scratch",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "previous",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "ipynb",
+              "argument": null,
+              "type": "data",
+              "label": "IPython Notebook",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "ipynb"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3464"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "run_it",
+              "argument": null,
+              "type": "boolean",
+              "label": "Execute notebook and return a new one.",
+              "help": "This option is useful in workflows when you just want to execute a notebook and not dive into the webfrontend.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "true",
+              "falsevalue": "false"
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "mode",
+        "argument": null,
+        "type": "select",
+        "label": "Do you already have a notebook?",
+        "help": "If not, no problem we will provide you with a default one.",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "scratch",
+        "options": [
+          [
+            "Start with a fresh notebook",
+            "scratch",
+            false
+          ],
+          [
+            "Load a previous notebook",
+            "previous",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "jupyter_notebook",
+      "format": "ipynb",
+      "label": "Executed Mgnify Notebook",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3464",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": "earth-system-section-marineomics",
+  "panel_section_name": "Marine Omics",
+  "form_style": "regular"
+}

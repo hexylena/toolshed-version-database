@@ -1,0 +1,370 @@
+{
+  "model_class": "Tool",
+  "id": "Grouping1",
+  "name": "Group",
+  "version": "2.1.4",
+  "description": "data by a column and perform aggregate operation on other columns.",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input1",
+      "argument": null,
+      "type": "data",
+      "label": "Select data",
+      "help": "Dataset missing? See TIP below.",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "tabular"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "groupcol",
+      "argument": null,
+      "type": "data_column",
+      "label": "Group by column",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": null,
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input1",
+      "numerical": false
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "ignorecase",
+      "argument": null,
+      "type": "boolean",
+      "label": "Ignore case while grouping?",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "1",
+      "falsevalue": "0"
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "ignorelines",
+      "argument": null,
+      "type": "select",
+      "label": "Ignore lines beginning with these characters",
+      "help": "lines beginning with these are not grouped",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "options": [
+        [
+          ">",
+          "62",
+          false
+        ],
+        [
+          "@",
+          "64",
+          false
+        ],
+        [
+          "+",
+          "43",
+          false
+        ],
+        [
+          "<",
+          "60",
+          false
+        ],
+        [
+          "*",
+          "42",
+          false
+        ],
+        [
+          "-",
+          "45",
+          false
+        ],
+        [
+          "=",
+          "61",
+          false
+        ],
+        [
+          "|",
+          "124",
+          false
+        ],
+        [
+          "?",
+          "63",
+          false
+        ],
+        [
+          "$",
+          "36",
+          false
+        ],
+        [
+          ".",
+          "46",
+          false
+        ],
+        [
+          ":",
+          "58",
+          false
+        ],
+        [
+          "&",
+          "38",
+          false
+        ],
+        [
+          "%",
+          "37",
+          false
+        ],
+        [
+          "^",
+          "94",
+          false
+        ],
+        [
+          "#",
+          "35",
+          false
+        ]
+      ],
+      "display": "checkboxes",
+      "multiple": true,
+      "textable": false
+    },
+    {
+      "model_class": "Repeat",
+      "name": "operations",
+      "type": "repeat",
+      "title": "Operation",
+      "help": null,
+      "default": 0,
+      "min": 0,
+      "max": "__Infinity__",
+      "inputs": [
+        {
+          "model_class": "SelectToolParameter",
+          "name": "optype",
+          "argument": null,
+          "type": "select",
+          "label": "Type",
+          "help": "",
+          "refresh_on_change": false,
+          "optional": false,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": "mean",
+          "options": [
+            [
+              "Mean",
+              "mean",
+              false
+            ],
+            [
+              "Median",
+              "median",
+              false
+            ],
+            [
+              "Mode",
+              "mode",
+              false
+            ],
+            [
+              "Maximum",
+              "max",
+              false
+            ],
+            [
+              "Minimum",
+              "min",
+              false
+            ],
+            [
+              "Sum",
+              "sum",
+              false
+            ],
+            [
+              "Count",
+              "length",
+              false
+            ],
+            [
+              "Count Distinct",
+              "unique",
+              false
+            ],
+            [
+              "Concatenate",
+              "cat",
+              false
+            ],
+            [
+              "Concatenate Distinct",
+              "cat_uniq",
+              false
+            ],
+            [
+              "Randomly pick",
+              "random",
+              false
+            ],
+            [
+              "Standard deviation",
+              "std",
+              false
+            ]
+          ],
+          "display": null,
+          "multiple": false,
+          "textable": false
+        },
+        {
+          "model_class": "ColumnListParameter",
+          "name": "opcol",
+          "argument": null,
+          "type": "data_column",
+          "label": "On column",
+          "help": "",
+          "refresh_on_change": false,
+          "optional": false,
+          "hidden": false,
+          "is_dynamic": true,
+          "value": null,
+          "options": [],
+          "display": null,
+          "multiple": false,
+          "textable": false,
+          "data_ref": "input1",
+          "numerical": false
+        },
+        {
+          "model_class": "SelectToolParameter",
+          "name": "opround",
+          "argument": null,
+          "type": "select",
+          "label": "Round result to nearest integer?",
+          "help": "",
+          "refresh_on_change": false,
+          "optional": false,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": "no",
+          "options": [
+            [
+              "NO",
+              "no",
+              false
+            ],
+            [
+              "YES",
+              "yes",
+              false
+            ]
+          ],
+          "display": null,
+          "multiple": false,
+          "textable": false
+        },
+        {
+          "model_class": "FloatToolParameter",
+          "name": "opdefault",
+          "argument": null,
+          "type": "float",
+          "label": "Replace non numeric data",
+          "help": "leave empty for no replacements. Will replace, e.g., empty cells and text cells.",
+          "refresh_on_change": false,
+          "min": null,
+          "max": null,
+          "optional": true,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": null,
+          "area": false,
+          "datalist": []
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "tabular",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "join__subtract_and_group",
+  "panel_section_name": "Join, Subtract and Group",
+  "form_style": "regular"
+}

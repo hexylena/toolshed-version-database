@@ -1,0 +1,106 @@
+{
+  "model_class": "ZipCollectionTool",
+  "id": "__ZIP_COLLECTION__",
+  "name": "Zip collections",
+  "version": "1.0.0",
+  "description": "",
+  "labels": [],
+  "edam_operations": [
+    "operation_3436"
+  ],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input_forward",
+      "argument": null,
+      "type": "data",
+      "label": "Input 1",
+      "help": "Example: dataset or collection containing forward read(s)",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1915"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "input_reverse",
+      "argument": null,
+      "type": "data",
+      "label": "Input 2",
+      "help": "Example: dataset or collection containing reverse read(s)",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1915"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output",
+      "format": null,
+      "label": "${on_string} (zipped)",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "paired",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": []
+      }
+    }
+  ],
+  "panel_section_id": "collection_operations",
+  "panel_section_name": "Collection Operations",
+  "form_style": "regular"
+}

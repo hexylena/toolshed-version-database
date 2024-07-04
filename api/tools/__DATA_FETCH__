@@ -1,0 +1,69 @@
+{
+  "model_class": "Tool",
+  "id": "__DATA_FETCH__",
+  "name": "Data Fetch",
+  "version": "0.1.0",
+  "description": "",
+  "labels": [],
+  "edam_operations": [
+    "operation_0224"
+  ],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": false,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "TextToolParameter",
+      "name": "request_version",
+      "argument": null,
+      "type": "text",
+      "label": "",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "1",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "request_json",
+      "argument": null,
+      "type": "text",
+      "label": "",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "HiddenToolParameter",
+      "name": "file_count",
+      "argument": null,
+      "type": "hidden",
+      "label": "",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": true,
+      "is_dynamic": false,
+      "value": "auto"
+    },
+    {
+      "model_class": "UploadDataset",
+      "name": "files",
+      "type": "upload_dataset"
+    }
+  ],
+  "outputs": [],
+  "panel_section_id": null,
+  "panel_section_name": null,
+  "form_style": "regular"
+}

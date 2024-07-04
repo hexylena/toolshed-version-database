@@ -1,0 +1,128 @@
+{
+  "id": "xmfa2bigwig",
+  "panel_section_id": "8b74ad60-d551-401c-b9cf-a9a4b7c14cea",
+  "outputs": [
+    {
+      "structure": {
+        "collection_type": "list",
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "visible": false,
+            "directory": "out",
+            "format": null,
+            "dbkey": "__input__",
+            "assign_primary_output": false,
+            "pattern": "(?P<designation>.*)\\.(?P<ext>[^\\._]+)?",
+            "recurse": false,
+            "sort_comp": "lexical",
+            "discover_via": "pattern",
+            "sort_key": "filename"
+          }
+        ],
+        "collection_type_source": null
+      },
+      "inherit_metadata": false,
+      "default_format": "data",
+      "format": null,
+      "hidden": false,
+      "default_format_source": null,
+      "name": "xmfa2bigwig-tracks",
+      "model_class": "ToolOutputCollection",
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "output_type": "collection",
+      "label": ""
+    }
+  ],
+  "inputs": [
+    {
+      "optional": false,
+      "argument": null,
+      "edam": {
+        "edam_formats": [
+          "format_2330"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "help": "",
+      "refresh_on_change": true,
+      "multiple": false,
+      "extensions": [
+        "xmfa"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "xmfa",
+      "model_class": "DataToolParameter",
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "XMFA MSA"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "edam": {
+        "edam_formats": [
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "help": "These sequences should be the SAME DATASET that was used in the progressiveMauve run. Failing that, they should be provided in the same order as in original progressiveMauve run",
+      "refresh_on_change": true,
+      "multiple": false,
+      "extensions": [
+        "fasta"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "sequences",
+      "model_class": "DataToolParameter",
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "Sequences in alignment"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "help": "",
+      "refresh_on_change": false,
+      "value": "3",
+      "min": null,
+      "name": "window_size",
+      "datalist": [],
+      "area": false,
+      "model_class": "IntegerToolParameter",
+      "max": null,
+      "is_dynamic": false,
+      "type": "integer",
+      "hidden": false,
+      "label": "Default window size for BigWig files"
+    }
+  ],
+  "version": "2.4.0.2",
+  "labels": [],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "ProgressiveMauve",
+  "name": "Convert XMFA to BigWig track",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": ""
+}

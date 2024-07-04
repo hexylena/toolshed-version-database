@@ -1,0 +1,214 @@
+{
+  "model_class": "InteractiveTool",
+  "id": "interactive_tool_copernicus_notebook",
+  "name": "Copernicus Data Space Ecosystem",
+  "version": "0.0.1",
+  "description": "sample notebooks to access and discover data",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "mode",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "scratch",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "previous",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "ipynb",
+              "argument": null,
+              "type": "data",
+              "label": "Copernicus Notebook",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "ipynb"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3464"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "run_it",
+              "argument": null,
+              "type": "boolean",
+              "label": "Copernicus notebook and return a new one.",
+              "help": "This option is useful in workflows when you just want to execute a notebook and not dive into the webfrontend.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "true",
+              "falsevalue": "false"
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "mode_select",
+        "argument": null,
+        "type": "select",
+        "label": "Do you already have a notebook?",
+        "help": "If not, no problem we will provide you with a default one.",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "scratch",
+        "options": [
+          [
+            "Start with a fresh notebook",
+            "scratch",
+            false
+          ],
+          [
+            "Load a previous notebook",
+            "previous",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Include data into the environment",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1915"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": true,
+      "min": null,
+      "max": null,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output_collection",
+      "format": null,
+      "label": "Copernicus outputs collection",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": null,
+            "visible": true,
+            "assign_primary_output": false,
+            "directory": "jupyter/outputs",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<designation>.*)\\.(?P<ext>[^\\._]+)?",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "jupyter_notebook",
+      "format": "ipynb",
+      "label": "Executed Copernicus notebook",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3464",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "earth-system-section-interactivetools",
+  "panel_section_name": "Interactive tools",
+  "form_style": "regular"
+}

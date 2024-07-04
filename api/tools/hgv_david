@@ -1,0 +1,301 @@
+{
+  "model_class": "Tool",
+  "id": "hgv_david",
+  "name": "DAVID",
+  "version": "1.0.1",
+  "description": "functional annotation for a list of genes",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Dataset",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "tabular"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "numerical_column",
+      "argument": null,
+      "type": "data_column",
+      "label": "Column with identifiers",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": null,
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input",
+      "numerical": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "type",
+      "argument": null,
+      "type": "select",
+      "label": "Identifier type",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "OFFICIAL_GENE_SYMBOL",
+      "options": [
+        [
+          "AFFYMETRIX_3PRIME_IVT_ID",
+          "AFFYMETRIX_3PRIME_IVT_ID",
+          false
+        ],
+        [
+          "AFFYMETRIX_EXON_GENE_ID",
+          "AFFYMETRIX_EXON_GENE_ID",
+          false
+        ],
+        [
+          "AFFYMETRIX_SNP_ID",
+          "AFFYMETRIX_SNP_ID",
+          false
+        ],
+        [
+          "AGILENT_CHIP_ID",
+          "AGILENT_CHIP_ID",
+          false
+        ],
+        [
+          "AGILENT_ID",
+          "AGILENT_ID",
+          false
+        ],
+        [
+          "AGILENT_OLIGO_ID",
+          "AGILENT_OLIGO_ID",
+          false
+        ],
+        [
+          "ENSEMBL_GENE_ID",
+          "ENSEMBL_GENE_ID",
+          false
+        ],
+        [
+          "ENSEMBL_TRANSCRIPT_ID",
+          "ENSEMBL_TRANSCRIPT_ID",
+          false
+        ],
+        [
+          "ENTREZ_GENE_ID",
+          "ENTREZ_GENE_ID",
+          false
+        ],
+        [
+          "FLYBASE_GENE_ID",
+          "FLYBASE_GENE_ID",
+          false
+        ],
+        [
+          "FLYBASE_TRANSCRIPT_ID",
+          "FLYBASE_TRANSCRIPT_ID",
+          false
+        ],
+        [
+          "GENBANK_ACCESSION",
+          "GENBANK_ACCESSION",
+          false
+        ],
+        [
+          "GENOMIC_GI_ACCESSION",
+          "GENOMIC_GI_ACCESSION",
+          false
+        ],
+        [
+          "GENPEPT_ACCESSION",
+          "GENPEPT_ACCESSION",
+          false
+        ],
+        [
+          "ILLUMINA_ID",
+          "ILLUMINA_ID",
+          false
+        ],
+        [
+          "IPI_ID",
+          "IPI_ID",
+          false
+        ],
+        [
+          "MGI_ID",
+          "MGI_ID",
+          false
+        ],
+        [
+          "OFFICIAL_GENE_SYMBOL",
+          "OFFICIAL_GENE_SYMBOL",
+          true
+        ],
+        [
+          "PFAM_ID",
+          "PFAM_ID",
+          false
+        ],
+        [
+          "PIR_ID",
+          "PIR_ID",
+          false
+        ],
+        [
+          "PROTEIN_GI_ACCESSION",
+          "PROTEIN_GI_ACCESSION",
+          false
+        ],
+        [
+          "REFSEQ_GENOMIC",
+          "REFSEQ_GENOMIC",
+          false
+        ],
+        [
+          "REFSEQ_MRNA",
+          "REFSEQ_MRNA",
+          false
+        ],
+        [
+          "REFSEQ_PROTEIN",
+          "REFSEQ_PROTEIN",
+          false
+        ],
+        [
+          "REFSEQ_RNA",
+          "REFSEQ_RNA",
+          false
+        ],
+        [
+          "RGD_ID",
+          "RGD_ID",
+          false
+        ],
+        [
+          "SGD_ID",
+          "SGD_ID",
+          false
+        ],
+        [
+          "TAIR_ID",
+          "TAIR_ID",
+          false
+        ],
+        [
+          "UCSC_GENE_ID",
+          "UCSC_GENE_ID",
+          false
+        ],
+        [
+          "UNIGENE",
+          "UNIGENE",
+          false
+        ],
+        [
+          "UNIPROT_ACCESSION",
+          "UNIPROT_ACCESSION",
+          false
+        ],
+        [
+          "UNIPROT_ID",
+          "UNIPROT_ID",
+          false
+        ],
+        [
+          "UNIREF100_ID",
+          "UNIREF100_ID",
+          false
+        ],
+        [
+          "WORMBASE_GENE_ID",
+          "WORMBASE_GENE_ID",
+          false
+        ],
+        [
+          "WORMPEP_ID",
+          "WORMPEP_ID",
+          false
+        ],
+        [
+          "ZFIN_ID",
+          "ZFIN_ID",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "html",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2331",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "phenotype_association",
+  "panel_section_name": "Phenotype Association",
+  "form_style": "regular"
+}

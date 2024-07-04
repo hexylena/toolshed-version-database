@@ -1,0 +1,481 @@
+{
+  "model_class": "Tool",
+  "id": "filter_by_fasta_ids_faba",
+  "name": "Filter CDS and protein FASTA Faba bean",
+  "version": "2.3",
+  "description": "on the headers and/or the sequences",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "db_opts",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "nucl",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "database",
+              "argument": null,
+              "type": "select",
+              "label": "Nucleotide BLAST database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "Vicia_faba__v1__Hedin.cds",
+              "options": [
+                [
+                  "Vicia faba cv. 'Hedin' v1 CDS features (intern, Jun 2021)",
+                  "Vicia_faba__v1__Hedin.cds",
+                  false
+                ],
+                [
+                  "Vicia faba cv. 'Hedin' v1 chromosomes (intern, Jun 2021)",
+                  "Vicia_faba__v1__Hedin.chr.parts",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "prot",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "p_database",
+              "argument": null,
+              "type": "select",
+              "label": "Protein BLAST database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [
+                [
+                  "Vicia faba cv. 'Hedin' v1 all proteins (intern, Jun 2021)",
+                  "Vicia_faba__v1__Hedin.pep",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": true,
+              "textable": false
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "db_type",
+        "argument": null,
+        "type": "select",
+        "label": "Type of BLAST database",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "nucl",
+        "options": [
+          [
+            "Nucleotide",
+            "nucl",
+            true
+          ],
+          [
+            "Protein",
+            "prot",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "header_criteria",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "id_list",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "identifiers",
+              "argument": null,
+              "type": "data",
+              "label": "List of IDs to extract sequences for",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "txt"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_2330"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "Conditional",
+              "name": "id_regex",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "beginning",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "pattern",
+                  "inputs": [
+                    {
+                      "model_class": "TextToolParameter",
+                      "name": "pattern",
+                      "argument": null,
+                      "type": "text",
+                      "label": "Regex search pattern for ID",
+                      "help": "Search pattern must contain %s where the ID will be substituted. Use this for Uniprot Acc: >.+?\\|(.+?)\\|.*$",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "",
+                      "area": false,
+                      "datalist": []
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "find",
+                "argument": null,
+                "type": "select",
+                "label": "Match IDs by",
+                "help": "Default: >ID will use search pattern >([^| ]+) to input ID; Use custom regex to change",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "beginning",
+                "options": [
+                  [
+                    "Default: ID is expected at the beginning: >ID ",
+                    "beginning",
+                    false
+                  ],
+                  [
+                    "Custom regex pattern",
+                    "pattern",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "regexp",
+          "inputs": [
+            {
+              "model_class": "TextToolParameter",
+              "name": "regexp",
+              "argument": null,
+              "type": "text",
+              "label": "Regular expression pattern the header should match",
+              "help": "Use the Python regular expression syntax as specified in https://docs.python.org/3/library/re.html",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "header_criteria_select",
+        "argument": null,
+        "type": "select",
+        "label": "Criteria for filtering on the headers",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "",
+        "options": [
+          [
+            "No filtering",
+            "",
+            false
+          ],
+          [
+            "List of IDs",
+            "id_list",
+            false
+          ],
+          [
+            "Regular expression on the headers",
+            "regexp",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "sequence_criteria",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "seq_length",
+          "inputs": [
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "min_length",
+              "argument": null,
+              "type": "integer",
+              "label": "Minimum length",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "max_length",
+              "argument": null,
+              "type": "integer",
+              "label": "Maximum length",
+              "help": "",
+              "refresh_on_change": false,
+              "min": 1,
+              "max": null,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "area": false,
+              "datalist": []
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "regexp",
+          "inputs": [
+            {
+              "model_class": "TextToolParameter",
+              "name": "regexp",
+              "argument": null,
+              "type": "text",
+              "label": "Regular expression pattern the sequence should match",
+              "help": "Use the Python regular expression syntax as specified in https://docs.python.org/3/library/re.html",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "sequence_criteria_select",
+        "argument": null,
+        "type": "select",
+        "label": "Criteria for filtering on the sequences",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "",
+        "options": [
+          [
+            "No filtering",
+            "",
+            false
+          ],
+          [
+            "Sequence length",
+            "seq_length",
+            false
+          ],
+          [
+            "Regular expression on the sequences",
+            "regexp",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "dedup",
+      "argument": null,
+      "type": "boolean",
+      "label": "Remove duplicate sequences",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "false",
+      "truevalue": "--dedup",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "output_discarded",
+      "argument": null,
+      "type": "boolean",
+      "label": "Output discarded FASTA entries",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "false",
+      "truevalue": "true",
+      "falsevalue": "false"
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "fasta",
+      "label": "${tool.name} on ${on_string}: FASTA sequences",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "discarded",
+      "format": "fasta",
+      "label": "${tool.name} on ${on_string}: discarded entries",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "blast_faba",
+  "panel_section_name": "Blast vicia faba genomes",
+  "form_style": "regular"
+}

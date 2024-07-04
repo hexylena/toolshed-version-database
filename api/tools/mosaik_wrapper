@@ -1,0 +1,431 @@
+{
+  "model_class": "Tool",
+  "id": "mosaik_wrapper",
+  "name": "Map with Mosaik",
+  "version": "1.1.2",
+  "description": "",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "genomeSource",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "indexed",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "indexReference",
+              "argument": null,
+              "type": "select",
+              "label": "Select a reference genome",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "history",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "historyReference",
+              "argument": null,
+              "type": "data",
+              "label": "Select a reference from history",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "fasta"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_1929"
+                ],
+                "edam_data": [
+                  "data_2044"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "refGenomeSource",
+        "argument": null,
+        "type": "select",
+        "label": "Will you select a reference genome from your history or use a built-in index?",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "indexed",
+        "options": [
+          [
+            "Use a built-in index",
+            "indexed",
+            false
+          ],
+          [
+            "Use one from the history",
+            "history",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "reads",
+      "argument": null,
+      "type": "data",
+      "label": "FASTQ reads file",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "fastq"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1930"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "outFormat",
+      "argument": null,
+      "type": "select",
+      "label": "Output format",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "sam",
+      "options": [
+        [
+          "SAM",
+          "sam",
+          false
+        ],
+        [
+          "BAM",
+          "bam",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "st",
+      "argument": null,
+      "type": "select",
+      "label": "Sequencing technology used",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "454",
+      "options": [
+        [
+          "454",
+          "454",
+          false
+        ],
+        [
+          "Illumina",
+          "illumina",
+          false
+        ],
+        [
+          "Solid",
+          "solid",
+          false
+        ],
+        [
+          "Sanger",
+          "sanger",
+          false
+        ],
+        [
+          "Helicos",
+          "helicos",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "Conditional",
+      "name": "paired",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "single",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "paired",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "reads2",
+              "argument": null,
+              "type": "data",
+              "label": "FASTQ 2nd mate",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "fastq"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_1930"
+                ],
+                "edam_data": [
+                  "data_2044"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "mfl",
+              "argument": null,
+              "type": "integer",
+              "label": "Median fragment length",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "200",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "ls",
+              "argument": null,
+              "type": "integer",
+              "label": "Local alignment search radius to rescue mates",
+              "help": "A large value slows down performances",
+              "refresh_on_change": false,
+              "min": 0,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "50",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "kind",
+        "argument": null,
+        "type": "select",
+        "label": "Is this library mate-paired?",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "single",
+        "options": [
+          [
+            "Single-end",
+            "single",
+            false
+          ],
+          [
+            "Paired-end",
+            "paired",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "mm",
+      "argument": null,
+      "type": "integer",
+      "label": "Number of mismatches allowed per sequence",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "6",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "act",
+      "argument": null,
+      "type": "integer",
+      "label": "Alignment candidate threshold",
+      "help": "Determines which hash regions will be aligned with Smith-Waterman",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "35",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "bw",
+      "argument": null,
+      "type": "integer",
+      "label": "Smith-Waterman band width",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "9",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "mhp",
+      "argument": null,
+      "type": "integer",
+      "label": "Maximum number of positions stored per seed",
+      "help": "Number of places in the reference the aligner will try to place a particular hash",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "100",
+      "area": false,
+      "datalist": []
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "sam",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2573",
+      "edam_data": "data_0863",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "mapping",
+  "panel_section_name": "Mapping",
+  "form_style": "regular"
+}

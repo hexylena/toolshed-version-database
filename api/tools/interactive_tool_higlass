@@ -1,0 +1,545 @@
+{
+  "model_class": "InteractiveTool",
+  "id": "interactive_tool_higlass",
+  "name": "HiGlass",
+  "version": "1.8.0",
+  "description": "an interactive Hi-C data visualizer.",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Repeat",
+      "name": "inputs",
+      "type": "repeat",
+      "title": "Data to import",
+      "help": null,
+      "default": 0,
+      "min": 0,
+      "max": "__Infinity__",
+      "inputs": [
+        {
+          "model_class": "Conditional",
+          "name": "fileselect",
+          "type": "conditional",
+          "cases": [
+            {
+              "model_class": "ConditionalWhen",
+              "value": "bed",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "inputfiles",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Input file",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "bed"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_3003"
+                    ],
+                    "edam_data": [
+                      "data_3002"
+                    ]
+                  },
+                  "multiple": true,
+                  "min": null,
+                  "max": null,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "bedgraph",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "inputfiles",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Input file",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "bedgraph"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_3583"
+                    ],
+                    "edam_data": [
+                      "data_3002"
+                    ]
+                  },
+                  "multiple": true,
+                  "min": null,
+                  "max": null,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                },
+                {
+                  "model_class": "ColumnListParameter",
+                  "name": "valuecol",
+                  "argument": null,
+                  "type": "data_column",
+                  "label": "Bedgraph value column",
+                  "help": "For chromosome column and position columns, please check the metadata of your input file.",
+                  "refresh_on_change": false,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": true,
+                  "value": "5",
+                  "options": [],
+                  "display": null,
+                  "multiple": false,
+                  "textable": false,
+                  "data_ref": "inputfiles",
+                  "numerical": false
+                },
+                {
+                  "model_class": "TextToolParameter",
+                  "name": "na_val",
+                  "argument": null,
+                  "type": "text",
+                  "label": "NaN value",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "NA",
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "bigbed",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "inputfiles",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Input file",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "bigbed"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_3004"
+                    ],
+                    "edam_data": [
+                      "data_3002"
+                    ]
+                  },
+                  "multiple": true,
+                  "min": null,
+                  "max": null,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "bigwig",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "inputfiles",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Input file",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "bigwig"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_3006"
+                    ],
+                    "edam_data": [
+                      "data_3002"
+                    ]
+                  },
+                  "multiple": true,
+                  "min": null,
+                  "max": null,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "mcool",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "inputfiles",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Input file",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "mcool"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_3590"
+                    ],
+                    "edam_data": [
+                      "data_0006"
+                    ]
+                  },
+                  "multiple": true,
+                  "min": null,
+                  "max": null,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "cool",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "inputfiles",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Input file",
+                  "help": "Currently only supporting evenly-sized bins",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "cool"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_3590"
+                    ],
+                    "edam_data": [
+                      "data_0006"
+                    ]
+                  },
+                  "multiple": true,
+                  "min": null,
+                  "max": null,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                },
+                {
+                  "model_class": "TextToolParameter",
+                  "name": "zoomval",
+                  "argument": null,
+                  "type": "text",
+                  "label": "Comma-separated list of target resolutions",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "10000",
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            }
+          ],
+          "test_param": {
+            "model_class": "SelectToolParameter",
+            "name": "typeselect",
+            "argument": null,
+            "type": "select",
+            "label": "Select input datatype(s)",
+            "help": "",
+            "refresh_on_change": true,
+            "optional": false,
+            "hidden": false,
+            "is_dynamic": false,
+            "value": "bed",
+            "options": [
+              [
+                "bed",
+                "bed",
+                false
+              ],
+              [
+                "bedgraph",
+                "bedgraph",
+                false
+              ],
+              [
+                "bigbed",
+                "bigbed",
+                false
+              ],
+              [
+                "bigwig",
+                "bigwig",
+                false
+              ],
+              [
+                "cool",
+                "cool",
+                false
+              ],
+              [
+                "mcool",
+                "mcool",
+                false
+              ]
+            ],
+            "display": null,
+            "multiple": false,
+            "textable": false
+          }
+        }
+      ]
+    },
+    {
+      "model_class": "Repeat",
+      "name": "chromfiles",
+      "type": "repeat",
+      "title": "Chromosome size files",
+      "help": null,
+      "default": 0,
+      "min": 0,
+      "max": "__Infinity__",
+      "inputs": [
+        {
+          "model_class": "Conditional",
+          "name": "labeled",
+          "type": "conditional",
+          "cases": [
+            {
+              "model_class": "ConditionalWhen",
+              "value": "No",
+              "inputs": [
+                {
+                  "model_class": "TextToolParameter",
+                  "name": "speciesname",
+                  "argument": null,
+                  "type": "text",
+                  "label": "Species/assembly abbreviation",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "files",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Chromosome size files",
+                  "help": "If you are analyzing data not from one of the species/assemblies listed in the help section, please upload a 2-column file of chromosome names and sizes.",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "txt",
+                    "tsv",
+                    "tabular"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_2330",
+                      "format_3475",
+                      "format_3475"
+                    ],
+                    "edam_data": [
+                      "data_0006",
+                      "data_0006",
+                      "data_0006"
+                    ]
+                  },
+                  "multiple": false,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "Yes",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "files",
+                  "argument": null,
+                  "type": "data",
+                  "label": "Chromosome size files",
+                  "help": "If you are analyzing data not from one of the species/assemblies listed in the help section, please upload a 2-column file of chromosome names and sizes.",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "txt",
+                    "tsv",
+                    "tabular"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_2330",
+                      "format_3475",
+                      "format_3475"
+                    ],
+                    "edam_data": [
+                      "data_0006",
+                      "data_0006",
+                      "data_0006"
+                    ]
+                  },
+                  "multiple": false,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                }
+              ]
+            }
+          ],
+          "test_param": {
+            "model_class": "BooleanToolParameter",
+            "name": "islabeled",
+            "argument": null,
+            "type": "boolean",
+            "label": "Is the data's filename the species/assembly being uploaded?",
+            "help": "",
+            "refresh_on_change": true,
+            "optional": false,
+            "hidden": false,
+            "is_dynamic": false,
+            "value": false,
+            "truevalue": "Yes",
+            "falsevalue": "No"
+          }
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "outfile",
+      "format": "txt",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2330",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "interactivetools",
+  "panel_section_name": "Interactive tools",
+  "form_style": "regular"
+}

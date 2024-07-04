@@ -1,0 +1,293 @@
+{
+  "model_class": "Tool",
+  "id": "liftOver1",
+  "name": "Convert genome coordinates",
+  "version": "1.0.6",
+  "description": "between assemblies and genomes",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Convert coordinates of",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "interval",
+        "gff",
+        "gtf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475",
+          "format_2305",
+          "format_2306"
+        ],
+        "edam_data": [
+          "data_3002",
+          "data_1255",
+          "data_1255"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "to_dbkey",
+      "argument": null,
+      "type": "select",
+      "label": "To",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": null,
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "FloatToolParameter",
+      "name": "minMatch",
+      "argument": null,
+      "type": "float",
+      "label": "Minimum ratio of bases that must remap",
+      "help": "Recommended values: same species = 0.95, different species = 0.10",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0.95",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "Conditional",
+      "name": "multiple",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "0",
+          "inputs": [
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "minSizeQ",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": "0"
+            },
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "minChainQ",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": "0"
+            },
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "minChainT",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "1",
+          "inputs": [
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "minSizeQ",
+              "argument": null,
+              "type": "integer",
+              "label": "Minimum matching region size in dataset",
+              "help": "Recommended value: set to >= 300 bases for complete transcripts",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "minChainQ",
+              "argument": null,
+              "type": "integer",
+              "label": "Minimum chain size in dataset",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "500",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "minChainT",
+              "argument": null,
+              "type": "integer",
+              "label": "Minimum chain size in target",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "500",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "choice",
+        "argument": null,
+        "type": "select",
+        "label": "Allow multiple output regions?",
+        "help": "Recommended values: same species = No, different species = Yes",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "0",
+        "options": [
+          [
+            "No",
+            "0",
+            true
+          ],
+          [
+            "Yes",
+            "1",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "data",
+      "label": "${tool.name} on ${on_string} [ MAPPED COORDINATES ]",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": "input",
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1915",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file2",
+      "format": "data",
+      "label": "${tool.name} on ${on_string} [ UNMAPPED COORDINATES ]",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": "input",
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1915",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "convert_formats",
+  "panel_section_name": "Convert Formats",
+  "form_style": "regular"
+}

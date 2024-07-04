@@ -1,0 +1,257 @@
+{
+  "model_class": "Tool",
+  "id": "proteomics_search_interprophet_1",
+  "name": "InterProphet",
+  "version": "1.4.4",
+  "description": "Combine Peptide Prophet results from multiple search engines",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input_files",
+      "argument": null,
+      "type": "data",
+      "label": "Peptide Prophet Results",
+      "help": "These files will typically be outputs from search tools that have subsequently been run through peptide prophet",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "peptideprophet_pepxml"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3655"
+        ],
+        "edam_data": [
+          "data_2536"
+        ]
+      },
+      "multiple": true,
+      "min": null,
+      "max": null,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "use_nss",
+      "argument": null,
+      "type": "boolean",
+      "label": "Include NSS in Model",
+      "help": "Include NSS (Number of Sibling Searches) in Statistical Model",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": true,
+      "truevalue": "",
+      "falsevalue": "--no-nss"
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "use_nrs",
+      "argument": null,
+      "type": "boolean",
+      "label": "Include NRS in Model",
+      "help": "Include NRS (Number of Replicate Spectra) in Statistical Model",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": true,
+      "truevalue": "",
+      "falsevalue": "--no-nrs"
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "use_nse",
+      "argument": null,
+      "type": "boolean",
+      "label": "Include NSE in Model",
+      "help": "Include NSE (Number of Sibling Experiments) in Statistical Model",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": true,
+      "truevalue": "",
+      "falsevalue": "--no-nse"
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "use_nsi",
+      "argument": null,
+      "type": "boolean",
+      "label": "Include NSI in Model",
+      "help": "Include NSI (Number of Sibling Ions) in Statistical Model",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": true,
+      "truevalue": "",
+      "falsevalue": "--no-nsi"
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "use_nsm",
+      "argument": null,
+      "type": "boolean",
+      "label": "Include NSM in Model",
+      "help": "Include NSM (Number of Sibling Modifications) in Statistical Model",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": true,
+      "truevalue": "",
+      "falsevalue": "--no-nsm"
+    },
+    {
+      "model_class": "Conditional",
+      "name": "p_threshold",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "file",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "p_thresh_file",
+              "argument": null,
+              "type": "data",
+              "label": "Probability Threshold from file",
+              "help": "These file containers one threshold value",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "txt"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_2330"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "input",
+          "inputs": [
+            {
+              "model_class": "FloatToolParameter",
+              "name": "p_thresh",
+              "argument": null,
+              "type": "float",
+              "label": "Probability Threshold",
+              "help": "Peptides scoring less than this value are discarded",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 1.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.05",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "source_select",
+        "argument": null,
+        "type": "select",
+        "label": "Probability Threshold from",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "input",
+        "options": [
+          [
+            "file",
+            "file",
+            false
+          ],
+          [
+            "user input",
+            "input",
+            true
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "interprophet_pepxml",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "interprophet_output.pep.xml",
+      "edam_format": "format_3655",
+      "edam_data": "data_2536",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "test_tools",
+  "panel_section_name": "Test Tools",
+  "form_style": "regular"
+}

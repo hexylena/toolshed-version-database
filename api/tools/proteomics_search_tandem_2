@@ -1,0 +1,844 @@
+{
+  "model_class": "Tool",
+  "id": "proteomics_search_tandem_2",
+  "name": "X!Tandem MSMS Search",
+  "version": "1.0.1",
+  "description": "Run an X!Tandem Search - test",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input_file",
+      "argument": null,
+      "type": "data",
+      "label": "MSMS File",
+      "help": "An mzML file with MS/MS data",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "mzml"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3244"
+        ],
+        "edam_data": [
+          "data_2536"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "database",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "built_in",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "dbkey",
+              "argument": null,
+              "type": "select",
+              "label": "Database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "spall",
+              "options": [
+                [
+                  "Swissprot",
+                  "spall",
+                  false
+                ],
+                [
+                  "Combined PlasmboDB (falciparum) and Swissprot Human",
+                  "plasmodb_pfalciparum_sphuman",
+                  false
+                ],
+                [
+                  "Swissprot Human",
+                  "sphuman",
+                  false
+                ],
+                [
+                  "Combined Swissprot/TRembl Human",
+                  "sptrhuman",
+                  false
+                ],
+                [
+                  "Swissprot Mouse",
+                  "spmouse",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "input_ref",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "fasta_file",
+              "argument": null,
+              "type": "data",
+              "label": "Sequence file in FASTA format",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "fasta"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_1929"
+                ],
+                "edam_data": [
+                  "data_2044"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "source_select",
+        "argument": null,
+        "type": "select",
+        "label": "Database source",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "input_ref",
+        "options": [
+          [
+            "Built-In",
+            "built_in",
+            false
+          ],
+          [
+            "Your Upload File",
+            "input_ref",
+            true
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "config",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "false",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "variable_mods",
+              "argument": null,
+              "type": "select",
+              "label": "Variable Modifications",
+              "help": "Hold the appropriate key while clicking to select multiple items",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [
+                [
+                  "Carbamidomethyl C",
+                  "57.021464@C",
+                  false
+                ],
+                [
+                  "Glycocapture-N",
+                  "0.998@N!{P}[ST]",
+                  false
+                ],
+                [
+                  "Oxidation M",
+                  "15.994915@M",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": true,
+              "textable": false
+            },
+            {
+              "model_class": "Repeat",
+              "name": "custom_variable_mods",
+              "type": "repeat",
+              "title": "Custom Variable Modifications",
+              "help": "You can specify a modification when present in a motif. For instance, 0.998@N!{P}[ST] is a deamidation modification on N only if it is present in an N[any but P][S or T] motif (N-glycosite).",
+              "default": 0,
+              "min": 0,
+              "max": "__Infinity__",
+              "inputs": [
+                {
+                  "model_class": "TextToolParameter",
+                  "name": "custom_mod",
+                  "argument": null,
+                  "type": "text",
+                  "label": "Custom Variable Modification",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "fixed_mods",
+              "argument": null,
+              "type": "select",
+              "label": "Fixed Modifications",
+              "help": "Hold the appropriate key while clicking to select multiple items",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [
+                [
+                  "Carbamidomethyl C",
+                  "57.021464@C",
+                  false
+                ],
+                [
+                  "Glycocapture-N",
+                  "0.998@N!{P}[ST]",
+                  false
+                ],
+                [
+                  "Oxidation M",
+                  "15.994915@M",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": true,
+              "textable": false
+            },
+            {
+              "model_class": "Repeat",
+              "name": "custom_fix_mods",
+              "type": "repeat",
+              "title": "Custom Fixed Modifications",
+              "help": "You can specify a modification when present in a motif. For instance, 0.998@N!{P}[ST] is a deamidation modification on N only if it is present in an N[any but P][S or T] motif (N-glycosite).",
+              "default": 0,
+              "min": 0,
+              "max": "__Infinity__",
+              "inputs": [
+                {
+                  "model_class": "TextToolParameter",
+                  "name": "custom_mod",
+                  "argument": null,
+                  "type": "text",
+                  "label": "Custom Fixed Modification",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "missed_cleavages",
+              "argument": null,
+              "type": "select",
+              "label": "Missed Cleavages Allowed",
+              "help": "Allow peptides to contain up to this many missed enzyme cleavage sites",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "options": [
+                [
+                  "0",
+                  "0",
+                  false
+                ],
+                [
+                  "1",
+                  "1",
+                  false
+                ],
+                [
+                  "2",
+                  "2",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "enzyme",
+              "argument": null,
+              "type": "select",
+              "label": "Enzyme",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "Trypsin",
+              "options": [
+                [
+                  "Trypsin",
+                  "Trypsin",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "fragment_ion_tol",
+              "argument": null,
+              "type": "float",
+              "label": "Fragment ion tolerance",
+              "help": "Fragment Ion Tolerance in Daltons",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 10000.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.5",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "fragment_tolu",
+              "argument": null,
+              "type": "select",
+              "label": "Fragment Ion Tolerance Units",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "ppm",
+              "options": [
+                [
+                  "ppm",
+                  "ppm",
+                  false
+                ],
+                [
+                  "Da",
+                  "Da",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "precursor_ion_tol",
+              "argument": null,
+              "type": "float",
+              "label": "Precursor ion tolerance",
+              "help": "Precursor Ion Tolerance (Da or ppm)",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 10000.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "10.0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "precursor_tolu",
+              "argument": null,
+              "type": "select",
+              "label": "Precursor Ion Tolerance Units",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "ppm",
+              "options": [
+                [
+                  "ppm",
+                  "ppm",
+                  false
+                ],
+                [
+                  "Da",
+                  "Da",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "cleavage_c_terminal_mod_mass",
+              "argument": null,
+              "type": "float",
+              "label": "cleavage C-terminal mass change",
+              "help": "",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 10000.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "cleavage_n_terminal_mod_mass",
+              "argument": null,
+              "type": "float",
+              "label": "cleavage N-terminal mass change",
+              "help": "",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 10000.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "c_terminal_mod_mass",
+              "argument": null,
+              "type": "float",
+              "label": "C-terminal residue modification mass",
+              "help": "",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 10000.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "n_terminal_mod_mass",
+              "argument": null,
+              "type": "float",
+              "label": "N-terminal residue modification mass",
+              "help": "",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 10000.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "Conditional",
+              "name": "use_contrast_angle",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "no",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "yes",
+                  "inputs": [
+                    {
+                      "model_class": "FloatToolParameter",
+                      "name": "contrast_angle",
+                      "argument": null,
+                      "type": "float",
+                      "label": "Contrast angle",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": -360.0,
+                      "max": 360.0,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0.0",
+                      "area": false,
+                      "datalist": []
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "use_contrast_angle_select",
+                "argument": null,
+                "type": "select",
+                "label": "Use contrast angle",
+                "help": "",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "no",
+                "options": [
+                  [
+                    "No",
+                    "no",
+                    true
+                  ],
+                  [
+                    "Yes",
+                    "yes",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "total_peaks",
+              "argument": null,
+              "type": "integer",
+              "label": "Total peaks",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "use_neutral_loss_window",
+              "argument": null,
+              "type": "boolean",
+              "label": "Use neutral loss window",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": true,
+              "truevalue": "--use-neutral-loss-window",
+              "falsevalue": ""
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "cleavage_semi",
+              "argument": null,
+              "type": "boolean",
+              "label": "Enable semi-cleavage rules",
+              "help": "Match peptides where one end or the other does not conform to specified enzyme rule.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": true,
+              "truevalue": "",
+              "falsevalue": "--no-cleavage-semi"
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "allow_multi_isotope_search",
+              "argument": null,
+              "type": "boolean",
+              "label": "Allow multi-isotope search",
+              "help": "This allows peptide candidates in windows around -1 Da and -2 Da from the acquired mass to be considered. Only applicable when the minus/plus window above is set to less than 0.5 Da. Good for accurate-mass instruments for which the reported precursor mass is not corrected to the monoisotopic mass.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "",
+              "falsevalue": "--strict-monoisotopic-mass"
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "algorithm",
+              "argument": null,
+              "type": "boolean",
+              "label": "Use K-Score Alogirthm",
+              "help": "The k-score alogirthm is a Tandem score plug-in implementing the COMET score function as described in the Keller et al. manuscript in Molecular Systems Biology 1:2005.0017.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": true,
+              "truevalue": "kscore",
+              "falsevalue": "native"
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "thresholds_type",
+              "argument": null,
+              "type": "select",
+              "label": "Thresholds",
+              "help": "Set various X! Tandem threshold values.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "isb_kscore",
+              "options": [
+                [
+                  "ISB k-Score defaults",
+                  "isb_kscore",
+                  false
+                ],
+                [
+                  "ISB native scoring defaults",
+                  "isb_native",
+                  false
+                ],
+                [
+                  "X! Tandem defaults",
+                  "tandem_defaults",
+                  false
+                ],
+                [
+                  "Defaults for usage with Scaffold",
+                  "scaffold",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "true",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "config_file",
+              "argument": null,
+              "type": "data",
+              "label": "X!Tandem config file",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "xml"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_2332"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "config_select",
+        "argument": null,
+        "type": "select",
+        "label": "Use options from configfile?",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "false",
+        "options": [
+          [
+            "No",
+            "false",
+            true
+          ],
+          [
+            "Yes",
+            "true",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "save_tandem_output",
+      "argument": null,
+      "type": "boolean",
+      "label": "Save X! Tandem XML Output (in addition to PepXML)",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "true",
+      "falsevalue": "false"
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "raw_pepxml",
+      "label": "X!Tandem_vs_${database.dbkey if $database.has_key('dbkey') else $database.fasta_file.display_name}.${input_file.display_name}.${input_file.display_name}.pepXML",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "input_file",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3655",
+      "edam_data": "data_2536",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "tandem_output",
+      "format": "xml",
+      "label": "X!Tandem_vs_${database.dbkey if $database.has_key('dbkey') else $database.fasta_file.display_name}.${input_file.display_name}.${input_file.display_name}.t.xml",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "input_file",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2332",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "proteomics",
+  "panel_section_name": "Proteomics",
+  "form_style": "regular"
+}

@@ -1,0 +1,130 @@
+{
+  "model_class": "TagFromFileTool",
+  "id": "__TAG_FROM_FILE__",
+  "name": "Tag elements",
+  "version": "1.0.0",
+  "description": "",
+  "labels": [],
+  "edam_operations": [
+    "operation_3096"
+  ],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataCollectionToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data_collection",
+      "label": "Input Collection",
+      "help": "A tabular file indicating how to tag collection elements.",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": [],
+        "dce": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "tags",
+      "argument": null,
+      "type": "data",
+      "label": "Tag collection elements according to this file",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "tabular"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "how",
+      "argument": null,
+      "type": "select",
+      "label": "How should the tags be updated",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "add",
+      "options": [
+        [
+          "New tags will be added, existing tags will be kept",
+          "add",
+          false
+        ],
+        [
+          "New tags will be added, existing tags will be removed",
+          "set",
+          false
+        ],
+        [
+          "The tags listed will be removed",
+          "remove",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output",
+      "format": null,
+      "label": "${on_string} (Tagged)",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": null,
+        "collection_type_source": "input",
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": []
+      }
+    }
+  ],
+  "panel_section_id": "collection_operations",
+  "panel_section_name": "Collection Operations",
+  "form_style": "regular"
+}

@@ -1,0 +1,250 @@
+{
+  "model_class": "Tool",
+  "id": "blast_chromosomes_barley",
+  "name": "Extract FASTA from pseudomolecules in barley",
+  "version": "0.1",
+  "description": "using BLAST",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "in_fasta",
+      "argument": null,
+      "type": "data",
+      "label": "Input file in FASTA format",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "fasta"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "database",
+      "argument": null,
+      "type": "select",
+      "label": "Nucleotide BLAST database",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": "morex_v3",
+      "options": [
+        [
+          "Barley pseudomolecules Morex v3.0 (Jul 2020)",
+          "morex_v3",
+          false
+        ],
+        [
+          "Barley pseudomolecules 1-7H and unplaced scaffolds Morex v3.0 (Jul 2020)",
+          "morex_v3.scaf",
+          false
+        ],
+        [
+          "Barley pseudomolecules Morex v2.0 2019 (Jun 2019)",
+          "morex_v2",
+          false
+        ],
+        [
+          "Barley cv. 'Golden Promise' pseudomolecules (Jul 2018)",
+          "gp_chr.v1",
+          false
+        ],
+        [
+          "Barley Morex pseudomolecules Contigs (Aug 2015)",
+          "morex_15.con",
+          false
+        ],
+        [
+          "Barley Morex pseudomolecules (Aug 2015)",
+          "morex_15.pseu",
+          false
+        ],
+        [
+          "Barley pseudomolecules Masked Morex v1.0, IBSC_v2 (April 2016)",
+          "morex_v1.pseu",
+          false
+        ],
+        [
+          "Barley Agilent Array - Transcript data from HarvEST assembly 35 (2012)",
+          "barley_agilent",
+          false
+        ],
+        [
+          "Barley pseudomolecules Contigs Masked Morex v1.0, IBSC_v2 (April 2016)",
+          "morex_v1.mask.pseu",
+          false
+        ],
+        [
+          "Barley pseudomolecules Masked Morex v1.0, IBSC_v2 (April 2016)",
+          "morex_v1.hc",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "identity",
+      "argument": null,
+      "type": "integer",
+      "label": "Percental Identity Cut-off",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "80",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "max_hit",
+      "argument": null,
+      "type": "integer",
+      "label": "Maximum number of hits to show",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "20",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "distance",
+      "argument": null,
+      "type": "integer",
+      "label": "Maximal distance (nt) between two HSPs",
+      "help": "Below this distance, HSPs on the same strand will be merged into a single coordinate feature.",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "1000",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "flank",
+      "argument": null,
+      "type": "integer",
+      "label": "Extract up- and downstream regions",
+      "help": "Number of extracted bases that are added in both directions.",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0",
+      "area": false,
+      "datalist": []
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "fasta",
+      "label": "${tool.name} on ${on_string}: FASTA sequences",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "out_tab",
+      "format": "tabular",
+      "label": "${tool.name} on ${on_string}: BLAST results",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "blast_barley",
+  "panel_section_name": "Blast barley genomes",
+  "form_style": "regular"
+}

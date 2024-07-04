@@ -1,0 +1,695 @@
+{
+  "model_class": "Tool",
+  "id": "hgv_lps",
+  "name": "LPS",
+  "version": "1.0.0",
+  "description": "LASSO-Patternsearch algorithm",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input_file",
+      "argument": null,
+      "type": "data",
+      "label": "Dataset",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "tabular"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "label_column",
+      "argument": null,
+      "type": "data_column",
+      "label": "Label column",
+      "help": "Column containing outcome labels: +1 or -1.",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": null,
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input_file",
+      "numerical": true
+    },
+    {
+      "model_class": "FloatToolParameter",
+      "name": "lambda_fac",
+      "argument": null,
+      "type": "float",
+      "label": "Lambda_fac",
+      "help": "Target value of the regularization parameter, expressed as a fraction of the calculated lambda_max.",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0.03",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "Conditional",
+      "name": "advanced",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "false",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "true",
+          "inputs": [
+            {
+              "model_class": "FloatToolParameter",
+              "name": "sample",
+              "argument": null,
+              "type": "float",
+              "label": "Sample fraction",
+              "help": "Sample this fraction of the data set",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 1.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "1.0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "verbosity",
+              "argument": null,
+              "type": "select",
+              "label": "Verbosity",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "options": [
+                [
+                  "Little output",
+                  "0",
+                  true
+                ],
+                [
+                  "More output",
+                  "1",
+                  false
+                ],
+                [
+                  "Still more output",
+                  "2",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "standardize",
+              "argument": null,
+              "type": "select",
+              "label": "Standardize",
+              "help": "Scales and shifts each column so that it has mean zero and variance 1.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "options": [
+                [
+                  "Don't standardize",
+                  "0",
+                  true
+                ],
+                [
+                  "Standardize",
+                  "1",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "initialLambda",
+              "argument": null,
+              "type": "float",
+              "label": "Initial lambda",
+              "help": "First value of lambda to be used in the continuation scheme, expressed as a fraction of lambda_max",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 1.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.8",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "Conditional",
+              "name": "continuation",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "0",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "1",
+                  "inputs": [
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "continuationSteps",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Continuation steps",
+                      "help": "Number of lambda values to use in continuation <em>prior</em> to target value lambda_fac.",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "5",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "accurateIntermediates",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Accurate intermediates",
+                      "help": "Indicates whether accurate solutions are required for lambda values other than the target value lambda_fac.",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0",
+                      "options": [
+                        [
+                          "Don't need accurate intemediates",
+                          "0",
+                          true
+                        ],
+                        [
+                          "Calculate accurate intermediates",
+                          "1",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "continuation",
+                "argument": null,
+                "type": "select",
+                "label": "Continuation",
+                "help": "Use continuation strategy to start with a larger value of lambda, decreasing it successively to lambda_fac.",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "0",
+                "options": [
+                  [
+                    "Don't use continuation",
+                    "0",
+                    true
+                  ],
+                  [
+                    "Use continuation",
+                    "1",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "printFreq",
+              "argument": null,
+              "type": "integer",
+              "label": "Print frequency",
+              "help": "Print a progress report every NI iterations, where NI is the supplied value of this parameter",
+              "refresh_on_change": false,
+              "min": 1,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "1",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "Conditional",
+              "name": "newton",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "0",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "1",
+                  "inputs": [
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "newtonThreshold",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Newton threshold",
+                      "help": "Maximum size of free variable subvector for Newton.",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "500",
+                      "area": false,
+                      "datalist": []
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "newton",
+                "argument": null,
+                "type": "select",
+                "label": "Projected Newton steps",
+                "help": "",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "0",
+                "options": [
+                  [
+                    "No Newton steps",
+                    "0",
+                    true
+                  ],
+                  [
+                    "Try projected Newton steps",
+                    "1",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "hessianSampleFraction",
+              "argument": null,
+              "type": "float",
+              "label": "Hessian sample fraction",
+              "help": "Fraction of terms to use in approximate Hessian calculation",
+              "refresh_on_change": false,
+              "min": 0.01,
+              "max": 1.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "1.0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "fullGradient",
+              "argument": null,
+              "type": "select",
+              "label": "Partial gradient vector selection",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "options": [
+                [
+                  "Use randomly selected partial gradient, including current active components (\"biased\")",
+                  "0",
+                  false
+                ],
+                [
+                  "Use full gradient vector at every step",
+                  "1",
+                  false
+                ],
+                [
+                  "Randomly selected partial gradient, without regard to current active set (\"unbiased\")",
+                  "2",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "gradientFraction",
+              "argument": null,
+              "type": "float",
+              "label": "Gradient fraction",
+              "help": "Fraction of inactive gradient vector to evaluate",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 1.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.1",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "initialAlpha",
+              "argument": null,
+              "type": "float",
+              "label": "Initial value of alpha",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "1.0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "alphaIncrease",
+              "argument": null,
+              "type": "float",
+              "label": "Alpha increase",
+              "help": "Factor by which to increase alpha after descent not obtained.",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "2.0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "alphaDecrease",
+              "argument": null,
+              "type": "float",
+              "label": "Alpha decrease",
+              "help": "Factor by which to decrease alpha after successful first-order step.",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.8",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "alphaMax",
+              "argument": null,
+              "type": "float",
+              "label": "Alpha max",
+              "help": "Maximum value of alpha; terminate with error if we exceed this.",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "1000000000000.0",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "c1",
+              "argument": null,
+              "type": "float",
+              "label": "",
+              "help": "Parameter defining the margin by which the first-order step is required to decrease before being taken",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 1.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.001",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "maxIter",
+              "argument": null,
+              "type": "integer",
+              "label": "Maximum number of iterations",
+              "help": "Terminate with error if we exceed this.",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "10000",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "stopTol",
+              "argument": null,
+              "type": "float",
+              "label": "Stop tolerance",
+              "help": "Convergence tolerance for target value of lambda.",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "1e-06",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "FloatToolParameter",
+              "name": "intermediateTol",
+              "argument": null,
+              "type": "float",
+              "label": "Intermediate tolerance",
+              "help": "Convergence tolerance for intermediate values of lambda.",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.0001",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "finalOnly",
+              "argument": null,
+              "type": "select",
+              "label": "Final only",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0",
+              "options": [
+                [
+                  "Return information for all intermediate values",
+                  "0",
+                  true
+                ],
+                [
+                  "Just return information at the last lambda",
+                  "1",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "options",
+        "argument": null,
+        "type": "select",
+        "label": "Advanced Options",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "false",
+        "options": [
+          [
+            "Hide advanced options",
+            "false",
+            true
+          ],
+          [
+            "Show advanced options",
+            "true",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output_file",
+      "format": "tabular",
+      "label": "${tool.name} on ${on_string}: results",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "log_file",
+      "format": "txt",
+      "label": "${tool.name} on ${on_string}: log",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2330",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "phenotype_association",
+  "panel_section_name": "Phenotype Association",
+  "form_style": "regular"
+}

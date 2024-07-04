@@ -1,0 +1,322 @@
+{
+  "id": "ncbi_makeblastdb_latest",
+  "panel_section_id": "ec841d67-cc8b-4b57-9427-e7067e157ee6",
+  "outputs": [
+    {
+      "from_work_dir": null,
+      "format": "data",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "${dbtype.value_label} BLAST database from ${on_string}",
+      "edam_format": "format_1915",
+      "model_class": "ToolOutput",
+      "name": "outfile",
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "output_type": "data",
+      "parent": null
+    }
+  ],
+  "inputs": [
+    {
+      "optional": false,
+      "argument": "-dbtype",
+      "options": [
+        [
+          "protein",
+          "prot",
+          false
+        ],
+        [
+          "nucleotide",
+          "nucl",
+          false
+        ]
+      ],
+      "help": "",
+      "refresh_on_change": false,
+      "multiple": false,
+      "hidden": false,
+      "name": "dbtype",
+      "display": "radio",
+      "model_class": "SelectToolParameter",
+      "textable": false,
+      "is_dynamic": false,
+      "type": "select",
+      "value": "prot",
+      "label": "Molecule type of input"
+    },
+    {
+      "optional": false,
+      "argument": "-in",
+      "edam": {
+        "edam_formats": [
+          "format_1929",
+          null
+        ],
+        "edam_data": [
+          "data_2044",
+          null
+        ]
+      },
+      "help": "One or more FASTA files",
+      "refresh_on_change": true,
+      "multiple": true,
+      "extensions": [
+        "fasta",
+        "fasta.gz"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "input_file",
+      "min": null,
+      "model_class": "DataToolParameter",
+      "max": null,
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "Input FASTA files(s)"
+    },
+    {
+      "optional": false,
+      "argument": "-title",
+      "help": "This is the database name shown in BLAST search output",
+      "refresh_on_change": false,
+      "hidden": false,
+      "name": "title",
+      "datalist": [],
+      "model_class": "TextToolParameter",
+      "area": false,
+      "is_dynamic": false,
+      "type": "text",
+      "value": "",
+      "label": "Title for BLAST database"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "options": [
+        [
+          "Version 4 (Support for older Blast versions, no TaxID support)",
+          "4",
+          false
+        ],
+        [
+          "Version 5 (Newer Blast only, supports TaxID mapping)",
+          "5",
+          false
+        ]
+      ],
+      "help": "",
+      "refresh_on_change": false,
+      "multiple": false,
+      "hidden": false,
+      "name": "verNum",
+      "display": null,
+      "model_class": "SelectToolParameter",
+      "textable": false,
+      "is_dynamic": false,
+      "type": "select",
+      "value": "4",
+      "label": "Blast DB version number"
+    },
+    {
+      "optional": false,
+      "argument": "-parse_seqids",
+      "truevalue": "-parse_seqids",
+      "help": "Generally required to be true for Version 5 databases, do not disable without good reason",
+      "refresh_on_change": false,
+      "falsevalue": "",
+      "hidden": false,
+      "name": "parse_seqids",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "true",
+      "label": "Parse the sequence identifiers"
+    },
+    {
+      "optional": false,
+      "argument": "-hash_index",
+      "truevalue": "-hash_index",
+      "help": "These hash values can then be used to quickly determine if a given sequence data exists in this BLAST database.",
+      "refresh_on_change": false,
+      "falsevalue": "",
+      "hidden": false,
+      "name": "hash_index",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "false",
+      "label": "Enable the creation of sequence hash values"
+    },
+    {
+      "optional": true,
+      "argument": "-mask_data",
+      "edam": {
+        "edam_formats": [
+          "format_1966",
+          "format_1966"
+        ],
+        "edam_data": [
+          "data_0849",
+          "data_0849"
+        ]
+      },
+      "help": "As produced by NCBI masking applications (e.g. dustmasker, segmasker, windowmasker)",
+      "refresh_on_change": true,
+      "multiple": true,
+      "extensions": [
+        "maskinfo-asn1",
+        "maskinfo-asn1-binary"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "mask_data_file",
+      "min": null,
+      "model_class": "DataToolParameter",
+      "max": null,
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "Optional ASN.1 file(s) containing masking data"
+    },
+    {
+      "model_class": "Conditional",
+      "type": "conditional",
+      "name": "tax",
+      "test_param": {
+        "optional": false,
+        "argument": null,
+        "options": [
+          [
+            "Do not assign a Taxonomy ID to the sequences",
+            "",
+            false
+          ],
+          [
+            "Assign the same Taxonomy ID to all the sequences",
+            "id",
+            false
+          ],
+          [
+            "Supply text file mapping sequence IDs to taxnomy IDs (Parse Sequence Identifiers must be true)",
+            "map",
+            false
+          ]
+        ],
+        "help": "",
+        "refresh_on_change": true,
+        "multiple": false,
+        "hidden": false,
+        "name": "taxselect",
+        "display": null,
+        "model_class": "SelectToolParameter",
+        "textable": false,
+        "is_dynamic": false,
+        "type": "select",
+        "value": "",
+        "label": "Taxonomy options"
+      },
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "id",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": "-taxid",
+              "help": "Integer >=0, e.g. 9606 for Homo sapiens",
+              "refresh_on_change": false,
+              "value": "",
+              "min": 0,
+              "name": "taxid",
+              "datalist": [],
+              "area": false,
+              "model_class": "IntegerToolParameter",
+              "max": null,
+              "is_dynamic": false,
+              "type": "integer",
+              "hidden": false,
+              "label": "NCBI taxonomy ID"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "map",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": "-taxid_map",
+              "edam": {
+                "edam_formats": [
+                  "format_2330"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "help": "Format: SequenceId TaxonomyId",
+              "refresh_on_change": true,
+              "multiple": false,
+              "extensions": [
+                "txt"
+              ],
+              "hidden": false,
+              "options": {
+                "hdca": [],
+                "hda": []
+              },
+              "name": "taxmap",
+              "model_class": "DataToolParameter",
+              "is_dynamic": false,
+              "type": "data",
+              "value": null,
+              "label": "Seq ID : Tax ID mapping file"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "0.3.3",
+  "labels": [],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "NCBI BLAST+ 2.9",
+  "name": "NCBI BLAST+ makeblastdb (CPT Latest)",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": "Make BLAST database"
+}

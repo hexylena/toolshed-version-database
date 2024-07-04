@@ -1,0 +1,611 @@
+{
+  "id": "meme_fimo",
+  "panel_section_id": "35cd65bd-c749-4ad0-9ef8-da1a95f17439",
+  "inputs": [
+    {
+      "optional": false,
+      "argument": null,
+      "edam": {
+        "edam_formats": [
+          "format_2332"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "help": "",
+      "refresh_on_change": true,
+      "multiple": false,
+      "extensions": [
+        "memexml"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "input_motifs",
+      "model_class": "DataToolParameter",
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "'MEME output' formatted file"
+    },
+    {
+      "model_class": "Conditional",
+      "type": "conditional",
+      "name": "fasta_type",
+      "test_param": {
+        "optional": false,
+        "argument": null,
+        "options": [
+          [
+            "Locally Cached sequences",
+            "cached",
+            false
+          ],
+          [
+            "Sequences from your history",
+            "history",
+            true
+          ]
+        ],
+        "help": "",
+        "refresh_on_change": true,
+        "multiple": false,
+        "hidden": false,
+        "name": "fasta_type_selector",
+        "display": null,
+        "model_class": "SelectToolParameter",
+        "textable": false,
+        "is_dynamic": false,
+        "type": "select",
+        "value": "history",
+        "label": "Source for sequence to search"
+      },
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "cached",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "options": [],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": false,
+              "hidden": false,
+              "name": "input_database",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": true,
+              "type": "select",
+              "value": null,
+              "label": "Genome to search"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "history",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "edam": {
+                "edam_formats": [
+                  "format_1929"
+                ],
+                "edam_data": [
+                  "data_2044"
+                ]
+              },
+              "help": "",
+              "refresh_on_change": true,
+              "multiple": false,
+              "extensions": [
+                "fasta"
+              ],
+              "hidden": false,
+              "options": {
+                "hdca": [],
+                "hda": []
+              },
+              "name": "input_database",
+              "model_class": "DataToolParameter",
+              "is_dynamic": false,
+              "type": "data",
+              "value": null,
+              "label": "Sequences"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "model_class": "Conditional",
+      "type": "conditional",
+      "name": "options_type",
+      "test_param": {
+        "optional": false,
+        "argument": null,
+        "options": [
+          [
+            "Basic",
+            "basic",
+            true
+          ],
+          [
+            "Advanced",
+            "advanced",
+            false
+          ]
+        ],
+        "help": "",
+        "refresh_on_change": true,
+        "multiple": false,
+        "hidden": false,
+        "name": "options_type_selector",
+        "display": null,
+        "model_class": "SelectToolParameter",
+        "textable": false,
+        "is_dynamic": false,
+        "type": "select",
+        "value": "basic",
+        "label": "Options Configuration"
+      },
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "basic",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "advanced",
+          "inputs": [
+            {
+              "model_class": "Conditional",
+              "type": "conditional",
+              "name": "bgfile_type",
+              "test_param": {
+                "optional": false,
+                "argument": null,
+                "options": [
+                  [
+                    "Use Frequencies from Motif File",
+                    "motif-file",
+                    false
+                  ],
+                  [
+                    "Use frequencies from non-redundant database (default)",
+                    "default",
+                    true
+                  ],
+                  [
+                    "Use Frequencies from Background File",
+                    "bgfile",
+                    false
+                  ]
+                ],
+                "help": "",
+                "refresh_on_change": true,
+                "multiple": false,
+                "hidden": false,
+                "name": "bgfile_type_selector",
+                "display": null,
+                "model_class": "SelectToolParameter",
+                "textable": false,
+                "is_dynamic": false,
+                "type": "select",
+                "value": "default",
+                "label": "Background file type"
+              },
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "motif-file",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "default",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "bgfile",
+                  "inputs": [
+                    {
+                      "optional": true,
+                      "argument": null,
+                      "edam": {
+                        "edam_formats": [
+                          "format_2330"
+                        ],
+                        "edam_data": [
+                          "data_0006"
+                        ]
+                      },
+                      "help": "",
+                      "refresh_on_change": true,
+                      "multiple": false,
+                      "extensions": [
+                        "txt"
+                      ],
+                      "hidden": false,
+                      "options": {
+                        "hdca": [],
+                        "hda": []
+                      },
+                      "name": "bgfile",
+                      "model_class": "DataToolParameter",
+                      "is_dynamic": false,
+                      "type": "data",
+                      "value": null,
+                      "label": "Background Model"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "min": 0,
+              "title": "Limit to specified motif",
+              "name": "motifs",
+              "help": null,
+              "inputs": [
+                {
+                  "optional": false,
+                  "argument": null,
+                  "help": "",
+                  "refresh_on_change": false,
+                  "hidden": false,
+                  "name": "motif",
+                  "datalist": [],
+                  "model_class": "TextToolParameter",
+                  "area": false,
+                  "is_dynamic": false,
+                  "type": "text",
+                  "value": "",
+                  "label": "Specify motif by id"
+                }
+              ],
+              "model_class": "Repeat",
+              "max": "__Infinity__",
+              "type": "repeat",
+              "default": 0
+            },
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "datalist": [],
+              "refresh_on_change": false,
+              "min": null,
+              "hidden": false,
+              "name": "max_seq_length",
+              "area": false,
+              "model_class": "IntegerToolParameter",
+              "max": null,
+              "is_dynamic": false,
+              "type": "integer",
+              "value": "250000000",
+              "label": "Maximum input sequence length"
+            },
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "datalist": [],
+              "refresh_on_change": false,
+              "min": null,
+              "hidden": false,
+              "name": "max_stored_scores",
+              "area": false,
+              "model_class": "IntegerToolParameter",
+              "max": null,
+              "is_dynamic": false,
+              "type": "integer",
+              "value": "100000",
+              "label": "Maximum score count to store"
+            },
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "datalist": [],
+              "refresh_on_change": false,
+              "min": null,
+              "hidden": false,
+              "name": "motif_pseudo",
+              "area": false,
+              "model_class": "FloatToolParameter",
+              "max": null,
+              "is_dynamic": false,
+              "type": "float",
+              "value": "0.1",
+              "label": "Pseudocount to add to counts in motif matrix"
+            },
+            {
+              "optional": false,
+              "argument": null,
+              "truevalue": "--norc",
+              "help": "",
+              "refresh_on_change": false,
+              "falsevalue": "",
+              "hidden": false,
+              "name": "norc",
+              "model_class": "BooleanToolParameter",
+              "is_dynamic": false,
+              "type": "boolean",
+              "value": "false",
+              "label": "Do not check reverse complement"
+            },
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "datalist": [],
+              "refresh_on_change": false,
+              "min": null,
+              "hidden": false,
+              "name": "output_pthresh",
+              "area": false,
+              "model_class": "FloatToolParameter",
+              "max": null,
+              "is_dynamic": false,
+              "type": "float",
+              "value": "0.0001",
+              "label": "p-value threshold"
+            },
+            {
+              "model_class": "Conditional",
+              "type": "conditional",
+              "name": "qvalue_type",
+              "test_param": {
+                "optional": false,
+                "argument": null,
+                "options": [
+                  [
+                    "Do not compute q-value",
+                    "no-qvalue",
+                    false
+                  ],
+                  [
+                    "Compute q-value",
+                    "q-value",
+                    true
+                  ]
+                ],
+                "help": "",
+                "refresh_on_change": true,
+                "multiple": false,
+                "hidden": false,
+                "name": "qvalue_type_selector",
+                "display": null,
+                "model_class": "SelectToolParameter",
+                "textable": false,
+                "is_dynamic": false,
+                "type": "select",
+                "value": "q-value",
+                "label": "q-value options"
+              },
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "no-qvalue",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "q-value",
+                  "inputs": [
+                    {
+                      "optional": false,
+                      "argument": null,
+                      "help": "",
+                      "datalist": [],
+                      "refresh_on_change": false,
+                      "min": null,
+                      "hidden": false,
+                      "name": "output_qthresh",
+                      "area": false,
+                      "model_class": "FloatToolParameter",
+                      "max": null,
+                      "is_dynamic": false,
+                      "type": "float",
+                      "value": "1.0",
+                      "label": "q-value threshold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "NON_COMMERCIAL_USE",
+      "help": "",
+      "refresh_on_change": false,
+      "falsevalue": "COMMERCIAL_USE",
+      "hidden": false,
+      "name": "non_commercial_use",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "false",
+      "label": "I certify that I am not using this tool for commercial purposes."
+    }
+  ],
+  "version": "0.0.1",
+  "outputs": [
+    {
+      "from_work_dir": null,
+      "format": "html",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "edam_format": "format_2331",
+      "model_class": "ToolOutput",
+      "name": "html_outfile",
+      "output_type": "data",
+      "parent": null,
+      "label": "${tool.name} on ${on_string} (html)"
+    },
+    {
+      "from_work_dir": null,
+      "format": "tabular",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "edam_format": "format_3475",
+      "model_class": "ToolOutput",
+      "name": "txt_outfile",
+      "output_type": "data",
+      "parent": null,
+      "label": "${tool.name} on ${on_string} (text)"
+    },
+    {
+      "from_work_dir": null,
+      "format": "tabular",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "edam_format": "format_3475",
+      "model_class": "ToolOutput",
+      "name": "gff_outfile",
+      "output_type": "data",
+      "parent": null,
+      "label": "${tool.name} on ${on_string} (almost-gff)"
+    },
+    {
+      "from_work_dir": null,
+      "format": "cisml",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "edam_format": "format_2332",
+      "model_class": "ToolOutput",
+      "name": "xml_outfile",
+      "output_type": "data",
+      "parent": null,
+      "label": "${tool.name} on ${on_string} (xml)"
+    },
+    {
+      "from_work_dir": null,
+      "format": "interval",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_3002",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "edam_format": "format_3475",
+      "model_class": "ToolOutput",
+      "name": "interval_outfile",
+      "output_type": "data",
+      "parent": null,
+      "label": "${tool.name} on ${on_string} (interval)"
+    }
+  ],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "Deprecated",
+  "name": "FIMO",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": "- Find Individual Motif Occurrences",
+  "labels": []
+}

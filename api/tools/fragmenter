@@ -1,0 +1,226 @@
+{
+  "model_class": "Tool",
+  "id": "fragmenter",
+  "name": "Fragmenter",
+  "version": "0.1",
+  "description": "splits a molecule in fragments",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "infile",
+      "argument": null,
+      "type": "data",
+      "label": "Input file",
+      "help": "Dataset missing? See TIP below",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "sdf",
+        "smi",
+        "mol",
+        "inchi"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_2330",
+          "format_3475",
+          "format_2330",
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_0006",
+          "data_0006",
+          "data_0006",
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "rules",
+      "argument": null,
+      "type": "select",
+      "label": "Splitting rules.",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "recap",
+      "options": [
+        [
+          "Recap Rules",
+          "recap",
+          false
+        ],
+        [
+          "rotatable bonds",
+          "rotbonds",
+          false
+        ],
+        [
+          "ring",
+          "rings",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "oformat",
+      "argument": null,
+      "type": "select",
+      "label": "Output format.",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "smi",
+      "options": [
+        [
+          "SMILES",
+          "smi",
+          false
+        ],
+        [
+          "InChI",
+          "inchi",
+          false
+        ],
+        [
+          "SD-Files",
+          "sdf",
+          false
+        ],
+        [
+          "mol2",
+          "mol2",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "mark",
+      "argument": null,
+      "type": "boolean",
+      "label": "Replaces the newly created free ends on each bond break with some marker atoms",
+      "help": "This option is usefull if you want to to merge the fragments afterwarts.",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--mark-sticky-ends",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "non_fragment_file",
+      "argument": null,
+      "type": "boolean",
+      "label": "Output an additional file with all molecules that are not fragmented",
+      "help": "Without that option such molecules will also appear in the regular output file.",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "",
+      "falsevalue": ""
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "outfile",
+      "format": "smi",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "fragment_file",
+      "format": "smi",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "chemicaltoolbox",
+  "panel_section_name": "ChemicalToolBox",
+  "form_style": "regular"
+}

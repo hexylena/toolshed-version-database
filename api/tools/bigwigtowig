@@ -1,0 +1,118 @@
+{
+  "model_class": "Tool",
+  "id": "bigwigtowig",
+  "name": "Convert BigWig to Wiggle",
+  "version": "377+galaxy0",
+  "description": "Convert bigWig to wig",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": false,
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "bigwig_input",
+      "argument": null,
+      "type": "data",
+      "label": "BigWig input",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "bigwig"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3006"
+        ],
+        "edam_data": [
+          "data_3002"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "chrom",
+      "argument": "-chrom",
+      "type": "text",
+      "label": "Restrict output to given chromosome",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "start",
+      "argument": "-start",
+      "type": "integer",
+      "label": "Restrict output to only that over start",
+      "help": "",
+      "refresh_on_change": false,
+      "min": 0,
+      "max": null,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "end",
+      "argument": "-end",
+      "type": "integer",
+      "label": "Restrict output to only that under end",
+      "help": "",
+      "refresh_on_change": false,
+      "min": 0,
+      "max": null,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "area": false,
+      "datalist": []
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "wig_output",
+      "format": "wig",
+      "label": "${tool.name} on ${on_string}: wig",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "output.wig",
+      "edam_format": "format_3005",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": null,
+  "panel_section_name": null,
+  "form_style": "regular"
+}

@@ -1,0 +1,716 @@
+{
+  "model_class": "Tool",
+  "id": "MAF_filter",
+  "name": "Filter MAF",
+  "version": "1.0.1",
+  "description": "by specified attributes",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input1",
+      "argument": null,
+      "type": "data",
+      "label": "MAF File",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "maf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3008"
+        ],
+        "edam_data": [
+          "data_0863"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "min_size",
+      "argument": null,
+      "type": "integer",
+      "label": "Minimum Size",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "max_size",
+      "argument": null,
+      "type": "integer",
+      "label": "Maximum Size",
+      "help": "A maximum size less than 1 indicates no limit",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "species",
+      "argument": null,
+      "type": "select",
+      "label": "Choose species",
+      "help": "Select species to be included in the final alignment",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": null,
+      "options": [],
+      "display": "checkboxes",
+      "multiple": true,
+      "textable": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "min_species_per_block",
+      "argument": null,
+      "type": "select",
+      "label": "Exclude blocks which have only one species",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "1",
+      "options": [
+        [
+          "Yes",
+          "2",
+          false
+        ],
+        [
+          "No",
+          "1",
+          true
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "exclude_incomplete_blocks",
+      "argument": null,
+      "type": "select",
+      "label": "Exclude blocks which have missing species",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0",
+      "options": [
+        [
+          "Yes",
+          "1",
+          false
+        ],
+        [
+          "No",
+          "0",
+          true
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "Repeat",
+      "name": "maf_filters",
+      "type": "repeat",
+      "title": "Filter",
+      "help": null,
+      "default": 0,
+      "min": 0,
+      "max": "__Infinity__",
+      "inputs": [
+        {
+          "model_class": "SelectToolParameter",
+          "name": "species1",
+          "argument": null,
+          "type": "select",
+          "label": "When Species",
+          "help": "",
+          "refresh_on_change": false,
+          "optional": false,
+          "hidden": false,
+          "is_dynamic": true,
+          "value": null,
+          "options": [],
+          "display": null,
+          "multiple": false,
+          "textable": false
+        },
+        {
+          "model_class": "Conditional",
+          "name": "species1_attributes",
+          "type": "conditional",
+          "cases": [
+            {
+              "model_class": "ConditionalWhen",
+              "value": "attribute_strand",
+              "inputs": [
+                {
+                  "model_class": "SelectToolParameter",
+                  "name": "species1_is_isnot",
+                  "argument": null,
+                  "type": "select",
+                  "label": "Conditional",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "==",
+                  "options": [
+                    [
+                      "Is",
+                      "==",
+                      false
+                    ],
+                    [
+                      "Is Not",
+                      "!=",
+                      false
+                    ]
+                  ],
+                  "display": null,
+                  "multiple": false,
+                  "textable": false
+                },
+                {
+                  "model_class": "SelectToolParameter",
+                  "name": "species1_attribute",
+                  "argument": null,
+                  "type": "select",
+                  "label": "Strand",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "+",
+                  "options": [
+                    [
+                      "+",
+                      "+",
+                      true
+                    ],
+                    [
+                      "-",
+                      "-",
+                      false
+                    ]
+                  ],
+                  "display": null,
+                  "multiple": false,
+                  "textable": false
+                },
+                {
+                  "model_class": "Repeat",
+                  "name": "filter_condition",
+                  "type": "repeat",
+                  "title": "Filter Condition",
+                  "help": null,
+                  "default": 0,
+                  "min": 0,
+                  "max": "__Infinity__",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "species2",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Species",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": true,
+                      "value": null,
+                      "options": [],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    },
+                    {
+                      "model_class": "Conditional",
+                      "name": "species2_attributes",
+                      "type": "conditional",
+                      "cases": [
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "attribute_strand",
+                          "inputs": [
+                            {
+                              "model_class": "SelectToolParameter",
+                              "name": "species2_is_isnot",
+                              "argument": null,
+                              "type": "select",
+                              "label": "Conditional",
+                              "help": "",
+                              "refresh_on_change": false,
+                              "optional": false,
+                              "hidden": false,
+                              "is_dynamic": false,
+                              "value": "==",
+                              "options": [
+                                [
+                                  "Is",
+                                  "==",
+                                  false
+                                ],
+                                [
+                                  "Is Not",
+                                  "!=",
+                                  false
+                                ]
+                              ],
+                              "display": null,
+                              "multiple": false,
+                              "textable": false
+                            },
+                            {
+                              "model_class": "SelectToolParameter",
+                              "name": "species2_attribute",
+                              "argument": null,
+                              "type": "select",
+                              "label": "Strand",
+                              "help": "",
+                              "refresh_on_change": false,
+                              "optional": false,
+                              "hidden": false,
+                              "is_dynamic": false,
+                              "value": "+",
+                              "options": [
+                                [
+                                  "+",
+                                  "+",
+                                  true
+                                ],
+                                [
+                                  "-",
+                                  "-",
+                                  false
+                                ]
+                              ],
+                              "display": null,
+                              "multiple": false,
+                              "textable": false
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "attribute_chr",
+                          "inputs": [
+                            {
+                              "model_class": "SelectToolParameter",
+                              "name": "species2_is_isnot",
+                              "argument": null,
+                              "type": "select",
+                              "label": "Conditional",
+                              "help": "",
+                              "refresh_on_change": false,
+                              "optional": false,
+                              "hidden": false,
+                              "is_dynamic": false,
+                              "value": "in",
+                              "options": [
+                                [
+                                  "Is",
+                                  "in",
+                                  false
+                                ],
+                                [
+                                  "Is Not",
+                                  "not in",
+                                  false
+                                ]
+                              ],
+                              "display": null,
+                              "multiple": false,
+                              "textable": false
+                            },
+                            {
+                              "model_class": "TextToolParameter",
+                              "name": "species2_attribute",
+                              "argument": null,
+                              "type": "text",
+                              "label": "Chromosome",
+                              "help": "",
+                              "refresh_on_change": false,
+                              "optional": true,
+                              "hidden": false,
+                              "is_dynamic": false,
+                              "value": "chr1",
+                              "area": false,
+                              "datalist": []
+                            }
+                          ]
+                        }
+                      ],
+                      "test_param": {
+                        "model_class": "SelectToolParameter",
+                        "name": "species2_attribute_type",
+                        "argument": null,
+                        "type": "select",
+                        "label": "Species Attribute",
+                        "help": "",
+                        "refresh_on_change": true,
+                        "optional": false,
+                        "hidden": false,
+                        "is_dynamic": false,
+                        "value": "attribute_strand",
+                        "options": [
+                          [
+                            "Strand",
+                            "attribute_strand",
+                            true
+                          ],
+                          [
+                            "Chromosome",
+                            "attribute_chr",
+                            false
+                          ]
+                        ],
+                        "display": null,
+                        "multiple": false,
+                        "textable": false
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "attribute_chr",
+              "inputs": [
+                {
+                  "model_class": "SelectToolParameter",
+                  "name": "species1_is_isnot",
+                  "argument": null,
+                  "type": "select",
+                  "label": "Conditional",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "in",
+                  "options": [
+                    [
+                      "Is",
+                      "in",
+                      false
+                    ],
+                    [
+                      "Is Not",
+                      "not in",
+                      false
+                    ]
+                  ],
+                  "display": null,
+                  "multiple": false,
+                  "textable": false
+                },
+                {
+                  "model_class": "TextToolParameter",
+                  "name": "species1_attribute",
+                  "argument": null,
+                  "type": "text",
+                  "label": "Chromosome",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "chr1",
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "Repeat",
+                  "name": "filter_condition",
+                  "type": "repeat",
+                  "title": "Filter Condition",
+                  "help": null,
+                  "default": 0,
+                  "min": 0,
+                  "max": "__Infinity__",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "species2",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Species",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": true,
+                      "value": null,
+                      "options": [],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    },
+                    {
+                      "model_class": "Conditional",
+                      "name": "species2_attributes",
+                      "type": "conditional",
+                      "cases": [
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "attribute_strand",
+                          "inputs": [
+                            {
+                              "model_class": "SelectToolParameter",
+                              "name": "species2_is_isnot",
+                              "argument": null,
+                              "type": "select",
+                              "label": "Conditional",
+                              "help": "",
+                              "refresh_on_change": false,
+                              "optional": false,
+                              "hidden": false,
+                              "is_dynamic": false,
+                              "value": "==",
+                              "options": [
+                                [
+                                  "Is",
+                                  "==",
+                                  false
+                                ],
+                                [
+                                  "Is Not",
+                                  "!=",
+                                  false
+                                ]
+                              ],
+                              "display": null,
+                              "multiple": false,
+                              "textable": false
+                            },
+                            {
+                              "model_class": "SelectToolParameter",
+                              "name": "species2_attribute",
+                              "argument": null,
+                              "type": "select",
+                              "label": "Strand",
+                              "help": "",
+                              "refresh_on_change": false,
+                              "optional": false,
+                              "hidden": false,
+                              "is_dynamic": false,
+                              "value": "+",
+                              "options": [
+                                [
+                                  "+",
+                                  "+",
+                                  true
+                                ],
+                                [
+                                  "-",
+                                  "-",
+                                  false
+                                ]
+                              ],
+                              "display": null,
+                              "multiple": false,
+                              "textable": false
+                            }
+                          ]
+                        },
+                        {
+                          "model_class": "ConditionalWhen",
+                          "value": "attribute_chr",
+                          "inputs": [
+                            {
+                              "model_class": "SelectToolParameter",
+                              "name": "species2_is_isnot",
+                              "argument": null,
+                              "type": "select",
+                              "label": "Conditional",
+                              "help": "",
+                              "refresh_on_change": false,
+                              "optional": false,
+                              "hidden": false,
+                              "is_dynamic": false,
+                              "value": "in",
+                              "options": [
+                                [
+                                  "Is",
+                                  "in",
+                                  false
+                                ],
+                                [
+                                  "Is Not",
+                                  "not in",
+                                  false
+                                ]
+                              ],
+                              "display": null,
+                              "multiple": false,
+                              "textable": false
+                            },
+                            {
+                              "model_class": "TextToolParameter",
+                              "name": "species2_attribute",
+                              "argument": null,
+                              "type": "text",
+                              "label": "Chromosome",
+                              "help": "",
+                              "refresh_on_change": false,
+                              "optional": true,
+                              "hidden": false,
+                              "is_dynamic": false,
+                              "value": "chr1",
+                              "area": false,
+                              "datalist": []
+                            }
+                          ]
+                        }
+                      ],
+                      "test_param": {
+                        "model_class": "SelectToolParameter",
+                        "name": "species2_attribute_type",
+                        "argument": null,
+                        "type": "select",
+                        "label": "Species Attribute",
+                        "help": "",
+                        "refresh_on_change": true,
+                        "optional": false,
+                        "hidden": false,
+                        "is_dynamic": false,
+                        "value": "attribute_chr",
+                        "options": [
+                          [
+                            "Strand",
+                            "attribute_strand",
+                            false
+                          ],
+                          [
+                            "Chromosome",
+                            "attribute_chr",
+                            true
+                          ]
+                        ],
+                        "display": null,
+                        "multiple": false,
+                        "textable": false
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "test_param": {
+            "model_class": "SelectToolParameter",
+            "name": "species1_attribute_type",
+            "argument": null,
+            "type": "select",
+            "label": "Species Attribute",
+            "help": "",
+            "refresh_on_change": true,
+            "optional": false,
+            "hidden": false,
+            "is_dynamic": false,
+            "value": "attribute_chr",
+            "options": [
+              [
+                "Strand",
+                "attribute_strand",
+                false
+              ],
+              [
+                "Chromosome",
+                "attribute_chr",
+                true
+              ]
+            ],
+            "display": null,
+            "multiple": false,
+            "textable": false
+          }
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "maf",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3008",
+      "edam_data": "data_0863",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "fetch_sequences___alignments",
+  "panel_section_name": "Fetch Sequences / Alignments",
+  "form_style": "regular"
+}

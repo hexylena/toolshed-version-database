@@ -1,0 +1,247 @@
+{
+  "id": "interproscan",
+  "panel_section_id": "eff7f11c-09f1-4090-bf3c-dabbb6ce94e9",
+  "outputs": [
+    {
+      "from_work_dir": null,
+      "format": "gff3",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_1255",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "Interproscan GFF3 output on ${on_string}",
+      "edam_format": "format_1975",
+      "model_class": "ToolOutput",
+      "name": "output_gff3",
+      "discover_datasets": [],
+      "output_type": "data",
+      "parent": null
+    },
+    {
+      "from_work_dir": null,
+      "format": "json",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "Interproscan JSON output on ${on_string}",
+      "edam_format": "format_3464",
+      "model_class": "ToolOutput",
+      "name": "output_json",
+      "discover_datasets": [],
+      "output_type": "data",
+      "parent": null
+    }
+  ],
+  "inputs": [
+    {
+      "optional": false,
+      "argument": null,
+      "edam": {
+        "edam_formats": [
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "help": "",
+      "refresh_on_change": true,
+      "multiple": false,
+      "extensions": [
+        "fasta"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "input",
+      "model_class": "DataToolParameter",
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "Fasta File"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "--goterms",
+      "help": "",
+      "refresh_on_change": false,
+      "falsevalue": "",
+      "hidden": false,
+      "name": "goterms",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "true",
+      "label": "Switch on lookup of corresponding GO annotation"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "--iprlookup",
+      "help": "",
+      "refresh_on_change": false,
+      "falsevalue": "",
+      "hidden": false,
+      "name": "iprlookup",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "true",
+      "label": "Switch on lookup of correspoding InterPro annotation"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "--pathways",
+      "help": "",
+      "refresh_on_change": false,
+      "falsevalue": "",
+      "hidden": false,
+      "name": "pathways",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "true",
+      "label": "Switch on lookup of correspoding Pathway annotation"
+    },
+    {
+      "optional": true,
+      "argument": null,
+      "options": [
+        [
+          "TIGRFAM: protein families based on Hidden Markov Models or HMMs",
+          "TIGRFAM",
+          true
+        ],
+        [
+          "PIRSF: non-overlapping clustering of UniProtKB sequences into a hierarchical order (evolutionary relationships)",
+          "PIRSF",
+          true
+        ],
+        [
+          "Panther: Protein ANalysis THrough Evolutionary Relationships",
+          "PANTHER",
+          true
+        ],
+        [
+          "SMART: identification and analysis of domain architectures based on Hidden Markov Models or HMMs",
+          "SMART",
+          true
+        ],
+        [
+          "CDD: Prediction of CDD domains in Proteins",
+          "CDD",
+          true
+        ],
+        [
+          "PROSITE Profiles: protein domains, families and functional sites as well as associated profiles to identify them",
+          "PrositeProfiles",
+          true
+        ],
+        [
+          "PROSITE Pattern: protein domains, families and functional sites as well as associated patterns to identify them",
+          "PrositePatterns",
+          true
+        ],
+        [
+          "HAMAP: High-quality Automated Annotation of Microbial Proteomes",
+          "Hamap",
+          true
+        ],
+        [
+          "PfamA: protein families, each represented by multiple sequence alignments and hidden Markov models",
+          "Pfam",
+          true
+        ],
+        [
+          "PRINTS: group of conserved motifs (fingerprints) used to characterise a protein family",
+          "PRINTS",
+          true
+        ],
+        [
+          "SUPERFAMILY: database of structural and functional annotation",
+          "SUPERFAMILY",
+          true
+        ],
+        [
+          "Coils: Prediction of Coiled Coil Regions in Proteins",
+          "Coils",
+          true
+        ],
+        [
+          "Gene3d: Structural assignment for whole genes and genomes using the CATH domain structure database",
+          "Gene3D",
+          true
+        ],
+        [
+          "SignalP Gram Positive Bacteria",
+          "SignalP-GRAM_POSITIVE",
+          false
+        ],
+        [
+          "SignalP Gram Negative Bacteria",
+          "SignalP-GRAM_NEGATIVE",
+          false
+        ],
+        [
+          "SignalP Eukaryotic Bacteria",
+          "SignalP-EUK",
+          true
+        ],
+        [
+          "Phobius: combined transmembrane topology and signal peptide predictor",
+          "Phobius",
+          true
+        ]
+      ],
+      "help": "Selecting NONE of the above will run ALL of the applications",
+      "refresh_on_change": false,
+      "multiple": true,
+      "hidden": false,
+      "name": "appl",
+      "display": "checkboxes",
+      "model_class": "SelectToolParameter",
+      "textable": false,
+      "is_dynamic": false,
+      "type": "select",
+      "value": [
+        "TIGRFAM",
+        "PIRSF",
+        "PANTHER",
+        "SMART",
+        "CDD",
+        "PrositeProfiles",
+        "PrositePatterns",
+        "Hamap",
+        "Pfam",
+        "PRINTS",
+        "SUPERFAMILY",
+        "Coils",
+        "Gene3D",
+        "SignalP-EUK",
+        "Phobius"
+      ],
+      "label": "Applications to run"
+    }
+  ],
+  "version": "5.52-86.0",
+  "labels": [],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "Domains and Signals",
+  "name": "Interproscan functional predictions of ORFs",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": "Interproscan functional predictions of ORFs"
+}

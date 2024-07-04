@@ -1,1 +1,2337 @@
-{"model_class": "Tool", "id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.8a", "name": "RNA STAR", "version": "2.7.8a", "description": "Gapped-read mapper for RNA-seq data", "labels": [], "edam_operations": ["operation_0292"], "edam_topics": ["topic_3170", "topic_3308"], "hidden": "", "is_workflow_compatible": true, "xrefs": [{"value": "star", "reftype": "bio.tools"}], "tool_shed_repository": {"name": "rgrnastar", "owner": "iuc", "changeset_revision": "c772497b2c32", "tool_shed": "toolshed.g2.bx.psu.edu"}, "inputs": [{"model_class": "Conditional", "name": "singlePaired", "type": "conditional", "cases": [{"model_class": "ConditionalWhen", "value": "single", "inputs": [{"model_class": "DataToolParameter", "name": "input1", "argument": null, "type": "data", "label": "RNA-Seq FASTQ/FASTA file", "help": "", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": null, "extensions": ["fastq", "fasta", "fastq.gz", "fastqsanger.gz"], "edam": {"edam_formats": ["format_1930", "format_1929", "format_1930", "format_1932"], "edam_data": ["data_2044", "data_2044", "data_2044", "data_2044"]}, "multiple": false, "options": {"dce": [], "ldda": [], "hda": [], "hdca": []}, "tag": null}]}, {"model_class": "ConditionalWhen", "value": "paired", "inputs": [{"model_class": "DataToolParameter", "name": "input1", "argument": null, "type": "data", "label": "RNA-Seq FASTQ/FASTA file, forward reads", "help": "", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": null, "extensions": ["fastq", "fasta", "fastq.gz", "fastqsanger.gz"], "edam": {"edam_formats": ["format_1930", "format_1929", "format_1930", "format_1932"], "edam_data": ["data_2044", "data_2044", "data_2044", "data_2044"]}, "multiple": false, "options": {"dce": [], "ldda": [], "hda": [], "hdca": []}, "tag": null}, {"model_class": "DataToolParameter", "name": "input2", "argument": null, "type": "data", "label": "RNA-Seq FASTQ/FASTA file, reverse reads", "help": "", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": null, "extensions": ["fastq", "fasta", "fastq.gz", "fastqsanger.gz"], "edam": {"edam_formats": ["format_1930", "format_1929", "format_1930", "format_1932"], "edam_data": ["data_2044", "data_2044", "data_2044", "data_2044"]}, "multiple": false, "options": {"dce": [], "ldda": [], "hda": [], "hdca": []}, "tag": null}]}, {"model_class": "ConditionalWhen", "value": "paired_collection", "inputs": [{"model_class": "DataCollectionToolParameter", "name": "input", "argument": null, "type": "data_collection", "label": "RNA-Seq FASTQ/FASTA paired reads", "help": "", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": null, "extensions": ["fastq", "fasta", "fastq.gz", "fastqsanger.gz"], "multiple": false, "options": {"hda": [], "hdca": [], "dce": []}, "tag": null}]}], "test_param": {"model_class": "SelectToolParameter", "name": "sPaired", "argument": null, "type": "select", "label": "Single-end or paired-end reads", "help": "", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": "single", "options": [["Single-end", "single", true], ["Paired-end (as individual datasets)", "paired", false], ["Paired-end (as collection)", "paired_collection", false]], "display": null, "multiple": false, "textable": false}}, {"model_class": "Conditional", "name": "refGenomeSource", "type": "conditional", "cases": [{"model_class": "ConditionalWhen", "value": "indexed", "inputs": [{"model_class": "Conditional", "name": "GTFconditional", "type": "conditional", "cases": [{"model_class": "ConditionalWhen", "value": "with-gtf", "inputs": [{"model_class": "SelectToolParameter", "name": "genomeDir", "argument": "--genomeDir", "type": "select", "label": "Select reference genome", "help": "If your genome of interest is not listed, contact the Galaxy team", "refresh_on_change": false, "optional": false, "hidden": false, "is_dynamic": true, "value": null, "options": [], "display": null, "multiple": false, "textable": false}]}, {"model_class": "ConditionalWhen", "value": "without-gtf", "inputs": [{"model_class": "SelectToolParameter", "name": "genomeDir", "argument": "--genomeDir", "type": "select", "label": "Select reference genome", "help": "If your genome of interest is not listed, contact the Galaxy team", "refresh_on_change": false, "optional": false, "hidden": false, "is_dynamic": true, "value": "apiMel3", "options": [["A. mellifera genome (apiMel3, Baylor HGSC Amel_3.0)", "apiMel3", false], ["ARS1 Aug. 2016 Capra hircus (goat) (San Clemente 2016 USDA) (GCF_001704415.2)", "GCF_001704415.2", false], ["African Clawed Frog (xenLae9.2)", "xenLae9.2", false], ["Arabidopsis thaliana (TAIR10)", "TAIR10", false], ["Caenorhabditis elegans Feb. 2013 (WBcel235/ce11)", "ce11", false], ["Caenorhabditis elegans: ce10", "ce10", false], ["Cat Nov. 2017 (Felis catus, domestic cat): felCat9", "felCat9", false], ["Chicken (Gallus gallus): galGal6", "galGal6", false], ["Chicken Oct. 2021 (bGalGal1.pat.whiteleghornlayer.GRCg7w_WZ) (GCF_016700215.2)", "GCF_016700215.2", false], ["Dog Oct. 2020 (Dog10K_Boxer_Tasha/canFam6) (canFam6)", "canFam6", false], ["Fly (Drosophila melanogaster): dm3 Full", "dm3full", false], ["Fly (Drosophila melanogaster): dm6 Full", "dm6full", false], ["Horse Jan. 2018 (EquCab3.0/equCab3)", "equCab3", false], ["Human (Homo sapiens): hg19 Full", "hg19full", false], ["Human CHM13 2.0 (T2T Consortium) Jan. 2022", "CHM13_T2T_v2.0", false], ["Human Dec. 2013 (GRCh38/hg38) (hg38)", "hg38", false], ["Influenza A virus (A/seal/Mass/1-SC35M/1980(H7N7))", "h7n7_360722", false], ["Macaca fascicularis Jun 2013 (macFas5)", "macFas5", false], ["Mouse (Mus Musculus): mm10 Full", "mm10full", false], ["Mouse (Mus Musculus): mm39 Full", "mm39", false], ["Mouse (Mus Musculus): mm9 Full", "mm9full", false], ["Pig Feb. 2017 (Sscrofa11.1/susScr11) (susScr11)", "susScr11", false], ["Rabbit Apr. 2009 (Broad/oryCun2)", "oryCun2", false], ["Rat Jul. 2014 (RGSC 6.0/rn6) (rn6)", "rn6", false], ["Rock pigeon Dec 2017 (Cliv_2.1/colLiv2)", "colLiv2.1", false], ["S. lycopersicum (Tomato) Feb 2019 (SL4.0)", "SL4.0", false], ["SARS-CoV-2 isolate Wuhan-Hu-1, complete genome (NC_045512)", "NC_045512.2", false], ["Triticum aestivum IWGSC1.1", "Triticum_aestivum_IWGSC1.1", false], ["White-tailed deer Apr 2017 (Odocoileus virginianus) (GCF_002102435.1, Ovir.te_1.0)", "GCF_002102435.1", false], ["Xenopus tropicalis (xenTro9.1)", "xenTro9.1", false], ["Zebrafish May 2017 (GRCz11/danRer11) (danRer11)", "danRer11", false], ["Zebrafish Sep. 2014 (GRCz10/danRer10) (danRer10)", "danRer10", false], ["bosTau8", "bosTau8", false], ["oviAri4 Sheep (oviAri4, International Sheep Genome Consortium) ((Oar_v4.0/oviAri4))", "oviAri4", false]], "display": null, "multiple": false, "textable": false}, {"model_class": "DataToolParameter", "name": "sjdbGTFfile", "argument": "--sjdbGTFfile", "type": "data", "label": "Gene model (gff3,gtf) file for splice junctions", "help": "Exon junction information for mapping splices", "refresh_on_change": true, "optional": true, "hidden": false, "is_dynamic": false, "value": null, "extensions": ["gff3", "gtf"], "edam": {"edam_formats": ["format_1975", "format_2306"], "edam_data": ["data_1255", "data_1255"]}, "multiple": false, "options": {"dce": [], "ldda": [], "hda": [], "hdca": []}, "tag": null}, {"model_class": "IntegerToolParameter", "name": "sjdbOverhang", "argument": "--sjdbOverhang", "type": "integer", "label": "Length of the genomic sequence around annotated junctions", "help": "Used in constructing the splice junctions database. Ideal value is ReadLength-1", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "100", "area": false, "datalist": []}]}], "test_param": {"model_class": "SelectToolParameter", "name": "GTFselect", "argument": null, "type": "select", "label": "Reference genome with or without an annotation", "help": "Select the '... with builtin gene-model' option to select from the list of available indexes that were built with splice junction information. Select the '... without builtin gene-model' option to select from the list of available indexes without annotated splice junctions, and, optionally, provide your own splice-junction annonations.", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": "without-gtf", "options": [["use genome reference without builtin gene-model", "without-gtf", true], ["use genome reference with builtin gene-model", "with-gtf", false]], "display": null, "multiple": false, "textable": false}}]}, {"model_class": "ConditionalWhen", "value": "history", "inputs": [{"model_class": "DataToolParameter", "name": "genomeFastaFiles", "argument": "--genomeFastaFiles", "type": "data", "label": "Select a reference genome", "help": "", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": null, "extensions": ["fasta"], "edam": {"edam_formats": ["format_1929"], "edam_data": ["data_2044"]}, "multiple": false, "options": {"dce": [], "ldda": [], "hda": [], "hdca": []}, "tag": null}, {"model_class": "IntegerToolParameter", "name": "genomeSAindexNbases", "argument": "--genomeSAindexNbases", "type": "integer", "label": "Length of the SA pre-indexing string", "help": "Typically between 10 and 15. Longer strings will use much more memory, but allow faster searches. For small genomes, the parameter --genomeSAindexNbases must be scaled down to min(14, log2(GenomeLength)/2 - 1)", "refresh_on_change": false, "min": 2, "max": 16, "optional": false, "hidden": false, "is_dynamic": false, "value": "14", "area": false, "datalist": []}, {"model_class": "Conditional", "name": "GTFconditional", "type": "conditional", "cases": [{"model_class": "ConditionalWhen", "value": "with-gtf", "inputs": [{"model_class": "DataToolParameter", "name": "sjdbGTFfile", "argument": "--sjdbGTFfile", "type": "data", "label": "Gene model (gff3,gtf) file for splice junctions", "help": "Exon junction information for mapping splices", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": null, "extensions": ["gff3", "gtf"], "edam": {"edam_formats": ["format_1975", "format_2306"], "edam_data": ["data_1255", "data_1255"]}, "multiple": false, "options": {"dce": [], "ldda": [], "hda": [], "hdca": []}, "tag": null}, {"model_class": "IntegerToolParameter", "name": "sjdbOverhang", "argument": "--sjdbOverhang", "type": "integer", "label": "Length of the genomic sequence around annotated junctions", "help": "Used in constructing the splice junctions database. Ideal value is ReadLength-1", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "100", "area": false, "datalist": []}]}, {"model_class": "ConditionalWhen", "value": "without-gtf", "inputs": []}], "test_param": {"model_class": "SelectToolParameter", "name": "GTFselect", "argument": null, "type": "select", "label": "Build index with or without known splice junctions annotation", "help": "To build an index with known splice junctions annotated, you will have to provide a GTF or GFF3 dataset that describes the gene models (the location of genes, transcripts and exons) known for the reference genome.", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": "without-gtf", "options": [["build index without gene-model", "without-gtf", false], ["build index with gene-model", "with-gtf", false]], "display": null, "multiple": false, "textable": false}}]}], "test_param": {"model_class": "SelectToolParameter", "name": "geneSource", "argument": null, "type": "select", "label": "Custom or built-in reference genome", "help": "Built-ins were indexed using default options", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": "indexed", "options": [["Use a built-in index", "indexed", true], ["Use reference genome from history and create temporary index", "history", false]], "display": null, "multiple": false, "textable": false}}, {"model_class": "Conditional", "name": "twopass", "type": "conditional", "cases": [{"model_class": "ConditionalWhen", "value": "None", "inputs": [{"model_class": "HiddenToolParameter", "name": "twopass_read_subset", "argument": null, "type": "hidden", "label": "", "help": "", "refresh_on_change": false, "optional": false, "hidden": true, "is_dynamic": false, "value": ""}, {"model_class": "HiddenToolParameter", "name": "sj_precalculated", "argument": null, "type": "hidden", "label": "", "help": "", "refresh_on_change": false, "optional": false, "hidden": true, "is_dynamic": false, "value": ""}]}, {"model_class": "ConditionalWhen", "value": "Basic", "inputs": [{"model_class": "HiddenToolParameter", "name": "twopass_read_subset", "argument": null, "type": "hidden", "label": "", "help": "", "refresh_on_change": false, "optional": false, "hidden": true, "is_dynamic": false, "value": ""}, {"model_class": "HiddenToolParameter", "name": "sj_precalculated", "argument": null, "type": "hidden", "label": "", "help": "", "refresh_on_change": false, "optional": false, "hidden": true, "is_dynamic": false, "value": ""}]}, {"model_class": "ConditionalWhen", "value": "Basic --twopass1readsN", "inputs": [{"model_class": "HiddenToolParameter", "name": "sj_precalculated", "argument": null, "type": "hidden", "label": "", "help": "", "refresh_on_change": false, "optional": false, "hidden": true, "is_dynamic": false, "value": ""}, {"model_class": "IntegerToolParameter", "name": "twopass_read_subset", "argument": "--twopass1readsN", "type": "integer", "label": "Number of reads to map in the first pass", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "50000", "area": false, "datalist": []}]}, {"model_class": "ConditionalWhen", "value": "None --sjdbFileChrStartEnd", "inputs": [{"model_class": "HiddenToolParameter", "name": "twopass_read_subset", "argument": null, "type": "hidden", "label": "", "help": "", "refresh_on_change": false, "optional": false, "hidden": true, "is_dynamic": false, "value": ""}, {"model_class": "DataToolParameter", "name": "sj_precalculated", "argument": null, "type": "data", "label": "Pregenerated splice junctions datasets of your samples", "help": "", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": null, "extensions": ["interval"], "edam": {"edam_formats": ["format_3475"], "edam_data": ["data_3002"]}, "multiple": true, "min": null, "max": null, "options": {"dce": [], "ldda": [], "hda": [], "hdca": []}, "tag": null}]}], "test_param": {"model_class": "SelectToolParameter", "name": "twopassMode", "argument": "--twopassMode", "type": "select", "label": "Use 2-pass mapping for more sensitive novel splice junction discovery", "help": "For a study with multiple samples, multisample 2-pass mapping is the most sensitive approach. It involves two separate runs of STAR for each sample, where, in the second run of each sample, the splice junctions found in any sample in the first runs are treated as additional known junctions. If you plan to use the mapping results as input for STAR-Fusion it is recommended that you use at least single-sample 2-pass mapping of all reads.", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": "None", "options": [["No", "None", false], ["Yes, perform single-sample 2-pass mapping of all reads", "Basic", false], ["Yes, but base novel splice junction detection in the first pass on a subset of all reads (faster, but less sensitive than single-sample 2-pass mode)", "Basic --twopass1readsN", false], ["Yes, I want to use multi-sample 2-pass mapping and I have obtained splice junctions datasets of all samples through previous 1-pass runs of STAR.", "None --sjdbFileChrStartEnd", false]], "display": null, "multiple": false, "textable": false}}, {"model_class": "Conditional", "name": "quantmode_output", "type": "conditional", "cases": [{"model_class": "ConditionalWhen", "value": "-", "inputs": []}, {"model_class": "ConditionalWhen", "value": "GeneCounts", "inputs": []}, {"model_class": "ConditionalWhen", "value": "TranscriptomeSAM", "inputs": [{"model_class": "BooleanToolParameter", "name": "quantTranscriptomeBan", "argument": "--quantTranscriptomeBan", "type": "boolean", "label": "Exclude alignments with indels or soft clipping from the transcriptome BAM output?", "help": "You will need to exclude alignments with indels and soft-clipped bases from the transcriptome BAM output for compatibility with certain transcript quantification tools, most notably RSEM. If you are using a tool, like eXpress, that can deal with indels and soft-clipped bases, you can achieve better results by leaving this option disabled.", "refresh_on_change": false, "optional": false, "hidden": false, "is_dynamic": false, "value": false, "truevalue": "IndelSoftclipSingleend", "falsevalue": "Singleend"}]}, {"model_class": "ConditionalWhen", "value": "TranscriptomeSAM GeneCounts", "inputs": [{"model_class": "BooleanToolParameter", "name": "quantTranscriptomeBan", "argument": "--quantTranscriptomeBan", "type": "boolean", "label": "Exclude alignments with indels or soft clipping from the transcriptome BAM output?", "help": "You will need to exclude alignments with indels and soft-clipped bases from the transcriptome BAM output for compatibility with certain transcript quantification tools, most notably RSEM. If you are using a tool, like eXpress, that can deal with indels and soft-clipped bases, you can achieve better results by leaving this option disabled.", "refresh_on_change": false, "optional": false, "hidden": false, "is_dynamic": false, "value": false, "truevalue": "IndelSoftclipSingleend", "falsevalue": "Singleend"}]}], "test_param": {"model_class": "SelectToolParameter", "name": "quantMode", "argument": "--quantMode", "type": "select", "label": "Per gene/transcript output", "help": "STAR can provide analysis results not only with respect to the reference genome, but also with respect to genes and transcripts described by a gene model. Note: This functionality requires either the selection above of a cached index with a gene model, or a gene model provided alongside the index/reference genome in GTF or GFF3 format!", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": "-", "options": [["No per gene or transcript output", "-", false], ["Per gene read counts (GeneCounts)", "GeneCounts", false], ["Transcript-based BAM output (TranscriptomeSAM)", "TranscriptomeSAM", false], ["Both per gene read counts and transcript-based BAM output (TranscriptomeSAM GeneCounts)", "TranscriptomeSAM GeneCounts", false]], "display": null, "multiple": false, "textable": false}}, {"model_class": "SelectToolParameter", "name": "chimOutType", "argument": "--chimOutType", "type": "select", "label": "Report chimeric alignments?", "help": "Choose if and how chimeric alignments should be reported. STAR-Fusion users should select the 'Junctions' option and use the resulting tabular dataset as input to STAR-Fusion. Everyone else: note that selecting 'WithinBAM' or 'WithinBAM Junctions' disables the --chimMultimapNmax setting in the algorithmic parameters section below (the tool will only consider uniquely mapped reads in the search for chimeric alignments). If you disable the reporting of chimeric alignments here, then all chimeric alignment settings in the algorithmic parameters section below will be ignored.", "refresh_on_change": false, "optional": false, "hidden": false, "is_dynamic": false, "value": "", "options": [["Don't report chimeric alignments", "", false], ["As separate tabular \"Junctions\" output (Junctions)", "Junctions", false], ["Within the BAM output (together with regular alignments; WithinBAM)", "WithinBAM", false], ["In both forms (WithinBAM Junctions)", "WithinBAM Junctions", false]], "display": null, "multiple": false, "textable": false}, {"model_class": "Section", "name": "oformat", "type": "section", "title": "BAM output format specification", "help": null, "expanded": true, "inputs": [{"model_class": "SelectToolParameter", "name": "outSAMattributes", "argument": "--outSAMattributes", "type": "select", "label": "Read alignment tags to include in the BAM output", "help": "Note on using the XS tag: If the XS tag is used, STAR will filter out alignments with undefined strand (i.e., those containing only non-canonical unannotated junctions). Using this tag is recommended if you plan to use the STAR results with STAR-Fusion. In addition, it is required for compatibility with Cufflinks if your sequences come from an unstranded library preparation.", "refresh_on_change": false, "optional": true, "hidden": false, "is_dynamic": false, "value": ["NH", "HI", "AS", "nM", "ch"], "options": [["NH (number of reported alignments/hits for the read)", "NH", true], ["HI (query hit index)", "HI", true], ["AS (local alignment score)", "AS", true], ["nM (number of mismatches per (paired) alignment)", "nM", true], ["XS (strand flag, see parameter help below) ", "XS", false], ["NM (edit distance of the aligned read to the reference)", "NM", false], ["MD (string for mismatching positions)", "MD", false], ["MC (CIGAR string for mate/next segment)", "MC", false], ["jM (intron motifs for all junctions)", "jM", false], ["jI (1-based start and end of introns for all junctions)", "jI", false], ["ch (used to indicate chimeric alignments)", "ch", true]], "display": "checkboxes", "multiple": true, "textable": false}, {"model_class": "SelectToolParameter", "name": "HI_offset", "argument": "--outSAMattrIHstart", "type": "select", "label": "HI tag values should be", "help": "", "refresh_on_change": false, "optional": false, "hidden": false, "is_dynamic": false, "value": "1", "options": [["one-based", "1", true], ["zero-based", "0", false]], "display": "radio", "multiple": false, "textable": false}, {"model_class": "HiddenToolParameter", "name": "outSAMprimaryFlag", "argument": null, "type": "hidden", "label": "", "help": "", "refresh_on_change": false, "optional": false, "hidden": true, "is_dynamic": false, "value": "OneBestScore"}, {"model_class": "IntegerToolParameter", "name": "outSAMmapqUnique", "argument": "--outSAMmapqUnique", "type": "integer", "label": "MAPQ value for unique mappers", "help": "STAR bases the mapping quality scores of alignment records in its BAM output on the number of alternative mappings for the read. If a read maps to multiple locations on the reference genome, the following MAPQ scoring scheme is used: >=5 mappings => MAPQ=0; 3-4 mappings => MAPQ=1; 2 mappings => MAPQ=3. This setting lets you control the MAPQ used for reads mapped to a single location. Set to 255 for compatibility with Cufflinks.", "refresh_on_change": false, "min": 30, "max": 255, "optional": false, "hidden": false, "is_dynamic": false, "value": "60", "area": false, "datalist": []}]}, {"model_class": "Section", "name": "filter", "type": "section", "title": "Output filter criteria", "help": null, "expanded": true, "inputs": [{"model_class": "SelectToolParameter", "name": "basic_filters", "argument": null, "type": "select", "label": "Exclude the following records from the BAM output", "help": "", "refresh_on_change": false, "optional": true, "hidden": false, "is_dynamic": false, "value": null, "options": [["Unmapped reads", "exclude_unmapped", false], ["Alignments that have junctions with inconsistent strands", "--outFilterIntronStrands RemoveInconsistentStrands", false], ["Alignments across unannotated non-canonical junctions", "--outFilterIntronMotifs RemoveNoncanonicalUnannotated", false], ["All alignments across non-canonical junctions (recommended for compatibility with Cufflinks)", "--outFilterIntronMotifs RemoveNoncanonical", false]], "display": "checkboxes", "multiple": true, "textable": false}, {"model_class": "Conditional", "name": "output_params2", "type": "conditional", "cases": [{"model_class": "ConditionalWhen", "value": "yes", "inputs": [{"model_class": "BooleanToolParameter", "name": "outFilterType", "argument": "--outFilterType", "type": "boolean", "label": "Would you like to keep only reads that contain junctions that passed filtering?", "help": "", "refresh_on_change": false, "optional": false, "hidden": false, "is_dynamic": false, "value": false, "truevalue": "BySJout", "falsevalue": "Normal"}, {"model_class": "IntegerToolParameter", "name": "outFilterMultimapScoreRange", "argument": "--outFilterMultimapScoreRange", "type": "integer", "label": "Score range below the maximum score for multimapping alignments", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "1", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "outFilterMultimapNmax", "argument": "--outFilterMultimapNmax", "type": "integer", "label": "Maximum number of alignments to output a read's alignment results, plus 1", "help": "Reads with at least this number of alignments will have no alignments output", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "10", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "outFilterMismatchNmax", "argument": "--outFilterMismatchNmax", "type": "integer", "label": "Maximum number of mismatches to output an alignment, plus 1", "help": "Alignments with at least this number of mismatches will not be output", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "10", "area": false, "datalist": []}, {"model_class": "FloatToolParameter", "name": "outFilterMismatchNoverLmax", "argument": "--outFilterMismatchNoverLmax", "type": "float", "label": "Maximum ratio of mismatches to mapped length", "help": "Alignments with a mismatch ratio of at least this value will not be output", "refresh_on_change": false, "min": 0.0, "max": 1.0, "optional": false, "hidden": false, "is_dynamic": false, "value": "0.3", "area": false, "datalist": []}, {"model_class": "FloatToolParameter", "name": "outFilterMismatchNoverReadLmax", "argument": "--outFilterMismatchNoverReadLmax", "type": "float", "label": "Maximum ratio of mismatches to read length", "help": "Alignments with a mismatch ratio of at least this value will not be output", "refresh_on_change": false, "min": 0.0, "max": 1.0, "optional": false, "hidden": false, "is_dynamic": false, "value": "1.0", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "outFilterScoreMin", "argument": "--outFilterScoreMin", "type": "integer", "label": "Minimum alignment score", "help": "Alignments must have scores higher than this value to be output", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "0", "area": false, "datalist": []}, {"model_class": "FloatToolParameter", "name": "outFilterScoreMinOverLread", "argument": "--outFilterScoreMinOverLread", "type": "float", "label": "Minimum alignment score, normalized to read length", "help": "Alignments must have (normalized) scores higher than this value to be output", "refresh_on_change": false, "min": 0.0, "max": 1.0, "optional": false, "hidden": false, "is_dynamic": false, "value": "0.66", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "outFilterMatchNmin", "argument": "--outFilterMatchNmin", "type": "integer", "label": "Minimum number of matched bases", "help": "Alignments must have the number of matched bases higher than this value to be output", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "0", "area": false, "datalist": []}, {"model_class": "FloatToolParameter", "name": "outFilterMatchNminOverLread", "argument": "--outFilterMatchNminOverLread", "type": "float", "label": "Minimum number of matched bases, normalized to read length", "help": "Alignments must have the (normalized) number of matched bases higher than this value to be output", "refresh_on_change": false, "min": 0.0, "max": 1.0, "optional": false, "hidden": false, "is_dynamic": false, "value": "0.66", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "outSAMmultNmax", "argument": "--outSAMmultNmax", "type": "integer", "label": "Maximum number of multimapping alignments to output for a read", "help": "A value of -1 (the default) results in all alignments (up to \u2013-outFilterMultimapNmax) being output", "refresh_on_change": false, "min": -1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "-1", "area": false, "datalist": []}, {"model_class": "SelectToolParameter", "name": "outSAMtlen", "argument": "--outSAMtlen", "type": "select", "label": "Calculation method for TLEN", "help": "", "refresh_on_change": false, "optional": false, "hidden": false, "is_dynamic": false, "value": "1", "options": [["leftmost base of the (+)strand mate to rightmost base of the (-)mate. (+)sign for the (+)strand mate", "1", true], ["leftmost base of any mate to rightmost base of any mate. (+)sign for the mate with the leftmost base. This is different from 1 for overlapping mates with protruding ends", "2", false]], "display": null, "multiple": false, "textable": false}]}, {"model_class": "ConditionalWhen", "value": "no", "inputs": []}], "test_param": {"model_class": "SelectToolParameter", "name": "output_select2", "argument": null, "type": "select", "label": "Would you like to set additional output filters?", "help": "", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": "no", "options": [["No", "no", true], ["Yes", "yes", false]], "display": null, "multiple": false, "textable": false}}]}, {"model_class": "Section", "name": "algo", "type": "section", "title": "Algorithmic settings", "help": null, "expanded": true, "inputs": [{"model_class": "Conditional", "name": "params", "type": "conditional", "cases": [{"model_class": "ConditionalWhen", "value": "default", "inputs": []}, {"model_class": "ConditionalWhen", "value": "star_fusion", "inputs": []}, {"model_class": "ConditionalWhen", "value": "full", "inputs": [{"model_class": "Section", "name": "seed", "type": "section", "title": "Seed parameters", "help": null, "expanded": false, "inputs": [{"model_class": "IntegerToolParameter", "name": "seedSearchStartLmax", "argument": "--seedSearchStartLmax", "type": "integer", "label": "Search start point through the read", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "50", "area": false, "datalist": []}, {"model_class": "FloatToolParameter", "name": "seedSearchStartLmaxOverLread", "argument": "--seedSearchStartLmaxOverLread", "type": "float", "label": "Search start point through the read, normalized to read length", "help": "", "refresh_on_change": false, "min": 0.0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "1.0", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "seedSearchLmax", "argument": "--seedSearchLmax", "type": "integer", "label": "Maximum length of seeds", "help": "Default of 0 indicates no maximum length", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "0", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "seedMultimapNmax", "argument": "--seedMultimapNmax", "type": "integer", "label": "Maximum number of mappings to use a piece in stitching", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "10000", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "seedPerReadNmax", "argument": "--seedPerReadNmax", "type": "integer", "label": "Maximum number of seeds per read", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "1000", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "seedPerWindowNmax", "argument": "--seedPerWindowNmax", "type": "integer", "label": "Maximum number of seeds per window", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "50", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "seedNoneLociPerWindow", "argument": "--seedNoneLociPerWindow", "type": "integer", "label": "Maximum number of one seed loci per window", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "10", "area": false, "datalist": []}]}, {"model_class": "Section", "name": "align", "type": "section", "title": "Alignment parameters", "help": null, "expanded": false, "inputs": [{"model_class": "IntegerToolParameter", "name": "alignIntronMin", "argument": "--alignIntronMin", "type": "integer", "label": "Minimum intron size", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "21", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "alignIntronMax", "argument": "--alignIntronMax", "type": "integer", "label": "Maximum intron size", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "0", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "alignMatesGapMax", "argument": "--alignMatesGapMax", "type": "integer", "label": "Maximum gap between two mates", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "0", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "alignSJoverhangMin", "argument": "--alignSJoverhangMin", "type": "integer", "label": "Minimum overhang for spliced alignments", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "5", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "alignSJDBoverhangMin", "argument": "--alignSJDBoverhangMin", "type": "integer", "label": "Minimum overhang for annotated spliced alignments", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "3", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "alignSplicedMateMapLmin", "argument": "--alignSplicedMateMapLmin", "type": "integer", "label": "Minimum mapped length for a read mate that is spliced", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "0", "area": false, "datalist": []}, {"model_class": "FloatToolParameter", "name": "alignSplicedMateMapLminOverLmate", "argument": "--alignSplicedMateMapLminOverLmate", "type": "float", "label": "Minimum mapped length for a read mate that is spliced, normalized to mate length", "help": "", "refresh_on_change": false, "min": 0.0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "0.66", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "alignWindowsPerReadNmax", "argument": "--alignWindowsPerReadNmax", "type": "integer", "label": "Maximum number of windows per read", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "10000", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "alignTranscriptsPerWindowNmax", "argument": "--alignTranscriptsPerWindowNmax", "type": "integer", "label": "Maximum number of transcripts per window", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "100", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "alignTranscriptsPerReadNmax", "argument": "--alignTranscriptsPerReadNmax", "type": "integer", "label": "Maximum number of different alignments per read to consider", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "10000", "area": false, "datalist": []}, {"model_class": "BooleanToolParameter", "name": "alignEndsType", "argument": "--alignEndsType", "type": "boolean", "label": "Use end-to-end read alignments, with no soft-clipping?", "help": "", "refresh_on_change": false, "optional": false, "hidden": false, "is_dynamic": false, "value": false, "truevalue": "EndToEnd", "falsevalue": "Local"}, {"model_class": "IntegerToolParameter", "name": "peOverlapNbasesMin", "argument": "--peOverlapNbasesMin", "type": "integer", "label": "minimum number of overlap bases to trigger mates merging and realignment", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "0", "area": false, "datalist": []}, {"model_class": "FloatToolParameter", "name": "peOverlapMMp", "argument": "--peOverlapMMp", "type": "float", "label": "maximum proportion of mismatched bases in the overlap area", "help": "", "refresh_on_change": false, "min": 0.0, "max": 1.0, "optional": false, "hidden": false, "is_dynamic": false, "value": "0.01", "area": false, "datalist": []}]}, {"model_class": "Section", "name": "chim_settings", "type": "section", "title": "Chimeric alignment parameters", "help": null, "expanded": false, "inputs": [{"model_class": "IntegerToolParameter", "name": "chimSegmentMin", "argument": "--chimSegmentMin", "type": "integer", "label": "Minimum length of chimeric segment", "help": "For small numbers this will cause large number of chimeric alignments. A value of 12 is commonly used.", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "12", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "chimScoreMin", "argument": "--chimScoreMin", "type": "integer", "label": "Minimum total (summed) score of chimeric segments", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "0", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "chimScoreDropMax", "argument": "--chimScoreDropMax", "type": "integer", "label": "Maximum difference of chimeric score from read length", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "20", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "chimScoreSeparation", "argument": "--chimScoreSeparation", "type": "integer", "label": "Minimum difference between the best chimeric score and the next one", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "10", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "chimScoreJunctionNonGTAG", "argument": "--chimScoreJunctionNonGTAG", "type": "integer", "label": "Penalty for a non-GT/AG chimeric junction", "help": "", "refresh_on_change": false, "min": null, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "-1", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "chimJunctionOverhangMin", "argument": "--chimJunctionOverhangMin", "type": "integer", "label": "Minimum overhang for a chimeric junction", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "20", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "chimSegmentReadGapMax", "argument": "--chimSegmentReadGapMax", "type": "integer", "label": "Maximum gap in the read sequence between chimeric segments", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "0", "area": false, "datalist": []}, {"model_class": "BooleanToolParameter", "name": "chimFilter", "argument": "--chimFilter", "type": "boolean", "label": "Discard chimeric alignments with Ns in the genome sequence around the chimeric junction", "help": "", "refresh_on_change": false, "optional": false, "hidden": false, "is_dynamic": false, "value": true, "truevalue": "banGenomicN", "falsevalue": "None"}, {"model_class": "IntegerToolParameter", "name": "chimMainSegmentMultNmax", "argument": "--chimMainSegmentMultNmax", "type": "integer", "label": "Maximum number of multi-alignments for the main chimeric segment.", "help": "A value of 1 prohibits multimapping main segments", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "10", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "chimMultimapNmax", "argument": "--chimMultimapNmax", "type": "integer", "label": "Maximum number of chimeric multi-alignments", "help": "The default value of 1 only considers unique alignments. If you chose to report chimeric alignments alongside regular ones in the BAM output, this setting is ignored and only uniquely mapping chimeric reads get reported. ", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "1", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "chimMultimapScoreRange", "argument": "--chimMultimapScoreRange", "type": "integer", "label": "Score range for multi-mapping chimeras", "help": "The threshold below the best chimeric score that a multimapping chimera must have to be output. This is ignored unless --chimMultimapNmax is above 1", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "1", "area": false, "datalist": []}]}, {"model_class": "Section", "name": "limits", "type": "section", "title": "Limits", "help": null, "expanded": false, "inputs": [{"model_class": "IntegerToolParameter", "name": "limitOutSJoneRead", "argument": "--limitOutSJoneRead", "type": "integer", "label": "Maximum number of junctions for one read (including all multimappers)", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "1000", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "limitOutSJcollapsed", "argument": "--limitOutSJcollapsed", "type": "integer", "label": "Maximum number of collapsed junctions", "help": "", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "1000000", "area": false, "datalist": []}, {"model_class": "IntegerToolParameter", "name": "limitSjdbInsertNsj", "argument": "--limitSjdbInsertNsj", "type": "integer", "label": "Maximum number of inserts to be inserted into the genome on the fly.", "help": "", "refresh_on_change": false, "min": 0, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "1000000", "area": false, "datalist": []}]}]}], "test_param": {"model_class": "SelectToolParameter", "name": "settingsType", "argument": null, "type": "select", "label": "Configure seed, alignment and limits options", "help": "", "refresh_on_change": true, "optional": false, "hidden": false, "is_dynamic": false, "value": "default", "options": [["Use Defaults", "default", true], ["Use parameters suggested for STAR-Fusion", "star_fusion", false], ["Extended parameter list", "full", false]], "display": null, "multiple": false, "textable": false}}]}, {"model_class": "Section", "name": "perf", "type": "section", "title": "Performance tweaks / Troubleshooting", "help": null, "expanded": false, "inputs": [{"model_class": "IntegerToolParameter", "name": "outBAMsortingBinsN", "argument": "--outBAMsortingBinsN", "type": "integer", "label": "Number of genome bins for coordinate-sorting", "help": "Higher values result in lower RAM requirements during the sorting step. The default value is 50. Tweak this if you are facing memory-related errors.", "refresh_on_change": false, "min": 1, "max": null, "optional": false, "hidden": false, "is_dynamic": false, "value": "50", "area": false, "datalist": []}]}], "outputs": [{"model_class": "ToolOutput", "name": "output_log", "format": "txt", "label": "${tool.name} on ${on_string}: log", "hidden": false, "output_type": "data", "format_source": null, "default_identifier_source": "None", "metadata_source": "", "parent": null, "count": 1, "from_work_dir": "Log.final.out", "edam_format": "format_2330", "edam_data": "data_0006", "discover_datasets": []}, {"model_class": "ToolOutput", "name": "chimeric_junctions", "format": "interval", "label": "${tool.name} on ${on_string}: chimeric junctions", "hidden": false, "output_type": "data", "format_source": null, "default_identifier_source": "None", "metadata_source": "", "parent": null, "count": 1, "from_work_dir": "Chimeric.out.junction", "edam_format": "format_3475", "edam_data": "data_3002", "discover_datasets": []}, {"model_class": "ToolOutput", "name": "splice_junctions", "format": "interval", "label": "${tool.name} on ${on_string}: splice junctions.bed", "hidden": false, "output_type": "data", "format_source": null, "default_identifier_source": "None", "metadata_source": "", "parent": null, "count": 1, "from_work_dir": "SJ.out.tab", "edam_format": "format_3475", "edam_data": "data_3002", "discover_datasets": []}, {"model_class": "ToolOutput", "name": "mapped_reads", "format": "bam", "label": "${tool.name} on ${on_string}: mapped.bam", "hidden": false, "output_type": "data", "format_source": null, "default_identifier_source": "None", "metadata_source": "", "parent": null, "count": 1, "from_work_dir": null, "edam_format": "format_2572", "edam_data": "data_0863", "discover_datasets": []}, {"model_class": "ToolOutput", "name": "transcriptome_mapped_reads", "format": "unsorted.bam", "label": "${tool.name} on ${on_string}: transcriptome-mapped.bam", "hidden": false, "output_type": "data", "format_source": null, "default_identifier_source": "None", "metadata_source": "", "parent": null, "count": 1, "from_work_dir": null, "edam_format": "format_2572", "edam_data": "data_0863", "discover_datasets": []}, {"model_class": "ToolOutput", "name": "reads_per_gene", "format": "tabular", "label": "${tool.name} on ${on_string}: reads per gene", "hidden": false, "output_type": "data", "format_source": null, "default_identifier_source": "None", "metadata_source": "", "parent": null, "count": 1, "from_work_dir": "ReadsPerGene.out.tab", "edam_format": "format_3475", "edam_data": "data_0006", "discover_datasets": []}], "panel_section_id": "mapping", "panel_section_name": "Mapping", "form_style": "regular"}
+{
+  "model_class": "Tool",
+  "id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.8a",
+  "name": "RNA STAR",
+  "version": "2.7.8a",
+  "description": "Gapped-read mapper for RNA-seq data",
+  "labels": [],
+  "edam_operations": [
+    "operation_0292"
+  ],
+  "edam_topics": [
+    "topic_3170",
+    "topic_3308"
+  ],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [
+    {
+      "value": "star",
+      "reftype": "bio.tools"
+    }
+  ],
+  "tool_shed_repository": {
+    "name": "rgrnastar",
+    "owner": "iuc",
+    "changeset_revision": "c772497b2c32",
+    "tool_shed": "toolshed.g2.bx.psu.edu"
+  },
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "singlePaired",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "single",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "input1",
+              "argument": null,
+              "type": "data",
+              "label": "RNA-Seq FASTQ/FASTA file",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "fastq",
+                "fasta",
+                "fastq.gz",
+                "fastqsanger.gz"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_1930",
+                  "format_1929",
+                  "format_1930",
+                  "format_1932"
+                ],
+                "edam_data": [
+                  "data_2044",
+                  "data_2044",
+                  "data_2044",
+                  "data_2044"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "paired",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "input1",
+              "argument": null,
+              "type": "data",
+              "label": "RNA-Seq FASTQ/FASTA file, forward reads",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "fastq",
+                "fasta",
+                "fastq.gz",
+                "fastqsanger.gz"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_1930",
+                  "format_1929",
+                  "format_1930",
+                  "format_1932"
+                ],
+                "edam_data": [
+                  "data_2044",
+                  "data_2044",
+                  "data_2044",
+                  "data_2044"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "DataToolParameter",
+              "name": "input2",
+              "argument": null,
+              "type": "data",
+              "label": "RNA-Seq FASTQ/FASTA file, reverse reads",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "fastq",
+                "fasta",
+                "fastq.gz",
+                "fastqsanger.gz"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_1930",
+                  "format_1929",
+                  "format_1930",
+                  "format_1932"
+                ],
+                "edam_data": [
+                  "data_2044",
+                  "data_2044",
+                  "data_2044",
+                  "data_2044"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "paired_collection",
+          "inputs": [
+            {
+              "model_class": "DataCollectionToolParameter",
+              "name": "input",
+              "argument": null,
+              "type": "data_collection",
+              "label": "RNA-Seq FASTQ/FASTA paired reads",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "fastq",
+                "fasta",
+                "fastq.gz",
+                "fastqsanger.gz"
+              ],
+              "multiple": false,
+              "options": {
+                "hda": [],
+                "hdca": [],
+                "dce": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "sPaired",
+        "argument": null,
+        "type": "select",
+        "label": "Single-end or paired-end reads",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "single",
+        "options": [
+          [
+            "Single-end",
+            "single",
+            true
+          ],
+          [
+            "Paired-end (as individual datasets)",
+            "paired",
+            false
+          ],
+          [
+            "Paired-end (as collection)",
+            "paired_collection",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "refGenomeSource",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "indexed",
+          "inputs": [
+            {
+              "model_class": "Conditional",
+              "name": "GTFconditional",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "with-gtf",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "genomeDir",
+                      "argument": "--genomeDir",
+                      "type": "select",
+                      "label": "Select reference genome",
+                      "help": "If your genome of interest is not listed, contact the Galaxy team",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": true,
+                      "value": null,
+                      "options": [],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "without-gtf",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "genomeDir",
+                      "argument": "--genomeDir",
+                      "type": "select",
+                      "label": "Select reference genome",
+                      "help": "If your genome of interest is not listed, contact the Galaxy team",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": true,
+                      "value": "apiMel3",
+                      "options": [
+                        [
+                          "A. mellifera genome (apiMel3, Baylor HGSC Amel_3.0)",
+                          "apiMel3",
+                          false
+                        ],
+                        [
+                          "ARS1 Aug. 2016 Capra hircus (goat) (San Clemente 2016 USDA) (GCF_001704415.2)",
+                          "GCF_001704415.2",
+                          false
+                        ],
+                        [
+                          "African Clawed Frog (xenLae9.2)",
+                          "xenLae9.2",
+                          false
+                        ],
+                        [
+                          "Arabidopsis thaliana (TAIR10)",
+                          "TAIR10",
+                          false
+                        ],
+                        [
+                          "Caenorhabditis elegans Feb. 2013 (WBcel235/ce11)",
+                          "ce11",
+                          false
+                        ],
+                        [
+                          "Caenorhabditis elegans: ce10",
+                          "ce10",
+                          false
+                        ],
+                        [
+                          "Cat Nov. 2017 (Felis catus, domestic cat): felCat9",
+                          "felCat9",
+                          false
+                        ],
+                        [
+                          "Chicken (Gallus gallus): galGal6",
+                          "galGal6",
+                          false
+                        ],
+                        [
+                          "Chicken Oct. 2021 (bGalGal1.pat.whiteleghornlayer.GRCg7w_WZ) (GCF_016700215.2)",
+                          "GCF_016700215.2",
+                          false
+                        ],
+                        [
+                          "Dog Oct. 2020 (Dog10K_Boxer_Tasha/canFam6) (canFam6)",
+                          "canFam6",
+                          false
+                        ],
+                        [
+                          "Fly (Drosophila melanogaster): dm3 Full",
+                          "dm3full",
+                          false
+                        ],
+                        [
+                          "Fly (Drosophila melanogaster): dm6 Full",
+                          "dm6full",
+                          false
+                        ],
+                        [
+                          "Horse Jan. 2018 (EquCab3.0/equCab3)",
+                          "equCab3",
+                          false
+                        ],
+                        [
+                          "Human (Homo sapiens): hg19 Full",
+                          "hg19full",
+                          false
+                        ],
+                        [
+                          "Human CHM13 2.0 (T2T Consortium) Jan. 2022",
+                          "CHM13_T2T_v2.0",
+                          false
+                        ],
+                        [
+                          "Human Dec. 2013 (GRCh38/hg38) (hg38)",
+                          "hg38",
+                          false
+                        ],
+                        [
+                          "Influenza A virus (A/seal/Mass/1-SC35M/1980(H7N7))",
+                          "h7n7_360722",
+                          false
+                        ],
+                        [
+                          "Macaca fascicularis Jun 2013 (macFas5)",
+                          "macFas5",
+                          false
+                        ],
+                        [
+                          "Mouse (Mus Musculus): mm10 Full",
+                          "mm10full",
+                          false
+                        ],
+                        [
+                          "Mouse (Mus Musculus): mm39 Full",
+                          "mm39",
+                          false
+                        ],
+                        [
+                          "Mouse (Mus Musculus): mm9 Full",
+                          "mm9full",
+                          false
+                        ],
+                        [
+                          "Pig Feb. 2017 (Sscrofa11.1/susScr11) (susScr11)",
+                          "susScr11",
+                          false
+                        ],
+                        [
+                          "Rabbit Apr. 2009 (Broad/oryCun2)",
+                          "oryCun2",
+                          false
+                        ],
+                        [
+                          "Rat Jul. 2014 (RGSC 6.0/rn6) (rn6)",
+                          "rn6",
+                          false
+                        ],
+                        [
+                          "Rock pigeon Dec 2017 (Cliv_2.1/colLiv2)",
+                          "colLiv2.1",
+                          false
+                        ],
+                        [
+                          "S. lycopersicum (Tomato) Feb 2019 (SL4.0)",
+                          "SL4.0",
+                          false
+                        ],
+                        [
+                          "SARS-CoV-2 isolate Wuhan-Hu-1, complete genome (NC_045512)",
+                          "NC_045512.2",
+                          false
+                        ],
+                        [
+                          "Triticum aestivum IWGSC1.1",
+                          "Triticum_aestivum_IWGSC1.1",
+                          false
+                        ],
+                        [
+                          "White-tailed deer Apr 2017 (Odocoileus virginianus) (GCF_002102435.1, Ovir.te_1.0)",
+                          "GCF_002102435.1",
+                          false
+                        ],
+                        [
+                          "Xenopus tropicalis (xenTro9.1)",
+                          "xenTro9.1",
+                          false
+                        ],
+                        [
+                          "Zebrafish May 2017 (GRCz11/danRer11) (danRer11)",
+                          "danRer11",
+                          false
+                        ],
+                        [
+                          "Zebrafish Sep. 2014 (GRCz10/danRer10) (danRer10)",
+                          "danRer10",
+                          false
+                        ],
+                        [
+                          "bosTau8",
+                          "bosTau8",
+                          false
+                        ],
+                        [
+                          "oviAri4 Sheep (oviAri4, International Sheep Genome Consortium) ((Oar_v4.0/oviAri4))",
+                          "oviAri4",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    },
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "sjdbGTFfile",
+                      "argument": "--sjdbGTFfile",
+                      "type": "data",
+                      "label": "Gene model (gff3,gtf) file for splice junctions",
+                      "help": "Exon junction information for mapping splices",
+                      "refresh_on_change": true,
+                      "optional": true,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "gff3",
+                        "gtf"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_1975",
+                          "format_2306"
+                        ],
+                        "edam_data": [
+                          "data_1255",
+                          "data_1255"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "dce": [],
+                        "ldda": [],
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "sjdbOverhang",
+                      "argument": "--sjdbOverhang",
+                      "type": "integer",
+                      "label": "Length of the genomic sequence around annotated junctions",
+                      "help": "Used in constructing the splice junctions database. Ideal value is ReadLength-1",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "100",
+                      "area": false,
+                      "datalist": []
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "GTFselect",
+                "argument": null,
+                "type": "select",
+                "label": "Reference genome with or without an annotation",
+                "help": "Select the '... with builtin gene-model' option to select from the list of available indexes that were built with splice junction information. Select the '... without builtin gene-model' option to select from the list of available indexes without annotated splice junctions, and, optionally, provide your own splice-junction annonations.",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "without-gtf",
+                "options": [
+                  [
+                    "use genome reference without builtin gene-model",
+                    "without-gtf",
+                    true
+                  ],
+                  [
+                    "use genome reference with builtin gene-model",
+                    "with-gtf",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "history",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "genomeFastaFiles",
+              "argument": "--genomeFastaFiles",
+              "type": "data",
+              "label": "Select a reference genome",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "fasta"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_1929"
+                ],
+                "edam_data": [
+                  "data_2044"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "genomeSAindexNbases",
+              "argument": "--genomeSAindexNbases",
+              "type": "integer",
+              "label": "Length of the SA pre-indexing string",
+              "help": "Typically between 10 and 15. Longer strings will use much more memory, but allow faster searches. For small genomes, the parameter --genomeSAindexNbases must be scaled down to min(14, log2(GenomeLength)/2 - 1)",
+              "refresh_on_change": false,
+              "min": 2,
+              "max": 16,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "14",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "Conditional",
+              "name": "GTFconditional",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "with-gtf",
+                  "inputs": [
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "sjdbGTFfile",
+                      "argument": "--sjdbGTFfile",
+                      "type": "data",
+                      "label": "Gene model (gff3,gtf) file for splice junctions",
+                      "help": "Exon junction information for mapping splices",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "gff3",
+                        "gtf"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_1975",
+                          "format_2306"
+                        ],
+                        "edam_data": [
+                          "data_1255",
+                          "data_1255"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "dce": [],
+                        "ldda": [],
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "sjdbOverhang",
+                      "argument": "--sjdbOverhang",
+                      "type": "integer",
+                      "label": "Length of the genomic sequence around annotated junctions",
+                      "help": "Used in constructing the splice junctions database. Ideal value is ReadLength-1",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "100",
+                      "area": false,
+                      "datalist": []
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "without-gtf",
+                  "inputs": []
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "GTFselect",
+                "argument": null,
+                "type": "select",
+                "label": "Build index with or without known splice junctions annotation",
+                "help": "To build an index with known splice junctions annotated, you will have to provide a GTF or GFF3 dataset that describes the gene models (the location of genes, transcripts and exons) known for the reference genome.",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "without-gtf",
+                "options": [
+                  [
+                    "build index without gene-model",
+                    "without-gtf",
+                    false
+                  ],
+                  [
+                    "build index with gene-model",
+                    "with-gtf",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "geneSource",
+        "argument": null,
+        "type": "select",
+        "label": "Custom or built-in reference genome",
+        "help": "Built-ins were indexed using default options",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "indexed",
+        "options": [
+          [
+            "Use a built-in index",
+            "indexed",
+            true
+          ],
+          [
+            "Use reference genome from history and create temporary index",
+            "history",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "twopass",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "None",
+          "inputs": [
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "twopass_read_subset",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            },
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "sj_precalculated",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "Basic",
+          "inputs": [
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "twopass_read_subset",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            },
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "sj_precalculated",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "Basic --twopass1readsN",
+          "inputs": [
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "sj_precalculated",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "twopass_read_subset",
+              "argument": "--twopass1readsN",
+              "type": "integer",
+              "label": "Number of reads to map in the first pass",
+              "help": "",
+              "refresh_on_change": false,
+              "min": 1,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "50000",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "None --sjdbFileChrStartEnd",
+          "inputs": [
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "twopass_read_subset",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": ""
+            },
+            {
+              "model_class": "DataToolParameter",
+              "name": "sj_precalculated",
+              "argument": null,
+              "type": "data",
+              "label": "Pregenerated splice junctions datasets of your samples",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "interval"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3475"
+                ],
+                "edam_data": [
+                  "data_3002"
+                ]
+              },
+              "multiple": true,
+              "min": null,
+              "max": null,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "twopassMode",
+        "argument": "--twopassMode",
+        "type": "select",
+        "label": "Use 2-pass mapping for more sensitive novel splice junction discovery",
+        "help": "For a study with multiple samples, multisample 2-pass mapping is the most sensitive approach. It involves two separate runs of STAR for each sample, where, in the second run of each sample, the splice junctions found in any sample in the first runs are treated as additional known junctions. If you plan to use the mapping results as input for STAR-Fusion it is recommended that you use at least single-sample 2-pass mapping of all reads.",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "None",
+        "options": [
+          [
+            "No",
+            "None",
+            false
+          ],
+          [
+            "Yes, perform single-sample 2-pass mapping of all reads",
+            "Basic",
+            false
+          ],
+          [
+            "Yes, but base novel splice junction detection in the first pass on a subset of all reads (faster, but less sensitive than single-sample 2-pass mode)",
+            "Basic --twopass1readsN",
+            false
+          ],
+          [
+            "Yes, I want to use multi-sample 2-pass mapping and I have obtained splice junctions datasets of all samples through previous 1-pass runs of STAR.",
+            "None --sjdbFileChrStartEnd",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "quantmode_output",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "-",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "GeneCounts",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "TranscriptomeSAM",
+          "inputs": [
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "quantTranscriptomeBan",
+              "argument": "--quantTranscriptomeBan",
+              "type": "boolean",
+              "label": "Exclude alignments with indels or soft clipping from the transcriptome BAM output?",
+              "help": "You will need to exclude alignments with indels and soft-clipped bases from the transcriptome BAM output for compatibility with certain transcript quantification tools, most notably RSEM. If you are using a tool, like eXpress, that can deal with indels and soft-clipped bases, you can achieve better results by leaving this option disabled.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "IndelSoftclipSingleend",
+              "falsevalue": "Singleend"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "TranscriptomeSAM GeneCounts",
+          "inputs": [
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "quantTranscriptomeBan",
+              "argument": "--quantTranscriptomeBan",
+              "type": "boolean",
+              "label": "Exclude alignments with indels or soft clipping from the transcriptome BAM output?",
+              "help": "You will need to exclude alignments with indels and soft-clipped bases from the transcriptome BAM output for compatibility with certain transcript quantification tools, most notably RSEM. If you are using a tool, like eXpress, that can deal with indels and soft-clipped bases, you can achieve better results by leaving this option disabled.",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "IndelSoftclipSingleend",
+              "falsevalue": "Singleend"
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "quantMode",
+        "argument": "--quantMode",
+        "type": "select",
+        "label": "Per gene/transcript output",
+        "help": "STAR can provide analysis results not only with respect to the reference genome, but also with respect to genes and transcripts described by a gene model. Note: This functionality requires either the selection above of a cached index with a gene model, or a gene model provided alongside the index/reference genome in GTF or GFF3 format!",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "-",
+        "options": [
+          [
+            "No per gene or transcript output",
+            "-",
+            false
+          ],
+          [
+            "Per gene read counts (GeneCounts)",
+            "GeneCounts",
+            false
+          ],
+          [
+            "Transcript-based BAM output (TranscriptomeSAM)",
+            "TranscriptomeSAM",
+            false
+          ],
+          [
+            "Both per gene read counts and transcript-based BAM output (TranscriptomeSAM GeneCounts)",
+            "TranscriptomeSAM GeneCounts",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "chimOutType",
+      "argument": "--chimOutType",
+      "type": "select",
+      "label": "Report chimeric alignments?",
+      "help": "Choose if and how chimeric alignments should be reported. STAR-Fusion users should select the 'Junctions' option and use the resulting tabular dataset as input to STAR-Fusion. Everyone else: note that selecting 'WithinBAM' or 'WithinBAM Junctions' disables the --chimMultimapNmax setting in the algorithmic parameters section below (the tool will only consider uniquely mapped reads in the search for chimeric alignments). If you disable the reporting of chimeric alignments here, then all chimeric alignment settings in the algorithmic parameters section below will be ignored.",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "",
+      "options": [
+        [
+          "Don't report chimeric alignments",
+          "",
+          false
+        ],
+        [
+          "As separate tabular \"Junctions\" output (Junctions)",
+          "Junctions",
+          false
+        ],
+        [
+          "Within the BAM output (together with regular alignments; WithinBAM)",
+          "WithinBAM",
+          false
+        ],
+        [
+          "In both forms (WithinBAM Junctions)",
+          "WithinBAM Junctions",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "Section",
+      "name": "oformat",
+      "type": "section",
+      "title": "BAM output format specification",
+      "help": null,
+      "expanded": true,
+      "inputs": [
+        {
+          "model_class": "SelectToolParameter",
+          "name": "outSAMattributes",
+          "argument": "--outSAMattributes",
+          "type": "select",
+          "label": "Read alignment tags to include in the BAM output",
+          "help": "Note on using the XS tag: If the XS tag is used, STAR will filter out alignments with undefined strand (i.e., those containing only non-canonical unannotated junctions). Using this tag is recommended if you plan to use the STAR results with STAR-Fusion. In addition, it is required for compatibility with Cufflinks if your sequences come from an unstranded library preparation.",
+          "refresh_on_change": false,
+          "optional": true,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": [
+            "NH",
+            "HI",
+            "AS",
+            "nM",
+            "ch"
+          ],
+          "options": [
+            [
+              "NH (number of reported alignments/hits for the read)",
+              "NH",
+              true
+            ],
+            [
+              "HI (query hit index)",
+              "HI",
+              true
+            ],
+            [
+              "AS (local alignment score)",
+              "AS",
+              true
+            ],
+            [
+              "nM (number of mismatches per (paired) alignment)",
+              "nM",
+              true
+            ],
+            [
+              "XS (strand flag, see parameter help below) ",
+              "XS",
+              false
+            ],
+            [
+              "NM (edit distance of the aligned read to the reference)",
+              "NM",
+              false
+            ],
+            [
+              "MD (string for mismatching positions)",
+              "MD",
+              false
+            ],
+            [
+              "MC (CIGAR string for mate/next segment)",
+              "MC",
+              false
+            ],
+            [
+              "jM (intron motifs for all junctions)",
+              "jM",
+              false
+            ],
+            [
+              "jI (1-based start and end of introns for all junctions)",
+              "jI",
+              false
+            ],
+            [
+              "ch (used to indicate chimeric alignments)",
+              "ch",
+              true
+            ]
+          ],
+          "display": "checkboxes",
+          "multiple": true,
+          "textable": false
+        },
+        {
+          "model_class": "SelectToolParameter",
+          "name": "HI_offset",
+          "argument": "--outSAMattrIHstart",
+          "type": "select",
+          "label": "HI tag values should be",
+          "help": "",
+          "refresh_on_change": false,
+          "optional": false,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": "1",
+          "options": [
+            [
+              "one-based",
+              "1",
+              true
+            ],
+            [
+              "zero-based",
+              "0",
+              false
+            ]
+          ],
+          "display": "radio",
+          "multiple": false,
+          "textable": false
+        },
+        {
+          "model_class": "HiddenToolParameter",
+          "name": "outSAMprimaryFlag",
+          "argument": null,
+          "type": "hidden",
+          "label": "",
+          "help": "",
+          "refresh_on_change": false,
+          "optional": false,
+          "hidden": true,
+          "is_dynamic": false,
+          "value": "OneBestScore"
+        },
+        {
+          "model_class": "IntegerToolParameter",
+          "name": "outSAMmapqUnique",
+          "argument": "--outSAMmapqUnique",
+          "type": "integer",
+          "label": "MAPQ value for unique mappers",
+          "help": "STAR bases the mapping quality scores of alignment records in its BAM output on the number of alternative mappings for the read. If a read maps to multiple locations on the reference genome, the following MAPQ scoring scheme is used: >=5 mappings => MAPQ=0; 3-4 mappings => MAPQ=1; 2 mappings => MAPQ=3. This setting lets you control the MAPQ used for reads mapped to a single location. Set to 255 for compatibility with Cufflinks.",
+          "refresh_on_change": false,
+          "min": 30,
+          "max": 255,
+          "optional": false,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": "60",
+          "area": false,
+          "datalist": []
+        }
+      ]
+    },
+    {
+      "model_class": "Section",
+      "name": "filter",
+      "type": "section",
+      "title": "Output filter criteria",
+      "help": null,
+      "expanded": true,
+      "inputs": [
+        {
+          "model_class": "SelectToolParameter",
+          "name": "basic_filters",
+          "argument": null,
+          "type": "select",
+          "label": "Exclude the following records from the BAM output",
+          "help": "",
+          "refresh_on_change": false,
+          "optional": true,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": null,
+          "options": [
+            [
+              "Unmapped reads",
+              "exclude_unmapped",
+              false
+            ],
+            [
+              "Alignments that have junctions with inconsistent strands",
+              "--outFilterIntronStrands RemoveInconsistentStrands",
+              false
+            ],
+            [
+              "Alignments across unannotated non-canonical junctions",
+              "--outFilterIntronMotifs RemoveNoncanonicalUnannotated",
+              false
+            ],
+            [
+              "All alignments across non-canonical junctions (recommended for compatibility with Cufflinks)",
+              "--outFilterIntronMotifs RemoveNoncanonical",
+              false
+            ]
+          ],
+          "display": "checkboxes",
+          "multiple": true,
+          "textable": false
+        },
+        {
+          "model_class": "Conditional",
+          "name": "output_params2",
+          "type": "conditional",
+          "cases": [
+            {
+              "model_class": "ConditionalWhen",
+              "value": "yes",
+              "inputs": [
+                {
+                  "model_class": "BooleanToolParameter",
+                  "name": "outFilterType",
+                  "argument": "--outFilterType",
+                  "type": "boolean",
+                  "label": "Would you like to keep only reads that contain junctions that passed filtering?",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": false,
+                  "truevalue": "BySJout",
+                  "falsevalue": "Normal"
+                },
+                {
+                  "model_class": "IntegerToolParameter",
+                  "name": "outFilterMultimapScoreRange",
+                  "argument": "--outFilterMultimapScoreRange",
+                  "type": "integer",
+                  "label": "Score range below the maximum score for multimapping alignments",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "min": 0,
+                  "max": null,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "1",
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "IntegerToolParameter",
+                  "name": "outFilterMultimapNmax",
+                  "argument": "--outFilterMultimapNmax",
+                  "type": "integer",
+                  "label": "Maximum number of alignments to output a read's alignment results, plus 1",
+                  "help": "Reads with at least this number of alignments will have no alignments output",
+                  "refresh_on_change": false,
+                  "min": 1,
+                  "max": null,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "10",
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "IntegerToolParameter",
+                  "name": "outFilterMismatchNmax",
+                  "argument": "--outFilterMismatchNmax",
+                  "type": "integer",
+                  "label": "Maximum number of mismatches to output an alignment, plus 1",
+                  "help": "Alignments with at least this number of mismatches will not be output",
+                  "refresh_on_change": false,
+                  "min": 0,
+                  "max": null,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "10",
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "FloatToolParameter",
+                  "name": "outFilterMismatchNoverLmax",
+                  "argument": "--outFilterMismatchNoverLmax",
+                  "type": "float",
+                  "label": "Maximum ratio of mismatches to mapped length",
+                  "help": "Alignments with a mismatch ratio of at least this value will not be output",
+                  "refresh_on_change": false,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "0.3",
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "FloatToolParameter",
+                  "name": "outFilterMismatchNoverReadLmax",
+                  "argument": "--outFilterMismatchNoverReadLmax",
+                  "type": "float",
+                  "label": "Maximum ratio of mismatches to read length",
+                  "help": "Alignments with a mismatch ratio of at least this value will not be output",
+                  "refresh_on_change": false,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "1.0",
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "IntegerToolParameter",
+                  "name": "outFilterScoreMin",
+                  "argument": "--outFilterScoreMin",
+                  "type": "integer",
+                  "label": "Minimum alignment score",
+                  "help": "Alignments must have scores higher than this value to be output",
+                  "refresh_on_change": false,
+                  "min": 0,
+                  "max": null,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "0",
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "FloatToolParameter",
+                  "name": "outFilterScoreMinOverLread",
+                  "argument": "--outFilterScoreMinOverLread",
+                  "type": "float",
+                  "label": "Minimum alignment score, normalized to read length",
+                  "help": "Alignments must have (normalized) scores higher than this value to be output",
+                  "refresh_on_change": false,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "0.66",
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "IntegerToolParameter",
+                  "name": "outFilterMatchNmin",
+                  "argument": "--outFilterMatchNmin",
+                  "type": "integer",
+                  "label": "Minimum number of matched bases",
+                  "help": "Alignments must have the number of matched bases higher than this value to be output",
+                  "refresh_on_change": false,
+                  "min": 0,
+                  "max": null,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "0",
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "FloatToolParameter",
+                  "name": "outFilterMatchNminOverLread",
+                  "argument": "--outFilterMatchNminOverLread",
+                  "type": "float",
+                  "label": "Minimum number of matched bases, normalized to read length",
+                  "help": "Alignments must have the (normalized) number of matched bases higher than this value to be output",
+                  "refresh_on_change": false,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "0.66",
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "IntegerToolParameter",
+                  "name": "outSAMmultNmax",
+                  "argument": "--outSAMmultNmax",
+                  "type": "integer",
+                  "label": "Maximum number of multimapping alignments to output for a read",
+                  "help": "A value of -1 (the default) results in all alignments (up to \u2013-outFilterMultimapNmax) being output",
+                  "refresh_on_change": false,
+                  "min": -1,
+                  "max": null,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "-1",
+                  "area": false,
+                  "datalist": []
+                },
+                {
+                  "model_class": "SelectToolParameter",
+                  "name": "outSAMtlen",
+                  "argument": "--outSAMtlen",
+                  "type": "select",
+                  "label": "Calculation method for TLEN",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "1",
+                  "options": [
+                    [
+                      "leftmost base of the (+)strand mate to rightmost base of the (-)mate. (+)sign for the (+)strand mate",
+                      "1",
+                      true
+                    ],
+                    [
+                      "leftmost base of any mate to rightmost base of any mate. (+)sign for the mate with the leftmost base. This is different from 1 for overlapping mates with protruding ends",
+                      "2",
+                      false
+                    ]
+                  ],
+                  "display": null,
+                  "multiple": false,
+                  "textable": false
+                }
+              ]
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "no",
+              "inputs": []
+            }
+          ],
+          "test_param": {
+            "model_class": "SelectToolParameter",
+            "name": "output_select2",
+            "argument": null,
+            "type": "select",
+            "label": "Would you like to set additional output filters?",
+            "help": "",
+            "refresh_on_change": true,
+            "optional": false,
+            "hidden": false,
+            "is_dynamic": false,
+            "value": "no",
+            "options": [
+              [
+                "No",
+                "no",
+                true
+              ],
+              [
+                "Yes",
+                "yes",
+                false
+              ]
+            ],
+            "display": null,
+            "multiple": false,
+            "textable": false
+          }
+        }
+      ]
+    },
+    {
+      "model_class": "Section",
+      "name": "algo",
+      "type": "section",
+      "title": "Algorithmic settings",
+      "help": null,
+      "expanded": true,
+      "inputs": [
+        {
+          "model_class": "Conditional",
+          "name": "params",
+          "type": "conditional",
+          "cases": [
+            {
+              "model_class": "ConditionalWhen",
+              "value": "default",
+              "inputs": []
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "star_fusion",
+              "inputs": []
+            },
+            {
+              "model_class": "ConditionalWhen",
+              "value": "full",
+              "inputs": [
+                {
+                  "model_class": "Section",
+                  "name": "seed",
+                  "type": "section",
+                  "title": "Seed parameters",
+                  "help": null,
+                  "expanded": false,
+                  "inputs": [
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "seedSearchStartLmax",
+                      "argument": "--seedSearchStartLmax",
+                      "type": "integer",
+                      "label": "Search start point through the read",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "50",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "FloatToolParameter",
+                      "name": "seedSearchStartLmaxOverLread",
+                      "argument": "--seedSearchStartLmaxOverLread",
+                      "type": "float",
+                      "label": "Search start point through the read, normalized to read length",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0.0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "1.0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "seedSearchLmax",
+                      "argument": "--seedSearchLmax",
+                      "type": "integer",
+                      "label": "Maximum length of seeds",
+                      "help": "Default of 0 indicates no maximum length",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "seedMultimapNmax",
+                      "argument": "--seedMultimapNmax",
+                      "type": "integer",
+                      "label": "Maximum number of mappings to use a piece in stitching",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "10000",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "seedPerReadNmax",
+                      "argument": "--seedPerReadNmax",
+                      "type": "integer",
+                      "label": "Maximum number of seeds per read",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "1000",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "seedPerWindowNmax",
+                      "argument": "--seedPerWindowNmax",
+                      "type": "integer",
+                      "label": "Maximum number of seeds per window",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "50",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "seedNoneLociPerWindow",
+                      "argument": "--seedNoneLociPerWindow",
+                      "type": "integer",
+                      "label": "Maximum number of one seed loci per window",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "10",
+                      "area": false,
+                      "datalist": []
+                    }
+                  ]
+                },
+                {
+                  "model_class": "Section",
+                  "name": "align",
+                  "type": "section",
+                  "title": "Alignment parameters",
+                  "help": null,
+                  "expanded": false,
+                  "inputs": [
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "alignIntronMin",
+                      "argument": "--alignIntronMin",
+                      "type": "integer",
+                      "label": "Minimum intron size",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "21",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "alignIntronMax",
+                      "argument": "--alignIntronMax",
+                      "type": "integer",
+                      "label": "Maximum intron size",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "alignMatesGapMax",
+                      "argument": "--alignMatesGapMax",
+                      "type": "integer",
+                      "label": "Maximum gap between two mates",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "alignSJoverhangMin",
+                      "argument": "--alignSJoverhangMin",
+                      "type": "integer",
+                      "label": "Minimum overhang for spliced alignments",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "5",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "alignSJDBoverhangMin",
+                      "argument": "--alignSJDBoverhangMin",
+                      "type": "integer",
+                      "label": "Minimum overhang for annotated spliced alignments",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "3",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "alignSplicedMateMapLmin",
+                      "argument": "--alignSplicedMateMapLmin",
+                      "type": "integer",
+                      "label": "Minimum mapped length for a read mate that is spliced",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "FloatToolParameter",
+                      "name": "alignSplicedMateMapLminOverLmate",
+                      "argument": "--alignSplicedMateMapLminOverLmate",
+                      "type": "float",
+                      "label": "Minimum mapped length for a read mate that is spliced, normalized to mate length",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0.0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0.66",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "alignWindowsPerReadNmax",
+                      "argument": "--alignWindowsPerReadNmax",
+                      "type": "integer",
+                      "label": "Maximum number of windows per read",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "10000",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "alignTranscriptsPerWindowNmax",
+                      "argument": "--alignTranscriptsPerWindowNmax",
+                      "type": "integer",
+                      "label": "Maximum number of transcripts per window",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "100",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "alignTranscriptsPerReadNmax",
+                      "argument": "--alignTranscriptsPerReadNmax",
+                      "type": "integer",
+                      "label": "Maximum number of different alignments per read to consider",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "10000",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "BooleanToolParameter",
+                      "name": "alignEndsType",
+                      "argument": "--alignEndsType",
+                      "type": "boolean",
+                      "label": "Use end-to-end read alignments, with no soft-clipping?",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": false,
+                      "truevalue": "EndToEnd",
+                      "falsevalue": "Local"
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "peOverlapNbasesMin",
+                      "argument": "--peOverlapNbasesMin",
+                      "type": "integer",
+                      "label": "minimum number of overlap bases to trigger mates merging and realignment",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "FloatToolParameter",
+                      "name": "peOverlapMMp",
+                      "argument": "--peOverlapMMp",
+                      "type": "float",
+                      "label": "maximum proportion of mismatched bases in the overlap area",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0.0,
+                      "max": 1.0,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0.01",
+                      "area": false,
+                      "datalist": []
+                    }
+                  ]
+                },
+                {
+                  "model_class": "Section",
+                  "name": "chim_settings",
+                  "type": "section",
+                  "title": "Chimeric alignment parameters",
+                  "help": null,
+                  "expanded": false,
+                  "inputs": [
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "chimSegmentMin",
+                      "argument": "--chimSegmentMin",
+                      "type": "integer",
+                      "label": "Minimum length of chimeric segment",
+                      "help": "For small numbers this will cause large number of chimeric alignments. A value of 12 is commonly used.",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "12",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "chimScoreMin",
+                      "argument": "--chimScoreMin",
+                      "type": "integer",
+                      "label": "Minimum total (summed) score of chimeric segments",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "chimScoreDropMax",
+                      "argument": "--chimScoreDropMax",
+                      "type": "integer",
+                      "label": "Maximum difference of chimeric score from read length",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "20",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "chimScoreSeparation",
+                      "argument": "--chimScoreSeparation",
+                      "type": "integer",
+                      "label": "Minimum difference between the best chimeric score and the next one",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "10",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "chimScoreJunctionNonGTAG",
+                      "argument": "--chimScoreJunctionNonGTAG",
+                      "type": "integer",
+                      "label": "Penalty for a non-GT/AG chimeric junction",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "chimJunctionOverhangMin",
+                      "argument": "--chimJunctionOverhangMin",
+                      "type": "integer",
+                      "label": "Minimum overhang for a chimeric junction",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "20",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "chimSegmentReadGapMax",
+                      "argument": "--chimSegmentReadGapMax",
+                      "type": "integer",
+                      "label": "Maximum gap in the read sequence between chimeric segments",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "BooleanToolParameter",
+                      "name": "chimFilter",
+                      "argument": "--chimFilter",
+                      "type": "boolean",
+                      "label": "Discard chimeric alignments with Ns in the genome sequence around the chimeric junction",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": true,
+                      "truevalue": "banGenomicN",
+                      "falsevalue": "None"
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "chimMainSegmentMultNmax",
+                      "argument": "--chimMainSegmentMultNmax",
+                      "type": "integer",
+                      "label": "Maximum number of multi-alignments for the main chimeric segment.",
+                      "help": "A value of 1 prohibits multimapping main segments",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "10",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "chimMultimapNmax",
+                      "argument": "--chimMultimapNmax",
+                      "type": "integer",
+                      "label": "Maximum number of chimeric multi-alignments",
+                      "help": "The default value of 1 only considers unique alignments. If you chose to report chimeric alignments alongside regular ones in the BAM output, this setting is ignored and only uniquely mapping chimeric reads get reported. ",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "1",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "chimMultimapScoreRange",
+                      "argument": "--chimMultimapScoreRange",
+                      "type": "integer",
+                      "label": "Score range for multi-mapping chimeras",
+                      "help": "The threshold below the best chimeric score that a multimapping chimera must have to be output. This is ignored unless --chimMultimapNmax is above 1",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "1",
+                      "area": false,
+                      "datalist": []
+                    }
+                  ]
+                },
+                {
+                  "model_class": "Section",
+                  "name": "limits",
+                  "type": "section",
+                  "title": "Limits",
+                  "help": null,
+                  "expanded": false,
+                  "inputs": [
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "limitOutSJoneRead",
+                      "argument": "--limitOutSJoneRead",
+                      "type": "integer",
+                      "label": "Maximum number of junctions for one read (including all multimappers)",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "1000",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "limitOutSJcollapsed",
+                      "argument": "--limitOutSJcollapsed",
+                      "type": "integer",
+                      "label": "Maximum number of collapsed junctions",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 1,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "1000000",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "limitSjdbInsertNsj",
+                      "argument": "--limitSjdbInsertNsj",
+                      "type": "integer",
+                      "label": "Maximum number of inserts to be inserted into the genome on the fly.",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": 0,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "1000000",
+                      "area": false,
+                      "datalist": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "test_param": {
+            "model_class": "SelectToolParameter",
+            "name": "settingsType",
+            "argument": null,
+            "type": "select",
+            "label": "Configure seed, alignment and limits options",
+            "help": "",
+            "refresh_on_change": true,
+            "optional": false,
+            "hidden": false,
+            "is_dynamic": false,
+            "value": "default",
+            "options": [
+              [
+                "Use Defaults",
+                "default",
+                true
+              ],
+              [
+                "Use parameters suggested for STAR-Fusion",
+                "star_fusion",
+                false
+              ],
+              [
+                "Extended parameter list",
+                "full",
+                false
+              ]
+            ],
+            "display": null,
+            "multiple": false,
+            "textable": false
+          }
+        }
+      ]
+    },
+    {
+      "model_class": "Section",
+      "name": "perf",
+      "type": "section",
+      "title": "Performance tweaks / Troubleshooting",
+      "help": null,
+      "expanded": false,
+      "inputs": [
+        {
+          "model_class": "IntegerToolParameter",
+          "name": "outBAMsortingBinsN",
+          "argument": "--outBAMsortingBinsN",
+          "type": "integer",
+          "label": "Number of genome bins for coordinate-sorting",
+          "help": "Higher values result in lower RAM requirements during the sorting step. The default value is 50. Tweak this if you are facing memory-related errors.",
+          "refresh_on_change": false,
+          "min": 1,
+          "max": null,
+          "optional": false,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": "50",
+          "area": false,
+          "datalist": []
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output_log",
+      "format": "txt",
+      "label": "${tool.name} on ${on_string}: log",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "Log.final.out",
+      "edam_format": "format_2330",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "chimeric_junctions",
+      "format": "interval",
+      "label": "${tool.name} on ${on_string}: chimeric junctions",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "Chimeric.out.junction",
+      "edam_format": "format_3475",
+      "edam_data": "data_3002",
+      "discover_datasets": []
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "splice_junctions",
+      "format": "interval",
+      "label": "${tool.name} on ${on_string}: splice junctions.bed",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "SJ.out.tab",
+      "edam_format": "format_3475",
+      "edam_data": "data_3002",
+      "discover_datasets": []
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "mapped_reads",
+      "format": "bam",
+      "label": "${tool.name} on ${on_string}: mapped.bam",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2572",
+      "edam_data": "data_0863",
+      "discover_datasets": []
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "transcriptome_mapped_reads",
+      "format": "unsorted.bam",
+      "label": "${tool.name} on ${on_string}: transcriptome-mapped.bam",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2572",
+      "edam_data": "data_0863",
+      "discover_datasets": []
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "reads_per_gene",
+      "format": "tabular",
+      "label": "${tool.name} on ${on_string}: reads per gene",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "ReadsPerGene.out.tab",
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": "mapping",
+  "panel_section_name": "Mapping",
+  "form_style": "regular"
+}

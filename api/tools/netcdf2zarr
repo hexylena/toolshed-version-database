@@ -1,0 +1,73 @@
+{
+  "model_class": "Tool",
+  "id": "netcdf2zarr",
+  "name": "NetCDF to Zarr",
+  "version": "0.1.0",
+  "description": "Rewrite a netCDF to Zarr",
+  "labels": [],
+  "edam_operations": [
+    "operation_0335"
+  ],
+  "edam_topics": [
+    "topic_3318"
+  ],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "netcdf_file",
+      "argument": null,
+      "type": "data",
+      "label": "Input netcdf file",
+      "help": "Select the input netCDF file.",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "zarr_file",
+      "format": "zarr",
+      "label": "${tool.name} on ${on_string}: ZARR",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": null,
+      "edam_data": null,
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": "test_tools",
+  "panel_section_name": "Test Tools",
+  "form_style": "regular"
+}

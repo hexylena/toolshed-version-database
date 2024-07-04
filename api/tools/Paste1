@@ -1,0 +1,169 @@
+{
+  "model_class": "Tool",
+  "id": "Paste1",
+  "name": "Paste",
+  "version": "1.0.0",
+  "description": "two files side by side",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input1",
+      "argument": null,
+      "type": "data",
+      "label": "Paste",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "txt"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_2330"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "input2",
+      "argument": null,
+      "type": "data",
+      "label": "and",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "txt"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_2330"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "delimiter",
+      "argument": null,
+      "type": "select",
+      "label": "Delimit by",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "T",
+      "options": [
+        [
+          "Tab",
+          "T",
+          false
+        ],
+        [
+          "Dot",
+          "Dt",
+          false
+        ],
+        [
+          "Comma",
+          "C",
+          false
+        ],
+        [
+          "Dash",
+          "D",
+          false
+        ],
+        [
+          "Underscore",
+          "U",
+          false
+        ],
+        [
+          "Pipe",
+          "P",
+          false
+        ],
+        [
+          "Space",
+          "Sp",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "data",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": "input1",
+      "default_identifier_source": "None",
+      "metadata_source": "input1",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1915",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "text_manipulation",
+  "panel_section_name": "Text Manipulation",
+  "form_style": "regular"
+}

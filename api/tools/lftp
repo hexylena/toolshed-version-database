@@ -1,0 +1,90 @@
+{
+  "model_class": "Tool",
+  "id": "lftp",
+  "name": "downloads",
+  "version": "4.9.2",
+  "description": "via lftps",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "urls",
+      "argument": null,
+      "type": "data",
+      "label": "File with URLs",
+      "help": "List of URLs (one per line).",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "txt",
+        "tabular"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_2330",
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_0006",
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "downloads",
+      "format": null,
+      "label": "${tool.name} on ${on_string}",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": null,
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "outputs",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    }
+  ],
+  "panel_section_id": "get_data",
+  "panel_section_name": "Get Data",
+  "form_style": "regular"
+}

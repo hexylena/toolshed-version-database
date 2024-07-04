@@ -1,0 +1,916 @@
+{
+  "model_class": "Tool",
+  "id": "velvetg",
+  "name": "velvetg",
+  "version": "1.0.0",
+  "description": "Velvet sequence assembler for very short reads",
+  "labels": [
+    "training-only"
+  ],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Velvet Dataset",
+      "help": "Prepared by velveth.",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "velvet"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_2331"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "generate_amos",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "no",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "yes",
+          "inputs": []
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "afg",
+        "argument": null,
+        "type": "select",
+        "label": "Generate a AMOS.afg file",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "no",
+        "options": [
+          [
+            "No",
+            "no",
+            false
+          ],
+          [
+            "Yes",
+            "yes",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "unused_reads",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "no",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "yes",
+          "inputs": []
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "generate_unused",
+        "argument": null,
+        "type": "select",
+        "label": "Generate a UnusedReads fasta file",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "no",
+        "options": [
+          [
+            "No",
+            "no",
+            false
+          ],
+          [
+            "Yes",
+            "yes",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "last_graph",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "no",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "yes",
+          "inputs": []
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "generate_graph",
+        "argument": null,
+        "type": "select",
+        "label": "Generate velvet LastGraph file",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "no",
+        "options": [
+          [
+            "No",
+            "no",
+            false
+          ],
+          [
+            "Yes",
+            "yes",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "read_trkg",
+      "argument": null,
+      "type": "boolean",
+      "label": "Tracking of short read positions in assembly",
+      "help": "Generates Graph2 dataset",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "-read_trkg yes",
+      "falsevalue": "-read_trkg no"
+    },
+    {
+      "model_class": "Conditional",
+      "name": "coverage",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "none",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "auto",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "value",
+          "inputs": [
+            {
+              "model_class": "FloatToolParameter",
+              "name": "cov_cutoff",
+              "argument": null,
+              "type": "float",
+              "label": "Remove nodes with coverage below",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "10.0",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "cutoff",
+        "argument": null,
+        "type": "select",
+        "label": "Coverage cutoff",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "none",
+        "options": [
+          [
+            "None",
+            "none",
+            false
+          ],
+          [
+            "Automatically Determined",
+            "auto",
+            false
+          ],
+          [
+            "Specify Cutoff Value",
+            "value",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "expected",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "none",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "auto",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "value",
+          "inputs": [
+            {
+              "model_class": "FloatToolParameter",
+              "name": "exp_cov",
+              "argument": null,
+              "type": "float",
+              "label": "Remove nodes with coverage below",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "10.0",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "coverage",
+        "argument": null,
+        "type": "select",
+        "label": "Expected Coverage of Unique Regions",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "none",
+        "options": [
+          [
+            "None",
+            "none",
+            false
+          ],
+          [
+            "Automatically Determined",
+            "auto",
+            false
+          ],
+          [
+            "Specify Expected Value",
+            "value",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "contig_lgth",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "no",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "yes",
+          "inputs": [
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "min_contig_lgth",
+              "argument": null,
+              "type": "integer",
+              "label": "minimum contig length",
+              "help": "minimum contig length exported to contigs.fa file (default: hash length * 2)",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "42",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "use_contig_lgth",
+        "argument": null,
+        "type": "select",
+        "label": " Set minimum contig length",
+        "help": "minimum contig length exported to contigs.fa file (default: hash length * 2).",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "no",
+        "options": [
+          [
+            "No",
+            "no",
+            false
+          ],
+          [
+            "Yes",
+            "yes",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "reads",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "no",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "yes",
+          "inputs": [
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "ins_length",
+              "argument": null,
+              "type": "integer",
+              "label": "Insert Length in Paired-End Read dataset (ignored when -1)",
+              "help": "Expected distance between two paired end reads",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "-1",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "Conditional",
+              "name": "options",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "no",
+                  "inputs": []
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "yes",
+                  "inputs": [
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "ins_length_sd",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Estimate of Standard Deviation of Paired-End Read dataset(ignored when -1)",
+                      "help": "Estimate of standard deviation of Paired-End Read dataset (default: 10% of corresponding length)",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "ins_length2",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Insert Length in 2nd Paired-End Short Read dataset (ignored when -1)",
+                      "help": "Expected distance between two paired end reads in the second short-read dataset",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "ins_length2_sd",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Estimate of Standard Deviation of 2nd Paired-End Read dataset (ignored when -1)",
+                      "help": "Estimate of standard deviation of 2nd Paired-End Read dataset (default: 10% of corresponding length)",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "ins_length_long",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Insert Length in Long Paired-End Read dataset (ignored when -1)",
+                      "help": "Expected distance between two long paired-end reads",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "ins_length_long_sd",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Estimate of Standard Deviation of 2nd Paired-End Read dataset (ignored when -1)",
+                      "help": "Estimate of standard deviation of Long Paired-End Read dataset (default: 10% of corresponding length)",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "max_branch_length",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Maximum branch length (ignored when -1)",
+                      "help": "maximum length in base pair of bubble (default: 100)",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "FloatToolParameter",
+                      "name": "max_divergence",
+                      "argument": null,
+                      "type": "float",
+                      "label": "Maximum max_divergence (between .0 and 1., ignored when -1.)",
+                      "help": "maximum divergence rate between two branches in a bubble (default: .2)",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1.0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "max_gap_count",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Maximum gap count (ignored when -1)",
+                      "help": "maximum number of gaps allowed in the alignment of the two branches of a bubble (default: 3)",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "min_pair_count",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Minimum read-pair count (ignored when -1)",
+                      "help": "minimum number of paired end connections to justify the scaffolding of two long contigs (default: 10)",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "FloatToolParameter",
+                      "name": "max_coverage",
+                      "argument": null,
+                      "type": "float",
+                      "label": "Maximum coverage exclusion(ignored when -1.)",
+                      "help": "Exclude data that has coverage more than this maximum coverage value",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1.0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "long_mult_cutoff",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Minimum number of long reads required to merge contigs (ignored when -1)",
+                      "help": "minimum number of long reads required to merge contigs (default: 2)",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "-1",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "BooleanToolParameter",
+                      "name": "scaffolding",
+                      "argument": null,
+                      "type": "boolean",
+                      "label": "Use Scaffolding",
+                      "help": "Scaffold contigs that it cannot quite be connected (This results in sequences of Ns in the contigs)",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": true,
+                      "truevalue": "-scaffolding yes",
+                      "falsevalue": "-scaffolding no"
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "advanced",
+                "argument": null,
+                "type": "select",
+                "label": "Velvet Advanced Options",
+                "help": "",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "no",
+                "options": [
+                  [
+                    "Use Defaults",
+                    "no",
+                    false
+                  ],
+                  [
+                    "Set Advanced Option Values",
+                    "yes",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "paired",
+        "argument": null,
+        "type": "select",
+        "label": "Using Paired Reads",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "no",
+        "options": [
+          [
+            "No",
+            "no",
+            false
+          ],
+          [
+            "Yes",
+            "yes",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "Graph2",
+      "format": "txt",
+      "label": "${tool.name} on ${on_string}: Graph2",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "Graph2",
+      "edam_format": "format_2330",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "LastGraph",
+      "format": "txt",
+      "label": "${tool.name} on ${on_string}: LastGraph",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "LastGraph",
+      "edam_format": "format_2330",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "velvet_asm",
+      "format": "afg",
+      "label": "${tool.name} on ${on_string}: AMOS.afg",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "velvet_asm.afg",
+      "edam_format": "format_3582",
+      "edam_data": "data_0925",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "unused_reads_fasta",
+      "format": "fasta",
+      "label": "${tool.name} on ${on_string}: Unused Reads",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "UnusedReads.fa",
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "stats",
+      "format": "tabular",
+      "label": "${tool.name} on ${on_string}: Stats",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "stats.txt",
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "contigs",
+      "format": "fasta",
+      "label": "${tool.name} on ${on_string}: Contigs",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "contigs.fa",
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "assembly",
+  "panel_section_name": "Assembly",
+  "form_style": "regular"
+}

@@ -1,0 +1,996 @@
+{
+  "model_class": "Tool",
+  "id": "PerM",
+  "name": "Map with PerM",
+  "version": "1.1.2",
+  "description": "for SOLiD and Illumina",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "s",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "color",
+          "inputs": [
+            {
+              "model_class": "Conditional",
+              "name": "sourceOfRef",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "indexed",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "index",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Select a reference genome (with seed and read length)",
+                      "help": "if your genome of interest is not listed - contact Galaxy team",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": true,
+                      "value": null,
+                      "options": [],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "history",
+                  "inputs": [
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "ref",
+                      "argument": null,
+                      "type": "data",
+                      "label": "Reference",
+                      "help": "",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "fasta"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_1929"
+                        ],
+                        "edam_data": [
+                          "data_2044"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "dce": [],
+                        "ldda": [],
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "refSource",
+                "argument": null,
+                "type": "select",
+                "label": "Will you provide your own reference file from the history or use a built-in index?",
+                "help": "",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "indexed",
+                "options": [
+                  [
+                    "Built-in index",
+                    "indexed",
+                    false
+                  ],
+                  [
+                    "Fasta file from history",
+                    "history",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            },
+            {
+              "model_class": "Conditional",
+              "name": "mate",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "single",
+                  "inputs": [
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "reads",
+                      "argument": null,
+                      "type": "data",
+                      "label": "Reads",
+                      "help": "",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "fastqcssanger"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_1930"
+                        ],
+                        "edam_data": [
+                          "data_2044"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "dce": [],
+                        "ldda": [],
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "paired",
+                  "inputs": [
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "reads1",
+                      "argument": null,
+                      "type": "data",
+                      "label": "Forward FASTQ file",
+                      "help": "",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "fastqcssanger"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_1930"
+                        ],
+                        "edam_data": [
+                          "data_2044"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "dce": [],
+                        "ldda": [],
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    },
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "reads2",
+                      "argument": null,
+                      "type": "data",
+                      "label": "Reverse FASTQ file",
+                      "help": "",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "fastqcssanger"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_1930"
+                        ],
+                        "edam_data": [
+                          "data_2044"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "dce": [],
+                        "ldda": [],
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "upperbound",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Upperbound of pairs separation (-U)",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "100000",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "lowerbound",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Lowerbound of pairs separation (-L)",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "BooleanToolParameter",
+                      "name": "excludeAmbiguousPairs",
+                      "argument": null,
+                      "type": "boolean",
+                      "label": "Exclude ambiguous pairs (-e)",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": false,
+                      "truevalue": "-e",
+                      "falsevalue": ""
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "singleOrPairs",
+                "argument": null,
+                "type": "select",
+                "label": "Mate-paired?",
+                "help": "",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "single",
+                "options": [
+                  [
+                    "Single-end",
+                    "single",
+                    false
+                  ],
+                  [
+                    "Mate pairs",
+                    "paired",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "base",
+          "inputs": [
+            {
+              "model_class": "Conditional",
+              "name": "sourceOfRef",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "indexed",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "index",
+                      "argument": null,
+                      "type": "select",
+                      "label": "Select a reference genome with seed and read length",
+                      "help": "if your genome of interest is not listed - contact Galaxy team",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": true,
+                      "value": null,
+                      "options": [],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "history",
+                  "inputs": [
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "ref",
+                      "argument": null,
+                      "type": "data",
+                      "label": "Reference",
+                      "help": "",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "fasta"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_1929"
+                        ],
+                        "edam_data": [
+                          "data_2044"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "dce": [],
+                        "ldda": [],
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "refSource",
+                "argument": null,
+                "type": "select",
+                "label": "Will you provide your own reference file from the history or use a built-in index?",
+                "help": "",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "indexed",
+                "options": [
+                  [
+                    "Built-in index",
+                    "indexed",
+                    false
+                  ],
+                  [
+                    "Fasta file from history",
+                    "history",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            },
+            {
+              "model_class": "Conditional",
+              "name": "mate",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "single",
+                  "inputs": [
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "reads",
+                      "argument": null,
+                      "type": "data",
+                      "label": "Reads",
+                      "help": "",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "fastqsanger"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_1932"
+                        ],
+                        "edam_data": [
+                          "data_2044"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "dce": [],
+                        "ldda": [],
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "paired",
+                  "inputs": [
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "reads1",
+                      "argument": null,
+                      "type": "data",
+                      "label": "Forward FASTQ file",
+                      "help": "",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "fastqsanger"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_1932"
+                        ],
+                        "edam_data": [
+                          "data_2044"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "dce": [],
+                        "ldda": [],
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    },
+                    {
+                      "model_class": "DataToolParameter",
+                      "name": "reads2",
+                      "argument": null,
+                      "type": "data",
+                      "label": "Reverse FASTQ file",
+                      "help": "",
+                      "refresh_on_change": true,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": null,
+                      "extensions": [
+                        "fastqsanger"
+                      ],
+                      "edam": {
+                        "edam_formats": [
+                          "format_1932"
+                        ],
+                        "edam_data": [
+                          "data_2044"
+                        ]
+                      },
+                      "multiple": false,
+                      "options": {
+                        "dce": [],
+                        "ldda": [],
+                        "hda": [],
+                        "hdca": []
+                      },
+                      "tag": null
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "upperbound",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Upperbound of pairs separation (-U)",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "100000",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "IntegerToolParameter",
+                      "name": "lowerbound",
+                      "argument": null,
+                      "type": "integer",
+                      "label": "Lowerbound of pairs separation (-L)",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "min": null,
+                      "max": null,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "0",
+                      "area": false,
+                      "datalist": []
+                    },
+                    {
+                      "model_class": "BooleanToolParameter",
+                      "name": "excludeAmbiguousPairs",
+                      "argument": null,
+                      "type": "boolean",
+                      "label": "Exclude ambiguous pairs (-e)",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": false,
+                      "truevalue": "-e",
+                      "falsevalue": ""
+                    }
+                  ]
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "singleOrPairs",
+                "argument": null,
+                "type": "select",
+                "label": "Mate-paired?",
+                "help": "",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "single",
+                "options": [
+                  [
+                    "Single-end",
+                    "single",
+                    false
+                  ],
+                  [
+                    "Mate pairs",
+                    "paired",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "space",
+        "argument": null,
+        "type": "select",
+        "label": "Is your data color space (SOLiD) or base space (Illumina)?",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "color",
+        "options": [
+          [
+            "Color space",
+            "color",
+            false
+          ],
+          [
+            "Base space",
+            "base",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "valAlign",
+      "argument": null,
+      "type": "integer",
+      "label": "Maximum number of mismatches permitted in one end of full read (-v)",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "2",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "Conditional",
+      "name": "align",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "preSet",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "full",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "alignments",
+              "argument": null,
+              "type": "select",
+              "label": "Whether or not to report all valid alignments per read (-A/-B/-E)",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "A",
+              "options": [
+                [
+                  "Report all valid alignments",
+                  "A",
+                  false
+                ],
+                [
+                  "Report the best alignments in terms of number of mismatches",
+                  "B",
+                  false
+                ],
+                [
+                  "Report only uniquely mapped reads",
+                  "E",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "seed",
+              "argument": null,
+              "type": "select",
+              "label": "Choose the seed full sensitive to different number of mismatches (--seed)",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "F2",
+              "options": [
+                [
+                  "2 mismatches",
+                  "F2",
+                  false
+                ],
+                [
+                  "1 SNP + 1 color error",
+                  "S11",
+                  false
+                ],
+                [
+                  "3 mismatches",
+                  "F3",
+                  false
+                ],
+                [
+                  "4 mismatches",
+                  "F4",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "delimiter",
+              "argument": null,
+              "type": "select",
+              "label": "Choose the delimiter to identify read name (--delimiter)",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "None",
+              "options": [
+                [
+                  "Tab/Space/Comma",
+                  "None",
+                  false
+                ],
+                [
+                  "Colon",
+                  ":",
+                  false
+                ],
+                [
+                  "Underscore",
+                  "_",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            },
+            {
+              "model_class": "IntegerToolParameter",
+              "name": "sTrimL",
+              "argument": null,
+              "type": "integer",
+              "label": "Use the first n bases of each read for alignment (-T)",
+              "help": "",
+              "refresh_on_change": false,
+              "min": null,
+              "max": null,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "50",
+              "area": false,
+              "datalist": []
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "includeReadsWN",
+              "argument": null,
+              "type": "boolean",
+              "label": "Include reads with 'N' or '.' by encoding '.' as 3, 'N' as 'A' (--includeReadsWN)",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": true,
+              "truevalue": "--includeReadsWN",
+              "falsevalue": ""
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "statsOnly",
+              "argument": null,
+              "type": "boolean",
+              "label": "Output mapping stats only. Don't output alignments (--statsOnly)",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "--statsOnly",
+              "falsevalue": ""
+            },
+            {
+              "model_class": "BooleanToolParameter",
+              "name": "ignoreQS",
+              "argument": null,
+              "type": "boolean",
+              "label": "Ignore quality scores (--ignoreQS)",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": false,
+              "truevalue": "--ignoreQS",
+              "falsevalue": ""
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "options",
+        "argument": null,
+        "type": "select",
+        "label": "PerM settings to use",
+        "help": "Use default setting or specify full parameters list",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "preSet",
+        "options": [
+          [
+            "Commonly used",
+            "preSet",
+            false
+          ],
+          [
+            "Full parameter list",
+            "full",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "bUnmappedRead",
+      "argument": null,
+      "type": "select",
+      "label": "Output the unmapped reads (-u)",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "true",
+      "options": [
+        [
+          "Yes",
+          "true",
+          false
+        ],
+        [
+          "No",
+          "false",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "sam",
+      "label": "${tool.name} on ${on_string}: mapped reads",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2573",
+      "edam_data": "data_0863",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "unmappedReadOut",
+      "format": "fastqsanger",
+      "label": "${tool.name} on ${on_string}: unmapped reads",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1932",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "unmappedReadOutCS",
+      "format": "fastqcssanger",
+      "label": "${tool.name} on ${on_string}: unmapped reads",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1930",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "mapping",
+  "panel_section_name": "Mapping",
+  "form_style": "regular"
+}

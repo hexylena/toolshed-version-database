@@ -1,0 +1,248 @@
+{
+  "model_class": "InteractiveTool",
+  "id": "interactive_tool_ilastik",
+  "name": "Ilastik",
+  "version": "1.4.0",
+  "description": "interactive learning and segmentation toolkit",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "input_type",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "new",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "Workflow",
+              "argument": null,
+              "type": "select",
+              "label": "Type of Workflow",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "PixelClassificationWorkflow",
+              "options": [
+                [
+                  "Pixel Classification",
+                  "PixelClassificationWorkflow",
+                  false
+                ],
+                [
+                  "Autocontext (2-stage)",
+                  "AutocontextTwoStage",
+                  false
+                ],
+                [
+                  "Pixel Classification + Object Classification",
+                  "ObjectClassificationWorkflowPixel",
+                  false
+                ],
+                [
+                  "Object Classification [Inputs: Raw Data, Pixel Prediction Map]",
+                  "ObjectClassificationWorkflowPrediction",
+                  false
+                ],
+                [
+                  "Object Classification [Inputs: Raw Data, Segmentation]",
+                  "ObjectClassificationWorkflowBinary",
+                  false
+                ],
+                [
+                  "Tracking [Inputs: Raw Data, Segmentation Image]",
+                  "ConservationTrackingWorkflowFromBinary",
+                  false
+                ],
+                [
+                  "Tracking [Inputs: Raw Data, Pixel Prediction Map]",
+                  "ConservationTrackingWorkflowFromPrediction",
+                  false
+                ],
+                [
+                  "Animal Tracking [Inputs: Raw Data, Segmentation Image]",
+                  "AnimalConservationTrackingWorkflowFromBinary",
+                  false
+                ],
+                [
+                  "Animal Tracking [Inputs: Raw Data, Pixel Prediction Map]",
+                  "AnimalConservationTrackingWorkflowFromPrediction",
+                  false
+                ],
+                [
+                  "Tracking with Learning [Inputs: Raw Data, Segmentation Image]",
+                  "StructuredTrackingWorkflowFromBinary",
+                  false
+                ],
+                [
+                  "Tracking with Learning [Inputs: Raw Data, Pixel Prediction Map]",
+                  "StructuredTrackingWorkflowFromPrediction",
+                  false
+                ],
+                [
+                  "Bounary-based Segmentation with Multicut",
+                  "EdgeTrainingWithMulticutWorkflow",
+                  false
+                ],
+                [
+                  "Cell Density Counting",
+                  "CountingWorkflow",
+                  false
+                ],
+                [
+                  "Data Conversion",
+                  "DataConversionWorkflow",
+                  false
+                ],
+                [
+                  "Neural Network Classification (Remote)",
+                  "neuralNetwork.RemoteWorkflow",
+                  false
+                ],
+                [
+                  "Neural Network Classification (Local)",
+                  "neuralNetwork.LocalWorkflow",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "existing",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "project",
+              "argument": "--project",
+              "type": "data",
+              "label": "Existing ilastik project",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "h5"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_3590"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "existing",
+        "argument": null,
+        "type": "select",
+        "label": "Which project you want to work on?",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "new",
+        "options": [
+          [
+            "Start a new project",
+            "new",
+            false
+          ],
+          [
+            "Modify an existing project",
+            "existing",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "infiles",
+      "argument": null,
+      "type": "data",
+      "label": "Input files in TIFF format",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "tiff"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3591"
+        ],
+        "edam_data": [
+          "data_2968"
+        ]
+      },
+      "multiple": true,
+      "min": null,
+      "max": null,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "ilastik_project",
+      "format": "h5",
+      "label": "Ilastik project file",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "output/MyProject.ilp",
+      "edam_format": "format_3590",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": "interactivetools",
+  "panel_section_name": "Interactive tools",
+  "form_style": "regular"
+}

@@ -1,0 +1,108 @@
+{
+  "model_class": "HarmonizeTool",
+  "id": "__HARMONIZELISTS__",
+  "name": "Harmonize two collections",
+  "version": "1.0.0",
+  "description": "",
+  "labels": [],
+  "edam_operations": [
+    "operation_0335"
+  ],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataCollectionToolParameter",
+      "name": "input1",
+      "argument": null,
+      "type": "data_collection",
+      "label": "Input Collection with good order",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": [],
+        "dce": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataCollectionToolParameter",
+      "name": "input2",
+      "argument": null,
+      "type": "data_collection",
+      "label": "Input Collection to order",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": [],
+        "dce": []
+      },
+      "tag": null
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output1",
+      "format": null,
+      "label": "${input1.name} (harmonized with ${input2.name})",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": null,
+        "collection_type_source": "input1",
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": []
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output2",
+      "format": null,
+      "label": "${input2.name} (harmonized with ${input1.name})",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": null,
+        "collection_type_source": "input2",
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": []
+      }
+    }
+  ],
+  "panel_section_id": "collection_operations",
+  "panel_section_name": "Collection Operations",
+  "form_style": "regular"
+}

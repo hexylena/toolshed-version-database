@@ -1,0 +1,137 @@
+{
+  "model_class": "ExpressionTool",
+  "id": "param_value_from_file",
+  "name": "Parse parameter value",
+  "version": "0.1.0",
+  "description": "from dataset",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input1",
+      "argument": null,
+      "type": "data",
+      "label": "Input file containing parameter to parse out of",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1915"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "param_type",
+      "argument": null,
+      "type": "select",
+      "label": "Select type of parameter to parse",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "text",
+      "options": [
+        [
+          "Text",
+          "text",
+          false
+        ],
+        [
+          "Integer",
+          "integer",
+          false
+        ],
+        [
+          "Float",
+          "float",
+          false
+        ],
+        [
+          "Boolean",
+          "boolean",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "remove_newlines",
+      "argument": null,
+      "type": "boolean",
+      "label": "Remove newlines ?",
+      "help": "Uncheck this only if newlines should be preserved in parameter",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": true,
+      "truevalue": "true",
+      "falsevalue": "false"
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolExpressionOutput",
+      "name": "text_param",
+      "format": "expression.json",
+      "label": "",
+      "hidden": false,
+      "output_type": "text"
+    },
+    {
+      "model_class": "ToolExpressionOutput",
+      "name": "integer_param",
+      "format": "expression.json",
+      "label": "",
+      "hidden": false,
+      "output_type": "integer"
+    },
+    {
+      "model_class": "ToolExpressionOutput",
+      "name": "float_param",
+      "format": "expression.json",
+      "label": "",
+      "hidden": false,
+      "output_type": "float"
+    },
+    {
+      "model_class": "ToolExpressionOutput",
+      "name": "boolean_param",
+      "format": "expression.json",
+      "label": "",
+      "hidden": false,
+      "output_type": "boolean"
+    }
+  ],
+  "panel_section_id": "expression_tools",
+  "panel_section_name": "Expression Tools",
+  "form_style": "special"
+}

@@ -1,0 +1,457 @@
+{
+  "model_class": "Tool",
+  "id": "proteomics_search_peptide_prophet_1",
+  "name": "Peptide Prophet",
+  "version": "1.4.4",
+  "description": "Calculate Peptide Prophet statistics on search results",
+  "labels": [
+    "beta"
+  ],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input_file",
+      "argument": null,
+      "type": "data",
+      "label": "Raw Search Results",
+      "help": "These files will typically be outputs from omssa or xtandem search tools",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "pepxml",
+        "raw_pepxml"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3655",
+          "format_3655"
+        ],
+        "edam_data": [
+          "data_2536",
+          "data_2536"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "database",
+      "argument": "--database",
+      "type": "data",
+      "label": "Specify the database to use for this search",
+      "help": "Can be a named protk database or the path to a fasta file",
+      "refresh_on_change": true,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "fasta"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "glyco",
+      "argument": "--glyco",
+      "type": "boolean",
+      "label": "Expect true positives to have a glycocapture motif",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--glyco",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "useicat",
+      "argument": "--useicat",
+      "type": "boolean",
+      "label": "Use icat information",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--useicat",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "phospho",
+      "argument": "--phospho",
+      "type": "boolean",
+      "label": "Use phospho information",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--phospho",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "usepi",
+      "argument": "--usepi",
+      "type": "boolean",
+      "label": "Use pI information",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--usepi",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "usert",
+      "argument": "--usert",
+      "type": "boolean",
+      "label": "Use hydrophobicity / RT information",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--usert",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "accurate_mass",
+      "argument": "--accurate-mass",
+      "type": "boolean",
+      "label": "Use accurate mass binning",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--accurate-mass",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "no_ntt",
+      "argument": "--no-ntt",
+      "type": "boolean",
+      "label": "Don't use NTT model",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--no-ntt",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "no_nmc",
+      "argument": "--no-nmc",
+      "type": "boolean",
+      "label": "Don't use NMC model",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--no-nmc",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "usegamma",
+      "argument": "--usegamma",
+      "type": "boolean",
+      "label": "Use Gamma distribution to model the negatives",
+      "help": "Applies only to X!Tandem results",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--usegamma",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "use_only_expect",
+      "argument": "--use-only-expect",
+      "type": "boolean",
+      "label": "Only use Expect Score as the discriminant",
+      "help": "Applies only to X!Tandem results.              Helpful for data with homologous top hits e.g. phospho or glyco",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--use-only-expect",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "force_fit",
+      "argument": null,
+      "type": "boolean",
+      "label": "Force fitting",
+      "help": "Bypasses automatic mixture model checks and forces fitting of a mixture model",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--force-fit",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "allow_alt_instruments",
+      "argument": null,
+      "type": "boolean",
+      "label": "Allow multiple instrument types",
+      "help": "Warning instead of exit with error if instrument types between runs is different",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "--allow-alt-instruments",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "maldi",
+      "argument": null,
+      "type": "boolean",
+      "label": "Maldi data",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "-l",
+      "falsevalue": ""
+    },
+    {
+      "model_class": "BooleanToolParameter",
+      "name": "usedecoys",
+      "argument": null,
+      "type": "boolean",
+      "label": "Use decoys to pin down the negative distribution",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": false,
+      "truevalue": "",
+      "falsevalue": "--no-decoy"
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "decoy_prefix_string",
+      "argument": null,
+      "type": "text",
+      "label": "Decoy Prefix String",
+      "help": "Prefix string for decoy ids",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "decoy_",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "experiment_label",
+      "argument": null,
+      "type": "text",
+      "label": "Experiment Label",
+      "help": "Used to commonly label all spectra from one experiment",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "Conditional",
+      "name": "p_threshold",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "file",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "p_thresh_file",
+              "argument": null,
+              "type": "data",
+              "label": "Probability Threshold from file",
+              "help": "These file containers one threshold value",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "txt"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_2330"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "input",
+          "inputs": [
+            {
+              "model_class": "FloatToolParameter",
+              "name": "p_thresh",
+              "argument": null,
+              "type": "float",
+              "label": "Probability Threshold",
+              "help": "Peptides scoring less than this value are discarded",
+              "refresh_on_change": false,
+              "min": 0.0,
+              "max": 1.0,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "0.05",
+              "area": false,
+              "datalist": []
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "source_select",
+        "argument": null,
+        "type": "select",
+        "label": "Probability Threshold from",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "input",
+        "options": [
+          [
+            "file",
+            "file",
+            false
+          ],
+          [
+            "user input",
+            "input",
+            true
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "peptideprophet_pepxml",
+      "label": "peptide_prophet.${input_file.display_name}.pep.xml",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "peptide_prophet_output.pep.xml",
+      "edam_format": "format_3655",
+      "edam_data": "data_2536",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "test_tools",
+  "panel_section_name": "Test Tools",
+  "form_style": "regular"
+}

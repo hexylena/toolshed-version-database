@@ -1,0 +1,529 @@
+{
+  "model_class": "Tool",
+  "id": "gbk_to_orf",
+  "name": "Extract sequences from GenBank",
+  "version": "0.1",
+  "description": "files (CDS, gene ...)",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "infile",
+      "argument": null,
+      "type": "data",
+      "label": "GenBank File",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "genbank"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1936"
+        ],
+        "edam_data": [
+          "data_0849"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "feature_opts",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "CDS",
+          "inputs": [
+            {
+              "model_class": "Conditional",
+              "name": "type_opts",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "prot",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "translationTable",
+                      "argument": null,
+                      "type": "select",
+                      "label": "NCBI Translation Table",
+                      "help": "See http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi for more information",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "1",
+                      "options": [
+                        [
+                          "The Standard Code",
+                          "1",
+                          false
+                        ],
+                        [
+                          "The Vertebrate Mitochondrial Code",
+                          "2",
+                          false
+                        ],
+                        [
+                          "The Yeast Mitochondrial Code",
+                          "3",
+                          false
+                        ],
+                        [
+                          "The Mold, Protozoan, and Coelenterate Mitochondrial Code and the Mycoplasma/Spiroplasma Code",
+                          "4",
+                          false
+                        ],
+                        [
+                          "The Invertebrate Mitochondrial Code",
+                          "5",
+                          false
+                        ],
+                        [
+                          "The Ciliate, Dasycladacean and Hexamita Nuclear Code",
+                          "6",
+                          false
+                        ],
+                        [
+                          "The Echinoderm and Flatworm Mitochondrial Code",
+                          "9",
+                          false
+                        ],
+                        [
+                          "The Euplotid Nuclear Code",
+                          "10",
+                          false
+                        ],
+                        [
+                          "The Bacterial, Archaeal and Plant Plastid Code",
+                          "11",
+                          false
+                        ],
+                        [
+                          "The Alternative Yeast Nuclear Code",
+                          "12",
+                          false
+                        ],
+                        [
+                          "The Ascidian Mitochondrial Code",
+                          "13",
+                          false
+                        ],
+                        [
+                          "The Alternative Flatworm Mitochondrial Code",
+                          "14",
+                          false
+                        ],
+                        [
+                          "Blepharisma Nuclear Code",
+                          "15",
+                          false
+                        ],
+                        [
+                          "Chlorophycean Mitochondrial Code",
+                          "16",
+                          false
+                        ],
+                        [
+                          "Trematode Mitochondrial Code",
+                          "21",
+                          false
+                        ],
+                        [
+                          "Scenedesmus obliquus mitochondrial Code",
+                          "22",
+                          false
+                        ],
+                        [
+                          "Thraustochytrium Mitochondrial Code",
+                          "23",
+                          false
+                        ],
+                        [
+                          "Pterobranchia mitochondrial code",
+                          "24",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    },
+                    {
+                      "model_class": "BooleanToolParameter",
+                      "name": "cds",
+                      "argument": null,
+                      "type": "boolean",
+                      "label": "Indicates this is a complete CDS",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": false,
+                      "truevalue": "--complete-cds",
+                      "falsevalue": ""
+                    },
+                    {
+                      "model_class": "BooleanToolParameter",
+                      "name": "to_stop",
+                      "argument": null,
+                      "type": "boolean",
+                      "label": "Quit on any stop codon",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": true,
+                      "truevalue": "--stop",
+                      "falsevalue": ""
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "nuc",
+                  "inputs": []
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "type_opts_selector",
+                "argument": null,
+                "type": "select",
+                "label": "output type",
+                "help": "",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "nuc",
+                "options": [
+                  [
+                    "nucleotides",
+                    "nuc",
+                    true
+                  ],
+                  [
+                    "amino acids",
+                    "prot",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "mRNA",
+          "inputs": [
+            {
+              "model_class": "Conditional",
+              "name": "type_opts",
+              "type": "conditional",
+              "cases": [
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "prot",
+                  "inputs": [
+                    {
+                      "model_class": "SelectToolParameter",
+                      "name": "translationTable",
+                      "argument": null,
+                      "type": "select",
+                      "label": "NCBI Translation Table",
+                      "help": "See http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi for more information",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": "1",
+                      "options": [
+                        [
+                          "The Standard Code",
+                          "1",
+                          false
+                        ],
+                        [
+                          "The Vertebrate Mitochondrial Code",
+                          "2",
+                          false
+                        ],
+                        [
+                          "The Yeast Mitochondrial Code",
+                          "3",
+                          false
+                        ],
+                        [
+                          "The Mold, Protozoan, and Coelenterate Mitochondrial Code and the Mycoplasma/Spiroplasma Code",
+                          "4",
+                          false
+                        ],
+                        [
+                          "The Invertebrate Mitochondrial Code",
+                          "5",
+                          false
+                        ],
+                        [
+                          "The Ciliate, Dasycladacean and Hexamita Nuclear Code",
+                          "6",
+                          false
+                        ],
+                        [
+                          "The Echinoderm and Flatworm Mitochondrial Code",
+                          "9",
+                          false
+                        ],
+                        [
+                          "The Euplotid Nuclear Code",
+                          "10",
+                          false
+                        ],
+                        [
+                          "The Bacterial, Archaeal and Plant Plastid Code",
+                          "11",
+                          false
+                        ],
+                        [
+                          "The Alternative Yeast Nuclear Code",
+                          "12",
+                          false
+                        ],
+                        [
+                          "The Ascidian Mitochondrial Code",
+                          "13",
+                          false
+                        ],
+                        [
+                          "The Alternative Flatworm Mitochondrial Code",
+                          "14",
+                          false
+                        ],
+                        [
+                          "Blepharisma Nuclear Code",
+                          "15",
+                          false
+                        ],
+                        [
+                          "Chlorophycean Mitochondrial Code",
+                          "16",
+                          false
+                        ],
+                        [
+                          "Trematode Mitochondrial Code",
+                          "21",
+                          false
+                        ],
+                        [
+                          "Scenedesmus obliquus mitochondrial Code",
+                          "22",
+                          false
+                        ],
+                        [
+                          "Thraustochytrium Mitochondrial Code",
+                          "23",
+                          false
+                        ],
+                        [
+                          "Pterobranchia mitochondrial code",
+                          "24",
+                          false
+                        ]
+                      ],
+                      "display": null,
+                      "multiple": false,
+                      "textable": false
+                    },
+                    {
+                      "model_class": "BooleanToolParameter",
+                      "name": "cds",
+                      "argument": null,
+                      "type": "boolean",
+                      "label": "Indicates this is a complete CDS",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": false,
+                      "truevalue": "--complete-cds",
+                      "falsevalue": ""
+                    },
+                    {
+                      "model_class": "BooleanToolParameter",
+                      "name": "to_stop",
+                      "argument": null,
+                      "type": "boolean",
+                      "label": "Quit on any stop codon",
+                      "help": "",
+                      "refresh_on_change": false,
+                      "optional": false,
+                      "hidden": false,
+                      "is_dynamic": false,
+                      "value": true,
+                      "truevalue": "--stop",
+                      "falsevalue": ""
+                    }
+                  ]
+                },
+                {
+                  "model_class": "ConditionalWhen",
+                  "value": "nuc",
+                  "inputs": []
+                }
+              ],
+              "test_param": {
+                "model_class": "SelectToolParameter",
+                "name": "type_opts_selector",
+                "argument": null,
+                "type": "select",
+                "label": "output type",
+                "help": "",
+                "refresh_on_change": true,
+                "optional": false,
+                "hidden": false,
+                "is_dynamic": false,
+                "value": "nuc",
+                "options": [
+                  [
+                    "nucleotides",
+                    "nuc",
+                    true
+                  ],
+                  [
+                    "amino acids",
+                    "prot",
+                    false
+                  ]
+                ],
+                "display": null,
+                "multiple": false,
+                "textable": false
+              }
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "gene",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "tRNA",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "exons",
+          "inputs": []
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "feature_opts_selector",
+        "argument": null,
+        "type": "select",
+        "label": "Feature to extract",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "CDS",
+        "options": [
+          [
+            "CDS",
+            "CDS",
+            false
+          ],
+          [
+            "gene",
+            "gene",
+            false
+          ],
+          [
+            "tRNA",
+            "tRNA",
+            false
+          ],
+          [
+            "mRNA",
+            "mRNA",
+            false
+          ],
+          [
+            "exon",
+            "exons",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "outfile",
+      "format": "fasta",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "test_tools",
+  "panel_section_name": "Test Tools",
+  "form_style": "regular"
+}

@@ -1,0 +1,202 @@
+{
+  "model_class": "Tool",
+  "id": "vcf_to_maf_customtrack1",
+  "name": "VCF to MAF Custom Track",
+  "version": "1.0.1",
+  "description": "for display at UCSC",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "TextToolParameter",
+      "name": "track_name",
+      "argument": null,
+      "type": "text",
+      "label": "Custom Track Name",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "Galaxy Custom Track",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "Conditional",
+      "name": "vcf_source_type",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "-p",
+          "inputs": [
+            {
+              "model_class": "Repeat",
+              "name": "vcf_file",
+              "type": "repeat",
+              "title": "VCF population file",
+              "help": null,
+              "default": 1,
+              "min": 1,
+              "max": "__Infinity__",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "vcf_input",
+                  "argument": null,
+                  "type": "data",
+                  "label": "VCF file",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "tabular"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_3475"
+                    ],
+                    "edam_data": [
+                      "data_0006"
+                    ]
+                  },
+                  "multiple": false,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                },
+                {
+                  "model_class": "TextToolParameter",
+                  "name": "population_name",
+                  "argument": null,
+                  "type": "text",
+                  "label": "Name for this population",
+                  "help": "",
+                  "refresh_on_change": false,
+                  "optional": true,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": "",
+                  "area": false,
+                  "datalist": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "-s",
+          "inputs": [
+            {
+              "model_class": "Repeat",
+              "name": "vcf_file",
+              "type": "repeat",
+              "title": "VCF sample file",
+              "help": null,
+              "default": 1,
+              "min": 1,
+              "max": "__Infinity__",
+              "inputs": [
+                {
+                  "model_class": "DataToolParameter",
+                  "name": "vcf_input",
+                  "argument": null,
+                  "type": "data",
+                  "label": "VCF file",
+                  "help": "",
+                  "refresh_on_change": true,
+                  "optional": false,
+                  "hidden": false,
+                  "is_dynamic": false,
+                  "value": null,
+                  "extensions": [
+                    "tabular"
+                  ],
+                  "edam": {
+                    "edam_formats": [
+                      "format_3475"
+                    ],
+                    "edam_data": [
+                      "data_0006"
+                    ]
+                  },
+                  "multiple": false,
+                  "options": {
+                    "dce": [],
+                    "ldda": [],
+                    "hda": [],
+                    "hdca": []
+                  },
+                  "tag": null
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "vcf_source",
+        "argument": null,
+        "type": "select",
+        "label": "VCF Source Source Type",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "-p",
+        "options": [
+          [
+            "Per Population (file)",
+            "-p",
+            true
+          ],
+          [
+            "Per Sample",
+            "-s",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "mafcustomtrack",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2330",
+      "edam_data": "data_0006",
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": "graph_display_data",
+  "panel_section_name": "Graph/Display Data",
+  "form_style": "regular"
+}

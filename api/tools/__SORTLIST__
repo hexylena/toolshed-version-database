@@ -1,0 +1,153 @@
+{
+  "model_class": "SortTool",
+  "id": "__SORTLIST__",
+  "name": "Sort collection",
+  "version": "1.0.0",
+  "description": "",
+  "labels": [],
+  "edam_operations": [
+    "operation_3802"
+  ],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataCollectionToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data_collection",
+      "label": "Input Collection",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": [],
+        "dce": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "sort_type",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "alpha",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "numeric",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "file",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "sort_file",
+              "argument": null,
+              "type": "data",
+              "label": "Select file that contains the new order of collection elements",
+              "help": "Lines in text file must match collection",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "txt"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_2330"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "sort_type",
+        "argument": null,
+        "type": "select",
+        "label": "Sort type",
+        "help": "All element identifiers must be present once.",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "alpha",
+        "options": [
+          [
+            "alphabetical",
+            "alpha",
+            false
+          ],
+          [
+            "numeric (non numeric characters are ignored)",
+            "numeric",
+            false
+          ],
+          [
+            "from file",
+            "file",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output",
+      "format": null,
+      "label": "${on_string} (sorted)",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": null,
+        "collection_type_source": "input",
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": []
+      }
+    }
+  ],
+  "panel_section_id": "collection_operations",
+  "panel_section_name": "Collection Operations",
+  "form_style": "regular"
+}

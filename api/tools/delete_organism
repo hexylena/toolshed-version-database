@@ -1,0 +1,301 @@
+{
+  "id": "delete_organism",
+  "panel_section_id": "f191ebcc-2443-4fd7-88a6-45a27167e0f3",
+  "outputs": [
+    {
+      "from_work_dir": null,
+      "format": "json",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "Process and Error Log",
+      "edam_format": "format_3464",
+      "model_class": "ToolOutput",
+      "name": "output",
+      "discover_datasets": [
+        {
+          "visible": true,
+          "directory": null,
+          "format": "tabular",
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "(?P<designation>.+)\\.txt",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "output_type": "data",
+      "parent": null
+    },
+    {
+      "from_work_dir": null,
+      "format": "gff3",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_1255",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "Annotations from Apollo",
+      "edam_format": "format_1975",
+      "model_class": "ToolOutput",
+      "name": "gff_out",
+      "discover_datasets": [],
+      "output_type": "data",
+      "parent": null
+    },
+    {
+      "from_work_dir": null,
+      "format": "fasta",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_2044",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "Peptide sequences from Apollo",
+      "edam_format": "format_1929",
+      "model_class": "ToolOutput",
+      "name": "fasta_pep",
+      "discover_datasets": [],
+      "output_type": "data",
+      "parent": null
+    },
+    {
+      "from_work_dir": null,
+      "format": "fasta",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_2044",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "CDS sequences from Apollo",
+      "edam_format": "format_1929",
+      "model_class": "ToolOutput",
+      "name": "fasta_cds",
+      "discover_datasets": [],
+      "output_type": "data",
+      "parent": null
+    },
+    {
+      "from_work_dir": null,
+      "format": "fasta",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_2044",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "cDNA sequences from Apollo",
+      "edam_format": "format_1929",
+      "model_class": "ToolOutput",
+      "name": "fasta_cdna",
+      "discover_datasets": [],
+      "output_type": "data",
+      "parent": null
+    },
+    {
+      "from_work_dir": null,
+      "format": "vcf",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "Sequence alterations from Apollo",
+      "edam_format": "format_3016",
+      "model_class": "ToolOutput",
+      "name": "vcf_out",
+      "discover_datasets": [],
+      "output_type": "data",
+      "parent": null
+    },
+    {
+      "from_work_dir": null,
+      "format": "json",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_0006",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "label": "Metadata from Apollo",
+      "edam_format": "format_3464",
+      "model_class": "ToolOutput",
+      "name": "json_out",
+      "discover_datasets": [],
+      "output_type": "data",
+      "parent": null
+    }
+  ],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "type": "conditional",
+      "name": "org_source",
+      "test_param": {
+        "optional": false,
+        "argument": null,
+        "options": [
+          [
+            "Select",
+            "select",
+            false
+          ],
+          [
+            "Direct Entry",
+            "direct",
+            false
+          ],
+          [
+            "Autodetect from Apollo JSON",
+            "auto_json",
+            false
+          ]
+        ],
+        "help": "",
+        "refresh_on_change": true,
+        "multiple": false,
+        "hidden": false,
+        "name": "source_select",
+        "display": null,
+        "model_class": "SelectToolParameter",
+        "textable": false,
+        "is_dynamic": false,
+        "type": "select",
+        "value": "select",
+        "label": "Organism Common Name Source"
+      },
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "select",
+          "inputs": [
+            {
+              "optional": true,
+              "argument": null,
+              "options": [],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": true,
+              "hidden": false,
+              "name": "org_select",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": true,
+              "type": "select",
+              "value": null,
+              "label": "Organism"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "direct",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "refresh_on_change": false,
+              "hidden": false,
+              "name": "org_raw",
+              "datalist": [],
+              "model_class": "TextToolParameter",
+              "area": false,
+              "is_dynamic": false,
+              "type": "text",
+              "value": "",
+              "label": "Organism Common Name"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "auto_json",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "edam": {
+                "edam_formats": [
+                  "format_3464"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "help": "Will only fetch first organism",
+              "refresh_on_change": true,
+              "multiple": false,
+              "extensions": [
+                "json"
+              ],
+              "hidden": false,
+              "options": {
+                "hdca": [],
+                "hda": []
+              },
+              "name": "org_file",
+              "model_class": "DataToolParameter",
+              "is_dynamic": false,
+              "type": "data",
+              "value": null,
+              "label": "Apollo Organism File"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "yes",
+      "help": "It will PERMANENTLY delete all of the features on this organism.",
+      "refresh_on_change": false,
+      "falsevalue": "",
+      "hidden": false,
+      "name": "ask_one",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "false",
+      "label": "Are you SURE you want to do this?"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "yes",
+      "help": "There's NO coming back from this.",
+      "refresh_on_change": false,
+      "falsevalue": "",
+      "hidden": false,
+      "name": "ask_two",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "false",
+      "label": "Are you really, really SURE you want to do this?"
+    }
+  ],
+  "version": "4.2.9",
+  "labels": [],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "Galaxy-Apollo Bridge",
+  "name": "Delete an Apollo record",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": ""
+}

@@ -1,0 +1,247 @@
+{
+  "model_class": "Tool",
+  "id": "Extract_features1",
+  "name": "Extract features",
+  "version": "1.0.0",
+  "description": "from GFF data",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input1",
+      "argument": null,
+      "type": "data",
+      "label": "Select GFF data",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "gff"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_2305"
+        ],
+        "edam_data": [
+          "data_1255"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "column_choice",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "0",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "feature",
+              "argument": null,
+              "type": "select",
+              "label": "Extract features",
+              "help": "Multi-select list - hold the appropriate key while clicking to select multiple columns",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [],
+              "display": null,
+              "multiple": true,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "1",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "feature",
+              "argument": null,
+              "type": "select",
+              "label": "Extract features",
+              "help": "Multi-select list - hold the appropriate key while clicking to select multiple columns",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [],
+              "display": null,
+              "multiple": true,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "2",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "feature",
+              "argument": null,
+              "type": "select",
+              "label": "Extract features",
+              "help": "Multi-select list - hold the appropriate key while clicking to select multiple columns",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [],
+              "display": null,
+              "multiple": true,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "6",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "feature",
+              "argument": null,
+              "type": "select",
+              "label": "Extract features",
+              "help": "Multi-select list - hold the appropriate key while clicking to select multiple columns",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [],
+              "display": null,
+              "multiple": true,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "7",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "feature",
+              "argument": null,
+              "type": "select",
+              "label": "Extract features",
+              "help": "Multi-select list - hold the appropriate key while clicking to select multiple columns",
+              "refresh_on_change": false,
+              "optional": true,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [],
+              "display": null,
+              "multiple": true,
+              "textable": false
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "col",
+        "argument": null,
+        "type": "select",
+        "label": "From",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "0",
+        "options": [
+          [
+            "Column 1 / Sequence name",
+            "0",
+            true
+          ],
+          [
+            "Column 2 / Source",
+            "1",
+            false
+          ],
+          [
+            "Column 3 / Feature",
+            "2",
+            false
+          ],
+          [
+            "Column 7 / Strand",
+            "6",
+            false
+          ],
+          [
+            "Column 8 / Frame",
+            "7",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "input",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "input1",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "filter_and_sort",
+  "panel_section_name": "Filter and Sort",
+  "form_style": "regular"
+}

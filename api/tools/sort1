@@ -1,0 +1,275 @@
+{
+  "model_class": "Tool",
+  "id": "sort1",
+  "name": "Sort",
+  "version": "1.2.0",
+  "description": "data in ascending or descending order",
+  "labels": [],
+  "edam_operations": [
+    "operation_3802"
+  ],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Sort Dataset",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "tabular"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "column",
+      "argument": null,
+      "type": "data_column",
+      "label": "on column",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": null,
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input",
+      "numerical": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "style",
+      "argument": null,
+      "type": "select",
+      "label": "with flavor",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "num",
+      "options": [
+        [
+          "Numerical sort",
+          "num",
+          false
+        ],
+        [
+          "General numeric sort",
+          "gennum",
+          false
+        ],
+        [
+          "Alphabetical sort",
+          "alpha",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "order",
+      "argument": null,
+      "type": "select",
+      "label": "everything in",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "DESC",
+      "options": [
+        [
+          "Descending order",
+          "DESC",
+          false
+        ],
+        [
+          "Ascending order",
+          "ASC",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "Repeat",
+      "name": "column_set",
+      "type": "repeat",
+      "title": "Column selection",
+      "help": null,
+      "default": 0,
+      "min": 0,
+      "max": "__Infinity__",
+      "inputs": [
+        {
+          "model_class": "ColumnListParameter",
+          "name": "other_column",
+          "argument": null,
+          "type": "data_column",
+          "label": "on column",
+          "help": "",
+          "refresh_on_change": false,
+          "optional": true,
+          "hidden": false,
+          "is_dynamic": true,
+          "value": null,
+          "options": [],
+          "display": null,
+          "multiple": false,
+          "textable": false,
+          "data_ref": "input",
+          "numerical": false
+        },
+        {
+          "model_class": "SelectToolParameter",
+          "name": "other_style",
+          "argument": null,
+          "type": "select",
+          "label": "with flavor",
+          "help": "",
+          "refresh_on_change": false,
+          "optional": false,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": "num",
+          "options": [
+            [
+              "Numerical sort",
+              "num",
+              false
+            ],
+            [
+              "General numeric sort",
+              "gennum",
+              false
+            ],
+            [
+              "Alphabetical sort",
+              "alpha",
+              false
+            ]
+          ],
+          "display": null,
+          "multiple": false,
+          "textable": false
+        },
+        {
+          "model_class": "SelectToolParameter",
+          "name": "other_order",
+          "argument": null,
+          "type": "select",
+          "label": "everything in",
+          "help": "",
+          "refresh_on_change": false,
+          "optional": false,
+          "hidden": false,
+          "is_dynamic": false,
+          "value": "DESC",
+          "options": [
+            [
+              "Descending order",
+              "DESC",
+              false
+            ],
+            [
+              "Ascending order",
+              "ASC",
+              false
+            ]
+          ],
+          "display": null,
+          "multiple": false,
+          "textable": false
+        }
+      ]
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "header_lines",
+      "argument": null,
+      "type": "integer",
+      "label": "Number of header lines to skip",
+      "help": "# characters are already considered as comments and kept",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0",
+      "area": false,
+      "datalist": []
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "data",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": "input",
+      "default_identifier_source": "None",
+      "metadata_source": "input",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1915",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "filter_and_sort",
+  "panel_section_name": "Filter and Sort",
+  "form_style": "regular"
+}

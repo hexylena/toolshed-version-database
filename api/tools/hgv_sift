@@ -1,0 +1,429 @@
+{
+  "model_class": "Tool",
+  "id": "hgv_sift",
+  "name": "SIFT",
+  "version": "1.0.0",
+  "description": "predictions of functional sites",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Dataset",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "tabular"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "chrom_col",
+      "argument": null,
+      "type": "data_column",
+      "label": "Column with chromosome",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": null,
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input",
+      "numerical": false
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "pos_col",
+      "argument": null,
+      "type": "data_column",
+      "label": "Column with position",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": null,
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input",
+      "numerical": true
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "base",
+      "argument": null,
+      "type": "select",
+      "label": "Position coordinates are",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "1",
+      "options": [
+        [
+          "one-based",
+          "1",
+          true
+        ],
+        [
+          "zero-based",
+          "0",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "allele_col",
+      "argument": null,
+      "type": "data_column",
+      "label": "Column with allele",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": null,
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input",
+      "numerical": false
+    },
+    {
+      "model_class": "Conditional",
+      "name": "strand_source",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "data_column",
+          "inputs": [
+            {
+              "model_class": "ColumnListParameter",
+              "name": "strand_col",
+              "argument": null,
+              "type": "data_column",
+              "label": "Column with strand",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [],
+              "display": null,
+              "multiple": false,
+              "textable": false,
+              "data_ref": "input",
+              "numerical": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "all_pos",
+          "inputs": [
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "strand_col",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": "+"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "all_neg",
+          "inputs": [
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "strand_col",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": "-"
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "strand_choice",
+        "argument": null,
+        "type": "select",
+        "label": "Strand info",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "data_column",
+        "options": [
+          [
+            "a column in the dataset",
+            "data_column",
+            true
+          ],
+          [
+            "all on sense/forward/+ strand",
+            "all_pos",
+            false
+          ],
+          [
+            "all on antisense/reverse/- strand",
+            "all_neg",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "Conditional",
+      "name": "comment_source",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "no",
+          "inputs": [
+            {
+              "model_class": "HiddenToolParameter",
+              "name": "comment_col",
+              "argument": null,
+              "type": "hidden",
+              "label": "",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": true,
+              "is_dynamic": false,
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "yes",
+          "inputs": [
+            {
+              "model_class": "ColumnListParameter",
+              "name": "comment_col",
+              "argument": null,
+              "type": "data_column",
+              "label": "Column with comment",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [],
+              "display": null,
+              "multiple": false,
+              "textable": false,
+              "data_ref": "input",
+              "numerical": false
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "comment_choice",
+        "argument": null,
+        "type": "select",
+        "label": "Include comment column",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "no",
+        "options": [
+          [
+            "no",
+            "no",
+            true
+          ],
+          [
+            "yes",
+            "yes",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "output_opts",
+      "argument": null,
+      "type": "select",
+      "label": "Include the following additional fields in the output",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "options": [
+        [
+          "Ensembl Gene ID",
+          "A",
+          false
+        ],
+        [
+          "Gene Name",
+          "B",
+          false
+        ],
+        [
+          "Gene Description",
+          "C",
+          false
+        ],
+        [
+          "Ensembl Protein Family ID",
+          "D",
+          false
+        ],
+        [
+          "Ensembl Protein Family Description",
+          "E",
+          false
+        ],
+        [
+          "Ensembl Transcript Status (Known / Novel)",
+          "F",
+          false
+        ],
+        [
+          "Protein Family Size",
+          "G",
+          false
+        ],
+        [
+          "Ka/Ks (Human-mouse)",
+          "H",
+          false
+        ],
+        [
+          "Ka/Ks (Human-macaque)",
+          "I",
+          false
+        ],
+        [
+          "OMIM Disease",
+          "J",
+          false
+        ],
+        [
+          "Allele Frequencies (All Hapmap Populations - weighted average)",
+          "K",
+          false
+        ],
+        [
+          "Allele Frequencies (CEU Hapmap population)",
+          "L",
+          false
+        ]
+      ],
+      "display": "checkboxes",
+      "multiple": true,
+      "textable": false
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "tabular",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "phenotype_association",
+  "panel_section_name": "Phenotype Association",
+  "form_style": "regular"
+}

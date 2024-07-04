@@ -1,0 +1,197 @@
+{
+  "model_class": "InteractiveTool",
+  "id": "interactive_tool_cellprofiler",
+  "name": "Run CellProfiler",
+  "version": "4.2.6+galaxy0",
+  "description": "interactive tool",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "infiles",
+      "argument": null,
+      "type": "data",
+      "label": "Images",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "jpg",
+        "png",
+        "tiff",
+        "bmp",
+        "gif",
+        "pcx",
+        "ppm",
+        "psd",
+        "pbm",
+        "pgm",
+        "eps"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3579",
+          "format_3603",
+          "format_3591",
+          "format_3592",
+          "format_3467",
+          "format_3595",
+          "format_3596",
+          "format_3597",
+          "format_3601",
+          "format_3602",
+          "format_3466"
+        ],
+        "edam_data": [
+          "data_2968",
+          "data_2968",
+          "data_2968",
+          "data_2968",
+          "data_2968",
+          "data_2968",
+          "data_2968",
+          "data_2968",
+          "data_2968",
+          "data_2968",
+          "data_2968"
+        ]
+      },
+      "multiple": true,
+      "min": null,
+      "max": null,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "input_type",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "new",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "existing",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "pipeline_file",
+              "argument": null,
+              "type": "data",
+              "label": "Existing CellProfiler pipeline",
+              "help": "",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "txt"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_2330"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "existing",
+        "argument": null,
+        "type": "select",
+        "label": "Do you have an existing pipeline?",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "new",
+        "options": [
+          [
+            "Start a new pipeline",
+            "new",
+            false
+          ],
+          [
+            "Modify an existing project",
+            "existing",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "cp_output",
+      "format": null,
+      "label": "CellProfiler output",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": null,
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "home/output",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)\\.(?P<ext>[^\\.]+)?",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    }
+  ],
+  "panel_section_id": "interactivetools",
+  "panel_section_name": "Interactive tools",
+  "form_style": "regular"
+}

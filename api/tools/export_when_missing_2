@@ -1,0 +1,326 @@
+{
+  "id": "export_when_missing_2",
+  "panel_section_id": "f191ebcc-2443-4fd7-88a6-45a27167e0f3",
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "type": "conditional",
+      "name": "org_source",
+      "test_param": {
+        "optional": false,
+        "argument": null,
+        "options": [
+          [
+            "Select",
+            "select",
+            false
+          ],
+          [
+            "Direct Entry",
+            "direct",
+            false
+          ],
+          [
+            "Autodetect from Apollo JSON",
+            "auto_json",
+            false
+          ]
+        ],
+        "help": "",
+        "refresh_on_change": true,
+        "multiple": false,
+        "hidden": false,
+        "name": "source_select",
+        "display": null,
+        "model_class": "SelectToolParameter",
+        "textable": false,
+        "is_dynamic": false,
+        "type": "select",
+        "value": "select",
+        "label": "Organism Common Name Source"
+      },
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "select",
+          "inputs": [
+            {
+              "optional": true,
+              "argument": null,
+              "options": [],
+              "help": "",
+              "refresh_on_change": false,
+              "multiple": true,
+              "hidden": false,
+              "name": "org_select",
+              "display": null,
+              "model_class": "SelectToolParameter",
+              "textable": false,
+              "is_dynamic": true,
+              "type": "select",
+              "value": null,
+              "label": "Organism"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "direct",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "help": "",
+              "refresh_on_change": false,
+              "hidden": false,
+              "name": "org_raw",
+              "datalist": [],
+              "model_class": "TextToolParameter",
+              "area": false,
+              "is_dynamic": false,
+              "type": "text",
+              "value": "",
+              "label": "Organism Common Name"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "auto_json",
+          "inputs": [
+            {
+              "optional": false,
+              "argument": null,
+              "edam": {
+                "edam_formats": [
+                  "format_3464"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "help": "Will only fetch first organism",
+              "refresh_on_change": true,
+              "multiple": false,
+              "extensions": [
+                "json"
+              ],
+              "hidden": false,
+              "options": {
+                "hdca": [],
+                "hda": []
+              },
+              "name": "org_file",
+              "model_class": "DataToolParameter",
+              "is_dynamic": false,
+              "type": "data",
+              "value": null,
+              "label": "Apollo Organism File"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "model_class": "Conditional",
+      "type": "conditional",
+      "name": "cn_source",
+      "test_param": {
+        "optional": false,
+        "argument": null,
+        "options": [
+          [
+            "All Refseqs",
+            "all",
+            false
+          ],
+          [
+            "Direct Entry",
+            "direct",
+            false
+          ],
+          [
+            "Autodetect from Fasta",
+            "auto",
+            false
+          ]
+        ],
+        "help": "",
+        "refresh_on_change": true,
+        "multiple": false,
+        "hidden": false,
+        "name": "source_select",
+        "display": null,
+        "model_class": "SelectToolParameter",
+        "textable": false,
+        "is_dynamic": false,
+        "type": "select",
+        "value": "all",
+        "label": "Organism Sequence(s) Source"
+      },
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "all",
+          "inputs": []
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "auto",
+          "inputs": [
+            {
+              "optional": true,
+              "argument": null,
+              "edam": {
+                "edam_formats": [
+                  "format_1929"
+                ],
+                "edam_data": [
+                  "data_2044"
+                ]
+              },
+              "help": "",
+              "refresh_on_change": true,
+              "multiple": false,
+              "extensions": [
+                "fasta"
+              ],
+              "hidden": false,
+              "options": {
+                "hdca": [],
+                "hda": []
+              },
+              "name": "cn_file",
+              "model_class": "DataToolParameter",
+              "is_dynamic": false,
+              "type": "data",
+              "value": null,
+              "label": "Reference sequence(s)"
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "direct",
+          "inputs": [
+            {
+              "min": 0,
+              "title": "Reference Sequences",
+              "name": "refseqs",
+              "help": "These are used to identify sequences within an organism that you wish to extract",
+              "inputs": [
+                {
+                  "optional": false,
+                  "argument": null,
+                  "help": "",
+                  "refresh_on_change": false,
+                  "hidden": false,
+                  "name": "refseq",
+                  "datalist": [],
+                  "model_class": "TextToolParameter",
+                  "area": false,
+                  "is_dynamic": false,
+                  "type": "text",
+                  "value": "",
+                  "label": "Reference sequence(s)"
+                }
+              ],
+              "model_class": "Repeat",
+              "max": "__Infinity__",
+              "type": "repeat",
+              "default": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "truevalue": "yes",
+      "help": "",
+      "refresh_on_change": false,
+      "falsevalue": "",
+      "hidden": false,
+      "name": "get_gff",
+      "model_class": "BooleanToolParameter",
+      "is_dynamic": false,
+      "type": "boolean",
+      "value": "true",
+      "label": "Retrieve GFF Annotations"
+    },
+    {
+      "optional": false,
+      "argument": null,
+      "edam": {
+        "edam_formats": [
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "help": "",
+      "refresh_on_change": true,
+      "multiple": false,
+      "extensions": [
+        "fasta"
+      ],
+      "hidden": false,
+      "options": {
+        "hdca": [],
+        "hda": []
+      },
+      "name": "fasta_file",
+      "model_class": "DataToolParameter",
+      "is_dynamic": false,
+      "type": "data",
+      "value": null,
+      "label": "Genome FASTA matching the organism you are fetching"
+    }
+  ],
+  "version": "4.2.9",
+  "outputs": [
+    {
+      "from_work_dir": null,
+      "format": "gff3",
+      "default_identifier_source": "None",
+      "format_source": null,
+      "edam_data": "data_1255",
+      "hidden": false,
+      "metadata_source": "",
+      "count": 1,
+      "discover_datasets": [
+        {
+          "visible": false,
+          "directory": null,
+          "format": null,
+          "dbkey": "__input__",
+          "assign_primary_output": false,
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "recurse": false,
+          "sort_comp": "lexical",
+          "discover_via": "pattern",
+          "sort_key": "filename"
+        }
+      ],
+      "edam_format": "format_1975",
+      "model_class": "ToolOutput",
+      "name": "gff_out",
+      "output_type": "data",
+      "parent": null,
+      "label": "Annotations and Sequence from Apollo"
+    }
+  ],
+  "is_workflow_compatible": true,
+  "hidden": "",
+  "panel_section_name": "Galaxy-Apollo Bridge",
+  "name": "Retrieve Data Fix",
+  "form_style": "regular",
+  "edam_operations": [],
+  "model_class": "Tool",
+  "edam_topics": [],
+  "xrefs": [],
+  "description": "from Apollo into Galaxy when missing data",
+  "labels": []
+}

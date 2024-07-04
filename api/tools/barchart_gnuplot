@@ -1,0 +1,280 @@
+{
+  "model_class": "Tool",
+  "id": "barchart_gnuplot",
+  "name": "Bar chart",
+  "version": "1.0.0",
+  "description": "for multiple columns",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Dataset",
+      "help": "Dataset missing? See TIP below",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "tabular"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "xtic",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "Yes",
+          "inputs": [
+            {
+              "model_class": "ColumnListParameter",
+              "name": "xticColumn",
+              "argument": null,
+              "type": "data_column",
+              "label": "Use this column for X Tick labels",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": null,
+              "options": [],
+              "display": null,
+              "multiple": false,
+              "textable": false,
+              "data_ref": "input",
+              "numerical": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "No",
+          "inputs": []
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "userSpecified",
+        "argument": null,
+        "type": "select",
+        "label": "Use X Tick labels?",
+        "help": "see example below",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "Yes",
+        "options": [
+          [
+            "Yes",
+            "Yes",
+            false
+          ],
+          [
+            "No",
+            "No",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "colList",
+      "argument": null,
+      "type": "data_column",
+      "label": "Numerical columns",
+      "help": "Multi-select list - hold the appropriate key while clicking to select multiple columns",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": null,
+      "options": [],
+      "display": null,
+      "multiple": true,
+      "textable": false,
+      "data_ref": "input",
+      "numerical": true
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "title",
+      "argument": null,
+      "type": "text",
+      "label": "Plot title",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "Bar Chart",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "ylabel",
+      "argument": null,
+      "type": "text",
+      "label": "Label for Y axis",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": true,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "V1",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "ymin",
+      "argument": null,
+      "type": "integer",
+      "label": "Minimal value on Y axis",
+      "help": "set to 0 for autoscaling",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "ymax",
+      "argument": null,
+      "type": "integer",
+      "label": "Maximal value on Y axis",
+      "help": "set to 0 for autoscaling",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "pdf_size",
+      "argument": null,
+      "type": "select",
+      "label": "Choose chart size (pixels)",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "800,600",
+      "options": [
+        [
+          "Normal: 800 by 600",
+          "800,600",
+          false
+        ],
+        [
+          "Small: 640 by 480",
+          "640,480",
+          false
+        ],
+        [
+          "Large: 1480 by 800",
+          "1480,800",
+          false
+        ],
+        [
+          "Normal Flipped: 600 by 800",
+          "600,800",
+          false
+        ],
+        [
+          "Small Flipped: 480 by 640",
+          "480,640",
+          false
+        ],
+        [
+          "Large Flipped: 800 by 1480",
+          "800,1480",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "png",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3603",
+      "edam_data": "data_2968",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "graph_display_data",
+  "panel_section_name": "Graph/Display Data",
+  "form_style": "regular"
+}

@@ -1,0 +1,147 @@
+{
+  "model_class": "Tool",
+  "id": "bgchem_fragment_merger",
+  "name": "Merging",
+  "version": "0.1",
+  "description": "fragmented molecules",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "infile",
+      "argument": null,
+      "type": "data",
+      "label": "Input file",
+      "help": "Dataset missing? See TIP below",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "sdf",
+        "smi",
+        "mol",
+        "inchi",
+        "cml"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_2330",
+          "format_3475",
+          "format_2330",
+          "format_3475",
+          "format_2332"
+        ],
+        "edam_data": [
+          "data_0006",
+          "data_0006",
+          "data_0006",
+          "data_0006",
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "molwt_cutoff",
+      "argument": null,
+      "type": "integer",
+      "label": "Maximum molecular weight of a generated compound",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "500",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "iteration_depth",
+      "argument": null,
+      "type": "integer",
+      "label": "The maximum of iteration depth of a fragment",
+      "help": "0 means the iteration depth will be calaculated from the sticky ends from each molecule.",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "1",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "repeats",
+      "argument": null,
+      "type": "integer",
+      "label": "Number of repeats",
+      "help": "Number of repeats all new created fragments should be merged against the inital ones.",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "1",
+      "area": false,
+      "datalist": []
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "outfile",
+      "format": "smi",
+      "label": "Fragment merging on ${on_string}",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "chemicaltoolbox",
+  "panel_section_name": "ChemicalToolBox",
+  "form_style": "regular"
+}

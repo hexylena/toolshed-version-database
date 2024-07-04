@@ -1,0 +1,366 @@
+{
+  "model_class": "Tool",
+  "id": "blast_ESTs_wheat_pan",
+  "name": "Extract FASTA from coding sequences in wheat pan genomes",
+  "version": "0.1",
+  "description": "using BLAST",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "in_fasta",
+      "argument": null,
+      "type": "data",
+      "label": "Input file in FASTA format",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "fasta"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_1929"
+        ],
+        "edam_data": [
+          "data_2044"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "Conditional",
+      "name": "db_opts",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "nucl",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "database",
+              "argument": null,
+              "type": "select",
+              "label": "Nucleotide BLAST database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "Weebill",
+              "options": [
+                [
+                  "Wheat cv. 'Weebill 1' scaffolds ",
+                  "Weebill",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Arina Lrfor' gene projection CDS (Jul 2019)",
+                  "Arina_gp_cds",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Chinese spring' gene projection CDS (Jul 2019)",
+                  "SY Mattis_gp_cds",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Jagger'  gene projection CDS (Jul 2019)",
+                  "Jagger_gp_cds",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Julius' gene projection CDS (Jul 2019)",
+                  "Julius_gp_cds",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Longreach Lancer' gene projection CDS (Jul 2019)",
+                  "Lancer_gp_cds",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Landmark' gene projection CDS (Jul 2019)",
+                  "Landmark_gp_cds",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Mace' gene projection CDS (Jul 2019)",
+                  "Mace_gp_cds",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Norin61' gene projection CDS (Jul 2019)",
+                  "Norin61_gp_cds",
+                  false
+                ],
+                [
+                  "Triticum spelta accession PI:190962 gene projection CDS (Jul 2019)",
+                  "Spelt_gp_cds",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Stanley' gene projection CDS (Jul 2019)",
+                  "Stanley_gp_cds",
+                  false
+                ],
+                [
+                  "Wheat cv. 'SY Mattis' gene projection CDS (Jul 2019)",
+                  "SY Mattis_gp_cds",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Robigus' scaffolds (2020)",
+                  "Robigus",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Paragon' scaffolds (2020)",
+                  "Paragon",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Clair' scaffolds (2020)",
+                  "Clair",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Cadenza' scaffolds (2020)",
+                  "Cadenza",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "prot",
+          "inputs": [
+            {
+              "model_class": "SelectToolParameter",
+              "name": "p_database",
+              "argument": null,
+              "type": "select",
+              "label": "Protein BLAST database",
+              "help": "",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": true,
+              "value": "Arina_gp_pep",
+              "options": [
+                [
+                  "Wheat cv. 'Arina Lrfor' gene projection proteins (Jul 2019)",
+                  "Arina_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Chinese spring' gene projection proteins (Jul 2019)",
+                  "SY Mattis_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Jagger'  gene projection proteins (Jul 2019)",
+                  "Jagger_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Julius' gene projection proteins (Jul 2019)",
+                  "Julius_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Longreach Lancer' gene projection proteins (Jul 2019)",
+                  "Lancer_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Landmark' gene projection proteins (Jul 2019)",
+                  "Landmark_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Mace' gene projection proteins (Jul 2019)",
+                  "Mace_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Norin61' gene projection proteins (Jul 2019)",
+                  "Norin61_gp_pep",
+                  false
+                ],
+                [
+                  "Triticum spelta accession PI:190962 gene projection proteins (Jul 2019)",
+                  "Spelt_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'Stanley' gene projection proteins (Jul 2019)",
+                  "Stanley_gp_pep",
+                  false
+                ],
+                [
+                  "Wheat cv. 'SY Mattis' gene projection proteins (Jul 2019)",
+                  "SY Mattis_gp_pep",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "db_type",
+        "argument": null,
+        "type": "select",
+        "label": "Type of BLAST database",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "nucl",
+        "options": [
+          [
+            "Nucleotide",
+            "nucl",
+            true
+          ],
+          [
+            "Protein",
+            "prot",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "identity",
+      "argument": null,
+      "type": "integer",
+      "label": "Percental Identity Cut-off",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "80",
+      "area": false,
+      "datalist": []
+    },
+    {
+      "model_class": "IntegerToolParameter",
+      "name": "max_hit",
+      "argument": null,
+      "type": "integer",
+      "label": "Maximum number of hits to show",
+      "help": "",
+      "refresh_on_change": false,
+      "min": null,
+      "max": null,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "20",
+      "area": false,
+      "datalist": []
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "output",
+      "format": "fasta",
+      "label": "${tool.name} on ${on_string}: FASTA sequences",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "out_tab",
+      "format": "tabular",
+      "label": "${tool.name} on ${on_string}: BLAST results",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_3475",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "blast_wheat_pan",
+  "panel_section_name": "Blast wheat pan-genome",
+  "form_style": "regular"
+}

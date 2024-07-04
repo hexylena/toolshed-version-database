@@ -1,0 +1,97 @@
+{
+  "model_class": "Tool",
+  "id": "gff_filter_by_attribute",
+  "name": "Filter GFF data by attribute",
+  "version": "0.2",
+  "description": "using simple expressions",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Filter",
+      "help": "Dataset missing? See TIP below.",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "gff"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_2305"
+        ],
+        "edam_data": [
+          "data_1255"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "TextToolParameter",
+      "name": "cond",
+      "argument": null,
+      "type": "text",
+      "label": "With following condition",
+      "help": "Double equal signs, ==, must be used as shown above. To filter for an arbitrary string, use the Select tool.",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "gene_id=='uc002loc.1'",
+      "area": false,
+      "datalist": []
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "input",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "input",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "filter_and_sort",
+  "panel_section_name": "Filter and Sort",
+  "form_style": "regular"
+}

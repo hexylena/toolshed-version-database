@@ -1,0 +1,210 @@
+{
+  "model_class": "Tool",
+  "id": "fgenesh_get_proteins",
+  "name": "FGENESH get protein",
+  "version": "1.0.0+galaxy0",
+  "description": "sequences using rensn3 files",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "Conditional",
+      "name": "input",
+      "type": "conditional",
+      "cases": [
+        {
+          "model_class": "ConditionalWhen",
+          "value": "single",
+          "inputs": [
+            {
+              "model_class": "DataToolParameter",
+              "name": "resn3",
+              "argument": null,
+              "type": "data",
+              "label": "Input resn3 file",
+              "help": "single resn3 files with predictions in Fgenesh/Fgenesh++ format",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "extensions": [
+                "txt"
+              ],
+              "edam": {
+                "edam_formats": [
+                  "format_2330"
+                ],
+                "edam_data": [
+                  "data_0006"
+                ]
+              },
+              "multiple": false,
+              "options": {
+                "dce": [],
+                "ldda": [],
+                "hda": [],
+                "hdca": []
+              },
+              "tag": null
+            },
+            {
+              "model_class": "SelectToolParameter",
+              "name": "fix_id_type",
+              "argument": null,
+              "type": "select",
+              "label": "fix header id in the output fasta file",
+              "help": "Default: sequence name",
+              "refresh_on_change": false,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": "seq_No",
+              "options": [
+                [
+                  "Sequence No",
+                  "seq_No",
+                  true
+                ],
+                [
+                  "Sequence Count",
+                  "seq_count",
+                  false
+                ],
+                [
+                  "Sequence Name",
+                  "seq_name",
+                  false
+                ]
+              ],
+              "display": null,
+              "multiple": false,
+              "textable": false
+            }
+          ]
+        },
+        {
+          "model_class": "ConditionalWhen",
+          "value": "multiple",
+          "inputs": [
+            {
+              "model_class": "DataCollectionToolParameter",
+              "name": "resn3_collection",
+              "argument": null,
+              "type": "data_collection",
+              "label": "Input resn3 file",
+              "help": "list of files with predictions in Fgenesh/Fgenesh++ format",
+              "refresh_on_change": true,
+              "optional": false,
+              "hidden": false,
+              "is_dynamic": false,
+              "value": null,
+              "collection_types": [
+                "list"
+              ],
+              "extensions": [
+                "txt"
+              ],
+              "multiple": false,
+              "options": {
+                "hda": [],
+                "hdca": [],
+                "dce": []
+              },
+              "tag": null
+            }
+          ]
+        }
+      ],
+      "test_param": {
+        "model_class": "SelectToolParameter",
+        "name": "selector",
+        "argument": null,
+        "type": "select",
+        "label": "Input data type for extracting proten sequences. default: single",
+        "help": "",
+        "refresh_on_change": true,
+        "optional": false,
+        "hidden": false,
+        "is_dynamic": false,
+        "value": "single",
+        "options": [
+          [
+            "single",
+            "single",
+            false
+          ],
+          [
+            "multiple",
+            "multiple",
+            false
+          ]
+        ],
+        "display": null,
+        "multiple": false,
+        "textable": false
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "output_protein_sequences",
+      "format": null,
+      "label": "${tool.name} on ${on_string}: protein sequences",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "fasta",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "output_dir",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*).fa$",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "output_prot_file",
+      "format": "fasta",
+      "label": "${tool.name} on ${on_string}: protein sequence",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_1929",
+      "edam_data": "data_2044",
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": "local_tools",
+  "panel_section_name": "Local Tools",
+  "form_style": "regular"
+}

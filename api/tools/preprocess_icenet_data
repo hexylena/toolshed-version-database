@@ -1,0 +1,901 @@
+{
+  "model_class": "Tool",
+  "id": "preprocess_icenet_data",
+  "name": "Preprocess Icenet Data",
+  "version": "0.1.0+galaxy0",
+  "description": "for regridding and normalizing icenet data",
+  "labels": [
+    "alpha"
+  ],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataCollectionToolParameter",
+      "name": "climatologies",
+      "argument": null,
+      "type": "data_collection",
+      "label": "Calculated climatologies for ERA5 variables from 1980 - 2011",
+      "help": "These files are provided in the Data Library and are used to calculate the anomalies of the ERA5 variables",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "data"
+      ],
+      "multiple": false,
+      "options": {
+        "hda": [],
+        "hdca": [],
+        "dce": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "siconca_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged OSI-SAF sea ice concentration data",
+      "help": "preceding 35 years of the forecast initialization year are needed in order to calculate the linear trend data, these can be generated with the Concatenate Icenet Data Tool and the sea ice concentration files from the Data Library",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "tas_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged ERA5 2m temperature data",
+      "help": "preceding 3 months of the forecast initialization month are needed for optimal results, can be downloaded from the Climate Data Store https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "ta500_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged ERA5 pressure level 500 temperature data",
+      "help": "preceding 3 months of the forecast initialization month are needed for optimal results, can be downloaded from the Climate Data Store https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels-monthly-means?tab=overview",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "tos_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged ERA5 sea surface temperature data",
+      "help": "preceding 3 months of the forecast initialization month are needed for optimal results, can be downloaded from the Climate Data Store https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "rsds_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged ERA5 surface solar radiation downwards data",
+      "help": "preceding 3 months of the forecast initialization month are needed for optimal results, can be downloaded from the Climate Data Store https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "rsus_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged ERA5 surface net solar radiation data",
+      "help": "preceding 3 months of the forecast initialization month are needed for optimal results, can be downloaded from the Climate Data Store https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "psl_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged ERA5 mean sea level pressure data",
+      "help": "preceding 3 months of the forecast initialization month are needed for optimal results, can be downloaded from the Climate Data Store https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels-monthly-means?tab=overview",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "zg500_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged pressure level 500 geopotential data",
+      "help": "preceding 3 months of the forecast initialization month are needed for optimal results, can be downloaded from the Climate Data Store https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels-monthly-means?tab=overview",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "zg250_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged ERA5 pressure level 250 geopotential data",
+      "help": "preceding 3 months of the forecast initialization month are needed for optimal results, can be downloaded from the Climate Data Store https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels-monthly-means?tab=overview",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "ua10_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged ERA5 pressure level 10 u component of wind data",
+      "help": "preceding 3 months of the forecast initialization month are needed for optimal results, can be downloaded from the Climate Data Store https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels-monthly-means?tab=overview",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "uas_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged ERA5 10m u component of wind data",
+      "help": "preceding month of the forecast initialization month is needed for optimal results, can be downloaded from the Climate Data Store https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "DataToolParameter",
+      "name": "vas_file",
+      "argument": null,
+      "type": "data",
+      "label": "Monthly averaged ERA5 10m v component of wind data",
+      "help": "preceding month of the forecast initialization month is needed for optimal results, can be downloaded from the Climate Data Store https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "netcdf"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3650"
+        ],
+        "edam_data": [
+          "data_0943"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "siconca_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/siconca/abs",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "linear_trend_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/siconca/linear_trend",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "tas_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/tas/anom",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "ta500_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/ta500/anom",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "tos_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/tos/anom",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "rsds_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/rsds/anom",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "rsus_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/rsus/anom",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "psl_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/psl/anom",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "zg500_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/zg500/anom",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "zg250_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/zg250/anom",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "ua10_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/ua10/abs",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "uas_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/uas/abs",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutputCollection",
+      "name": "vas_dataset",
+      "format": null,
+      "label": "",
+      "hidden": false,
+      "output_type": "collection",
+      "default_format": "data",
+      "default_format_source": null,
+      "default_metadata_source": null,
+      "inherit_format": false,
+      "inherit_metadata": false,
+      "structure": {
+        "collection_type": "list",
+        "collection_type_source": null,
+        "collection_type_from_rules": null,
+        "structured_like": null,
+        "discover_datasets": [
+          {
+            "discover_via": "pattern",
+            "dbkey": "__input__",
+            "format": "binary",
+            "visible": false,
+            "assign_primary_output": false,
+            "directory": "data/network_datasets/dataset1/obs/vas/abs",
+            "recurse": false,
+            "match_relative_path": false,
+            "sort_key": "filename",
+            "sort_comp": "lexical",
+            "pattern": "(?P<name>.*)",
+            "sort_by": "filename"
+          }
+        ]
+      }
+    },
+    {
+      "model_class": "ToolOutput",
+      "name": "siconca_EASE_file",
+      "format": "netcdf",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": "data/obs/siconca_EASE.nc",
+      "edam_format": "format_3650",
+      "edam_data": "data_0943",
+      "discover_datasets": []
+    }
+  ],
+  "panel_section_id": "test_tools",
+  "panel_section_name": "Test Tools",
+  "form_style": "regular"
+}

@@ -1,0 +1,209 @@
+{
+  "model_class": "Tool",
+  "id": "hgv_linkToGProfile",
+  "name": "g:Profiler",
+  "version": "1.0.0",
+  "description": "tools for functional profiling of gene lists",
+  "labels": [],
+  "edam_operations": [],
+  "edam_topics": [],
+  "hidden": "",
+  "is_workflow_compatible": true,
+  "xrefs": [],
+  "inputs": [
+    {
+      "model_class": "DataToolParameter",
+      "name": "input",
+      "argument": null,
+      "type": "data",
+      "label": "Dataset",
+      "help": "",
+      "refresh_on_change": true,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": null,
+      "extensions": [
+        "tabular"
+      ],
+      "edam": {
+        "edam_formats": [
+          "format_3475"
+        ],
+        "edam_data": [
+          "data_0006"
+        ]
+      },
+      "multiple": false,
+      "options": {
+        "dce": [],
+        "ldda": [],
+        "hda": [],
+        "hdca": []
+      },
+      "tag": null
+    },
+    {
+      "model_class": "ColumnListParameter",
+      "name": "genes",
+      "argument": null,
+      "type": "data_column",
+      "label": "Column with identifiers",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": true,
+      "value": null,
+      "options": [],
+      "display": null,
+      "multiple": false,
+      "textable": false,
+      "data_ref": "input",
+      "numerical": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "region",
+      "argument": null,
+      "type": "select",
+      "label": "Or use genomic intervals",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "0",
+      "options": [
+        [
+          "No",
+          "0",
+          true
+        ],
+        [
+          "Yes",
+          "1",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    },
+    {
+      "model_class": "SelectToolParameter",
+      "name": "type",
+      "argument": null,
+      "type": "select",
+      "label": "Identifier type if numeric",
+      "help": "",
+      "refresh_on_change": false,
+      "optional": false,
+      "hidden": false,
+      "is_dynamic": false,
+      "value": "ENTREZGENE_ACC",
+      "options": [
+        [
+          "Entrez Gene Acc",
+          "ENTREZGENE_ACC",
+          true
+        ],
+        [
+          "OMIM Morbid Map",
+          "MIM_MORBID",
+          false
+        ],
+        [
+          "OMIM Gene ID",
+          "MIM_GENE",
+          false
+        ],
+        [
+          "AFFY_HUGENE_1_0_ST_V1",
+          "AFFY_HUGENE_1_0_ST_V1",
+          false
+        ],
+        [
+          "HGNC_AUTOMATIC_GENE_ACC",
+          "HGNC_AUTOMATIC_GENE_ACC",
+          false
+        ],
+        [
+          "HGNC_MB001_ACC",
+          "HGNC_MB001_ACC",
+          false
+        ],
+        [
+          "HGNC_ACC",
+          "HGNC_ACC",
+          false
+        ],
+        [
+          "WIKIGENE_ACC",
+          "WIKIGENE_ACC",
+          false
+        ],
+        [
+          "DBASS5_ACC",
+          "DBASS5_ACC",
+          false
+        ],
+        [
+          "ILLUMINA_HUMANWG_6_V1",
+          "ILLUMINA_HUMANWG_6_V1",
+          false
+        ],
+        [
+          "AFFY_HUEX_1_0_ST_V2",
+          "AFFY_HUEX_1_0_ST_V2",
+          false
+        ],
+        [
+          "DBASS3_ACC",
+          "DBASS3_ACC",
+          false
+        ]
+      ],
+      "display": null,
+      "multiple": false,
+      "textable": false
+    }
+  ],
+  "outputs": [
+    {
+      "model_class": "ToolOutput",
+      "name": "out_file1",
+      "format": "html",
+      "label": "",
+      "hidden": false,
+      "output_type": "data",
+      "format_source": null,
+      "default_identifier_source": "None",
+      "metadata_source": "",
+      "parent": null,
+      "count": 1,
+      "from_work_dir": null,
+      "edam_format": "format_2331",
+      "edam_data": "data_0006",
+      "discover_datasets": [
+        {
+          "discover_via": "pattern",
+          "dbkey": "__input__",
+          "format": null,
+          "visible": false,
+          "assign_primary_output": false,
+          "directory": null,
+          "recurse": false,
+          "match_relative_path": false,
+          "sort_key": "filename",
+          "sort_comp": "lexical",
+          "pattern": "primary_DATASET_ID_(?P<designation>[^_]+)_(?P<visible>[^_]+)_(?P<ext>[^_]+)(_(?P<dbkey>[^_]+))?",
+          "sort_by": "filename"
+        }
+      ]
+    }
+  ],
+  "panel_section_id": "phenotype_association",
+  "panel_section_name": "Phenotype Association",
+  "form_style": "regular"
+}
