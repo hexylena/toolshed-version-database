@@ -10,6 +10,7 @@ File | Purpose
 [tool-version-database.tsv](tool-version-database.tsv) | Full table of (repo name, repo owner, repo revision, tool name, tool guid, version) (yes guid is a bit redundant.)
 [tool-meta.tsv](tool-meta.tsv) | Table of (guid, name, description, edam operations, edam topics)
 [tool-meta.json](tool-meta.json) | Same but json
+api/tools/* | The result of `/api/tools/*?io_details=True&link_details=False` for the first server that would answer. Will be replaced by https://github.com/galaxyproject/galaxy/pull/18524
 
 ## LICENSE
 
