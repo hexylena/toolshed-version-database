@@ -10,7 +10,9 @@ File | Purpose
 [tool-version-database.tsv](tool-version-database.tsv) | Full table of (repo name, repo owner, repo revision, tool name, tool guid, version) (yes guid is a bit redundant.)
 [tool-meta.tsv](tool-meta.tsv) | Table of (guid, name, description, edam operations, edam topics)
 [tool-meta.json](tool-meta.json) | Same but json
-api/tools/* | The result of `/api/tools/*?io_details=True&link_details=False` for the first server that would answer. Will be replaced by https://github.com/galaxyproject/galaxy/pull/18524
+[tool-meta-names.json](tool-meta-names.json) | Just the ID: name + description pairs.
+`api/tools/*` | The result of `/api/tools/*?io_details=True&link_details=False` for the first server that would answer. Will be replaced by [#18524](https://github.com/galaxyproject/galaxy/pull/18524). E.g. [circos/0.69.8+galaxy1](https://hexylena.github.io/toolshed-version-database/api/tools/toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8%2Bgalaxy1)
+
 
 ## LICENSE
 
