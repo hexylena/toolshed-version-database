@@ -15101,3 +15101,20 @@ toolshed.g2.bx.psu.edu/repos/bgruening/hictk/hictk/1.0.0+galaxy0	hictk	convert c
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicdetectloops/hicexplorer_hicdetectloops/3.7.5+galaxy0	hicDetectLoops	searches for enriched regions	operation_0337,operation_2428,operation_3435	topic_3295,topic_3169,topic_0769,topic_0654,topic_3940
 toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator/tooldistillator/0.9+galaxy0	ToolDistillator	Extract information from output files of specific tools and expose it as JSON files		
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hiccompartmentspolarization/hicexplorer_hiccompartmentspolarization/3.7.5+galaxy0	hicCompartmentalization	compute pairwise correlations between multiple Hi-C contact matrices	operation_3435,operation_2428,operation_0337	topic_0654,topic_0769,topic_3169,topic_3940,topic_3295
+toolshed.g2.bx.psu.edu/repos/ebi-gxa/scmap_scmap_cell/scmap_scmap_cell/1.6.4+galaxy2	Scmap cell projection	searches each cell in a query dataset for the nearest neighbours by cosine distance within a collection of reference datasets.		
+toolshed.g2.bx.psu.edu/repos/iuc/qualimap_multi_bamqc/qualimap_multi_bamqc/2.3+galaxy0	QualiMap Multi-Sample BamQC		operation_3218	topic_3572
+toolshed.g2.bx.psu.edu/repos/imgteam/plantseg/plantseg/1.8.1+galaxy0	Perform segmentation in densely packed 3-D volumetric images	with PlantSeg	operation_3443	topic_3383,topic_0611,topic_0780,topic_3385,topic_3474
+toolshed.g2.bx.psu.edu/repos/rnateam/infer_rnaformer/infer_rnaformer/1.0.0	RNAformer	Predict the secondary structure of an RNA with RNAformer		
+toolshed.g2.bx.psu.edu/repos/genouest/helixer/helixer/0.3.3+galaxy1	Helixer	gene calling	operation_2454,operation_0362	topic_0080,topic_3512
+toolshed.g2.bx.psu.edu/repos/iuc/iqtree/iqtree/2.3.5+galaxy0	IQ-TREE	Phylogenomic / evolutionary tree construction from multiple sequences	operation_2403,operation_0324	topic_3293
+toolshed.g2.bx.psu.edu/repos/iuc/rasusa/rasusa/2.0.0+galaxy0	rasusa	Randomly subsample reads to a specified coverage		
+toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.9+galaxy0	Cutadapt	Remove adapter sequences from FASTQ/FASTA	operation_0231	topic_0632
+toolshed.g2.bx.psu.edu/repos/iuc/qualimap_counts/qualimap_counts/2.3+galaxy0	QualiMap Counts QC		operation_3218	topic_3572
+toolshed.g2.bx.psu.edu/repos/goeckslab/rename_tiff_channels/rename_tiff_channels/0.0.2+galaxy0	Rename OME-TIFF channels	with ome-types	operation_3443	
+toolshed.g2.bx.psu.edu/repos/bgruening/erga_ear/make_ear/1.0.0+galaxy1	ERGA Assembly Reporting Tool (EAR)	A tool to compile assembly reports and statistics from assembly pipeline		
+toolshed.g2.bx.psu.edu/repos/imgteam/image_info/ip_imageinfo/5.7.1+galaxy1	Show image info	with Bioformats	operation_3443	
+toolshed.g2.bx.psu.edu/repos/goeckslab/cell_intensity_processing/cell_intensity_processing/0.0.2+galaxy0	Process single-cell intensities		operation_3443	
+toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/3.12.0+galaxy0	DiffBind	differential binding analysis of ChIP-Seq peak data	operation_3677	topic_3169
+toolshed.g2.bx.psu.edu/repos/iuc/qualimap_rnaseq/qualimap_rnaseq/2.3+galaxy0	QualiMap RNA-Seq QC		operation_3218	topic_3572
+toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.3+galaxy0	QualiMap BamQC		operation_3218	topic_3572
+toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.19.9+galaxy0	Hifiasm	haplotype-resolved de novo assembler for PacBio Hifi reads		
