@@ -15118,3 +15118,35 @@ toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/3.12.0+galaxy0	DiffBind
 toolshed.g2.bx.psu.edu/repos/iuc/qualimap_rnaseq/qualimap_rnaseq/2.3+galaxy0	QualiMap RNA-Seq QC		operation_3218	topic_3572
 toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.3+galaxy0	QualiMap BamQC		operation_3218	topic_3572
 toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.19.9+galaxy0	Hifiasm	haplotype-resolved de novo assembler for PacBio Hifi reads		
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_spectral_similarity/matchms_spectral_similarity/0.27.0+galaxy0	matchms spectral similarity	matchms spectral similarity calculation	operation_3801,operation_0336,operation_3695	topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_preprocessing/snapatac2_preprocessing/2.6.4+galaxy0	SnapATAC2 Preprocessing	and integration		
+toolshed.g2.bx.psu.edu/repos/muon-spectroscopy-computational-project/muspinsim/muspinsim/2.2.1+galaxy1	MuSpinSim Simulate	perform spin dynamics calculations for muon science experiments		
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_remove_spectra/matchms_remove_spectra/0.27.0+galaxy0	matchms remove spectra	Filters spectra based on metadata presence	operation_3695	topic_3172
+toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy1	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics		
+toolshed.g2.bx.psu.edu/repos/ebi-gxa/decoupler_pseudobulk/decoupler_pseudobulk/1.4.0+galaxy3	Decoupler pseudo-bulk	aggregates single cell RNA-seq data for running bulk RNA-seq methods		
+toolshed.g2.bx.psu.edu/repos/galaxyp/morpheus/morpheus/288+galaxy0	Morpheus	database search algorithm for high-resolution tandem mass spectra	operation_3646	topic_0121
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_remove_key/matchms_remove_key/0.27.0+galaxy0	matchms remove key	Remove metadata entry for all spectra in a library	operation_3695	topic_3172
+toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/skyline2isocor/skyline2isocor/0.3.0+galaxy0	Skyline2Isocor: converting skyling outputs into IsoCor inputs			
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.27.0+galaxy0	matchms scores formatter	reformat scores object of matchms to long format table	operation_0335	topic_3172
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_export/matchms_metadata_export/0.27.0+galaxy0	matchms metadata export	extract all metadata from mass spectra file to tabular format	operation_3695,operation_3801,operation_0336	topic_3172
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_convert/matchms_convert/0.27.0+galaxy0	matchms convert	convert between mass spectral library formats (.mgf/.msp/.json) using matchms	operation_3434	topic_3172
+toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy2	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics		
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_subsetting/matchms_subsetting/0.27.0+galaxy0	matchms subsetting	Extract spectra from a library given unique metadata identifier	operation_2409	topic_3172
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_fingerprint_similarity/matchms_fingerprint_similarity/0.27.0+galaxy0	matchms fingerprint similarity	calculate similarity between molecular fingerprints calculated from structural spectrum metadata descriptors	operation_0360	topic_3172
+toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.9+galaxy1	Cutadapt	Remove adapter sequences from FASTQ/FASTA	operation_0231	topic_0632
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.27.0+galaxy0	matchms filtering	filter and normalize mass spectrometry data	operation_3695	topic_3172
+toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy0	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics		
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_networking/matchms_networking/0.27.0+galaxy0	matchms networking	create similarity network graph from matchms similarity scores	operation_3927,operation_3925	topic_3172
+toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/skyline2isocor/skyline2isocor/1.0.0+galaxy0	Skyline2Isocor: converting skyling outputs into IsoCor inputs			
+toolshed.g2.bx.psu.edu/repos/muon-spectroscopy-computational-project/pm_asephonons/pm_asephonons/0.3.0+galaxy1	PyMuonSuite Phonons	calculate phonons using ASE and DFTB+		
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_add_key/matchms_add_key/0.27.0+galaxy0	matchms add key	Set metadata key in MSP to static value	operation_2409	topic_3172
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_match/matchms_metadata_match/0.27.0+galaxy0	matchms metadata match	matchms metadata match calculation for numeric fields based on tolerance	operation_3801,operation_0336,operation_3695	topic_3172
+toolshed.g2.bx.psu.edu/repos/muon-spectroscopy-computational-project/cif2cell/cif2cell/2.0.0a3+galaxy4	cif2cell	convert .cif file to .cell		
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_merge/matchms_metadata_merge/0.27.0+galaxy0	matchms metadata merge	Merge metadata csv into MSP by a specified column	operation_2409	topic_3172
+toolshed.g2.bx.psu.edu/repos/goeckslab/rename_tiff_channels/rename_tiff_channels/0.0.2+galaxy1	Rename OME-TIFF channels	with ome-types	operation_3443	
+toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_clustering/snapatac2_clustering/2.6.4+galaxy0	SnapATAC2 Clustering	and dimension reduction		
+toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_peaks_and_motif/snapatac2_peaks_and_motif/2.6.4+galaxy0	SnapATAC2 peaks and motif	analysis		
+toolshed.g2.bx.psu.edu/repos/recetox/matchms_split/matchms_split/0.27.0+galaxy0	matchms split library	split a large library into subsets	operation_3359	topic_3172
+toolshed.g2.bx.psu.edu/repos/goeckslab/cell_intensity_processing/cell_intensity_processing/0.0.2+galaxy1	Process single-cell intensities		operation_3443	
+toolshed.g2.bx.psu.edu/repos/galaxyp/qupath_roi_splitter/qupath_roi_splitter/0.3.0+galaxy0	QuPath ROI Splitter	Split ROI coordinates of QuPath TMA annotation by cell type (classification)		
+toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_plotting/snapatac2_plotting/2.6.4+galaxy0	SnapATAC2 Plotting			
