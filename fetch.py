@@ -8,7 +8,18 @@ from tqdm.contrib.concurrent import thread_map
 
 def fetch_versions(repo):
     ret = []
-    for rev in ts.repositories.get_ordered_installable_revisions(repo['name'], repo['owner']):
+    revs = []
+    try:
+        revs = ts.repositories.get_ordered_installable_revisions(repo['name'], repo['owner']):
+    except bioblend.ConnectionError:
+        time.sleep(10)
+        try:
+            revs = ts.repositories.get_ordered_installable_revisions(repo['name'], repo['owner']):
+        except bioblend.ConnectionError:
+            sys.stderr.write(f"Could not get revision list for {repo['name']} {repo['owner']}\n")
+            return ret
+
+    for rev in revs:
         try:
             e = ts.repositories.get_repository_revision_install_info(repo['name'], repo['owner'], rev)
         except bioblend.ConnectionError:
