@@ -11,7 +11,7 @@ SERVERS = [
     "usegalaxy.fr",
     "usegalaxy.org",
     "usegalaxy.org.au",
-    # 
+    #
     "usegalaxy.be",
     "usegalaxy.cz",
     "usegalaxy.no",
@@ -34,26 +34,29 @@ SERVERS = [
 ]
 
 headers = {
-    'User-Agent': 'tsvdb@1a (https://github.com/hexylena/toolshed-version-database/)',
+    "User-Agent": "tsvdb@1a (https://github.com/hexylena/toolshed-version-database/)",
 }
+
 
 def seq_try(path, servers):
     for server in servers:
         try:
-            return requests.get(f"https://{server}{path}", timeout=10, headers=headers).json()
+            return requests.get(
+                f"https://{server}{path}", timeout=10, headers=headers
+            ).json()
         except Exception as e:
             print(e)
             pass
 
 
 def download_api(tool_id):
-    if tool_id.count('/') > 4:
-        tool_id_without_version = '/'.join(tool_id.split('/')[0:-1])
+    if tool_id.count("/") > 4:
+        tool_id_without_version = "/".join(tool_id.split("/")[0:-1])
     else:
         tool_id_without_version = tool_id
 
     # If exactly this tool id was already downloaded, skip
-    if os.path.exists('api/tools/' + tool_id):
+    if os.path.exists("api/tools/" + tool_id):
         return None
 
     meta = seq_try(f"/api/tools/{tool_id}?io_details=True&link_details=False", SERVERS)
@@ -61,8 +64,8 @@ def download_api(tool_id):
         return None
     else:
         # make dir
-        os.makedirs('api/tools/' + tool_id_without_version, exist_ok=True)
-        with open('api/tools/' + tool_id, 'w') as handle:
+        os.makedirs("api/tools/" + tool_id_without_version, exist_ok=True)
+        with open("api/tools/" + tool_id, "w") as handle:
             json.dump(meta, handle)
 
 

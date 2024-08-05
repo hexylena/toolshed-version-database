@@ -11,7 +11,7 @@ SERVERS = [
     "usegalaxy.fr",
     "usegalaxy.org",
     "usegalaxy.org.au",
-    # 
+    #
     "usegalaxy.be",
     "usegalaxy.cz",
     "usegalaxy.no",
@@ -37,16 +37,20 @@ for server in SERVERS:
     # curl https://{server}/api/tools?in_panel=False | jq .[].id
     data = requests.get(f"https://{server}/api/tools?in_panel=False").json()
     for tool in data:
-        tool_id = tool['id']
-        if tool_id.count('/') > 4:
+        tool_id = tool["id"]
+        if tool_id.count("/") > 4:
             continue
 
         if os.path.exists(f"api/tools/{tool_id}"):
             continue
 
         print(f"Downloading {tool_id}")
-        print(f"https://{server}/api/tools/{tool_id}?io_details=True&link_details=False")
-        meta = requests.get(f"https://{server}/api/tools/{tool_id}?io_details=True&link_details=False").json()
+        print(
+            f"https://{server}/api/tools/{tool_id}?io_details=True&link_details=False"
+        )
+        meta = requests.get(
+            f"https://{server}/api/tools/{tool_id}?io_details=True&link_details=False"
+        ).json()
         if "name" not in meta:
             print(f"Skipping {tool_id}")
             continue

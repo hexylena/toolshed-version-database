@@ -11,7 +11,7 @@ SERVERS = [
     "usegalaxy.fr",
     "usegalaxy.org",
     "usegalaxy.org.au",
-    # 
+    #
     "usegalaxy.be",
     "usegalaxy.cz",
     "usegalaxy.no",
@@ -34,13 +34,16 @@ SERVERS = [
 ]
 
 headers = {
-    'User-Agent': 'tsvdb@1 (https://github.com/hexylena/toolshed-version-database/)',
+    "User-Agent": "tsvdb@1 (https://github.com/hexylena/toolshed-version-database/)",
 }
+
 
 def seq_try(path, servers):
     for server in servers:
         try:
-            return requests.get(f"https://{server}{path}", timeout=10, headers=headers).json()
+            return requests.get(
+                f"https://{server}{path}", timeout=10, headers=headers
+            ).json()
         except Exception as e:
             print(e)
             pass
