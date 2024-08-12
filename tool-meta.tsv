@@ -15150,3 +15150,114 @@ toolshed.g2.bx.psu.edu/repos/recetox/matchms_split/matchms_split/0.27.0+galaxy0	
 toolshed.g2.bx.psu.edu/repos/goeckslab/cell_intensity_processing/cell_intensity_processing/0.0.2+galaxy1	Process single-cell intensities		operation_3443	
 toolshed.g2.bx.psu.edu/repos/galaxyp/qupath_roi_splitter/qupath_roi_splitter/0.3.0+galaxy0	QuPath ROI Splitter	Split ROI coordinates of QuPath TMA annotation by cell type (classification)		
 toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_plotting/snapatac2_plotting/2.6.4+galaxy0	SnapATAC2 Plotting			
+toolshed.g2.bx.psu.edu/repos/iuc/seqkit_translate/seqkit_translate/2.3.1+galaxy1	SeqKit translate	nucleotid to protein sequence	operation_0371,operation_0372,operation_0233,operation_3192	topic_0080,topic_3489
+toolshed.g2.bx.psu.edu/repos/recetox/spec2vec_similarity/spec2vec_similarity/0.8.0+galaxy0	spec2vec similarity		operation_3860,operation_2421,operation_3803,operation_3801	topic_3172,topic_0218,topic_0121,topic_3520
+toolshed.g2.bx.psu.edu/repos/fubar/jbrowse2/jbrowse2/2.13.0+galaxy0	JBrowse2	genome browser	operation_0573,operation_0564	topic_3307,topic_0092
+toolshed.g2.bx.psu.edu/repos/bgruening/agat/agat/1.2.0+galaxy2	AGAT	GTF/GFF analysis toolkit	operation_2409,operation_0362	topic_0622
+toolshed.g2.bx.psu.edu/repos/iuc/dimet_isotopologues_plot/dimet_isotopologues_plot/0.2.4+galaxy4	dimet isotopologues plot	Figures of isotopologues proportions by metabolite, as stacked barplots (by DIMet)		
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_sequence/beacon2_sequence/2.2.1+galaxy0	Beacon2 Sequence	َQuery for the existence of a specified sequence at a given genomic position		
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_bracket/beacon2_bracket/2.2.1+galaxy0	Beacon2 Bracket	Specifies a sequence ranges for both the start and end positions of a genomic variation		
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_compute_template/recetox_aplcms_compute_template/0.13.2+galaxy0	recetox-aplcms - compute template	compute retention time correction template feature table	operation_3936	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/galaxyp/openms_openmsinfo/OpenMSInfo/3.1+galaxy0	OpenMSInfo	Prints configurations details of OpenMS		
+toolshed.g2.bx.psu.edu/repos/iuc/compleasm/compleasm/0.2.6+galaxy1	compleasm	completeness of genome assemblies		
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_recover_weaker_signals/recetox_aplcms_recover_weaker_signals/0.13.2+galaxy0	recetox-aplcms - recover weaker signals	recover weaker signals from raw data using an aligned feature table	operation_3215,operation_3799	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_filter/scanpy_filter/1.9.6+galaxy4	Filter	with scanpy	operation_3223	topic_3053,topic_2229,topic_0203
+toolshed.g2.bx.psu.edu/repos/iuc/infercnv/infercnv/1.20.0+galaxy0	InferCNV	Infer Copy Number Variation from Single-Cell RNA-Seq Data		
+toolshed.g2.bx.psu.edu/repos/iuc/mg_toolkit_original_metadata/mg_toolkit_original_metadata/0.10.4+galaxy0	Metagenomics toolkit Original Metadata	Download original metadata for a study		
+toolshed.g2.bx.psu.edu/repos/iuc/seqkit_translate/seqkit_translate/2.8.1+galaxy0	SeqKit translate	nucleotid to protein sequence	operation_0371,operation_0372,operation_0233,operation_3192	topic_0080,topic_3489
+toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	FastQC	Read Quality reports	operation_0236,operation_3218,operation_2238	topic_3572,topic_3168,topic_0080
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup/1.15.1+galaxy4	bcftools mpileup	Generate VCF or BCF containing genotype likelihoods for one or multiple alignment (BAM or CRAM) files	operation_2409,operation_3227	topic_3517,topic_0199,topic_3516,topic_2885
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_import/beacon2_import/2.2.1+galaxy0	Beacon2 Import	Import JSON formatted datasets to beacon database		
+toolshed.g2.bx.psu.edu/repos/iuc/dimet_pca_analysis/dimet_pca_analysis/0.2.4+galaxy4	dimet pca analysis	Principal Component Analysis for tracer metabolomics data, producing tables (by DIMet)		
+toolshed.g2.bx.psu.edu/repos/iuc/bigscape/bigscape/1.1.9+galaxy2	BiG-SCAPE	Construct sequence similarity networks of BGCs and group them into GCF		
+toolshed.g2.bx.psu.edu/repos/iuc/krakentools_combine_kreports/krakentools_combine_kreports/1.2+galaxy2	Krakentools: Combine multiple Kraken reports	into a combined report file	operation_0337,operation_3436	topic_0637,topic_3174
+toolshed.g2.bx.psu.edu/repos/iuc/dimet_timecourse_analysis/dimet_timecourse_analysis/0.2.4+galaxy4	dimet timecourse analysis	Differential analysis of tracer metabolomics data comparing consecutive time-points (by DIMet)		
+toolshed.g2.bx.psu.edu/repos/iuc/deepmicro/deepmicro/1.4+galaxy2	DeepMicro	Representation learning and classification framework		
+toolshed.g2.bx.psu.edu/repos/iuc/mg_toolkit_bulk_download/mg_toolkit_bulk_download/0.10.4+galaxy0	Metagenomics toolkit Bulk Download	Download result files in bulks for an entire study		
+toolshed.g2.bx.psu.edu/repos/recetox/qcxms_neutral_run/qcxms_neutral_run/5.2.1+galaxy4	QCxMS neutral run	required as first step to prepare for the production runs	operation_3860	topic_3332
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_runs/beacon2_runs/1.0.0	Beacon2 Runs	Query the runs collection in the beacon database		
+toolshed.g2.bx.psu.edu/repos/iuc/customize_metaphlan_database/customize_metaphlan_database/4.1.1+galaxy0	Customize the marker sequences and metadata	from the MetaPhlAn database	operation_2478,operation_0324	topic_0194,topic_3174
+toolshed.g2.bx.psu.edu/repos/recetox/waveica/waveica/0.2.0+galaxy8	WaveICA	removal of batch effects for untargeted metabolomics data	operation_3435	topic_3172
+toolshed.g2.bx.psu.edu/repos/goeckslab/scimap_anndata_to_csv/scimap_anndata_to_csv/2.1.0+galaxy2	Convert Anndata to CSV	with Scimap		
+toolshed.g2.bx.psu.edu/repos/iuc/cnv_vcf2json/cnv_vcf2json/1.1.0+galaxy0.1	CNV VCF2JSON	Converts 1000hg structural variants VCF file to JSON		
+toolshed.g2.bx.psu.edu/repos/iuc/dimet_metabologram/dimet_metabologram/0.2.4+galaxy4	dimet metabologram	Integration of transcriptomics and (tracer) metabolomics differential data (by DIMet)		
+toolshed.g2.bx.psu.edu/repos/iuc/seqkit_sort/seqkit_sort/2.3.1+galaxy1	SeqKit sort	FASTA or FASTQ files	operation_3192,operation_0372,operation_0371,operation_0233	topic_0080,topic_3489
+toolshed.g2.bx.psu.edu/repos/recetox/xtb_molecular_optimization/xtb_molecular_optimization/6.6.1+galaxy3	xtb molecular optimization	Semiempirical quantum mechanical molecular optimization method	operation_0297	topic_3332
+toolshed.g2.bx.psu.edu/repos/muon-spectroscopy-computational-project/pm_muairss_read/pm_muairss_read/0.3.0+galaxy1	PyMuonSuite AIRSS Cluster	run clustering for optimised structures		
+toolshed.g2.bx.psu.edu/repos/bgruening/cp_cellprofiler4/cp_cellprofiler4/4.2.7+galaxy0	Run CellProfiler pipeline	with CellProfiler 4		
+toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_peaks_and_motif/snapatac2_peaks_and_motif/2.6.4+galaxy1	SnapATAC2 peaks and motif	analysis		
+toolshed.g2.bx.psu.edu/repos/iuc/bigwig_outlier_bed/bigwig_outlier_bed/0.2.0	Bigwig extremes to bed features	Writes high and low bigwig runs as features in a bed file	operation_0337	topic_0157,topic_0092
+toolshed.g2.bx.psu.edu/repos/iuc/bigwig_outlier_bed/bigwig_outlier_bed/0.1.4	Bigwig extremes to bed features	Writes high and low bigwig runs as features in a bed file	operation_0337	topic_0157,topic_0092
+toolshed.g2.bx.psu.edu/repos/goeckslab/squidpy_scatter/squidpy_scatter/1.5.0+galaxy1	Create spatial scatterplot	with Squidpy	operation_3443	
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_generate_feature_table/recetox_aplcms_generate_feature_table/0.13.2+galaxy0	recetox-aplcms - generate feature table	generate feature table from noise-removed HRMS profile data	operation_3215,operation_3799	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/bracken/est_abundance/3.0+galaxy0	Bracken	to re-estimate abundance at a taxonomic level from kraken output	operation_2238	topic_3174,topic_3697
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.13.2+galaxy0	recetox-aplcms - align features	align peaks across samples	operation_2928	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/recetox/qcxms_getres/qcxms_getres/5.2.1+galaxy2	QCxMS get results	Get result of the Production run to obtain a QCxMS simulated mass spectrum	operation_3860	topic_3332
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_inspect/scanpy_inspect/1.9.6+galaxy4	Inspect and manipulate	with scanpy	operation_3223	topic_3053,topic_0203,topic_2229
+toolshed.g2.bx.psu.edu/repos/iuc/unicycler/unicycler/0.5.1+galaxy0	Create assemblies with Unicycler	pipeline for bacterial genomes	operation_0525	topic_0196
+toolshed.g2.bx.psu.edu/repos/iuc/recentrifuge/recentrifuge/1.14.1+galaxy0	Recentrifuge	Robust comparative analysis and contamination removal for metagenomics	operation_2238,operation_3460	topic_3174,topic_3697
+toolshed.g2.bx.psu.edu/repos/ecology/divand_full_analysis/divand_full_analysis/0.1.0+galaxy0	DIVAnd	Data-Interpolating Variational Analysis in n dimensions		
+toolshed.g2.bx.psu.edu/repos/rnateam/graphprot_predict_profile/graphprot_predict_profile/1.1.7+galaxy2	GraphProt	- Train models and predict RBP binding profiles	operation_2479	topic_0078,topic_0099
+toolshed.g2.bx.psu.edu/repos/iuc/dimet_bivariate_analysis/dimet_bivariate_analysis/0.2.4+galaxy4	dimet bivariate analysis	Computation of the correlation of MDV profiles, or the metabolite time course profiles (by DIMet)		
+toolshed.g2.bx.psu.edu/repos/goeckslab/scimap_anndata_to_csv/scimap_anndata_to_csv/2.1.0+galaxy0	Convert Anndata to CSV	with Scimap		
+toolshed.g2.bx.psu.edu/repos/iuc/clustering_from_distmat/clustering_from_distmat/1.0	Distance matrix-based hierarchical clustering	using Scipy	operation_3432	topic_2269,topic_0084
+toolshed.g2.bx.psu.edu/repos/iuc/bigwig_outlier_bed/bigwig_outlier_bed/0.2.0+galaxy0	Bigwig extremes to bed features	Writes high and low bigwig runs as features in a bed file	operation_0337	topic_0157,topic_0092
+toolshed.g2.bx.psu.edu/repos/galaxyp/qupath_roi_splitter/qupath_roi_splitter/0.3.1+galaxy0	QuPath ROI Splitter	Split ROI coordinates of QuPath TMA annotation by cell type (classification)		
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_correct_time/recetox_aplcms_correct_time/0.13.2+galaxy0	recetox-aplcms - correct time	correct retention time across samples for peak alignment	operation_3628	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/bgruening/cpat/cpat/3.0.5+galaxy1	CPAT	coding potential assessment		
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.9.6+galaxy4	Plot	with scanpy	operation_3223	topic_0203,topic_3053,topic_2229
+toolshed.g2.bx.psu.edu/repos/goeckslab/squidpy_spatial/squidpy_spatial/1.5.0+galaxy1	Analyze and visualize spatial multi-omics data	with Squidpy	operation_3443	
+toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_clustering/snapatac2_clustering/2.6.4+galaxy1	SnapATAC2 Clustering	and dimension reduction		
+toolshed.g2.bx.psu.edu/repos/recetox/qcxms_production_run/qcxms_production_run/5.2.1+galaxy3	QCxMS production run	Production run to obtain a QCxMS simulated mass spectrum	operation_3860	topic_3332
+toolshed.g2.bx.psu.edu/repos/iuc/ucsc_maftoaxt/maftoaxt/377+galaxy0	mafToAxt	Convert file from MAF to axt format		
+toolshed.g2.bx.psu.edu/repos/iuc/microsatbed/microsatbed/1.3.2+galaxy0	STR to bed	Short Tandem Repeats to bed features from fasta		
+toolshed.g2.bx.psu.edu/repos/iuc/metaphlan/metaphlan/4.1.1+galaxy1	MetaPhlAn	to profile the composition of microbial communities	operation_0324,operation_2478	topic_0194,topic_3174
+toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0.1+galaxy0	GenomeScope	reference-free genome profiling		
+toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.3.1+galaxy0	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3474,topic_3316
+toolshed.g2.bx.psu.edu/repos/iuc/seqkit_sort/seqkit_sort/2.8.1+galaxy0	SeqKit sort	FASTA or FASTQ files	operation_0371,operation_0372,operation_3192,operation_0233	topic_3489,topic_0080
+toolshed.g2.bx.psu.edu/repos/iuc/metaphlan/metaphlan/4.1.1+galaxy0	MetaPhlAn	to profile the composition of microbial communities	operation_0324,operation_2478	topic_0194,topic_3174
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_analyses/beacon2_analyses/2.2.1+galaxy0	Beacon2 Analyses	َQuery the analyses collection in the beacon database for bioinformatic procedures to identify variants		
+toolshed.g2.bx.psu.edu/repos/iuc/dimet_abundance_plot/dimet_abundance_plot/0.2.4+galaxy4	dimet abundance plot	Figures of metabolites total abundance as barplots (by DIMet)		
+toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_plotting/snapatac2_plotting/2.6.4+galaxy1	SnapATAC2 Plotting			
+toolshed.g2.bx.psu.edu/repos/bgruening/plotly_ml_performance_plots/plotly_ml_performance_plots/0.4	Plot confusion matrix, precision, recall and ROC and AUC curves	of tabular data	operation_3659,operation_3432,operation_2990,operation_3935	topic_0092,topic_3474
+toolshed.g2.bx.psu.edu/repos/imgteam/background_removal/background_removal/0.24.0+galaxy1	Remove image background	with scikit-image		
+toolshed.g2.bx.psu.edu/repos/iuc/clair3/clair3/1.0.8+galaxy0	Clair3	germline small variant caller for long-reads	operation_3227	topic_3321
+toolshed.g2.bx.psu.edu/repos/muon-spectroscopy-computational-project/pm_uep_opt/pm_uep_opt/0.3.0+galaxy2	PyMuonSuite AIRSS UEP Optimise	run UEP optimisation		
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_datasets/beacon2_datasets/1.0.0	Beacon2 Datasets	Query the datasets collection in the beacon database groupings of variants or individuals who belong to the same repository		
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_biosamples/beacon2_biosamples/1.0.0	Beacon2 Biosamples	Query the biosamples collection in the beacon database for samples taken from individuals		
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_normalize/scanpy_normalize/1.9.6+galaxy4	Normalize	and impute with scanpy	operation_3223	topic_3053,topic_2229,topic_0203
+toolshed.g2.bx.psu.edu/repos/muon-spectroscopy-computational-project/pm_symmetry/pm_symmetry/0.3.0+galaxy1	PyMuonSuite Symmetry	generate Wyckoff points symmetry report		
+toolshed.g2.bx.psu.edu/repos/ecology/sanntis_marine/sanntis_marine/0.9.3.5+galaxy0	Sanntis biosynthetic gene clusters	in genomic and metagenomic data		topic_3387
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_gene/beacon2_gene/2.2.1+galaxy0	Beacon2 Gene	Queries the beacon database and retrieve the genomic variants matching gene symbol		
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_remove_confounders/scanpy_remove_confounders/1.9.6+galaxy4	Remove confounders	with scanpy	operation_3223	topic_3053,topic_0203,topic_2229
+toolshed.g2.bx.psu.edu/repos/imgteam/background_removal/background_removal/0.24.0+galaxy0	Remove image background	with scikit-image		
+toolshed.g2.bx.psu.edu/repos/iuc/dimet_differential_analysis/dimet_differential_analysis/0.2.4+galaxy4	dimet differential analysis	Differential analysis of tracer metabolomics data comparing two groups (by DIMet)		
+toolshed.g2.bx.psu.edu/repos/iuc/extract_metaphlan_database/extract_metaphlan_database/4.1.1+galaxy0	Extract the marker sequences and metadata	from the MetaPhlAn database	operation_2478,operation_0324	topic_0194,topic_3174
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_individuals/beacon2_individuals/1.0.0	Beacon2 Individuals	Query the individuals collection in the beacon database		
+toolshed.g2.bx.psu.edu/repos/iuc/dimet_enrichment_plot/dimet_enrichment_plot/0.2.4+galaxy4	dimet enrichment plot	Figures of mean enrichment by metabolite, as line-plots (by DIMet)		
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_compute_clusters/recetox_aplcms_compute_clusters/0.13.2+galaxy0	recetox-aplcms - compute clusters	compute clusters of mz and rt across samples and assign cluster IDs to individual features	operation_2928	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/salsa/salsa/2.3+galaxy5	SALSA	scaffold long read assemblies with Hi-C		
+toolshed.g2.bx.psu.edu/repos/muon-spectroscopy-computational-project/mudirac/mudirac/1.0.1+galaxy0	MuDirac	Muonic atom Dirac equation solver		
+toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_preprocessing/snapatac2_preprocessing/2.6.4+galaxy1	SnapATAC2 Preprocessing	and integration		
+toolshed.g2.bx.psu.edu/repos/bgruening/blobtoolkit/blobtoolkit/4.0.7+galaxy2	BlobToolKit	Genome Assembly QC		
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_cnv/beacon2_cnv/2.2.1+galaxy0	Beacon2 CNV	Retrieve the copy number varients from genomicVariations collection from the beacon database		
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_merge_known_table/recetox_aplcms_merge_known_table/0.13.2+galaxy0	recetox-aplcms - merge known table	join knowledge from aligned features and known table.	operation_3436	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/recetox/spec2vec_training/spec2vec_training/0.6.0-0+galaxy0	spec2vec model training	Train a Spec2Vec model for mass spectra similarity scoring	operation_2421,operation_3803,operation_3860,operation_3801	topic_3172,topic_0218,topic_0121,topic_3520
+toolshed.g2.bx.psu.edu/repos/recetox/spec2vec_training/spec2vec_training/0.8.0+galaxy0	spec2vec model training	Train a Spec2Vec model for mass spectra similarity scoring	operation_3860,operation_2421,operation_3801,operation_3803	topic_3172,topic_0218,topic_3520,topic_0121
+toolshed.g2.bx.psu.edu/repos/bgruening/uniprot_rest_interface/uniprot/0.6	UniProt	ID mapping and retrieval	operation_2421,operation_3778,operation_3431,operation_2422	topic_0080,topic_0621,topic_3068,topic_0121,topic_3520
+toolshed.g2.bx.psu.edu/repos/galaxy-australia/alphafold2/alphafold/2.3.2+galaxy0	Alphafold 2	- AI-guided 3D structural prediction of proteins	operation_0474	topic_0082
+toolshed.g2.bx.psu.edu/repos/iuc/basil/basil/1.2.0+galaxy1	basil	Breakpoint detection, including large insertions		
+toolshed.g2.bx.psu.edu/repos/goeckslab/scimap_anndata_to_csv/scimap_anndata_to_csv/2.1.0+galaxy1	Convert Anndata to CSV	with Scimap		
+toolshed.g2.bx.psu.edu/repos/recetox/rename_annotated_feature/rename_annotated_feature/1.0.0+galaxy0	Rename Annotated Feature	Rename columns in abundance table based on annotations table		
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_remove_noise/recetox_aplcms_remove_noise/0.13.2+galaxy0	recetox-aplcms - remove noise	filter noise and detect peaks in high resolution mass spectrometry (HRMS) profile data	operation_3937	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/yahs/yahs/1.2a.2+galaxy2	YAHS	yet another HI-C scaffolding tool		
+toolshed.g2.bx.psu.edu/repos/iuc/roary/roary/3.13.0+galaxy3	Roary	the pangenome pipeline - Quickly generate a core gene alignment from gff3 files	operation_0525	topic_0102,topic_0622,topic_0654
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_cohorts/beacon2_cohorts/1.0.0	Beacon2 Cohorts	Query the Cohorts collection in the beacon database		
+toolshed.g2.bx.psu.edu/repos/galaxyp/openms_jsonexporter/JSONExporter/3.1+galaxy0	JSONExporter	Exports .oms (SQLite) files in JSON format		
+toolshed.g2.bx.psu.edu/repos/iuc/dimet_differential_multigroup_analysis/dimet_differential_multigroup_analysis/0.2.4+galaxy4	dimet differential multigroup analysis	Differential analysis of 3 or more chosen groups of tracer metabolomics data (by DIMet)		
+toolshed.g2.bx.psu.edu/repos/ecology/sanntis_marine/sanntis_marine/0.9.3.5+galaxy1	Sanntis biosynthetic gene clusters	in genomic and metagenomic data		topic_3387
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_cluster_reduce_dimension/scanpy_cluster_reduce_dimension/1.9.6+galaxy4	Cluster, infer trajectories and embed	with scanpy	operation_3223	topic_3053,topic_0203,topic_2229
+toolshed.g2.bx.psu.edu/repos/iuc/dimet_pca_plot/dimet_pca_plot/0.2.4+galaxy4	dimet pca plot	Figures of Principal Component Analysis for tracer metabolomics (by DIMet)		
+toolshed.g2.bx.psu.edu/repos/iuc/merge_metaphlan_tables/merge_metaphlan_tables/4.1.1+galaxy0	Merge	MetaPhlAn abundance tables	operation_0324,operation_2478	topic_0194,topic_3174
+toolshed.g2.bx.psu.edu/repos/bgruening/agat/agat/1.4.0+galaxy0	AGAT	GTF/GFF analysis toolkit	operation_2409,operation_0362	topic_0622
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_range/beacon2_range/2.2.1+galaxy0	Beacon2 Range	Retrieve the genomic variants from the beacon database by specifying start and end positions		
