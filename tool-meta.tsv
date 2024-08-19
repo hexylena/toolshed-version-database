@@ -15261,3 +15261,79 @@ toolshed.g2.bx.psu.edu/repos/iuc/dimet_pca_plot/dimet_pca_plot/0.2.4+galaxy4	dim
 toolshed.g2.bx.psu.edu/repos/iuc/merge_metaphlan_tables/merge_metaphlan_tables/4.1.1+galaxy0	Merge	MetaPhlAn abundance tables	operation_0324,operation_2478	topic_0194,topic_3174
 toolshed.g2.bx.psu.edu/repos/bgruening/agat/agat/1.4.0+galaxy0	AGAT	GTF/GFF analysis toolkit	operation_2409,operation_0362	topic_0622
 toolshed.g2.bx.psu.edu/repos/iuc/beacon2_range/beacon2_range/2.2.1+galaxy0	Beacon2 Range	Retrieve the genomic variants from the beacon database by specifying start and end positions		
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_mfassigncho/mfassignr_mfassignCHO/1.0.3+galaxy0	MFAssignR MFAssignCHO	Molecular formula assignment (only with CHO).	operation_2940	topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/pacu_map/pacu_map/0.0.5+galaxy0	PACU - mapping	Map ONT / Illumina reads to a reference genome for PACU		
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_filter/bcftools_filter/1.15.1+galaxy4	bcftools filter	Apply fixed-threshold filters	operation_2409,operation_3227	topic_2885,topic_0199,topic_3516,topic_3517
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_histnoise/mfassignr_histnoise/1.0.3+galaxy0	MFAssignR HistNoise	Noise level assessment using the HistNoise		topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_view/bcftools_view/1.15.1+galaxy4	bcftools view	VCF/BCF conversion, view, subset and filter VCF/BCF files	operation_2409,operation_3227	topic_3517,topic_2885,topic_3516,topic_0199
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_mergereplicates/ampvis2_mergereplicates/2.8.6+galaxy2	ampvis2 merge replicates		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_kmdnoise/mfassignr_kmdnoise/1.0.3+galaxy0	MFAssignR KMDNoise	Noise level assessment using the KMDNoise.	operation_2940	topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.3	Pear	Paired-End read merger	operation_0232	topic_0196
+toolshed.g2.bx.psu.edu/repos/bgruening/flexynesis/flexynesis/0.2.10+galaxy0	Flexynesis	A deep-learning based multi-omics bulk sequencing data integration suite	operation_3197,operation_2403,operation_2426	topic_0622,topic_3474,topic_2640
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_ordinate/ampvis2_ordinate/2.8.6+galaxy2	ampvis2 ordination plot		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_call/bcftools_call/1.15.1+galaxy5	bcftools call	SNP/indel variant calling from VCF/BCF	operation_3227,operation_2409	topic_3516,topic_2885,topic_3517,topic_0199
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_setmetadata/ampvis2_setmetadata/2.8.6+galaxy2	ampvis2 set metadata	types	operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_subset_taxa/ampvis2_subset_taxa/2.8.6+galaxy2	ampvis2 subset data	by taxonomy	operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_roh/bcftools_roh/1.15.1+galaxy4	bcftools roh	HMM model for detecting runs of homo/autozygosity	operation_2409,operation_3227	topic_3517,topic_2885,topic_3516,topic_0199
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_octave/ampvis2_octave/2.8.6+galaxy2	ampvis2 octave plot		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_cnv/bcftools_cnv/1.15.1+galaxy4	bcftools cnv	Call copy number variation from VCF B-allele frequency (BAF) and Log R Ratio intensity (LRR) values	operation_2409,operation_3227	topic_3517,topic_2885,topic_3516,topic_0199
+toolshed.g2.bx.psu.edu/repos/recetox/biotransformer/biotransformer/3.0.20230403+galaxy3	BioTransformer		operation_3929,operation_3803,operation_0417	topic_0152,topic_3172,topic_0154,topic_0593,topic_3407
+toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.23.4+galaxy1	fastp	fast all-in-one preprocessing for FASTQ files	operation_3187,operation_3192	topic_0632,topic_0080
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_concat/bcftools_concat/1.15.1+galaxy4	bcftools concat	Concatenate or combine VCF/BCF files	operation_2409,operation_3227	topic_0199,topic_3516,topic_3517,topic_2885
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_recallist/mfassignr_recallist/1.0.3+galaxy0	MFAssignR RecalList	Identification of candidate series for recalibration.	operation_3627	topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_consensus/bcftools_consensus/1.15.1+galaxy4	bcftools consensus	Create consensus sequence by applying VCF variants to a reference fasta file	operation_2409,operation_3227	topic_3517,topic_2885,topic_3516,topic_0199
+toolshed.g2.bx.psu.edu/repos/iuc/picrust2_metagenome_pipeline/picrust2_metagenome_pipeline/2.5.3+galaxy0	PICRUSt2 Metagenome prediction	to generate per-sample metagenome functional profiles based on the predicted functions for each study sequence	operation_3928,operation_2495,operation_3478,operation_3797	topic_3174,topic_3837,topic_3293,topic_3301
+toolshed.g2.bx.psu.edu/repos/iuc/picrust2_pipeline/picrust2_pipeline/2.5.3+galaxy0	PICRUSt2 Full pipeline		operation_3797,operation_2495,operation_3478,operation_3928	topic_3174,topic_3293,topic_3837,topic_3301
+toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_spectrophore_search/openbabel_spectrophore_search/3.1.1+galaxy1	Spectrophores search	- similarity search based on 1D chemical features	operation_3431,operation_0224,operation_2409	topic_2258,topic_3292,topic_2275,topic_3314
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_from_vcf/bcftools_convert_from_vcf/1.15.1+galaxy4	bcftools convert from vcf	Converts VCF/BCF to IMPUTE2/SHAPEIT formats	operation_2409,operation_3227	topic_0199,topic_3516,topic_3517,topic_2885
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_isofiltr/mfassignr_isofiltr/1.0.3+galaxy1	MFAssignR IsoFiltR	Separates likely isotopic masses from monoisotopic masses in a mass list	operation_3629	topic_3172
+toolshed.g2.bx.psu.edu/repos/bgruening/chatgpt_openai_api/chatgpt_openai_api/2024+galaxy0	chatGPT	Integrating OpenAI's ChatGPT into Galaxy		
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_heatmap/ampvis2_heatmap/2.8.6+galaxy2	ampvis2 heatmap		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_frameshifts/bcftools_plugin_frameshifts/1.15.1+galaxy4	bcftools frameshifts	plugin Annotate frameshift indels	operation_3227,operation_2409	topic_3516,topic_2885,topic_3517,topic_0199
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_query/bcftools_query/1.15.1+galaxy4	bcftools query	Extracts fields from VCF/BCF file and prints them in user-defined format	operation_2409,operation_3227	topic_3517,topic_2885,topic_3516,topic_0199
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_convert_to_vcf/bcftools_convert_to_vcf/1.15.1+galaxy4	bcftools convert to vcf	Converts other formats to VCF/BCFk	operation_2409,operation_3227	topic_2885,topic_0199,topic_3516,topic_3517
+toolshed.g2.bx.psu.edu/repos/iuc/microsatbed/microsatbed/1.3.2+galaxy1	STR to bed	Short Tandem Repeats to bed features from fasta		
+toolshed.g2.bx.psu.edu/repos/recetox/rcx_tk/rcx-tk/0.1.0+galaxy0	rcx-tk		operation_0336,operation_3695	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_export_fasta/ampvis2_export_fasta/2.8.6+galaxy2	ampvis2 export fasta		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_boxplot/ampvis2_boxplot/2.8.6+galaxy2	ampvis2 boxplot		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_otu_network/ampvis2_otu_network/2.8.6+galaxy2	ampvis2 OTU network plot		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_subset_samples/ampvis2_subset_samples/2.8.6+galaxy2	ampvis2 subset samples	by sample metadata	operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_call/bcftools_call/1.15.1+galaxy4	bcftools call	SNP/indel variant calling from VCF/BCF	operation_2409,operation_3227	topic_3516,topic_2885,topic_0199,topic_3517
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_rankabundance/ampvis2_rankabundance/2.8.6+galaxy2	ampvis2 rank abundance plot		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_stats/bcftools_stats/1.15.1+galaxy4	bcftools stats	Parses VCF or BCF and produces stats which can be plotted using plot-vcfstats	operation_2409,operation_3227	topic_3517,topic_2885,topic_3516,topic_0199
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_snplot/mfassignr_snplot/1.0.3+galaxy1	MFAssignR SNplot	Noise level assessment using the SNplot function.		topic_3172
+toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_compound_convert/openbabel_compound_convert/3.1.1+galaxy1	Compound conversion	- interconvert between various chemistry and molecular modeling data files	operation_0224,operation_2409,operation_3431	topic_3314,topic_2275,topic_3292,topic_2258
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_venn/ampvis2_venn/2.8.6+galaxy2	ampvis2 venn diagram		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/picrust2_add_descriptions/picrust2_add_descriptions/2.5.3+galaxy0	PICRUSt2 Add descriptions	column to a function abundance table	operation_3797,operation_2495,operation_3928,operation_3478	topic_3301,topic_3293,topic_3837,topic_3174
+toolshed.g2.bx.psu.edu/repos/iuc/picrust2_place_seqs/picrust2_place_seqs/2.5.3+galaxy0	PICRUSt2 Sequence placement	into reference tree	operation_3928,operation_2495,operation_3797,operation_3478	topic_3174,topic_3301,topic_3837,topic_3293
+toolshed.g2.bx.psu.edu/repos/iuc/picrust2_pathway_pipeline/picrust2_pathway_pipeline/2.5.3+galaxy0	PICRUSt2 Pathway abundance inference		operation_3797,operation_2495,operation_3928,operation_3478	topic_3301,topic_3293,topic_3837,topic_3174
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_mfassign/mfassignr_mfassign/1.0.3+galaxy0	MFAssignR MFAssign	Molecular formula assignment.		topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/picrust2_shuffle_predictions/picrust2_shuffle_predictions/2.5.3+galaxy0	PICRUSt2 Generation of shuffled predictions	for a specified number of replicates	operation_3797,operation_2495,operation_3478,operation_3928	topic_3174,topic_3293,topic_3837,topic_3301
+toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_genprop/openbabel_genProp/3.1.1+galaxy1	Compute physico-chemical properties	for a set of molecules		
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_merge/bcftools_merge/1.15.1+galaxy4	bcftools merge	Merge multiple VCF/BCF files from non-overlapping sample sets to create one multi-sample file	operation_2409,operation_3227	topic_0199,topic_3516,topic_3517,topic_2885
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_load/ampvis2_load/2.8.6+galaxy2	ampvis2 load		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_obgrep/openbabel_obgrep/3.1.1+galaxy1	Compound search	- an advanced molecular search program using SMARTS	operation_0224,operation_2409,operation_3431	topic_3314,topic_2275,topic_3292,topic_2258
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_isofiltr/mfassignr_isofiltr/1.0.3+galaxy0	MFAssignR IsoFiltR	Separates likely isotopic masses from monoisotopic masses in a mass list	operation_3629	topic_3172
+toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_subsearch/openbabel_subsearch/3.1.1+galaxy1	Substructure Search	of fingerprint data sets	operation_2409,operation_3431,operation_0224	topic_2275,topic_2258,topic_3292,topic_3314
+toolshed.g2.bx.psu.edu/repos/iuc/picrust2_hsp/picrust2_hsp/2.5.3+galaxy0	PICRUSt2 Hidden state prediction (HSP)	to predict gene family abundances	operation_3478,operation_2495,operation_3797,operation_3928	topic_3293,topic_3174,topic_3301,topic_3837
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_timeseries/ampvis2_timeseries/2.8.6+galaxy2	ampvis2 timeseries plot		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/9.3+galaxy2	Advanced Cut	columns from a table (cut)		
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_csq/bcftools_csq/1.15.1+galaxy4	bcftools csq	Haplotype aware consequence predictor	operation_2409,operation_3227	topic_0199,topic_3516,topic_3517,topic_2885
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_reheader/bcftools_reheader/1.15.1+galaxy4	bcftools reheader	Modify header of VCF/BCF files, change sample names	operation_3227,operation_2409	topic_3517,topic_3516,topic_0199,topic_2885
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_frequency/ampvis2_frequency/2.8.6+galaxy2	ampvis2 frequency plot		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_split_vep/bcftools_plugin_split_vep/1.15.1+galaxy4	bcftools split-vep	plugin Extracts fields from structured annotations such as INFO/CSQ	operation_2409,operation_3227	topic_0199,topic_3516,topic_3517,topic_2885
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_annotate/bcftools_annotate/1.15.1+galaxy4	bcftools annotate	Annotate and edit VCF/BCF files	operation_3227,operation_2409	topic_3516,topic_2885,topic_3517,topic_0199
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_color_chrs/bcftools_plugin_color_chrs/1.15.1+galaxy4	bcftools color-chrs	plugin Color shared chromosomal segments, requires phased GTs	operation_2409,operation_3227	topic_0199,topic_3516,topic_3517,topic_2885
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_gtcheck/bcftools_gtcheck/1.15.1+galaxy4	bcftools gtcheck	Check sample identity	operation_3227,operation_2409	topic_3516,topic_2885,topic_3517,topic_0199
+toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.43.0+galaxy0	NanoPlot	Plotting suite for Oxford Nanopore sequencing data and alignments	operation_2943,operation_2940	topic_0622
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_recal/mfassignr_recal/1.0.3+galaxy0	MFAssignR Recal	Internal mass recalibration using a recalibrant series.	operation_3627	topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_alpha_diversity/ampvis2_alpha_diversity/2.8.6+galaxy2	ampvis2 alpha diversity		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/pacu_snp/pacu_snp/0.0.5+galaxy0	PACU	whole genome sequencing based phylogeny of Illumina and ONT R9/R10 data		
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_isec/bcftools_isec/1.15.1+galaxy4	bcftools isec	Create intersections, unions and complements of VCF files	operation_3227,operation_2409	topic_3517,topic_3516,topic_0199,topic_2885
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_rarecurve/ampvis2_rarecurve/2.8.6+galaxy2	ampvis2 rarefaction curve		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_merge_ampvis2/ampvis2_merge_ampvis2/2.8.6+galaxy2	ampvis2 merge ampvis2 data sets		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_core/ampvis2_core/2.8.6+galaxy2	ampvis2 core community analysis		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_setgt/bcftools_plugin_setgt/1.15.1+galaxy4	bcftools setGT	plugin Sets genotypes	operation_2409,operation_3227	topic_0199,topic_3516,topic_3517,topic_2885
+toolshed.g2.bx.psu.edu/repos/iuc/bcftools_norm/bcftools_norm/1.15.1+galaxy4	bcftools norm	Left-align and normalize indels; check if REF alleles match the reference; split multiallelic sites into multiple rows; recover multiallelics from multiple rows	operation_3227,operation_2409	topic_3517,topic_3516,topic_0199,topic_2885
+toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.4	msconvert	Convert and/or filter mass spectrometry files	operation_3695,operation_0335	topic_3520,topic_0121
+toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_svg_depiction/openbabel_svg_depiction/3.1.1+galaxy1	Visualisation	of compounds	operation_3431,operation_2409,operation_0224	topic_2275,topic_3314,topic_2258,topic_3292
