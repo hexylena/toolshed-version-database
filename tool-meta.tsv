@@ -15337,3 +15337,36 @@ toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_setgt/bcftools_plugin_setgt/1.1
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_norm/bcftools_norm/1.15.1+galaxy4	bcftools norm	Left-align and normalize indels; check if REF alleles match the reference; split multiallelic sites into multiple rows; recover multiallelics from multiple rows	operation_3227,operation_2409	topic_3517,topic_3516,topic_0199,topic_2885
 toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.4	msconvert	Convert and/or filter mass spectrometry files	operation_3695,operation_0335	topic_3520,topic_0121
 toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_svg_depiction/openbabel_svg_depiction/3.1.1+galaxy1	Visualisation	of compounds	operation_3431,operation_2409,operation_0224	topic_2275,topic_3314,topic_2258,topic_3292
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_compare/graphicsmagick_image_compare/1.3.44+galaxy0	Compare two images	with GraphicsMagick		
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_bracket/beacon2_bracket/2.2.3+galaxy0	Beacon2 Bracket	Specifies a sequence ranges for both the start and end positions of a genomic variation		
+toolshed.g2.bx.psu.edu/repos/iuc/dram_neighborhoods/dram_neighborhoods/1.5.0+galaxy0	DRAM find neighborhoods	around genes of interest		
+toolshed.g2.bx.psu.edu/repos/iuc/dram_merge_annotations/dram_merge_annotations/1.5.0+galaxy0	DRAM merge multiple annotations	into a single set		
+toolshed.g2.bx.psu.edu/repos/devteam/column_maker/Add_a_column1/2.1	Compute	on rows		
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_gene/beacon2_gene/2.2.3+galaxy0	Beacon2 Gene	Queries the beacon database and retrieve the genomic variants matching gene symbol		
+toolshed.g2.bx.psu.edu/repos/galaxyp/zeiss_lmd_converter/ZeissLMDconverter/2.0.4+galaxy0	Zeiss laser-capture microdissection converter	Converts tabular coordinates into a formatted text file readable by Zeiss laser-capture microdissection systems.		
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_import/beacon2_import/2.2.3+galaxy0	Beacon2 Import	Import JSON formatted datasets to beacon database		
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_analyses/beacon2_analyses/2.2.3+galaxy0	Beacon2 Analyses	َQuery the analyses collection in the beacon database for bioinformatic procedures to identify variants		
+toolshed.g2.bx.psu.edu/repos/iuc/dram_distill/dram_distill/1.5.0+galaxy0	DRAM distill	metagenome-assembled-genomes (MAGs)		
+toolshed.g2.bx.psu.edu/repos/rnateam/locarna_multiple/locarna_multiple/2.0.1+galaxy0	LocARNA Multiple Aligner	Multiple Alignment and Folding of RNAs (mlocarna)	operation_0294	topic_0097
+toolshed.g2.bx.psu.edu/repos/bgruening/chatgpt_openai_api/chatgpt_openai_api/2024+galaxy1	chatGPT	Integrating OpenAI's ChatGPT into Galaxy		
+toolshed.g2.bx.psu.edu/repos/iuc/tracegroomer/tracegroomer/0.1.4+galaxy0	tracegroomer	TraceGroomer is a solution to format and normalize files for DIMet tool		
+toolshed.g2.bx.psu.edu/repos/iuc/cemitool/cemitool/1.26.0+galaxy0	CEMiTool	gene co-expression network analyses	operation_3501,operation_2497	topic_3308,topic_3518,topic_0203
+toolshed.g2.bx.psu.edu/repos/iuc/prot_scriber/prot_scriber/0.1.6	prot-scriber	Protein annotation of short human readable descriptions		
+toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft_add/7.526+galaxy0	MAFFT add	Align a sequence,alignment or fragments to an existing alignment.		
+toolshed.g2.bx.psu.edu/repos/bgruening/cellpose/cellpose/3.0.10+galaxy0	Run generalist cell and nucleus segmentation	with Cellpose		
+toolshed.g2.bx.psu.edu/repos/iuc/cemitool/cemitool/1.18.1+galaxy1	CEMiTool	gene co-expression network analyses	operation_3501,operation_2497	topic_3518,topic_3308,topic_0203
+toolshed.g2.bx.psu.edu/repos/iuc/virannot_otu/virannot_otu/1.0.1+galaxy0	virAnnot OTU	create viral OTUs based on RPS and Blast annotations	operation_0566,operation_0361,operation_0291	topic_3174,topic_0781,topic_3697
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_range/beacon2_range/2.2.3+galaxy0	Beacon2 Range	Retrieve the genomic variants from the beacon database by specifying start and end positions		
+toolshed.g2.bx.psu.edu/repos/iuc/iqtree/iqtree/2.3.6+galaxy0	IQ-TREE	Phylogenomic / evolutionary tree construction from multiple sequences	operation_0324,operation_2403	topic_3293
+toolshed.g2.bx.psu.edu/repos/iuc/ncbi_fcs_gx/ncbi_fcs_gx/0.5.4+galaxy0	NCBI FCS GX	detects contamination from foreign organisms in genome sequences	operation_3187,operation_3180,operation_3192	topic_0196,topic_0080
+toolshed.g2.bx.psu.edu/repos/iuc/dram_annotate/dram_annotate/1.5.0+galaxy0	DRAM annotate	metagenome-assembled-genomes (MAGs)		
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_montage/graphicsmagick_image_montage/1.3.44+galaxy0	Image Montage			
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_cnv/beacon2_cnv/2.2.3+galaxy0	Beacon2 CNV	Retrieve the copy number varients from genomicVariations collection from the beacon database		
+toolshed.g2.bx.psu.edu/repos/iuc/dram_strainer/dram_strainer/1.5.0+galaxy0	DRAM strain annotations	down to genes of interest		
+toolshed.g2.bx.psu.edu/repos/iuc/clustering_from_distmat/clustering_from_distmat/1.1	Distance matrix-based hierarchical clustering	using Scipy	operation_3432	topic_2269,topic_0084
+toolshed.g2.bx.psu.edu/repos/fubar/jbrowse2/jbrowse2/2.13.1+galaxy0	JBrowse2	genome browser	operation_0573,operation_0564	topic_3307,topic_0092
+toolshed.g2.bx.psu.edu/repos/iuc/virannot_blast2tsv/virannot_blast2tsv/1.0.1+galaxy0	virAnnot Blast2tsv	convert XML blast results to tabular file with taxonomic informations	operation_0566,operation_0291,operation_0361	topic_0781,topic_3174,topic_3697
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_sequence/beacon2_sequence/2.2.3+galaxy0	Beacon2 Sequence	َQuery for the existence of a specified sequence at a given genomic position		
+toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_convert/graphicsmagick_image_convert/1.3.44+galaxy0	Convert image format	with GraphicsMagick		
+toolshed.g2.bx.psu.edu/repos/iuc/virannot_rps2tsv/virAnnot_rps2tsv/1.0.1+galaxy0	virAnnot Rps2tsv	Convert xml rpstblast results to tab file with taxonomic informations	operation_0566,operation_0361,operation_0291	topic_0781,topic_3697,topic_3174
+toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.526+galaxy0	MAFFT	Multiple alignment program for amino acid or nucleotide sequences		
