@@ -15370,3 +15370,52 @@ toolshed.g2.bx.psu.edu/repos/iuc/beacon2_sequence/beacon2_sequence/2.2.3+galaxy0
 toolshed.g2.bx.psu.edu/repos/bgruening/graphicsmagick_image_convert/graphicsmagick_image_convert/1.3.44+galaxy0	Convert image format	with GraphicsMagick		
 toolshed.g2.bx.psu.edu/repos/iuc/virannot_rps2tsv/virAnnot_rps2tsv/1.0.1+galaxy0	virAnnot Rps2tsv	Convert xml rpstblast results to tab file with taxonomic informations	operation_0566,operation_0361,operation_0291	topic_0781,topic_3697,topic_3174
 toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.526+galaxy0	MAFFT	Multiple alignment program for amino acid or nucleotide sequences		
+toolshed.g2.bx.psu.edu/repos/iuc/cami_amber_add/cami_amber_add/2.0.6+galaxy0	CAMI AMBER add length column	Create gold standard file for CAMI AMBER		
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_mergereplicates/ampvis2_mergereplicates/2.8.9+galaxy0	ampvis2 merge replicates		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/biobox_add_taxid/biobox_add_taxid/0.4+galaxy0	Biobox add taxid	Add taxid output from BAT or GTDB to biobox binning data		
+toolshed.g2.bx.psu.edu/repos/iuc/meme_meme/meme_meme/5.5.6+galaxy0	MEME	- Multiple EM for Motif Elicitation	operation_2238,operation_3092,operation_0415	topic_0080,topic_2269,topic_0199,topic_3473
+toolshed.g2.bx.psu.edu/repos/iuc/bbtools_callvariants/bbtools_callvariants/39.08+galaxy0	BBTools: call variants	in aligned Bam files		
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_heatmap/ampvis2_heatmap/2.8.9+galaxy0	ampvis2 heatmap		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/rnaquast/rna_quast/2.3.0+galaxy0	rnaQUAST	A quality assessment tool for De Novo transcriptome assemblies		
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_load/ampvis2_load/2.8.9+galaxy0	ampvis2 load		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/rna_starsolo/rna_starsolo/2.7.11a+galaxy1	RNA STARSolo	mapping, demultiplexing and gene quantification for single cell RNA-seq	operation_0292	topic_3170,topic_3308
+toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.7.1+galaxy0	Busco	assess genome assembly and annotation completeness	operation_3180,operation_3216,operation_0525,operation_3258	topic_0080,topic_0622,topic_0196,topic_3308
+toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.15.1+galaxy3	Samtools view	- reformat, filter, or subsample SAM, BAM or CRAM	operation_3695,operation_0335,operation_3096,operation_1812,operation_0227,operation_0337,operation_3802	topic_0080,topic_0102,topic_3168,topic_3325
+toolshed.g2.bx.psu.edu/repos/iuc/cami_amber_convert/cami_amber_convert/2.0.6+galaxy0	CAMI AMBER convert to biobox	Create binning file(s) for CAMI AMBER		
+toolshed.g2.bx.psu.edu/repos/iuc/meme_dreme/meme_dreme/5.5.6+galaxy0	DREME	- Discriminative Regular Expression Motif Elicitation	operation_0239,operation_2403	topic_3511,topic_3510,topic_0654
+toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	Faster Download and Extract Reads in FASTQ	format from NCBI SRA	operation_2422,operation_0335	topic_0622,topic_0091
+toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye/2.9.4+galaxy0	Flye	de novo assembler for single molecule sequencing reads	operation_0525	topic_0196
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_frequency/ampvis2_frequency/2.8.9+galaxy0	ampvis2 frequency plot		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_rarecurve/ampvis2_rarecurve/2.8.9+galaxy0	ampvis2 rarefaction curve		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_boxplot/ampvis2_boxplot/2.8.9+galaxy0	ampvis2 boxplot		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/rnaquast/rna_quast/2.2.3+galaxy1	rnaQUAST	A quality assessment tool for De Novo transcriptome assemblies		
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_octave/ampvis2_octave/2.8.9+galaxy0	ampvis2 octave plot		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11a+galaxy1	RNA STAR	Gapped-read mapper for RNA-seq data	operation_0292	topic_3170,topic_3308
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_export_fasta/ampvis2_export_fasta/2.8.9+galaxy0	ampvis2 export fasta		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_subset_taxa/ampvis2_subset_taxa/2.8.9+galaxy0	ampvis2 subset data	by taxonomy	operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/bbtools_bbduk/bbtools_bbduk/39.08+galaxy0	BBTools: BBduk	decontamination using kmers	operation_0496,operation_0491	topic_0622,topic_0091
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_core/ampvis2_core/2.8.9+galaxy0	ampvis2 core community analysis		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fastq_dump/3.1.1+galaxy1	Download and Extract Reads in FASTQ	format from NCBI SRA	operation_2422,operation_0335	topic_0622,topic_0091
+toolshed.g2.bx.psu.edu/repos/iuc/name2taxid/name2taxid/0.17.0+galaxy0	Name2taxid	Convert taxon names to NCBI Taxids	operation_2422,operation_0335	topic_0637,topic_0610,topic_3297
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_ordinate/ampvis2_ordinate/2.8.9+galaxy0	ampvis2 ordination plot		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_timeseries/ampvis2_timeseries/2.8.9+galaxy0	ampvis2 timeseries plot		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/infercnv/infercnv/1.20.0+galaxy1	InferCNV	Infer Copy Number Variation from Single-Cell RNA-Seq Data		
+toolshed.g2.bx.psu.edu/repos/iuc/gtdb_to_taxdump/gtdb_to_taxdump/0.1.9+galaxy0	NCBI-GTDB map	Map taxonomic classifications between the NCBI and GTDB taxonomies		
+toolshed.g2.bx.psu.edu/repos/bgruening/erga_ear/make_ear/24.08.26+galaxy0	ERGA Assembly Reporting Tool (EAR)	A tool to compile assembly reports and statistics from assembly pipeline		
+toolshed.g2.bx.psu.edu/repos/iuc/cami_amber/cami_amber/2.0.6+galaxy0	CAMI AMBER	Evaluation package for MAGs		
+toolshed.g2.bx.psu.edu/repos/iuc/meme_fimo/meme_fimo/5.5.6+galaxy0	FIMO	- Scan a set of sequences for motifs	operation_3092,operation_0415,operation_2238,operation_0238	topic_0199,topic_2269,topic_3473,topic_0080
+toolshed.g2.bx.psu.edu/repos/iuc/bbtools_tadpole/bbtools_tadpole/39.08+galaxy0	BBTools: Tadpole	Kmer-based assembler	operation_0496,operation_0491	topic_0622,topic_0091
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_venn/ampvis2_venn/2.8.9+galaxy0	ampvis2 venn diagram		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/sam_dump/3.1.1+galaxy1	Download and Extract Reads in BAM	format from NCBI SRA	operation_2422,operation_0335	topic_0622,topic_0091
+toolshed.g2.bx.psu.edu/repos/fubar/jbrowse2/jbrowse2/2.13.1+galaxy1	JBrowse2	genome browser	operation_0573,operation_0564	topic_3307,topic_0092
+toolshed.g2.bx.psu.edu/repos/iuc/meme_psp_gen/meme_psp_gen/5.5.6+galaxy0	MEME psp-gen	- perform discriminative motif discovery	operation_0239,operation_2403	topic_3510,topic_0654,topic_3511
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_setmetadata/ampvis2_setmetadata/2.8.9+galaxy0	ampvis2 set metadata	types	operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_subset_samples/ampvis2_subset_samples/2.8.9+galaxy0	ampvis2 subset samples	by sample metadata	operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_alpha_diversity/ampvis2_alpha_diversity/2.8.9+galaxy0	ampvis2 alpha diversity		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/adapter_removal/adapter_removal/2.3.4+galaxy0	AdapterRemoval: remove adapter sequences	from HTS data	operation_0232,operation_3237,operation_3192	
+toolshed.g2.bx.psu.edu/repos/iuc/bbtools_bbmap/bbtools_bbmap/39.08+galaxy0	BBTools: BBMap	short-read aligner	operation_0496,operation_0491	topic_0622,topic_0091
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_otu_network/ampvis2_otu_network/2.8.9+galaxy0	ampvis2 OTU network plot		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/virheat/virheat/0.7.1+galaxy0	VirHEAT: visualize allele frequencies	from VCFs as a heatmap and map mutations to respective genes		
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_rankabundance/ampvis2_rankabundance/2.8.9+galaxy0	ampvis2 rank abundance plot		operation_2945,operation_0337	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_merge_ampvis2/ampvis2_merge_ampvis2/2.8.9+galaxy0	ampvis2 merge ampvis2 data sets		operation_0337,operation_2945	topic_3050
+toolshed.g2.bx.psu.edu/repos/iuc/bbtools_bbmerge/bbtools_bbmerge/39.08+galaxy0	BBTools: BBMerge	Merge overlapping mates of a read pair	operation_0496,operation_0491	topic_0622,topic_0091
