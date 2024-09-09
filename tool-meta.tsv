@@ -15419,3 +15419,47 @@ toolshed.g2.bx.psu.edu/repos/iuc/virheat/virheat/0.7.1+galaxy0	VirHEAT: visualiz
 toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_rankabundance/ampvis2_rankabundance/2.8.9+galaxy0	ampvis2 rank abundance plot		operation_2945,operation_0337	topic_3050
 toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_merge_ampvis2/ampvis2_merge_ampvis2/2.8.9+galaxy0	ampvis2 merge ampvis2 data sets		operation_0337,operation_2945	topic_3050
 toolshed.g2.bx.psu.edu/repos/iuc/bbtools_bbmerge/bbtools_bbmerge/39.08+galaxy0	BBTools: BBMerge	Merge overlapping mates of a read pair	operation_0496,operation_0491	topic_0622,topic_0091
+toolshed.g2.bx.psu.edu/repos/iuc/tracegroomer/tracegroomer/0.1.4+galaxy1	tracegroomer	TraceGroomer is a solution to format and normalize files for DIMet tool		
+toolshed.g2.bx.psu.edu/repos/iuc/checkm_taxonomy_wf/checkm_taxonomy_wf/1.2.3+galaxy0	CheckM taxonomy_wf	Analyze all genome bins with the same marker set	operation_0004	topic_0194,topic_3293,topic_0637,topic_0622,topic_3174
+toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.4.0+galaxy0	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3474,topic_3316
+toolshed.g2.bx.psu.edu/repos/iuc/bioext_bam2msa/bioext_bam2msa/0.21.9+galaxy0	Convert BAM	to FASTA multiple sequence alignment		
+toolshed.g2.bx.psu.edu/repos/galaxyp/qupath_roi_splitter/qupath_roi_splitter/0.3.2+galaxy0	QuPath ROI Splitter	Split ROI coordinates of QuPath TMA annotation by cell type (classification)		
+toolshed.g2.bx.psu.edu/repos/iuc/bakta/bakta/1.9.4+galaxy0	Bakta	Rapid and standardized annotation of bacterial genomes, MAGs and plasmids	operation_0362	topic_0219,topic_0622,topic_0080
+toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx/1.20+galaxy2	Samtools fastx	extract FASTA or FASTQ from alignment files	operation_3695,operation_0227,operation_0337,operation_3802,operation_3096,operation_0335,operation_1812	topic_3168,topic_0080,topic_0102,topic_3325
+toolshed.g2.bx.psu.edu/repos/iuc/crossmap_bam/crossmap_bam/0.7.0+galaxy0	CrossMap BAM	Convert genome coordinates or annotation files between genome assemblies	operation_3267	
+toolshed.g2.bx.psu.edu/repos/iuc/cami_amber_convert/cami_amber_convert/2.0.7+galaxy0	CAMI AMBER convert to biobox	Create binning file(s) for CAMI AMBER		
+toolshed.g2.bx.psu.edu/repos/fubar/jbrowse2/jbrowse2/2.14.0+galaxy0	JBrowse2	genome browser	operation_0573,operation_0564	topic_3307,topic_0092
+toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.24.1+galaxy0	MultiQC	aggregate results from bioinformatics analyses into a single report	operation_2428	topic_0091,topic_3168
+toolshed.g2.bx.psu.edu/repos/iuc/samtools_markdup/samtools_markdup/1.20+galaxy2	Samtools markdup	marks duplicate alignments	operation_0335,operation_0227,operation_0337,operation_3695,operation_3096,operation_3802,operation_1812	topic_3325,topic_0102,topic_0080,topic_3168
+toolshed.g2.bx.psu.edu/repos/iuc/metaphlan/metaphlan/4.1.1+galaxy2	MetaPhlAn	to profile the composition of microbial communities	operation_0324,operation_2478	topic_0194,topic_3174
+toolshed.g2.bx.psu.edu/repos/iuc/checkm_lineage_wf/checkm_lineage_wf/1.2.3+galaxy0	CheckM lineage_wf	Assessing the completeness and contamination of genome bins using lineage-specific marker sets	operation_0004	topic_0622,topic_0637,topic_0194,topic_3293,topic_3174
+toolshed.g2.bx.psu.edu/repos/iuc/crossmap_region/crossmap_region/0.7.0+galaxy0	CrossMap region	Convert genome coordinates or annotation files between genome assemblies	operation_3267	
+toolshed.g2.bx.psu.edu/repos/iuc/cami_amber_add/cami_amber_add/2.0.7+galaxy0	CAMI AMBER add length column	Create gold standard file for CAMI AMBER		
+toolshed.g2.bx.psu.edu/repos/iuc/virannot_rps2tsv/virAnnot_rps2tsv/1.1.0+galaxy0	virAnnot Rps2tsv	Convert xml rpstblast results to tab file with taxonomic informations	operation_0291,operation_0361,operation_0566	topic_0781,topic_3697,topic_3174
+toolshed.g2.bx.psu.edu/repos/iuc/cami_amber/cami_amber/2.0.7+galaxy0	CAMI AMBER	Evaluation package for MAGs		
+toolshed.g2.bx.psu.edu/repos/iuc/checkm_tetra/checkm_tetra/1.2.3+galaxy0	CheckM tetra	Calculate tetranucleotide signature of sequences	operation_0004	topic_0194,topic_3293,topic_3174,topic_0622,topic_0637
+toolshed.g2.bx.psu.edu/repos/iuc/samtools_ampliconclip/samtools_ampliconclip/1.20+galaxy2	Samtools ampliconclip	clip primer bases from bam files		
+toolshed.g2.bx.psu.edu/repos/ecology/hirondelle_crim/hirondelle_crim/0.2.0	Hirondelle CRIM OGC API Processes	executes remote processes.		
+toolshed.g2.bx.psu.edu/repos/iuc/samtools_fixmate/samtools_fixmate/1.20+galaxy2	Samtools fixmate	fill mate coordinates, ISIZE and mate related flags	operation_3695,operation_3802,operation_0337,operation_1812,operation_3096,operation_0335,operation_0227	topic_0080,topic_0102,topic_3325,topic_3168
+toolshed.g2.bx.psu.edu/repos/iuc/checkm_analyze/checkm_analyze/1.2.3+galaxy0	CheckM analyze	Identify marker genes in bins and calculate genome statistics	operation_0004	topic_0637,topic_0622,topic_3174,topic_0194,topic_3293
+toolshed.g2.bx.psu.edu/repos/iuc/ensembl_vep/ensembl_vep/112.0+galaxy0	Predict variant effects	with VEP		
+toolshed.g2.bx.psu.edu/repos/iuc/checkm_tree_qa/checkm_tree_qa/1.2.3+galaxy0	CheckM tree_qa	Assess phylogenetic markers in the genome tree	operation_0004	topic_0637,topic_0622,topic_3174,topic_0194,topic_3293
+toolshed.g2.bx.psu.edu/repos/iuc/bioext_bealign/bioext_bealign/0.21.9+galaxy0	Align sequences	to a reference using a codon alignment algorithm		
+toolshed.g2.bx.psu.edu/repos/devteam/samtools_split/samtools_split/1.20+galaxy2	Samtools split	BAM dataset on readgroups	operation_3802,operation_0337,operation_0335,operation_3096,operation_1812,operation_3695,operation_0227	topic_0080,topic_3168,topic_3325,topic_0102
+toolshed.g2.bx.psu.edu/repos/iuc/checkm_taxon_set/checkm_taxon_set/1.2.3+galaxy0	CheckM taxon_set	Generate taxonomic-specific marker set	operation_0004	topic_3293,topic_0194,topic_3174,topic_0637,topic_0622
+toolshed.g2.bx.psu.edu/repos/iuc/crossmap_bed/crossmap_bed/0.7.0+galaxy0	CrossMap BED	Convert genome coordinates or annotation files between genome assemblies	operation_3267	
+toolshed.g2.bx.psu.edu/repos/iuc/checkm_lineage_set/checkm_lineage_set/1.2.3+galaxy0	CheckM lineage_set	Infer lineage-specific marker sets for each bin	operation_0004	topic_0622,topic_0194,topic_3174,topic_3293,topic_0637
+toolshed.g2.bx.psu.edu/repos/iuc/checkm_plot/checkm_plot/1.2.3+galaxy0	CheckM plot	for assessing the quality of genome bins	operation_0004	topic_0194,topic_3293,topic_0637,topic_0622,topic_3174
+toolshed.g2.bx.psu.edu/repos/iuc/crossmap_gff/crossmap_gff/0.7.0+galaxy0	CrossMap GFF	Convert genome coordinates or annotation files between genome assemblies	operation_3267	
+toolshed.g2.bx.psu.edu/repos/iuc/checkm_tree/checkm_tree/1.2.3+galaxy0	CheckM tree	Place bins in the genome tree	operation_0004	topic_0194,topic_3293,topic_0637,topic_0622,topic_3174
+toolshed.g2.bx.psu.edu/repos/iuc/biobox_add_taxid/biobox_add_taxid/0.6+galaxy0	Biobox add taxid	Add taxid output from BAT or GTDB to biobox binning data		
+toolshed.g2.bx.psu.edu/repos/iuc/samtools_bam_to_cram/samtools_bam_to_cram/1.20+galaxy2	samtools BAM to CRAM	convert BAM alignments to CRAM format	operation_3802,operation_0337,operation_0335,operation_3096,operation_1812,operation_3695,operation_0227	topic_0080,topic_3168,topic_3325,topic_0102
+toolshed.g2.bx.psu.edu/repos/iuc/virannot_otu/virannot_otu/1.1.0+galaxy0	virAnnot OTU	create viral OTUs based on RPS and Blast annotations	operation_0291,operation_0566,operation_0361	topic_3174,topic_3697,topic_0781
+toolshed.g2.bx.psu.edu/repos/iuc/crossmap_vcf/crossmap_vcf/0.7.0+galaxy0	CrossMap VCF	Convert genome coordinates or annotation files between genome assemblies	operation_3267	
+toolshed.g2.bx.psu.edu/repos/iuc/edger/edger/3.36.0+galaxy5	edgeR	Perform differential expression of count data	operation_3563,operation_3223	topic_3308
+toolshed.g2.bx.psu.edu/repos/iuc/checkm_qa/checkm_qa/1.2.3+galaxy0	CheckM qa	Assess bins for contamination and completeness	operation_0004	topic_3293,topic_0194,topic_0637,topic_3174,topic_0622
+toolshed.g2.bx.psu.edu/repos/iuc/crossmap_wig/crossmap_wig/0.7.0+galaxy0	CrossMap Wig	Convert genome coordinates or annotation files between genome assemblies	operation_3267	
+toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.20+galaxy3	Samtools view	- reformat, filter, or subsample SAM, BAM or CRAM	operation_0227,operation_3096,operation_3802,operation_1812,operation_0337,operation_3695,operation_0335	topic_3168,topic_3325,topic_0102,topic_0080
+toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.4	Pear	Paired-End read merger	operation_0232	topic_0196
+toolshed.g2.bx.psu.edu/repos/iuc/samtools_merge/samtools_merge/1.20+galaxy2	Samtools merge	merge multiple sorted alignment files	operation_3695,operation_0337,operation_3802,operation_0335,operation_1812,operation_0227,operation_3096	topic_3325,topic_0080,topic_3168,topic_0102
+toolshed.g2.bx.psu.edu/repos/iuc/virannot_blast2tsv/virannot_blast2tsv/1.1.0+galaxy0	virAnnot Blast2tsv	convert XML blast results to tabular file with taxonomic informations	operation_0291,operation_0566,operation_0361	topic_3174,topic_0781,topic_3697
