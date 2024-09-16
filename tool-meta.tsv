@@ -15463,3 +15463,51 @@ toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.20+galaxy3	Samtoo
 toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.4	Pear	Paired-End read merger	operation_0232	topic_0196
 toolshed.g2.bx.psu.edu/repos/iuc/samtools_merge/samtools_merge/1.20+galaxy2	Samtools merge	merge multiple sorted alignment files	operation_3695,operation_0337,operation_3802,operation_0335,operation_1812,operation_0227,operation_3096	topic_3325,topic_0080,topic_3168,topic_0102
 toolshed.g2.bx.psu.edu/repos/iuc/virannot_blast2tsv/virannot_blast2tsv/1.1.0+galaxy0	virAnnot Blast2tsv	convert XML blast results to tabular file with taxonomic informations	operation_0291,operation_0566,operation_0361	topic_3174,topic_0781,topic_3697
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.10.2+galaxy0	Scanpy plot		operation_3223	topic_2229,topic_3053,topic_0203
+toolshed.g2.bx.psu.edu/repos/iuc/seurat_plot/seurat_plot/5.0+galaxy0	Seurat Visualize	- Plot cells, features and dimensions		
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_createmsp/mspurity_createmsp/1.28.0+galaxy1	msPurity.createMSP	Create MSP files from msPurity processed data	operation_3214	topic_0121,topic_0154,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/clair3/clair3/1.0.8+galaxy1	Clair3	germline small variant caller for long-reads	operation_3227	topic_3321
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_normalize/scanpy_normalize/1.10.2+galaxy0	Scanpy normalize	and impute	operation_3223	topic_0203,topic_2229,topic_3053
+toolshed.g2.bx.psu.edu/repos/iuc/anndata_manipulate/anndata_manipulate/0.10.9+galaxy0	Manipulate AnnData	object		
+toolshed.g2.bx.psu.edu/repos/iuc/seurat_create/seurat_create/5.0+galaxy0	Seurat Create	- Prepare data for the pipeline		
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_mfassigncho/mfassignr_mfassignCHO/1.1.1+galaxy0	MFAssignR MFAssignCHO	Molecular formula assignment (only with CHO).	operation_2940	topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/microsatbed/microsatbed/1.3.3+galaxy1	STR to bed	Short Tandem Repeats to bed features from fasta		
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_recal/mfassignr_recal/1.1.1+galaxy0	MFAssignR Recal	Internal mass recalibration using a recalibrant series.	operation_3627	topic_3172
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_createdatabase/mspurity_createdatabase/1.28.0+galaxy1	msPurity.createDatabase	Create and SQLite database of an LC-MS(/MS) experiment	operation_3214	topic_0121,topic_0154,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/seurat_data/seurat_data/5.0+galaxy0	Seurat Data Management	- Inspect and Manipulate		
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_flagremove/mspurity_flagremove/1.28.0+galaxy1	msPurity.flagRemove	Tool to flag and remove XCMS grouped peaks from the xcmsSet object based on various thresholds        (e.g. RSD of intensity and retention time).	operation_3214	topic_0121,topic_0154,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_remove_confounders/scanpy_remove_confounders/1.10.2+galaxy0	Scanpy remove confounders	with scanpy	operation_3223	topic_0203,topic_2229,topic_3053
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_kmdnoise/mfassignr_kmdnoise/1.1.1+galaxy0	MFAssignR KMDNoise	Noise level assessment using the KMDNoise.	operation_2940	topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/falco/falco/1.2.3+galaxy0	Falco	An alternative, more performant implementation of FastQC for high throughput sequence quality control	operation_3218,operation_3198,operation_0337	topic_3382,topic_0769,topic_0102
+toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy3	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics		
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_spectralmatching/mspurity_spectralmatching/1.28.0+galaxy1	msPurity.spectralMatching	Perform spectral matching to MS/MS spectral libraries	operation_3214	topic_0154,topic_0121,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/seurat_integrate/seurat_integrate/5.0+galaxy0	Seurat Integrate	and manipulate layers		
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_puritya/mspurity_puritya/1.28.0+galaxy1	msPurity.purityA	Assess acquired precursor ion purity of MS/MS spectra	operation_3214	topic_3520,topic_0121,topic_0154
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_frag4feature/mspurity_frag4feature/1.28.0+galaxy1	msPurity.frag4feature	Assign fragmentation spectra to XCMS features using msPurity	operation_3214	topic_3520,topic_0121,topic_0154
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_filterfragspectra/mspurity_filterfragspectra/1.28.0+galaxy1	msPurity.filterFragSpectra	Filter fragmentations spectra associated with an XCMS feature	operation_3214	topic_0121,topic_0154,topic_3520
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_dimspredictpuritysingle/mspurity_dimspredictpuritysingle/1.28.0+galaxy1	msPurity.dimsPredictPuritySingle	Calculate the anticipated precursor ion purity from a DIMS dataset.	operation_3214	topic_3520,topic_0121,topic_0154
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_filter/scanpy_filter/1.10.2+galaxy0	Filter	with scanpy	operation_3223	topic_3053,topic_0203,topic_2229
+toolshed.g2.bx.psu.edu/repos/iuc/seurat_preprocessing/seurat_preprocessing/5.0+galaxy0	Seurat Preprocessing	- Normalize, Find Variable Features, Scale and Regress		
+toolshed.g2.bx.psu.edu/repos/bgruening/motus/mereg_mOTUs_tables/3.1.0+galaxy0	Merge	Merge mOTUs aboundance or count tables		
+toolshed.g2.bx.psu.edu/repos/iuc/seurat_clustering/seurat_clustering/5.0+galaxy0	Seurat Find Clusters	- Neighbors and Markers		
+toolshed.g2.bx.psu.edu/repos/bgruening/motus/motus_profiler/3.1.0+galaxy0	mOTUs_profiler	performs taxonomic profiling of metagenomics and metatrancriptomics samples		
+toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect/0.10.9+galaxy0	Inspect AnnData	object		
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_recallist/mfassignr_recallist/1.1.1+galaxy0	MFAssignR RecalList	Identification of candidate series for recalibration.	operation_3627	topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/anndata_export/anndata_export/0.10.9+galaxy0	Export AnnData	matrix and annotations		
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_snplot/mfassignr_snplot/1.1.1+galaxy0	MFAssignR SNplot	Noise level assessment using the SNplot function.		topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/anndata_import/anndata_import/0.10.9+galaxy0	Import Anndata	from different formats		
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_histnoise/mfassignr_histnoise/1.1.1+galaxy0	MFAssignR HistNoise	Noise level assessment using the HistNoise		topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/maaslin2/maaslin2/1.18.0+galaxy0	MaAsLin 2	Microbiome Multivariable Association with Linear Models		topic_3941,topic_3301,topic_3305
+toolshed.g2.bx.psu.edu/repos/bgruening/chatgpt_openai_api/chatgpt_openai_api/2024+galaxy2	chatGPT	Integrating OpenAI's ChatGPT into Galaxy		
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_cluster_reduce_dimension/scanpy_cluster_reduce_dimension/1.10.2+galaxy0	Scanpy cluster, embed	and infer trajectories	operation_3223	topic_2229,topic_3053,topic_0203
+toolshed.g2.bx.psu.edu/repos/iuc/abritamr/abritamr/1.0.19+galaxy0	abriTAMR	AMR gene detection with AMRFinderPlus		
+toolshed.g2.bx.psu.edu/repos/iuc/bigwig_outlier_bed/bigwig_outlier_bed/0.2.0+galaxy1	Bigwig extremes to bed features	Writes high and low bigwig runs as features in a bed file	operation_0337	topic_0157,topic_0092
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_inspect/scanpy_inspect/1.10.2+galaxy0	Scanpy Inspect and manipulate		operation_3223	topic_2229,topic_3053,topic_0203
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_isofiltr/mfassignr_isofiltr/1.1.1+galaxy0	MFAssignR IsoFiltR	Separates likely isotopic masses from monoisotopic masses in a mass list	operation_3629	topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/microsatbed/microsatbed/1.3.3+galaxy0	STR to bed	Short Tandem Repeats to bed features from fasta		
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_averagefragspectra/mspurity_averagefragspectra/1.28.0+galaxy1	msPurity.averageFragSpectra	Average and filter LC-MS/MS fragmentation spectra (Inter, Intra or All)	operation_3214	topic_0121,topic_3520,topic_0154
+toolshed.g2.bx.psu.edu/repos/iuc/seurat_reduce_dimension/seurat_reduce_dimension/5.0+galaxy0	Seurat Run Dimensional Reduction	- PCA, tSNE or UMAP		
+toolshed.g2.bx.psu.edu/repos/iuc/modify_loom/modify_loom/0.10.9+galaxy0	Loom operations	Manipulate, export and import loom data		
+toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_purityx/mspurity_purityx/1.28.0+galaxy1	msPurity.purityX	Calculate the anticipated precursor ion purity from a LC-MS XCMS dataset.	operation_3214	topic_0121,topic_0154,topic_3520
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_mfassign/mfassignr_mfassign/1.1.1+galaxy0	MFAssignR MFAssign	Molecular formula assignment.		topic_3172
+toolshed.g2.bx.psu.edu/repos/ebi-gxa/decoupler_pseudobulk/decoupler_pseudobulk/1.4.0+galaxy4	Decoupler pseudo-bulk	aggregates single cell RNA-seq data for running bulk RNA-seq methods		
