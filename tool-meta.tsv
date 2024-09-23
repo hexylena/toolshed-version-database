@@ -15511,3 +15511,48 @@ toolshed.g2.bx.psu.edu/repos/iuc/modify_loom/modify_loom/0.10.9+galaxy0	Loom ope
 toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_purityx/mspurity_purityx/1.28.0+galaxy1	msPurity.purityX	Calculate the anticipated precursor ion purity from a LC-MS XCMS dataset.	operation_3214	topic_0121,topic_0154,topic_3520
 toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_mfassign/mfassignr_mfassign/1.1.1+galaxy0	MFAssignR MFAssign	Molecular formula assignment.		topic_3172
 toolshed.g2.bx.psu.edu/repos/ebi-gxa/decoupler_pseudobulk/decoupler_pseudobulk/1.4.0+galaxy4	Decoupler pseudo-bulk	aggregates single cell RNA-seq data for running bulk RNA-seq methods		
+toolshed.g2.bx.psu.edu/repos/iuc/ucsc_maftoaxt/maftoaxt/469+galaxy0	mafToAxt	Convert file from MAF to axt format		
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_recover_weaker_signals/recetox_aplcms_recover_weaker_signals/0.13.3+galaxy0	recetox-aplcms - recover weaker signals	recover weaker signals from raw data using an aligned feature table	operation_3215,operation_3799	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/cpt/cpt_protein_blast_grouping/edu.tamu.cpt.blast.protein_grouping/0.0.1	Protein Blast Grouping	Based on a BLASTp result		
+toolshed.g2.bx.psu.edu/repos/fubar/jbrowse2/jbrowse2/2.15.4+galaxy0	JBrowse2	genome browser	operation_0573,operation_0564	topic_3307,topic_0092
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_compute_template/recetox_aplcms_compute_template/0.13.3+galaxy0	recetox-aplcms - compute template	compute retention time correction template feature table	operation_3936	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/ucsc_axtchain/ucsc_axtchain/469+galaxy0	axtChain	Chain together axt alignments		
+toolshed.g2.bx.psu.edu/repos/devteam/fasta_clipping_histogram/cshl_fasta_clipping_histogram/1.0.0	Length Distribution	chart		
+toolshed.g2.bx.psu.edu/repos/iuc/argnorm/argnorm/0.6.0+galaxy0	argNorm	a tool to normalize antibiotic resistance genes (ARGs) by mapping them to the antibiotic resistance ontology (ARO)		
+toolshed.g2.bx.psu.edu/repos/iuc/spapros_selection/spapros_selection/0.1.5+galaxy0	Selection	of marker genes with spapros		
+toolshed.g2.bx.psu.edu/repos/cpt/cpt_prophage_relatedness/edu.tamu.cpt2.phage.relatedProphages/21.1.0.0	Related Prophages tool			
+toolshed.g2.bx.psu.edu/repos/iuc/ucsc_fasplit/fasplit/469	faSplit	Split a FASTA file		
+toolshed.g2.bx.psu.edu/repos/iuc/gtdbtk_classify_wf/gtdbtk_classify_wf/2.3.2+galaxy3	GTDB-Tk Classify genomes	by placement in GTDB reference tree		
+toolshed.g2.bx.psu.edu/repos/iuc/ucsc_wigtobigwig/ucsc_wigtobigwig/469+galaxy0	wigtobigwig	bedGraph or Wig to bigWig converter		
+toolshed.g2.bx.psu.edu/repos/iuc/clustering_from_distmat/clustering_from_distmat/1.1.1	Distance matrix-based hierarchical clustering	using Scipy	operation_3432	topic_2269,topic_0084
+toolshed.g2.bx.psu.edu/repos/recetox/ms2deepscore_config_generator/ms2deepscore_config_generator/2.0.0+galaxy0	MS2DeepScore Configuration Generator	Generates model parameters for MS2DeepScore in JSON format	operation_3860,operation_3801,operation_3927	topic_3343,topic_3474,topic_3172,topic_3520,topic_0154
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_remove_noise/recetox_aplcms_remove_noise/0.13.3+galaxy0	recetox-aplcms - remove noise	filter noise and detect peaks in high resolution mass spectrometry (HRMS) profile data	operation_3937	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/ucsc_chainnet/ucsc_chainnet/469+galaxy0	chainNet	make alignment nets out of alignment chains		
+toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/xcms_plot_eic/xcms_plot_eic/4.0.0+galaxy0	xcms plot eic	Plot the extracted ion chromatogram (EIC) from mzML file		
+toolshed.g2.bx.psu.edu/repos/recetox/ms2deepscore_similarity/ms2deepscore_similarity/2.0.0+galaxy0	MS2DeepScore Similarity	Compute similarity scores using a pre-trained MS2DeepScore model	operation_3801,operation_3860,operation_3927	topic_0154,topic_3474,topic_3520,topic_3343,topic_3172
+toolshed.g2.bx.psu.edu/repos/iuc/ucsc_netfilter/ucsc_netfilter/469+galaxy0	netFilter	Filter out parts of net		
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_compute_clusters/recetox_aplcms_compute_clusters/0.13.3+galaxy0	recetox-aplcms - compute clusters	compute clusters of mz and rt across samples and assign cluster IDs to individual features	operation_2928	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.13.3+galaxy0	recetox-aplcms - align features	align peaks across samples	operation_2928	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/metabuli/metabuli_classify/1.0.5+galaxy0	metabuli classify	metagenomic sequences	operation_3460	topic_0637
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_merge_known_table/recetox_aplcms_merge_known_table/0.13.3+galaxy0	recetox-aplcms - merge known table	join knowledge from aligned features and known table.	operation_3436	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/ucsc_axtchain/ucsc_axtchain/455+galaxy0	axtChain	Chain together axt alignments		
+toolshed.g2.bx.psu.edu/repos/rnateam/intarna/intarna/3.4.1	IntaRNA	Efficient RNA-RNA interaction prediction incorporating accessibility and seeding of interaction sites.	operation_0278	topic_0080
+toolshed.g2.bx.psu.edu/repos/q2d2/qiime2__diversity__filter_alpha_diversity/qiime2__diversity__filter_alpha_diversity/2024.5.0+q2galaxy.2024.5.0	qiime2 diversity filter-alpha-diversity	Filter samples from an alpha diversity metric.		
+toolshed.g2.bx.psu.edu/repos/recetox/ms2deepscore_training/ms2deepscore_training/2.0.0+galaxy0	MS2DeepScore Model Training	Compute similarity scores using a pre-trained MS2DeepScore model	operation_3801,operation_3927,operation_3860	topic_3343,topic_3520,topic_3172,topic_0154,topic_3474
+toolshed.g2.bx.psu.edu/repos/devteam/fasta_clipping_histogram/cshl_fasta_clipping_histogram/1.0.1	Length Distribution	chart		
+toolshed.g2.bx.psu.edu/repos/devteam/fasta_clipping_histogram/cshl_fasta_clipping_histogram/1.0.1+galaxy2	Length Distribution	chart		
+toolshed.g2.bx.psu.edu/repos/iuc/spapros_evaluation/spapros_evaluation/0.1.5+galaxy0	Evaluation	of marker genes with spapros		
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_correct_time/recetox_aplcms_correct_time/0.13.3+galaxy0	recetox-aplcms - correct time	correct retention time across samples for peak alignment	operation_3628	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/iuc/ucsc_nettoaxt/ucsc_nettoaxt/469+galaxy0	netToAxt	Convert net (and chain) to axt format		
+toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/xcms_plot_raw/xcms_plot_raw/4.0.0+galaxy0	xcms plot raw	Plot raw data filtered by m/z range and retention time (RT) range		
+toolshed.g2.bx.psu.edu/repos/iuc/gtdbtk_classify_wf/gtdbtk_classify_wf/2.3.2+galaxy4	GTDB-Tk Classify genomes	by placement in GTDB reference tree		
+toolshed.g2.bx.psu.edu/repos/iuc/abyss/abyss-pe/2.3.9+galaxy0	ABySS	de novo sequence assembler	operation_0525,operation_0524	topic_0196
+toolshed.g2.bx.psu.edu/repos/iuc/ucsc_twobittofa/ucsc-twobittofa/469	twoBitToFa	Convert all or part of .2bit file to FASTA		
+toolshed.g2.bx.psu.edu/repos/iuc/metaphlan/metaphlan/4.1.1+galaxy3	MetaPhlAn	to profile the composition of microbial communities	operation_0324,operation_2478	topic_0194,topic_3174
+toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_generate_feature_table/recetox_aplcms_generate_feature_table/0.13.3+galaxy0	recetox-aplcms - generate feature table	generate feature table from noise-removed HRMS profile data	operation_3215,operation_3799	topic_3172,topic_0091,topic_3520
+toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_findrecalseries/mfassignr_findRecalSeries/1.1.1+galaxy1	MFAssignR FindRecalSeries	Selects most suitable series for recalibration	operation_3627	topic_3172
+toolshed.g2.bx.psu.edu/repos/cpt/cpt_intersect_adj/edu.tamu.cpt.gff3.intersect_and_adjacent/21.0.0	Intersect and Adjacent	Outputs nearby top-level GFF features from two GFF3 files		
+toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye/2.9.5+galaxy0	Flye	de novo assembler for single molecule sequencing reads	operation_0525	topic_0196
+toolshed.g2.bx.psu.edu/repos/iuc/evidencemodeler/evidencemodeler/2.1.0+galaxy0	EVidenceModeler	combines ab intio gene predictions, protein and transcript alignments into gene structures		
+toolshed.g2.bx.psu.edu/repos/iuc/cosg/cosg/1.0.1+galaxy0	COSG	Cell marker gene identification		
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_inspect/scanpy_inspect/1.10.2+galaxy1	Scanpy Inspect and manipulate		operation_3223	topic_0203,topic_2229,topic_3053
