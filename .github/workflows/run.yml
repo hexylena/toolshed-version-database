@@ -29,6 +29,8 @@ jobs:
           python convert.py tool-version-database.tsv
           python fetch2a.py
           python fetch2.py
+          # This isn't for normal reasons.
+          # This is because python will emit characters that are unreadable to ruby's psych
           cat tool-meta.json | jq -c > tmp;
           mv tmp tool-meta.json
           cat tool-meta.json | jq '[. | to_entries[] | {"key": .key, "value": (.value.name + " " +.value.desc)}] | from_entries' -S > tool-meta-names.json
