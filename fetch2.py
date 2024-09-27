@@ -33,34 +33,26 @@ SERVERS = [
     "www.immportgalaxy.org",
 ]
 
-headers = {
-    "User-Agent": "tsvdb@1 (https://github.com/hexylena/toolshed-version-database/)",
-}
-
-
-def seq_try(path, servers):
-    for server in servers:
-        try:
-            return requests.get(
-                f"https://{server}{path}", timeout=10, headers=headers
-            ).json()
-        except Exception as e:
-            print(e)
-            pass
-
 
 def fetch_name(tool_id):
-    meta = seq_try(f"/api/tools/{tool_id}?io_details=True&link_details=False", SERVERS)
-    if meta is None or "name" not in meta:
+    if not os.path.exists(f"api/tools/{tool_id}"):
         return None
-    else:
-        return [
-            tool_id,
-            meta["name"],
-            meta["description"],
-            ",".join(meta["edam_operations"]),
-            ",".join(meta["edam_topics"]),
-        ]
+
+    with open(f"api/tools/{tool_id}", 'r') as handle:
+        meta = json.load(handle)
+
+    biotools_xrefs = [x['value'] for x in meta.get('xrefs', []) if x['reftype'] == 'bio.tools']
+
+    return [
+        tool_id,
+        meta["name"],
+        meta["description"],
+        ",".join(meta["edam_operations"]),
+        ",".join(meta["edam_topics"]),
+        biotools_xrefs[0] if len(biotools_xrefs) > 0 else "",
+    ]
+
+
 
 
 with open("guid-rev.json") as f:
@@ -80,3 +72,20 @@ with open("tool-meta.tsv", "a") as f:
     print(f"Fetched {len(results)} updates")
     for repo_result in results:
         f.write("\t".join(repo_result) + "\n")
+
+with open("tool-meta.tsv", "r") as handle:
+    data = [x.strip("\n").split("\t") for x in handle]
+
+tool_meta = {}
+
+for guid, name, description, edam_operations, edam_topics, bio_tools in data:
+    tool_meta[guid] = {
+        "name": name,
+        "desc": description,
+        "edam_operations": edam_operations.split(","),
+        "edam_topics": edam_topics.split(","),
+        "bio.tools": bio_tools,
+    }
+
+with open("tool-meta.json", "w") as handle:
+    json.dump(tool_meta, handle)

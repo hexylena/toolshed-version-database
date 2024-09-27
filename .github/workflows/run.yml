@@ -26,10 +26,10 @@ jobs:
         run: |
           python fetch.py > tool-version-database.tsv
           python convert.py tool-version-database.tsv
+          python fetch2a.py
           python fetch2.py
           cat tool-meta.json | jq -c > tmp;
           mv tmp tool-meta.json
-          python fetch2a.py
           cat tool-meta.json | jq '[. | to_entries[] | {"key": .key, "value": (.value.name + " " +.value.desc)}] | from_entries' -S > tool-meta-names.json
 
       - name: Commit
