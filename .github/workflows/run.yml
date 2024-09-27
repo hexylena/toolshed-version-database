@@ -4,6 +4,7 @@ on:
   schedule:
     # build monday mornings.
     - cron:  '0 2 * * 1'
+  workflow_dispatch:
 
 jobs:
   deploy:
