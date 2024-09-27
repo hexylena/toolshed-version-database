@@ -15558,3 +15558,58 @@ toolshed.g2.bx.psu.edu/repos/galaxy-australia/cactus_export/cactus_export/2.6.7+
 toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/3.2.1.0.0	computeMatrix	prepares data for plotting a heatmap or a profile of given regions	operation_0337,operation_3435	topic_0622,topic_3169	deeptools
 toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap/ggplot2_heatmap/2.2.1	Heatmap w ggplot		operation_2403,operation_3197	topic_0080	gemini
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_relax/hyphy_relax/2.5.12+galaxy0	HyPhy-RELAX	Detect relaxed selection in a codon-based    phylogenetic framework			
+toolshed.g2.bx.psu.edu/repos/imgteam/points2binaryimage/ip_points_to_binaryimage/0.3+galaxy0	Convert point coordinates to binary image		operation_3443	topic_3382,topic_0091	galaxy_image_analysis
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_math/imagej2_math/20240614+galaxy0	Operate on pixels	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_convert_to_raw/imagej2_bunwarpj_convert_to_raw/20240614+galaxy0	Convert elastic transformation to raw	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_noise/imagej2_noise/20240614+galaxy0	Add or remove noise	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_shadows/imagej2_shadows/20240614+galaxy0	Add shadow effect	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_sequence/beacon2_sequence/2.2.4+galaxy0	Beacon2 Sequence	َQuery for the existence of a specified sequence at a given genomic position			
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_raw_transform/imagej2_bunwarpj_raw_transform/20240614+galaxy0	Apply raw transformation	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_create_image/imagej2_create_image/20240614+galaxy0	Create new image	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/arriba/arriba/2.4.0+galaxy2	Arriba	detect gene fusions from STAR aligned RNA-Seq data			
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_find_edges/imagej2_find_edges/20240614+galaxy0	Find edges	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_smooth/imagej2_smooth/20240614+galaxy0	Smooth image	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_nsstats/chewbbaca_nsstats/3.3.10+galaxy0	chewBBACA NSStats	Retrieve basic information about the species and schemas in Chewie-NS			
+toolshed.g2.bx.psu.edu/repos/iuc/sniffles/sniffles/2.4+galaxy0	sniffles	Structural variation caller using third generation sequencing	operation_3228,operation_2403	topic_3175,topic_3168	sniffles
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_cnv/beacon2_cnv/2.2.4+galaxy0	Beacon2 CNV	Retrieve the copy number varients from genomicVariations collection from the beacon database			
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_compare_elastic_raw/imagej2_bunwarpj_compare_elastic_raw/20240614+galaxy0	Compare elastic and raw deformation	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_compose_raw/imagej2_bunwarpj_compose_raw/20240614+galaxy0	Compose two raw transformations	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/climate/psy_maps/psy_maps/1.3.0	map plot	gridded (lat/lon) netCDF data	operation_0573	topic_3855,topic_3318	
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_compose_raw_elastic/imagej2_bunwarpj_compose_raw_elastic/20240614+galaxy0	Compose a raw and an elastic transformation	into a raw transformation with bUnwarpJ	operation_3443,operation_0337,operation_3553	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_compare_elastic/imagej2_bunwarpj_compare_elastic/20240614+galaxy0	Compare opposite elastic deformations	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_analyze_particles_binary/imagej2_analyze_particles_binary/20240614+galaxy0	Analyze particles	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_skeletonize3d/imagej2_skeletonize3d/20240614+galaxy0	Skeletonize	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_extractcgmlst/chewbbaca_extractcgmlst/3.3.10+galaxy0	chewBBACA ExtractCgMLST	Determine the set of loci that constitute the core genome			
+toolshed.g2.bx.psu.edu/repos/iuc/tsebra/tsebra/1.1.2.5+galaxy0	TSEBRA	tanscript selector for BRAKER	operation_0264,operation_3663	topic_0203,topic_3512,topic_3170,topic_0621	tsebra
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_watershed_binary/imagej2_watershed_binary/20240614+galaxy0	Perform segmentation using watershed transformation	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_compose_elastic/imagej2_bunwarpj_compose_elastic/20240614+galaxy0	Compose two elastic transformations	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_joinprofiles/chewbbaca_joinprofiles/3.3.10+galaxy0	chewBBACA JoinProfiles	Join allele calling results from different runs			
+toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.4.0+galaxy2	Arriba Draw Fusions				
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_analyze_skeleton/imagej2_analyze_skeleton/20240614+galaxy0	Analyze skeleton	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_createschema/chewbbaca_createschema/3.3.10+galaxy0	chewBBACA CreateSchema	Create a gene-by-gene schema			
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_align/imagej2_bunwarpj_align/20240614+galaxy0	Align two images	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/spapros_selection/spapros_selection/0.1.5+galaxy0	Selection	of marker genes with spapros			
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_binary_to_edm/imagej2_binary_to_edm/20240614+galaxy0	Convert binary image to EDM	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/idr_download_by_ids/idr_download_by_ids/0.45	Download IDR/OMERO		operation_3443		
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_enhance_contrast/imagej2_enhance_contrast/20240614+galaxy0	Enhance contrast	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_range/beacon2_range/2.2.4+galaxy0	Beacon2 Range	Retrieve the genomic variants from the beacon database by specifying start and end positions			
+toolshed.g2.bx.psu.edu/repos/imgteam/spot_detection_2d/ip_spot_detection_2d/0.1+galaxy0	Perform 2-D spot detection		operation_3443	topic_0091,topic_3382	galaxy_image_analysis
+toolshed.g2.bx.psu.edu/repos/imgteam/overlay_images/ip_overlay_images/0.0.4+galaxy4	Overlay images		operation_3443	topic_0091,topic_3382	galaxy_image_analysis
+toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_downloadschema/chewbbaca_downloadschema/3.3.10+galaxy0	chewBBACA DownloadSchema	Download a schema from Chewie-NS			
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_analyses/beacon2_analyses/2.2.4+galaxy0	Beacon2 Analyses	َQuery the analyses collection in the beacon database for bioinformatic procedures to identify variants			
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_gene/beacon2_gene/2.2.4+galaxy0	Beacon2 Gene	Queries the beacon database and retrieve the genomic variants matching gene symbol			
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_bracket/beacon2_bracket/2.2.4+galaxy0	Beacon2 Bracket	Specifies a sequence ranges for both the start and end positions of a genomic variation			
+toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.4.0+galaxy2	Arriba Get Filters	to history			
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_adapt_transform/imagej2_bunwarpj_adapt_transform/20240614+galaxy0	Adapt an elastic transformation	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_allelecall/chewbbaca_allelecall/3.3.10+galaxy0	ChewBBACA AlleleCall	Determine the allelic profiles of a set of genomes			
+toolshed.g2.bx.psu.edu/repos/iuc/beacon2_import/beacon2_import/2.2.4+galaxy0	Beacon2 Import	Import JSON formatted datasets to beacon database			
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_compare_raw/imagej2_bunwarpj_compare_raw/20240614+galaxy0	Compare two raw deformations	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/gtdbtk_classify_wf/gtdbtk_classify_wf/2.3.2+galaxy5	GTDB-Tk Classify genomes	by placement in GTDB reference tree			GTDB-Tk
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_make_binary/imagej2_make_binary/20240614+galaxy0	Convert to binary	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_sharpen/imagej2_sharpen/20240614+galaxy0	Sharpen	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_elastic_transform/imagej2_bunwarpj_elastic_transform/20240614+galaxy0	Apply elastic transformation	with ImageJ	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_adjust_threshold_binary/imagej2_adjust_threshold_binary/20240614+galaxy0	Adjust threshold	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_find_maxima/imagej2_find_maxima/20240614+galaxy0	Find maxima	with ImageJ2	operation_3443	topic_3382	imagej
+toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_prepexternalschema/chewbbaca_prepexternalschema/3.3.10+galaxy0	chewBBACA PrepExternalSchema	Adapt an external schema to be used with chewBBACA			
+toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_allelecallevaluator/chewbbaca_allelecallevaluator/3.3.10+galaxy0	chewBBACA AlleleCallEvaluator	Build an interactive report for allele calling results evaluation			
+toolshed.g2.bx.psu.edu/repos/imgteam/colorize_labels/colorize_labels/3.2.1+galaxy3	Colorize label map	with NetworkX	operation_3443		
