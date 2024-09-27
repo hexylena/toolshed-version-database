@@ -39,7 +39,11 @@ def fetch_name(tool_id):
         return None
 
     with open(f"api/tools/{tool_id}", 'r') as handle:
-        meta = json.load(handle)
+        try:
+            meta = json.load(handle)
+        except:
+            print(f"Could not load {tool_id}")
+            raise Exception()
 
     biotools_xrefs = [x['value'] for x in meta.get('xrefs', []) if x['reftype'] == 'bio.tools']
 
