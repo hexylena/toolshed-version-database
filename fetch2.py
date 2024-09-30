@@ -78,6 +78,7 @@ def fetch_name(tool_id):
         ",".join(meta["edam_topics"]),
         biotools_xref,
         biotools_name,
+        meta.get('xrefs', [])
     ]
 
 
@@ -92,17 +93,18 @@ tool_meta = {}
 with open("tool-meta.tsv", "w") as f:
     results = [x for x in list(r) if x is not None]
     print(f"Fetched {len(results)} updates")
-    for repo_result in results:
-        f.write("\t".join(repo_result) + "\n")
+    for (guid, name, description, edam_operations, edam_topics, biotools_id, biotools_name, xrefs) in results:
 
-        (guid, name, description, edam_operations, edam_topics, biotools_id, biotools_name) = repo_result
+        f.write("\t".join((guid, name, description, edam_operations, edam_topics, biotools_id, biotools_name)) + "\n")
+
         tool_meta[guid] = {
             "name": name,
             "desc": description,
-            "edam_operations": edam_operations.split(","),
-            "edam_topics": edam_topics.split(","),
-            "bio.tools": biotools_id,
-            "bio.tools_name": biotools_name,
+            "edam_operations": [x for x in edam_operations.split(",") if x != ""],
+            "edam_topics": [x for x in edam_topics.split(",") if x != ""],
+            # "bio.tools": biotools_id,
+            # "bio.tools_name": biotools_name,
+            "xrefs": xrefs,
         }
 
 with open("tool-meta.json", "w") as handle:
