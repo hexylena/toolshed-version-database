@@ -57,7 +57,7 @@ def fetch_name(tool_id):
                     print(f"Could not decode t={tool_id} b={biotools_xref}")
                     pass
         else:
-            req = requests.get(f"https://bio.tools/api/tool/{biotools_xref}", headers={"Accept": "application/json"})
+            req = requests.get(f"https://bio.tools/api/tool/{biotools_xref}", headers={"Accept": "application/json"}, timeout=10)
             try:
                 data = req.json()
             except:
