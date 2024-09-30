@@ -107,3 +107,8 @@ with open("tool-meta.tsv", "w") as f:
 
 with open("tool-meta.json", "w") as handle:
     json.dump(tool_meta, handle)
+
+import subprocess
+subprocess.check_call(['bash', '-c', 'cat tool-meta.json | jq -c > tmp'])
+subprocess.check_call(['mv', 'tmp', 'tool-meta.json'])
+
