@@ -89,6 +89,7 @@ tool_ids = [x[len("api/tools/"):] for x in tool_ids]
 
 r = thread_map(fetch_name, list(tool_ids), max_workers=10)
 tool_meta = {}
+tool_meta_v2 = {}
 
 with open("tool-meta.tsv", "w") as f:
     results = [x for x in list(r) if x is not None]
@@ -102,15 +103,28 @@ with open("tool-meta.tsv", "w") as f:
             "desc": description,
             "edam_operations": [x for x in edam_operations.split(",") if x != ""],
             "edam_topics": [x for x in edam_topics.split(",") if x != ""],
-            # "bio.tools": biotools_id,
-            # "bio.tools_name": biotools_name,
+            "bio.tools": biotools_id,
+            "bio.tools_name": biotools_name,
+            # "xrefs": xrefs,
+        }
+
+        tool_meta_v2[guid] = {
+            "name": name,
+            "desc": description,
+            "edam_operations": [x for x in edam_operations.split(",") if x != ""],
+            "edam_topics": [x for x in edam_topics.split(",") if x != ""],
             "xrefs": xrefs,
         }
 
 with open("tool-meta.json", "w") as handle:
     json.dump(tool_meta, handle)
 
+with open("tool-meta-2.json", "w") as handle:
+    json.dump(tool_meta_v2, handle)
+
 import subprocess
 subprocess.check_call(['bash', '-c', 'cat tool-meta.json | jq -c > tmp'])
 subprocess.check_call(['mv', 'tmp', 'tool-meta.json'])
 
+subprocess.check_call(['bash', '-c', 'cat tool-meta-2.json | jq -c > tmp'])
+subprocess.check_call(['mv', 'tmp', 'tool-meta-2.json'])
