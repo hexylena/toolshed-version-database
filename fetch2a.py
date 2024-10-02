@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
+import threading
 import os
 import requests
 import json
-import sys
-import time
+# import sys
+# import time
 from tqdm.contrib.concurrent import thread_map
 
 SERVERS = [
@@ -69,6 +70,9 @@ def download_api(tool_id):
     meta = seq_try(f"/api/tools/{tool_id}?io_details=True&link_details=False", SERVERS)
     if meta is None or "name" not in meta:
         # print("Meta is none:", meta)
+        tid = threading.current_thread().ident
+        with open(f'failed.{tid}.log', 'a') as handle:
+            handle.write(f"{tool_id}\n")
         return None
     else:
         # make dir
@@ -90,6 +94,17 @@ existing_tool_ids = glob.glob("api/**/*", recursive=True)
 existing_tool_ids = [x for x in existing_tool_ids if os.path.isfile(x)]
 existing_tool_ids = set([x[len("api/tools/"):] for x in existing_tool_ids])
 
+# Recently failed
+failed_files = glob.glob("failed.*")
+ids = []
+for fn in failed_files:
+    with open(fn, 'r') as handle:
+        ids += handle.readlines()
+
+recently_failed_ids = set([x.strip() for x in ids])
+
 tool_ids = list(tool_ids - existing_tool_ids)
 print(f"Reduced to {len(tool_ids)} tools")
-thread_map(download_api, tool_ids, max_workers=1)
+tool_ids = list(set(tool_ids) - recently_failed_ids)
+print(f"Reduced to {len(tool_ids)} tools")
+thread_map(download_api, tool_ids, max_workers=10)
