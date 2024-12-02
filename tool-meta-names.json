@@ -14333,6 +14333,7 @@
   "toolshed.g2.bx.psu.edu/repos/iuc/seurat_plot/seurat_plot/5.0+galaxy0": "Seurat Visualize - Plot cells, features and dimensions",
   "toolshed.g2.bx.psu.edu/repos/iuc/seurat_preprocessing/seurat_preprocessing/5.0+galaxy0": "Seurat Preprocessing - Normalize, Find Variable Features, Scale and Regress",
   "toolshed.g2.bx.psu.edu/repos/iuc/seurat_reduce_dimension/seurat_reduce_dimension/5.0+galaxy0": "Seurat Run Dimensional Reduction - PCA, tSNE or UMAP",
+  "toolshed.g2.bx.psu.edu/repos/iuc/sfold/sfold/2.2.0+galaxy0": "Sfold Prediction of  RNA secondary structures through structure ensemble sampling",
   "toolshed.g2.bx.psu.edu/repos/iuc/shasta/shasta/0.6.0+galaxy0": "Shasta De novo assembly of long read sequencing data",
   "toolshed.g2.bx.psu.edu/repos/iuc/shorah_amplicon/shorah_amplicon/1.1.3+galaxy0": "Reconstruct haplotypes with ShoRAH in amplicon mode",
   "toolshed.g2.bx.psu.edu/repos/iuc/shovill/shovill/0.8.0": "Shovill Faster SPAdes assembly of Illumina reads",

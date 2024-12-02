@@ -11029,6 +11029,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_heatmap/cnvkit_heatmap/0.9.11+galaxy0	CN
 toolshed.g2.bx.psu.edu/repos/iuc/chopin2/chopin2/1.0.9.post1+galaxy0	chopin2	Domain-Agnostic Supervised Learning with Hyperdimensional Computing				
 toolshed.g2.bx.psu.edu/repos/iuc/chopin2/chopin2/1.0.8.post1+galaxy0	chopin2	Domain-Agnostic Supervised Learning with Hyperdimensional Computing				
 toolshed.g2.bx.psu.edu/repos/iuc/chopin2/chopin2/1.0.7+galaxy1	chopin2	Domain-Agnostic Supervised Learning with Hyperdimensional Computing				
+toolshed.g2.bx.psu.edu/repos/iuc/sfold/sfold/2.2.0+galaxy0	Sfold	Prediction of  RNA secondary structures through structure ensemble sampling				
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_metastats/mothur_metastats/1.36.1.0	Metastats	generate principle components plot data		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_metastats/mothur_metastats/1.39.5.0	Metastats	generate principle components plot data		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_fragments/mothur_cluster_fragments/1.36.1.0	Cluster.fragments	Group sequences that are part of a larger sequence		topic_3697	mothur	mothur
