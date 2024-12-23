@@ -483,6 +483,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.3+galaxy1	featu
 toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.0.3+galaxy1	featureCounts	Measure gene expression in RNA-Seq experiments from SAM or BAM files	operation_3793	topic_3168	featurecounts	FeatureCounts
 toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.0.3	featureCounts	Measure gene expression in RNA-Seq experiments from SAM or BAM files.				
 toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.2	featureCounts	Measure gene expression in RNA-Seq experiments from SAM or BAM files.				
+toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.0.8+galaxy0	featureCounts	Measure gene expression in RNA-Seq experiments from SAM or BAM files	operation_3793	topic_3168	featurecounts	FeatureCounts
 toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4	featureCounts	Measure gene expression in RNA-Seq experiments from SAM or BAM files.				
 toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.0.2	featureCounts	Measure gene expression in RNA-Seq experiments from SAM or BAM files.				
 toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.4.6.p5	featureCounts	Measure gene expression in RNA-Seq experiments from SAM or BAM files.				
@@ -782,6 +783,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/sarscov2formatter/sarscov2formatter/0.1	sarscov
 toolshed.g2.bx.psu.edu/repos/iuc/sarscov2formatter/sarscov2formatter/1.0+galaxy0	sarscov2formatter					
 toolshed.g2.bx.psu.edu/repos/iuc/sarscov2formatter/sarscov2formatter/0.5.3+galaxy1	sarscov2formatter					
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_split/pairtools_split/1.1.0+galaxy0	Pairtools split	Split a pairsam file into pairs and SAM/BAM				
+toolshed.g2.bx.psu.edu/repos/iuc/pairtools_split/pairtools_split/1.1.2+galaxy0	Pairtools split	Split a pairsam file into pairs and SAM/BAM				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_split/pairtools_split/1.0.3+galaxy0	Pairtools split	Split a pairsam file into pairs and SAM/BAM				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_split/pairtools_split/1.1.0+galaxy1	Pairtools split	Split a pairsam file into pairs and SAM/BAM				
 toolshed.g2.bx.psu.edu/repos/iuc/stacks_pstacks/stacks_pstacks/1.46.0	Stacks: pstacks	find stacks from short reads mapped to a reference genome	operation_2409	topic_3056,topic_0102	stacks	Stacks
@@ -1300,6 +1302,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/trinity_analyze_diff_expr/trinity_analyze_diff_
 toolshed.g2.bx.psu.edu/repos/iuc/trinity_analyze_diff_expr/trinity_analyze_diff_expr/2.8.5+galaxy1	Extract and cluster differentially expressed transcripts	from a Trinity assembly	operation_3258	topic_3308,topic_3512,topic_0203	trinity	Trinity
 toolshed.g2.bx.psu.edu/repos/iuc/seurat_create/seurat_create/5.0+galaxy1	Seurat Create	- Prepare data for the pipeline		topic_3170,topic_3308	seurat	Seurat
 toolshed.g2.bx.psu.edu/repos/iuc/seurat_create/seurat_create/5.0+galaxy0	Seurat Create	- Prepare data for the pipeline				
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_bar/phyloseq_plot_bar/1.46.0+galaxy0	Phyloseq: Bar Chart	Generate bar charts from a phyloseq object	operation_2945,operation_3431,operation_0337	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_conv/hyphy_conv/2.5.36+galaxy1	HyPhy-Conv	translate an in-frame codon alignment to proteins			HyPhy	HyPhy
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_conv/hyphy_conv/2.5.31+galaxy1	HyPhy-Conv	translate an in-frame codon alignment to proteins			HyPhy	HyPhy
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_conv/hyphy_conv/2.5.31+galaxy0	HyPhy-Conv	translate an in-frame codon alignment to proteins			HyPhy	HyPhy
@@ -2433,6 +2436,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/hamronize_tool/hamronize_tool/1.0.3+galaxy0	ham
 toolshed.g2.bx.psu.edu/repos/iuc/hamronize_tool/hamronize_tool/1.0.3+galaxy1	hamronize	parse multiple Antimicrobial Resistance Analysis Reports into a common data structure			hamronization	hAMRonization
 toolshed.g2.bx.psu.edu/repos/iuc/hamronize_tool/hamronize_tool/1.1.4+galaxy0	hAMRonize	Antimicrobial Resistance Analysis Reports into a common data structure			hamronization	hAMRonization
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_dedup/pairtools_dedup/1.1.0+galaxy0	Pairtools dedup	Find and remove PCR/optical duplicates				
+toolshed.g2.bx.psu.edu/repos/iuc/pairtools_dedup/pairtools_dedup/1.1.2+galaxy0	Pairtools dedup	Find and remove PCR/optical duplicates				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_dedup/pairtools_dedup/1.0.3+galaxy0	Pairtools dedup	Find and remove PCR/optical duplicates				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_dedup/pairtools_dedup/1.1.0+galaxy1	Pairtools dedup	Find and remove PCR/optical duplicates				
 toolshed.g2.bx.psu.edu/repos/iuc/velocyto_cli/velocyto_cli/0.17.17+galaxy2	velocyto CLI	pre-process data for the analysis of RNA velocity	operation_3800	topic_3512,topic_3320		
@@ -3696,6 +3700,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/spotyping/spotyping/2.1+galaxy0	SpoTyping	fast 
 toolshed.g2.bx.psu.edu/repos/iuc/spotyping/spotyping/2.1+galaxy2	SpoTyping	fast and accurate in silico Mycobacterium spoligotyping from sequence reads	operation_3504	topic_0199,topic_0157,topic_3168,topic_3301	spotyping	SpoTyping
 toolshed.g2.bx.psu.edu/repos/iuc/qiime_plot_taxa_summary/qiime_plot_taxa_summary/1.9.1.0	Make taxonomy summary charts	based on taxonomy assignment (plot_taxa_summary)	operation_2945	topic_3070	qiime	QIIME
 toolshed.g2.bx.psu.edu/repos/iuc/fasttree/fasttree/2.1.10	FASTTREE	adjust short reads	operation_0540,operation_0547	topic_3293,topic_0080	fasttree	FastTree
+toolshed.g2.bx.psu.edu/repos/iuc/fasttree/fasttree/2.1.10+galaxy3	FASTTREE	build maximum-likelihood phylogenetic trees	operation_0547,operation_0540	topic_0080,topic_3293	fasttree	FastTree
 toolshed.g2.bx.psu.edu/repos/iuc/fasttree/fasttree/2.1.10+galaxy1	FASTTREE	build maximum-likelihood phylogenetic trees	operation_0547,operation_0540	topic_0080,topic_3293	fasttree	FastTree
 toolshed.g2.bx.psu.edu/repos/iuc/onto_tk_obo2rdf/onto_tk_obo2rdf/1.45.0	Convert OBO to RDF		operation_0315,operation_0313,operation_0533,operation_2495,operation_0314	topic_3297,topic_0602,topic_0203,topic_3518,topic_0749	onto-tools	Onto-Tools
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_otu_hierarchy/mothur_otu_hierarchy/1.36.1.0	Otu.hierarchy	Relate OTUs at different distances		topic_3697	mothur	mothur
@@ -4518,6 +4523,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/hmmer_jackhmmer/hmmer_jackhmmer/3.2	jackhmmer	i
 toolshed.g2.bx.psu.edu/repos/iuc/hmmer_jackhmmer/hmmer_jackhmmer/3.3	jackhmmer	iteratively search a protein sequence against a protein database (PSIBLAST-like)			hmmer3	HMMER3
 toolshed.g2.bx.psu.edu/repos/iuc/scoary/scoary/1.6.16+galaxy0	Scoary	calculates the assocations between all genes in the accessory genome and the traits	operation_2945	topic_0621,topic_3517,topic_0625,topic_0085	scoary	Scoary
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_parse/pairtools_parse/1.1.0+galaxy0	Pairtools parse	Find ligation pairs in alignments and create pairs.				
+toolshed.g2.bx.psu.edu/repos/iuc/pairtools_parse/pairtools_parse/1.1.2+galaxy0	Pairtools parse	Find ligation pairs in alignments and create pairs.				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_parse/pairtools_parse/1.0.3+galaxy0	Pairtools parse	Find ligation pairs in alignments and create pairs.				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_parse/pairtools_parse/1.1.0+galaxy1	Pairtools parse	Find ligation pairs in alignments and create pairs.				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_parse/pairtools_parse/1.0.3+galaxy1	Pairtools parse	Find ligation pairs in alignments and create pairs.				
@@ -5469,6 +5475,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_peaks_and_motif/snapatac2_peaks_and_m
 toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_peaks_and_motif/snapatac2_peaks_and_motif/2.6.4+galaxy0	SnapATAC2 peaks and motif	analysis				
 toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_peaks_and_motif/snapatac2_peaks_and_motif/2.6.4+galaxy1	SnapATAC2 peaks and motif	analysis				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_stats/pairtools_stats/1.1.0+galaxy0	Pairtools Stats	Calculates pairs statistics for input pairs and pairsam files.				
+toolshed.g2.bx.psu.edu/repos/iuc/pairtools_stats/pairtools_stats/1.1.2+galaxy0	Pairtools Stats	Calculates pairs statistics for input pairs and pairsam files.				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_stats/pairtools_stats/1.0.3+galaxy0	Pairtools Stats	Calculates pairs statistics for input pairs and pairsam files.				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_stats/pairtools_stats/1.1.0+galaxy1	Pairtools Stats	Calculates pairs statistics for input pairs and pairsam files.				
 toolshed.g2.bx.psu.edu/repos/iuc/cemitool/cemitool/1.18.1+galaxy0	CEMiTool	gene co-expression network analyses	operation_3501,operation_2497	topic_3518,topic_3308,topic_0203	cemitool	CEMiTool
@@ -7027,6 +7034,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/lumpy_prep/lumpy_prep/0.3.1+galaxy0	LUMPY prepr
 toolshed.g2.bx.psu.edu/repos/iuc/bp_genbank2gff3/bp_genbank2gff3/1.0	Genbank to GFF3	converter				
 toolshed.g2.bx.psu.edu/repos/iuc/bp_genbank2gff3/bp_genbank2gff3/1.1	Genbank to GFF3	converter				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_sort/pairtools_sort/1.1.0+galaxy0	Pairtools sort	Sort a 4dn pairs/pairsam file				
+toolshed.g2.bx.psu.edu/repos/iuc/pairtools_sort/pairtools_sort/1.1.2+galaxy0	Pairtools sort	Sort a 4dn pairs/pairsam file				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_sort/pairtools_sort/1.0.3+galaxy0	Pairtools sort	Sort a 4dn pairs/pairsam file				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_sort/pairtools_sort/1.1.0+galaxy1	Pairtools sort	Sort a 4dn pairs/pairsam file				
 toolshed.g2.bx.psu.edu/repos/iuc/biom_convert/biom_convert/2.1.10+galaxy0	Convert	between BIOM table formats				
@@ -11431,6 +11439,7 @@ toolshed.g2.bx.psu.edu/repos/nml/sistr_cmd/sistr_cmd/0.3.4	sistr_cmd	Salmonella 
 toolshed.g2.bx.psu.edu/repos/nml/sistr_cmd/sistr_cmd/0.3.6	sistr_cmd	Salmonella In Silico Typing Resource commandline tool for serovar prediction			SISTR	SISTR
 toolshed.g2.bx.psu.edu/repos/nml/sistr_cmd/sistr_cmd/1.1.1+galaxy1	sistr_cmd	Salmonella In Silico Typing Resource commandline tool for serovar prediction			SISTR	SISTR
 toolshed.g2.bx.psu.edu/repos/nml/sistr_cmd/sistr_cmd/1.1.1	sistr_cmd	Salmonella In Silico Typing Resource commandline tool for serovar prediction			SISTR	SISTR
+toolshed.g2.bx.psu.edu/repos/nml/sistr_cmd/sistr_cmd/1.1.3+galaxy0	sistr_cmd	Salmonella In Silico Typing Resource command-line tool for serovar prediction			SISTR	SISTR
 toolshed.g2.bx.psu.edu/repos/nml/sistr_cmd/sistr_cmd/1.0.2	sistr_cmd	Salmonella In Silico Typing Resource commandline tool for serovar prediction			SISTR	SISTR
 toolshed.g2.bx.psu.edu/repos/nml/csvtk_separate/csvtk_separate/0.20.0+galaxy0	csvtk-separate	column into multiple columns				
 toolshed.g2.bx.psu.edu/repos/nml/csvtk_split/csvtk_split/0.20.0+galaxy0	csvtk-split	table into multiple files				
@@ -11485,6 +11494,7 @@ toolshed.g2.bx.psu.edu/repos/nml/staramr/staramr_search/0.7.1+galaxy1	staramr	Sc
 toolshed.g2.bx.psu.edu/repos/nml/staramr/staramr_search/0.7.1	staramr	Scans genome assemblies against the ResFinder, PlasmidFinder, and PointFinder databases searching for AMR genes.			staramr	staramr
 toolshed.g2.bx.psu.edu/repos/nml/staramr/staramr_search/0.2.1	staramr	Scans genome assemblies against the ResFinder, PlasmidFinder, and PointFinder databases searching for AMR genes.			staramr	staramr
 toolshed.g2.bx.psu.edu/repos/nml/staramr/staramr_search/0.7.1+galaxy2	staramr	Scans genome assemblies against the ResFinder, PlasmidFinder, and PointFinder databases searching for AMR genes.			staramr	staramr
+toolshed.g2.bx.psu.edu/repos/nml/staramr/staramr_search/0.11.0+galaxy0	staramr	Scans genome assemblies against the ResFinder, PlasmidFinder, and PointFinder databases searching for AMR genes.			staramr	staramr
 toolshed.g2.bx.psu.edu/repos/nml/staramr/staramr_search/0.8.0+galaxy0	staramr	Scans genome assemblies against the ResFinder, PlasmidFinder, and PointFinder databases searching for AMR genes.			staramr	staramr
 toolshed.g2.bx.psu.edu/repos/nml/staramr/staramr_search/0.10.0+galaxy1	staramr	Scans genome assemblies against the ResFinder, PlasmidFinder, and PointFinder databases searching for AMR genes.			staramr	staramr
 toolshed.g2.bx.psu.edu/repos/nml/staramr/staramr_search/0.4.0	staramr	Scans genome assemblies against the ResFinder and PointFinder databases searching for AMR genes.			staramr	staramr
@@ -14350,6 +14360,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/cp_relate_objects/cp_relate_objects/3.1.9
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_relate_objects/cp_relate_objects/3.1.9+galaxy1	RelateObjects	with CellProfiler	operation_3443		CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_relate_objects/cp_relate_objects/3.1.9+galaxy0	RelateObjects	assign relationships parent-children between objects			CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_not_knowledge_based/glimmer_not_knowledge_based/3.02	Glimmer3	Predict ORFs in prokaryotic genomes (not knowlegde-based)	operation_3197,operation_2403	topic_0080	gemini	GEMINI
+toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_not_knowledge_based/glimmer_not_knowledge_based/3.02+galaxy2	Glimmer3	Predict ORFs in prokaryotic genomes (not knowlegde-based)	operation_3197,operation_2403	topic_0080	gemini	GEMINI
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicadjustmatrix/hicexplorer_hicadjustmatrix/3.6+galaxy0	hicAdjustMatrix	adjust the shape of a Hi-C matrix	operation_0337,operation_3435,operation_2428	topic_0654,topic_0769,topic_3295,topic_3940,topic_3169	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicadjustmatrix/hicexplorer_hicadjustmatrix/3.4.1.0	hicAdjustMatrix	adjust the shape of a Hi-C matrix	operation_0337,operation_2428,operation_3435	topic_3295,topic_3169,topic_0769,topic_0654,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicadjustmatrix/hicexplorer_hicadjustmatrix/3.7.5+galaxy0	hicAdjustMatrix	adjust the shape of a Hi-C matrix	operation_2428,operation_0337,operation_3435	topic_0769,topic_3169,topic_3295,topic_3940,topic_0654	hicexplorer	HiCExplorer
@@ -14461,6 +14472,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/diff/diff/3.7+galaxy0	diff	analyzes two f
 toolshed.g2.bx.psu.edu/repos/bgruening/diff/diff/3.10+galaxy0	diff	analyzes two files and generates an unidiff text file with information about the differences and an optional Html report				
 toolshed.g2.bx.psu.edu/repos/bgruening/diff/diff/3.6+galaxy1	diff	analyzes two files and generates an unidiff text file with information about the differences and an optional Html report				
 toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_knowledge_based/glimmer_knowledge_based/3.02	Glimmer3	Predict ORFs in prokaryotic genomes (knowlegde-based)	operation_2403,operation_3197	topic_0080	gemini	GEMINI
+toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_knowledge_based/glimmer_knowledge_based/3.02+galaxy2	Glimmer3	Predict ORFs in prokaryotic genomes (knowlegde-based)	operation_3197,operation_2403	topic_0080	gemini	GEMINI
 toolshed.g2.bx.psu.edu/repos/bgruening/rxdock_rbdock/rxdock_rbdock/0.1.4	rxDock docking	- perform protein-ligand docking with rxDock				
 toolshed.g2.bx.psu.edu/repos/bgruening/rxdock_rbdock/rxdock_rbdock/0.1.3	rxDock docking	- perform protein-ligand docking with rxDock				
 toolshed.g2.bx.psu.edu/repos/bgruening/rxdock_rbdock/rxdock_rbdock/0.1.5	rxDock docking	- perform protein-ligand docking with rxDock				
@@ -14583,6 +14595,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/cp_export_to_spreadsheet/cp_export_to_spr
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_export_to_spreadsheet/cp_export_to_spreadsheet/3.1.9+galaxy2	ExportToSpreadsheet	with CellProfiler	operation_3443		CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_export_to_spreadsheet/cp_export_to_spreadsheet/3.1.9+galaxy1	ExportToSpreadsheet	export measurements into one or more files			CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_build_icm/glimmer_build_icm/3.02	Glimmer ICM builder		operation_2403,operation_3197	topic_0080	gemini	GEMINI
+toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_build_icm/glimmer_build_icm/3.02+galaxy2	Glimmer ICM builder		operation_3197,operation_2403	topic_0080	gemini	GEMINI
 toolshed.g2.bx.psu.edu/repos/bgruening/numeric_clustering/numeric_clustering/0.9	Numeric Clustering					
 toolshed.g2.bx.psu.edu/repos/bgruening/pandas_rolling_window/pandas_rolling_window/0.1	Rolling window	over a dataframe (e.g. for data smoothing)				
 toolshed.g2.bx.psu.edu/repos/bgruening/nanopolish_eventalign/nanopolish_eventalign/0.13.2+galaxy1	Nanopolish eventalign	- Align nanopore events to reference k-mers	operation_2429,operation_0310,operation_3204,operation_3197,operation_2238	topic_3168,topic_0080,topic_0199,topic_2269	nanopolish	nanopolish
@@ -15034,6 +15047,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/align_it/ctb_alignit/1.0.3.1	Pharmacophor
 toolshed.g2.bx.psu.edu/repos/bgruening/align_it/ctb_alignit/1.0.4+galaxy0	Pharmacophore alignment	and optimization (Align-it)				
 toolshed.g2.bx.psu.edu/repos/bgruening/align_it/ctb_alignit_create_db/0.1	Pharmacophore	generation (Align-it)				
 toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_glimmer_to_gff/glimmer_glimmer_to_gff/3.02	Convert Glimmer to GFF		operation_3197,operation_2403	topic_0080	gemini	GEMINI
+toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_glimmer_to_gff/glimmer_glimmer_to_gff/3.02+galaxy2	Convert Glimmer to GFF		operation_2403,operation_3197	topic_0080	gemini	GEMINI
 toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_glimmer_to_gff/glimmer_glimmer_to_gff/3.02+galaxy1	Convert Glimmer to GFF		operation_3197,operation_2403	topic_0080	gemini	GEMINI
 toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.1.1	RepeatMasker	screen DNA sequences for interspersed repeats and low complexity regions				
 toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.0.9	RepeatMasker	screen DNA sequences for interspersed repeats and low complexity regions				
@@ -15146,6 +15160,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/salmonquantmerge/salmonquantmerge/1.5.1+g
 toolshed.g2.bx.psu.edu/repos/bgruening/salmonquantmerge/salmonquantmerge/1.9.0+galaxy1	Salmon quantmerge	Merge multiple quantification results into a single file	operation_2495,operation_3800,operation_0236	topic_3170,topic_3308,topic_0203	salmon	Salmon
 toolshed.g2.bx.psu.edu/repos/bgruening/salmonquantmerge/salmonquantmerge/1.3.0	Salmon quantmerge	Merge multiple quantification results into a single file	operation_0236,operation_3800,operation_2495	topic_3170,topic_3308,topic_0203	salmon	Salmon
 toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_gbk_to_orf/glimmer_gbk_to_orf/3.02	Extract ORF	from a GenBank file			gemini	GEMINI
+toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_gbk_to_orf/glimmer_gbk_to_orf/3.02+galaxy2	Extract ORF	from a GenBank file			gemini	GEMINI
 toolshed.g2.bx.psu.edu/repos/bgruening/featurestein/featurestein/1.1.4+galaxy0	'FeatureStein' fragment overlay scoring	feature overlay scoring				
 toolshed.g2.bx.psu.edu/repos/bgruening/wordcloud/wordcloud/1.9.4+galaxy0	Generate a word cloud	with highly customizable appearance				
 toolshed.g2.bx.psu.edu/repos/bgruening/openbabel_svg_depiction/openbabel_svg_depiction/2.4.2.0	Visualisation	of compounds	operation_0224,operation_2409,operation_3431	topic_2275,topic_3314,topic_3292,topic_2258	open_babel	Open Babel
@@ -18082,6 +18097,7 @@ toolshed.g2.bx.psu.edu/repos/mandorodriguez/concat_text_files/concat_text_files/
 toolshed.g2.bx.psu.edu/repos/mandorodriguez/concat_fasta_files/concat_fasta_files/1.0.0	Concat fasta files	Concatenates fasta files you select from your history				
 toolshed.g2.bx.psu.edu/repos/goeckslab/squidpy_scatter/squidpy_scatter/1.5.0+galaxy1	Create spatial scatterplot	with Squidpy	operation_3443			
 toolshed.g2.bx.psu.edu/repos/goeckslab/squidpy_scatter/squidpy_scatter/1.5.0+galaxy2	Create spatial scatterplot	with Squidpy	operation_3443			
+toolshed.g2.bx.psu.edu/repos/goeckslab/pycaret_predict/pycaret_predict/3.3.2+0	PyCaret Predictor/Evaluator	predicts/evaluates your pycaret ML model on a dataset.				
 toolshed.g2.bx.psu.edu/repos/goeckslab/rename_tiff_channels/rename_tiff_channels/0.0.2+galaxy1	Rename OME-TIFF channels	with ome-types	operation_3443			
 toolshed.g2.bx.psu.edu/repos/goeckslab/rename_tiff_channels/rename_tiff_channels/0.0.2+galaxy0	Rename OME-TIFF channels	with ome-types	operation_3443			
 toolshed.g2.bx.psu.edu/repos/goeckslab/rename_tiff_channels/rename_tiff_channels/@TOOL_VERSION@+galaxy1	Rename OME-TIFF channels	with ome-types	operation_3443			
@@ -18134,6 +18150,7 @@ toolshed.g2.bx.psu.edu/repos/goeckslab/mesmer/mesmer/0.12.3+galaxy2	Mesmer	Mesme
 toolshed.g2.bx.psu.edu/repos/goeckslab/mesmer/mesmer/0.12.3+galaxy3	Perform segmentation of multiplexed tissue data	with Mesmer	operation_3443			
 toolshed.g2.bx.psu.edu/repos/goeckslab/mesmer/mesmer/0.3.1+galaxy1	Mesmer	Mesmer for whole-cell segmentation of multiplexed tissue imaging data				
 toolshed.g2.bx.psu.edu/repos/goeckslab/mesmer/mesmer/0.3.1+galaxy0	Mesmer	Mesmer for whole-cell segmentation of multiplexed tissue imaging data				
+toolshed.g2.bx.psu.edu/repos/goeckslab/pycaret_compare/pycaret_compare/3.3.2+0	PyCaret Model Comparison	compares different machine learning models on a dataset using PyCaret. Do feature analyses using Random Forest and LightGBM.				
 toolshed.g2.bx.psu.edu/repos/proteore/proteore_heatmap_visualization/heatmap/2018.12.12	HeatMap	(clustering and visualization)				
 toolshed.g2.bx.psu.edu/repos/proteore/proteore_heatmap_visualization/heatmap/2019.02.26	HeatMap	(clustering and visualization)				
 toolshed.g2.bx.psu.edu/repos/proteore/proteore_heatmap_visualization/heatmap/2019.06.27	HeatMap	(clustering and visualization)				
@@ -18350,7 +18367,9 @@ toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+gal
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy4	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+galaxy0	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy3	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
+toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.1-alpha+galaxy1	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy2	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
+toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.1-alpha+galaxy0	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+galaxy1	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/kegalign/kegalign/0.1.2.7+galaxy2	KegAlign	A Scalable GPU System for Pairwise Whole Genome Alignments based on LASTZ's seed-filter-extend paradigm	operation_0491			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/kegalign/kegalign/0.1.2.7+galaxy1	KegAlign	A Scalable GPU System for Pairwise Whole Genome Alignments based on LASTZ's seed-filter-extend paradigm	operation_0491			
