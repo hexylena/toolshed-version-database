@@ -1302,6 +1302,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/trinity_analyze_diff_expr/trinity_analyze_diff_
 toolshed.g2.bx.psu.edu/repos/iuc/trinity_analyze_diff_expr/trinity_analyze_diff_expr/2.8.5+galaxy1	Extract and cluster differentially expressed transcripts	from a Trinity assembly	operation_3258	topic_3308,topic_3512,topic_0203	trinity	Trinity
 toolshed.g2.bx.psu.edu/repos/iuc/seurat_create/seurat_create/5.0+galaxy1	Seurat Create	- Prepare data for the pipeline		topic_3170,topic_3308	seurat	Seurat
 toolshed.g2.bx.psu.edu/repos/iuc/seurat_create/seurat_create/5.0+galaxy0	Seurat Create	- Prepare data for the pipeline				
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_bar/phyloseq_plot_bar/1.50.0+galaxy0	Phyloseq: Bar Chart	Generate bar charts from a phyloseq object	operation_0337,operation_3431,operation_2945	topic_3301,topic_3174,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_bar/phyloseq_plot_bar/1.46.0+galaxy0	Phyloseq: Bar Chart	Generate bar charts from a phyloseq object	operation_2945,operation_3431,operation_0337	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_conv/hyphy_conv/2.5.36+galaxy1	HyPhy-Conv	translate an in-frame codon alignment to proteins			HyPhy	HyPhy
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_conv/hyphy_conv/2.5.31+galaxy1	HyPhy-Conv	translate an in-frame codon alignment to proteins			HyPhy	HyPhy
@@ -1974,6 +1975,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.31.1	bedt
 toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.27.1	bedtools Genome Coverage	compute the coverage over an entire genome	operation_2429	topic_0622	bedtools	BEDTools
 toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.22.0	Genome Coverage	in bedGraph or histogram format	operation_2429	topic_0622	bedtools	BEDTools
 toolshed.g2.bx.psu.edu/repos/iuc/hypo/hypo/1.0.3+galaxy0	HyPo	super fast and accurate polisher for long read genome assemblies			HyPo	HyPo
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_biom/phyloseq_from_biom/1.50.0+galaxy0	Create phyloseq object	from a BIOM file	operation_0337,operation_3431,operation_2945	topic_3301,topic_3174,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_biom/phyloseq_from_biom/1.46.0+galaxy0	Create phyloseq object	from a BIOM file	operation_0337,operation_2945,operation_3431	topic_0080,topic_3301,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/dram_annotate/dram_annotate/1.5.0+galaxy0	DRAM annotate	metagenome-assembled-genomes (MAGs)			dram	DRAM
 toolshed.g2.bx.psu.edu/repos/iuc/dram_annotate/dram_annotate/1.3.5+galaxy0	DRAM annotate	metagenome-assembled-genomes (MAGs)				
@@ -2229,6 +2231,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.10.2+galaxy2	Scanpy p
 toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.7.1+galaxy0	Plot	with scanpy				
 toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.9.6+galaxy1	Plot	with scanpy	operation_3223	topic_3053,topic_2229,topic_0203	scanpy	SCANPY
 toolshed.g2.bx.psu.edu/repos/iuc/scanpy_plot/scanpy_plot/1.9.6+galaxy0	Plot	with scanpy	operation_3223	topic_3053,topic_2229,topic_0203	scanpy	SCANPY
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_richness/phyloseq_plot_richness/1.50.0+galaxy0	Phyloseq: plot alpha diverstiy measure		operation_3431,operation_2945,operation_0337	topic_3174,topic_3301,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_richness/phyloseq_plot_richness/1.38.0+galaxy0	Phyloseq: plot alpha diverstiy measure		operation_3431,operation_0337,operation_2945	topic_3174,topic_0080,topic_3301	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_richness/phyloseq_plot_richness/1.46.0+galaxy0	Phyloseq: plot alpha diverstiy measure		operation_3431,operation_2945,operation_0337	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/khmer_count_median/khmer_count_median/3.0.0a1.0	Count Median	Count the median/avg k-mer abundance for each sequence	operation_0524,operation_3435	topic_0196	khmer	khmer
@@ -2642,6 +2645,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/khmer_extract_partitions/khmer_extract_partitio
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_shhh_seqs/mothur_shhh_seqs/1.36.1.0	Shhh.seqs	Denoise program (Quince SeqNoise)		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_shhh_seqs/mothur_shhh_seqs/1.39.5.0	Shhh.seqs	Denoise program (Quince SeqNoise)		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/gemini_inheritance/gemini_inheritance/0.20.1	GEMINI inheritance pattern	based identification of candidate genes	operation_2403,operation_3197	topic_0080	gemini	GEMINI
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_dada2/phyloseq_from_dada2/1.50.0+galaxy0	Create phyloseq object	from dada2 sequence and taxonomy tables	operation_2945,operation_0337,operation_3431	topic_3301,topic_3174,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_dada2/phyloseq_from_dada2/1.38.0+galaxy0	Create phyloseq object	from dada2 sequence and taxonomy tables	operation_3431,operation_0337,operation_2945	topic_3174,topic_0080,topic_3301	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_dada2/phyloseq_from_dada2/1.46.0+galaxy0	Create phyloseq object	from dada2 sequence and taxonomy tables	operation_3431,operation_0337,operation_2945	topic_3174,topic_0080,topic_3301	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/beacon2_runs/beacon2_runs/1.0.0	Beacon2 Runs	Query the runs collection in the beacon database				
@@ -6494,6 +6498,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/semibin/semibin/1.5.1+galaxy0	SemiBin	for Semi-
 toolshed.g2.bx.psu.edu/repos/iuc/semibin/semibin/1.1.1+galaxy0	SemiBin	for Semi-supervised Metagenomic Binning	operation_3798,operation_0337,operation_0310	topic_3697,topic_3174,topic_3474,topic_0196	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/rgcca/rgcca/3.0.0+galaxy0	RGCCA	performs multiblock data analysis of several sets of variables (blocks) observed on the same group of individuals.	operation_2945,operation_3465,operation_0337	topic_2269		
 toolshed.g2.bx.psu.edu/repos/iuc/rgcca/rgcca/3.0.2+galaxy1	RGCCA	performs multiblock data analysis of several sets of variables (blocks) observed on the same group of individuals.	operation_2945,operation_3465,operation_0337	topic_2269		
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_ordination/phyloseq_plot_ordination/1.50.0+galaxy0	Phyloseq: plot ordination		operation_2945,operation_0337,operation_3431	topic_3301,topic_3174,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_ordination/phyloseq_plot_ordination/1.38.0+galaxy0	Phyloseq: plot ordination		operation_0337,operation_2945,operation_3431	topic_0080,topic_3301,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_ordination/phyloseq_plot_ordination/1.46.0+galaxy0	Phyloseq: plot ordination		operation_0337,operation_2945,operation_3431	topic_0080,topic_3301,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/sleuth/sleuth/0.30.1+galaxy0	Sleuth	differential expression analysis	operation_0571,operation_0314,operation_2238,operation_3223	topic_3170,topic_0203,topic_2269	sleuth	sleuth
