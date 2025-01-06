@@ -16689,6 +16689,7 @@
   "toolshed.g2.bx.psu.edu/repos/nml/ectyper/ectyper/0.9.0": "ectyper ectyper is a standalone serotyping module for Escherichia coli. It supports fasta and fastq file formats.",
   "toolshed.g2.bx.psu.edu/repos/nml/ectyper/ectyper/0.9.1": "ectyper ectyper is a standalone serotyping module for Escherichia coli. It supports fasta and fastq file formats.",
   "toolshed.g2.bx.psu.edu/repos/nml/ectyper/ectyper/1.0.0": "ectyper ectyper is a standalone serotyping module for Escherichia coli. It supports fasta and fastq file formats.",
+  "toolshed.g2.bx.psu.edu/repos/nml/ectyper/ectyper/2.0.0+galaxy0": "ectyper ectyper is a standalone serotyping module for Escherichia coli. It supports fasta and fastq file formats.",
   "toolshed.g2.bx.psu.edu/repos/nml/fasta_extract/fa-extract-sequence/1.0.0": "Fasta Extract Sequence Extract a single sequence from a fasta file.",
   "toolshed.g2.bx.psu.edu/repos/nml/fasta_extract/fa-extract-sequence/1.1.0": "Fasta Extract Sequence Extract a single sequence from a fasta file.",
   "toolshed.g2.bx.psu.edu/repos/nml/filter_spades_repeats/filter_spades_repeat/1.0.0": "Filter SPAdes repeats Remove short and repeat contigs/scaffolds",
