@@ -1016,6 +1016,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.2	Pear	Paired-End read merg
 toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.3	Pear	Paired-End read merger	operation_0232	topic_0196	pear	PEAR
 toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.0	Pear	Paired-End read merger				
 toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.4	Pear	Paired-End read merger	operation_0232	topic_0196	pear	PEAR
+toolshed.g2.bx.psu.edu/repos/iuc/fairy_sketch/fairy_sketch/0.5.7+galaxy0	Fairy sketch	sketching of k-mers for coverage into a hashtable				
 toolshed.g2.bx.psu.edu/repos/iuc/qiime_make_otu_heatmap/qiime_make_otu_heatmap/1.9.1.0	Plot heatmap of OTU table	(make_otu_heatmap)	operation_2945	topic_3070	qiime	QIIME
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_parse_list/mothur_parse_list/1.36.1.0	Parse.list	Generate a List file for each group		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_parse_list/mothur_parse_list/1.39.5.0	Parse.list	Generate a List file for each group		topic_3697	mothur	mothur
@@ -3595,6 +3596,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/berokka/berokka/0.2	Berokka	Trim, circularise, 
 toolshed.g2.bx.psu.edu/repos/iuc/cutesv/cutesv/1.0.8+galaxy0	cuteSV	detects long-read-based SVs			cuteSV	cuteSV
 toolshed.g2.bx.psu.edu/repos/iuc/cutesv/cutesv/1.0.8+galaxy1	cuteSV	detects long-read-based SVs			cuteSV	cuteSV
 toolshed.g2.bx.psu.edu/repos/iuc/cutesv/cutesv/2.1.1+galaxy0	cuteSV	detects long-read-based SVs			cuteSV	cuteSV
+toolshed.g2.bx.psu.edu/repos/iuc/fairy_cov/fairy_cov/0.5.7+galaxy0	Fairy coverage	Create coverage file for specific binners				
 toolshed.g2.bx.psu.edu/repos/iuc/beacon2_analyses/beacon2_analyses/2.2.4+galaxy0	Beacon2 Analyses	َQuery the analyses collection in the beacon database for bioinformatic procedures to identify variants				
 toolshed.g2.bx.psu.edu/repos/iuc/beacon2_analyses/beacon2_analyses/2.2.3+galaxy0	Beacon2 Analyses	َQuery the analyses collection in the beacon database for bioinformatic procedures to identify variants				
 toolshed.g2.bx.psu.edu/repos/iuc/beacon2_analyses/beacon2_analyses/2.2.1+galaxy0	Beacon2 Analyses	َQuery the analyses collection in the beacon database for bioinformatic procedures to identify variants				
@@ -3943,6 +3945,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/onto_tk_get_parent_terms_by_relationship_type/o
 toolshed.g2.bx.psu.edu/repos/iuc/tracy_align/tracy_align/0.6.1+galaxy0	tracy Align	chromatogram to a FASTA reference				
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_split_stratified_table/humann2_split_stratified_table/0.11.1.0	Split stratified table		operation_3929		humann2	HUMAnN2
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_split_stratified_table/humann2_split_stratified_table/0.11.1.1	Split stratified table		operation_3929		humann2	HUMAnN2
+toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.5.0+galaxy1	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0622,topic_0080,topic_3174	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.4.3+galaxy0	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0622,topic_0080,topic_3174	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.2.2+galaxy0	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_3174,topic_0080,topic_0622	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.4.5+galaxy0	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
@@ -4883,6 +4886,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/3.1.0	Filter Tabu
 toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/3.3.0	Filter Tabular					
 toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/1.0.0	Filter Tabular					
 toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/2.0.0	Filter Tabular					
+toolshed.g2.bx.psu.edu/repos/iuc/staramr/staramr_search/0.11.0+galaxy0	staramr	Scans genome assemblies against the ResFinder, PlasmidFinder, and PointFinder databases searching for AMR genes			staramr	staramr
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_gstacks/stacks2_gstacks/2.4+galaxy0	Stacks2: gstacks	Call variants, genotypes and haplotype	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_gstacks/stacks2_gstacks/2.55+galaxy0	Stacks2: gstacks	Call variants, genotypes and haplotype			stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_gstacks/stacks2_gstacks/2.53+galaxy0	Stacks2: gstacks	Call variants, genotypes and haplotype	operation_2409	topic_3056,topic_0102	stacks	Stacks
@@ -5146,6 +5150,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/qiime_summarize_taxa/qiime_summarize_taxa/1.9.1
 toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1	Compose text parameter value	from parameters				
 toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.0	Compose text parameter value	from parameters				
 toolshed.g2.bx.psu.edu/repos/iuc/qiime_filter_samples_from_otu_table/qiime_filter_samples_from_otu_table/1.9.1.0	Filters samples from an OTU table	on the basis of the number of observations in that sample, or on the basis of sample metadata (filter_samples_from_otu_table)	operation_2945	topic_3070	qiime	QIIME
+toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.5.0+galaxy1	dRep compare	compare a list of genomes	operation_3209	topic_0080,topic_0622,topic_3174	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.4.3+galaxy0	dRep compare	compare a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.2.2+galaxy0	dRep compare	compare a list of genomes	operation_3209	topic_3174,topic_0080,topic_0622	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.4.5+galaxy0	dRep compare	compare a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
@@ -13410,6 +13415,7 @@ toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft_add/7.526+galaxy0	MAFFT add
 toolshed.g2.bx.psu.edu/repos/rnateam/splitfasta/rbc_splitfasta/0.1.0	SplitFasta					
 toolshed.g2.bx.psu.edu/repos/rnateam/splitfasta/rbc_splitfasta/0.2.0	Split Fasta	files into a collection				
 toolshed.g2.bx.psu.edu/repos/rnateam/splitfasta/rbc_splitfasta/0.4.0	Split Fasta	files into a collection				
+toolshed.g2.bx.psu.edu/repos/rnateam/splitfasta/rbc_splitfasta/0.5.0	Split Fasta	files into a collection				
 toolshed.g2.bx.psu.edu/repos/rnateam/epicseg/epicseg_segment/1.0	EpiCSeg - Chromatin segmentation					
 toolshed.g2.bx.psu.edu/repos/rnateam/kinwalker/rbc_kinwalker/1.0	Kinwalker	cotranscriptional folding of RNAs	operation_2441	topic_0097,topic_0659,topic_0099	kinwalker	Kinwalker
 toolshed.g2.bx.psu.edu/repos/rnateam/viennarna_rnalfold/viennarna_rnalfold/2.2.10.0	RNALfold	calculates locally stable secondary structures of RNA	operation_3216,operation_0279,operation_2518,operation_0278,operation_0502	topic_0099,topic_0097,topic_0082	viennarna	ViennaRNA
@@ -13942,6 +13948,8 @@ toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_pca/sklearn_pca/1.0.8.3+galaxy0	P
 toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_pca/sklearn_pca/1.0.11.0	Principal component analysis	with scikit-learn	operation_3432,operation_2990,operation_3659,operation_3935	topic_0092,topic_3474	scikit-learn	scikit-learn
 toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/0.1	Enumerate changes	calculated with Dimorphite DL and RDKit			RDKit	RDKit
 toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/2020.03.4+galaxy0	Enumerate changes	calculated with Dimorphite DL and RDKit			RDKit	RDKit
+toolshed.g2.bx.psu.edu/repos/bgruening/tabpfn/tabpfn/2.0.3+galaxy0	Tabular data prediction using TabPFN	with PyTorch				
+toolshed.g2.bx.psu.edu/repos/bgruening/tabpfn/tabpfn/2.0.3+galaxy1	Tabular data prediction using TabPFN	with PyTorch				
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_gray_to_color/cp_gray_to_color/3.1.9	GrayToColor	take grayscale images and produces a color image from them			CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_gray_to_color/cp_gray_to_color/3.1.9+galaxy1	GrayToColor	with CellProfiler	operation_3443		CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_gray_to_color/cp_gray_to_color/3.1.9+galaxy0	GrayToColor	take grayscale images and produces a color image from them			CellProfiler	CellProfiler
@@ -14521,6 +14529,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/confab/ctb_confab/0.1	Conformer calculati
 toolshed.g2.bx.psu.edu/repos/bgruening/confab/ctb_confab/3.1.1+galaxy0	Conformer calculation	for molecules (confab)	operation_0224,operation_3431,operation_2409	topic_2258,topic_2275,topic_3314,topic_3292	open_babel	Open Babel
 toolshed.g2.bx.psu.edu/repos/bgruening/confab/ctb_confab/0.4	Conformer calculation	for molecules (confab)	operation_3431,operation_0224,operation_2409	topic_3314,topic_2275,topic_2258,topic_3292	open_babel	Open Babel
 toolshed.g2.bx.psu.edu/repos/bgruening/fastq_info/fastq_info/0.25.1+Galaxy0	FASTQ info	validates single or paired fastq files	operation_0336	topic_0091		
+toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_extract/glimmer_extract/3.02+galaxy2	Extract sequence regions	from a genome			gemini	GEMINI
 toolshed.g2.bx.psu.edu/repos/bgruening/tiara/tiara/1.0.3+galaxy0	tiara	Deep-learning-based approach for identification of eukaryotic sequences in the metagenomic data			Tiara	TIARA
 toolshed.g2.bx.psu.edu/repos/bgruening/tiara/tiara/1.0.3+galaxy1	tiara	Deep-learning-based approach for identification of eukaryotic sequences in the metagenomic data			Tiara	TIARA
 toolshed.g2.bx.psu.edu/repos/bgruening/ctb_im_rxn_smarts_filter/ctb_im_rxn_smarts_filter/1.1.3+galaxy0	Reaction SMARTS filter	using RDKit				
@@ -18377,13 +18386,17 @@ toolshed.g2.bx.psu.edu/repos/richard-burhans/batched_lastz/batched_lastz/1.04.22
 toolshed.g2.bx.psu.edu/repos/richard-burhans/batched_lastz/batched_lastz/1.04.22+galaxy1	Batched Lastz	: align batches of sequences				
 toolshed.g2.bx.psu.edu/repos/richard-burhans/batched_lastz/batched_lastz/1.04.22+galaxy4	Batched LASTZ	: align batches of sequences				
 toolshed.g2.bx.psu.edu/repos/richard-burhans/batched_lastz/batched_lastz/1.04.22+galaxy2	Batched Lastz	: align batches of sequences				
+toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.2-alpha+galaxy2	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+galaxy2	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
+toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.1-alpha+galaxy3	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy5	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+galaxy3	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy7	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
+toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+galaxy4	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy4	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.1-alpha+galaxy2	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+galaxy0	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
+toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy9	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy3	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.2-alpha+galaxy0	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.1-alpha+galaxy1	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
