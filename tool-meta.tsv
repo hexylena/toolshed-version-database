@@ -899,6 +899,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/matchms_similarity/matchms_similarity/0.22.
 toolshed.g2.bx.psu.edu/repos/recetox/xtb_molecular_optimization/xtb_molecular_optimization/6.6.1+galaxy1	xtb molecular optimization	Semiempirical quantum mechanical molecular optimization method				
 toolshed.g2.bx.psu.edu/repos/recetox/xtb_molecular_optimization/xtb_molecular_optimization/6.6.1+galaxy2	xtb molecular optimization	Semiempirical quantum mechanical molecular optimization method				
 toolshed.g2.bx.psu.edu/repos/recetox/xtb_molecular_optimization/xtb_molecular_optimization/6.6.1+galaxy3	xtb molecular optimization	Semiempirical quantum mechanical molecular optimization method	operation_0297	topic_3332		
+toolshed.g2.bx.psu.edu/repos/recetox/bioconductor_scp/bioconductor_scp/1.16.0+galaxy0	bioconductor-scp	single cell proteomics data analysis workflow			scp	scp
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_merge/matchms_metadata_merge/0.24.0+galaxy3	matchms metadata merge	Merge metadata csv into MSP by a specified column	operation_2409	topic_3172	matchms	Matchms
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_merge/matchms_metadata_merge/0.25.0+galaxy0	matchms metadata merge	Merge metadata csv into MSP by a specified column	operation_2409	topic_3172	matchms	Matchms
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_merge/matchms_metadata_merge/0.27.0+galaxy0	matchms metadata merge	Merge metadata csv into MSP by a specified column	operation_2409	topic_3172	matchms	Matchms
@@ -906,6 +907,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_merge/matchms_metadata_mer
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_merge/matchms_metadata_merge/0.24.0+galaxy0	matchms metadata merge	Merge metadata csv into MSP by a specified column	operation_2409	topic_3172	matchms	Matchms
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_merge/matchms_metadata_merge/0.24.0+galaxy2	matchms metadata merge	Merge metadata csv into MSP by a specified column	operation_2409	topic_3172	matchms	Matchms
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_merge/matchms_metadata_merge/0.24.0+galaxy1	matchms metadata merge	Merge metadata csv into MSP by a specified column	operation_2409	topic_3172	matchms	Matchms
+toolshed.g2.bx.psu.edu/repos/recetox/table_pandas_arithmetics/table_pandas_arithmetics/2.2.3+galaxy1	table arithmetics	perform arithmetic operations on a dataframe column				
 toolshed.g2.bx.psu.edu/repos/recetox/spec2vec_similarity/spec2vec_similarity/0.8.0+galaxy0	spec2vec similarity		operation_3803,operation_3860,operation_3801,operation_2421	topic_3520,topic_0121,topic_3172,topic_0218	spec2vec	Spec2Vec
 toolshed.g2.bx.psu.edu/repos/recetox/riassigner/riassigner/0.3.4+galaxy2	RIAssigner	compute retention indices	operation_3435	topic_3343,topic_3172,topic_0219	riassigner	RIAssigner
 toolshed.g2.bx.psu.edu/repos/recetox/riassigner/riassigner/0.4.1+galaxy0	RIAssigner	compute retention indices	operation_3435	topic_3343,topic_0219,topic_3172	riassigner	RIAssigner
@@ -918,6 +920,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/qcxms_production_run/qcxms_production_run/5
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_production_run/qcxms_production_run/5.2.1+galaxy0	QCxMS production run	Production run to obtain a QCxMS simulated mass spectrum	operation_0297	topic_3332		
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_production_run/qcxms_production_run/5.2.1+galaxy1	QCxMS production run	Production run to obtain a QCxMS simulated mass spectrum	operation_0297	topic_3332		
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_production_run/qcxms_production_run/5.2.1+galaxy2	QCxMS production run	Production run to obtain a QCxMS simulated mass spectrum	operation_0297	topic_3332		
+toolshed.g2.bx.psu.edu/repos/recetox/table_pandas_transform/table_pandas_transform/2.2.3+galaxy0	table column transformations	apply transformations on multiple columns				
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_match/matchms_metadata_match/0.25.0+galaxy0	matchms metadata match	matchms metadata match calculation for numeric fields based on tolerance	operation_3695,operation_0336,operation_3801	topic_3172	matchms	Matchms
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_match/matchms_metadata_match/0.27.0+galaxy0	matchms metadata match	matchms metadata match calculation for numeric fields based on tolerance	operation_3801,operation_0336,operation_3695	topic_3172	matchms	Matchms
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_match/matchms_metadata_match/0.20.0+galaxy0	matchms metadata match	matchms metadata match calculation for numeric fields based on tolerance	operation_3695,operation_0336,operation_3801	topic_3172	matchms	Matchms
@@ -1069,6 +1072,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/ramclustr_define_experiment/ramclustr_defin
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_remove_spectra/matchms_remove_spectra/0.25.0+galaxy0	matchms remove spectra	Filters spectra based on metadata presence	operation_3695	topic_3172	matchms	Matchms
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_remove_spectra/matchms_remove_spectra/0.27.0+galaxy0	matchms remove spectra	Filters spectra based on metadata presence	operation_3695	topic_3172	matchms	Matchms
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_remove_spectra/matchms_remove_spectra/0.25.0+galaxy1	matchms remove spectra	Filters spectra based on metadata presence	operation_3695	topic_3172	matchms	Matchms
+toolshed.g2.bx.psu.edu/repos/recetox/table_pandas_rename_column/table_pandas_rename_column/2.2.3+galaxy0	table rename column	of a table				
 toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.13.3+galaxy0	recetox-aplcms - align features	align peaks across samples	operation_2928	topic_3172,topic_0091,topic_3520	recetox-aplcms	recetox-aplcms
 toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.10.3+galaxy0	recetox-aplcms - align features	align peaks across samples	operation_2928	topic_3172,topic_0091,topic_3520	recetox-aplcms	recetox-aplcms
 toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.12.0+galaxy2	recetox-aplcms - align features	align peaks across samples	operation_2928	topic_3172,topic_0091,topic_3520	recetox-aplcms	recetox-aplcms
@@ -1080,6 +1084,8 @@ toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcm
 toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.9.4+galaxy1	recetox-aplcms - align features	align peaks across samples	operation_2928	topic_3172,topic_0091,topic_3520	recetox-aplcms	recetox-aplcms
 toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.11.0+galaxy1	recetox-aplcms - align features	align peaks across samples	operation_2928	topic_3172,topic_0091,topic_3520	recetox-aplcms	recetox-aplcms
 toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.12.0+galaxy1	recetox-aplcms - align features	align peaks across samples	operation_2928	topic_3172,topic_0091,topic_3520	recetox-aplcms	recetox-aplcms
+toolshed.g2.bx.psu.edu/repos/recetox/table_pandas_rename_columns_regex/table_pandas_rename_columns_regex/2.2.3+galaxy0	table rename columns via regex	rename columns in a table using regex				
+toolshed.g2.bx.psu.edu/repos/recetox/bioconductor_msnbase_smooth_mz/bioconductor_msnbase_smooth_mz/2.32.0+galaxy0	bioconductor-msnbase smooth mz	smooth raw MS data in mass-to-charge ratio domain	operation_3632,operation_2945	topic_3170,topic_3391	msnbase	MSnbase
 toolshed.g2.bx.psu.edu/repos/recetox/spec2vec_training/spec2vec_training/0.8.0+galaxy0	spec2vec model training	Train a Spec2Vec model for mass spectra similarity scoring	operation_2421,operation_3803,operation_3860,operation_3801	topic_3172,topic_0218,topic_0121,topic_3520	spec2vec	Spec2Vec
 toolshed.g2.bx.psu.edu/repos/recetox/spec2vec_training/spec2vec_training/0.6.0-0+galaxy0	spec2vec model training	Train a Spec2Vec model for mass spectra similarity scoring	operation_3860,operation_2421,operation_3803,operation_3801	topic_3172,topic_0218,topic_0121,topic_3520	spec2vec	Spec2Vec
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_neutral_run/qcxms_neutral_run/5.2.1+galaxy4	QCxMS neutral run	required as first step to prepare for the production runs	operation_3860	topic_3332		
@@ -1097,9 +1103,12 @@ toolshed.g2.bx.psu.edu/repos/recetox/waveica/waveica/0.2.0+galaxy8	WaveICA	remov
 toolshed.g2.bx.psu.edu/repos/recetox/waveica/waveica/0.2.0+galaxy2	WaveICA	removal of batch effects for untargeted metabolomics data				
 toolshed.g2.bx.psu.edu/repos/recetox/waveica/waveica/0.2.0+galaxy1	WaveICA	removal of batch effects for untargeted metabolomics data	operation_3435	topic_3172	waveica	WaveICA
 toolshed.g2.bx.psu.edu/repos/recetox/ms2deepscore_config_generator/ms2deepscore_config_generator/2.0.0+galaxy0	MS2DeepScore Configuration Generator	Generates model parameters for MS2DeepScore in JSON format	operation_3927,operation_3860,operation_3801	topic_3343,topic_3474,topic_3520,topic_0154,topic_3172	ms2deepscore	MS2DeepScore
+toolshed.g2.bx.psu.edu/repos/recetox/bioconductor_msnbase_centroid/bioconductor_msnbase_centroid/2.32.0+galaxy0	bioconductor-msnbase centroid	centroid raw profile-mode MS data	operation_2409,operation_0337	topic_0121,topic_3071,topic_3520,topic_0092	msnbase	MSnbase
 toolshed.g2.bx.psu.edu/repos/recetox/assign_ri_from_comment/riassigner_from_comment/0.4.1+galaxy0	RIAssigner init from comment	Assign different retention indices from unstructured comment metadata	operation_3435	topic_3343,topic_3172,topic_0219	riassigner	RIAssigner
 toolshed.g2.bx.psu.edu/repos/recetox/assign_ri_from_comment/riassigner_from_comment/0.4.0+galaxy5	RIAssigner init from comment	Assign different retention indices from unstructured comment metadata	operation_3435	topic_0219,topic_3343,topic_3172	riassigner	RIAssigner
 toolshed.g2.bx.psu.edu/repos/recetox/assign_ri_from_comment/riassigner_from_comment/0.4.0+galaxy4	RIAssigner init from comment	Assign different retention indices from unstructured comment metadata	operation_3435	topic_3172,topic_0219,topic_3343	riassigner	RIAssigner
+toolshed.g2.bx.psu.edu/repos/recetox/table_scipy_interpolate/table_scipy_interpolate/1.14.1+galaxy0	table scipy interpolate	interpolate data using the scipy.interpolate library				
+toolshed.g2.bx.psu.edu/repos/recetox/bioconductor_msnbase_smooth_chromatogram/bioconductor_msnbase_smooth_chromatogram/2.32.0+galaxy0	bioconductor-msnbase smooth chromatogram	smooth consecutive spectra using a moving window filter (combineSpectraMovingWindow)	operation_3632,operation_2945	topic_3170,topic_3391	msnbase	MSnbase
 toolshed.g2.bx.psu.edu/repos/recetox/gc_derivatization/gc_derivatization/1.0.1+galaxy0	GC derivatization	In silico MeOX and TMS derivatization tool				
 toolshed.g2.bx.psu.edu/repos/recetox/isolib/isolib/1.0.1+galaxy0	isolib	create an isotopic pattern library for given compounds and adducts	operation_3632			
 toolshed.g2.bx.psu.edu/repos/recetox/isolib/isolib/1.0.0+galaxy1	isolib	create an isotopic pattern library for given compounds and adducts	operation_3632			
@@ -1358,6 +1367,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/circos/circos_bundlelinks/0.69.8+galaxy12	Circo
 toolshed.g2.bx.psu.edu/repos/iuc/circos/circos_bundlelinks/0.69.8+galaxy5	Circos: Bundle Links	reduce numbers of links in datasets before plotting	operation_0337	topic_0797,topic_0092	circos	Circos
 toolshed.g2.bx.psu.edu/repos/iuc/circos/circos_bundlelinks/0.69.8+galaxy9	Circos: Bundle Links	reduce numbers of links in datasets before plotting	operation_3436	topic_0797,topic_0092	circos	Circos
 toolshed.g2.bx.psu.edu/repos/iuc/circos/circos_bundlelinks/0.69.8+galaxy6	Circos: Bundle Links	reduce numbers of links in datasets before plotting	operation_0337	topic_0092,topic_0797	circos	Circos
+toolshed.g2.bx.psu.edu/repos/iuc/ppanggolin_msa/ppanggolin_msa/2.2.1+galaxy0	PPanGGOLiN MSA	computes MSA of pangenome's gene families	operation_3797,operation_0362,operation_3891,operation_0310	topic_3305,topic_0621,topic_3174,topic_0623,topic_0102	ppanggolin	PPanGGOLiN
 toolshed.g2.bx.psu.edu/repos/iuc/qiime_filter_taxa_from_otu_table/qiime_filter_taxa_from_otu_table/1.9.1.0	Filter taxa from an OTU table	(filter_taxa_from_otu_table)	operation_2945	topic_3070	qiime	QIIME
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_bin_seqs/mothur_bin_seqs/1.39.5.0	Bin.seqs	Order Sequences by OTU		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_bin_seqs/mothur_bin_seqs/1.36.1.0	Bin.seqs	Order Sequences by OTU		topic_3697	mothur	mothur
@@ -1365,6 +1375,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/pbmm2/pbmm2/1.14.99+galaxy0	pbmm2	map PacBio re
 toolshed.g2.bx.psu.edu/repos/iuc/pbmm2/pbmm2/1.10.0+galaxy0	pbmm2	map PacBio reads to a reference genome.	operation_3802,operation_0491	topic_0102	pbmm2	pbmm2
 toolshed.g2.bx.psu.edu/repos/iuc/pbmm2/pbmm2/1.13.1+galaxy0	pbmm2	map PacBio reads to a reference genome.	operation_0491,operation_3802	topic_0102	pbmm2	pbmm2
 toolshed.g2.bx.psu.edu/repos/iuc/pbmm2/pbmm2/1.16.0+galaxy0	pbmm2	map PacBio reads to a reference genome.	operation_0491,operation_3802	topic_0102	pbmm2	pbmm2
+toolshed.g2.bx.psu.edu/repos/iuc/pbmm2/pbmm2/1.16.99+galaxy0	pbmm2	map PacBio reads to a reference genome.	operation_3802,operation_0491	topic_0102	pbmm2	pbmm2
 toolshed.g2.bx.psu.edu/repos/iuc/seurat/seurat/4.1.1+galaxy0	Seurat	- toolkit for exploration of single-cell RNA-seq data		topic_3170,topic_3308	seurat	Seurat
 toolshed.g2.bx.psu.edu/repos/iuc/seurat/seurat/2.3.4	Seurat	- toolkit for exploration of single-cell RNA-seq data		topic_3308,topic_3170	seurat	Seurat
 toolshed.g2.bx.psu.edu/repos/iuc/seurat/seurat/4.0.6+galaxy0	Seurat	- toolkit for exploration of single-cell RNA-seq data		topic_3308,topic_3170	seurat	Seurat
@@ -1398,6 +1409,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.12.5.0	fastp	fast all-in-one prep
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.18.0.0	fastp	- fast all-in-one preprocessing for FASTQ files	operation_3187,operation_3192	topic_0080,topic_0632	fastp	fastp
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.19.3.1	fastp	fast all-in-one preprocessing for FASTQ files	operation_3187,operation_3192	topic_0080,topic_0632	fastp	fastp
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.19.3.2	fastp	- fast all-in-one preprocessing for FASTQ files	operation_3187,operation_3192	topic_0080,topic_0632	fastp	fastp
+toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.24.0+galaxy4	fastp	fast all-in-one preprocessing for FASTQ files	operation_3192,operation_3187	topic_0080,topic_0632	fastp	fastp
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.24.0+galaxy0	fastp	fast all-in-one preprocessing for FASTQ files	operation_3192,operation_3187	topic_0080,topic_0632	fastp	fastp
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.19.5+galaxy1	fastp	- fast all-in-one preprocessing for FASTQ files	operation_3192,operation_3187	topic_0080,topic_0632	fastp	fastp
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.23.4+galaxy1	fastp	fast all-in-one preprocessing for FASTQ files	operation_3192,operation_3187	topic_0080,topic_0632	fastp	fastp
@@ -1419,6 +1431,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/poretools_occupancy/poretools_occupancy/0.6.1a1
 toolshed.g2.bx.psu.edu/repos/iuc/fasttree/fasttree/2.1.10+galaxy3	FASTTREE	build maximum-likelihood phylogenetic trees	operation_0547,operation_0540	topic_0080,topic_3293	fasttree	FastTree
 toolshed.g2.bx.psu.edu/repos/iuc/fasttree/fasttree/2.1.10	FASTTREE	adjust short reads	operation_0540,operation_0547	topic_3293,topic_0080	fasttree	FastTree
 toolshed.g2.bx.psu.edu/repos/iuc/fasttree/fasttree/2.1.10+galaxy1	FASTTREE	build maximum-likelihood phylogenetic trees	operation_0547,operation_0540	topic_0080,topic_3293	fasttree	FastTree
+toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.44.1+galaxy0	NanoPlot	Plotting suite for Oxford Nanopore sequencing data and alignments	operation_2940,operation_2943	topic_0622	nanoplot	NanoPlot
 toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.25.0+galaxy1	NanoPlot	Plotting suite for Oxford Nanopore sequencing data and alignments	operation_2943,operation_2940	topic_0622	nanoplot	NanoPlot
 toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.13.0	NanoPlot	Plotting suite for Oxford Nanopore sequencing data and alignments	operation_2940,operation_2943	topic_0622	nanoplot	NanoPlot
 toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.43.0+galaxy0	NanoPlot	Plotting suite for Oxford Nanopore sequencing data and alignments	operation_2943,operation_2940	topic_0622	nanoplot	NanoPlot
@@ -1540,6 +1553,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/biom_summarize_table/biom_summarize_table/2.1.1
 toolshed.g2.bx.psu.edu/repos/iuc/iwtomics_loadandplot/iwtomics_loadandplot/1.0.0.0	IWTomics Load	Smooth and Plot	operation_3809,operation_0362,operation_3222,operation_3223,operation_2424	topic_2269	iwtomics	IWTomics
 toolshed.g2.bx.psu.edu/repos/iuc/scater_plot_exprs_freq/scater_plot_exprs_freq/1.12.2	Scater: plot expression frequency	Plot the frequency of expression against the mean expression level for SCE	operation_0564,operation_3218,operation_3219	topic_3393,topic_3170,topic_3321	scater	scater
 toolshed.g2.bx.psu.edu/repos/iuc/scater_plot_exprs_freq/scater_plot_exprs_freq/1.10.1	Scater: plot expression frequency	Plot the frequency of expression against the mean expression level for SCE	operation_0564,operation_3218,operation_3219	topic_3393,topic_3170,topic_3321	scater	scater
+toolshed.g2.bx.psu.edu/repos/iuc/gem_extract_exchange/gem_extract_exchange/0.29.1	Get exchange bounds	of a GEM				
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_reheader/bcftools_reheader/1.15.1+galaxy4	bcftools reheader	Modify header of VCF/BCF files, change sample names	operation_2409,operation_3227	topic_3516,topic_3517,topic_0199,topic_2885	bcftools	BCFtools
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_reheader/bcftools_reheader/1.9	bcftools reheader	Modify header of VCF/BCF files, change sample names				
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_reheader/bcftools_reheader/1.10	bcftools reheader	Modify header of VCF/BCF files, change sample names	operation_2409,operation_3227	topic_3517,topic_2885,topic_0199,topic_3516	bcftools	BCFtools
@@ -1759,6 +1773,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ucsc_chainnet/ucsc_chainnet/469+galaxy0	chainNe
 toolshed.g2.bx.psu.edu/repos/iuc/cemitool/cemitool/1.18.1+galaxy1	CEMiTool	gene co-expression network analyses	operation_2497,operation_3501	topic_3308,topic_3518,topic_0203	cemitool	CEMiTool
 toolshed.g2.bx.psu.edu/repos/iuc/cemitool/cemitool/1.26.0+galaxy0	CEMiTool	gene co-expression network analyses	operation_3501,operation_2497	topic_3308,topic_3518,topic_0203	cemitool	CEMiTool
 toolshed.g2.bx.psu.edu/repos/iuc/cemitool/cemitool/1.18.1+galaxy0	CEMiTool	gene co-expression network analyses	operation_3501,operation_2497	topic_3518,topic_3308,topic_0203	cemitool	CEMiTool
+toolshed.g2.bx.psu.edu/repos/iuc/cemitool/cemitool/1.30.0+galaxy0	CEMiTool	gene co-expression network analyses	operation_2497,operation_3501	topic_3518,topic_3308,topic_0203	cemitool	CEMiTool
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_classify_seqs/mothur_classify_seqs/1.39.5.0	Classify.seqs	Assign sequences to taxonomy		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_classify_seqs/mothur_classify_seqs/1.36.1.0	Classify.seqs	Assign sequences to taxonomy		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/graphlan_annotate/graphlan_annotate/1.0.0.0	Generation, personalization and annotation of tree	for GraPhlAn	operation_3460,operation_0567,operation_0326,operation_0323	topic_0194,topic_3174,topic_3944,topic_3293	graphlan	GraPhlAn
@@ -2037,6 +2052,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_setgt/bcftools_plugin_setgt/1.3
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_nucmer/mummer_nucmer/4.0.0beta2	Nucmer	Align two or more sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_nucmer/mummer_nucmer/4.0.0+galaxy0	Nucmer	Align two or more sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_nucmer/mummer_nucmer/4.0.0beta2+galaxy1	Nucmer	Align two or more sequences				
+toolshed.g2.bx.psu.edu/repos/iuc/mummer_nucmer/mummer_nucmer/4.0.0+galaxy1	Nucmer	Align two or more sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_nucmer/mummer_nucmer/4.0.0beta2+galaxy0	Nucmer	Align two or more sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_nucmer/mummer_nucmer/4.0.0rc1+galaxy3	Nucmer	Align two or more sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_nucmer/mummer_nucmer/4.0.0rc1+galaxy2	Nucmer	Align two or more sequences	operation_0492	topic_0080,topic_3574	mumer4	MUMmer4
@@ -2115,6 +2131,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_dosage/bcftools_plugin_dosage/1
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_dosage/bcftools_plugin_dosage/1.15.1+galaxy1	bcftools dosage	plugin genotype dosage			bcftools	BCFtools
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_dosage/bcftools_plugin_dosage/1.3.1	bcftools dosage	plugin genotype dosage			bcftools	BCFtools
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_dosage/bcftools_plugin_dosage/1.3.0	bcftools dosage	plugin genotype dosage			bcftools	BCFtools
+toolshed.g2.bx.psu.edu/repos/iuc/gem_check_memote/gem_check_memote/0.29.1	Make GEM quality report	using memote				
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_split_table/humann2_split_table/0.9.9.0	Split	a HUMAnN2 generated table	operation_3929		humann2	HUMAnN2
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_split_table/humann2_split_table/0.11.1.0	Split	a HUMAnN2 generated table	operation_3929		humann2	HUMAnN2
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_split_table/humann2_split_table/0.11.1.1	Split	a HUMAnN2 generated table	operation_3929		humann2	HUMAnN2
@@ -2262,6 +2279,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/dada2_makesequencetable/dada2_makeSequenceTable
 toolshed.g2.bx.psu.edu/repos/iuc/dada2_makesequencetable/dada2_makeSequenceTable/1.30.0+galaxy0	dada2: makeSequenceTable	construct a sequence table (analogous to OTU table)	operation_3200,operation_3227	topic_0199,topic_3174,topic_3168,topic_3697	dada2	dada2
 toolshed.g2.bx.psu.edu/repos/iuc/ucsc_nettoaxt/ucsc_nettoaxt/469+galaxy0	netToAxt	Convert net (and chain) to axt format			UCSC_Genome_Browser_Utilities	UCSC Genome Browser Utilities
 toolshed.g2.bx.psu.edu/repos/iuc/fairy_sketch/fairy_sketch/0.5.7+galaxy0	Fairy sketch	sketching of k-mers for coverage into a hashtable				
+toolshed.g2.bx.psu.edu/repos/iuc/fairy_sketch/fairy_sketch/0.5.7+galaxy1	Fairy sketch	sketching of k-mers for coverage into a hashtable				
 toolshed.g2.bx.psu.edu/repos/iuc/picrust_normalize_by_copy_number/picrust_normalize_by_copy_number/1.1.1.1	Normalize	the relative abundance of each OTU by the predicted number of 16S copies			picrust	PICRUSt
 toolshed.g2.bx.psu.edu/repos/iuc/picrust_normalize_by_copy_number/picrust_normalize_by_copy_number/1.1.1.0	Normalize	the relative abundance of each OTU by the predicted number of 16S copies				
 toolshed.g2.bx.psu.edu/repos/iuc/picrust_normalize_by_copy_number/picrust_normalize_by_copy_number/1.0.1.0	Normalize	the relative abundance of each OTU by the predicted number of 16S copies			picrust	PICRUSt
@@ -2402,9 +2420,11 @@ toolshed.g2.bx.psu.edu/repos/iuc/stacks2_refmap/stacks2_refmap/2.55+galaxy4	Stac
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_refmap/stacks2_refmap/2.55+galaxy3	Stacks2: reference map	the Stacks pipeline with a reference genome (ref_map.pl)	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_refmap/stacks2_refmap/2.4+galaxy0	Stacks2: reference map	the Stacks pipeline with a reference genome (ref_map.pl)	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_refmap/stacks2_refmap/2.53+galaxy0	Stacks2: reference map	the Stacks pipeline with a reference genome (ref_map.pl)	operation_2409	topic_0102,topic_3056	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/gem_escher_visualization/gem_escher_visualization/0.29.1	Pathway visualization	of a GEM using Escher				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummer/mummer_mummer/4.0.0beta2	Mummer	Align two or more sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummer/mummer_mummer/4.0.0+galaxy0	Mummer	Align two or more sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummer/mummer_mummer/4.0.0beta2+galaxy1	Mummer	Align two or more sequences				
+toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummer/mummer_mummer/4.0.0+galaxy1	Mummer	Align two or more sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummer/mummer_mummer/4.0.0beta2+galaxy0	Mummer	Align two or more sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummer/mummer_mummer/4.0.0rc1+galaxy3	Mummer	Align two or more sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummer/mummer_mummer/4.0.0rc1+galaxy2	Mummer	Align two or more sequences	operation_0492	topic_0080,topic_3574	mumer4	MUMmer4
@@ -2519,6 +2539,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_mapped/bamtools_split_mapped/2.5
 toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_mapped/bamtools_split_mapped/2.5.2+galaxy2	Split BAM by reads mapping status	into a mapped and an unmapped dataset	operation_0258,operation_2409	topic_0080,topic_3071,topic_3168	bamtools	BamTools
 toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_mapped/bamtools_split_mapped/2.5.1+galaxy0	Split BAM by Mapped		operation_2409,operation_0258	topic_3071,topic_3168,topic_0080	bamtools	BamTools
 toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_mapped/bamtools_split_mapped/2.5.2+galaxy1	Split BAM by reads mapping status	into a mapped and an unmapped dataset	operation_2409,operation_0258	topic_3071,topic_0080,topic_3168	bamtools	BamTools
+toolshed.g2.bx.psu.edu/repos/iuc/ete_treeviewer/ete_treeviewer/3.1.3+galaxy0	ETE tree viewer	visualize a phylogenetic tree	operation_0567	topic_3293	ete	ete
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_deunique_seqs/mothur_deunique_seqs/1.39.5.0	Deunique.seqs	Return all sequences		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_deunique_seqs/mothur_deunique_seqs/1.36.1.0	Deunique.seqs	Return all sequences		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_collect_shared/mothur_collect_shared/1.39.5.0	Collect.shared	Generate collector's curves for calculators on OTUs		topic_3697	mothur	mothur
@@ -3007,6 +3028,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/mothur_classify_otu/mothur_classify_otu/1.36.1.
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_show_coords/mummer_show_coords/4.0.0beta2	Show-Coords	Parse delta file and report coordinates and other information				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_show_coords/mummer_show_coords/4.0.0+galaxy0	Show-Coords	Parse delta file and report coordinates and other information			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_show_coords/mummer_show_coords/4.0.0beta2+galaxy1	Show-Coords	Parse delta file and report coordinates and other information				
+toolshed.g2.bx.psu.edu/repos/iuc/mummer_show_coords/mummer_show_coords/4.0.0+galaxy1	Show-Coords	Parse delta file and report coordinates and other information			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_show_coords/mummer_show_coords/4.0.0beta2+galaxy0	Show-Coords	Parse delta file and report coordinates and other information				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_show_coords/mummer_show_coords/4.0.0rc1+galaxy3	Show-Coords	Parse delta file and report coordinates and other information			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_show_coords/mummer_show_coords/4.0.0rc1+galaxy2	Show-Coords	Parse delta file and report coordinates and other information	operation_0492	topic_0080,topic_3574	mumer4	MUMmer4
@@ -3091,6 +3113,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/samtools_bam_to_cram/samtools_bam_to_cram/1.15.
 toolshed.g2.bx.psu.edu/repos/iuc/samtools_bam_to_cram/samtools_bam_to_cram/1.3.1	samtools BAM to CRAM	convert BAM alignments to CRAM format	operation_3802,operation_1812,operation_3695,operation_3096,operation_0335,operation_0337,operation_0227	topic_3168,topic_0080,topic_3325,topic_0102	samtools	SAMtools
 toolshed.g2.bx.psu.edu/repos/iuc/samtools_bam_to_cram/samtools_bam_to_cram/1.20+galaxy2	samtools BAM to CRAM	convert BAM alignments to CRAM format	operation_0227,operation_3802,operation_0337,operation_3695,operation_0335,operation_3096,operation_1812	topic_3325,topic_0080,topic_0102,topic_3168	samtools	SAMtools
 toolshed.g2.bx.psu.edu/repos/iuc/fairy_cov/fairy_cov/0.5.7+galaxy0	Fairy coverage	Create coverage file for specific binners				
+toolshed.g2.bx.psu.edu/repos/iuc/fairy_cov/fairy_cov/0.5.7+galaxy1	Fairy coverage	Create coverage file for specific binners				
 toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_export_jtv/cnvkit_export_jtv/0.9.11+galaxy1	CNVkit Export JTV	Convert log2 ratios to Java TreeView's native format	operation_3227	topic_3175	cnvkit	CNVkit
 toolshed.g2.bx.psu.edu/repos/iuc/bbtools_tadpole/bbtools_tadpole/39.06+galaxy0	BBTools: Tadpole	Kmer-based assembler	operation_0496,operation_0491	topic_0622,topic_0091		
 toolshed.g2.bx.psu.edu/repos/iuc/bbtools_tadpole/bbtools_tadpole/39.06+galaxy1	BBTools: Tadpole	Kmer-based assembler	operation_0496,operation_0491	topic_0622,topic_0091		
@@ -3124,6 +3147,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/beacon2_gene/beacon2_gene/2.2.1+galaxy0	Beacon2
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_degap_seqs/mothur_degap_seqs/1.39.5.0	Degap.seqs	Remove gap characters from sequences		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_degap_seqs/mothur_degap_seqs/1.36.1.0	Degap.seqs	Remove gap characters from sequences		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/biobox_add_taxid/biobox_add_taxid/0.6+galaxy0	Biobox add taxid	Add taxid output from BAT or GTDB to biobox binning data				
+toolshed.g2.bx.psu.edu/repos/iuc/biobox_add_taxid/biobox_add_taxid/1.2+galaxy0	Biobox add taxid	Add taxid output from BAT or GTDB to biobox binning data				
 toolshed.g2.bx.psu.edu/repos/iuc/biobox_add_taxid/biobox_add_taxid/0.4+galaxy0	Biobox add taxid	Add taxid output from BAT or GTDB to biobox binning data				
 toolshed.g2.bx.psu.edu/repos/iuc/kobas/kobas_annotate/0.4	KOBAS Annotate	KEGG Orthology Based Annotation System	operation_0224,operation_2436	topic_0602,topic_0080,topic_0634	kobas	KOBAS
 toolshed.g2.bx.psu.edu/repos/iuc/kobas/kobas_annotate/2.1.1	KOBAS Annotate	KEGG Orthology Based Annotation System	operation_2436,operation_0224	topic_0080,topic_0602,topic_0634	kobas	KOBAS
@@ -4220,6 +4244,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/transdecoder/transdecoder/3.0.1	TransDecoder	Fi
 toolshed.g2.bx.psu.edu/repos/iuc/transdecoder/transdecoder/5.5.0+galaxy1	TransDecoder	finds coding regions within transcripts				
 toolshed.g2.bx.psu.edu/repos/iuc/transdecoder/transdecoder/5.5.0+galaxy0	TransDecoder	finds coding regions within transcripts				
 toolshed.g2.bx.psu.edu/repos/iuc/transdecoder/transdecoder/5.5.0+galaxy2	TransDecoder	finds coding regions within transcripts			TransDecoder	TransDecoder
+toolshed.g2.bx.psu.edu/repos/iuc/gem_flux_distribution/gem_flux_distribution/0.29.1	Calculate flux distribution	of a GEM				
 toolshed.g2.bx.psu.edu/repos/iuc/dimet_differential_multigroup_analysis/dimet_differential_multigroup_analysis/0.2.4+galaxy2	dimet differential multigroup analysis	Differential analysis of 3 or more chosen groups of tracer metabolomics data (by DIMet)				
 toolshed.g2.bx.psu.edu/repos/iuc/dimet_differential_multigroup_analysis/dimet_differential_multigroup_analysis/0.2.4+galaxy1	dimet differential multigroup analysis	Differential analysis of 3 or more chosen groups of tracer metabolomics data (by DIMet)				
 toolshed.g2.bx.psu.edu/repos/iuc/dimet_differential_multigroup_analysis/dimet_differential_multigroup_analysis/0.1.4+galaxy1	dimet differential multigroup analysis	Differential analysis of 3 or more chosen groups of tracer metabolomics data (by DIMet)				
@@ -4291,6 +4316,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/mothur_nmds/mothur_nmds/1.36.1.0	Nmds	generate 
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummerplot/mummer_mummerplot/4.0.0beta2	Mummerplot	Generate 2-D dotplot of aligned sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummerplot/mummer_mummerplot/4.0.0+galaxy0	Mummerplot	Generate 2-D dotplot of aligned sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummerplot/mummer_mummerplot/4.0.0beta2+galaxy1	Mummerplot	Generate 2-D dotplot of aligned sequences				
+toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummerplot/mummer_mummerplot/4.0.0+galaxy1	Mummerplot	Generate 2-D dotplot of aligned sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummerplot/mummer_mummerplot/4.0.0beta2+galaxy0	Mummerplot	Generate 2-D dotplot of aligned sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummerplot/mummer_mummerplot/4.0.0rc1+galaxy3	Mummerplot	Generate 2-D dotplot of aligned sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_mummerplot/mummer_mummerplot/4.0.0rc1+galaxy2	Mummerplot	Generate 2-D dotplot of aligned sequences	operation_0492	topic_0080,topic_3574	mumer4	MUMmer4
@@ -4457,6 +4483,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/meme_psp_gen/meme_psp_gen/5.4.1+galaxy0	MEME ps
 toolshed.g2.bx.psu.edu/repos/iuc/beacon2_runs/beacon2_runs/1.0.0	Beacon2 Runs	Query the runs collection in the beacon database				
 toolshed.g2.bx.psu.edu/repos/iuc/king/king/2.2.4+galaxy0	KING	Kinship-based INference for GWAS				
 toolshed.g2.bx.psu.edu/repos/iuc/king/king/2.2.7+galaxy0	KING	Kinship-based INference for GWAS				
+toolshed.g2.bx.psu.edu/repos/iuc/plot_muon/plot_muon/0.1.6+galaxy0	muon plot				muon	muon
 toolshed.g2.bx.psu.edu/repos/iuc/humann/humann/3.0.0+galaxy0	HUMAnN	to profile presence/absence and abundance of microbial pathways and gene families	operation_2478,operation_0324	topic_3174,topic_0194	humann	humann
 toolshed.g2.bx.psu.edu/repos/iuc/humann/humann/3.8+galaxy0	HUMAnN	to profile presence/absence and abundance of microbial pathways and gene families	operation_0324,operation_3221,operation_3460	topic_0194,topic_3174	humann	humann
 toolshed.g2.bx.psu.edu/repos/iuc/humann/humann/3.0.0+galaxy1	HUMAnN	to profile presence/absence and abundance of microbial pathways and gene families	operation_2478,operation_0324	topic_3174,topic_0194	humann	humann
@@ -4778,6 +4805,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/hmmer_hmmscan/hmmer_hmmscan/0.1.1	hmmscan	searc
 toolshed.g2.bx.psu.edu/repos/iuc/hmmer_hmmscan/hmmer_hmmscan/3.3+galaxy1	hmmscan	search protein sequence(s) against a protein profile database			hmmer3	HMMER3
 toolshed.g2.bx.psu.edu/repos/iuc/hmmer_hmmscan/hmmer_hmmscan/3.3.2+galaxy1	hmmscan	search protein sequence(s) against a protein profile database	operation_3434,operation_2238,operation_0492,operation_0296,operation_2421,operation_0230,operation_0336,operation_3481,operation_2422,operation_0335,operation_0338	topic_0160,topic_0080,topic_0623	hmmer3	HMMER3
 toolshed.g2.bx.psu.edu/repos/iuc/hmmer_hmmscan/hmmer_hmmscan/3.1b2	hmmscan	search protein sequence(s) against a protein profile database	operation_0492,operation_0230,operation_0338,operation_3434,operation_0336,operation_2421,operation_2238,operation_2422,operation_3481,operation_0335,operation_0296	topic_0080,topic_0160,topic_0623	hmmer3	HMMER3
+toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.4+galaxy1	Porechop	adapter trimmer for Oxford Nanopore reads				
 toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.4+galaxy0	Porechop	adapter trimmer for Oxford Nanopore reads				
 toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.4	Porechop	adapter trimmer for Oxford Nanopore reads				
 toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.3	Porechop	adapter trimmer for Oxford Nanopore reads				
@@ -4826,12 +4854,14 @@ toolshed.g2.bx.psu.edu/repos/iuc/qualimap_multi_bamqc/qualimap_multi_bamqc/2.2.2
 toolshed.g2.bx.psu.edu/repos/iuc/qualimap_multi_bamqc/qualimap_multi_bamqc/2.3+galaxy0	QualiMap Multi-Sample BamQC		operation_3218	topic_3572	qualimap	QualiMap
 toolshed.g2.bx.psu.edu/repos/iuc/qualimap_multi_bamqc/qualimap_multi_bamqc/2.2.2d	QualiMap Multi-Sample BamQC		operation_3218	topic_3572	qualimap	QualiMap
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_add_rank_names/phyloseq_add_rank_names/1.50.0+galaxy1	Add Rank Names to Phyloseq Object	Add taxonomy rank names to a phyloseq object	operation_3431,operation_2945,operation_0337	topic_0080,topic_3174,topic_3301	phyloseq	phyloseq
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_add_rank_names/phyloseq_add_rank_names/1.50.0+galaxy2	Add Rank Names to Phyloseq Object	Add taxonomy rank names to a phyloseq object	operation_3431,operation_2945,operation_0337	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_add_rank_names/phyloseq_add_rank_names/1.50.0+galaxy0	Add Rank Names to Phyloseq Object	Add taxonomy rank names to a phyloseq object	operation_2945,operation_3431,operation_0337	topic_0080,topic_3174,topic_3301	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.3+galaxy1	Kraken2	assign taxonomic labels to sequencing reads	operation_3460	topic_3174,topic_0637	kraken2	kraken2
 toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.0.7_beta+galaxy0	Kraken2	assign taxonomic labels to sequencing reads	operation_3460	topic_0637,topic_3174	kraken2	kraken2
 toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.0.8_beta+galaxy0	Kraken2	assign taxonomic labels to sequencing reads	operation_3460	topic_3174,topic_0637	kraken2	kraken2
 toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1	Kraken2	assign taxonomic labels to sequencing reads	operation_3460	topic_3174,topic_0637	kraken2	kraken2
 toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy0	Kraken2	assign taxonomic labels to sequencing reads	operation_3460	topic_3174,topic_0637	kraken2	kraken2
+toolshed.g2.bx.psu.edu/repos/iuc/mudata_import_export/mudata_import_export/0.1.6+galaxy0	MuData import and export				muon	muon
 toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schicclusterminhash/schicexplorer_schicclusterminhash/4.1	scHicClusterMinHash	clusters single-cell Hi-C interaction matrices with MinHash dimension reduction	operation_0337,operation_2428,operation_3435	topic_3295,topic_3169,topic_0769,topic_0654,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schicclusterminhash/schicexplorer_schicclusterminhash/1.0	scHicClusterMinHash	clusters single-cell Hi-C interaction matrices with MinHash dimension reduction	operation_2428,operation_0337,operation_3435	topic_0654,topic_0769,topic_3169,topic_3295,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schicclusterminhash/schicexplorer_schicclusterminhash/4.0	scHicClusterMinHash	clusters single-cell Hi-C interaction matrices with MinHash dimension reduction	operation_0337,operation_3435,operation_2428	topic_0769,topic_0654,topic_3169,topic_3295,topic_3940	hicexplorer	HiCExplorer
@@ -4976,6 +5006,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_coverage/cnvkit_coverage/0.9.10+galaxy0.
 toolshed.g2.bx.psu.edu/repos/iuc/gfa_to_fa/gfa_to_fa/0.1.0	GFA to FASTA	Convert Graphical Fragment Assembly files to FASTA format				
 toolshed.g2.bx.psu.edu/repos/iuc/gfa_to_fa/gfa_to_fa/0.1.1	GFA to FASTA	Convert Graphical Fragment Assembly files to FASTA format				
 toolshed.g2.bx.psu.edu/repos/iuc/gfa_to_fa/gfa_to_fa/0.1.2	GFA to FASTA	Convert Graphical Fragment Assembly files to FASTA format				
+toolshed.g2.bx.psu.edu/repos/iuc/hicexplorer_hicbuildmatrixmicroc/hicexplorer_hicbuildmatrixmicroc/3.7.6+galaxy1	hicBuildMatrixMicroC	create a contact matrix				
 toolshed.g2.bx.psu.edu/repos/iuc/lofreq_call/lofreq_call/2.1.3.1+galaxy1	Call variants	with LoFreq	operation_3227	topic_0622,topic_0199	lofreq	lofreq
 toolshed.g2.bx.psu.edu/repos/iuc/lofreq_call/lofreq_call/2.1.5+galaxy1	Call variants	with LoFreq	operation_3227	topic_0199,topic_0622	lofreq	lofreq
 toolshed.g2.bx.psu.edu/repos/iuc/lofreq_call/lofreq_call/2.1.5+galaxy2	Call variants	with LoFreq	operation_3227	topic_0199,topic_0622	lofreq	lofreq
@@ -5059,6 +5090,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/omark/omark/0.3.0+galaxy1	OMArk	proteome qualit
 toolshed.g2.bx.psu.edu/repos/iuc/omark/omark/0.3.0+galaxy2	OMArk	proteome quality assessment			omark	OMArk
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_merge_files/mothur_merge_files/1.39.5.0	Merge.files	Merge data		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_merge_files/mothur_merge_files/1.36.1.0	Merge.files	Merge data		topic_3697	mothur	mothur
+toolshed.g2.bx.psu.edu/repos/iuc/ppanggolin_all/ppanggolin_all/2.2.1+galaxy0	PPanGGOLiN all	generates a partitioned pangenome	operation_0310,operation_0362,operation_3891,operation_3797	topic_0102,topic_3305,topic_0621,topic_3174,topic_0623	ppanggolin	PPanGGOLiN
 toolshed.g2.bx.psu.edu/repos/iuc/mitos/mitos/1.1.1+galaxy0	MITOS	de-novo annotation of metazoan mitochondrial genomes	operation_0362	topic_3500,topic_3673	mitos	MITOS
 toolshed.g2.bx.psu.edu/repos/iuc/mitos/mitos/1.1.4+galaxy0	MITOS	de-novo annotation of metazoan mitochondrial genomes	operation_0362	topic_3673,topic_3500	mitos	MITOS
 toolshed.g2.bx.psu.edu/repos/iuc/mitos/mitos/1.1.7+galaxy0	MITOS	de-novo annotation of metazoan mitochondrial genomes	operation_0362	topic_3500,topic_3673	mitos	MITOS
@@ -5485,6 +5517,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/checkm_lineage_wf/checkm_lineage_wf/1.2.3+galax
 toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.12	Map with minimap2	A fast pairwise aligner for genomic and spliced nucleotide sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.23+galaxy0	Map with minimap2	A fast pairwise aligner for genomic and spliced nucleotide sequences	operation_0292	topic_0102	minimap2	Minimap2
 toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.22+galaxy@VERSION_SUFFIX@	Map with minimap2	A fast pairwise aligner for genomic and spliced nucleotide sequences	operation_0292	topic_0102	minimap2	Minimap2
+toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.28+galaxy1	Map with minimap2	A fast pairwise aligner for genomic and spliced nucleotide sequences	operation_0292	topic_0102	minimap2	Minimap2
 toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.20+galaxy2	Map with minimap2	A fast pairwise aligner for genomic and spliced nucleotide sequences	operation_0292	topic_0102		
 toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.24+galaxy0	Map with minimap2	A fast pairwise aligner for genomic and spliced nucleotide sequences	operation_0292	topic_0102	minimap2	Minimap2
 toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.3	Map with minimap2	A fast pairwise aligner for genomic and spliced nucleotide sequences				
@@ -5507,6 +5540,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.17+galaxy2	Map with minimap
 toolshed.g2.bx.psu.edu/repos/iuc/winnowmap/winnowmap/2.03+galaxy0	Winnowmap	a mapping tool optimized for repetitive sequences	operation_0292	topic_0102		
 toolshed.g2.bx.psu.edu/repos/iuc/winnowmap/winnowmap/2.02+galaxy0	Winnowmap	a mapping tool optimized for repetitive sequences	operation_0292	topic_0102		
 toolshed.g2.bx.psu.edu/repos/iuc/winnowmap/winnowmap/2.03+galaxy1	Winnowmap	a mapping tool optimized for repetitive sequences	operation_0292	topic_0102		
+toolshed.g2.bx.psu.edu/repos/iuc/seqkit_head/seqkit_head/2.9.0+galaxy0	SeqKit Head	Displays N records of a FASTA or FASTQ file	operation_0371,operation_3192,operation_0372,operation_0233	topic_0080,topic_3489	seqkit	seqkit
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_design/mothur_make_design/1.39.5.0	Make Design	Assign groups to Sets		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_design/mothur_make_design/1.36.1.0	Make Design	Assign groups to Sets		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_call/cnvkit_call/0.9.10+galaxy0	CNVkit Call	Call copy number variants from segmented log2 ratios	operation_3227	topic_3175	cnvkit	CNVkit
@@ -5927,6 +5961,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_sex/cnvkit_sex/0.9.10+galaxy0.1	CNVkit S
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_dnadiff/mummer_dnadiff/4.0.0beta2	DNAdiff	Evaluate similarities/differences between two sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_dnadiff/mummer_dnadiff/4.0.0+galaxy0	DNAdiff	Evaluate similarities/differences between two sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_dnadiff/mummer_dnadiff/4.0.0beta2+galaxy1	DNAdiff	Evaluate similarities/differences between two sequences				
+toolshed.g2.bx.psu.edu/repos/iuc/mummer_dnadiff/mummer_dnadiff/4.0.0+galaxy1	DNAdiff	Evaluate similarities/differences between two sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_dnadiff/mummer_dnadiff/4.0.0beta2+galaxy0	DNAdiff	Evaluate similarities/differences between two sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_dnadiff/mummer_dnadiff/4.0.0rc1+galaxy3	DNAdiff	Evaluate similarities/differences between two sequences			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_dnadiff/mummer_dnadiff/4.0.0rc1+galaxy2	DNAdiff	Evaluate similarities/differences between two sequences	operation_0492	topic_0080,topic_3574	mumer4	MUMmer4
@@ -6041,6 +6076,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/graphlan/graphlan/1.0.0.0	GraPhlAn	to produce g
 toolshed.g2.bx.psu.edu/repos/iuc/graphlan/graphlan/1.1.3	GraPhlAn	to produce graphical output of an input tree	operation_3460,operation_0323,operation_0567,operation_0326	topic_0194,topic_3174,topic_3944,topic_3293	graphlan	GraPhlAn
 toolshed.g2.bx.psu.edu/repos/iuc/seurat_reduce_dimension/seurat_reduce_dimension/5.0+galaxy0	Seurat Run Dimensional Reduction	- PCA, tSNE or UMAP				
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_bar/phyloseq_plot_bar/1.50.0+galaxy1	Phyloseq: Bar Chart	Generate bar charts from a phyloseq object	operation_3431,operation_0337,operation_2945	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_bar/phyloseq_plot_bar/1.50.0+galaxy2	Phyloseq: Bar Chart	Generate bar charts from a phyloseq object	operation_3431,operation_2945,operation_0337	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_bar/phyloseq_plot_bar/1.50.0+galaxy0	Phyloseq: Bar Chart	Generate bar charts from a phyloseq object	operation_0337,operation_3431,operation_2945	topic_3301,topic_3174,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_bar/phyloseq_plot_bar/1.46.0+galaxy0	Phyloseq: Bar Chart	Generate bar charts from a phyloseq object	operation_2945,operation_3431,operation_0337	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_align_seqs/mothur_align_seqs/1.39.5.0	Align.seqs	Align sequences to a template alignment		topic_3697	mothur	mothur
@@ -6081,6 +6117,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/khmer_filter_abundance/khmer_filter_abundance/3
 toolshed.g2.bx.psu.edu/repos/iuc/khmer_filter_abundance/khmer_filter_abundance/2.0.0	Filter reads	by minimal k-mer abundance	operation_3435,operation_0524	topic_0196	khmer	khmer
 toolshed.g2.bx.psu.edu/repos/iuc/khmer_filter_abundance/khmer_filter_abundance/3.0.0a1.0	Filter reads	by minimal k-mer abundance	operation_0524,operation_3435	topic_0196	khmer	khmer
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_dada2/phyloseq_from_dada2/1.50.0+galaxy1	Create phyloseq object	from dada2 sequence and taxonomy tables	operation_3431,operation_0337,operation_2945	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_dada2/phyloseq_from_dada2/1.50.0+galaxy2	Create phyloseq object	from dada2 sequence and taxonomy tables	operation_3431,operation_0337,operation_2945	topic_3174,topic_0080,topic_3301	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_dada2/phyloseq_from_dada2/1.50.0+galaxy0	Create phyloseq object	from dada2 sequence and taxonomy tables	operation_2945,operation_0337,operation_3431	topic_3301,topic_3174,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_dada2/phyloseq_from_dada2/1.38.0+galaxy0	Create phyloseq object	from dada2 sequence and taxonomy tables	operation_3431,operation_0337,operation_2945	topic_3174,topic_0080,topic_3301	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_dada2/phyloseq_from_dada2/1.46.0+galaxy0	Create phyloseq object	from dada2 sequence and taxonomy tables	operation_3431,operation_0337,operation_2945	topic_3174,topic_0080,topic_3301	phyloseq	phyloseq
@@ -6407,6 +6444,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/filtlong/filtlong/0.2.0+galaxy1	filtlong	Filter
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_delta_filter/mummer_delta_filter/4.0.0beta2	Delta-Filter	Filters alignment (delta) file from nucmer				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_delta_filter/mummer_delta_filter/4.0.0+galaxy0	Delta-Filter	Filters alignment (delta) file from nucmer			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_delta_filter/mummer_delta_filter/4.0.0beta2+galaxy1	Delta-Filter	Filters alignment (delta) file from nucmer				
+toolshed.g2.bx.psu.edu/repos/iuc/mummer_delta_filter/mummer_delta_filter/4.0.0+galaxy1	Delta-Filter	Filters alignment (delta) file from nucmer			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_delta_filter/mummer_delta_filter/4.0.0beta2+galaxy0	Delta-Filter	Filters alignment (delta) file from nucmer				
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_delta_filter/mummer_delta_filter/4.0.0rc1+galaxy3	Delta-Filter	Filters alignment (delta) file from nucmer			mummer	MUMmer
 toolshed.g2.bx.psu.edu/repos/iuc/mummer_delta_filter/mummer_delta_filter/4.0.0rc1+galaxy2	Delta-Filter	Filters alignment (delta) file from nucmer	operation_0492	topic_3574,topic_0080	mumer4	MUMmer4
@@ -7054,6 +7092,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/hyphy_fubar/hyphy_fubar/2.5.26+galaxy0	HyPhy-FU
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_fubar/hyphy_fubar/2.5.14+galaxy0	HyPhy-FUBAR	Fast Unconstrained Bayesian AppRoximation				
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_fubar/hyphy_fubar/2.5.2+galaxy1	HyPhy-FUBAR	Fast Unconstrained Bayesian AppRoximation			HyPhy	HyPhy
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_fubar/hyphy_fubar/2.5.4+galaxy0	HyPhy-FUBAR	Fast Unconstrained Bayesian AppRoximation				
+toolshed.g2.bx.psu.edu/repos/iuc/preprocess_muon/preprocess_muon/0.1.6+galaxy0	muon filter and  normalize					
 toolshed.g2.bx.psu.edu/repos/iuc/qiime_make_otu_table/qiime_make_otu_table/1.9.1.0	Make OTU table	Make an OTU table from an OTU map and a taxonomy assignment file	operation_2945	topic_3070	qiime	QIIME
 toolshed.g2.bx.psu.edu/repos/iuc/groot/groot/1.1.2+galaxy2	Groot	align reads to references and weight variation graphs and generate report	operation_3482	topic_3174,topic_3301,topic_0622	groot	GROOT
 toolshed.g2.bx.psu.edu/repos/iuc/groot/groot/1.1.2+galaxy0	Groot	align reads to references and weight variation graphs and generate report			groot	GROOT
@@ -7159,6 +7198,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy4	Meryl	a genomic k-mer c
 toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy5	Meryl	a genomic k-mer counter and sequence utility	operation_0525	topic_0196		
 toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy1	Meryl	a genomic k-mer counter and sequence utility	operation_0525	topic_0196		
 toolshed.g2.bx.psu.edu/repos/iuc/binette/binette/1.0.5+galaxy0	Binette	Binning refinement tool				
+toolshed.g2.bx.psu.edu/repos/iuc/binette/binette/1.0.5+galaxy1	Binette	Binning refinement tool				
 toolshed.g2.bx.psu.edu/repos/iuc/bigscape/bigscape/1.1.9+galaxy1	BiG-SCAPE	Construct sequence similarity networks of BGCs and group them into GCF			BiG-SCAPE	BiG-SCAPE
 toolshed.g2.bx.psu.edu/repos/iuc/bigscape/bigscape/1.1.9+galaxy2	BiG-SCAPE	Construct sequence similarity networks of BGCs and group them into GCF			BiG-SCAPE	BiG-SCAPE
 toolshed.g2.bx.psu.edu/repos/iuc/bigscape/bigscape/1.1.9+galaxy0	BiG-SCAPE	Construct sequence similarity networks of BGCs and group them into GCF				
@@ -7285,6 +7325,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/khmer_abundance_distribution_single/khmer_abund
 toolshed.g2.bx.psu.edu/repos/iuc/khmer_abundance_distribution_single/khmer_abundance_distribution_single/2.0.0	Abundance Distribution (all-in-one)	Calculate abundance distribution of k-mers	operation_0524,operation_3435	topic_0196	khmer	khmer
 toolshed.g2.bx.psu.edu/repos/iuc/khmer_abundance_distribution_single/khmer_abundance_distribution_single/3.0.0a1.0	Abundance Distribution (all-in-one)	Calculate abundance distribution of k-mers	operation_0524,operation_3435	topic_0196	khmer	khmer
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_biom/phyloseq_from_biom/1.50.0+galaxy1	Create phyloseq object	from a BIOM file	operation_3431,operation_0337,operation_2945	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_biom/phyloseq_from_biom/1.50.0+galaxy2	Create phyloseq object	from a BIOM file	operation_2945,operation_3431,operation_0337	topic_0080,topic_3301,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_biom/phyloseq_from_biom/1.50.0+galaxy0	Create phyloseq object	from a BIOM file	operation_0337,operation_3431,operation_2945	topic_3301,topic_3174,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_biom/phyloseq_from_biom/1.46.0+galaxy0	Create phyloseq object	from a BIOM file	operation_0337,operation_2945,operation_3431	topic_0080,topic_3301,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/lumpy_sv/lumpy_sv/0.3.1+galaxy1	LUMPY	is a probabilistic framework for structural variant discovery	operation_3228	topic_3175	lumpy	lumpy
@@ -7310,6 +7351,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/stacks_populations/stacks_populations/1.40.1	St
 toolshed.g2.bx.psu.edu/repos/iuc/stacks_populations/stacks_populations/1.46.1	Stacks: populations	analyze a population of individual samples ('populations' program)				
 toolshed.g2.bx.psu.edu/repos/iuc/stacks_populations/stacks_populations/1.40.0	Stacks: populations	analyze a population of individual samples ('populations' program)				
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_richness/phyloseq_plot_richness/1.50.0+galaxy1	Phyloseq: plot alpha diverstiy measure		operation_2945,operation_3431,operation_0337	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_richness/phyloseq_plot_richness/1.50.0+galaxy2	Phyloseq: plot alpha diverstiy measure		operation_2945,operation_0337,operation_3431	topic_3174,topic_3301,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_richness/phyloseq_plot_richness/1.50.0+galaxy0	Phyloseq: plot alpha diverstiy measure		operation_3431,operation_2945,operation_0337	topic_3174,topic_3301,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_richness/phyloseq_plot_richness/1.38.0+galaxy0	Phyloseq: plot alpha diverstiy measure		operation_3431,operation_0337,operation_2945	topic_3174,topic_0080,topic_3301	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_richness/phyloseq_plot_richness/1.46.0+galaxy0	Phyloseq: plot alpha diverstiy measure		operation_3431,operation_2945,operation_0337	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
@@ -7636,6 +7678,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_setmetadata/ampvis2_setmetadata/2.8.9+g
 toolshed.g2.bx.psu.edu/repos/iuc/peakzilla/peakzilla/1.0+galaxy1	Peakzilla	Identify transcription factor binding sites from ChIP-seq and ChIP-exo experiments				
 toolshed.g2.bx.psu.edu/repos/iuc/peakzilla/peakzilla/1.0+galaxy0	Peakzilla	Identify transcription factor binding sites from ChIP-seq and ChIP-exo experiments				
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_ordination/phyloseq_plot_ordination/1.50.0+galaxy1	Phyloseq: plot ordination		operation_2945,operation_0337,operation_3431	topic_3174,topic_3301,topic_0080	phyloseq	phyloseq
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_ordination/phyloseq_plot_ordination/1.50.0+galaxy2	Phyloseq: plot ordination		operation_2945,operation_0337,operation_3431	topic_3174,topic_3301,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_ordination/phyloseq_plot_ordination/1.50.0+galaxy0	Phyloseq: plot ordination		operation_2945,operation_0337,operation_3431	topic_3301,topic_3174,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_ordination/phyloseq_plot_ordination/1.38.0+galaxy0	Phyloseq: plot ordination		operation_0337,operation_2945,operation_3431	topic_0080,topic_3301,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_plot_ordination/phyloseq_plot_ordination/1.46.0+galaxy0	Phyloseq: plot ordination		operation_0337,operation_2945,operation_3431	topic_0080,topic_3301,topic_3174	phyloseq	phyloseq
@@ -9304,17 +9347,20 @@ toolshed.g2.bx.psu.edu/repos/bgruening/nanopolish_eventalign/nanopolish_eventali
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/2.0.8.1	Diamond view	generate formatted output from DAA files	operation_0258	topic_0080,topic_0078	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/0.9.29	Diamond view	generate formatted output from DAA files	operation_0258	topic_0080,topic_0078	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/2.0.8	Diamond view	generate formatted output from DAA files	operation_0258	topic_0078,topic_0080	diamond	Diamond
+toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/2.1.11+galaxy0	Diamond view	generate formatted output from DAA files	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/0.9.21	Diamond	generate formatted output from DAA files	operation_0258	topic_0080,topic_0078	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/2.0.15+galaxy0	Diamond view	generate formatted output from DAA files	operation_0258	topic_0080,topic_0078	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/0.6.13	Diamond makedb	Build database from a FASTA file	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/0.9.29	Diamond makedb	Build database from a FASTA file	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/2.0.8	Diamond makedb	Build database from a FASTA file	operation_0258	topic_0078,topic_0080	diamond	Diamond
+toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/2.1.11+galaxy0	Diamond makedb	Build database from a FASTA file	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/0.8.24	Diamond makedb	Build database from a FASTA file	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/0.9.21	Diamond makedb	Build database from a FASTA file	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/2.0.15+galaxy0	Diamond makedb	Build database from a FASTA file	operation_0258	topic_0080,topic_0078	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.1.6.0	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/2.0.8.1	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0080,topic_0078	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.9.29.0	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0080,topic_0078	diamond	Diamond
+toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/2.1.11+galaxy0	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24.1	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.9.21.0	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0080,topic_0078	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0080,topic_0078	diamond	Diamond
@@ -9939,6 +9985,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.9+galaxy0	gfastats	
 toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.2.2+galaxy0	gfastats	the swiss army knife for genome assembly	operation_2409	topic_3307	gfastats	gfastats
 toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.5+galaxy0	gfastats	the swiss army knife for genome assembly	operation_2409	topic_3307	gfastats	gfastats
 toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.4+galaxy0	gfastats	the swiss army knife for genome assembly	operation_2409	topic_3307	gfastats	gfastats
+toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.9+galaxy2	gfastats	The swiss army knife for Genome Assembly	operation_2409	topic_3307	gfastats	gfastats
 toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.5+galaxy2	gfastats	the swiss army knife for genome assembly	operation_2409	topic_3307	gfastats	gfastats
 toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.9+galaxy1	gfastats	The swiss army knife for Genome Assembly	operation_2409	topic_3307	gfastats	gfastats
 toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.8+galaxy0	gfastats	The swiss army knife for Genome Assembly	operation_2409	topic_3307	gfastats	gfastats
@@ -10555,6 +10602,7 @@ toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/correlation_analysis/correlat
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/genform/genform/8	genform	Generation of molecular formulas by high-resolution MS and MS/MS data	operation_3214,operation_2238,operation_3694,operation_0226,operation_3203,operation_3501,operation_0337	topic_2259,topic_3307,topic_3172	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/xcms_refine/abims_xcms_refine/3.12.0+galaxy1	xcms refineChromPeaks (refine)	Remove or merge chromatographic peaks based on specific criteria.	operation_3695,operation_3634,operation_3215,operation_3628,operation_2428,operation_3203,operation_3694	topic_3383,topic_0092,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/xcms_refine/abims_xcms_refine/3.12.0+galaxy0	xcms refineChromPeaks (refine)	Remove or merge chromatographic peaks based on specific criteria.	operation_3695,operation_3634,operation_3694,operation_3215,operation_2428,operation_3628,operation_3203	topic_0092,topic_3383,topic_3172	xcms	xcms
+toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/xcms_refine/abims_xcms_refine/3.12.0+galaxy3	xcms refineChromPeaks (refine)	Remove or merge chromatographic peaks based on specific criteria.	operation_3634,operation_2428,operation_3694,operation_3695,operation_3628,operation_3203,operation_3215	topic_0092,topic_3383,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/w4mconcatenate/W4Mconcatenate/1.0.0+galaxy0	W4M concatenate	to merge two metadata tables				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/camera_findadducts/CAMERA_findAdducts/0.1.0+camera1.48.0-galaxy1	CAMERA.findAdducts	Annotate adducts				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/camera_groupcorr/CAMERA_groupCorr/0.1.0+camera1.48.0-galaxy1	CAMERA.groupCorr	EIC correlation grouping of LC/ESI-MS data				
@@ -12260,6 +12308,7 @@ toolshed.g2.bx.psu.edu/repos/dereeper/vcftools_filter_stats_diversity/sniplay_vc
 toolshed.g2.bx.psu.edu/repos/dereeper/vcftools_filter_stats_diversity/sniplay_vcftoolsslidingwindow/2.0.0	VCFtools SlidingWindow	VCFtools SlidingWindow				
 toolshed.g2.bx.psu.edu/repos/dereeper/vcftools_filter_stats_diversity/sniplay_vcftoolsslidingwindow/1.3.0	VCFtools SlidingWindow	VCFtools SlidingWindow				
 toolshed.g2.bx.psu.edu/repos/dereeper/haplophyle/haplophyle/1.0.0	Haplophyle	Generates haplotype network				
+toolshed.g2.bx.psu.edu/repos/dereeper/pangenome_explorer/pangenome_explorer/2.0	PanExplorer2	Bacterial pan-genome analysis				
 toolshed.g2.bx.psu.edu/repos/dereeper/snmf/snmf/2.0.0	sNMF	Fast and efficient program for estimating individual ancestry coefficients				
 toolshed.g2.bx.psu.edu/repos/dereeper/snmf/snmf/1.2	sNMF	Fast and efficient program for estimating individual ancestry coefficients				
 toolshed.g2.bx.psu.edu/repos/dereeper/roary_plots/roary_plots/1.0	Roary plots	Generate plots from Roary outputs				
@@ -12789,6 +12838,7 @@ toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/3.4+galaxy1	Cutadapt	Rem
 toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/1.16.8	Cutadapt	Remove adapter sequences from FASTQ/FASTA	operation_0231	topic_0632	cutadapt	Cutadapt
 toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.6+galaxy1	Cutadapt	Remove adapter sequences from FASTQ/FASTA	operation_0231	topic_0632	cutadapt	Cutadapt
 toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/0.9.5.a	Cutadapt	Remove adapter sequences from FASTQ/FASTA	operation_0231	topic_0632	cutadapt	Cutadapt
+toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/5.0+galaxy0	Cutadapt	Remove adapter sequences from FASTQ/FASTA	operation_0231	topic_0632	cutadapt	Cutadapt
 toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/1.16.5	Cutadapt	Remove adapter sequences from Fastq/Fasta				
 toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.0+galaxy0	Cutadapt	Remove adapter sequences from FASTQ/FASTA	operation_0231	topic_0632	cutadapt	Cutadapt
 toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.7+galaxy0	Cutadapt	Remove adapter sequences from FASTQ/FASTA	operation_0231	topic_0632	cutadapt	Cutadapt
@@ -12847,6 +12897,7 @@ toolshed.g2.bx.psu.edu/repos/ecology/ecology_presence_abs_abund/ecology_presence
 toolshed.g2.bx.psu.edu/repos/ecology/iabiodiv_smartbiodiv_med_environ/iabiodiv_smartbiodiv_med_environ/0.0.1	Adds environment variables	From Copernicus and etopo given geolocalized and timestamped observations				
 toolshed.g2.bx.psu.edu/repos/ecology/iabiodiv_smartbiodiv_med_environ/iabiodiv_smartbiodiv_med_environ/0.1.0	Adds environment variables	From Copernicus and etopo given geolocalized and timestamped observations				
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.2.0	AquaINFRA OGC API Processes					
+toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.3.0	AquaINFRA OGC API Processes					
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.1.0	AquaINFRA OGC API Processes					
 toolshed.g2.bx.psu.edu/repos/ecology/geo_cov_template/geo_cov_template/0.1.0+galaxy0	Make geographic coverage template	for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_idcorrect_2ndlayer/vigiechiro_idcorrect_2ndlayer/0.1.0	Tadarida data cleaner	clean data from animal detection on acoustic recordings				
@@ -13285,6 +13336,7 @@ toolshed.g2.bx.psu.edu/repos/iracooke/tpp_prophets/pepxml_to_table_1/1.0.0	PepXM
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_export_samplemetadata/xcms_export_samplemetadata/3.12.0+galaxy1	xcms get a sampleMetadata file	which need to be filled with extra information	operation_3634,operation_3203,operation_3628,operation_3215,operation_3695,operation_3694,operation_2428	topic_3383,topic_0092,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_export_samplemetadata/xcms_export_samplemetadata/3.6.1+galaxy0	xcms get a sampleMetadata file	which need to be filled with extra information	operation_2428,operation_3695,operation_3628,operation_3694,operation_3203,operation_3215,operation_3634	topic_3383,topic_3172,topic_0092	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_export_samplemetadata/xcms_export_samplemetadata/3.12.0+galaxy0	xcms get a sampleMetadata file	which need to be filled with extra information	operation_3628,operation_3634,operation_2428,operation_3694,operation_3215,operation_3203,operation_3695	topic_0092,topic_3172,topic_3383	xcms	xcms
+toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_export_samplemetadata/xcms_export_samplemetadata/3.12.0+galaxy3	xcms get a sampleMetadata file	which need to be filled with extra information	operation_3695,operation_3634,operation_3203,operation_3215,operation_3694,operation_2428,operation_3628	topic_3383,topic_3172,topic_0092	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_export_samplemetadata/xcms_export_samplemetadata/3.4.3.0	xcms get a sampleMetadata file	which need to be filled with extra information	operation_3695,operation_3634,operation_3694,operation_3215,operation_2428,operation_3628,operation_3203	topic_0092,topic_3383,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_export_samplemetadata/xcms_export_samplemetadata/3.4.4.0	xcms get a sampleMetadata file	which need to be filled with extra information	operation_3634,operation_3203,operation_3628,operation_3215,operation_3695,operation_3694,operation_2428	topic_3383,topic_0092,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_export_samplemetadata/xcms_export_samplemetadata/3.0.0.0	xcms get a sampleMetadata file	which need to be filled with extra information	operation_3634,operation_3203,operation_3628,operation_3215,operation_3695,operation_3694,operation_2428	topic_3383,topic_0092,topic_3172	xcms	xcms
@@ -13314,6 +13366,7 @@ toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.6.1+galax
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/2.0.5	xcms groupChromPeaks (group)	Perform the correspondence, the grouping of chromatographic peaks within and between samples.	operation_3695,operation_3634,operation_3215,operation_3628,operation_2428,operation_3203,operation_3694	topic_3383,topic_0092,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.12.0+galaxy0	xcms groupChromPeaks (group)	Perform the correspondence, the grouping of chromatographic peaks within and between samples.	operation_3695,operation_3634,operation_3215,operation_3628,operation_2428,operation_3203,operation_3694	topic_3383,topic_0092,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/2.0.4	xcms groupChromPeaks (group)	Perform the correspondence, the grouping of chromatographic peaks within and between samples.	operation_3628,operation_3634,operation_2428,operation_3694,operation_3215,operation_3203,operation_3695	topic_0092,topic_3172,topic_3383	xcms	xcms
+toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.12.0+galaxy3	xcms groupChromPeaks (group)	Perform the correspondence, the grouping of chromatographic peaks within and between samples.	operation_3634,operation_3694,operation_3695,operation_3628,operation_3203,operation_2428,operation_3215	topic_0092,topic_3383,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.4.3.0	xcms groupChromPeaks (group)	Perform the correspondence, the grouping of chromatographic peaks within and between samples.	operation_3634,operation_3695,operation_3215,operation_3694,operation_3628,operation_2428,operation_3203	topic_3383,topic_3172,topic_0092	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.6.1+galaxy2	xcms groupChromPeaks (group)	Perform the correspondence, the grouping of chromatographic peaks within and between samples.	operation_3634,operation_3203,operation_3215,operation_2428,operation_3694,operation_3695,operation_3628	topic_0092,topic_3172,topic_3383	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/2.1.0	xcms.group	Group peaks together across samples using overlapping m/z bins and calculation of smoothed peak distributions in chromatographic time.	operation_2428,operation_3695,operation_3628,operation_3694,operation_3203,operation_3215,operation_3634	topic_3383,topic_3172,topic_0092	xcms	xcms
@@ -13327,6 +13380,7 @@ toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/2.0.6	xcm
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/3.6.1+galaxy0	xcms adjustRtime (retcor)	Retention Time Correction	operation_3634,operation_3203,operation_3215,operation_2428,operation_3694,operation_3695,operation_3628	topic_0092,topic_3172,topic_3383	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/2.0.5	xcms adjustRtime (retcor)	Retention Time Correction	operation_2428,operation_3695,operation_3628,operation_3694,operation_3203,operation_3215,operation_3634	topic_3383,topic_3172,topic_0092	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/3.12.0+galaxy0	xcms adjustRtime (retcor)	Retention Time Correction	operation_3634,operation_3695,operation_3215,operation_3694,operation_3628,operation_2428,operation_3203	topic_3383,topic_3172,topic_0092	xcms	xcms
+toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/3.12.0+galaxy3	xcms adjustRtime (retcor)	Retention Time Correction	operation_3634,operation_3694,operation_3695,operation_3628,operation_3203,operation_2428,operation_3215	topic_0092,topic_3383,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/3.4.3.0	xcms adjustRtime (retcor)	Retention Time Correction	operation_3634,operation_3203,operation_3628,operation_3215,operation_3695,operation_3694,operation_2428	topic_3383,topic_0092,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/2.0.8	xcms adjustRtime (retcor)	Retention Time Correction	operation_3634,operation_3695,operation_3215,operation_3694,operation_3628,operation_2428,operation_3203	topic_3383,topic_3172,topic_0092	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/2.1.0	xcms.retcor	Retention Time Correction using retcor function from xcms R package	operation_3634,operation_3203,operation_3628,operation_3215,operation_3695,operation_3694,operation_2428	topic_3383,topic_0092,topic_3172	xcms	xcms
@@ -13342,6 +13396,7 @@ toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_summary/abims_xcms_summary/3.12.0+
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_summary/abims_xcms_summary/1.0.1	xcms process history	Create a summary of XCMS analysis	operation_2238,operation_3501,operation_0226,operation_3214,operation_0337,operation_3694,operation_3203	topic_3172,topic_3307,topic_2259	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_summary/abims_xcms_summary/3.6.1+galaxy0	xcms process history	Create a summary of XCMS analysis	operation_2238,operation_3501,operation_0226,operation_3214,operation_0337,operation_3694,operation_3203	topic_3172,topic_3307,topic_2259	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_summary/abims_xcms_summary/3.12.0+galaxy0	xcms process history	Create a summary of XCMS analysis	operation_3203,operation_0226,operation_3501,operation_3214,operation_0337,operation_2238,operation_3694	topic_3307,topic_2259,topic_3172	workflow4metabolomics	Workflow4Metabolomics
+toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_summary/abims_xcms_summary/3.12.0+galaxy3	xcms process history	Create a summary of XCMS analysis	operation_3634,operation_2428,operation_3694,operation_3695,operation_3628,operation_3203,operation_3215	topic_0092,topic_3383,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_summary/abims_xcms_summary/3.4.3.0	xcms process history	Create a summary of XCMS analysis	operation_3214,operation_2238,operation_3694,operation_0226,operation_3203,operation_3501,operation_0337	topic_2259,topic_3307,topic_3172	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_summary/abims_xcms_summary/3.6.1+galaxy2	xcms process history	Create a summary of XCMS analysis	operation_2238,operation_3501,operation_0226,operation_3214,operation_0337,operation_3694,operation_3203	topic_3172,topic_3307,topic_2259	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_summary/abims_xcms_summary/3.6.1+galaxy1	xcms process history	Create a summary of XCMS analysis	operation_3203,operation_0226,operation_3501,operation_3214,operation_0337,operation_2238,operation_3694	topic_3307,topic_2259,topic_3172	workflow4metabolomics	Workflow4Metabolomics
@@ -13353,6 +13408,7 @@ toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_summary/abims_xcms_summary/1.0.0	x
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.12.0+galaxy1	xcms findChromPeaks Merger	Merge xcms findChromPeaks RData into a unique file to be used by group	operation_3634,operation_3203,operation_3215,operation_2428,operation_3694,operation_3695,operation_3628	topic_0092,topic_3172,topic_3383	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.6.1+galaxy0	xcms findChromPeaks Merger	Merge xcms findChromPeaks RData into a unique file to be used by group	operation_3634,operation_3203,operation_3628,operation_3215,operation_3695,operation_3694,operation_2428	topic_3383,topic_0092,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.12.0+galaxy0	xcms findChromPeaks Merger	Merge xcms findChromPeaks RData into a unique file to be used by group	operation_3695,operation_3634,operation_3215,operation_3628,operation_2428,operation_3203,operation_3694	topic_3383,topic_0092,topic_3172	xcms	xcms
+toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.12.0+galaxy3	xcms findChromPeaks Merger	Merge xcms findChromPeaks RData into a unique file to be used by group	operation_3694,operation_3203,operation_3215,operation_3628,operation_3695,operation_2428,operation_3634	topic_3172,topic_3383,topic_0092	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.4.3.0	xcms findChromPeaks Merger	Merge xcms findChromPeaks RData into a unique file to be used by group	operation_3695,operation_3634,operation_3215,operation_3628,operation_2428,operation_3203,operation_3694	topic_3383,topic_0092,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.4.4.0	xcms findChromPeaks Merger	Merge xcms findChromPeaks RData into a unique file to be used by group	operation_3695,operation_3634,operation_3694,operation_3215,operation_2428,operation_3628,operation_3203	topic_0092,topic_3383,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/1.1.0	xcms.xcmsSet Merger	Merge xcms.xcmsSet xset in one to be used by group	operation_3634,operation_3695,operation_3215,operation_3694,operation_3628,operation_2428,operation_3203	topic_3383,topic_3172,topic_0092	xcms	xcms
@@ -13366,6 +13422,7 @@ toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/3.0
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/3.6.1+galaxy0	xcms fillChromPeaks (fillPeaks)	Integrate areas of missing peaks				
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/2.0.5	xcms fillChromPeaks (fillPeaks)	Integrate areas of missing peaks				
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/3.12.0+galaxy0	xcms fillChromPeaks (fillPeaks)	Integrate areas of missing peaks				
+toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/3.12.0+galaxy3	xcms fillChromPeaks (fillPeaks)	Integrate areas of missing peaks				
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/3.4.3.0	xcms fillChromPeaks (fillPeaks)	Integrate areas of missing peaks				
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/2.0.8	xcms.fillPeaks	Integrate a sample's signal in regions where peak groups are not represented to create new peaks in missing areas				
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/2.1.0	xcms.fillPeaks	Integrate a sample's signal in regions where peak groups are not represented to create new peaks in missing areas				
@@ -13380,6 +13437,7 @@ toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/2.0.11	
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.6.1+galaxy0	xcms findChromPeaks (xcmsSet)	Chromatographic peak detection				
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.4.4.2	xcms findChromPeaks (xcmsSet)	Chromatographic peak detection				
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.12.0+galaxy0	xcms findChromPeaks (xcmsSet)	Chromatographic peak detection				
+toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.12.0+galaxy3	xcms findChromPeaks (xcmsSet)	Chromatographic peak detection				
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.4.3.0	xcms findChromPeaks (xcmsSet)	Chromatographic peak detection				
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/2.0.8	xcms findChromPeaks (xcmsSet)	Chromatographic peak detection				
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/2.1.0	xcms.xcmsSet	Filtration and Peak Identification using xcmsSet function from xcms R package to preprocess LC/MS data for relative quantification and statistical analysis				
@@ -13397,6 +13455,7 @@ toolshed.g2.bx.psu.edu/repos/lecorguille/anova/abims_anova/1.1.4	Anova	N-way ano
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_plot_chromatogram/xcms_plot_chromatogram/3.12.0+galaxy1	xcms plot chromatogram	Plots base peak intensity chromatogram (BPI) and total ion current chromatogram (TIC) from MSnbase or xcms experiment(s)	operation_3634,operation_3203,operation_3628,operation_3215,operation_3695,operation_3694,operation_2428	topic_3383,topic_0092,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_plot_chromatogram/xcms_plot_chromatogram/3.6.1.0	xcms plot chromatogram	Plots base peak intensity chromatogram (BPI) and total ion current chromatogram (TIC) from MSnbase or xcms experiment(s)	operation_3634,operation_3695,operation_3215,operation_3694,operation_3628,operation_2428,operation_3203	topic_3383,topic_3172,topic_0092	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_plot_chromatogram/xcms_plot_chromatogram/3.12.0+galaxy0	xcms plot chromatogram	Plots base peak intensity chromatogram (BPI) and total ion current chromatogram (TIC) from MSnbase or xcms experiment(s)	operation_3634,operation_3203,operation_3628,operation_3215,operation_3695,operation_3694,operation_2428	topic_3383,topic_0092,topic_3172	xcms	xcms
+toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_plot_chromatogram/xcms_plot_chromatogram/3.12.0+galaxy3	xcms plot chromatogram	Plots base peak intensity chromatogram (BPI) and total ion current chromatogram (TIC) from MSnbase or xcms experiment(s)	operation_3634,operation_2428,operation_3694,operation_3695,operation_3628,operation_3203,operation_3215	topic_0092,topic_3383,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_plot_chromatogram/xcms_plot_chromatogram/3.4.3.0	xcms plot chromatogram	Plots base peak intensity chromatogram (BPI) and total ion current chromatogram (TIC) from MSnbase or xcms experiment(s)	operation_3634,operation_3695,operation_3215,operation_3694,operation_3628,operation_2428,operation_3203	topic_3383,topic_3172,topic_0092	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_plot_chromatogram/xcms_plot_chromatogram/3.6.1+galaxy2	xcms plot chromatogram	Plots base peak intensity chromatogram (BPI) and total ion current chromatogram (TIC) from MSnbase or xcms experiment(s)	operation_3634,operation_3695,operation_3215,operation_3694,operation_3628,operation_2428,operation_3203	topic_3383,topic_3172,topic_0092	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_plot_chromatogram/xcms_plot_chromatogram/3.6.1+galaxy1	xcms plot chromatogram	Plots base peak intensity chromatogram (BPI) and total ion current chromatogram (TIC) from MSnbase or xcms experiment(s)	operation_3695,operation_3634,operation_3215,operation_3628,operation_2428,operation_3203,operation_3694	topic_3383,topic_0092,topic_3172	xcms	xcms
@@ -13405,6 +13464,7 @@ toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_plot_chromatogram/xcms_plot_chroma
 toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy1	MSnbase readMSData	Imports mass-spectrometry data files	operation_2238,operation_3501,operation_0226,operation_3214,operation_0337,operation_3694,operation_3203	topic_3172,topic_3307,topic_2259	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.4.0.0	MSnbase readMSData	Imports mass-spectrometry data files	operation_0226,operation_3694,operation_3203,operation_0337,operation_3214,operation_3501,operation_2238	topic_2259,topic_3307,topic_3172	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy0	MSnbase readMSData	Imports mass-spectrometry data files	operation_3501,operation_3203,operation_0226,operation_3214,operation_3694,operation_0337,operation_2238	topic_3307,topic_2259,topic_3172	workflow4metabolomics	Workflow4Metabolomics
+toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy3	MSnbase readMSData	Imports mass-spectrometry data files	operation_0337,operation_2409	topic_0092,topic_0121,topic_3071,topic_3520	msnbase	MSnbase
 toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.8.2.1	MSnbase readMSData	Imports mass-spectrometry data files	operation_3203,operation_0226,operation_3501,operation_3214,operation_0337,operation_2238,operation_3694	topic_3307,topic_2259,topic_3172	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.8.2.0	MSnbase readMSData	Imports mass-spectrometry data files	operation_3501,operation_0226,operation_3214,operation_2238,operation_3694,operation_0337,operation_3203	topic_2259,topic_3307,topic_3172	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy2	MSnbase readMSData	Imports mass-spectrometry data files	operation_3501,operation_0226,operation_3214,operation_2238,operation_3694,operation_0337,operation_3203	topic_2259,topic_3307,topic_3172	workflow4metabolomics	Workflow4Metabolomics
@@ -13501,6 +13561,7 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_FbcToNotes/1.2.0	FbcToNotes	
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_FbcToNotes/1.5.0	FbcToNotes	Convert FBC package annotations to sbml notes			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_FbcToNotes/develop	FbcToNotes	Convert FBC package annotations to sbml notes			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_FbcToNotes/1.2.1	FbcToNotes	Convert FBC package annotations to sbml notes			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_FbcToNotes/2.0.0	FbcToNotes	Convert FBC package annotations to sbml html notes			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_FbcToNotes/1.1.0	FbcToNotes	Convert FBC package annotations to sbml notes			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_FbcToNotes/MET4J_VERSION_TEST	FbcToNotes	Convert FBC package annotations to sbml notes			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_FbcToNotes/1.3.0	FbcToNotes	Convert FBC package annotations to sbml notes			met4j	met4j
@@ -13522,19 +13583,26 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubNetwork/1.2.0	Extr
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubNetwork/1.5.0	ExtractSubNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds of interests ids, one per row.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubNetwork/develop	ExtractSubNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds of interests ids, one per row.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubNetwork/1.2.1	ExtractSubNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds of interests ids, one per row.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubNetwork/2.0.0	ExtractSubNetwork	Create a subnetwork from a metabolic network in SBML format, and two files containing lists of compounds of interests ids, one per row.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubNetwork/1.1.0	ExtractSubNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds of interests ids, one per row.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubNetwork/MET4J_VERSION_TEST	ExtractSubNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds of interests ids, one per row.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubNetwork/1.3.0	ExtractSubNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds of interests ids, one per row.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_TopologicalPathwayAnalysis/1.5.0	TopologicalPathwayAnalysis	Run a Topological Pathway Analysis to identify key pathways based on topological properties of its constituting compounds.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_TopologicalPathwayAnalysis/develop	TopologicalPathwayAnalysis	Run a Topological Pathway Analysis to identify key pathways based on topological properties of its constituting compounds.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_TopologicalPathwayAnalysis/2.0.0	TopologicalPathwayAnalysis	Run a Topological Pathway Analysis (TPA) to identify key pathways based on topological properties of its constituting compounds.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_TopologicalPathwayAnalysis/MET4J_VERSION_TEST	TopologicalPathwayAnalysis	Run a Topological Pathway Analysis to identify key pathways based on topological properties of its constituting compounds.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetNames/develop	SetNames	Set names to network objects in a SBML file from a tabulated file containing the object ids and the names			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetNames/2.0.0	SetNames	Set names to network objects in a SBML file from a tabulated file containing the object ids and the names			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DegreeWeighting/1.4.0	DegreeWeighting	Provides tabulated compound graph edge list, with one column with target's degree.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DegreeWeighting/1.2.0	DegreeWeighting	Provides tabulated compound graph edge list, with one column with target's degree.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DegreeWeighting/1.5.0	DegreeWeighting	Provides tabulated compound graph edge list, with one column with target's degree.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DegreeWeighting/develop	DegreeWeighting	Provides tabulated compound graph edge list, with one column with target's degree.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DegreeWeighting/1.2.1	DegreeWeighting	Provides tabulated compound graph edge list, with one column with target's degree.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DegreeWeighting/2.0.0	DegreeWeighting	Provides tabulated compound graph edge list, with one column with target's degree.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DegreeWeighting/MET4J_VERSION_TEST	DegreeWeighting	Provides tabulated compound graph edge list, with one column with target's degree.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DegreeWeighting/1.3.0	DegreeWeighting	Provides tabulated compound graph edge list, with one column with target's degree.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractAnnotations/develop	ExtractAnnotations	Extract databases' references from SBML annotations or notes.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractAnnotations/2.0.0	ExtractAnnotations	Extract databases' references from SBML annotations or notes.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubBipNetwork/1.0.1	ExtractSubBipNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds and/or reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubBipNetwork/0.12.0	ExtractSubBipNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds and/or reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubBipNetwork/1.4.0	ExtractSubBipNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds and/or reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
@@ -13542,9 +13610,12 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubBipNetwork/1.2.0	E
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubBipNetwork/1.5.0	ExtractSubBipNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds and/or reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubBipNetwork/develop	ExtractSubBipNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds and/or reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubBipNetwork/1.2.1	ExtractSubBipNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds and/or reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubBipNetwork/2.0.0	ExtractSubBipNetwork	Create a subnetwork from a metabolic network in SBML format, and two files containing lists of compounds and/or reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubBipNetwork/1.1.0	ExtractSubBipNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds and/or reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubBipNetwork/MET4J_VERSION_TEST	ExtractSubBipNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds and/or reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubBipNetwork/1.3.0	ExtractSubBipNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of compounds and/or reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetReferences/develop	SetReferences	Add references to network objects in a SBML file from a tabulated file containing the metabolite ids and the references			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetReferences/2.0.0	SetReferences	Add references to network objects in a SBML file from a tabulated file containing the metabolite ids and the references			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SBMLwizard/1.4.0	SBMLwizard	General SBML model processing			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SBMLwizard/1.5.0	SBMLwizard	General SBML model processing			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SBMLwizard/MET4J_VERSION_TEST	SBMLwizard	General SBML model processing			met4j	met4j
@@ -13556,9 +13627,12 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Graph/1.2.0	Sbml2Graph	
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Graph/1.5.0	Sbml2Graph	Create a graph representation of a SBML file content, and export it in graph file format.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Graph/develop	Sbml2Graph	Create a graph representation of a SBML file content, and export it in graph file format.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Graph/1.2.1	Sbml2Graph	Create a graph representation of a SBML file content, and export it in graph file format.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Graph/2.0.0	Sbml2Graph	Create a graph representation of a SBML file content, and export it in graph file format.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Graph/1.1.0	Sbml2Graph	Create a graph representation of a SBML file content, and export it in graph file format.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Graph/MET4J_VERSION_TEST	Sbml2Graph	Create a graph representation of a SBML file content, and export it in graph file format.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Graph/1.3.0	Sbml2Graph	Create a graph representation of a SBML file content, and export it in graph file format.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_CreateMetaNetwork/develop	CreateMetaNetwork	Create a Meta-Network from two sub-networks in SBML format.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_CreateMetaNetwork/2.0.0	CreateMetaNetwork	Create a Meta-Network from two sub-networks in SBML format.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NetworkSummary/0.11.0	NetworkSummary	Create a report summarizing several graph measures characterising the structure of the network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NetworkSummary/1.0.1	NetworkSummary	Create a report summarizing several graph measures characterising the structure of the network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NetworkSummary/0.12.0	NetworkSummary	Create a report summarizing several graph measures characterising the structure of the network.			met4j	met4j
@@ -13567,6 +13641,7 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NetworkSummary/1.2.0	Network
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NetworkSummary/1.5.0	NetworkSummary	Create a report summarizing several graph measures characterising the structure of the network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NetworkSummary/develop	NetworkSummary	Create a report summarizing several graph measures characterising the structure of the network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NetworkSummary/1.2.1	NetworkSummary	Create a report summarizing several graph measures characterising the structure of the network.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NetworkSummary/2.0.0	NetworkSummary	Create a report summarizing several graph measures characterising the structure of a metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NetworkSummary/1.1.0	NetworkSummary	Create a report summarizing several graph measures characterising the structure of the network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NetworkSummary/MET4J_VERSION_TEST	NetworkSummary	Create a report summarizing several graph measures characterising the structure of the network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NetworkSummary/1.3.0	NetworkSummary	Create a report summarizing several graph measures characterising the structure of the network.			met4j	met4j
@@ -13578,20 +13653,25 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Kegg2Sbml/1.2.0	Kegg2Sbml	Bu
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Kegg2Sbml/1.5.0	Kegg2Sbml	Build a SBML file from KEGG organism-specific pathways. Uses Kegg API.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Kegg2Sbml/develop	Kegg2Sbml	Build a SBML file from KEGG organism-specific pathways. Uses Kegg API.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Kegg2Sbml/1.2.1	Kegg2Sbml	Build a SBML file from KEGG organism-specific pathways. Uses Kegg API.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Kegg2Sbml/2.0.0	Kegg2Sbml	Build a SBML file from KEGG organism-specific pathways. Uses Kegg API.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Kegg2Sbml/1.1.0	Kegg2Sbml	Build a SBML file from KEGG organism-specific pathways. Uses Kegg API.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Kegg2Sbml/MET4J_VERSION_TEST	Kegg2Sbml	Build a SBML file from KEGG organism-specific pathways. Uses Kegg API.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Kegg2Sbml/1.3.0	Kegg2Sbml	Build a SBML file from KEGG organism-specific pathways. Uses Kegg API.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ORApathwayEnrichment/1.5.0	ORApathwayEnrichment	Perform Over Representation Analysis for Pathway Enrichment, using one-tailed exact Fisher Test.The fisher exact test compute the probability p to randomly get the given set of value. This version compute the probability to get at least the given overlap between the given set and the given modality :Sum the hypergeometric probability with increasing target/query intersection cardinality.The hypergeometric probability is computed from the following contingency table entries.(value in cells correspond to the marginal totals of each intersection groups)				Query	!Query	Target		a		b	!Target		c		dThe probability of obtaining the set of value is computed as following:p = ((a+b)!(c+d)!(a+c)!(b+d)!)/(a!b!c!d!(a+b+c+d)!)The obtained p-value is then adjusted for multiple testing using one of the following methods: - Bonferroni: adjusted p-value = p*n - Benjamini-Hochberg: adjusted p-value = p*n/k - Holm-Bonferroni: adjusted p-value = p*(n+1-k)n : number of tests; k : pvalue rank			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ORApathwayEnrichment/develop	ORApathwayEnrichment	Perform Over Representation Analysis for Pathway Enrichment, using one-tailed exact Fisher Test.The fisher exact test compute the probability p to randomly get the given set of value. This version compute the probability to get at least the given overlap between the given set and the given modality :Sum the hypergeometric probability with increasing target/query intersection cardinality.The hypergeometric probability is computed from the following contingency table entries.(value in cells correspond to the marginal totals of each intersection groups)				Query	!Query	Target		a		b	!Target		c		dThe probability of obtaining the set of value is computed as following:p = ((a+b)!(c+d)!(a+c)!(b+d)!)/(a!b!c!d!(a+b+c+d)!)The obtained p-value is then adjusted for multiple testing using one of the following methods: - Bonferroni: adjusted p-value = p*n - Benjamini-Hochberg: adjusted p-value = p*n/k - Holm-Bonferroni: adjusted p-value = p*(n+1-k)n : number of tests; k : pvalue rank			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ORApathwayEnrichment/2.0.0	ORApathwayEnrichment	Perform Over Representation Analysis for Pathway Enrichment, using one-tailed exact Fisher Test.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ORApathwayEnrichment/MET4J_VERSION_TEST	ORApathwayEnrichment	Perform Over Representation Analysis for Pathway Enrichment, using one-tailed exact Fisher Test.The fisher exact test compute the probability p to randomly get the given set of value. This version compute the probability to get at least the given overlap between the given set and the given modality :Sum the hypergeometric probability with increasing target/query intersection cardinality.The hypergeometric probability is computed from the following contingency table entries.(value in cells correspond to the marginal totals of each intersection groups)				Query	!Query	Target		a		b	!Target		c		dThe probability of obtaining the set of value is computed as following:p = ((a+b)!(c+d)!(a+c)!(b+d)!)/(a!b!c!d!(a+b+c+d)!)The obtained p-value is then adjusted for multiple testing using one of the following methods: - Bonferroni: adjusted p-value = p*n - Benjamini-Hochberg: adjusted p-value = p*n/k - Holm-Bonferroni: adjusted p-value = p*(n+1-k)n : number of tests; k : pvalue rank			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetReactantsFromReactions/1.4.0	GetReactantsFromReactions	Get reactants lists from a list of reactions and a GSMN.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetReactantsFromReactions/1.2.0	GetReactantsFromReactions	Get reactants lists from a list of reactions and a GSMN.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetReactantsFromReactions/1.5.0	GetReactantsFromReactions	Get reactants lists from a list of reactions and a GSMN.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetReactantsFromReactions/develop	GetReactantsFromReactions	Get reactants lists from a list of reactions and a GSMN.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetReactantsFromReactions/1.2.1	GetReactantsFromReactions	Get reactants lists from a list of reactions and a GSMN.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetReactantsFromReactions/2.0.0	GetReactantsFromReactions	Get reactant lists from a list of reactions and a SBML file.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetReactantsFromReactions/1.1.0	GetReactantsFromReactions	Get reactants lists from a list of reactions and a GSMN.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetReactantsFromReactions/MET4J_VERSION_TEST	GetReactantsFromReactions	Get reactants lists from a list of reactions and a GSMN.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetReactantsFromReactions/1.3.0	GetReactantsFromReactions	Get reactants lists from a list of reactions and a GSMN.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetEntities/develop	GetEntities	Parse a SBML file to return a list of entities composing the network: metabolites, reactions, genes and others.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetEntities/2.0.0	GetEntities	Parse a SBML file to return a list of entities composing the network: metabolites, reactions, genes and others.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PathwayNet/1.4.0	PathwayNet	Creation of a Pathway Network representation of a SBML file content			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PathwayNet/1.5.0	PathwayNet	Creation of a Pathway Network representation of a SBML file content			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PathwayNet/MET4J_VERSION_TEST	PathwayNet	Creation of a Pathway Network representation of a SBML file content			met4j	met4j
@@ -13604,6 +13684,7 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Tab2Sbml/1.2.0	Tab2Sbml	Crea
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Tab2Sbml/1.5.0	Tab2Sbml	Create a Sbml File from a tabulated file that contains the reaction ids and the formulas			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Tab2Sbml/develop	Tab2Sbml	Create a Sbml File from a tabulated file that contains the reaction ids and the formulas			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Tab2Sbml/1.2.1	Tab2Sbml	Create a Sbml File from a tabulated file that contains the reaction ids and the formulas			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Tab2Sbml/2.0.0	Tab2Sbml	Create a Sbml File from a tabulated file that contains the reaction ids and the formulas			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Tab2Sbml/1.1.0	Tab2Sbml	Create a Sbml File from a tabulated file that contains the reaction ids and the formulas			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Tab2Sbml/MET4J_VERSION_TEST	Tab2Sbml	Create a Sbml File from a tabulated file that contains the reaction ids and the formulas			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Tab2Sbml/1.3.0	Tab2Sbml	Create a Sbml File from a tabulated file that contains the reaction ids and the formulas			met4j	met4j
@@ -13625,6 +13706,7 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubReactionNetwork/1.
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubReactionNetwork/1.5.0	ExtractSubReactionNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubReactionNetwork/develop	ExtractSubReactionNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubReactionNetwork/1.2.1	ExtractSubReactionNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubReactionNetwork/2.0.0	ExtractSubReactionNetwork	Create a subnetwork from a metabolic network in SBML format, and two files containing lists of reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubReactionNetwork/1.1.0	ExtractSubReactionNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubReactionNetwork/MET4J_VERSION_TEST	ExtractSubReactionNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSubReactionNetwork/1.3.0	ExtractSubReactionNetwork	Create a subnetwork from a GSMN in SBML format, and two files containing lists of reactions of interests ids, one per row, plus one file of the same format containing side compounds ids.			met4j	met4j
@@ -13636,9 +13718,12 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ScopeNetwork/1.2.0	ScopeNetw
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ScopeNetwork/1.5.0	ScopeNetwork	Perform a network expansion from a set of compound seeds to create a scope network			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ScopeNetwork/develop	ScopeNetwork	Perform a network expansion from a set of compound seeds to create a scope network			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ScopeNetwork/1.2.1	ScopeNetwork	Perform a network expansion from a set of compound seeds to create a scope network			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ScopeNetwork/2.0.0	ScopeNetwork	Perform a network expansion from a set of compound seeds to create a scope network			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ScopeNetwork/1.1.0	ScopeNetwork	Perform a network expansion from a set of compound seeds to create a scope network			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ScopeNetwork/MET4J_VERSION_TEST	ScopeNetwork	Perform a network expansion from a set of compound seeds to create a scope network			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ScopeNetwork/1.3.0	ScopeNetwork	Perform a network expansion from a set of compound seeds to create a scope network			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetEcNumbers/develop	SetEcNumbers	Set EC numbers to reactions in a SBML file from a tabulated file containing the reaction ids and the EC numbers			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetEcNumbers/2.0.0	SetEcNumbers	Set EC numbers to reactions in a SBML file from a tabulated file containing the reaction ids and the EC numbers			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PrecursorNetwork/0.11.0	PrecursorNetwork	Perform a network expansion from a set of compound targets to create a precursor network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PrecursorNetwork/1.0.1	PrecursorNetwork	Perform a network expansion from a set of compound targets to create a precursor network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PrecursorNetwork/0.12.0	PrecursorNetwork	Perform a network expansion from a set of compound targets to create a precursor network.			met4j	met4j
@@ -13647,6 +13732,7 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PrecursorNetwork/1.2.0	Precu
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PrecursorNetwork/1.5.0	PrecursorNetwork	Perform a network expansion from a set of compound targets to create a precursor network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PrecursorNetwork/develop	PrecursorNetwork	Perform a network expansion from a set of compound targets to create a precursor network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PrecursorNetwork/1.2.1	PrecursorNetwork	Perform a network expansion from a set of compound targets to create a precursor network.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PrecursorNetwork/2.0.0	PrecursorNetwork	Perform a network expansion from a set of compound targets to create a precursor network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PrecursorNetwork/1.1.0	PrecursorNetwork	Perform a network expansion from a set of compound targets to create a precursor network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PrecursorNetwork/MET4J_VERSION_TEST	PrecursorNetwork	Perform a network expansion from a set of compound targets to create a precursor network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_PrecursorNetwork/1.3.0	PrecursorNetwork	Perform a network expansion from a set of compound targets to create a precursor network.			met4j	met4j
@@ -13658,6 +13744,7 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DistanceMatrix/1.2.0	Distanc
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DistanceMatrix/1.5.0	DistanceMatrix	Create a compound to compound distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DistanceMatrix/develop	DistanceMatrix	Create a compound to compound distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DistanceMatrix/1.2.1	DistanceMatrix	Create a compound to compound distance matrix.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DistanceMatrix/2.0.0	DistanceMatrix	Create a compound to compound distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DistanceMatrix/1.1.0	DistanceMatrix	Create a compound to compound distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DistanceMatrix/MET4J_VERSION_TEST	DistanceMatrix	Create a compound to compound distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DistanceMatrix/1.3.0	DistanceMatrix	Create a compound to compound distance matrix.			met4j	met4j
@@ -13675,8 +13762,11 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlCheckBalance/1.4.0	SbmlC
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlCheckBalance/1.5.0	SbmlCheckBalance	Check balance of all the reactions in a SBML.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlCheckBalance/develop	SbmlCheckBalance	Check balance of all the reactions in a SBML.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlCheckBalance/1.2.1	SbmlCheckBalance	Check balance of all the reactions in a SBML.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlCheckBalance/2.0.0	SbmlCheckBalance	Check balance of all the reactions in a SBML.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlCheckBalance/MET4J_VERSION_TEST	SbmlCheckBalance	Check balance of all the reactions in a SBML.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlCheckBalance/1.3.0	SbmlCheckBalance	Check balance of all the reactions in a SBML.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetIds/develop	SetIds	Set new ids to network objects in a SBML file from a tabulated file containing the old ids and the new ids			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetIds/2.0.0	SetIds	Set new ids to network objects in a SBML file from a tabulated file containing the old ids and the new ids			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetGprsFromFile/0.11.0	SbmlSetGprsFromFile	Create a new SBML file from an original sbml file and a tabulated file containing reaction ids and Gene association written in a cobra way			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetGprsFromFile/1.0.1	SbmlSetGprsFromFile	Create a new SBML file from an original sbml file and a tabulated file containing reaction ids and Gene association written in a cobra way			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetGprsFromFile/0.12.0	SbmlSetGprsFromFile	Create a new SBML file from an original sbml file and a tabulated file containing reaction ids and Gene association written in a cobra way			met4j	met4j
@@ -13697,6 +13787,8 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_CarbonSkeletonNet/1.2.1	Carb
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_CarbonSkeletonNet/1.1.0	CarbonSkeletonNet	Create a carbon skeleton graph representation of a SBML file content, using GSAM atom-mapping file (see https://forgemia.inra.fr/metexplore/gsam)			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_CarbonSkeletonNet/MET4J_VERSION_TEST	CarbonSkeletonNet	Create a carbon skeleton graph representation of a SBML file content, using GSAM atom-mapping file (see https://forgemia.inra.fr/metexplore/gsam)			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_CarbonSkeletonNet/1.3.0	CarbonSkeletonNet	Create a carbon skeleton graph representation of a SBML file content, using GSAM atom-mapping file (see https://forgemia.inra.fr/metexplore/gsam)			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2CompoundGraph/develop	Sbml2CompoundGraph	Advanced creation of a compound graph representation of a SBML file content			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2CompoundGraph/2.0.0	Sbml2CompoundGraph	Advanced creation of a compound graph representation of a SBML file content			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_LoadPoint/0.11.0	LoadPoint	Compute the Load points of a metabolic network. Load points constitute an indicator of lethality and can help identifying drug target.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_LoadPoint/1.0.1	LoadPoint	Compute the Load points of a metabolic network. Load points constitute an indicator of lethality and can help identifying drug target.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_LoadPoint/0.12.0	LoadPoint	Compute the Load points of a metabolic network. Load points constitute an indicator of lethality and can help identifying drug target.			met4j	met4j
@@ -13705,17 +13797,20 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_LoadPoint/1.2.0	LoadPoint	Co
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_LoadPoint/1.5.0	LoadPoint	Compute the Load points of a metabolic network. Load points constitute an indicator of lethality and can help identifying drug target.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_LoadPoint/develop	LoadPoint	Compute the Load points of a metabolic network. Load points constitute an indicator of lethality and can help identifying drug target.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_LoadPoint/1.2.1	LoadPoint	Compute the Load points of a metabolic network. Load points constitute an indicator of lethality and can help identifying drug target.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_LoadPoint/2.0.0	LoadPoint	Compute the Load points of a metabolic network. Load points constitute an indicator of lethality and can help identifying drug targets.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_LoadPoint/1.1.0	LoadPoint	Compute the Load points of a metabolic network. Load points constitute an indicator of lethality and can help identifying drug target.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_LoadPoint/MET4J_VERSION_TEST	LoadPoint	Compute the Load points of a metabolic network. Load points constitute an indicator of lethality and can help identifying drug target.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_LoadPoint/1.3.0	LoadPoint	Compute the Load points of a metabolic network. Load points constitute an indicator of lethality and can help identifying drug target.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ReactionDistanceMatrix/1.5.0	ReactionDistanceMatrix	Create a reaction to reaction distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ReactionDistanceMatrix/develop	ReactionDistanceMatrix	Create a reaction to reaction distance matrix.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ReactionDistanceMatrix/2.0.0	ReactionDistanceMatrix	Create a reaction to reaction distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ReactionDistanceMatrix/MET4J_VERSION_TEST	ReactionDistanceMatrix	Create a reaction to reaction distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SeedsAndTargets/1.4.0	SeedsAndTargets	Identify exogenously acquired compounds, producible compounds exogenously available and/or dead ends metabolites from metabolic network topology			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SeedsAndTargets/1.2.0	SeedsAndTargets	Identify exogenously acquired compounds, producible compounds exogenously available and/or dead ends metabolites from metabolic network topology			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SeedsAndTargets/1.5.0	SeedsAndTargets	Identify exogenously acquired compounds, producible compounds exogenously available and/or dead ends metabolites from metabolic network topology			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SeedsAndTargets/develop	SeedsAndTargets	Identify exogenously acquired compounds, producible compounds exogenously available and/or dead ends metabolites from metabolic network topology			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SeedsAndTargets/1.2.1	SeedsAndTargets	Identify exogenously acquired compounds, producible compounds exogenously available and/or dead ends metabolites from metabolic network topology			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SeedsAndTargets/2.0.0	SeedsAndTargets	Identify exogenously acquired compounds, exogenously available producible compounds and/or dead ends metabolites from metabolic network topology			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SeedsAndTargets/MET4J_VERSION_TEST	SeedsAndTargets	Identify exogenously acquired compounds, producible compounds exogenously available and/or dead ends metabolites from metabolic network topology			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SeedsAndTargets/1.3.0	SeedsAndTargets	Identify exogenously acquired compounds, producible compounds exogenously available and/or dead ends metabolites from metabolic network topology			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChemSimilarityWeighting/1.4.0	ChemSimilarityWeighting	Provides tabulated compound graph edge list, with one column with reactant pair's chemical similarity.			met4j	met4j
@@ -13723,8 +13818,13 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChemSimilarityWeighting/1.2.
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChemSimilarityWeighting/1.5.0	ChemSimilarityWeighting	Provides tabulated compound graph edge list, with one column with reactant pair's chemical similarity.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChemSimilarityWeighting/develop	ChemSimilarityWeighting	Provides tabulated compound graph edge list, with one column with reactant pair's chemical similarity.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChemSimilarityWeighting/1.2.1	ChemSimilarityWeighting	Provides tabulated compound graph edge list, with one column with reactant pair's chemical similarity.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChemSimilarityWeighting/2.0.0	ChemSimilarityWeighting	Provides tabulated compound graph edge list, with one column with reactant pair's chemical similarity.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChemSimilarityWeighting/MET4J_VERSION_TEST	ChemSimilarityWeighting	Provides tabulated compound graph edge list, with one column with reactant pair's chemical similarity.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChemSimilarityWeighting/1.3.0	ChemSimilarityWeighting	Provides tabulated compound graph edge list, with one column with reactant pair's chemical similarity.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetChemicalFormulas/develop	SetChemicalFormulas	Set Formula to network metabolites from a tabulated file containing the metabolite ids and the formulas			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetChemicalFormulas/2.0.0	SetChemicalFormulas	Set Formula to network metabolites from a tabulated file containing the metabolite ids and the formulas			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetPathways/develop	SetPathways	Set pathway to reactions in a network from a tabulated file containing the reaction ids and the pathways			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetPathways/2.0.0	SetPathways	Set pathway to reactions in a network from a tabulated file containing the reaction ids and the pathways			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DecomposeSBML/1.4.0	DecomposeSBML	Parse SBML to render list of composing entities: metabolites, reactions, genes and others.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DecomposeSBML/1.2.0	DecomposeSBML	Parse SBML to render list of composing entities: metabolites, reactions, genes and others.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DecomposeSBML/1.5.0	DecomposeSBML	Parse SBML to render list of composing entities: metabolites, reactions, genes and others.			met4j	met4j
@@ -13732,6 +13832,8 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DecomposeSBML/1.2.1	Decompos
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DecomposeSBML/1.1.0	DecomposeSBML	Parse SBML to render list of composing entities: metabolites, reactions, genes and others.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DecomposeSBML/MET4J_VERSION_TEST	DecomposeSBML	Parse SBML to render list of composing entities: metabolites, reactions, genes and others.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_DecomposeSBML/1.3.0	DecomposeSBML	Parse SBML to render list of composing entities: metabolites, reactions, genes and others.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetMetaboliteAttributes/develop	GetMetaboliteAttributes	Create a tabulated file with metabolite attributes from a SBML file			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetMetaboliteAttributes/2.0.0	GetMetaboliteAttributes	Create a tabulated file with metabolite attributes from a SBML file			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/0.11.0	Sbml2Tab	Create a tabulated file from a SBML file			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/1.0.1	Sbml2Tab	Create a tabulated file from a SBML file			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/0.12.0	Sbml2Tab	Create a tabulated file from a SBML file			met4j	met4j
@@ -13740,12 +13842,14 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/1.2.0	Sbml2Tab	Crea
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/1.5.0	Sbml2Tab	Create a tabulated file from a SBML file			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/develop	Sbml2Tab	Create a tabulated file from a SBML file			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/1.2.1	Sbml2Tab	Create a tabulated file from a SBML file			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/2.0.0	Sbml2Tab	Create a tabulated file listing reaction attributes from a SBML file			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/1.1.0	Sbml2Tab	Create a tabulated file from a SBML file			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/MET4J_VERSION_TEST	Sbml2Tab	Create a tabulated file from a SBML file			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2Tab/1.3.0	Sbml2Tab	Create a tabulated file from a SBML file			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_BipartiteDistanceMatrix/1.4.0	BipartiteDistanceMatrix	Create a compound to reactions distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_BipartiteDistanceMatrix/1.5.0	BipartiteDistanceMatrix	Create a compound to reactions distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_BipartiteDistanceMatrix/develop	BipartiteDistanceMatrix	Create a compound to reactions distance matrix.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_BipartiteDistanceMatrix/2.0.0	BipartiteDistanceMatrix	Create a compound to reactions distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_BipartiteDistanceMatrix/MET4J_VERSION_TEST	BipartiteDistanceMatrix	Create a compound to reactions distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_BipartiteDistanceMatrix/1.3.0	BipartiteDistanceMatrix	Create a compound to reactions distance matrix.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SideCompoundsScan/0.11.0	SideCompoundsScan	Scan a network to identify side-compounds.			met4j	met4j
@@ -13756,6 +13860,7 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SideCompoundsScan/1.2.0	Side
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SideCompoundsScan/1.5.0	SideCompoundsScan	Scan a network to identify side-compounds.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SideCompoundsScan/develop	SideCompoundsScan	Scan a network to identify side-compounds.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SideCompoundsScan/1.2.1	SideCompoundsScan	Scan a network to identify side-compounds.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SideCompoundsScan/2.0.0	SideCompoundsScan	Scan a network to identify side compounds.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SideCompoundsScan/1.1.0	SideCompoundsScan	Scan a network to identify side-compounds.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SideCompoundsScan/MET4J_VERSION_TEST	SideCompoundsScan	Scan a network to identify side-compounds.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SideCompoundsScan/1.3.0	SideCompoundsScan	Scan a network to identify side-compounds.			met4j	met4j
@@ -13773,6 +13878,7 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NameMatcher/1.4.0	NameMatche
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NameMatcher/1.5.0	NameMatcher	This tool runs edit-distance based fuzzy matching to perform near-similar name matching between a metabolic model and a list of chemical names in a dataset. A harmonization processing is performed on chemical names with substitutions of common patterns among synonyms, in order to create aliases on which classical fuzzy matching can be run efficiently.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NameMatcher/develop	NameMatcher	This tool runs edit-distance based fuzzy matching to perform near-similar name matching between a metabolic model and a list of chemical names in a dataset. A harmonization processing is performed on chemical names with substitutions of common patterns among synonyms, in order to create aliases on which classical fuzzy matching can be run efficiently.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NameMatcher/1.2.1	NameMatcher	This tool runs edit-distance based fuzzy matching to perform near-similar name matching between a metabolic model and a list of chemical names in a dataset. A harmonization processing is performed on chemical names with substitutions of common patterns among synonyms, in order to create aliases on which classical fuzzy matching can be run efficiently.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NameMatcher/2.0.0	NameMatcher	This tool runs edit-distance based fuzzy matching to perform near-similar name matching between a metabolic model and a list of chemical names in a dataset. A harmonization processing is performed on chemical names with substitutions of common patterns among synonyms, in order to create aliases on which classical fuzzy matching can be run efficiently.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NameMatcher/MET4J_VERSION_TEST	NameMatcher	This tool runs edit-distance based fuzzy matching to perform near-similar name matching between a metabolic model and a list of chemical names in a dataset. A harmonization processing is performed on chemical names with substitutions of common patterns among synonyms, in order to create aliases on which classical fuzzy matching can be run efficiently.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_NameMatcher/1.3.0	NameMatcher	This tool runs edit-distance based fuzzy matching to perform near-similar name matching between a metabolic model and a list of chemical names in a dataset. A harmonization processing is performed on chemical names with substitutions of common patterns among synonyms, in order to create aliases on which classical fuzzy matching can be run efficiently.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSbmlAnnot/0.11.0	ExtractSbmlAnnot	Extract databases' references from SBML annotations or notes.			met4j	met4j
@@ -13785,12 +13891,18 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSbmlAnnot/1.2.1	Extra
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSbmlAnnot/1.1.0	ExtractSbmlAnnot	Extract databases' references from SBML annotations or notes.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSbmlAnnot/MET4J_VERSION_TEST	ExtractSbmlAnnot	Extract databases' references from SBML annotations or notes.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractSbmlAnnot/1.3.0	ExtractSbmlAnnot	Extract databases' references from SBML annotations or notes.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2PathwayNet/develop	Sbml2PathwayNet	Creation of a Pathway Network representation of a SBML file content			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2PathwayNet/2.0.0	Sbml2PathwayNet	Creation of a Pathway Network representation of a SBML file content			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetIdsFromFile/1.4.0	SbmlSetIdsFromFile	Set new ids to network objects from a tabulated file containing the old ids and the new ids			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetIdsFromFile/1.2.0	SbmlSetIdsFromFile	Set new ids to network objects from a tabulated file containing the old ids and the new ids			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetIdsFromFile/1.5.0	SbmlSetIdsFromFile	Set new ids to network objects from a tabulated file containing the old ids and the new ids			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetIdsFromFile/1.2.1	SbmlSetIdsFromFile	Set new ids to network objects from a tabulated file containing the old ids and the new ids			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetIdsFromFile/MET4J_VERSION_TEST	SbmlSetIdsFromFile	Set new ids to network objects from a tabulated file containing the old ids and the new ids			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetIdsFromFile/1.3.0	SbmlSetIdsFromFile	Set new ids to network objects from a tabulated file containing the old ids and the new ids			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlWizard/develop	SbmlWizard	General SBML model processing			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlWizard/2.0.0	SbmlWizard	General SBML model processing			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetBiggModelProteome/develop	GetBiggModelProteome	Get proteome in fasta format of a model present in the BIGG database			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetBiggModelProteome/2.0.0	GetBiggModelProteome	Get proteome in fasta format of a model present in the BIGG database			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractPathways/0.11.0	ExtractPathways	Extract pathway(s) from GSMN			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractPathways/1.0.1	ExtractPathways	Extract pathway(s) from GSMN			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractPathways/0.12.0	ExtractPathways	Extract pathway(s) from GSMN			met4j	met4j
@@ -13799,6 +13911,7 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractPathways/1.2.0	Extrac
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractPathways/1.5.0	ExtractPathways	Extract pathway(s) from GSMN			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractPathways/develop	ExtractPathways	Extract pathway(s) from GSMN			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractPathways/1.2.1	ExtractPathways	Extract pathway(s) from GSMN			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractPathways/2.0.0	ExtractPathways	Extract pathway(s) from a SBML file and create a sub-network SBML file			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractPathways/1.1.0	ExtractPathways	Extract pathway(s) from GSMN			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractPathways/MET4J_VERSION_TEST	ExtractPathways	Extract pathway(s) from GSMN			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ExtractPathways/1.3.0	ExtractPathways	Extract pathway(s) from GSMN			met4j	met4j
@@ -13837,6 +13950,7 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetGenesFromReactions/1.2.0	
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetGenesFromReactions/1.5.0	GetGenesFromReactions	Get gene lists from a list of reactions and a GSMN.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetGenesFromReactions/develop	GetGenesFromReactions	Get gene lists from a list of reactions and a GSMN.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetGenesFromReactions/1.2.1	GetGenesFromReactions	Get gene lists from a list of reactions and a GSMN.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetGenesFromReactions/2.0.0	GetGenesFromReactions	Get gene lists from a list of reactions and a SBML file.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetGenesFromReactions/1.1.0	GetGenesFromReactions	Get gene lists from a list of reactions and a GSMN.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetGenesFromReactions/MET4J_VERSION_TEST	GetGenesFromReactions	Get gene lists from a list of reactions and a GSMN.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_GetGenesFromReactions/1.3.0	GetGenesFromReactions	Get gene lists from a list of reactions and a GSMN.			met4j	met4j
@@ -13850,6 +13964,8 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetPathwaysFromFile/1.2.
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetPathwaysFromFile/1.1.0	SbmlSetPathwaysFromFile	Set pathway to reactions in a network from a tabulated file containing the reaction ids and the pathways			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetPathwaysFromFile/MET4J_VERSION_TEST	SbmlSetPathwaysFromFile	Set pathway to reactions in a network from a tabulated file containing the reaction ids and the pathways			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetPathwaysFromFile/1.3.0	SbmlSetPathwaysFromFile	Set pathway to reactions in a network from a tabulated file containing the reaction ids and the pathways			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetCharges/develop	SetCharges	Set charge to metabolites in a SBML file from a tabulated file containing the metabolite ids and the charges			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetCharges/2.0.0	SetCharges	Set charge to metabolites in a SBML file from a tabulated file containing the metabolite ids and the charges			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/0.11.0	MetaboRank	Compute the MetaboRank, a custom personalized PageRank for metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/1.0.1	MetaboRank	Compute the MetaboRank, a custom personalized PageRank for metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/0.12.0	MetaboRank	Compute the MetaboRank, a custom personalized PageRank for metabolic network.			met4j	met4j
@@ -13858,9 +13974,12 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/1.2.0	MetaboRank	
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/1.5.0	MetaboRank	Compute the MetaboRank, a custom personalized PageRank for metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/develop	MetaboRank	Compute the MetaboRank, a custom personalized PageRank for metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/1.2.1	MetaboRank	Compute the MetaboRank, a custom personalized PageRank for metabolic network.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/2.0.0	MetaboRank	Compute the MetaboRank, a custom personalized PageRank for metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/1.1.0	MetaboRank	Compute the MetaboRank, a custom personalized PageRank for metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/MET4J_VERSION_TEST	MetaboRank	Compute the MetaboRank, a custom personalized PageRank for metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_MetaboRank/1.3.0	MetaboRank	Compute the MetaboRank, a custom personalized PageRank for metabolic network.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2CarbonSkeletonNet/develop	Sbml2CarbonSkeletonNet	Create a carbon skeleton graph representation of a SBML file content, using GSAM atom-mapping file (see https://forgemia.inra.fr/metexplore/gsam)			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_Sbml2CarbonSkeletonNet/2.0.0	Sbml2CarbonSkeletonNet	Create a carbon skeleton graph representation of a SBML file content, using GSAM atom-mapping file (see https://forgemia.inra.fr/metexplore/gsam)			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetNamesFromFile/0.11.0	SbmlSetNamesFromFile	Set names to network objects from a tabulated file containing the object ids and the names			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetNamesFromFile/1.0.1	SbmlSetNamesFromFile	Set names to network objects from a tabulated file containing the object ids and the names			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetNamesFromFile/0.12.0	SbmlSetNamesFromFile	Set names to network objects from a tabulated file containing the object ids and the names			met4j	met4j
@@ -13871,6 +13990,8 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetNamesFromFile/1.2.1	S
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetNamesFromFile/1.1.0	SbmlSetNamesFromFile	Set names to network objects from a tabulated file containing the object ids and the names			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetNamesFromFile/MET4J_VERSION_TEST	SbmlSetNamesFromFile	Set names to network objects from a tabulated file containing the object ids and the names			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SbmlSetNamesFromFile/1.3.0	SbmlSetNamesFromFile	Set names to network objects from a tabulated file containing the object ids and the names			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetGprs/develop	SetGprs	Create a new SBML file from an original sbml file and a tabulated file containing reaction ids and Gene association written in a cobra way			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_SetGprs/2.0.0	SetGprs	Create a new SBML file from an original sbml file and a tabulated file containing reaction ids and Gene association written in a cobra way			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChokePoint/0.11.0	ChokePoint	Compute the Choke points of a metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChokePoint/1.0.1	ChokePoint	Compute the Choke points of a metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChokePoint/0.12.0	ChokePoint	Compute the Choke points of a metabolic network.			met4j	met4j
@@ -13878,6 +13999,7 @@ toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChokePoint/1.2.0	ChokePoint	
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChokePoint/1.5.0	ChokePoint	Compute the Choke points of a metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChokePoint/develop	ChokePoint	Compute the Choke points of a metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChokePoint/1.2.1	ChokePoint	Compute the Choke points of a metabolic network.			met4j	met4j
+toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChokePoint/2.0.0	ChokePoint	Compute the Choke points of a metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChokePoint/1.1.0	ChokePoint	Compute the Choke points of a metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChokePoint/MET4J_VERSION_TEST	ChokePoint	Compute the Choke points of a metabolic network.			met4j	met4j
 toolshed.g2.bx.psu.edu/repos/metexplore/met4j/met4j_ChokePoint/1.3.0	ChokePoint	Compute the Choke points of a metabolic network.			met4j	met4j
@@ -17369,6 +17491,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/fastq_masker_by_quality/fastq_masker_by_qua
 toolshed.g2.bx.psu.edu/repos/devteam/fastq_masker_by_quality/fastq_masker_by_quality/1.0.0	FASTQ Masker	by quality score				
 toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3	Histogram	of a numeric column				
 toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.4	Histogram	of a numeric column				
+toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.5	Histogram	of a numeric column				
 toolshed.g2.bx.psu.edu/repos/devteam/samtools_bedcov/samtools_bedcov/2.0.2	BedCov	calculate read depth for a set of genomic intervals	operation_3096,operation_3802,operation_3695,operation_1812,operation_0337,operation_0335,operation_0227	topic_0080,topic_0102,topic_3168,topic_3325	samtools	SAMtools
 toolshed.g2.bx.psu.edu/repos/devteam/samtools_bedcov/samtools_bedcov/1.0.1	Calculate read depth	on BAM files	operation_3695,operation_0337,operation_1812,operation_3802,operation_0227,operation_0335,operation_3096	topic_0102,topic_3325,topic_0080,topic_3168	samtools	SAMtools
 toolshed.g2.bx.psu.edu/repos/devteam/samtools_bedcov/samtools_bedcov/2.0.4	Samtools bedcov	calculate read depth for a set of genomic intervals	operation_0335,operation_0227,operation_3695,operation_1812,operation_0337,operation_3096,operation_3802	topic_0102,topic_0080,topic_3325,topic_3168	samtools	SAMtools
@@ -18904,6 +19027,12 @@ toolshed.g2.bx.psu.edu/repos/portiahollyoak/genbank_to_fasta/genbank_to_fasta/ 0
 toolshed.g2.bx.psu.edu/repos/portiahollyoak/temp/TEMP_insertions/0.3.0	TEMP Insertion	finds TE insertions relative to reference				
 toolshed.g2.bx.psu.edu/repos/portiahollyoak/temp/TEMP_absences/0.3.0	TEMP Excision	finds TEs that have excised relative to the reference				
 toolshed.g2.bx.psu.edu/repos/portiahollyoak/change_fasta_header_using_tabular_file/change_fasta_header_using_tabular_file/ 0.1.0	Change fasta header	using a tabular file				
+toolshed.g2.bx.psu.edu/repos/ufz/saqc/saqc/2.4.1+galaxy0	SaQC	quality control for time series				
+toolshed.g2.bx.psu.edu/repos/ufz/omero_get_value/omero_get_value/5.18.0+galaxy0	OMERO get Object	with ezomero	operation_3443	topic_0092,topic_3382	omero	OMERO
+toolshed.g2.bx.psu.edu/repos/ufz/omero_get_value/omero_get_value/5.18.0+galaxy1	OMERO get Object	with ezomero	operation_3443	topic_0092,topic_3382	omero	OMERO
+toolshed.g2.bx.psu.edu/repos/ufz/omero_get_id/omero_get_id/5.18.0+galaxy0	OMERO get IDs	with ezomero	operation_3443	topic_3382,topic_0092	omero	OMERO
+toolshed.g2.bx.psu.edu/repos/ufz/xlsx2tsv/xlsx2tsv/0.1.0+galaxy0	Excel to Tabular	with pandas				
+toolshed.g2.bx.psu.edu/repos/ufz/omero_filter/omero_filter/5.18.0+galaxy0	OMERO IDs	with ezomero	operation_3443	topic_0092,topic_3382	omero	OMERO
 toolshed.g2.bx.psu.edu/repos/ufz/genomad_end_to_end/genomad_end_to_end/1.8.0+galaxy1	geNomad	identify virus and plasmid genomes from nucleotide sequences	operation_3460,operation_0361	topic_0080	genomad	geNomad
 toolshed.g2.bx.psu.edu/repos/ufz/genomad_end_to_end/genomad_end_to_end/1.8.0+galaxy0	geNomad	identify virus and plasmid genomes from nucleotide sequences	operation_0361,operation_3460	topic_0080	genomad	geNomad
 toolshed.g2.bx.psu.edu/repos/alyssa/seqkit_seq/barcoding_fastq_files/0.1.0	Qcat	拆分Barcode				
