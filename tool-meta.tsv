@@ -1419,6 +1419,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.20.0+galaxy0	Hifiasm	ha
 toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.15.4+galaxy0	Hifiasm	haplotype-resolved de novo assembler for PacBio Hifi reads				
 toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.18.8+galaxy1	Hifiasm	haplotype-resolved de novo assembler for PacBio Hifi reads				
 toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.19.8+galaxy1	Hifiasm	haplotype-resolved de novo assembler for PacBio Hifi reads				
+toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.25.0+galaxy0	Hifiasm	haplotype-resolved de novo assembler for PacBio Hifi reads				
 toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.19.7+galaxy1	Hifiasm	haplotype-resolved de novo assembler for PacBio Hifi reads				
 toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.14	Hifiasm	haplotype-resolved de novo assembler for PacBio Hifi reads				
 toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.16.1+galaxy3	Hifiasm	haplotype-resolved de novo assembler for PacBio Hifi reads				
@@ -1528,6 +1529,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.0
 toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.3+galaxy1	Replace	parts of text				
 toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.0.0	Create text file	with recurring lines				
 toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/9.3+galaxy0	Create text file	with recurring lines				
+toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/9.5+galaxy1	Create text file	with recurring lines				
 toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/9.5+galaxy0	Create text file	with recurring lines				
 toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0	Create text file	with recurring lines				
 toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/9.3+galaxy1	Create text file	with recurring lines				
@@ -1857,6 +1859,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/ctb_im_pbf_ev/ctb_im_pbf_ev/1.1.4+galaxy0
 toolshed.g2.bx.psu.edu/repos/bgruening/ctb_im_pbf_ev/ctb_im_pbf_ev/1.1.3+galaxy0	Calculate plane of best fit for molecules	using RDKit				
 toolshed.g2.bx.psu.edu/repos/bgruening/tabpfn/tabpfn/2.0.3+galaxy0	Tabular data prediction using TabPFN	with PyTorch				
 toolshed.g2.bx.psu.edu/repos/bgruening/tabpfn/tabpfn/2.0.3+galaxy1.1	Tabular data prediction using TabPFN	with PyTorch				
+toolshed.g2.bx.psu.edu/repos/bgruening/tabpfn/tabpfn/2.0.3+galaxy1.2	Tabular data prediction using TabPFN	with PyTorch				
 toolshed.g2.bx.psu.edu/repos/bgruening/tabpfn/tabpfn/2.0.3+galaxy1	Tabular data prediction using TabPFN	with PyTorch				
 toolshed.g2.bx.psu.edu/repos/bgruening/align_it/ctb_alignit/1.0.3.1	Pharmacophore alignment	and optimization (Align-it)				
 toolshed.g2.bx.psu.edu/repos/bgruening/align_it/ctb_alignit/1.0.4+galaxy0	Pharmacophore alignment	and optimization (Align-it)				
@@ -2365,6 +2368,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/music_deconvolution/music_deconvolution/0
 toolshed.g2.bx.psu.edu/repos/bgruening/rdkit/ctb_rdkit_describtors/0.1	Descriptors	calculated with RDKit				
 toolshed.g2.bx.psu.edu/repos/bgruening/ctb_im_rxn_maker/ctb_im_rxn_maker/1.1.4+galaxy0	Reaction maker	using RDKit				
 toolshed.g2.bx.psu.edu/repos/bgruening/ctb_im_rxn_maker/ctb_im_rxn_maker/1.1.3+galaxy0	Reaction maker	using RDKit				
+toolshed.g2.bx.psu.edu/repos/bgruening/qiime2_dbotu_q2/qiime2_dbotu_q2/2022.11.1+galaxy0	qiime2 dbOTU	QIIME 2 plugin for distribution-based clustering	operation_0324,operation_3460,operation_0337,operation_3933	topic_3174,topic_0084,topic_3941,topic_3697	qiime2	QIIME 2
 toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_pca/sklearn_pca/1.0.8.3+galaxy0	Principal component analysis	with scikit-learn	operation_3432,operation_2990,operation_3659,operation_3935	topic_0092,topic_3474	scikit-learn	scikit-learn
 toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_pca/sklearn_pca/1.0.11.0	Principal component analysis	with scikit-learn	operation_3432,operation_2990,operation_3659,operation_3935	topic_0092,topic_3474	scikit-learn	scikit-learn
 toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_pca/sklearn_pca/1.0.8.2+galaxy0	Principal component analysis	with scikit-learn	operation_2990,operation_3935,operation_3659,operation_3432	topic_0092,topic_3474	scikit-learn	scikit-learn
@@ -4021,6 +4025,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_extractcgmlst/chewbbaca_extractcgmlst
 toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_extractcgmlst/chewbbaca_extractcgmlst/3.3.3+galaxy0	chewBBACA ExtractCgMLST	Determine the set of loci that constitute the core genome				
 toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_extractcgmlst/chewbbaca_extractcgmlst/3.3.3+galaxy2	chewBBACA ExtractCgMLST	Determine the set of loci that constitute the core genome				
 toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_extractcgmlst/chewbbaca_extractcgmlst/3.3.10+galaxy0	chewBBACA ExtractCgMLST	Determine the set of loci that constitute the core genome				
+toolshed.g2.bx.psu.edu/repos/iuc/semibin_concatenate_fasta/semibin_concatenate_fasta/2.0.2+galaxy1	SemiBin: Concatenate fasta files	for multi-sample binning	operation_0310,operation_0337,operation_3798	topic_3697,topic_3474,topic_3174,topic_0196	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_concatenate_fasta/semibin_concatenate_fasta/1.1.1+galaxy0	SemiBin: Concatenate fasta files	for multi-sample binning	operation_0310,operation_3798,operation_0337	topic_3697,topic_0196,topic_3174,topic_3474	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_concatenate_fasta/semibin_concatenate_fasta/2.0.2+galaxy0	SemiBin: Concatenate fasta files	for multi-sample binning	operation_0337,operation_3798,operation_0310	topic_3174,topic_0196,topic_3697,topic_3474	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_concatenate_fasta/semibin_concatenate_fasta/1.5.1+galaxy0	SemiBin: Concatenate fasta files	for multi-sample binning	operation_0310,operation_3798,operation_0337	topic_3697,topic_0196,topic_3174,topic_3474	semibin	SemiBin
@@ -4139,9 +4144,13 @@ toolshed.g2.bx.psu.edu/repos/iuc/samtools_depth/samtools_depth/1.15.1+galaxy0	Sa
 toolshed.g2.bx.psu.edu/repos/iuc/samtools_depth/samtools_depth/1.15.1+galaxy2	Samtools depth	compute the depth at each position or region	operation_3695,operation_0227,operation_0335,operation_3096,operation_0337,operation_1812,operation_3802	topic_3168,topic_3325,topic_0102,topic_0080	samtools	SAMtools
 toolshed.g2.bx.psu.edu/repos/iuc/samtools_depth/samtools_depth/1.13	Samtools depth	compute the depth at each position or region	operation_3695,operation_0227,operation_0335,operation_3096,operation_0337,operation_1812,operation_3802	topic_3168,topic_3325,topic_0102,topic_0080	samtools	SAMtools
 toolshed.g2.bx.psu.edu/repos/iuc/samtools_depth/samtools_depth/1.8	Samtools depth	compute the depth at each position or region	operation_3802,operation_0227,operation_1812,operation_0337,operation_3695,operation_3096,operation_0335	topic_0080,topic_3325,topic_0102,topic_3168	samtools	SAMtools
+toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy3	BWA-MEM2	- map medium and long reads (> 100 bp) against reference genome	operation_0292	topic_0102	bwa-mem2	Bwa-mem2
 toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy0	BWA-MEM2	- map medium and long reads (> 100 bp) against reference genome	operation_0292	topic_0102	bwa-mem2	Bwa-mem2
 toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy1	BWA-MEM2	- map medium and long reads (> 100 bp) against reference genome	operation_0292	topic_0102	bwa-mem2	Bwa-mem2
+toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy2	BWA-MEM2	- map medium and long reads (> 100 bp) against reference genome	operation_0292	topic_0102	bwa-mem2	Bwa-mem2
+toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2_idx/2.2.1+galaxy3	BWA-MEM2 indexer	Build BWA-MEM2 reference index				
 toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2_idx/2.2.1+galaxy1	BWA-MEM2 indexer	Build BWA-MEM2 reference index				
+toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2_idx/2.2.1+galaxy2	BWA-MEM2 indexer	Build BWA-MEM2 reference index				
 toolshed.g2.bx.psu.edu/repos/iuc/megan_read_extractor/megan_read_extractor/6.21.7+galaxy0	MEGAN: Extract reads	by classification	operation_2403,operation_3460	topic_0080	megan	MEGAN
 toolshed.g2.bx.psu.edu/repos/iuc/tsebra/tsebra/1.1.2.3+galaxy0	TSEBRA	tanscript selector for BRAKER				
 toolshed.g2.bx.psu.edu/repos/iuc/tsebra/tsebra/1.1.2.4+galaxy0	TSEBRA	tanscript selector for BRAKER	operation_0264,operation_3663	topic_3170,topic_3512,topic_0621,topic_0203	tsebra	TSEBRA
@@ -4547,6 +4556,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/funannotate_compare/funannotate_compare/1.8.15+
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_split_abund/mothur_split_abund/1.39.5.0	Split.abund	Separate sequences into rare and abundant groups		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_split_abund/mothur_split_abund/1.36.1.0	Split.abund	Separate sequences into rare and abundant groups		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/scanpy_inspect/scanpy_inspect/1.9.6+galaxy0	Inspect and manipulate	with scanpy	operation_3223	topic_3053,topic_0203,topic_2229	scanpy	SCANPY
+toolshed.g2.bx.psu.edu/repos/iuc/scanpy_inspect/scanpy_inspect/1.10.2+galaxy2	Scanpy Inspect and manipulate		operation_3223	topic_0203,topic_2229,topic_3053	scanpy	SCANPY
 toolshed.g2.bx.psu.edu/repos/iuc/scanpy_inspect/scanpy_inspect/1.4.4.post1+galaxy2	Inspect and manipulate	with scanpy				
 toolshed.g2.bx.psu.edu/repos/iuc/scanpy_inspect/scanpy_inspect/1.10.2+galaxy0	Scanpy Inspect and manipulate		operation_3223	topic_0203,topic_2229,topic_3053	scanpy	SCANPY
 toolshed.g2.bx.psu.edu/repos/iuc/scanpy_inspect/scanpy_inspect/1.4.4+galaxy0	Inspect and manipulate	with scanpy				
@@ -5050,6 +5060,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/smgu_frameshift_deletions_checks/smgu_frameshif
 toolshed.g2.bx.psu.edu/repos/iuc/mash/mash_screen/2.1+galaxy3	mash screen	determines how well query sequences are contained within a pool of sequences	operation_0289	topic_0622,topic_0080,topic_2269,topic_3174,topic_2533	mash	Mash
 toolshed.g2.bx.psu.edu/repos/iuc/mash/mash_screen/2.3+galaxy3	mash screen	determines how well query sequences are contained within a pool of sequences	operation_0289	topic_0622,topic_2533,topic_2269,topic_0080,topic_3174	mash	Mash
 toolshed.g2.bx.psu.edu/repos/iuc/mash/mash_screen/2.1+galaxy2	mash screen	determines how well query sequences are contained within a pool of sequences	operation_0289	topic_0622,topic_0080,topic_2269,topic_3174,topic_2533	mash	Mash
+toolshed.g2.bx.psu.edu/repos/iuc/semibin_generate_sequence_features/semibin_generate_sequence_features/2.0.2+galaxy1	SemiBin: Generate sequence features	(kmer and abundance) as training data for semi-supervised deep learning model training	operation_3798,operation_0310,operation_0337	topic_0196,topic_3174,topic_3697,topic_3474	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_generate_sequence_features/semibin_generate_sequence_features/1.1.1+galaxy0	SemiBin: Generate sequence features	(kmer and abundance) as training data for semi-supervised deep learning model training	operation_0310,operation_3798,operation_0337	topic_3697,topic_0196,topic_3174,topic_3474	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_generate_sequence_features/semibin_generate_sequence_features/2.0.2+galaxy0	SemiBin: Generate sequence features	(kmer and abundance) as training data for semi-supervised deep learning model training	operation_0337,operation_0310,operation_3798	topic_3697,topic_3174,topic_0196,topic_3474	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_generate_sequence_features/semibin_generate_sequence_features/1.5.1+galaxy0	SemiBin: Generate sequence features	(kmer and abundance) as training data for semi-supervised deep learning model training	operation_0337,operation_0310,operation_3798	topic_3697,topic_3174,topic_0196,topic_3474	semibin	SemiBin
@@ -5171,6 +5182,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_timeseries/ampvis2_timeseries/2.7.17+ga
 toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_timeseries/ampvis2_timeseries/2.8.9+galaxy0	ampvis2 timeseries plot		operation_0337,operation_2945	topic_3050	ampvis	ampvis
 toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_timeseries/ampvis2_timeseries/2.8.6+galaxy2	ampvis2 timeseries plot		operation_2945,operation_0337	topic_3050	ampvis	ampvis
 toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_timeseries/ampvis2_timeseries/2.8.6+galaxy1	ampvis2 timeseries plot		operation_0337,operation_2945	topic_3050	ampvis	ampvis
+toolshed.g2.bx.psu.edu/repos/iuc/semibin/semibin/2.0.2+galaxy1	SemiBin	for Semi-supervised Metagenomic Binning	operation_0310,operation_0337,operation_3798	topic_3174,topic_3474,topic_3697,topic_0196	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin/semibin/1.1.1+galaxy0	SemiBin	for Semi-supervised Metagenomic Binning	operation_3798,operation_0337,operation_0310	topic_3697,topic_3174,topic_3474,topic_0196	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin/semibin/2.0.2+galaxy0	SemiBin	for Semi-supervised Metagenomic Binning	operation_0337,operation_0310,operation_3798	topic_3174,topic_0196,topic_3474,topic_3697	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin/semibin/1.5.1+galaxy0	SemiBin	for Semi-supervised Metagenomic Binning	operation_0337,operation_0310,operation_3798	topic_3697,topic_3174,topic_0196,topic_3474	semibin	SemiBin
@@ -5546,6 +5558,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/anndata_import/anndata_import/0.6.19+galaxy0	Im
 toolshed.g2.bx.psu.edu/repos/iuc/anndata_import/anndata_import/0.6.22.post1+galaxy4	Import Anndata and loom	from different format				
 toolshed.g2.bx.psu.edu/repos/iuc/anndata_import/anndata_import/0.6.22.post1+galaxy3	Import Anndata and loom	from different format				
 toolshed.g2.bx.psu.edu/repos/iuc/anndata_import/anndata_import/0.10.9+galaxy0	Import Anndata	from different formats				
+toolshed.g2.bx.psu.edu/repos/iuc/anndata_import/anndata_import/0.10.9+galaxy2	Import Anndata	from different formats			anndata	anndata
 toolshed.g2.bx.psu.edu/repos/iuc/anndata_import/anndata_import/0.10.9+galaxy1	Import Anndata	from different formats			anndata	anndata
 toolshed.g2.bx.psu.edu/repos/iuc/anndata_import/anndata_import/0.6.22.post1+galaxy2	Import Anndata and loom	from different format				
 toolshed.g2.bx.psu.edu/repos/iuc/anndata_import/anndata_import/0.7.4+galaxy1	Import Anndata and loom	from different format				
@@ -7203,6 +7216,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/gemini_gene_wise/gemini_gene_wise/0.18.1.1	GEMI
 toolshed.g2.bx.psu.edu/repos/iuc/gemini_gene_wise/gemini_gene_wise/0.20.1	GEMINI gene_wise	Discover per-gene variant patterns across families	operation_3197,operation_2403	topic_0080	gemini	GEMINI
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_fcs_gx/ncbi_fcs_gx/0.5.0+galaxy0	NCBI FCS GX	detects contamination from foreign organisms in genome sequences	operation_3180,operation_3192,operation_3187	topic_0080,topic_0196	ncbi_fcs	NCBI fcs
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_fcs_gx/ncbi_fcs_gx/0.5.4+galaxy0	NCBI FCS GX	detects contamination from foreign organisms in genome sequences	operation_3180,operation_3187,operation_3192	topic_0080,topic_0196	ncbi_fcs	NCBI fcs
+toolshed.g2.bx.psu.edu/repos/iuc/ncbi_fcs_gx/ncbi_fcs_gx/0.5.5+galaxy0	NCBI FCS GX	detects contamination from foreign organisms in genome sequences	operation_3192,operation_3180,operation_3187	topic_0080,topic_0196	ncbi_fcs	NCBI fcs
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_fcs_gx/ncbi_fcs_gx/0.5.4+galaxy1	NCBI FCS GX	detects contamination from foreign organisms in genome sequences	operation_3180,operation_3192,operation_3187	topic_0196,topic_0080	ncbi_fcs	NCBI fcs
 toolshed.g2.bx.psu.edu/repos/iuc/metaphlan2/metaphlan2/2.6.0.0	MetaPhlAn2	to profile the composition of microbial communities	operation_2478,operation_0324	topic_3174,topic_0194	metaphlan	MetaPhlAn
 toolshed.g2.bx.psu.edu/repos/iuc/metaphlan2/metaphlan2/2.6.0.1	MetaPhlAn2	to profile the composition of microbial communities	operation_2478,operation_0324	topic_3174,topic_0194	metaphlan	MetaPhlAn
@@ -7789,6 +7803,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx/1.15.1+galaxy2	Sa
 toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx/1.13	Samtools fastx	extract FASTA or FASTQ from alignment files	operation_3695,operation_0227,operation_0335,operation_3096,operation_0337,operation_1812,operation_3802	topic_3168,topic_3325,topic_0102,topic_0080	samtools	SAMtools
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_shhh_seqs/mothur_shhh_seqs/1.39.5.0	Shhh.seqs	Denoise program (Quince SeqNoise)		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_shhh_seqs/mothur_shhh_seqs/1.36.1.0	Shhh.seqs	Denoise program (Quince SeqNoise)		topic_3697	mothur	mothur
+toolshed.g2.bx.psu.edu/repos/iuc/mmseqs2_taxonomy_assignment/mmseqs2_taxonomy_assignment/15.6f452+galaxy0	MMseqs2 Taxonomy Assignments	of sequences by comparing them to a reference database			MMseqs2	MMseqs2
 toolshed.g2.bx.psu.edu/repos/iuc/ivar_trim/ivar_trim/1.3.1+galaxy2	ivar trim	Trim reads in aligned BAM	operation_3778,operation_3227,operation_3225	topic_3071,topic_3168,topic_3299	ivar	iVar
 toolshed.g2.bx.psu.edu/repos/iuc/ivar_trim/ivar_trim/1.2.2+galaxy1	ivar trim	Trim reads in aligned BAM	operation_3227,operation_3225,operation_3778	topic_3168,topic_3299,topic_3071	ivar	iVar
 toolshed.g2.bx.psu.edu/repos/iuc/ivar_trim/ivar_trim/1.4.4+galaxy0	ivar trim	Trim reads in aligned BAM			andersen-lab_ivar	iVar
@@ -8186,6 +8201,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/purge_dups/purge_dups/1.2.5+galaxy3	Purge overl
 toolshed.g2.bx.psu.edu/repos/iuc/crosscontamination_barcode_filter/crosscontamination_barcode_filter/0.1	Cross-contamination Barcode Filter	for use in plate-based barcoded analyses				
 toolshed.g2.bx.psu.edu/repos/iuc/crosscontamination_barcode_filter/crosscontamination_barcode_filter/0.2	Cross-contamination Barcode Filter	for use in plate-based barcoded analyses				
 toolshed.g2.bx.psu.edu/repos/iuc/crosscontamination_barcode_filter/crosscontamination_barcode_filter/0.3	Cross-contamination Barcode Filter	for use in plate-based barcoded analyses				
+toolshed.g2.bx.psu.edu/repos/iuc/semibin_generate_cannot_links/semibin_generate_cannot_links/2.0.2+galaxy1	SemiBin: Contig annotations		operation_0310,operation_0337,operation_3798	topic_3174,topic_3474,topic_3697,topic_0196	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_generate_cannot_links/semibin_generate_cannot_links/1.1.1+galaxy0	SemiBin: Contig annotations		operation_3798,operation_0337,operation_0310	topic_3697,topic_3174,topic_3474,topic_0196	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_generate_cannot_links/semibin_generate_cannot_links/2.0.2+galaxy0	SemiBin: Contig annotations		operation_3798,operation_0337,operation_0310	topic_3697,topic_3174,topic_3474,topic_0196	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_generate_cannot_links/semibin_generate_cannot_links/1.5.1+galaxy0	SemiBin: Contig annotations		operation_0337,operation_0310,operation_3798	topic_3174,topic_0196,topic_3474,topic_3697	semibin	SemiBin
@@ -9345,6 +9361,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/freyja_boot/freyja_boot/1.5.2+galaxy0	Freyja: B
 toolshed.g2.bx.psu.edu/repos/iuc/freyja_boot/freyja_boot/1.5.2+galaxy1	Freyja: Bootstrapping	method			freyja	Freyja
 toolshed.g2.bx.psu.edu/repos/iuc/freyja_boot/freyja_boot/1.3.8+galaxy0	Freyja: Bootstrapping	method			freyja	Freyja
 toolshed.g2.bx.psu.edu/repos/iuc/freyja_boot/freyja_boot/1.5.1+galaxy0	Freyja: Bootstrapping	method			freyja	Freyja
+toolshed.g2.bx.psu.edu/repos/iuc/mmseqs2_easy_linclust_clustering/mmseqs2_easy_linclust_clustering/15.6f452+galaxy0	MMseqs2 Sequence Clustering	of very large datasets			MMseqs2	MMseqs2
 toolshed.g2.bx.psu.edu/repos/iuc/raxml/raxml/8.2.4+galaxy1	RAxML	Maximum Likelihood based inference of large phylogenetic trees	operation_0324,operation_2403	topic_0080,topic_3293	raxml	RAxML
 toolshed.g2.bx.psu.edu/repos/iuc/raxml/raxml/8.2.12+galaxy0	Phyogenetic reconstruction with RAxML	- Maximum Likelihood based inference of large phylogenetic trees	operation_0324,operation_2403	topic_3293,topic_0080	raxml	RAxML
 toolshed.g2.bx.psu.edu/repos/iuc/raxml/raxml/8.2.4+galaxy3	Phyogenetic reconstruction with RAxML	- Maximum Likelihood based inference of large phylogenetic trees	operation_0324,operation_2403	topic_0080,topic_3293	raxml	RAxML
@@ -9404,6 +9421,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/artic_minion/artic_minion/1.1.0_rc2+galaxy0	ART
 toolshed.g2.bx.psu.edu/repos/iuc/artic_minion/artic_minion/1.1.3+galaxy2	ARTIC minion	Build consensus sequence and call variants from amplicon-based nanopore sequence data				
 toolshed.g2.bx.psu.edu/repos/iuc/artic_minion/artic_minion/1.6.0+galaxy1	ARTIC minion	Build consensus sequence and call variants from amplicon-based nanopore sequence data	operation_0292	topic_0622	artic	ARTIC
 toolshed.g2.bx.psu.edu/repos/iuc/artic_minion/artic_minion/1.6.0+galaxy0	ARTIC minion	Build consensus sequence and call variants from amplicon-based nanopore sequence data	operation_0292	topic_0622	artic	ARTIC
+toolshed.g2.bx.psu.edu/repos/iuc/semibin_train/semibin_train/2.0.2+galaxy1	SemiBin: Train	the semi-supervised deep learning model	operation_0310,operation_3798,operation_0337	topic_3474,topic_0196,topic_3174,topic_3697	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_train/semibin_train/1.1.1+galaxy0	SemiBin: Train	the semi-supervised deep learning model	operation_0337,operation_0310,operation_3798	topic_3174,topic_0196,topic_3474,topic_3697	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_train/semibin_train/2.0.2+galaxy0	SemiBin: Train	the semi-supervised deep learning model	operation_0337,operation_0310,operation_3798	topic_3174,topic_0196,topic_3474,topic_3697	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_train/semibin_train/1.5.1+galaxy0	SemiBin: Train	the semi-supervised deep learning model	operation_3798,operation_0337,operation_0310	topic_3697,topic_3174,topic_3474,topic_0196	semibin	SemiBin
@@ -10500,6 +10518,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/mothur_pcr_seqs/mothur_pcr_seqs/1.39.5.0	Pcr.se
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_pcr_seqs/mothur_pcr_seqs/1.36.1.0	Pcr.seqs	Trim sequences		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_lineage/mothur_remove_lineage/1.39.5.0	Remove.lineage	Picks by taxon		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_lineage/mothur_remove_lineage/1.36.1.0	Remove.lineage	Picks by taxon		topic_3697	mothur	mothur
+toolshed.g2.bx.psu.edu/repos/iuc/semibin_bin/semibin_bin/2.0.2+galaxy1	SemiBin: Group the contigs	into bins	operation_3798,operation_0310,operation_0337	topic_3474,topic_3697,topic_3174,topic_0196	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_bin/semibin_bin/1.1.1+galaxy0	SemiBin: Group the contigs	into bins	operation_0337,operation_0310,operation_3798	topic_3174,topic_0196,topic_3474,topic_3697	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_bin/semibin_bin/2.0.2+galaxy0	SemiBin: Group the contigs	into bins	operation_0337,operation_3798,operation_0310	topic_3174,topic_0196,topic_3697,topic_3474	semibin	SemiBin
 toolshed.g2.bx.psu.edu/repos/iuc/semibin_bin/semibin_bin/1.5.1+galaxy0	SemiBin: Group the contigs	into bins	operation_3798,operation_0337,operation_0310	topic_3697,topic_3174,topic_0196,topic_3474	semibin	SemiBin
@@ -12829,6 +12848,7 @@ toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy1	FragPipe -  
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy5	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy3	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy0	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
+toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy6	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy4	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy2	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
 toolshed.g2.bx.psu.edu/repos/galaxyp/openms_decharger/Decharger/2.1.0	Decharger	Decharges and merges different feature charge variants of the same peptide.				
@@ -14886,6 +14906,7 @@ toolshed.g2.bx.psu.edu/repos/chemteam/biomd_neqgamma/biomd_neqgamma/0.1.5.2+gala
 toolshed.g2.bx.psu.edu/repos/chemteam/biomd_neqgamma/biomd_neqgamma/0.1.5.2+galaxy1	dcTMD friction correction	for calculating friction and free energy profiles from TMD ensembles				
 toolshed.g2.bx.psu.edu/repos/chemteam/gmx_fep/gmx_fep/2019.1	Alchemical Run	Alchemical free energy simulations using gromacs				
 toolshed.g2.bx.psu.edu/repos/chemteam/biopdb_align_and_rmsd/biopdb_align_and_rmsd/1.79+galaxy0	Align structures and compute relative RMSDs	using Biopython				
+toolshed.g2.bx.psu.edu/repos/chemteam/biopdb_align_and_rmsd/biopdb_align_and_rmsd/1.79+galaxy1	Align structures and compute relative RMSDs	using Biopython				
 toolshed.g2.bx.psu.edu/repos/chemteam/biomd_extract_clusters/biomd_extract_clusters/0.1.5.2+galaxy0	Extract clusters of MD trajectories	from linkage matrix data				
 toolshed.g2.bx.psu.edu/repos/chemteam/biomd_extract_clusters/biomd_extract_clusters/0.1.5.2+galaxy1	Extract clusters of MD trajectories	from linkage matrix data				
 toolshed.g2.bx.psu.edu/repos/chemteam/mdanalysis_angle/mdanalysis_angle/0.19	Angle Analysis	Time series of Angles	operation_2476	topic_0176	mdanalysis	MDAnalysis
@@ -15089,6 +15110,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/blastxml_to_tabular/@WRAPPE
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/blastxml_to_tabular/2.14.1+galaxy0	BLAST XML to tabular	Convert BLAST XML output to tabular	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/blastxml_to_tabular/0.3.0	BLAST XML to tabular	Convert BLAST XML output to tabular	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/blastxml_to_tabular/0.1.05	BLAST XML to tabular	Convert BLAST XML output to tabular	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/blastxml_to_tabular/2.16.0+galaxy0	BLAST XML to tabular	Convert BLAST XML output to tabular	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/blastxml_to_tabular/0.0.11	BLAST XML to tabular	Convert BLAST XML output to tabular	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/blastxml_to_tabular/0.1.08	BLAST XML to tabular	Convert BLAST XML output to tabular	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/blastxml_to_tabular/2.7.1+galaxy0	BLAST XML to tabular	Convert BLAST XML output to tabular	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
@@ -15111,6 +15133,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_segmasker_wrapper/0.2.
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_segmasker_wrapper/2.14.1+galaxy0	NCBI BLAST+ segmasker	low-complexity regions in protein sequences	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_segmasker_wrapper/0.3.0	NCBI BLAST+ segmasker	low-complexity regions in protein sequences	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_segmasker_wrapper/0.1.05	NCBI BLAST+ segmasker	low-complexity regions in protein sequences	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_segmasker_wrapper/2.16.0+galaxy0	NCBI BLAST+ segmasker	low-complexity regions in protein sequences	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_segmasker_wrapper/0.1.08	NCBI BLAST+ segmasker	low-complexity regions in protein sequences	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_segmasker_wrapper/2.7.1+galaxy0	NCBI BLAST+ segmasker	low-complexity regions in protein sequences	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_segmasker_wrapper/0.1.06	NCBI BLAST+ segmasker	low-complexity regions in protein sequences	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
@@ -15135,6 +15158,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.0.20	
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/2.14.1+galaxy0	NCBI BLAST+ blastp	Search protein database with protein query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.3.0	NCBI BLAST+ blastp	Search protein database with protein query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.1.05	NCBI BLAST+ blastp	Search protein database with protein query sequence(s)	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/2.16.0+galaxy0	NCBI BLAST+ blastp	Search protein database with protein query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.0.15	NCBI BLAST+ blastp	Search protein database with protein query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.0.11	NCBI BLAST+ blastp	Search protein database with protein query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.1.08	NCBI BLAST+ blastp	Search protein database with protein query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
@@ -15162,6 +15186,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_wrapper/0.2
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_wrapper/2.14.1+galaxy0	NCBI BLAST+ blastdbcmd entry(s)	Extract sequence(s) from BLAST database	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_wrapper/0.3.0	NCBI BLAST+ blastdbcmd entry(s)	Extract sequence(s) from BLAST database	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_wrapper/0.1.05	NCBI BLAST+ blastdbcmd entry(s)	Extract sequence(s) from BLAST database	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_wrapper/2.16.0+galaxy0	NCBI BLAST+ blastdbcmd entry(s)	Extract sequence(s) from BLAST database	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_wrapper/0.1.08	NCBI BLAST+ blastdbcmd entry(s)	Extract sequence(s) from BLAST database	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_wrapper/0.0.6	NCBI BLAST+ blastdbcmd entry(s)	Extract sequence(s) from BLAST database	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_wrapper/2.7.1+galaxy0	NCBI BLAST+ blastdbcmd entry(s)	Extract sequence(s) from BLAST database	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
@@ -15187,6 +15212,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpsblast_wrapper/0.2.0
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpsblast_wrapper/2.14.1+galaxy0	NCBI BLAST+ rpsblast	Search protein domain database (PSSMs) with protein query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpsblast_wrapper/0.3.0	NCBI BLAST+ rpsblast	Search protein domain database (PSSMs) with protein query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpsblast_wrapper/0.1.05	NCBI BLAST+ rpsblast	Search protein domain database (PSSMs) with protein query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpsblast_wrapper/2.16.0+galaxy0	NCBI BLAST+ rpsblast	Search protein domain database (PSSMs) with protein query sequence(s)	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpsblast_wrapper/0.1.08	NCBI BLAST+ rpsblast	Search protein domain database (PSSMs) with protein query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpsblast_wrapper/2.7.1+galaxy0	NCBI BLAST+ rpsblast	Search protein domain database (PSSMs) with protein query sequence(s)	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpsblast_wrapper/0.1.06	NCBI BLAST+ rpsblast	Search protein domain database (PSSMs) with protein query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
@@ -15214,6 +15240,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/0.0.20	
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/2.14.1+galaxy0	NCBI BLAST+ blastn	Search nucleotide database with nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/0.3.0	NCBI BLAST+ blastn	Search nucleotide database with nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/0.1.05	NCBI BLAST+ blastn	Search nucleotide database with nucleotide query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/2.16.0+galaxy0	NCBI BLAST+ blastn	Search nucleotide database with nucleotide query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/0.0.15	NCBI BLAST+ blastn	Search nucleotide database with nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/0.0.11	NCBI BLAST+ blastn	Search nucleotide database with nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/0.1.08	NCBI BLAST+ blastn	Search nucleotide database with nucleotide query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
@@ -15244,6 +15271,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastx_wrapper/0.0.20
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastx_wrapper/2.14.1+galaxy0	NCBI BLAST+ tblastx	Search translated nucleotide database with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastx_wrapper/0.3.0	NCBI BLAST+ tblastx	Search translated nucleotide database with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastx_wrapper/0.1.05	NCBI BLAST+ tblastx	Search translated nucleotide database with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastx_wrapper/2.16.0+galaxy0	NCBI BLAST+ tblastx	Search translated nucleotide database with translated nucleotide query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastx_wrapper/0.0.15	NCBI BLAST+ tblastx	Search translated nucleotide database with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastx_wrapper/0.0.11	NCBI BLAST+ tblastx	Search translated nucleotide database with translated nucleotide query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastx_wrapper/0.1.08	NCBI BLAST+ tblastx	Search translated nucleotide database with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
@@ -15271,6 +15299,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_dustmasker_wrapper/0.2
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_dustmasker_wrapper/2.14.1+galaxy0	NCBI BLAST+ dustmasker	masks low complexity regions	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_dustmasker_wrapper/0.3.0	NCBI BLAST+ dustmasker	masks low complexity regions	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_dustmasker_wrapper/0.1.05	NCBI BLAST+ dustmasker	masks low complexity regions	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_dustmasker_wrapper/2.16.0+galaxy0	NCBI BLAST+ dustmasker	masks low complexity regions	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_dustmasker_wrapper/0.1.08	NCBI BLAST+ dustmasker	masks low complexity regions	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_dustmasker_wrapper/2.7.1+galaxy0	NCBI BLAST+ dustmasker	masks low complexity regions	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_dustmasker_wrapper/0.1.06	NCBI BLAST+ dustmasker	masks low complexity regions	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
@@ -15294,6 +15323,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_info/2.14.1
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_info/0.3.0	NCBI BLAST+ database info	Show BLAST database information from blastdbcmd	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_info/0.0.2	NCBI BLAST+ database info	Show BLAST database information from blastdbcmd	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_info/0.1.05	NCBI BLAST+ database info	Show BLAST database information from blastdbcmd	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_info/2.16.0+galaxy0	NCBI BLAST+ database info	Show BLAST database information from blastdbcmd	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_info/0.1.08	NCBI BLAST+ database info	Show BLAST database information from blastdbcmd	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_info/0.0.6	NCBI BLAST+ database info	Show BLAST database information from blastdbcmd	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastdbcmd_info/2.7.1+galaxy0	NCBI BLAST+ database info	Show BLAST database information from blastdbcmd	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
@@ -15320,6 +15350,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastx_wrapper/0.0.14	
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastx_wrapper/2.14.1+galaxy0	NCBI BLAST+ blastx	Search protein database with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastx_wrapper/0.3.0	NCBI BLAST+ blastx	Search protein database with translated nucleotide query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastx_wrapper/0.1.05	NCBI BLAST+ blastx	Search protein database with translated nucleotide query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastx_wrapper/2.16.0+galaxy0	NCBI BLAST+ blastx	Search protein database with translated nucleotide query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastx_wrapper/0.0.15	NCBI BLAST+ blastx	Search protein database with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastx_wrapper/0.0.11	NCBI BLAST+ blastx	Search protein database with translated nucleotide query sequence(s)	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastx_wrapper/0.1.08	NCBI BLAST+ blastx	Search protein database with translated nucleotide query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
@@ -15347,6 +15378,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.2.00	NCB
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/2.14.1+galaxy0	NCBI BLAST+ makeblastdb	Make BLAST database	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.3.0	NCBI BLAST+ makeblastdb	Make BLAST database	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.1.05	NCBI BLAST+ makeblastdb	Make BLAST database	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/2.16.0+galaxy0	NCBI BLAST+ makeblastdb	Make BLAST database	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.1.08	NCBI BLAST+ makeblastdb	Make BLAST database	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/2.7.1+galaxy0	NCBI BLAST+ makeblastdb	Make BLAST database	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.1.06	NCBI BLAST+ makeblastdb	Make BLAST database	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
@@ -15372,6 +15404,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeprofiledb/0.2.00	N
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeprofiledb/2.14.1+galaxy0	NCBI BLAST+ makeprofiledb	Make profile database	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeprofiledb/0.3.0	NCBI BLAST+ makeprofiledb	Make profile database	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeprofiledb/0.1.05	NCBI BLAST+ makeprofiledb	Make profile database	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeprofiledb/2.16.0+galaxy0	NCBI BLAST+ makeprofiledb	Make profile database	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeprofiledb/0.1.08	NCBI BLAST+ makeprofiledb	Make profile database	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeprofiledb/2.7.1+galaxy0	NCBI BLAST+ makeprofiledb	Make profile database	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeprofiledb/0.1.06	NCBI BLAST+ makeprofiledb	Make profile database	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
@@ -15395,6 +15428,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.0.20
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/2.14.1+galaxy0	NCBI BLAST+ tblastn	Search translated nucleotide database with protein query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.3.0	NCBI BLAST+ tblastn	Search translated nucleotide database with protein query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.1.05	NCBI BLAST+ tblastn	Search translated nucleotide database with protein query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/2.16.0+galaxy0	NCBI BLAST+ tblastn	Search translated nucleotide database with protein query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.0.15	NCBI BLAST+ tblastn	Search translated nucleotide database with protein query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.0.11	NCBI BLAST+ tblastn	Search translated nucleotide database with protein query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.1.08	NCBI BLAST+ tblastn	Search translated nucleotide database with protein query sequence(s)	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
@@ -15419,6 +15453,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/2.10.1
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/2.9.0+galaxy0	NCBI BLAST+ tblastn	Search translated nucleotide database with protein query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/get_species_taxids/2.10.1+galaxy1	NCBI get species taxids		operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/get_species_taxids/2.14.1+galaxy0	NCBI get species taxids		operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/get_species_taxids/2.16.0+galaxy0	NCBI get species taxids		operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/get_species_taxids/2.14.1+galaxy2	NCBI get species taxids		operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/get_species_taxids/2.14.1+galaxy1	NCBI get species taxids		operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/get_species_taxids/2.10.1+galaxy2	NCBI get species taxids		operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
@@ -15427,6 +15462,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_convert2blastmask_wrap
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_convert2blastmask_wrapper/2.14.1+galaxy0	NCBI BLAST+ convert2blastmask	Convert masking information in lower-case masked FASTA input to file formats suitable for makeblastdb	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_convert2blastmask_wrapper/0.3.0	NCBI BLAST+ convert2blastmask	Convert masking information in lower-case masked FASTA input to file formats suitable for makeblastdb	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_convert2blastmask_wrapper/0.1.05	NCBI BLAST+ convert2blastmask	Convert masking information in lower-case masked FASTA input to file formats suitable for makeblastdb	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_convert2blastmask_wrapper/2.16.0+galaxy0	NCBI BLAST+ convert2blastmask	Convert masking information in lower-case masked FASTA input to file formats suitable for makeblastdb	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_convert2blastmask_wrapper/0.1.08	NCBI BLAST+ convert2blastmask	Convert masking information in lower-case masked FASTA input to file formats suitable for makeblastdb	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_convert2blastmask_wrapper/2.7.1+galaxy0	NCBI BLAST+ convert2blastmask	Convert masking information in lower-case masked FASTA input to file formats suitable for makeblastdb	operation_0292,operation_0346	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_convert2blastmask_wrapper/0.1.06	NCBI BLAST+ convert2blastmask	Convert masking information in lower-case masked FASTA input to file formats suitable for makeblastdb	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
@@ -15448,6 +15484,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpstblastn_wrapper/0.2
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpstblastn_wrapper/2.14.1+galaxy0	NCBI BLAST+ rpstblastn	Search protein domain database (PSSMs) with translated nucleotide query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpstblastn_wrapper/0.3.0	NCBI BLAST+ rpstblastn	Search protein domain database (PSSMs) with translated nucleotide query sequence(s)	operation_0292,operation_0346	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpstblastn_wrapper/0.1.05	NCBI BLAST+ rpstblastn	Search protein domain database (PSSMs) with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
+toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpstblastn_wrapper/2.16.0+galaxy0	NCBI BLAST+ rpstblastn	Search protein domain database (PSSMs) with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpstblastn_wrapper/0.1.08	NCBI BLAST+ rpstblastn	Search protein domain database (PSSMs) with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0091,topic_0080	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpstblastn_wrapper/2.7.1+galaxy0	NCBI BLAST+ rpstblastn	Search protein domain database (PSSMs) with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
 toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_rpstblastn_wrapper/0.1.06	NCBI BLAST+ rpstblastn	Search protein domain database (PSSMs) with translated nucleotide query sequence(s)	operation_0346,operation_0292	topic_0080,topic_0091	blast	BLAST
@@ -15494,6 +15531,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.2.2	Map with BWA-MEM	- map me
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.3.1	Map with BWA-MEM	- map medium and long reads (> 100 bp) against reference genome	operation_0292,operation_3211,operation_3198,operation_3429	topic_0102	bwa	BWA
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.15.2	Map with BWA-MEM	- map medium and long reads (> 100 bp) against reference genome	operation_3429,operation_0292,operation_3211,operation_3198	topic_0102	bwa	BWA
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12	Map with BWA-MEM	- map medium and long reads (> 100 bp) against reference genome	operation_3429,operation_3198,operation_0292,operation_3211	topic_0102	bwa	BWA
+toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.19	Map with BWA-MEM	- map medium and long reads (> 100 bp) against reference genome	operation_3198,operation_3429,operation_0292,operation_3211	topic_0102	bwa	BWA
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.2.1	Map with BWA-MEM	- map medium and long reads (> 100 bp) against reference genome	operation_0292,operation_3211,operation_3198,operation_3429	topic_0102	bwa	BWA
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1	Map with BWA-MEM	- map medium and long reads (> 100 bp) against reference genome	operation_3211,operation_3429,operation_0292,operation_3198	topic_0102	bwa	BWA
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.18	Map with BWA-MEM	- map medium and long reads (> 100 bp) against reference genome	operation_3429,operation_0292,operation_3211,operation_3198	topic_0102	bwa	BWA
@@ -15511,6 +15549,7 @@ toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.3.1	Map with BWA	- map short read
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.15.2	Map with BWA	- map short reads (< 100 bp) against reference genome	operation_3211,operation_3198,operation_3429,operation_0292	topic_0102	bwa	BWA
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.2.3	Map with BWA	- map short reads (< 100 bp) against reference genome	operation_3198,operation_3429,operation_3211,operation_0292	topic_0102	bwa	BWA
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.12	Map with BWA	- map short reads (< 100 bp) against reference genome	operation_3429,operation_3198,operation_0292,operation_3211	topic_0102	bwa	BWA
+toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.19	Map with BWA	- map short reads (< 100 bp) against reference genome	operation_3198,operation_0292,operation_3429,operation_3211	topic_0102	bwa	BWA
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.17.5	Map with BWA	- map short reads (< 100 bp) against reference genome	operation_3211,operation_3198,operation_3429,operation_0292	topic_0102	bwa	BWA
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.2.1	Map with BWA	- map short reads (< 100 bp) against reference genome	operation_3198,operation_0292,operation_3211,operation_3429	topic_0102	bwa	BWA
 toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.18	Map with BWA	- map short reads (< 100 bp) against reference genome	operation_0292,operation_3211,operation_3198,operation_3429	topic_0102	bwa	BWA
@@ -17910,6 +17949,7 @@ toolshed.g2.bx.psu.edu/repos/goeckslab/squidpy_spatial/squidpy_spatial/1.5.0+gal
 toolshed.g2.bx.psu.edu/repos/goeckslab/squidpy_spatial/squidpy_spatial/1.5.0+galaxy1	Analyze and visualize spatial multi-omics data	with Squidpy	operation_3443			
 toolshed.g2.bx.psu.edu/repos/goeckslab/ludwig_config_generator/ludwig_config_generator/0.10.1+0	Ludwig Config Generator	Auto-generate a config file from a dataset for Ludwig training.				
 toolshed.g2.bx.psu.edu/repos/goeckslab/chatanalysis/interactive_tool_chat_analysis/0.1	Chat with your data					
+toolshed.g2.bx.psu.edu/repos/goeckslab/chatanalysis/interactive_tool_chat_analysis/0.2	Chat with your data					
 toolshed.g2.bx.psu.edu/repos/goeckslab/mesmer/mesmer/0.3.1+galaxy1	Mesmer	Mesmer for whole-cell segmentation of multiplexed tissue imaging data				
 toolshed.g2.bx.psu.edu/repos/goeckslab/mesmer/mesmer/0.12.3+galaxy3	Perform segmentation of multiplexed tissue data	with Mesmer	operation_3443			
 toolshed.g2.bx.psu.edu/repos/goeckslab/mesmer/mesmer/0.12.3+galaxy2	Mesmer	Mesmer for whole-cell segmentation of multiplexed tissue imaging data				
@@ -19450,6 +19490,7 @@ toolshed.g2.bx.psu.edu/repos/richard-burhans/segalign/segalign/0.1.2.1+galaxy1	S
 toolshed.g2.bx.psu.edu/repos/richard-burhans/segalign/segalign/0.1.2.2+galaxy0	SegAlign	A Scalable GPU System for Pairwise Whole Genome Alignments based on LASTZ's seed-filter-extend paradigm	operation_0491			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_fcs_adaptor/ncbi_fcs_adaptor/0.5.0+galaxy0	NCBI FCS Adaptor	detects contamination from foreign organisms in genome sequences	operation_3187			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.2-alpha+galaxy2	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
+toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.2-alpha+galaxy5	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+galaxy3	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+galaxy0	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy7	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
@@ -19457,6 +19498,7 @@ toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+gal
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy8	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.2-alpha+galaxy1	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.1-alpha+galaxy2	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
+toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.2-alpha+galaxy4	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.1-alpha+galaxy3	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.1-alpha+galaxy0	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+galaxy4	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
