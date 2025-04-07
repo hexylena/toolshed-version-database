@@ -4144,10 +4144,12 @@ toolshed.g2.bx.psu.edu/repos/iuc/samtools_depth/samtools_depth/1.15.1+galaxy0	Sa
 toolshed.g2.bx.psu.edu/repos/iuc/samtools_depth/samtools_depth/1.15.1+galaxy2	Samtools depth	compute the depth at each position or region	operation_3695,operation_0227,operation_0335,operation_3096,operation_0337,operation_1812,operation_3802	topic_3168,topic_3325,topic_0102,topic_0080	samtools	SAMtools
 toolshed.g2.bx.psu.edu/repos/iuc/samtools_depth/samtools_depth/1.13	Samtools depth	compute the depth at each position or region	operation_3695,operation_0227,operation_0335,operation_3096,operation_0337,operation_1812,operation_3802	topic_3168,topic_3325,topic_0102,topic_0080	samtools	SAMtools
 toolshed.g2.bx.psu.edu/repos/iuc/samtools_depth/samtools_depth/1.8	Samtools depth	compute the depth at each position or region	operation_3802,operation_0227,operation_1812,operation_0337,operation_3695,operation_3096,operation_0335	topic_0080,topic_3325,topic_0102,topic_3168	samtools	SAMtools
+toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy4	BWA-MEM2	- map medium and long reads (> 100 bp) against reference genome	operation_0292	topic_0102	bwa-mem2	Bwa-mem2
 toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy3	BWA-MEM2	- map medium and long reads (> 100 bp) against reference genome	operation_0292	topic_0102	bwa-mem2	Bwa-mem2
 toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy0	BWA-MEM2	- map medium and long reads (> 100 bp) against reference genome	operation_0292	topic_0102	bwa-mem2	Bwa-mem2
 toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy1	BWA-MEM2	- map medium and long reads (> 100 bp) against reference genome	operation_0292	topic_0102	bwa-mem2	Bwa-mem2
 toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy2	BWA-MEM2	- map medium and long reads (> 100 bp) against reference genome	operation_0292	topic_0102	bwa-mem2	Bwa-mem2
+toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2_idx/2.2.1+galaxy4	BWA-MEM2 indexer	Build BWA-MEM2 reference index				
 toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2_idx/2.2.1+galaxy3	BWA-MEM2 indexer	Build BWA-MEM2 reference index				
 toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2_idx/2.2.1+galaxy1	BWA-MEM2 indexer	Build BWA-MEM2 reference index				
 toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2_idx/2.2.1+galaxy2	BWA-MEM2 indexer	Build BWA-MEM2 reference index				
@@ -4490,6 +4492,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.4.0+g
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.3.0+galaxy3	Arriba Draw Fusions					
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.3.0+galaxy1	Arriba Draw Fusions					
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.3.0+galaxy0	Arriba Draw Fusions					
+toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.5.0+galaxy0	Arriba Draw Fusions					
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.4.0+galaxy2	Arriba Draw Fusions					
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_draw_fusions/arriba_draw_fusions/2.4.0+galaxy0	Arriba Draw Fusions					
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_seqs/mothur_remove_seqs/1.39.5.0	Remove.seqs	Remove sequences by name		topic_3697	mothur	mothur
@@ -6210,6 +6213,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/arriba/arriba/2.4.0+galaxy1	Arriba	detect gene 
 toolshed.g2.bx.psu.edu/repos/iuc/arriba/arriba/2.3.0+galaxy3	Arriba	detect gene fusions from STAR aligned RNA-Seq data				
 toolshed.g2.bx.psu.edu/repos/iuc/arriba/arriba/2.3.0+galaxy1	Arriba	detect gene fusions from STAR aligned RNA-Seq data				
 toolshed.g2.bx.psu.edu/repos/iuc/arriba/arriba/2.3.0+galaxy0	Arriba	detect gene fusions from STAR aligned RNA-Seq data				
+toolshed.g2.bx.psu.edu/repos/iuc/arriba/arriba/2.5.0+galaxy0	Arriba	detect gene fusions from STAR aligned RNA-Seq data				
 toolshed.g2.bx.psu.edu/repos/iuc/arriba/arriba/2.4.0+galaxy2	Arriba	detect gene fusions from STAR aligned RNA-Seq data				
 toolshed.g2.bx.psu.edu/repos/iuc/arriba/arriba/2.4.0+galaxy0	Arriba	detect gene fusions from STAR aligned RNA-Seq data				
 toolshed.g2.bx.psu.edu/repos/iuc/sarscov2summary/sarscov2summary/0.1	sarscov2summary					
@@ -7144,6 +7148,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.4.0+gal
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.3.0+galaxy3	Arriba Get Filters	to history				
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.3.0+galaxy1	Arriba Get Filters	to history				
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.3.0+galaxy0	Arriba Get Filters	to history				
+toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.5.0+galaxy0	Arriba Get Filters	to history				
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.4.0+galaxy2	Arriba Get Filters	to history				
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.4.0+galaxy0	Arriba Get Filters	to history				
 toolshed.g2.bx.psu.edu/repos/iuc/presto_collapseseq/presto_collapseseq/0.6.2+galaxy0	pRESTO CollapseSeq	Remove/collapse duplicate sequences			presto	pRESTO
@@ -10467,6 +10472,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.4.6+galaxy0	Busco	assess genome a
 toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.8.0+galaxy0	Busco	Assess genome assembly and annotation completeness	operation_0525,operation_3180,operation_3258,operation_3216	topic_0080,topic_0622,topic_3308,topic_0196	busco	BUSCO
 toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.5.0+galaxy0	Busco	assess genome assembly and annotation completeness	operation_3180,operation_3216,operation_3258,operation_0525	topic_0080,topic_3308,topic_0622,topic_0196	busco	BUSCO
 toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.4.4+galaxy0	Busco	assess genome assembly and annotation completeness	operation_3180,operation_0525,operation_3216,operation_3258	topic_3308,topic_0080,topic_0196,topic_0622	busco	BUSCO
+toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.8.0+galaxy1	Busco	Assess genome assembly and annotation completeness	operation_3180,operation_3216,operation_0525,operation_3258	topic_0080,topic_0196,topic_0622,topic_3308	busco	BUSCO
 toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.2.1+galaxy0	Busco	assess genome assembly and annotation completeness				
 toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.2.2+galaxy2	Busco	assess genome assembly and annotation completeness	operation_0525,operation_3216,operation_3180,operation_3258	topic_3308,topic_0080,topic_0196,topic_0622	busco	BUSCO
 toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/2.0	Busco	assess genome assembly and annotation completeness	operation_3180,operation_0525,operation_3216,operation_3258	topic_3308,topic_0080,topic_0196,topic_0622	busco	BUSCO
@@ -11988,6 +11994,7 @@ toolshed.g2.bx.psu.edu/repos/galaxyp/openms_openswathrewritetofeaturexml/OpenSwa
 toolshed.g2.bx.psu.edu/repos/galaxyp/openms_openswathrewritetofeaturexml/OpenSwathRewriteToFeatureXML/2.5+galaxy0	OpenSwathRewriteToFeatureXML	Combines featureXML and mProphet tsv to FDR filtered featureXML.				
 toolshed.g2.bx.psu.edu/repos/galaxyp/openms_openswathrewritetofeaturexml/OpenSwathRewriteToFeatureXML/3.1+galaxy0	OpenSwathRewriteToFeatureXML	Combines featureXML and mProphet tsv to FDR filtered featureXML				
 toolshed.g2.bx.psu.edu/repos/galaxyp/diann/diann/1.8.1+galaxy3	DIA-NN	is a software for DIA/SWATH data processing				
+toolshed.g2.bx.psu.edu/repos/galaxyp/diann/diann/1.8.1+galaxy4	DIA-NN	is a software for DIA/SWATH data processing				
 toolshed.g2.bx.psu.edu/repos/galaxyp/diann/diann/1.8.1+galaxy1	DIA-NN	is a software for DIA/SWATH data processing				
 toolshed.g2.bx.psu.edu/repos/galaxyp/diann/diann/1.8.1+galaxy2	DIA-NN	is a software for DIA/SWATH data processing				
 toolshed.g2.bx.psu.edu/repos/galaxyp/diann/diann/1.8.1+galaxy0	DIA-NN	is a software for DIA/SWATH data processing				
@@ -19495,10 +19502,13 @@ toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+g
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+galaxy0	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy7	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy4	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
+toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.2-alpha+galaxy7	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.2-alpha+galaxy8	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.2-alpha+galaxy1	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.1-alpha+galaxy2	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
+toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.2-alpha+galaxy8	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.2-alpha+galaxy4	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
+toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.2-alpha+galaxy6	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.1-alpha+galaxy3	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.1-alpha+galaxy0	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
 toolshed.g2.bx.psu.edu/repos/richard-burhans/ncbi_egapx/ncbi_egapx/0.3.0-alpha+galaxy4	NCBI EGAPx	annotates eukaryotic genomes	operation_0362			
