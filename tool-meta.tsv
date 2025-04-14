@@ -420,6 +420,7 @@ toolshed.g2.bx.psu.edu/repos/ufz/omero_filter/omero_filter/5.18.0+galaxy0	OMERO 
 toolshed.g2.bx.psu.edu/repos/ufz/genomad_end_to_end/genomad_end_to_end/1.8.0+galaxy0	geNomad	identify virus and plasmid genomes from nucleotide sequences	operation_0361,operation_3460	topic_0080	genomad	geNomad
 toolshed.g2.bx.psu.edu/repos/ufz/genomad_end_to_end/genomad_end_to_end/1.8.0+galaxy1	geNomad	identify virus and plasmid genomes from nucleotide sequences	operation_3460,operation_0361	topic_0080	genomad	geNomad
 toolshed.g2.bx.psu.edu/repos/ufz/saqc/saqc/2.4.1+galaxy0	SaQC	quality control for time series				
+toolshed.g2.bx.psu.edu/repos/ufz/omero_get_value/omero_get_value/5.18.0+galaxy2	OMERO get Object	with ezomero	operation_3443	topic_3382,topic_0092	omero	OMERO
 toolshed.g2.bx.psu.edu/repos/ufz/omero_get_value/omero_get_value/5.18.0+galaxy1	OMERO get Object	with ezomero	operation_3443	topic_0092,topic_3382	omero	OMERO
 toolshed.g2.bx.psu.edu/repos/ufz/omero_get_value/omero_get_value/5.18.0+galaxy0	OMERO get Object	with ezomero	operation_3443	topic_0092,topic_3382	omero	OMERO
 toolshed.g2.bx.psu.edu/repos/ufz/omero_get_id/omero_get_id/5.18.0+galaxy0	OMERO get IDs	with ezomero	operation_3443	topic_3382,topic_0092	omero	OMERO
@@ -851,6 +852,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/diff/diff/3.6+galaxy1	diff	analyzes two f
 toolshed.g2.bx.psu.edu/repos/bgruening/diff/diff/3.6+galaxy0	diff	analyzes two files and generates an unidiff text file with information about the differences and an optional Html report				
 toolshed.g2.bx.psu.edu/repos/bgruening/diff/diff/3.10+galaxy0	diff	analyzes two files and generates an unidiff text file with information about the differences and an optional Html report				
 toolshed.g2.bx.psu.edu/repos/bgruening/diff/diff/3.6+galaxy2	diff	analyzes two files and generates an unidiff text file with information about the differences and an optional Html report				
+toolshed.g2.bx.psu.edu/repos/bgruening/diff/diff/3.10+galaxy1	diff	analyzes two files and generates an unidiff text file with information about the differences and an optional Html report				
 toolshed.g2.bx.psu.edu/repos/bgruening/diff/diff/3.7+galaxy0	diff	analyzes two files and generates an unidiff text file with information about the differences and an optional Html report				
 toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_glimmer_to_gff/glimmer_glimmer_to_gff/3.02+galaxy1	Convert Glimmer to GFF		operation_3197,operation_2403	topic_0080	gemini	GEMINI
 toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_glimmer_to_gff/glimmer_glimmer_to_gff/3.02	Convert Glimmer to GFF		operation_3197,operation_2403	topic_0080	gemini	GEMINI
@@ -2480,6 +2482,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_numeric_clustering/sklearn_numeri
 toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_numeric_clustering/sklearn_numeric_clustering/1.0.7.12	Numeric Clustering		operation_3432,operation_2990,operation_3659,operation_3935	topic_0092,topic_3474	scikit-learn	scikit-learn
 toolshed.g2.bx.psu.edu/repos/bgruening/sklearn_numeric_clustering/sklearn_numeric_clustering/1.0.8.3	Numeric Clustering		operation_3659,operation_3935,operation_2990,operation_3432	topic_0092,topic_3474	scikit-learn	scikit-learn
 toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.4.1+galaxy0	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3474,topic_3316	pytorch	PyTorch
+toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.4.1+galaxy2	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3474,topic_3316	pytorch	PyTorch
 toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.3.1+galaxy0	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3474,topic_3316	pytorch	PyTorch
 toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.4.1+galaxy1	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3474,topic_3316	pytorch	PyTorch
 toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.4.0+galaxy0	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3474,topic_3316	pytorch	PyTorch
@@ -2738,6 +2741,7 @@ toolshed.g2.bx.psu.edu/repos/rlegendre/ribo_tools/kmer_analysis/1.0.0	Kmer	To ca
 toolshed.g2.bx.psu.edu/repos/rlegendre/ribo_tools/readthrough_analysis/1.0.0	Stop_supp	To analyse Ribo-seq alignments for the detection of stop codon readthrough events				
 toolshed.g2.bx.psu.edu/repos/rlegendre/ribo_tools/Codon_analysis/1.0.0	Codon_density	To compare Ribo-seq alignments between two sets of conditions, to determine codon occupancy				
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/panaroo/panaroo/1.5.0+galaxy0	Panaroo	A Bacterial Pangenome Analysis Pipeline		topic_0194	panaroo	Panaroo
+toolshed.g2.bx.psu.edu/repos/galaxy-australia/panaroo/panaroo/1.5.2+galaxy0	Panaroo	A Bacterial Pangenome Analysis Pipeline	operation_0524,operation_0525,operation_3432	topic_0080,topic_0194	panaroo	Panaroo
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/plot_ragtag_paf/plot_ragtag_paf/0.0.2	Plot RagTag output	to compare query contigs to the reference				
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/plot_ragtag_paf/plot_ragtag_paf/0.0.4	Plot RagTag output	to compare query contigs to the reference				
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/plot_ragtag_paf/plot_ragtag_paf/0.0.3	Plot RagTag output	to compare query contigs to the reference				
@@ -3879,6 +3883,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bakta/bakta/1.6.1+galaxy0	Bakta	Genome annotati
 toolshed.g2.bx.psu.edu/repos/iuc/bakta/bakta/1.8.2+galaxy0	Bakta	Genome annotation via alignment-free sequence identification		topic_3174	Bakta	Bakta
 toolshed.g2.bx.psu.edu/repos/iuc/bakta/bakta/1.8.1+galaxy1	Bakta	Genome annotation via alignment-free sequence identification		topic_3174	Bakta	Bakta
 toolshed.g2.bx.psu.edu/repos/iuc/bakta/bakta/1.9.3+galaxy0	Bakta	Rapid and standardized annotation of bacterial genomes, MAGs and plasmids	operation_0362	topic_0080,topic_0622,topic_0219	bakta	Bakta
+toolshed.g2.bx.psu.edu/repos/iuc/bakta/bakta/1.9.4+galaxy1	Bakta	Rapid and standardized annotation of bacterial genomes, MAGs and plasmids	operation_0362	topic_0622,topic_0080,topic_0219	bakta	Bakta
 toolshed.g2.bx.psu.edu/repos/iuc/bakta/bakta/1.4.2+galaxy0	Bakta	Rapid and standardized annotation of bacterial genomes, MAGs and plasmids	operation_0362	topic_0080,topic_0622,topic_0219	bakta	Bakta
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_color_chrs/bcftools_plugin_color_chrs/1.15.1+galaxy1	bcftools color-chrs	plugin Color shared chromosomal segments, requires phased GTs			bcftools	BCFtools
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_plugin_color_chrs/bcftools_plugin_color_chrs/1.9+galaxy1	bcftools color-chrs	plugin Color shared chromosomal segments, requires phased GTs				
@@ -4529,6 +4534,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator/tooldistillator/0.9.1+galaxy1	T
 toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator/tooldistillator/0.9+galaxy0	ToolDistillator	Extract information from output files of specific tools and expose it as JSON files			tooldistillator	ToolDistillator
 toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator/tooldistillator/0.8.5.0+galaxy0	ToolDistillator	Extract information from output files of specific tools and expose it as JSON files			tooldistillator	ToolDistillator
 toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator/tooldistillator/0.9.1+galaxy0	ToolDistillator	Extract information from output files of specific tools and expose it as JSON files			tooldistillator	ToolDistillator
+toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator/tooldistillator/0.9.2+galaxy0	ToolDistillator	Extract information from output files of specific tools and expose it as JSON files			tooldistillator	ToolDistillator
 toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator/tooldistillator/0.8.4.1+galaxy0	ToolDistillator	Extract information from output files of specific tools and expose it as JSON files			tooldistillator	ToolDistillator
 toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.0	Pear	Paired-End read merger				
 toolshed.g2.bx.psu.edu/repos/iuc/pear/iuc_pear/0.9.6.2	Pear	Paired-End read merger	operation_0232	topic_0196	pear	PEAR
@@ -5296,6 +5302,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/proteinortho/proteinortho/6.0.31+galaxy1	Protei
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho/proteinortho/6.0.31+galaxy0	Proteinortho	detects orthologous proteins/genes within different species	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho/proteinortho/6.3.1+galaxy0	Proteinortho	detects orthologous proteins/genes within different species	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho/proteinortho/6.0.14+galaxy2.9.1	Proteinortho	detects orthologous proteins/genes within different species	operation_3663	topic_0084	proteinortho	Proteinortho
+toolshed.g2.bx.psu.edu/repos/iuc/proteinortho/proteinortho/6.3.5+galaxy0	Proteinortho	detects orthologous proteins/genes within different species	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho/proteinortho/6.3.1+galaxy2	Proteinortho	detects orthologous proteins/genes within different species	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho/proteinortho/6.3.4+galaxy0	Proteinortho	detects orthologous proteins/genes within different species	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/jcvi_gff_stats/jcvi_gff_stats/0.8.4	Genome annotation statistics					
@@ -6350,6 +6357,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_summary/proteinortho_summary/6.0.3
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_summary/proteinortho_summary/6.0.31+galaxy0	Proteinortho summary	summaries the orthology-pairs/RBH files	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_summary/proteinortho_summary/6.3.1+galaxy0	Proteinortho summary	summaries the orthology-pairs/RBH files	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_summary/proteinortho_summary/6.0.14+galaxy2.9.1	Proteinortho summary	summaries the orthology-pairs/RBH files	operation_3663	topic_0084	proteinortho	Proteinortho
+toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_summary/proteinortho_summary/6.3.5+galaxy0	Proteinortho summary	summaries the orthology-pairs/RBH files	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_summary/proteinortho_summary/6.3.1+galaxy2	Proteinortho summary	summaries the orthology-pairs/RBH files	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_summary/proteinortho_summary/6.3.4+galaxy0	Proteinortho summary	summaries the orthology-pairs/RBH files	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_denovomap/stacks2_denovomap/2.55+galaxy2	Stacks2: de novo map	the Stacks pipeline without a reference genome (denovo_map.pl)	operation_2409	topic_0102,topic_3056	stacks	Stacks
@@ -7035,6 +7043,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_grab_proteins/proteinortho_grab_pr
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_grab_proteins/proteinortho_grab_proteins/6.0.31+galaxy1	Proteinortho grab proteins	finds genes/proteins in a given fasta file	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_grab_proteins/proteinortho_grab_proteins/6.0.31+galaxy0	Proteinortho grab proteins	finds genes/proteins in a given fasta file	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_grab_proteins/proteinortho_grab_proteins/6.3.1+galaxy0	Proteinortho grab proteins	finds genes/proteins in a given fasta file	operation_3663	topic_0084	proteinortho	Proteinortho
+toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_grab_proteins/proteinortho_grab_proteins/6.3.5+galaxy0	Proteinortho grab proteins	finds genes/proteins in a given fasta file	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_grab_proteins/proteinortho_grab_proteins/6.3.1+galaxy2	Proteinortho grab proteins	finds genes/proteins in a given fasta file	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho_grab_proteins/proteinortho_grab_proteins/6.3.4+galaxy0	Proteinortho grab proteins	finds genes/proteins in a given fasta file	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_octave/ampvis2_octave/2.7.22+galaxy0	ampvis2 octave plot		operation_2945,operation_0337	topic_3050	ampvis	ampvis
@@ -7273,6 +7282,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_heatmap/cnvkit_heatmap/0.9.11+galaxy0	CN
 toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_heatmap/cnvkit_heatmap/0.9.10+galaxy0.1	CNVkit Heatmap	Plot copy number for multiple samples as a heatmap	operation_3227	topic_3175	cnvkit	CNVkit
 toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_heatmap/cnvkit_heatmap/0.9.10+galaxy0	CNVkit Heatmap	Plot copy number for multiple samples as a heatmap	operation_3227	topic_3175	cnvkit	CNVkit
 toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_heatmap/cnvkit_heatmap/0.9.12+galaxy0	CNVkit Heatmap	Plot copy number for multiple samples as a heatmap	operation_3227	topic_3175	cnvkit	CNVkit
+toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_tax_glom/phyloseq_tax_glom/1.50.0+galaxy3	Phyloseq Taxonomic Agglomeration	Aggregates a Phyloseq object at a specified taxonomic rank	operation_3431,operation_0337,operation_2945	topic_0080,topic_3301,topic_3174	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_create_database/mothur_create_database/1.39.5.0	Create.database	creates a database file from a list, repnames, repfasta and contaxonomy file		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_create_database/mothur_create_database/1.36.1.0	Create.database	creates a database file from a list, repnames, repfasta and contaxonomy file		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_setmetadata/ampvis2_setmetadata/2.7.22+galaxy0	ampvis2 set metadata	types	operation_0337,operation_2945	topic_3050	ampvis	ampvis
@@ -8001,6 +8011,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/mothur_make_shared/mothur_make_shared/1.36.1.0	
 toolshed.g2.bx.psu.edu/repos/iuc/presto_maskprimers/presto_maskprimers/0.6.2+galaxy0	pRESTO MaskPrimers	Removes primers and annotates sequences with primer and barcode identifiers.			presto	pRESTO
 toolshed.g2.bx.psu.edu/repos/iuc/presto_maskprimers/presto_maskprimers/0.5.4	pRESTO MaskPrimers	Removes primers and annotates sequences with primer and barcode identifiers.				
 toolshed.g2.bx.psu.edu/repos/iuc/presto_maskprimers/presto_maskprimers/0.6.2	pRESTO MaskPrimers	Removes primers and annotates sequences with primer and barcode identifiers.				
+toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_export_otu/ampvis2_export_otu/2.8.9+galaxy0	ampvis2 export otu		operation_0337,operation_2945	topic_3050	ampvis	ampvis
 toolshed.g2.bx.psu.edu/repos/iuc/onto_tk_get_relationship_id_vs_relationship_def/onto_tk_get_relationship_id_vs_relationship_def/1.45.0	Get all the relationship IDs and definitions	from the given OBO ontology	operation_2495,operation_0315,operation_0533,operation_0314,operation_0313	topic_0602,topic_0203,topic_0749,topic_3518,topic_3297	onto-tools	Onto-Tools
 toolshed.g2.bx.psu.edu/repos/iuc/parse_mito_blast/parse_mito_blast/1.0.2+galaxy0	Parse mitochondrial blast	overlap-conscious coverage calculation between scaffold-accession number pairs from blast output				
 toolshed.g2.bx.psu.edu/repos/iuc/parse_mito_blast/parse_mito_blast/1.0.1	Parse mitochondrial blast	overlap-conscious coverage calculation between scaffold-accession number pairs from blast output				
@@ -8851,6 +8862,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator_summarize/tooldistillator_summa
 toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator_summarize/tooldistillator_summarize/0.9+galaxy0	ToolDistillator Summarize	Aggregate several JSON reports from ToolDistillator			tooldistillator	ToolDistillator
 toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator_summarize/tooldistillator_summarize/0.8.5.0+galaxy0	ToolDistillator Summarize	Aggregate several JSON reports from ToolDistillator			tooldistillator	ToolDistillator
 toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator_summarize/tooldistillator_summarize/0.9.1+galaxy0	ToolDistillator Summarize	Aggregate several JSON reports from ToolDistillator			tooldistillator	ToolDistillator
+toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator_summarize/tooldistillator_summarize/0.9.2+galaxy0	ToolDistillator Summarize	Aggregate several JSON reports from ToolDistillator			tooldistillator	ToolDistillator
 toolshed.g2.bx.psu.edu/repos/iuc/tooldistillator_summarize/tooldistillator_summarize/0.8.4.1+galaxy0	ToolDistillator Summarize	Aggregate several JSON reports from ToolDistillator			tooldistillator	ToolDistillator
 toolshed.g2.bx.psu.edu/repos/iuc/tn93/tn93/1.0.6	TN93	compute distances between aligned sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93/tn93/1.0.14+galaxy0	TN93	compute distances between aligned sequences				
@@ -17411,6 +17423,7 @@ toolshed.g2.bx.psu.edu/repos/imgteam/orientationpy/orientationpy/0.2.0.4+galaxy1
 toolshed.g2.bx.psu.edu/repos/imgteam/orientationpy/orientationpy/0.2.0.4+galaxy0	Compute image orientation	with OrientationPy	operation_3443			
 toolshed.g2.bx.psu.edu/repos/imgteam/orientationpy/orientationpy/0.2.0.4+galaxy2	Compute image orientation	with OrientationPy	operation_3443			
 toolshed.g2.bx.psu.edu/repos/imgteam/split_image/ip_split_image/2.2.3+galaxy0	Split image along axes	with NumPy	operation_3443			
+toolshed.g2.bx.psu.edu/repos/imgteam/split_image/ip_split_image/2.2.3+galaxy1	Split image along axes	with NumPy	operation_3443			
 toolshed.g2.bx.psu.edu/repos/imgteam/points_association_nn/ip_points_association_nn/0.0.2	Association of points	in consecutive frames (slices) using the nearest neighbor algorithm	operation_3443,operation_0337,operation_3553,operation_2409	topic_3382,topic_3372,topic_3068	scikit-image	scikit-image
 toolshed.g2.bx.psu.edu/repos/imgteam/points_association_nn/ip_points_association_nn/0.0.1	Association of points	in consecutive frames (slices) using the nearest neighbor algorithm	operation_0337,operation_3553,operation_2409,operation_3443	topic_3372,topic_3068,topic_3382	scikit-image	scikit-image
 toolshed.g2.bx.psu.edu/repos/imgteam/points_association_nn/ip_points_association_nn/0.0.3-2	Perform linking in time series (nearest neighbors)		operation_3443	topic_0091,topic_3382	galaxy_image_analysis	Galaxy Image Analysis
