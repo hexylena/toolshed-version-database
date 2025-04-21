@@ -907,6 +907,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_chicexportdata/hicexplorer_ch
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_chicexportdata/hicexplorer_chicexportdata/3.7.5+galaxy0	chicExportData	exports data of hdf to txt based files				
 toolshed.g2.bx.psu.edu/repos/bgruening/protease_prediction/eden_protease_prediction/0.9	Protease prediction	based on cleavage sites				
 toolshed.g2.bx.psu.edu/repos/bgruening/whisper/whisper/20231117+galaxy0	Speech to Text	Transcribe audio or video files to text using the OpenAI Whisper				
+toolshed.g2.bx.psu.edu/repos/bgruening/flexynesis_cbioportal_import/flexynesis_cbioportal_import/0.2.17+galaxy1	Flexynesis cBioPortal import	and prepare cBioPortal data for Flexynesis analysis				
 toolshed.g2.bx.psu.edu/repos/bgruening/keras_batch_models/keras_batch_models/1.0.11.0	Build Deep learning Batch Training Models	with online data generator for Genomic/Protein sequences and images	operation_2990,operation_3935,operation_3659,operation_3432	topic_0092,topic_3474	scikit-learn	scikit-learn
 toolshed.g2.bx.psu.edu/repos/bgruening/keras_batch_models/keras_batch_models/0.5.0	Build Deep learning Batch Training Models	with online data generator for Genomic/Protein sequences and images	operation_3659,operation_3935,operation_2990,operation_3432	topic_0092,topic_3474	scikit-learn	scikit-learn
 toolshed.g2.bx.psu.edu/repos/bgruening/keras_batch_models/keras_batch_models/1.0.10.0	Build Deep learning Batch Training Models	with online data generator for Genomic/Protein sequences and images	operation_3935,operation_2990,operation_3432,operation_3659	topic_0092,topic_3474	scikit-learn	scikit-learn
@@ -1497,6 +1498,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/salmon/salmon/0.11.2	Salmon	Transcript Qu
 toolshed.g2.bx.psu.edu/repos/bgruening/salmon/salmon/1.5.1+galaxy0	Salmon quant	Perform dual-phase, reads or mapping-based estimation of transcript abundance from RNA-seq reads	operation_3800,operation_0236,operation_2495	topic_3308,topic_3170,topic_0203	salmon	Salmon
 toolshed.g2.bx.psu.edu/repos/bgruening/salmon/salmon/1.10.1+galaxy2	Salmon quant	Perform dual-phase, reads or mapping-based estimation of transcript abundance from RNA-seq reads	operation_0236,operation_3800,operation_2495	topic_3170,topic_3308,topic_0203	salmon	Salmon
 toolshed.g2.bx.psu.edu/repos/bgruening/salmon/salmon/1.10.1+galaxy0	Salmon quant	Perform dual-phase, reads or mapping-based estimation of transcript abundance from RNA-seq reads	operation_2495,operation_0236,operation_3800	topic_0203,topic_3170,topic_3308	salmon	Salmon
+toolshed.g2.bx.psu.edu/repos/bgruening/flexynesis/flexynesis/0.2.17+galaxy1	Flexynesis	A deep-learning based multi-omics bulk sequencing data integration suite	operation_3197,operation_2403,operation_2426	topic_0622,topic_3474,topic_2640		
 toolshed.g2.bx.psu.edu/repos/bgruening/flexynesis/flexynesis/0.2.10+galaxy0	Flexynesis	A deep-learning based multi-omics bulk sequencing data integration suite	operation_3197,operation_2403,operation_2426	topic_0622,topic_3474,topic_2640		
 toolshed.g2.bx.psu.edu/repos/bgruening/unique/bg_uniq/0.3	Unique	occurrences of each record				
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_chicaggregatestatistic/hicexplorer_chicaggregatestatistic/3.4.3.1	chicAggregateStatistic	computes with a target file the to be tested regions for chicDifferentialTest	operation_0337,operation_2428,operation_3435	topic_3295,topic_3169,topic_0769,topic_0654,topic_3940	hicexplorer	HiCExplorer
@@ -2485,6 +2487,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.4
 toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.4.1+galaxy2	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3474,topic_3316	pytorch	PyTorch
 toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.3.1+galaxy0	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3474,topic_3316	pytorch	PyTorch
 toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.4.1+galaxy1	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3474,topic_3316	pytorch	PyTorch
+toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.4.1+galaxy3	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3316,topic_3474	pytorch	PyTorch
 toolshed.g2.bx.psu.edu/repos/bgruening/bioimage_inference/bioimage_inference/2.4.0+galaxy0	Process image using a BioImage.IO model	with PyTorch	operation_3443	topic_3474,topic_3316	pytorch	PyTorch
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicplotaverageregions/hicexplorer_hicplotaverageregions/3.6+galaxy1	hicPlotAverageRegions	plot the average regions from hicAverageRegions	operation_3435,operation_0337,operation_2428	topic_3295,topic_3169,topic_0769,topic_0654,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicplotaverageregions/hicexplorer_hicplotaverageregions/3.6+galaxy0	hicPlotAverageRegions	plot the average regions from hicAverageRegions	operation_0337,operation_2428,operation_3435	topic_3295,topic_3169,topic_0769,topic_0654,topic_3940	hicexplorer	HiCExplorer
@@ -2750,6 +2753,7 @@ toolshed.g2.bx.psu.edu/repos/galaxy-australia/smudgeplot/smudgeplot/0.2.5+galaxy
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/smudgeplot/smudgeplot/0.2.5+galaxy+1	Smudgeplot	inference of ploidy and heterozygosity structure using whole genome sequencing	operation_3196,operation_3192,operation_3472	topic_0199,topic_3315,topic_0196	smudgeplots	Smudgeplots
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/alphafold2/alphafold/2.1.2+galaxy1	Alphafold 2	- AI-guided 3D structural prediction of proteins	operation_0474	topic_0082	alphafold_2	AlphaFold 2
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/alphafold2/alphafold/2.3.1+galaxy1	Alphafold 2	- AI-guided 3D structural prediction of proteins	operation_0474	topic_0082	alphafold_2	AlphaFold 2
+toolshed.g2.bx.psu.edu/repos/galaxy-australia/alphafold2/alphafold/2.3.2+galaxy3	Alphafold 2	- AI-guided 3D structural prediction of proteins	operation_0474	topic_0082	alphafold_2	AlphaFold 2
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/alphafold2/alphafold/2.1.2+galaxy0	Alphafold 2	- AI-guided 3D structural prediction of proteins	operation_0474	topic_0082	alphafold_2	AlphaFold 2
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/alphafold2/alphafold/2.1.2+galaxy3	Alphafold 2	- AI-guided 3D structural prediction of proteins	operation_0474	topic_0082	alphafold_2	AlphaFold 2
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/alphafold2/alphafold/2.1.2+galaxy2	Alphafold 2	- AI-guided 3D structural prediction of proteins	operation_0474	topic_0082	alphafold_2	AlphaFold 2
@@ -2768,6 +2772,7 @@ toolshed.g2.bx.psu.edu/repos/galaxy-australia/alphafold2/alphafold/2.0.0+galaxy2
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado/dorado/0.8.2+6b413c9+galaxy0	Dorado	basecaller for raw Oxford Nanopore data			dorado	Dorado
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado/dorado/0.7.3+6e6c45c+galaxy0	Dorado	basecaller for raw Oxford Nanopore data			dorado	Dorado
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado/dorado/0.7.1+80da5f5+galaxy0	Dorado	basecaller for raw Oxford Nanopore data			dorado	Dorado
+toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado/dorado/0.9.5+bd7fb217+galaxy0	Dorado	basecaller for raw Oxford Nanopore data			dorado	Dorado
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado/dorado/0.7.2+9ac85c6+galaxy0	Dorado	basecaller for raw Oxford Nanopore data			dorado	Dorado
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/cactus_cactus/cactus_cactus/2.4.3+galaxy0	Cactus	whole-genome multiple sequence alignment	operation_3182,operation_0492	topic_0622,topic_0080,topic_0084,topic_3293,topic_0196,topic_0102	cactus	Cactus
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/cactus_cactus/cactus_cactus/2.6.7+galaxy0	Cactus	whole-genome multiple sequence alignment	operation_3182,operation_0492	topic_0622,topic_0080,topic_0084,topic_3293,topic_0196,topic_0102	cactus	Cactus
@@ -2801,6 +2806,7 @@ toolshed.g2.bx.psu.edu/repos/galaxy-australia/cactus_export/cactus_export/2.5.1+
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/cactus_export/cactus_export/2.6.4+galaxy1	Cactus: export	whole-genome multiple sequence alignment to other formats	operation_0492,operation_3182	topic_0622,topic_3293,topic_0102,topic_0084,topic_0196,topic_0080	cactus	Cactus
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/cactus_export/cactus_export/2.1.1+galaxy0	Cactus: export	whole-genome multiple sequence alignment to other formats	operation_0492,operation_3182	topic_0622,topic_3293,topic_0102,topic_0084,topic_0196,topic_0080	cactus	Cactus
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/cactus_export/cactus_export/2.4.0+galaxy0	Cactus: export	whole-genome multiple sequence alignment to other formats	operation_3182,operation_0492	topic_0196,topic_0084,topic_0622,topic_3293,topic_0102,topic_0080	cactus	Cactus
+toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado_trimming/dorado_trimming/0.9.5+bd7fb217+galaxy1	Dorado adapter and primer trimming	for Oxford Nanopore (ONT) DNA reads			dorado	Dorado
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado_trimming/dorado_trimming/0.8.2+6b413c9+galaxy0	Dorado adapter and primer trimming	for Oxford Nanopore (ONT) DNA reads			dorado	Dorado
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado_trimming/dorado_trimming/0.8.2+6b413c9+galaxy1	Dorado adapter and primer trimming	for Oxford Nanopore (ONT) DNA reads			dorado	Dorado
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/hifiasm_meta/hifiasm_meta/hamtv0.3+galaxy0	Hifiasm_meta	for metagenome assembly using Hifi reads	operation_0310	topic_3174,topic_0196	hifiasm-meta	Hifiasm-meta
@@ -2817,6 +2823,7 @@ toolshed.g2.bx.psu.edu/repos/galaxy-australia/aarnet_filesender/aarnet_filesende
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado_pod5_convert/dorado_pod5_convert/0.8.2+6b413c9+galaxy0	fast5 to pod5	converter for raw Oxford Nanopore data			dorado	Dorado
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado_pod5_convert/dorado_pod5_convert/0.7.3+6e6c45c+galaxy0	fast5 to pod5	converter for raw Oxford Nanopore data			dorado	Dorado
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado_pod5_convert/dorado_pod5_convert/0.7.1+80da5f5+galaxy0	fast5 to pod5	converter for raw Oxford Nanopore data			dorado	Dorado
+toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado_pod5_convert/dorado_pod5_convert/0.9.5+bd7fb217+galaxy0	fast5 to pod5	converter for raw Oxford Nanopore data			dorado	Dorado
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado_pod5_convert/dorado_pod5_convert/0.7.2+9ac85c6+galaxy0	fast5 to pod5	converter for raw Oxford Nanopore data			dorado	Dorado
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/kmc/kmc_transform/3.2.1+galaxy0	KMC transform	single KMC's database			kmc	KMC
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/kmc/kmc_transform/3.2.1+galaxy1	KMC transform	single KMC's database			kmc	KMC
@@ -5138,6 +5145,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/seqkit_head/seqkit_head/2.9.0+galaxy0	SeqKit He
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_get_rabund/mothur_get_rabund/1.39.5.0	Get.rabund	Get rabund from a otu list or sabund		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_get_rabund/mothur_get_rabund/1.36.1.0	Get.rabund	Get rabund from a otu list or sabund		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/qiime_filter_fasta/qiime_filter_fasta/1.9.1.0	Filter fasta	to remove sequences based on input criteria (filter_fasta)	operation_2945	topic_3070	qiime	QIIME
+toolshed.g2.bx.psu.edu/repos/iuc/kmer2stats/kmer2stats/1.0.1+galaxy0	Kmer2Stats	A tool for creating data files for statistics based on kmers				
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_dada2/phyloseq_from_dada2/1.46.0+galaxy0	Create phyloseq object	from dada2 sequence and taxonomy tables	operation_3431,operation_0337,operation_2945	topic_3174,topic_0080,topic_3301	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_dada2/phyloseq_from_dada2/1.50.0+galaxy0	Create phyloseq object	from dada2 sequence and taxonomy tables	operation_2945,operation_0337,operation_3431	topic_3301,topic_3174,topic_0080	phyloseq	phyloseq
 toolshed.g2.bx.psu.edu/repos/iuc/phyloseq_from_dada2/phyloseq_from_dada2/1.50.0+galaxy1	Create phyloseq object	from dada2 sequence and taxonomy tables	operation_3431,operation_0337,operation_2945	topic_3301,topic_0080,topic_3174	phyloseq	phyloseq
@@ -6258,6 +6266,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ncbi_entrez_direct_efetch/ncbi_entrez_direct_ef
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_entrez_direct_efetch/ncbi_entrez_direct_efetch/22.1	NCBI EFetch	fetch records from NCBI				
 toolshed.g2.bx.psu.edu/repos/iuc/abstracts_by_pmids/abstracts_by_pmids/0.0.2	Get PubMed abstracts	by PMID IDs			pubmed	PubMed
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/2.5.4.0	dRep compare	compare a list of genomes				
+toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.6.1+galaxy0	dRep compare	compare a list of genomes	operation_3209	topic_0622,topic_0080,topic_3174	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.4.3+galaxy0	dRep compare	compare a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.5.0+galaxy2	dRep compare	compare a list of genomes	operation_3209	topic_0080,topic_0622,topic_3174	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.4.2+galaxy0	dRep compare	compare a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
@@ -6573,6 +6582,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/mothur_classify_tree/mothur_classify_tree/1.39.
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_classify_tree/mothur_classify_tree/1.36.1.0	Classify.tree	Get a consensus taxonomy for each node on a tree		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/fairy_sketch/fairy_sketch/0.5.7+galaxy1	Fairy sketch	sketching of k-mers for coverage into a hashtable				
 toolshed.g2.bx.psu.edu/repos/iuc/fairy_sketch/fairy_sketch/0.5.7+galaxy0	Fairy sketch	sketching of k-mers for coverage into a hashtable				
+toolshed.g2.bx.psu.edu/repos/iuc/fairy_sketch/fairy_sketch/0.5.8+galaxy0	Fairy sketch	sketching of k-mers for coverage into a hashtable			fairy	fairy
 toolshed.g2.bx.psu.edu/repos/iuc/mashmap/mashmap/3.1.3+galaxy0	mashmap	Fast local alignment boundaries				
 toolshed.g2.bx.psu.edu/repos/iuc/ont_fast5_api_multi_to_single_fast5/ont_fast5_api_multi_to_single_fast5/3.1.3+galaxy1	ont_fast5_api: Multi to single	read file(s)				
 toolshed.g2.bx.psu.edu/repos/iuc/ont_fast5_api_multi_to_single_fast5/ont_fast5_api_multi_to_single_fast5/3.1.3+galaxy0	ont_fast5_api: Multi to single	read file(s)				
@@ -7059,6 +7069,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/egsea/egsea/1.6.0.1	EGSEA	easy and efficient en
 toolshed.g2.bx.psu.edu/repos/iuc/egsea/egsea/1.20.0	EGSEA	easy and efficient ensemble gene set testing	operation_3224	topic_2259	egsea	EGSEA
 toolshed.g2.bx.psu.edu/repos/iuc/egsea/egsea/1.6.0.0	EGSEA	easy and efficient ensemble gene set testing	operation_3224	topic_2259	egsea	EGSEA
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/2.5.4.0	dRep dereplicate	De-replicate a list of genomes				
+toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.6.1+galaxy0	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_3174,topic_0622,topic_0080	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.4.3+galaxy0	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0622,topic_0080,topic_3174	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.5.0+galaxy2	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.4.2+galaxy0	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0080,topic_0622,topic_3174	drep	dRep
@@ -7386,6 +7397,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/mykrobe_genotype/mykrobe_genotype/0.6.1	mkyrobe
 toolshed.g2.bx.psu.edu/repos/iuc/mykrobe_genotype/mykrobe_genotype/0.7.0	mkyrobe genotype	Antibiotic resistance predictions				
 toolshed.g2.bx.psu.edu/repos/iuc/mykrobe_genotype/mykrobe_genotype/0.5.6	mkyrobe genotype	Antibiotic resistance predictions				
 toolshed.g2.bx.psu.edu/repos/iuc/bedops_sortbed/bedops-sort-bed/2.4.41	bedops sort-bed					
+toolshed.g2.bx.psu.edu/repos/iuc/bedops_sortbed/bedops-sort-bed/2.4.42	bedops sort-bed					
 toolshed.g2.bx.psu.edu/repos/iuc/homer_findmotifsgenome/homer_findMotifsGenome/4.11+galaxy3	findMotifsGenome		operation_0238		homer	homer
 toolshed.g2.bx.psu.edu/repos/iuc/homer_findmotifsgenome/homer_findMotifsGenome/4.11+galaxy1	findMotifsGenome		operation_0238		homer	homer
 toolshed.g2.bx.psu.edu/repos/iuc/homer_findmotifsgenome/homer_findMotifsGenome/4.11+galaxy0	findMotifsGenome		operation_0238		homer	homer
@@ -7500,6 +7512,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/beacon2_sequence/beacon2_sequence/2.2.4+galaxy0
 toolshed.g2.bx.psu.edu/repos/iuc/beacon2_sequence/beacon2_sequence/2.2.3+galaxy0	Beacon2 Sequence	َQuery for the existence of a specified sequence at a given genomic position				
 toolshed.g2.bx.psu.edu/repos/iuc/beacon2_sequence/beacon2_sequence/2.2.1+galaxy0	Beacon2 Sequence	َQuery for the existence of a specified sequence at a given genomic position				
 toolshed.g2.bx.psu.edu/repos/iuc/ppanggolin_all/ppanggolin_all/2.2.1+galaxy0	PPanGGOLiN all	generates a partitioned pangenome	operation_0310,operation_0362,operation_3891,operation_3797	topic_0102,topic_3305,topic_0621,topic_3174,topic_0623	ppanggolin	PPanGGOLiN
+toolshed.g2.bx.psu.edu/repos/iuc/ppanggolin_all/ppanggolin_all/2.2.2+galaxy0	PPanGGOLiN all	generates a partitioned pangenome	operation_3797,operation_3891,operation_0310,operation_0362	topic_3174,topic_0102,topic_3305,topic_0621,topic_0623	ppanggolin	PPanGGOLiN
 toolshed.g2.bx.psu.edu/repos/iuc/ppanggolin_all/ppanggolin_all/2.2.1+galaxy1	PPanGGOLiN all	generates a partitioned pangenome	operation_0310,operation_3797,operation_3891,operation_0362	topic_3174,topic_0621,topic_3305,topic_0102,topic_0623	ppanggolin	PPanGGOLiN
 toolshed.g2.bx.psu.edu/repos/iuc/squirrel_phylo/squirrel_phylo/1.0.13+galaxy0	Squirrel Phylo	Phylogenetic and APOBEC3 analysis of MPXV (Mpox virus)			squirrel	squirrel
 toolshed.g2.bx.psu.edu/repos/iuc/squirrel_phylo/squirrel_phylo/1.0.12+galaxy0	Squirrel Phylo	Phylogenetic and APOBEC3 analysis of MPXV (Mpox virus)				
@@ -7819,6 +7832,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx/1.13	Samtools fas
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_shhh_seqs/mothur_shhh_seqs/1.39.5.0	Shhh.seqs	Denoise program (Quince SeqNoise)		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_shhh_seqs/mothur_shhh_seqs/1.36.1.0	Shhh.seqs	Denoise program (Quince SeqNoise)		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mmseqs2_taxonomy_assignment/mmseqs2_taxonomy_assignment/15.6f452+galaxy0	MMseqs2 Taxonomy Assignments	of sequences by comparing them to a reference database			MMseqs2	MMseqs2
+toolshed.g2.bx.psu.edu/repos/iuc/mmseqs2_taxonomy_assignment/mmseqs2_taxonomy_assignment/17-b804f+galaxy0	MMseqs2 Taxonomy Assignments	of sequences by comparing them to a reference database			MMseqs2	MMseqs2
 toolshed.g2.bx.psu.edu/repos/iuc/ivar_trim/ivar_trim/1.3.1+galaxy2	ivar trim	Trim reads in aligned BAM	operation_3778,operation_3227,operation_3225	topic_3071,topic_3168,topic_3299	ivar	iVar
 toolshed.g2.bx.psu.edu/repos/iuc/ivar_trim/ivar_trim/1.2.2+galaxy1	ivar trim	Trim reads in aligned BAM	operation_3227,operation_3225,operation_3778	topic_3168,topic_3299,topic_3071	ivar	iVar
 toolshed.g2.bx.psu.edu/repos/iuc/ivar_trim/ivar_trim/1.4.4+galaxy0	ivar trim	Trim reads in aligned BAM			andersen-lab_ivar	iVar
@@ -8044,6 +8058,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bcftools_roh/bcftools_roh/1.15.1+galaxy3	bcftoo
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_roh/bcftools_roh/1.15.1+galaxy4	bcftools roh	HMM model for detecting runs of homo/autozygosity	operation_2409,operation_3227	topic_0199,topic_3516,topic_3517,topic_2885	bcftools	BCFtools
 toolshed.g2.bx.psu.edu/repos/iuc/fairy_cov/fairy_cov/0.5.7+galaxy1	Fairy coverage	Create coverage file for specific binners				
 toolshed.g2.bx.psu.edu/repos/iuc/fairy_cov/fairy_cov/0.5.7+galaxy0	Fairy coverage	Create coverage file for specific binners				
+toolshed.g2.bx.psu.edu/repos/iuc/fairy_cov/fairy_cov/0.5.8+galaxy0	Fairy coverage	Create coverage file for specific binners			fairy	fairy
 toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_fix/cnvkit_fix/0.9.11+galaxy1	CNVkit Fix	Adjust raw coverage data	operation_3227	topic_3175	cnvkit	CNVkit
 toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_fix/cnvkit_fix/0.9.11+galaxy0	CNVkit Fix	Adjust raw coverage data	operation_3227	topic_3175	cnvkit	CNVkit
 toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_fix/cnvkit_fix/0.9.10+galaxy0.1	CNVkit Fix	Adjust raw coverage data	operation_3227	topic_3175	cnvkit	CNVkit
@@ -8450,6 +8465,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/crossmap_region/crossmap_region/0.7.0+galaxy0	C
 toolshed.g2.bx.psu.edu/repos/iuc/crossmap_region/crossmap_region/0.5.2+galaxy0	CrossMap region	Convert genome coordinates or annotation files between genome assemblies	operation_3267		crossmap	CrossMap
 toolshed.g2.bx.psu.edu/repos/iuc/crossmap_region/crossmap_region/0.6.1+galaxy0	CrossMap region	Convert genome coordinates or annotation files between genome assemblies	operation_3267		crossmap	CrossMap
 toolshed.g2.bx.psu.edu/repos/iuc/ppanggolin_msa/ppanggolin_msa/2.2.1+galaxy0	PPanGGOLiN MSA	computes MSA of pangenome's gene families	operation_3797,operation_0362,operation_3891,operation_0310	topic_3305,topic_0621,topic_3174,topic_0623,topic_0102	ppanggolin	PPanGGOLiN
+toolshed.g2.bx.psu.edu/repos/iuc/ppanggolin_msa/ppanggolin_msa/2.2.2+galaxy0	PPanGGOLiN MSA	computes MSA of pangenome's gene families	operation_3797,operation_3891,operation_0310,operation_0362	topic_3174,topic_0102,topic_3305,topic_0621,topic_0623	ppanggolin	PPanGGOLiN
 toolshed.g2.bx.psu.edu/repos/iuc/ppanggolin_msa/ppanggolin_msa/2.2.1+galaxy1	PPanGGOLiN MSA	computes MSA of pangenome's gene families	operation_0362,operation_0310,operation_3797,operation_3891	topic_0623,topic_3305,topic_0102,topic_0621,topic_3174	ppanggolin	PPanGGOLiN
 toolshed.g2.bx.psu.edu/repos/iuc/onto_tk_get_ancestor_terms/onto_tk_get_ancestor_terms/1.45.0	Get the ancestor terms of a given OBO term	Collects the ancestor terms from a given term in the given OBO ontology	operation_2495,operation_0533,operation_0313,operation_0314,operation_0315	topic_3297,topic_3518,topic_0203,topic_0749,topic_0602	onto-tools	Onto-Tools
 toolshed.g2.bx.psu.edu/repos/iuc/onto_tk_get_ancestor_terms/onto_tk_get_ancestor_terms/1.45.1	Get the ancestor terms of a given OBO term	Collects the ancestor terms from a given term in the given OBO ontology	operation_2495,operation_0315,operation_0314,operation_0313,operation_0533	topic_3518,topic_3297,topic_0749,topic_0203,topic_0602	onto-tools	Onto-Tools
@@ -9379,6 +9395,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/freyja_boot/freyja_boot/1.5.2+galaxy1	Freyja: B
 toolshed.g2.bx.psu.edu/repos/iuc/freyja_boot/freyja_boot/1.3.8+galaxy0	Freyja: Bootstrapping	method			freyja	Freyja
 toolshed.g2.bx.psu.edu/repos/iuc/freyja_boot/freyja_boot/1.5.1+galaxy0	Freyja: Bootstrapping	method			freyja	Freyja
 toolshed.g2.bx.psu.edu/repos/iuc/mmseqs2_easy_linclust_clustering/mmseqs2_easy_linclust_clustering/15.6f452+galaxy0	MMseqs2 Sequence Clustering	of very large datasets			MMseqs2	MMseqs2
+toolshed.g2.bx.psu.edu/repos/iuc/mmseqs2_easy_linclust_clustering/mmseqs2_easy_linclust_clustering/17-b804f+galaxy0	MMseqs2 Sequence Clustering	of very large datasets			MMseqs2	MMseqs2
 toolshed.g2.bx.psu.edu/repos/iuc/raxml/raxml/8.2.4+galaxy1	RAxML	Maximum Likelihood based inference of large phylogenetic trees	operation_0324,operation_2403	topic_0080,topic_3293	raxml	RAxML
 toolshed.g2.bx.psu.edu/repos/iuc/raxml/raxml/8.2.12+galaxy0	Phyogenetic reconstruction with RAxML	- Maximum Likelihood based inference of large phylogenetic trees	operation_0324,operation_2403	topic_3293,topic_0080	raxml	RAxML
 toolshed.g2.bx.psu.edu/repos/iuc/raxml/raxml/8.2.4+galaxy3	Phyogenetic reconstruction with RAxML	- Maximum Likelihood based inference of large phylogenetic trees	operation_0324,operation_2403	topic_0080,topic_3293	raxml	RAxML
@@ -18633,6 +18650,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/matchms_convert/matchms_convert/0.19.0+gala
 toolshed.g2.bx.psu.edu/repos/recetox/biotransformer/biotransformer/3.0_20230403+galaxy1	BioTransformer		operation_3929,operation_3803,operation_0417	topic_3407,topic_0154,topic_3172,topic_0152,topic_0593	biotransformer	BioTransformer
 toolshed.g2.bx.psu.edu/repos/recetox/biotransformer/biotransformer/3.0_20230403+galaxy0	BioTransformer					
 toolshed.g2.bx.psu.edu/repos/recetox/biotransformer/biotransformer/3.0.20230403+galaxy3	BioTransformer		operation_3929,operation_3803,operation_0417	topic_0152,topic_3172,topic_0154,topic_0593,topic_3407	biotransformer	BioTransformer
+toolshed.g2.bx.psu.edu/repos/recetox/biotransformer/biotransformer/3.0.20230403+galaxy4	BioTransformer		operation_3803,operation_3929,operation_0417	topic_0154,topic_0593,topic_3172,topic_3407,topic_0152	biotransformer	BioTransformer
 toolshed.g2.bx.psu.edu/repos/recetox/biotransformer/biotransformer/3.0.20230403+galaxy2	BioTransformer		operation_3929,operation_0417,operation_3803	topic_0593,topic_3172,topic_0154,topic_3407,topic_0152	biotransformer	BioTransformer
 toolshed.g2.bx.psu.edu/repos/recetox/spec2vec_training/spec2vec_training/0.6.0-0+galaxy0	spec2vec model training	Train a Spec2Vec model for mass spectra similarity scoring	operation_3860,operation_2421,operation_3803,operation_3801	topic_3172,topic_0218,topic_0121,topic_3520	spec2vec	Spec2Vec
 toolshed.g2.bx.psu.edu/repos/recetox/spec2vec_training/spec2vec_training/0.8.0+galaxy0	spec2vec model training	Train a Spec2Vec model for mass spectra similarity scoring	operation_2421,operation_3803,operation_3860,operation_3801	topic_3172,topic_0218,topic_0121,topic_3520	spec2vec	Spec2Vec
@@ -18651,6 +18669,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.24.0+
 toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_kmdnoise/mfassignr_kmdnoise/1.1.2+galaxy0	MFAssignR KMDNoise	Noise level assessment using the KMDNoise.	operation_2940	topic_3172		
 toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_kmdnoise/mfassignr_kmdnoise/1.1.1+galaxy0	MFAssignR KMDNoise	Noise level assessment using the KMDNoise.	operation_2940	topic_3172		
 toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_kmdnoise/mfassignr_kmdnoise/1.0.3+galaxy0	MFAssignR KMDNoise	Noise level assessment using the KMDNoise.	operation_2940	topic_3172		
+toolshed.g2.bx.psu.edu/repos/recetox/qcxms_neutral_run/qcxms_neutral_run/5.2.1+galaxy6	QCxMS neutral run	required as first step to prepare for the production runs	operation_3860	topic_3332		
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_neutral_run/qcxms_neutral_run/5.2.1+galaxy4	QCxMS neutral run	required as first step to prepare for the production runs	operation_3860	topic_3332		
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_neutral_run/qcxms_neutral_run/5.2.1+galaxy1	QCxMS neutral run	required as first step to prepare for the production runs	operation_0297	topic_3332		
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_neutral_run/qcxms_neutral_run/5.2.1+galaxy5	QCxMS neutral run	required as first step to prepare for the production runs	operation_3860	topic_3332		
@@ -18748,6 +18767,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.23.1+
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.17.0+galaxy0	matchMS filtering	filter and normalize mass spectrometry data				
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.24.0+galaxy0	matchms filtering	filter and normalize mass spectrometry data	operation_3695	topic_3172	matchms	Matchms
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.24.0+galaxy1	matchms filtering	filter and normalize mass spectrometry data	operation_3695	topic_3172	matchms	Matchms
+toolshed.g2.bx.psu.edu/repos/recetox/qcxms_production_run/qcxms_production_run/5.2.1+galaxy4	QCxMS production run	Production run to obtain a QCxMS simulated mass spectrum	operation_3860	topic_3332		
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_production_run/qcxms_production_run/5.2.1+galaxy1	QCxMS production run	Production run to obtain a QCxMS simulated mass spectrum	operation_0297	topic_3332		
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_production_run/qcxms_production_run/5.2.1+galaxy3	QCxMS production run	Production run to obtain a QCxMS simulated mass spectrum	operation_3860	topic_3332		
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_production_run/qcxms_production_run/5.2.1+galaxy0	QCxMS production run	Production run to obtain a QCxMS simulated mass spectrum	operation_0297	topic_3332		
@@ -18774,6 +18794,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_remove_noise/recetox_aplcms_
 toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_remove_noise/recetox_aplcms_remove_noise/0.11.0+galaxy0	recetox-aplcms - remove noise	filter noise and detect peaks in high resolution mass spectrometry (HRMS) profile data	operation_3937	topic_3172,topic_0091,topic_3520	recetox-aplcms	recetox-aplcms
 toolshed.g2.bx.psu.edu/repos/recetox/table_pandas_rename_column/table_pandas_rename_column/2.2.3+galaxy0	table rename column	of a table				
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_getres/qcxms_getres/5.2.1+galaxy1	QCxMS get results	Get result of the Production run to obtain a QCxMS simulated mass spectrum	operation_0297	topic_3332		
+toolshed.g2.bx.psu.edu/repos/recetox/qcxms_getres/qcxms_getres/5.2.1+galaxy3	QCxMS get results	Get result of the Production run to obtain a QCxMS simulated mass spectrum	operation_3860	topic_3332		
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_getres/qcxms_getres/5.2.1+galaxy0	QCxMS get results	Get result of the Production run to obtain a QCxMS simulated mass spectrum	operation_0297	topic_3332		
 toolshed.g2.bx.psu.edu/repos/recetox/qcxms_getres/qcxms_getres/5.2.1+galaxy2	QCxMS get results	Get result of the Production run to obtain a QCxMS simulated mass spectrum	operation_3860	topic_3332		
 toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_recallist/mfassignr_recallist/1.1.2+galaxy0	MFAssignR RecalList	Identification of candidate series for recalibration.	operation_3627	topic_3172		
