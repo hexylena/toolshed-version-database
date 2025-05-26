@@ -1355,6 +1355,7 @@ toolshed.g2.bx.psu.edu/repos/galaxyp/thermo_raw_file_converter/thermo_raw_file_c
 toolshed.g2.bx.psu.edu/repos/galaxyp/thermo_raw_file_converter/thermo_raw_file_converter/1.3.4+galaxy0	Thermo	RAW file converter				
 toolshed.g2.bx.psu.edu/repos/galaxyp/thermo_raw_file_converter/thermo_raw_file_converter/1.1.2	Thermo	RAW file converter				
 toolshed.g2.bx.psu.edu/repos/galaxyp/thermo_raw_file_converter/thermo_raw_file_converter/0.0.1	Thermo	RAW file converter (beta)				
+toolshed.g2.bx.psu.edu/repos/galaxyp/thermo_raw_file_converter/thermo_raw_file_converter/1.3.4+galaxy1	Thermo	RAW file converter			ThermoRawFileParser	ThermoRawFileParser
 toolshed.g2.bx.psu.edu/repos/galaxyp/thermo_raw_file_converter/thermo_raw_file_converter/1.1.10	Thermo	RAW file converter				
 toolshed.g2.bx.psu.edu/repos/galaxyp/openms_masscalculator/MassCalculator/2.6+galaxy0	MassCalculator	Calculates masses and mass-to-charge ratios of peptide sequences				
 toolshed.g2.bx.psu.edu/repos/galaxyp/openms_masscalculator/MassCalculator/2.8+galaxy0	MassCalculator	Calculates masses and mass-to-charge ratios of peptide sequences				
@@ -3813,12 +3814,15 @@ toolshed.g2.bx.psu.edu/repos/astroteam/astronomical_archives/astronomical_archiv
 toolshed.g2.bx.psu.edu/repos/astroteam/sgwb_astro_tool/sgwb_astro_tool/0.0.1+galaxy0	SGWB					
 toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fits2bitmap/astropy_fits2bitmap/0.1.0+galaxy0	astropy fits2bitmap					
 toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fits2bitmap/astropy_fits2bitmap/0.2.0+galaxy0	astropy fits2bitmap					
+toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fits2bitmap/astropy_fits2bitmap/0.2.0+galaxy1	astropy fits2bitmap					
 toolshed.g2.bx.psu.edu/repos/astroteam/hess_astro_tool/hess_astro_tool/0.0.2+galaxy0	HESS					
 toolshed.g2.bx.psu.edu/repos/astroteam/hess_astro_tool/hess_astro_tool/0.0.1+galaxy0	HESS					
 toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fitsinfo/astropy_fitsinfo/0.1.0+galaxy0	astropy fitsinfo					
 toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fitsinfo/astropy_fitsinfo/0.2.0+galaxy0	astropy fitsinfo					
+toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fitsinfo/astropy_fitsinfo/0.2.0+galaxy1	astropy fitsinfo					
 toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fits2csv/astropy_fits2csv/0.1.0+galaxy0	astropy fits2csv					
 toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fits2csv/astropy_fits2csv/0.2.0+galaxy0	astropy fits2csv					
+toolshed.g2.bx.psu.edu/repos/astroteam/astropy_fits2csv/astropy_fits2csv/0.2.0+galaxy1	astropy fits2csv					
 toolshed.g2.bx.psu.edu/repos/iss/chewbbaca/chewBBACA/2.0	chewBBACA	BSR-Based Allele Calling Algorithm				
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_export/matchms_metadata_export/0.24.0+galaxy2	matchms metadata export	extract all metadata from mass spectra file to tabular format	operation_0336,operation_3801,operation_3695	topic_3172	matchms	Matchms
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_metadata_export/matchms_metadata_export/0.19.0+galaxy0	matchms metadata export	extract all metadata from mass spectra file to tabular format	operation_3695,operation_3801,operation_0336	topic_3172	matchms	Matchms
@@ -4127,6 +4131,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/ms2deepscore_config_generator/ms2deepscore_
 toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_findrecalseries/mfassignr_findRecalSeries/1.1.1+galaxy1	MFAssignR FindRecalSeries	Selects most suitable series for recalibration	operation_3627	topic_3172	mfassignr	MFAssignR
 toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_findrecalseries/mfassignr_findRecalSeries/1.1.2+galaxy1	MFAssignR FindRecalSeries	Selects most suitable series for recalibration	operation_3627	topic_3172	mfassignr	MFAssignR
 toolshed.g2.bx.psu.edu/repos/recetox/rcx_tk/rcx-tk/0.1.0+galaxy0	rcx-tk		operation_0336,operation_3695	topic_3172,topic_0091,topic_3520		
+toolshed.g2.bx.psu.edu/repos/recetox/rcx_tk/rcx-tk/0.1.0+galaxy1	rcx-tk	Processes and standardizes metadata or alkane files by rearranging columns, validating file names, and deriving new columns for downstream analysis.	operation_0336,operation_3695	topic_3172,topic_0091,topic_3520		
 toolshed.g2.bx.psu.edu/repos/recetox/waveica/waveica/0.2.0+galaxy2	WaveICA	removal of batch effects for untargeted metabolomics data				
 toolshed.g2.bx.psu.edu/repos/recetox/waveica/waveica/0.2.0+galaxy6	WaveICA	removal of batch effects for untargeted metabolomics data	operation_3435	topic_3172	waveica	WaveICA
 toolshed.g2.bx.psu.edu/repos/recetox/waveica/waveica/0.2.0+galaxy3	WaveICA	removal of batch effects for untargeted metabolomics data	operation_3435	topic_3172	waveica	WaveICA
@@ -11440,6 +11445,8 @@ toolshed.g2.bx.psu.edu/repos/geert-vandeweyer/coverage_report/CoverageReport2/0.
 toolshed.g2.bx.psu.edu/repos/geert-vandeweyer/coverage_report/CoverageReport2/0.0.2	Panel Coverage Report					
 toolshed.g2.bx.psu.edu/repos/rayane_elm/gemma/gemma-tool/1.0.0	GEMMA Analysis	Run association tests and kinship analysis with GEMMA				
 toolshed.g2.bx.psu.edu/repos/rayane_elm/gwas_quality_control_plink/quality_control/1.0.0	Quality control for GWAS analysis	Run quality control on genotype data for GWAS analysis.				
+toolshed.g2.bx.psu.edu/repos/rayane_elm/gwas_quality_control_plink/quality_control/1.0.1	Quality control for GWAS analysis	Run quality control on genotype data for GWAS analysis.				
+toolshed.g2.bx.psu.edu/repos/rayane_elm/gwas_quality_control_plink/quality_control/1.0.2	Quality control for GWAS analysis	Run quality control on genotype data for GWAS analysis.				
 toolshed.g2.bx.psu.edu/repos/rayane_elm/extract_url/dataset_url_extractor_2/1.0	Dataset URL Extractor	Generate a text file containing URLs of input datasets				
 toolshed.g2.bx.psu.edu/repos/gandres/vcftools_filter_stats_diversity/sniplay_vcftoolsstats/1.2.0	VCFtools Stats					
 toolshed.g2.bx.psu.edu/repos/gandres/vcftools_filter_stats_diversity/sniplay_vcftoolsstats/1.1.0	VCFtools Stats					
@@ -12081,6 +12088,7 @@ toolshed.g2.bx.psu.edu/repos/yating-l/gbtofasta/gbtofasta/1.0	gbToFasta	Convert 
 toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/377+galaxy1	UCSC BLAT Alignment Tool	BLAST-like sequence alignment tool			blat	BLAT
 toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/377+galaxy0	UCSC BLAT Alignment Tool	BLAST-like sequence alignment tool			blat	BLAT
 toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/1.0	UCSC BLAT Alignment Tool	BLAST-like sequence alignment tool			blat	BLAT
+toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/481+galaxy0	UCSC BLAT Alignment Tool	BLAST-like sequence alignment tool			blat	BLAT
 toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/35-0	UCSC BLAT Alignment Tool	BLAST-like sequence alignment tool			blat	BLAT
 toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/36	UCSC BLAT Alignment Tool	BLAST-like sequence alignment tool			blat	BLAT
 toolshed.g2.bx.psu.edu/repos/yating-l/ucsc_blat/ucsc_blat/1.2	UCSC BLAT Alignment Tool	BLAST-like sequence alignment tool			blat	BLAT
@@ -17063,6 +17071,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/volcanoplot/volcanoplot/0.0.2	Volcano Plot	crea
 toolshed.g2.bx.psu.edu/repos/iuc/volcanoplot/volcanoplot/0.0.7	Volcano Plot	create a volcano plot	operation_0337	topic_0092		
 toolshed.g2.bx.psu.edu/repos/iuc/volcanoplot/volcanoplot/0.0.6	Volcano Plot	create a volcano plot	operation_0337	topic_0092		
 toolshed.g2.bx.psu.edu/repos/iuc/volcanoplot/volcanoplot/0.0.4	Volcano Plot	create a volcano plot	operation_0337	topic_0092		
+toolshed.g2.bx.psu.edu/repos/iuc/volcanoplot/volcanoplot/3.5.2+galaxy0	Volcano Plot	create a volcano plot	operation_0337	topic_0092		
 toolshed.g2.bx.psu.edu/repos/iuc/volcanoplot/volcanoplot/0.0.1	Volcano Plot	create a volcano plot				
 toolshed.g2.bx.psu.edu/repos/iuc/gem_extract_exchange/gem_extract_exchange/0.29.1	Get exchange bounds	of a GEM				
 toolshed.g2.bx.psu.edu/repos/iuc/gemini_set_somatic/gemini_set_somatic/0.18.1.0	GEMINI set_somatic	Tag somatic mutations in a GEMINI database	operation_3197,operation_2403	topic_0080	gemini	GEMINI
@@ -17092,6 +17101,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/mothur_chop_seqs/mothur_chop_seqs/1.39.5.0	Chop
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_split_stratified_table/humann2_split_stratified_table/0.11.1.0	Split stratified table		operation_3929		humann2	HUMAnN2
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_split_stratified_table/humann2_split_stratified_table/0.11.1.1	Split stratified table		operation_3929		humann2	HUMAnN2
 toolshed.g2.bx.psu.edu/repos/iuc/plasmidfinder/plasmidfinder/2.1.6+galaxy1	PlasmidFinder	Plasmid identification in bacteria.			PlasmidFinder	PlasmidFinder
+toolshed.g2.bx.psu.edu/repos/iuc/mirmachine/mirmachine/0.3.0+galaxy0	MirMachine	A tool to detect miRNA homologs in genome sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/mirmachine/mirmachine/0.2.13+galaxy1	MirMachine	A tool to detect miRNA homologs in genome sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/mirmachine/mirmachine/0.2.13+galaxy0	MirMachine	A tool to detect miRNA homologs in genome sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/metabat2_jgi_summarize_bam_contig_depths/metabat2_jgi_summarize_bam_contig_depths/2.15+galaxy1	Calculate contig depths	for MetaBAT2			MetaBAT_2	MetaBAT 2
@@ -19887,6 +19897,8 @@ toolshed.g2.bx.psu.edu/repos/ecology/data_paper_from_eml/data_paper_from_EML/0.1
 toolshed.g2.bx.psu.edu/repos/ecology/srs_preprocess_s2/srs_preprocess_s2/0.0.1	Preprocess sentinel 2 data	read, crop, resample and write it as a raster stack				
 toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_flight_curve/regionalgam_flight_curve/1.5	Flight curve	compute the regional expected pattern of abundance				
 toolshed.g2.bx.psu.edu/repos/ecology/zoo_project_ogc_api_processes/zoo_project_ogc_api_processes/0.1.0	Zoo Project OGC API Processes	executes remote OTB processes				
+toolshed.g2.bx.psu.edu/repos/ecology/crsconverter/crsconverter/1.0+galaxy0	CRSconverter	from environmental predictors for species distribution modeling				
+toolshed.g2.bx.psu.edu/repos/ecology/crsconverter/crsconverter/1.1+galaxy0	CRSconverter	from environmental predictors for species distribution modeling				
 toolshed.g2.bx.psu.edu/repos/ecology/eal_table_template/eal_table_template/0.1.0+galaxy0	Make templates for data tables	attributes and categorical variables for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/eal_table_template/eal_table_template/0.1.1+galaxy0	Make templates for data tables	attributes and categorical variables for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/srs_process_data/srs_process_data/0.0.1	Compare diversity indicators	with remote sensing data				
@@ -19900,12 +19912,14 @@ toolshed.g2.bx.psu.edu/repos/ecology/bgc_canyon_b/bgc_canyon_b/0.9.3+galaxy0	Can
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_bilanenrichipf/vigiechiro_bilanenrichipf/0.1.0	Advanced restitution: 'Point fixe' protocol	from Animal Detection on Acoustic Recordings				
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_bilanenrichipf/vigiechiro_bilanenrichipf/0.1.1	Advanced restitution: 'Point fixe' protocol	from Animal Detection on Acoustic Recordings				
 toolshed.g2.bx.psu.edu/repos/ecology/eml2eal/eml2eal/0.1.0+galaxy0	EML to EAL	Create EAL templates from EML metadata				
+toolshed.g2.bx.psu.edu/repos/ecology/estimate_endem/estimate_endem/0.1.0+galaxy0	EstimEndem	of each cell of a spatial grid				
 toolshed.g2.bx.psu.edu/repos/ecology/sdmpredictors_list_layers/sdmpredictors_list_layers/0.2.15+galaxy0	SdmPredictors List Layers	from environmental predictors for species distribution modeling				
 toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_gls_adjusted/regionalgam_gls_adjusted/1.5	Linear regression ajusted	for autocorrelation in the residuals				
 toolshed.g2.bx.psu.edu/repos/ecology/sanntis_marine/sanntis_marine/0.9.3.5+galaxy1	Sanntis biosynthetic gene clusters	in genomic and metagenomic data		topic_3387		
 toolshed.g2.bx.psu.edu/repos/ecology/sanntis_marine/sanntis_marine/0.9.3.5+galaxy0	Sanntis biosynthetic gene clusters	in genomic and metagenomic data		topic_3387		
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_ogr2ogr/gdal_ogr2ogr/2.4.0	OGR2ogr	converts simple features data between file formats				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_ogr2ogr/gdal_ogr2ogr/3.0.0	OGR2ogr	converts simple features data between file formats				
+toolshed.g2.bx.psu.edu/repos/ecology/phylogenetic_occupancy_matcher/phylogenetic_occupancy_matcher/1.0+galaxy0	PhylOccuMatcher	match phylogenetic and occupancy data				
 toolshed.g2.bx.psu.edu/repos/ecology/srs_global_indices/srs_global_indices/0.0.1	Compute biodiversity indices	from remote sensing data				
 toolshed.g2.bx.psu.edu/repos/ecology/spocc_occ/spocc_occ/0.9.0	Get species occurrences data	from GBIF, ALA, iNAT and others				
 toolshed.g2.bx.psu.edu/repos/ecology/spocc_occ/spocc_occ/1.2.2	Get species occurrences data	from GBIF, OBIS, ALA, iNAT and others		topic_0610,topic_3050		
@@ -19937,6 +19951,7 @@ toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdalinfo/gdal_gdalinfo/2.4.0	GDAL Info
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdalinfo/gdal_gdalinfo/3.0.0	GDAL Informations	lists information about a raster dataset				
 toolshed.g2.bx.psu.edu/repos/ecology/cb_dissim/cb_dissim/0.0.0	QECB-Dissimilarity	indicator				
 toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_gls/regionalgam_gls/1.5	Model temporal trend	with a simple linear regression				
+toolshed.g2.bx.psu.edu/repos/ecology/phylo_index/phylo_index/1.0+galaxy0	PhyloIndex	compute phylodiversity index based on matched phylogenetic and occupancy data				
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_presabs/pampa_presabs/0.0.2	Calculate presence absence table	calculate presence absence table from observation data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_presabs/pampa_presabs/0.0.1	Calculate presence absence table	calculate presence absence table from observation data				
 toolshed.g2.bx.psu.edu/repos/ecology/geo_cov_template/geo_cov_template/0.1.0+galaxy0	Make geographic coverage template	for EML metadata creation				
