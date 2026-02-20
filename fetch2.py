@@ -37,7 +37,7 @@ def fetch_name(tool_id):
             print(f"Could not load {tool_id}")
             raise Exception()
 
-    biotools_xrefs = [x['value'] for x in meta.get('xrefs', []) if x['reftype'] == 'bio.tools']
+    biotools_xrefs = [x['value'] for x in meta.get('xrefs', []) if x.get('reftype') == 'bio.tools']
     biotools_name = ""
     biotools_xref = ""
     if len(biotools_xrefs) > 0:
