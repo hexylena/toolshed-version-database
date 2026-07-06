@@ -953,8 +953,10 @@ toolshed.g2.bx.psu.edu/repos/ecology/nfdi4earth_os4a/nfdi4earth_os4a/1.2	NFDI4Ea
 toolshed.g2.bx.psu.edu/repos/ecology/nfdi4earth_os4a/nfdi4earth_os4a/1.0	NFDI4Earth OneStop4All Importer	downloads content via NFDI4Earth's OS4A search user interface				
 toolshed.g2.bx.psu.edu/repos/ecology/nfdi4earth_os4a/nfdi4earth_os4a/1.1	NFDI4Earth OneStop4All Importer	downloads content via NFDI4Earth's OS4A search user interface				
 toolshed.g2.bx.psu.edu/repos/ecology/effective_population_size_ld_method/effective_population_size_ld_method/0.1.0	LDNe estimation	using RLDNe package and NeEstimator.				
+toolshed.g2.bx.psu.edu/repos/ecology/effective_population_size_ld_method/effective_population_size_ld_method/0.2.1	LDNe estimation	using RLDNe package and NeEstimator.				
 toolshed.g2.bx.psu.edu/repos/ecology/effective_population_size_ld_method/effective_population_size_ld_method/0.2.0	LDNe estimation	using RLDNe package and NeEstimator.				
 toolshed.g2.bx.psu.edu/repos/ecology/effective_population_size_ld_method/effective_population_size_ld_method/0.1.1	LDNe estimation	using RLDNe package and NeEstimator.				
+toolshed.g2.bx.psu.edu/repos/ecology/effective_population_size_ld_method/effective_population_size_ld_method/0.2.2	LDNe estimation	using RLDNe package and NeEstimator.				
 toolshed.g2.bx.psu.edu/repos/ecology/ecology_beta_diversity/ecology_beta_diversity/0.0.0	Local Contributions to Beta Diversity (LCBD)	Computes a measure of beta diversity, SCBD and representations		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/srs_global_indices/srs_global_indices/0.0.1	Compute biodiversity indices	from remote sensing data				
 toolshed.g2.bx.psu.edu/repos/ecology/srs_process_data/srs_process_data/0.0.1	Compare diversity indicators	with remote sensing data				
@@ -991,6 +993,7 @@ toolshed.g2.bx.psu.edu/repos/ecology/mean_geom/Mean_geom/0.1.0+galaxy0	Geometric
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_presabs/pampa_presabs/0.0.2	Calculate presence absence table	calculate presence absence table from observation data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_presabs/pampa_presabs/0.0.1	Calculate presence absence table	calculate presence absence table from observation data				
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_filtering/population_genomics_vcf_filtering/0.1.0	VCF filtering	of individuals and variants				
+toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_filtering/population_genomics_vcf_filtering/0.2.0	VCF filtering	of individuals and variants				
 toolshed.g2.bx.psu.edu/repos/ecology/srs_spectral_indices/srs_spectral_indices/0.0.1	Compute spectral indices	as NDVI from remote sensing data				
 toolshed.g2.bx.psu.edu/repos/ecology/wildlife_megadetector_huggingface/wildlife_megadetector_huggingface/0.1.1+galaxy0	Wildlife Detection	Detect and classify wildlife species in images and videos using MegaDetector and Hugging Face models (AI).				
 toolshed.g2.bx.psu.edu/repos/ecology/wildlife_megadetector_huggingface/wildlife_megadetector_huggingface/0.1.2+galaxy0	DeepForestVision	DeepForestVision is an AI model designed to identify wildlife on camera trap images and videos from African tropical forests.				
@@ -1039,6 +1042,7 @@ toolshed.g2.bx.psu.edu/repos/ecology/stoc_trend_indic/stoceps_trend_indic/0.0.2	
 toolshed.g2.bx.psu.edu/repos/ecology/stoc_trend_indic/stoceps_trend_indic/0.0.1	Temporal trend indicator	using GlmmTMB or GAM models				
 toolshed.g2.bx.psu.edu/repos/ecology/ecology_link_between_var/ecology_link_between_var/0.0.0	Variables exploration	Shows interaction, correlation, colinearity, produces a PCA and computes VIF for biodiversity abundance data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_split_vcf_by_pop/population_genomics_split_vcf_by_pop/0.1.0	Split VCF by pop	from an individuals/population table				
+toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_split_vcf_by_pop/population_genomics_split_vcf_by_pop/0.2.0	Split VCF by pop	from an individuals/population table				
 toolshed.g2.bx.psu.edu/repos/ecology/sdmpredictors_list_layers/sdmpredictors_list_layers/0.2.15+galaxy0	SdmPredictors List Layers	from environmental predictors for species distribution modeling				
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_bilanenrichirp/vigiechiro_bilanenrichirp/0.1.0	Advanced restitution: 'Routier'or 'Pedestre' protocols	from Animal Detection on Acoustic Recordings				
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_bilanenrichirp/vigiechiro_bilanenrichirp/0.1.1	Advanced restitution: 'Routier'or 'Pedestre' protocols	from Animal Detection on Acoustic Recordings				
@@ -1079,6 +1083,7 @@ toolshed.g2.bx.psu.edu/repos/ecology/iabiodiv_smartbiodiv_med_environ/iabiodiv_s
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_glmsp/pampa_glmsp/0.0.2	Compute GLM on population data	Compute a GLM of your choice on population data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_glmsp/pampa_glmsp/0.0.1	Compute GLM on population data	Compute a GLM of your choice on population data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/genetic_format_conversion/genetic_format_conversion/0.1.0	Genetic format conversion	using PGDSpider and additional conversion modules.				
+toolshed.g2.bx.psu.edu/repos/ecology/genetic_format_conversion/genetic_format_conversion/0.2.1	Genetic format conversion	using PGDSpider and additional conversion modules.				
 toolshed.g2.bx.psu.edu/repos/ecology/genetic_format_conversion/genetic_format_conversion/0.2.0	Genetic format conversion	using PGDSpider and additional conversion modules.				
 toolshed.g2.bx.psu.edu/repos/ecology/srs_diversity_maps/srs_diversity_maps/0.0.1	Map diversity	from remote sensing data				
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_importer/aquainfra_importer/1.0	AquaINFRA Importer	downloads content via the AquaINFRA interaction platform				
@@ -1094,6 +1099,7 @@ toolshed.g2.bx.psu.edu/repos/ecology/annotations_template/annotations_template/0
 toolshed.g2.bx.psu.edu/repos/ecology/wormsmeasurements/WormsMeasurements/0.1.2	Enrich dataset with WoRMS	Enrich dataset with measurement type data from WoRMS				
 toolshed.g2.bx.psu.edu/repos/ecology/wormsmeasurements/WormsMeasurements/0.1.1	Enrich dataset with WoRMS	Enrich dataset with measurement type data from WoRMS				
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_subset/population_genomics_vcf_subset/0.1.0	Subsetting SNPs at random from a VCF file	given a chosen number of SNPs to use				
+toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_subset/population_genomics_vcf_subset/0.2.0	Subsetting SNPs at random from a VCF file	given a chosen number of SNPs to use				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_taxa_seeker/ecoregion_taxa_seeker/0.1.2+galaxy0	TaxaSeeker	for recover list of taxa				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_taxa_seeker/ecoregion_taxa_seeker/0.1.0+galaxy0	TaxaSeeker	for recover list of taxa				
 toolshed.g2.bx.psu.edu/repos/ecology/zoo_project_ogc_api_processes/zoo_project_ogc_api_processes/0.1.0	Zoo Project OGC API Processes	executes remote OTB processes				
@@ -1171,6 +1177,7 @@ toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_glmmpql/regionalgam_glmmpql/1.5
 toolshed.g2.bx.psu.edu/repos/ecology/dapc_kmeans/dapc_kmeans/0.1.0	Discriminant analysis of principal components (DAPC) to genotype data	using Kmeans or a k-fixed (SNPs and SSRs).				
 toolshed.g2.bx.psu.edu/repos/ecology/lea_snmf_application/LEA_snmf_application/0.1.0	Genetic Clustering	with LEA (sNMF) for VCF or SSR data				
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_keep_remove_individuals/population_genomics_vcf_keep_remove_individuals/0.1.0	Keep or remove selected individuals	from a VCF				
+toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_keep_remove_individuals/population_genomics_vcf_keep_remove_individuals/0.2.0	Keep or remove selected individuals	from a VCF				
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_import_data/xarray_import_data/0.1.0	Xarray Import Data	Import a dataset from an OPeNDAP URL and convert it to a local NetCDF file using xarray.				
 toolshed.g2.bx.psu.edu/repos/ecology/argo_getdata/argo_getdata/0.1.15+galaxy0	Argo data access	for global ocean in situ observing system				
 toolshed.g2.bx.psu.edu/repos/ecology/cb_div/cb_div/0.0.0	Diversity	indicators				
@@ -2813,6 +2820,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.7+galaxy0	DESeq2	Determin
 toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.8+galaxy1	DESeq2	Determines differentially expressed features from count tables	operation_3800	topic_3308		
 toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.1.8.3	DESeq2	Determines differentially expressed features from count tables				
 toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.2	DESeq2	Determines differentially expressed features from count tables				
+toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.8+galaxy3	DESeq2	Determines differentially expressed features from count tables	operation_3800	topic_3308		
 toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.8+galaxy2	DESeq2	Determines differentially expressed features from count tables	operation_3800	topic_3308		
 toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.1.8.2	DESeq2	Determines differentially expressed features from count tables	operation_3800	topic_3308	DESeq2	DESeq2
 toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40	DESeq2	Determines differentially expressed features from count tables	operation_3800	topic_3308	DESeq2	DESeq2
@@ -13056,6 +13064,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/nanopolish_methylation/nanopolish_methyla
 toolshed.g2.bx.psu.edu/repos/bgruening/nanopolish_methylation/nanopolish_methylation/0.14.0+galaxy0	Nanopolish methylation	- Classify nucleotides as methylated or not.	operation_2429,operation_0310,operation_2238,operation_3204,operation_3197	topic_2269,topic_0080,topic_0199,topic_3168	nanopolish	nanopolish
 toolshed.g2.bx.psu.edu/repos/bgruening/nanopolish_methylation/nanopolish_methylation/0.11.1	Nanopolish methylation	- Classify nucleotides as methylated or not.	operation_2238,operation_2429,operation_3204,operation_3197,operation_0310	topic_0080,topic_0199,topic_3168,topic_2269	nanopolish	nanopolish
 toolshed.g2.bx.psu.edu/repos/bgruening/instagraal/instagraal/0.1.6+galaxy0	instaGRAAL	Large genome reassembly based on Hi-C data	operation_0525,operation_0282,operation_0523,operation_3216	topic_2269,topic_0196,topic_3125,topic_3174,topic_0102	instagraal	instaGRAAL
+toolshed.g2.bx.psu.edu/repos/bgruening/instagraal/instagraal/0.2.0+galaxy0	instaGRAAL	Large genome reassembly based on Hi-C data				
 toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_gc_bias/deeptools_compute_gc_bias/2.4.2.0	computeGCBias	Determine the GC bias of your sequenced reads	operation_3435,operation_0337	topic_0622,topic_3169	deeptools	DeepTools
 toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_gc_bias/deeptools_compute_gc_bias/3.3.2.0.0	computeGCBias	Determine the GC bias of your sequenced reads	operation_0337,operation_3435	topic_3169,topic_0622	deeptools	DeepTools
 toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_gc_bias/deeptools_compute_gc_bias/2.1.0.0	computeGCBias	Determine the GC bias of your sequenced reads	operation_0337,operation_3435	topic_0622,topic_3169	deeptools	DeepTools
@@ -16454,6 +16463,7 @@ toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.5	msconvert	C
 toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.6	msconvert	Convert and/or filter mass spectrometry files	operation_0335,operation_3695	topic_3520,topic_0121	msconvert	msConvert
 toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.19052.0	msconvert	Convert and/or filter mass spectrometry files	operation_3695,operation_0335	topic_0121,topic_3520	msconvert	msConvert
 toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.2	msconvert	Convert and/or filter mass spectrometry files	operation_3695,operation_0335	topic_3520,topic_0121	msconvert	msConvert
+toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.26121.8	msconvert	Convert and/or filter mass spectrometry files				
 toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.26121.7	msconvert	Convert and/or filter mass spectrometry files	operation_3695,operation_0335	topic_3520,topic_0121		
 toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.4	msconvert	Convert and/or filter mass spectrometry files	operation_0335,operation_3695	topic_0121,topic_3520	msconvert	msConvert
 toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.3	msconvert	Convert and/or filter mass spectrometry files	operation_3695,operation_0335	topic_0121,topic_3520	msconvert	msConvert
@@ -20248,6 +20258,7 @@ toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.12	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.7	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.6	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
+toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.14	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.5	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.2	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.4	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
@@ -21373,6 +21384,7 @@ toolshed.g2.bx.psu.edu/repos/ethevenot/multivariate/Multivariate/2.3.2	Multivari
 toolshed.g2.bx.psu.edu/repos/ethevenot/multivariate/Multivariate/2.3.4	Multivariate	PCA, PLS and OPLS				
 toolshed.g2.bx.psu.edu/repos/ethevenot/checkformat/checkFormat/3.0.0	Check Format	Checking/formatting the sample and variable names of the dataMatrix, sampleMetadata, and variableMetadata files				
 toolshed.g2.bx.psu.edu/repos/ethevenot/checkformat/checkFormat/2.0.4	Check Format	Checks the formats of the dataMatrix, sampleMetadata, and variableMetadata files				
+toolshed.g2.bx.psu.edu/repos/ethevenot/checkformat/checkFormat/4.0.0+galaxy0	Check Format	Checking/formatting the sample and variable names of the dataMatrix, sampleMetadata, and variableMetadata files				
 toolshed.g2.bx.psu.edu/repos/ethevenot/checkformat/checkFormat/2.0.2	Check Format	Checking/formatting the sample and variable names of the dataMatrix, sampleMetadata, and variableMetadata files				
 toolshed.g2.bx.psu.edu/repos/ethevenot/univariate/Univariate/2.1.1	Univariate	Univariate statistics				
 toolshed.g2.bx.psu.edu/repos/ethevenot/univariate/Univariate/2.1.4	Univariate	Univariate statistics				
@@ -22311,6 +22323,7 @@ toolshed.g2.bx.psu.edu/repos/q2d2/qiime2__demux__emp_single/qiime2__demux__emp_s
 toolshed.g2.bx.psu.edu/repos/q2d2/qiime2__demux__emp_single/qiime2__demux__emp_single/2024.5.0+q2galaxy.2024.5.0	qiime2 demux emp-single	Demultiplex sequence data generated with the EMP protocol.				
 toolshed.g2.bx.psu.edu/repos/q2d2/qiime2__demux__emp_single/qiime2__demux__emp_single/2025.4.0+q2galaxy.2025.4.0	qiime2 demux emp-single	Demultiplex sequence data generated with the EMP protocol.	operation_0324,operation_3460,operation_3933,operation_0337	topic_3174,topic_3697,topic_3941,topic_0084	qiime2	QIIME 2
 toolshed.g2.bx.psu.edu/repos/q2d2/qiime2__demux__emp_single/qiime2__demux__emp_single/2026.1.0+q2galaxy.2026.1.0	qiime2 demux emp-single	Demultiplex sequence data generated with the EMP protocol.	operation_3460,operation_3933,operation_0324,operation_0337	topic_3941,topic_3174,topic_3697,topic_0084		
+toolshed.g2.bx.psu.edu/repos/q2d2/qiime2__composition__ancombc2/qiime2__composition__ancombc2/2026.1.0+0.g4b3aa86.dirty-q2galaxy.2026.1.0	qiime2 composition ancombc2	ANCOM-BC2: Analysis of Composition of Microbiomes with Bias Correction 2.				
 toolshed.g2.bx.psu.edu/repos/q2d2/qiime2__composition__ancombc2/qiime2__composition__ancombc2/2025.7.0+q2galaxy.2025.7.0	qiime2 composition ancombc2	ANCOM-BC2: Analysis of Composition of Microbiomes with Bias Correction 2.				
 toolshed.g2.bx.psu.edu/repos/q2d2/qiime2__composition__ancombc2/qiime2__composition__ancombc2/2025.10.0+q2galaxy.2025.10.0	qiime2 composition ancombc2	ANCOM-BC2: Analysis of Composition of Microbiomes with Bias Correction 2.				
 toolshed.g2.bx.psu.edu/repos/q2d2/qiime2__composition__ancombc2/qiime2__composition__ancombc2/2025.4.0+q2galaxy.2025.4.0	qiime2 composition ancombc2	ANCOM-BC2: Analysis of Composition of Microbiomes with Bias Correction 2.				
