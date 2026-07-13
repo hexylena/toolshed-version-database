@@ -496,6 +496,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/table_scipy_interpolate/table_scipy_interpo
 toolshed.g2.bx.psu.edu/repos/recetox/table_scipy_interpolate/table_scipy_interpolate/1.17.1+galaxy0	table scipy interpolate	interpolate data using the scipy.interpolate library				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_find_relationships_chemicals/aoptk_find_relationships_chemicals/0.5.0+galaxy2	aoptk find relationships chemicals	Identify relationships between chemicals and effects.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_find_relationships_chemicals/aoptk_find_relationships_chemicals/0.5.0+galaxy1	aoptk find relationships chemicals	Identify relationships between chemicals and effects.				
+toolshed.g2.bx.psu.edu/repos/recetox/aoptk_find_relationships_chemicals/aoptk_find_relationships_chemicals/0.5.0+galaxy4	aoptk find relationships chemicals	Identify relationships between chemicals and effects.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_find_relationships_chemicals/aoptk_find_relationships_chemicals/0.5.0+galaxy3	aoptk find relationships chemicals	Identify relationships between chemicals and effects.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_find_relationships_chemicals/aoptk_find_relationships_chemicals/0.5.0+galaxy0	aoptk find relationships chemicals	Identify relationships between chemicals and effects.				
 toolshed.g2.bx.psu.edu/repos/recetox/recetox_msfinder/recetox_msfinder/v3.5.2+galaxy3	RECETOX MsFinder	Annotation of fragment peaks in mass spectral libraries.			recetox-msfinder	recetox-msfinder
@@ -626,6 +627,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.22.0+
 toolshed.g2.bx.psu.edu/repos/recetox/matchms_filtering/matchms_filtering/0.33.1+galaxy0	matchms filtering	filter and normalize mass spectrometry data	operation_3695	topic_3172		
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_normalize_chemicals/aoptk_normalize_chemicals/0.5.0+galaxy2	aoptk normalize chemicals	Normalize chemical entities using LLMs.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_normalize_chemicals/aoptk_normalize_chemicals/0.5.0+galaxy1	aoptk normalize chemicals	Normalize chemical entities using LLMs.				
+toolshed.g2.bx.psu.edu/repos/recetox/aoptk_normalize_chemicals/aoptk_normalize_chemicals/0.5.0+galaxy4	aoptk normalize chemicals	Normalize chemical entities using LLMs.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_normalize_chemicals/aoptk_normalize_chemicals/0.5.0+galaxy3	aoptk normalize chemicals	Normalize chemical entities using LLMs.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_normalize_chemicals/aoptk_normalize_chemicals/0.5.0+galaxy0	aoptk normalize chemicals	Normalize chemical entities using LLMs.				
 toolshed.g2.bx.psu.edu/repos/recetox/mztabm_validate/mztabm_validate/1.0.6+galaxy0	mztab-m validate	validate mztab-m files	operation_1812,operation_0336,operation_0335	topic_3172,topic_0219,topic_0089		
@@ -701,6 +703,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_mfassign/mfassignr_mfassign/1.1.1
 toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_mfassign/mfassignr_mfassign/1.1.1+galaxy0	MFAssignR MFAssign	Molecular formula assignment.		topic_3172		
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_download_publication_data/aoptk_download_publication_data/0.5.0+galaxy2	aoptk download publication data	Download publication data - full text publications and figures, abstracts, or PDFs.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_download_publication_data/aoptk_download_publication_data/0.5.0+galaxy1	aoptk download publication data	Download publication data - full text publications and figures, abstracts, or PDFs.				
+toolshed.g2.bx.psu.edu/repos/recetox/aoptk_download_publication_data/aoptk_download_publication_data/0.5.0+galaxy4	aoptk download publication data	Download publication data - full text publications and figures, abstracts, or PDFs.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_download_publication_data/aoptk_download_publication_data/0.5.0+galaxy3	aoptk download publication data	Download publication data - full text publications and figures, abstracts, or PDFs.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_download_publication_data/aoptk_download_publication_data/0.5.0+galaxy0	aoptk download publication data	Download publication data - full text publications and figures, abstracts, or PDFs.				
 toolshed.g2.bx.psu.edu/repos/recetox/recetox_aplcms_align_features/recetox_aplcms_align_features/0.12.0+galaxy1	recetox-aplcms - align features	align peaks across samples	operation_2928	topic_3172,topic_0091,topic_3520	recetox-aplcms	recetox-aplcms
@@ -744,6 +747,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_histnoise/mfassignr_histnoise/1.1
 toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_histnoise/mfassignr_histnoise/1.1.1+galaxy0	MFAssignR HistNoise	Noise level assessment using the HistNoise		topic_3172		
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_query_literature/aoptk_query_literature/0.5.0+galaxy2	aoptk query literature	Query literature for a list of publication IDs.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_query_literature/aoptk_query_literature/0.5.0+galaxy1	aoptk query literature	Query literature for a list of publication IDs.				
+toolshed.g2.bx.psu.edu/repos/recetox/aoptk_query_literature/aoptk_query_literature/0.5.0+galaxy4	aoptk query literature	Query literature for a list of publication IDs.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_query_literature/aoptk_query_literature/0.5.0+galaxy3	aoptk query literature	Query literature for a list of publication IDs.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_query_literature/aoptk_query_literature/0.5.0+galaxy0	aoptk query literature	Query literature for a list of publication IDs.				
 toolshed.g2.bx.psu.edu/repos/recetox/mfassignr_recal/mfassignr_recal/1.0.3+galaxy0	MFAssignR Recal	Internal mass recalibration using a recalibrant series.	operation_3627	topic_3172		
@@ -873,6 +877,7 @@ toolshed.g2.bx.psu.edu/repos/recetox/spec2vec_similarity/spec2vec_similarity/0.8
 toolshed.g2.bx.psu.edu/repos/recetox/rename_annotated_feature/rename_annotated_feature/1.0.0+galaxy0	Rename Annotated Feature	Rename columns in abundance table based on annotations table				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_parse_pdf/aoptk_parse_pdf/0.5.0+galaxy2	aoptk parse PDF	Parse PDF files.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_parse_pdf/aoptk_parse_pdf/0.5.0+galaxy1	aoptk parse PDF	Parse PDF files.				
+toolshed.g2.bx.psu.edu/repos/recetox/aoptk_parse_pdf/aoptk_parse_pdf/0.5.0+galaxy4	aoptk parse PDF	Parse PDF files.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_parse_pdf/aoptk_parse_pdf/0.5.0+galaxy3	aoptk parse PDF	Parse PDF files.				
 toolshed.g2.bx.psu.edu/repos/recetox/aoptk_parse_pdf/aoptk_parse_pdf/0.5.0+galaxy0	aoptk parse PDF	Parse PDF files.				
 toolshed.g2.bx.psu.edu/repos/recetox/gc_derivatization/gc_derivatization/1.0.1+galaxy0	GC derivatization	In silico MeOX and TMS derivatization tool				
@@ -1294,6 +1299,7 @@ toolshed.g2.bx.psu.edu/repos/galaxy-australia/panaroo/panaroo/1.6.0+galaxy0	Pana
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/panaroo/panaroo/1.5.2+galaxy0	Panaroo	A Bacterial Pangenome Analysis Pipeline	operation_0524,operation_0525,operation_3432	topic_0080,topic_0194	panaroo	Panaroo
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/panaroo/panaroo/1.7.0+galaxy0	Panaroo	A Bacterial Pangenome Analysis Pipeline	operation_0524,operation_0525,operation_3432	topic_0080,topic_0194		
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/panaroo/panaroo/1.5.0+galaxy0	Panaroo	A Bacterial Pangenome Analysis Pipeline		topic_0194	panaroo	Panaroo
+toolshed.g2.bx.psu.edu/repos/galaxy-australia/panaroo/panaroo/1.8.0+galaxy0	Panaroo	A Bacterial Pangenome Analysis Pipeline	operation_3432,operation_0525,operation_0524	topic_0080,topic_0194		
 toolshed.g2.bx.psu.edu/repos/artbio/rsem/extract_transcript_to_gene_map_from_trinity/0.8.0	RSEM trinity fasta to gene map	extract transcript to gene map from trinity			rsem	RSEM
 toolshed.g2.bx.psu.edu/repos/artbio/rsem/extract_transcript_to_gene_map_from_trinity/1.0.1	RSEM trinity fasta to gene map	extract transcript to gene map from trinity			rsem	RSEM
 toolshed.g2.bx.psu.edu/repos/artbio/rsem/extract_transcript_to_gene_map_from_trinity/0.9.0	RSEM trinity fasta to gene map	extract transcript to gene map from trinity			rsem	RSEM
@@ -2543,6 +2549,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/pbmm2/pbmm2/26.1.99+galaxy0	pbmm2	map PacBio re
 toolshed.g2.bx.psu.edu/repos/iuc/pbmm2/pbmm2/1.14.99+galaxy0	pbmm2	map PacBio reads to a reference genome.	operation_3802,operation_0491	topic_0102	pbmm2	pbmm2
 toolshed.g2.bx.psu.edu/repos/iuc/pbmm2/pbmm2/1.16.99+galaxy0	pbmm2	map PacBio reads to a reference genome.	operation_3802,operation_0491	topic_0102	pbmm2	pbmm2
 toolshed.g2.bx.psu.edu/repos/iuc/pbmm2/pbmm2/1.17.0+galaxy0	pbmm2	map PacBio reads to a reference genome.	operation_0491,operation_3802	topic_0102	pbmm2	pbmm2
+toolshed.g2.bx.psu.edu/repos/iuc/pbmm2/pbmm2/26.2.99+galaxy0	pbmm2	map PacBio reads to a reference genome.	operation_3802,operation_0491	topic_0102		
 toolshed.g2.bx.psu.edu/repos/iuc/pbmm2/pbmm2/1.16.0+galaxy0	pbmm2	map PacBio reads to a reference genome.	operation_0491,operation_3802	topic_0102	pbmm2	pbmm2
 toolshed.g2.bx.psu.edu/repos/iuc/picrust2_hsp/picrust2_hsp/2.5.1+galaxy0	PICRUSt2 Hidden state prediction (HSP)	to predict gene family abundances	operation_3928,operation_3797,operation_3478,operation_2495	topic_3301,topic_3174,topic_3837,topic_3293	picrust2	PICRUSt2
 toolshed.g2.bx.psu.edu/repos/iuc/picrust2_hsp/picrust2_hsp/2.5.3+galaxy0	PICRUSt2 Hidden state prediction (HSP)	to predict gene family abundances	operation_2495,operation_3478,operation_3928,operation_3797	topic_3301,topic_3837,topic_3174,topic_3293	picrust2	PICRUSt2
@@ -2728,6 +2735,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/mlst/mlst_list/2.19.0	MLST List	Lists available
 toolshed.g2.bx.psu.edu/repos/iuc/mlst/mlst_list/2.10	MLST List	Lists available schemes for the MLST tool	operation_3460	topic_2830	mlst	MLST
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_populations/stacks2_populations/2.55+galaxy2	Stacks2: populations	Calculate population-level summary statistics	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_populations/stacks2_populations/2.4+galaxy0	Stacks2: populations	Calculate population-level summary statistics	operation_2409	topic_0102,topic_3056	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_populations/stacks2_populations/2.55+galaxy5	Stacks2: populations	Calculate population-level summary statistics	operation_2409	topic_0102,topic_3056		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_populations/stacks2_populations/2.55+galaxy3	Stacks2: populations	Calculate population-level summary statistics	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_populations/stacks2_populations/2.53+galaxy0	Stacks2: populations	Calculate population-level summary statistics	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_populations/stacks2_populations/2.4+galaxy1	Stacks2: populations	Calculate population-level summary statistics	operation_2409	topic_3056,topic_0102	stacks	Stacks
@@ -3099,6 +3107,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ncbi_entrez_direct_esearch/ncbi_entrez_direct_e
 toolshed.g2.bx.psu.edu/repos/iuc/pcdl_get_cell_attribute/pcdl_get_cell_attribute/3.0.1+galaxy0	pcdl_get_cell_attribute					
 toolshed.g2.bx.psu.edu/repos/iuc/obi_convert/obi_convert/4.4.41+galaxy0	obiconvert	converts sequence files to different output formats	operation_2403	topic_0654,topic_3168,topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_convert/obi_convert/4.4.0	obiconvert	converts sequence files to different output formats	operation_2403	topic_3168,topic_0654,topic_0080		
+toolshed.g2.bx.psu.edu/repos/iuc/obi_convert/obi_convert/4.4.46+galaxy0	obiconvert	converts sequence files to different output formats	operation_2403	topic_3168,topic_0080,topic_0654		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_convert/obi_convert/1.2.13	obiconvert	converts sequence files to different output formats	operation_2403	topic_0654,topic_0080,topic_3168	obitools	OBITools
 toolshed.g2.bx.psu.edu/repos/iuc/obi_convert/obi_convert/4.4.42+galaxy0	obiconvert	converts sequence files to different output formats	operation_2403	topic_0080,topic_0654,topic_3168		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_convert/obi_convert/4.4.45+galaxy0	obiconvert	converts sequence files to different output formats	operation_2403	topic_3168,topic_0080,topic_0654		
@@ -3402,6 +3411,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/circos/circos_wiggle_to_scatter/0.69.8+galaxy7	
 toolshed.g2.bx.psu.edu/repos/iuc/maaslin3/maaslin3/0.99.16+galaxy0	MaAsLin3	Microbiome Multivariable Association with Linear Models				
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_split_abund/mothur_split_abund/1.36.1.0	Split.abund	Separate sequences into rare and abundant groups		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_split_abund/mothur_split_abund/1.39.5.0	Split.abund	Separate sequences into rare and abundant groups		topic_3697	mothur	mothur
+toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_search/0.9.0+galaxy1	LexicMap Search	nucleotide sequence tool for querying genomes				
 toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_search/0.9.0+galaxy0	LexicMap Search	nucleotide sequence tool for querying genomes				
 toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_search/0.8.0+galaxy0	LexicMap Search	nucleotide sequence tool for querying genomes				
 toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_search/0.7.0+galaxy1	LexicMap Search	nucleotide sequence tool for querying genomes				
@@ -3562,6 +3572,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.6.11+galaxy0	Map with KMA		operat
 toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.2.21+galaxy0	Map with KMA		operation_3198	topic_0080	kma	KMA
 toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.6.10+galaxy0	Map with KMA		operation_3198	topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.4.14+galaxy0	Map with KMA		operation_3198	topic_0080	kma	KMA
+toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.6.13+galaxy0	Map with KMA		operation_3198	topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.6.8+galaxy0	Map with KMA		operation_3198	topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.2.21+galaxy1	Map with KMA		operation_3198	topic_0080	kma	KMA
 toolshed.g2.bx.psu.edu/repos/iuc/funannotate_sort/funannotate_sort/1.8.15+galaxy0	Sort assembly		operation_0362	topic_0622	funannotate	funannotate
@@ -3877,6 +3888,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/qiime_jackknifed_beta_diversity/qiime_jackknife
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_otu_hierarchy/mothur_otu_hierarchy/1.36.1.0	Otu.hierarchy	Relate OTUs at different distances		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_otu_hierarchy/mothur_otu_hierarchy/1.39.5.0	Otu.hierarchy	Relate OTUs at different distances		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/spatialdata_io/spatialdata_io/0.7.2+galaxy0	SpatialData IO	load common spatial omics formats into SpatialData				
+toolshed.g2.bx.psu.edu/repos/iuc/spatialdata_io/spatialdata_io/0.7.3+galaxy0	SpatialData IO	load common spatial omics formats into SpatialData				
 toolshed.g2.bx.psu.edu/repos/iuc/spatialdata_io/spatialdata_io/0.7.2+galaxy1	SpatialData IO	load common spatial omics formats into SpatialData				
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_pairwise_seqs/mothur_pairwise_seqs/1.36.1.0	Pairwise.seqs	calculate uncorrected pairwise distances between sequences		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_pairwise_seqs/mothur_pairwise_seqs/1.39.5.0	Pairwise.seqs	calculate uncorrected pairwise distances between sequences		topic_3697	mothur	mothur
@@ -4043,6 +4055,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fastq_dump/2.9.1.3	Download and Extra
 toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fastq_dump/2.10.9+galaxy0	Download and Extract Reads in FASTA/Q	format from NCBI SRA				
 toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fastq_dump/2.11.0+galaxy0	Download and Extract Reads in FASTA/Q	format from NCBI SRA				
 toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fastq_dump/3.0.5+galaxy0	Download and Extract Reads in FASTQ	format from NCBI SRA	operation_2422,operation_0335	topic_0622,topic_0091	sra-tools	SRA Software Toolkit
+toolshed.g2.bx.psu.edu/repos/iuc/sopa_patchify/sopa_patchify/2.2.8+galaxy0	SOPA Patchify	generate patches for cell segmentation				
 toolshed.g2.bx.psu.edu/repos/iuc/mapseq/mapseq/2.1.1b+galaxy0	MAPseq	sequence read classification designed to assign taxonomy and OTU classifications	operation_3472	topic_0080,topic_0160,topic_0659	mapseq	MAPseq
 toolshed.g2.bx.psu.edu/repos/iuc/mapseq/mapseq/2.1.1+galaxy0	MAPseq	sequence read classification designed to assign taxonomy and OTU classifications	operation_3472	topic_0659,topic_0080,topic_0160	mapseq	MAPseq
 toolshed.g2.bx.psu.edu/repos/iuc/varscan_somatic/varscan_somatic/2.4.3.4	VarScan somatic	Call germline/somatic and LOH variants from tumor-normal sample pairs	operation_3227	topic_3168,topic_2885	varscan	VarScan
@@ -4069,6 +4082,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/humann_split_stratified_table/humann_split_stra
 toolshed.g2.bx.psu.edu/repos/iuc/humann_split_stratified_table/humann_split_stratified_table/3.9+galaxy0	Split a HUMAnN table	into 2 tables (one stratified and one unstratified)	operation_3221,operation_3460,operation_0324	topic_3174,topic_0194	humann	humann
 toolshed.g2.bx.psu.edu/repos/iuc/humann_split_stratified_table/humann_split_stratified_table/3.8+galaxy0	Split a HUMAnN table	into 2 tables (one stratified and one unstratified)	operation_3221,operation_3460,operation_0324	topic_0194,topic_3174	humann	humann
 toolshed.g2.bx.psu.edu/repos/iuc/humann_split_stratified_table/humann_split_stratified_table/3.6.1+galaxy0	Split a HUMAnN table	into 2 tables (one stratified and one unstratified)	operation_3221,operation_3460,operation_0324	topic_0194,topic_3174	humann	humann
+toolshed.g2.bx.psu.edu/repos/iuc/ssiamb/ssiamb_self/1.0.0+galaxy0	ssiamb	ambiguous SNV counter from reads mapped to a supplied assembly				
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_isec/bcftools_isec/1.15.1+galaxy3	bcftools isec	Create intersections, unions and complements of VCF files	operation_3227,operation_2409	topic_0199,topic_3516,topic_2885,topic_3517	bcftools	BCFtools
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_isec/bcftools_isec/1.22+galaxy0	bcftools isec	Create intersections, unions and complements of VCF files	operation_2409,operation_3227	topic_2885,topic_0199,topic_3517,topic_3516		
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_isec/bcftools_isec/1.9+galaxy1	bcftools isec	Create intersections, unions and complements of VCF files				
@@ -4204,6 +4218,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.4.0+gal
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.3.0+galaxy1	Arriba Get Filters	to history				
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.3.0+galaxy3	Arriba Get Filters	to history				
 toolshed.g2.bx.psu.edu/repos/iuc/arriba_get_filters/arriba_get_filters/2.4.0+galaxy1	Arriba Get Filters	to history				
+toolshed.g2.bx.psu.edu/repos/iuc/mags_visualization_drep_cluster_annot/mags_visualization_drep_cluster_annot/0.0.11+galaxy0	MAGs-visualization drep-cluster-annot	Create a bar chart of dRep clusters with optional annotation				
 toolshed.g2.bx.psu.edu/repos/iuc/virulign/virulign/1.1.1+galaxy0	VIRULIGN	Codon-correct pairwise alignments.				
 toolshed.g2.bx.psu.edu/repos/iuc/umi_tools_group/umi_tools_group/1.1.2+galaxy2	UMI-tools group	Extract UMI from fastq files	operation_3218	topic_3393,topic_3168,topic_0160	umi-tools	UMI-tools
 toolshed.g2.bx.psu.edu/repos/iuc/umi_tools_group/umi_tools_group/1.1.6+galaxy0	UMI-tools group	Extract UMI from fastq files	operation_3218	topic_3393,topic_0160,topic_3168	umi-tools	UMI-tools
@@ -4728,6 +4743,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/humann2_regroup_table/humann2_regroup_table/0.1
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_regroup_table/humann2_regroup_table/0.11.1.1	Regroup	a HUMAnN2 generated table by features	operation_3929		humann2	HUMAnN2
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_regroup_table/humann2_regroup_table/0.9.9.0	Regroup	a HUMAnN2 generated table by features	operation_3929		humann2	HUMAnN2
 toolshed.g2.bx.psu.edu/repos/iuc/tsenat/tsenat/0.99.0+galaxy0	TSENAT	Tsallis Entropy Analysis Toolbox				
+toolshed.g2.bx.psu.edu/repos/iuc/tsenat/tsenat/0.99.24+galaxy0	TSENAT	Tsallis Entropy Analysis Toolbox				
 toolshed.g2.bx.psu.edu/repos/iuc/genebed_maf_to_fasta/GeneBed_Maf_Fasta2/1.0.1	Stitch Gene blocks	given a set of coding exon intervals				
 toolshed.g2.bx.psu.edu/repos/iuc/genebed_maf_to_fasta/GeneBed_Maf_Fasta2/1.0.1+galaxy0	Stitch Gene blocks	given a set of coding exon intervals				
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_fel/hyphy_fel/2.5.9+galaxy0	HyPhy-FEL	Fixed Effects Likelihood				
@@ -4837,6 +4853,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ncbi_eutils_efetch/ncbi_eutils_efetch/1.70+gala
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_eutils_efetch/ncbi_eutils_efetch/1.70	NCBI EFetch	fetch records from NCBI	operation_0308,operation_0224,operation_3761,operation_3431	topic_3325,topic_0602,topic_3489,topic_3473,topic_3366	ncbi_resources	NCBI Resources
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_gstacks/stacks2_gstacks/2.55+galaxy2	Stacks2: gstacks	Call variants, genotypes and haplotype	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_gstacks/stacks2_gstacks/2.4+galaxy0	Stacks2: gstacks	Call variants, genotypes and haplotype	operation_2409	topic_0102,topic_3056	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_gstacks/stacks2_gstacks/2.55+galaxy5	Stacks2: gstacks	Call variants, genotypes and haplotype	operation_2409	topic_0102,topic_3056		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_gstacks/stacks2_gstacks/2.55+galaxy3	Stacks2: gstacks	Call variants, genotypes and haplotype	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_gstacks/stacks2_gstacks/2.53+galaxy0	Stacks2: gstacks	Call variants, genotypes and haplotype	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_gstacks/stacks2_gstacks/2.4+galaxy1	Stacks2: gstacks	Call variants, genotypes and haplotype	operation_2409	topic_3056,topic_0102	stacks	Stacks
@@ -4960,6 +4977,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/dimet_differential_multigroup_analysis/dimet_di
 toolshed.g2.bx.psu.edu/repos/iuc/dimet_differential_multigroup_analysis/dimet_differential_multigroup_analysis/0.2.4+galaxy2	dimet differential multigroup analysis	Differential analysis of 3 or more chosen groups of tracer metabolomics data (by DIMet)				
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_refmap/stacks2_refmap/2.55+galaxy2	Stacks2: reference map	the Stacks pipeline with a reference genome (ref_map.pl)	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_refmap/stacks2_refmap/2.4+galaxy0	Stacks2: reference map	the Stacks pipeline with a reference genome (ref_map.pl)	operation_2409	topic_3056,topic_0102	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_refmap/stacks2_refmap/2.55+galaxy5	Stacks2: reference map	the Stacks pipeline with a reference genome (ref_map.pl)	operation_2409	topic_0102,topic_3056		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_refmap/stacks2_refmap/2.55+galaxy3	Stacks2: reference map	the Stacks pipeline with a reference genome (ref_map.pl)	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_refmap/stacks2_refmap/2.53+galaxy0	Stacks2: reference map	the Stacks pipeline with a reference genome (ref_map.pl)	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_refmap/stacks2_refmap/2.4+galaxy1	Stacks2: reference map	the Stacks pipeline with a reference genome (ref_map.pl)	operation_2409	topic_0102,topic_3056	stacks	Stacks
@@ -5030,6 +5048,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1/3.0.1
 toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1/3.0.3+galaxy3	Extract Genomic DNA	using coordinates from assembled/unassembled genomes				
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_kmerfilter/stacks2_kmerfilter/2.55+galaxy2	Stacks2: kmer filter	Identify PCR clones	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_kmerfilter/stacks2_kmerfilter/2.4+galaxy0	Stacks2: kmer filter	Identify PCR clones	operation_2409	topic_0102,topic_3056	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_kmerfilter/stacks2_kmerfilter/2.55+galaxy5	Stacks2: kmer filter	Identify PCR clones	operation_2409	topic_3056,topic_0102		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_kmerfilter/stacks2_kmerfilter/2.55+galaxy3	Stacks2: kmer filter	Identify PCR clones	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_kmerfilter/stacks2_kmerfilter/2.53+galaxy0	Stacks2: kmer filter	Identify PCR clones	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_kmerfilter/stacks2_kmerfilter/2.4+galaxy1	Stacks2: kmer filter	Identify PCR clones	operation_2409	topic_0102,topic_3056	stacks	Stacks
@@ -5232,6 +5251,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/18.28.0+ga
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/16.20.0+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_2422,operation_0338,operation_2409	topic_3071	ncbi_datasets	NCBI Datasets
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/18.5.1+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_0338,operation_2409,operation_2422	topic_3071		
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/18.31.0+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_2409,operation_2422,operation_0338	topic_3071		
+toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/18.32.0+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_0338,operation_2409,operation_2422	topic_3071		
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/17.0.0+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_2409,operation_0338,operation_2422	topic_3071	ncbi_datasets	NCBI Datasets
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/18.25.1+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_2409,operation_0338,operation_2422	topic_3071		
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/18.23.0+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_2422,operation_0338,operation_2409	topic_3071		
@@ -5259,6 +5279,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/18.28.0+
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/16.20.0+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_2409,operation_0338,operation_2422	topic_3071	ncbi_datasets	NCBI Datasets
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/18.5.1+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_2409,operation_0338,operation_2422	topic_3071		
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/18.31.0+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_2422,operation_0338,operation_2409	topic_3071		
+toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/18.32.0+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_2409,operation_0338,operation_2422	topic_3071		
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/13.24.1+galaxy1	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_3431,operation_3761,operation_0308,operation_0224	topic_3489,topic_0602,topic_3325,topic_3473,topic_3366	ncbi_resources	NCBI Resources
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/17.0.0+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_2409,operation_0338,operation_2422	topic_3071	ncbi_datasets	NCBI Datasets
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/18.25.1+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_0338,operation_2409,operation_2422	topic_3071		
@@ -5287,6 +5308,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/freyja_demix/freyja_demix/1.3.8+galaxy0	Freyja:
 toolshed.g2.bx.psu.edu/repos/iuc/freyja_demix/freyja_demix/1.4.4+galaxy0	Freyja: Demix	lineage abundances			freyja	Freyja
 toolshed.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/4.4.41+galaxy0	obiannotate	Adds/Edits sequence record annotations	operation_2403	topic_3168,topic_0080,topic_0654		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/4.4.0	obiannotate	Adds/Edits sequence record annotations	operation_2403	topic_0654,topic_3168,topic_0080		
+toolshed.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/4.4.46+galaxy0	obiannotate	Adds/Edits sequence record annotations	operation_2403	topic_3168,topic_0080,topic_0654		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/1.2.13	obiannotate	Adds/Edits sequence record annotations	operation_2403	topic_0080,topic_0654,topic_3168	obitools	OBITools
 toolshed.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/4.4.42+galaxy0	obiannotate	Adds/Edits sequence record annotations	operation_2403	topic_3168,topic_0654,topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_annotate/obi_annotate/4.4.45+galaxy0	obiannotate	Adds/Edits sequence record annotations	operation_2403	topic_0080,topic_0654,topic_3168		
@@ -5513,6 +5535,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.2.2+galaxy0	dRep co
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.6.2+galaxy1	dRep compare	compare a list of genomes	operation_3209	topic_3174,topic_0622,topic_0080	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.6.2+galaxy0	dRep compare	compare a list of genomes	operation_3209	topic_3174,topic_0622,topic_0080	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.4.5+galaxy0	dRep compare	compare a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
+toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.7.1+galaxy0	dRep compare	compare a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622		
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.5.0+galaxy2	dRep compare	compare a list of genomes	operation_3209	topic_0080,topic_0622,topic_3174	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.4.2+galaxy0	dRep compare	compare a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_compare/drep_compare/3.4.3+galaxy0	dRep compare	compare a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
@@ -5544,7 +5567,9 @@ toolshed.g2.bx.psu.edu/repos/iuc/merquryfk_asmplot/merquryfk_asmplot/1.1.1+galax
 toolshed.g2.bx.psu.edu/repos/iuc/clustering_from_distmat/clustering_from_distmat/1.0	Distance matrix-based hierarchical clustering	using Scipy	operation_3432	topic_2269,topic_0084		
 toolshed.g2.bx.psu.edu/repos/iuc/clustering_from_distmat/clustering_from_distmat/1.1	Distance matrix-based hierarchical clustering	using Scipy	operation_3432	topic_2269,topic_0084		
 toolshed.g2.bx.psu.edu/repos/iuc/clustering_from_distmat/clustering_from_distmat/1.1.1	Distance matrix-based hierarchical clustering	using Scipy	operation_3432	topic_2269,topic_0084		
+toolshed.g2.bx.psu.edu/repos/iuc/clustering_from_distmat/clustering_from_distmat/1.1.2+galaxy0	Distance matrix-based hierarchical clustering	using Scipy	operation_3432	topic_2269,topic_0084		
 toolshed.g2.bx.psu.edu/repos/iuc/gatk4_split_n_cigar_reads/gatk4_split_n_cigar_reads/4.6.2.0+galaxy0	GATK4 SplitNCigarReads	Splits reads that contain Ns in their CIGAR string (RNA-seq)				
+toolshed.g2.bx.psu.edu/repos/iuc/sopa_resolve/sopa_resolve/2.2.8+galaxy0	SOPA Resolve	patch conflicts in segmented data				
 toolshed.g2.bx.psu.edu/repos/iuc/variant_analyzer/mut2sscs/2.0.0	DCS mutations to SSCS stats:	Extracts all tags from the single stranded consensus sequence (SSCS) bam file that carry a mutation at the same position a mutation is called in the duplex consensus sequence (DCS) and calculates their frequencies				
 toolshed.g2.bx.psu.edu/repos/iuc/variant_analyzer/mut2sscs/1.0.1	DCS mutations to SSCS stats:	Extracts all tags from the single stranded consensus sequence (SSCS) bam file that carry a mutation at the same position a mutation is called in the duplex consensus sequence (DCS) and calculates their frequencies				
 toolshed.g2.bx.psu.edu/repos/iuc/variant_analyzer/mut2sscs/1.0.0	DCS mutations to SSCS stats:	Extracts all tags from the single stranded consensus sequence (SSCS) bam file that carry a mutation at the same position a mutation is called in the duplex consensus sequence (DCS) and calculates their frequencies				
@@ -5624,6 +5649,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/sarscov2formatter/sarscov2formatter/0.5.3+galax
 toolshed.g2.bx.psu.edu/repos/iuc/dram_annotate/dram_annotate/1.3.5+galaxy0	DRAM annotate	metagenome-assembled-genomes (MAGs)				
 toolshed.g2.bx.psu.edu/repos/iuc/dram_annotate/dram_annotate/1.5.0+galaxy0	DRAM annotate	metagenome-assembled-genomes (MAGs)			dram	DRAM
 toolshed.g2.bx.psu.edu/repos/iuc/dram_annotate/dram_annotate/1.3.5+galaxy1	DRAM annotate	metagenome-assembled-genomes (MAGs)			dram	DRAM
+toolshed.g2.bx.psu.edu/repos/iuc/sopa_segmentation/sopa_segmentation/2.2.8+galaxy0	SOPA Segmentation	Perform cell segmentation on patches				
 toolshed.g2.bx.psu.edu/repos/iuc/gemini_region/gemini_region/0.18.1.0	GEMINI region	Extracting variants from specific regions or genes				
 toolshed.g2.bx.psu.edu/repos/iuc/gemini_region/gemini_region/0.18.1.1	GEMINI region	Extracting variants from specific regions or genes				
 toolshed.g2.bx.psu.edu/repos/iuc/trimal/trimal/1.5.1+galaxy0	trimAl	for automated alignment trimming	operation_3192	topic_3293,topic_0080		
@@ -5673,6 +5699,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/paffy_trim/paffy_trim/2.9.9+galaxy0	Paffy trim	
 toolshed.g2.bx.psu.edu/repos/iuc/paffy_trim/paffy_trim/2.9.9+galaxy1	Paffy trim	truncates the ends of PAF alignments				
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_shortreads/stacks2_shortreads/2.55+galaxy2	Stacks2: process shortreads	fast cleaning of randomly sheared genomic or transcriptomic data	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_shortreads/stacks2_shortreads/2.4+galaxy0	Stacks2: process shortreads	fast cleaning of randomly sheared genomic or transcriptomic data	operation_2409	topic_0102,topic_3056	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_shortreads/stacks2_shortreads/2.55+galaxy5	Stacks2: process shortreads	fast cleaning of randomly sheared genomic or transcriptomic data	operation_2409	topic_3056,topic_0102		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_shortreads/stacks2_shortreads/2.55+galaxy3	Stacks2: process shortreads	fast cleaning of randomly sheared genomic or transcriptomic data	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_shortreads/stacks2_shortreads/2.53+galaxy0	Stacks2: process shortreads	fast cleaning of randomly sheared genomic or transcriptomic data	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_shortreads/stacks2_shortreads/2.4+galaxy1	Stacks2: process shortreads	fast cleaning of randomly sheared genomic or transcriptomic data	operation_2409	topic_0102,topic_3056	stacks	Stacks
@@ -5883,6 +5910,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/lofreq_call/lofreq_call/2.1.5+galaxy3	Call vari
 toolshed.g2.bx.psu.edu/repos/iuc/lofreq_call/lofreq_call/2.1.4+galaxy2	Call variants	with LoFreq	operation_3227	topic_0622,topic_0199	lofreq	lofreq
 toolshed.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/4.4.41+galaxy0	obiclean	tags a set of sequences for PCR/sequencing errors identification	operation_2403	topic_0654,topic_3168,topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/4.4.0	obiclean	tags a set of sequences for PCR/sequencing errors identification	operation_2403	topic_0654,topic_3168,topic_0080		
+toolshed.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/4.4.46+galaxy0	obiclean	tags a set of sequences for PCR/sequencing errors identification	operation_2403	topic_3168,topic_0080,topic_0654		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/1.2.13	obiclean	tags a set of sequences for PCR/sequencing errors identification	operation_2403	topic_0654,topic_0080,topic_3168	obitools	OBITools
 toolshed.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/4.4.42+galaxy0	obiclean	tags a set of sequences for PCR/sequencing errors identification	operation_2403	topic_0654,topic_3168,topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_clean/obi_clean/4.4.45+galaxy0	obiclean	tags a set of sequences for PCR/sequencing errors identification	operation_2403	topic_0080,topic_3168,topic_0654		
@@ -6115,6 +6143,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/meme_psp_gen/meme_psp_gen/5.5.6+galaxy0	MEME ps
 toolshed.g2.bx.psu.edu/repos/iuc/meme_psp_gen/meme_psp_gen/4.12.0.0	MEME psp-gen	- perform discriminative motif discovery	operation_2403,operation_0239	topic_0654,topic_3510,topic_3511	meme	MEME
 toolshed.g2.bx.psu.edu/repos/iuc/meme_psp_gen/meme_psp_gen/4.11.2.0	MEME psp-gen	- perform discriminative motif discovery	operation_0239,operation_2403	topic_3511,topic_0654,topic_3510	meme	MEME
 toolshed.g2.bx.psu.edu/repos/iuc/spatialdata_operation/spatialdata_operation/0.7.2+galaxy0	SpatialData Operations	perform operations on SpatialData objects				
+toolshed.g2.bx.psu.edu/repos/iuc/spatialdata_operation/spatialdata_operation/0.7.3+galaxy0	SpatialData Operations	perform operations on SpatialData objects				
 toolshed.g2.bx.psu.edu/repos/iuc/spatialdata_operation/spatialdata_operation/0.7.2+galaxy1	SpatialData Operations	perform operations on SpatialData objects				
 toolshed.g2.bx.psu.edu/repos/iuc/gamma_s/gamma_s/2.2+galaxy0	GAMMA-S	finds gene matches in microbial genomic data using nucleotide identity				
 toolshed.g2.bx.psu.edu/repos/iuc/amas_split/amas_split/1.0+galaxy0	AMAS split	split multiple alignments	operation_2479,operation_2478	topic_0194,topic_3293,topic_2269,topic_0080		
@@ -6267,6 +6296,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.2.2+galaxy0
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.6.2+galaxy1	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0622,topic_0080,topic_3174	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.6.2+galaxy0	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.4.5+galaxy0	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
+toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.7.1+galaxy0	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0622,topic_3174,topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.5.0+galaxy2	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0080,topic_3174,topic_0622	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.4.2+galaxy0	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0080,topic_0622,topic_3174	drep	dRep
 toolshed.g2.bx.psu.edu/repos/iuc/drep_dereplicate/drep_dereplicate/3.4.3+galaxy0	dRep dereplicate	De-replicate a list of genomes	operation_3209	topic_0622,topic_0080,topic_3174	drep	dRep
@@ -6466,6 +6496,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/metaphlan/metaphlan/4.0.6+galaxy2	MetaPhlAn	to 
 toolshed.g2.bx.psu.edu/repos/iuc/metaphlan/metaphlan/4.0.5+galaxy0	MetaPhlAn	to profile the composition of microbial communities	operation_2478,operation_0324	topic_0194,topic_3174	metaphlan	MetaPhlAn
 toolshed.g2.bx.psu.edu/repos/iuc/metaphlan/metaphlan/4.0.6+galaxy3	MetaPhlAn	to profile the composition of microbial communities	operation_0324,operation_2478	topic_3174,topic_0194	metaphlan	MetaPhlAn
 toolshed.g2.bx.psu.edu/repos/iuc/metaphlan/metaphlan/4.1.1+galaxy2	MetaPhlAn	to profile the composition of microbial communities	operation_2478,operation_0324	topic_0194,topic_3174	metaphlan	MetaPhlAn
+toolshed.g2.bx.psu.edu/repos/iuc/obi_complement/obi_complement/4.4.46+galaxy0	obicomplement	Compute the reverse complement of the sequence entries.				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_complement/obi_complement/4.4.42+galaxy0	obicomplement	Compute the reverse complement of the sequence entries.				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_complement/obi_complement/4.4.45+galaxy0	obicomplement	Compute the reverse complement of the sequence entries.				
 toolshed.g2.bx.psu.edu/repos/iuc/arriba/arriba/2.5.1+galaxy0	Arriba	detect gene fusions from STAR aligned RNA-Seq data				
@@ -6615,6 +6646,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/structure/structure/2.3.4+galaxy1	Structure	usi
 toolshed.g2.bx.psu.edu/repos/iuc/structure/structure/2.3.4	Structure	using multi-locus genotype data to investigate population structure				
 toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schiccreatebulkmatrix/schicexplorer_schiccreatebulkmatrix/4.0	scHicCreateBulkMatrix	creates the bulk matrix out of  single-cell Hi-C interaction matrices	operation_0337,operation_2428,operation_3435	topic_3940,topic_0654,topic_3295,topic_3169,topic_0769	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schiccreatebulkmatrix/schicexplorer_schiccreatebulkmatrix/4.1	scHicCreateBulkMatrix	creates the bulk matrix out of  single-cell Hi-C interaction matrices	operation_0337,operation_2428,operation_3435	topic_3940,topic_0654,topic_3295,topic_3169,topic_0769	hicexplorer	HiCExplorer
+toolshed.g2.bx.psu.edu/repos/iuc/mags_visualization_comp_conta/mags_visualization_comp_conta/0.0.11+galaxy0	MAGs-visualization comp-conta	Create completeness/contamination plots				
 toolshed.g2.bx.psu.edu/repos/iuc/mmseqs2_taxonomy_assignment/mmseqs2_taxonomy_assignment/17-b804f+galaxy1	MMseqs2 taxonomy	of sequences by comparing them to a reference database				
 toolshed.g2.bx.psu.edu/repos/iuc/mmseqs2_taxonomy_assignment/mmseqs2_taxonomy_assignment/15.6f452+galaxy0	MMseqs2 Taxonomy Assignments	of sequences by comparing them to a reference database			MMseqs2	MMseqs2
 toolshed.g2.bx.psu.edu/repos/iuc/mmseqs2_taxonomy_assignment/mmseqs2_taxonomy_assignment/17-b804f+galaxy0	MMseqs2 Taxonomy Assignments	of sequences by comparing them to a reference database			MMseqs2	MMseqs2
@@ -6632,6 +6664,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/chewbbaca_nsstats/chewbbaca_nsstats/3.3.3+galax
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_infer_stasis_clusters/hyphy_infer_stasis_clusters/2.5.96+galaxy0	HyPhy-Infer Stasis Clusters	Identify regional footprints of extreme purifying selection from B-STILL results				
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_tsv2bam/stacks2_tsv2bam/2.55+galaxy2	Stacks2: tsv2bam	Sort reads by RAD locus	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_tsv2bam/stacks2_tsv2bam/2.4+galaxy0	Stacks2: tsv2bam	Sort reads by RAD locus	operation_2409	topic_3056,topic_0102	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_tsv2bam/stacks2_tsv2bam/2.55+galaxy5	Stacks2: tsv2bam	Sort reads by RAD locus	operation_2409	topic_0102,topic_3056		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_tsv2bam/stacks2_tsv2bam/2.55+galaxy3	Stacks2: tsv2bam	Sort reads by RAD locus	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_tsv2bam/stacks2_tsv2bam/2.53+galaxy0	Stacks2: tsv2bam	Sort reads by RAD locus	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_tsv2bam/stacks2_tsv2bam/2.4+galaxy1	Stacks2: tsv2bam	Sort reads by RAD locus	operation_2409	topic_3056,topic_0102	stacks	Stacks
@@ -6881,6 +6914,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_call/cnvkit_call/0.9.10+galaxy0	CNVkit C
 toolshed.g2.bx.psu.edu/repos/iuc/cnvkit_call/cnvkit_call/0.9.10+galaxy0.1	CNVkit Call	Call copy number variants from segmented log2 ratios	operation_3227	topic_3175	cnvkit	CNVkit
 toolshed.g2.bx.psu.edu/repos/iuc/ucsc_chainnet/ucsc_chainnet/469+galaxy0	chainNet	make alignment nets out of alignment chains			UCSC_Genome_Browser_Utilities	UCSC Genome Browser Utilities
 toolshed.g2.bx.psu.edu/repos/iuc/ucsc_chainnet/ucsc_chainnet/482+galaxy0	chainNet	make alignment nets out of alignment chains				
+toolshed.g2.bx.psu.edu/repos/iuc/obi_pcr/obi_pcr/4.4.46+galaxy0	obipcr	In sillico PCR				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_pcr/obi_pcr/4.4.42+galaxy0	obipcr	In sillico PCR				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_pcr/obi_pcr/4.4.45+galaxy0	obipcr	In sillico PCR				
 toolshed.g2.bx.psu.edu/repos/iuc/bbtools_callvariants/bbtools_callvariants/39.08+galaxy2	BBTools: call variants	in aligned Bam files			bbtools	BBTools
@@ -7057,6 +7091,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/taffy_stats/taffy_stats/0.0.3+galaxy0	Taffy sta
 toolshed.g2.bx.psu.edu/repos/iuc/b2btools_single_sequence/b2btools_single_sequence/3.0.5+galaxy0	b2bTools: Biophysical predictors for single sequences	from their amino-acid sequences	operation_3092,operation_3904,operation_0267		b2btools	b2bTools
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_cstacks/stacks2_cstacks/2.55+galaxy2	Stacks2: cstacks	Generate catalog of loci	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_cstacks/stacks2_cstacks/2.4+galaxy0	Stacks2: cstacks	Generate catalog of loci	operation_2409	topic_3056,topic_0102	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_cstacks/stacks2_cstacks/2.55+galaxy5	Stacks2: cstacks	Generate catalog of loci	operation_2409	topic_0102,topic_3056		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_cstacks/stacks2_cstacks/2.55+galaxy3	Stacks2: cstacks	Generate catalog of loci	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_cstacks/stacks2_cstacks/2.53+galaxy0	Stacks2: cstacks	Generate catalog of loci	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_cstacks/stacks2_cstacks/2.4+galaxy1	Stacks2: cstacks	Generate catalog of loci	operation_2409	topic_0102,topic_3056	stacks	Stacks
@@ -7138,6 +7173,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bioext_bam2msa/bioext_bam2msa/0.20.1+galaxy0	Co
 toolshed.g2.bx.psu.edu/repos/iuc/bioext_bam2msa/bioext_bam2msa/0.20.4+galaxy0	Convert BAM	to FASTA multiple sequence alignment				
 toolshed.g2.bx.psu.edu/repos/iuc/bioext_bam2msa/bioext_bam2msa/0.21.9+galaxy0	Convert BAM	to FASTA multiple sequence alignment				
 toolshed.g2.bx.psu.edu/repos/iuc/bioext_bam2msa/bioext_bam2msa/0.20.2+galaxy0	Convert BAM	to FASTA multiple sequence alignment				
+toolshed.g2.bx.psu.edu/repos/iuc/sopa_report/sopa_report/2.2.8+galaxy0	SOPA Report	Generate HTML quality control report				
 toolshed.g2.bx.psu.edu/repos/iuc/cd_hit/cd_hit/4.6.8.1	cd-hit	Cluster or compare biological sequence datasets	operation_0291	topic_3168	cd-hit	cd-hit
 toolshed.g2.bx.psu.edu/repos/iuc/cd_hit/cd_hit/4.8.1+galaxy0	cd-hit	Cluster or compare biological sequence datasets	operation_0291	topic_3168	cd-hit	cd-hit
 toolshed.g2.bx.psu.edu/repos/iuc/lineagespot/lineagespot/1.6.0+galaxy0	lineagespot	identifies SARS-CoV-2 lineages contributing to metagenomic samples from per-sample variant files	operation_3227	topic_3174,topic_3512,topic_3299,topic_0199,topic_3168	lineagespot	lineagespot
@@ -7170,6 +7206,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/raven/raven/1.5.3+galaxy0	Raven	De novo assembl
 toolshed.g2.bx.psu.edu/repos/iuc/raven/raven/1.8.3+galaxy0	Raven	De novo assembly of Oxford Nanopore Technologies data	operation_0525,operation_0524,operation_3219	topic_0196,topic_3673,topic_0622	raven	Raven
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_procrad/stacks2_procrad/2.55+galaxy2	Stacks2: process radtags	the Stacks demultiplexing script	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_procrad/stacks2_procrad/2.4+galaxy0	Stacks2: process radtags	the Stacks demultiplexing script	operation_2409	topic_3056,topic_0102	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_procrad/stacks2_procrad/2.55+galaxy5	Stacks2: process radtags	the Stacks demultiplexing script	operation_2409	topic_0102,topic_3056		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_procrad/stacks2_procrad/2.55+galaxy3	Stacks2: process radtags	the Stacks demultiplexing script	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_procrad/stacks2_procrad/2.53+galaxy0	Stacks2: process radtags	the Stacks demultiplexing script	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_procrad/stacks2_procrad/2.4+galaxy1	Stacks2: process radtags	the Stacks demultiplexing script	operation_2409	topic_0102,topic_3056	stacks	Stacks
@@ -7403,6 +7440,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_clustering/snapatac2_clustering/2.5.3
 toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_clustering/snapatac2_clustering/2.5.3+galaxy2	SnapATAC2 Clustering	and dimension reduction				
 toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_clustering/snapatac2_clustering/2.6.4+galaxy0	SnapATAC2 Clustering	and dimension reduction				
 toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_clustering/snapatac2_clustering/2.5.3+galaxy1	SnapATAC2 Clustering	and dimension reduction				
+toolshed.g2.bx.psu.edu/repos/iuc/eastr/eastr/2.1.1+galaxy0	EASTR	emend alignments of spliced transcript reads by removing spurious splice junctions				
 toolshed.g2.bx.psu.edu/repos/iuc/hal_hallodextract/hal_hallodextract/3.1.4+galaxy0	halLodExtract	generates a new HAL file at a coarser Level of Detail by interpolation				
 toolshed.g2.bx.psu.edu/repos/iuc/hal_hallodextract/hal_hallodextract/2.9.9+galaxy0	halLodExtract	generates a new HAL file at a coarser Level of Detail by interpolation				
 toolshed.g2.bx.psu.edu/repos/iuc/hal_hallodextract/hal_hallodextract/2.9.9+galaxy1	halLodExtract	generates a new HAL file at a coarser Level of Detail by interpolation				
@@ -7633,6 +7671,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/merqury/merqury/1.3+galaxy4	Merqury	evaluate th
 toolshed.g2.bx.psu.edu/repos/iuc/merqury/merqury/1.3+galaxy1	Merqury	evaluate the assembly quality	operation_3472,operation_3216,operation_0525,operation_0524,operation_3454	topic_0780,topic_0196,topic_3673	merqury	Merqury
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_ustacks/stacks2_ustacks/2.55+galaxy2	Stacks2: ustacks	Identify unique stacks	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_ustacks/stacks2_ustacks/2.4+galaxy0	Stacks2: ustacks	Identify unique stacks	operation_2409	topic_0102,topic_3056	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_ustacks/stacks2_ustacks/2.55+galaxy5	Stacks2: ustacks	Identify unique stacks	operation_2409	topic_0102,topic_3056		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_ustacks/stacks2_ustacks/2.55+galaxy3	Stacks2: ustacks	Identify unique stacks	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_ustacks/stacks2_ustacks/2.53+galaxy0	Stacks2: ustacks	Identify unique stacks	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_ustacks/stacks2_ustacks/2.4+galaxy1	Stacks2: ustacks	Identify unique stacks	operation_2409	topic_0102,topic_3056	stacks	Stacks
@@ -7807,6 +7846,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/fastreer_vcf2dist/fastreer_vcf2dist/2.1.2+galax
 toolshed.g2.bx.psu.edu/repos/iuc/fastreer_vcf2dist/fastreer_vcf2dist/2.1.6+galaxy0	VCF2DIST	Cosine distance matrix from VCF files				
 toolshed.g2.bx.psu.edu/repos/iuc/fastreer_vcf2dist/fastreer_vcf2dist/2.1.3+galaxy0	VCF2DIST	Cosine distance matrix from VCF files				
 toolshed.g2.bx.psu.edu/repos/iuc/spatialdata_plot/spatialdata_plot/0.7.2+galaxy0	SpatialData Plot	rich static plotting from SpatialData objects				
+toolshed.g2.bx.psu.edu/repos/iuc/spatialdata_plot/spatialdata_plot/0.7.3+galaxy0	SpatialData Plot	rich static plotting from SpatialData objects				
 toolshed.g2.bx.psu.edu/repos/iuc/spatialdata_plot/spatialdata_plot/0.7.2+galaxy1	SpatialData Plot	rich static plotting from SpatialData objects				
 toolshed.g2.bx.psu.edu/repos/iuc/fastani/fastani/1.3	FastANI	fast alignment-free computation of whole-genome Average Nucleotide Identity	operation_3182,operation_0346	topic_3301,topic_0199	fastani	FastANI
 toolshed.g2.bx.psu.edu/repos/iuc/roary/roary/0.1.0	Roary	the pangenome pipeline - Quickly generate a core gene alignment from gff3 files				
@@ -8213,6 +8253,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/freyja_boot/freyja_boot/1.5.2+galaxy1	Freyja: B
 toolshed.g2.bx.psu.edu/repos/iuc/freyja_boot/freyja_boot/2.0.1+galaxy0	Freyja: Bootstrapping	method				
 toolshed.g2.bx.psu.edu/repos/iuc/freyja_boot/freyja_boot/1.3.8+galaxy0	Freyja: Bootstrapping	method			freyja	Freyja
 toolshed.g2.bx.psu.edu/repos/iuc/freyja_boot/freyja_boot/1.4.4+galaxy0	Freyja: Bootstrapping	method			freyja	Freyja
+toolshed.g2.bx.psu.edu/repos/iuc/mags_visualization_pathway_module_heatmap/mags_visualization_pathway_module_heatmap/0.0.11+galaxy0	MAGs-visualization pathway-module-heatmap	Create a MAG vs pathway-module heatmap				
 toolshed.g2.bx.psu.edu/repos/iuc/vgp_split_agp/vgp_split_agp/1.0+galaxy0	VGP Split AGP	Correct AGP files and split haplotypes				
 toolshed.g2.bx.psu.edu/repos/iuc/vgp_split_agp/vgp_split_agp/1.1+galaxy0	VGP Split AGP	Correct AGP files and split haplotypes				
 toolshed.g2.bx.psu.edu/repos/iuc/ont_fast5_api_compress_fast5/ont_fast5_api_compress_fast5/3.1.3+galaxy1	ont_fast5_api: Compress	multi read file(s)				
@@ -8349,6 +8390,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schicclusterminhash/schicexplorer
 toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schicclusterminhash/schicexplorer_schicclusterminhash/1.0	scHicClusterMinHash	clusters single-cell Hi-C interaction matrices with MinHash dimension reduction	operation_2428,operation_0337,operation_3435	topic_0654,topic_0769,topic_3169,topic_3295,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schicclusterminhash/schicexplorer_schicclusterminhash/4.1	scHicClusterMinHash	clusters single-cell Hi-C interaction matrices with MinHash dimension reduction	operation_0337,operation_2428,operation_3435	topic_3295,topic_3169,topic_0769,topic_0654,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_boxplot/ggplot2_boxplot/3.5.1+galaxy0	Boxplot w ggplot2	Boxplot visualization tool using ggplot2				
+toolshed.g2.bx.psu.edu/repos/iuc/sopa_aggregate/sopa_aggregate/2.2.8+galaxy0	SOPA Aggregate	transcripts and/or channel intensities per cell				
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_summary_seqs/mothur_summary_seqs/1.36.1.0	Summary.seqs	Summarize the quality of sequences		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_summary_seqs/mothur_summary_seqs/1.39.5.0	Summary.seqs	Summarize the quality of sequences		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/ont_fast5_api_single_to_multi_fast5/ont_fast5_api_single_to_multi_fast5/3.1.3+galaxy1	ont_fast5_api: Single to multi	read file(s)				
@@ -8568,6 +8610,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/nanocompore_db/nanocompore_db/1.0.0rc3.post2+ga
 toolshed.g2.bx.psu.edu/repos/iuc/trinity_stats/trinity_stats/2.15.1+galaxy0	Trinity Stats		operation_3258	topic_3512,topic_3308,topic_0203	trinity	Trinity
 toolshed.g2.bx.psu.edu/repos/iuc/obi_pairing/obi_pairing/4.4.41+galaxy0	obipairing	When DNA metabarcoding sequences are generated as paired reads on the Illumina platform, obipairing aims to align forward and reverse reads to generate full length amplicon sequences.				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_pairing/obi_pairing/4.4.0	obipairing	When DNA metabarcoding sequences are generated as paired reads on the Illumina platform, obipairing aims to align forward and reverse reads to generate full length amplicon sequences.				
+toolshed.g2.bx.psu.edu/repos/iuc/obi_pairing/obi_pairing/4.4.46+galaxy0	obipairing	When DNA metabarcoding sequences are generated as paired reads on the Illumina platform, obipairing aims to align forward and reverse reads to generate full length amplicon sequences.				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_pairing/obi_pairing/4.4.42+galaxy0	obipairing	When DNA metabarcoding sequences are generated as paired reads on the Illumina platform, obipairing aims to align forward and reverse reads to generate full length amplicon sequences.				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_pairing/obi_pairing/4.4.45+galaxy0	obipairing	When DNA metabarcoding sequences are generated as paired reads on the Illumina platform, obipairing aims to align forward and reverse reads to generate full length amplicon sequences.				
 toolshed.g2.bx.psu.edu/repos/iuc/hal_halupdatebranchlengths/hal_halupdatebranchlengths/3.1.4+galaxy0	halUpdateBranchLengths	updates the branch lengths of a tree				
@@ -8623,6 +8666,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bwameth/bwameth/0.2.8+galaxy0	bwameth	Fast and 
 toolshed.g2.bx.psu.edu/repos/iuc/bwameth/bwameth/0.2.2	bwameth	Fast and accurate aligner of BS-Seq reads.				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_multiplex/obi_multiplex/4.4.41+galaxy0	obimultiplex	Assigns sequence records to the corresponding experiment/sample based on DNA tags and primers				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_multiplex/obi_multiplex/4.4.0	obimultiplex	Assigns sequence records to the corresponding experiment/sample based on DNA tags and primers				
+toolshed.g2.bx.psu.edu/repos/iuc/obi_multiplex/obi_multiplex/4.4.46+galaxy0	obimultiplex	Assigns sequence records to the corresponding experiment/sample based on DNA tags and primers				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_multiplex/obi_multiplex/4.4.42+galaxy0	obimultiplex	Assigns sequence records to the corresponding experiment/sample based on DNA tags and primers				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_multiplex/obi_multiplex/4.4.45+galaxy0	obimultiplex	Assigns sequence records to the corresponding experiment/sample based on DNA tags and primers				
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_sm19/hyphy_sm19/2.5.9+galaxy0	HyPhy-SM2019	Partition Tree using Modified Slatkin-Maddison Test				
@@ -8729,6 +8773,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/picrust2_shuffle_predictions/picrust2_shuffle_p
 toolshed.g2.bx.psu.edu/repos/iuc/picrust2_shuffle_predictions/picrust2_shuffle_predictions/2.5.3+galaxy0	PICRUSt2 Generation of shuffled predictions	for a specified number of replicates	operation_3928,operation_2495,operation_3478,operation_3797	topic_3174,topic_3837,topic_3293,topic_3301	picrust2	PICRUSt2
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_sstacks/stacks2_sstacks/2.55+galaxy2	Stacks2: sstacks	Match samples to the catalog	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_sstacks/stacks2_sstacks/2.4+galaxy0	Stacks2: sstacks	Match samples to the catalog	operation_2409	topic_3056,topic_0102	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_sstacks/stacks2_sstacks/2.55+galaxy5	Stacks2: sstacks	Match samples to the catalog	operation_2409	topic_3056,topic_0102		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_sstacks/stacks2_sstacks/2.55+galaxy3	Stacks2: sstacks	Match samples to the catalog	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_sstacks/stacks2_sstacks/2.53+galaxy0	Stacks2: sstacks	Match samples to the catalog	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_sstacks/stacks2_sstacks/2.4+galaxy1	Stacks2: sstacks	Match samples to the catalog	operation_2409	topic_0102,topic_3056	stacks	Stacks
@@ -8981,6 +9026,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/humann2_join_tables/humann2_join_tables/0.11.1.
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_join_tables/humann2_join_tables/0.9.9.0	Join	HUMAnN2 generated tables	operation_3929		humann2	HUMAnN2
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_clonefilter/stacks2_clonefilter/2.55+galaxy2	Stacks2: clone filter	Identify PCR clones	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_clonefilter/stacks2_clonefilter/2.4+galaxy0	Stacks2: clone filter	Identify PCR clones	operation_2409	topic_0102,topic_3056	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_clonefilter/stacks2_clonefilter/2.55+galaxy5	Stacks2: clone filter	Identify PCR clones	operation_2409	topic_0102,topic_3056		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_clonefilter/stacks2_clonefilter/2.55+galaxy3	Stacks2: clone filter	Identify PCR clones	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_clonefilter/stacks2_clonefilter/2.53+galaxy0	Stacks2: clone filter	Identify PCR clones	operation_2409	topic_3056,topic_0102	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_clonefilter/stacks2_clonefilter/2.4+galaxy1	Stacks2: clone filter	Identify PCR clones	operation_2409	topic_0102,topic_3056	stacks	Stacks
@@ -9087,6 +9133,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/beacon2_sequence/beacon2_sequence/2.2.3+galaxy0
 toolshed.g2.bx.psu.edu/repos/iuc/beacon2_sequence/beacon2_sequence/2.2.1+galaxy0	Beacon2 Sequence	َQuery for the existence of a specified sequence at a given genomic position				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/4.4.41+galaxy0	obiuniq		operation_2403	topic_0654,topic_3168,topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/4.4.0	obiuniq		operation_2403	topic_0654,topic_3168,topic_0080		
+toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/4.4.46+galaxy0	obiuniq	groups identical sequences together	operation_2403	topic_0080,topic_3168,topic_0654		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/1.2.13	obiuniq		operation_2403	topic_0080,topic_0654,topic_3168	obitools	OBITools
 toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/4.4.42+galaxy0	obiuniq		operation_2403	topic_0654,topic_0080,topic_3168		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_uniq/obi_uniq/4.4.45+galaxy0	obiuniq	groups identical sequences together	operation_2403	topic_0654,topic_0080,topic_3168		
@@ -9148,6 +9195,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/sansa_annotate/sansa_annotate/0.2.5+galaxy0	san
 toolshed.g2.bx.psu.edu/repos/iuc/sansa_annotate/sansa_annotate/0.0.7+galaxy0	sansa annotate	structural variants				
 toolshed.g2.bx.psu.edu/repos/iuc/sansa_annotate/sansa_annotate/0.0.8+galaxy0	sansa annotate	structural variants	operation_3197	topic_3175		
 toolshed.g2.bx.psu.edu/repos/iuc/sansa_annotate/sansa_annotate/0.2.2+galaxy0	sansa annotate	structural variants	operation_3197	topic_3175		
+toolshed.g2.bx.psu.edu/repos/iuc/obi_tag/obi_tag/4.4.46+galaxy0	obitag	Taxonomic sequence annotation				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_tag/obi_tag/4.4.42+galaxy0	obitag	Taxonomic sequence annotation				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_tag/obi_tag/4.4.45+galaxy0	obitag	Taxonomic sequence annotation				
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_concat/bcftools_concat/1.15.1+galaxy3	bcftools concat	Concatenate or combine VCF/BCF files	operation_2409,operation_3227	topic_3517,topic_0199,topic_3516,topic_2885	bcftools	BCFtools
@@ -9320,6 +9368,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.19.3.2	fastp	- fast all-in-one pr
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.18.0.0	fastp	- fast all-in-one preprocessing for FASTQ files	operation_3187,operation_3192	topic_0080,topic_0632	fastp	fastp
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.23.4+galaxy0	fastp	fast all-in-one preprocessing for FASTQ files	operation_3187,operation_3192	topic_0080,topic_0632	fastp	fastp
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.24.3+galaxy0	fastp	fast all-in-one preprocessing for FASTQ files	operation_3192,operation_3187	topic_0080,topic_0632		
+toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/1.3.6+galaxy0	fastp	fast all-in-one preprocessing for FASTQ files	operation_3192,operation_3187	topic_0080,topic_0632		
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.12.4.0	fastp	- fast all-in-one preprocessing for FASTQ files	operation_3187,operation_3192	topic_0080,topic_0632	fastp	fastp
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/1.2.0+galaxy0	fastp	fast all-in-one preprocessing for FASTQ files	operation_3187,operation_3192	topic_0080,topic_0632		
 toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.20.1+galaxy0	fastp	- fast all-in-one preprocessing for FASTQ files	operation_3187,operation_3192	topic_0080,topic_0632	fastp	fastp
@@ -9587,12 +9636,14 @@ toolshed.g2.bx.psu.edu/repos/iuc/bcftools_view/bcftools_view/1.3.0	bcftools view
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_view/bcftools_view/1.10	bcftools view	VCF/BCF conversion, view, subset and filter VCF/BCF files	operation_2409,operation_3227	topic_3517,topic_2885,topic_0199,topic_3516	bcftools	BCFtools
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_view/bcftools_view/1.15.1+galaxy0	bcftools view	VCF/BCF conversion, view, subset and filter VCF/BCF files	operation_3227,operation_2409	topic_3517,topic_0199,topic_3516,topic_2885	bcftools	BCFtools
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_view/bcftools_view/1.3.1	bcftools view	VCF/BCF conversion, view, subset and filter VCF/BCF files	operation_2409,operation_3227	topic_3517,topic_2885,topic_0199,topic_3516	bcftools	BCFtools
+toolshed.g2.bx.psu.edu/repos/iuc/obi_refidx/obi_refidx/4.4.46+galaxy0	obirefidx	Index sequence file according to a taxdump file				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_refidx/obi_refidx/4.4.42+galaxy0	obirefidx	Index sequence file according to a taxdump file				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_refidx/obi_refidx/4.4.45+galaxy0	obirefidx	Index sequence file according to a taxdump file				
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_trim_flows/mothur_trim_flows/1.36.1.0	Trim.flows	partition by barcode, trim to length, cull by length and mismatches		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_trim_flows/mothur_trim_flows/1.39.5.0	Trim.flows	partition by barcode, trim to length, cull by length and mismatches		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/geopandas_table2geojson/geopandas_table2geojson/1.1.3+galaxy0	Table to GeoJSON					
 toolshed.g2.bx.psu.edu/repos/iuc/geopandas_table2geojson/geopandas_table2geojson/1.1.1+galaxy1	Table to GeoJSON					
+toolshed.g2.bx.psu.edu/repos/iuc/geopandas_table2geojson/geopandas_table2geojson/1.1.4+galaxy0	Table to GeoJSON					
 toolshed.g2.bx.psu.edu/repos/iuc/geopandas_table2geojson/geopandas_table2geojson/1.1.2+galaxy0	Table to GeoJSON					
 toolshed.g2.bx.psu.edu/repos/iuc/geopandas_table2geojson/geopandas_table2geojson/1.1.1+galaxy0	Table to GeoJSON					
 toolshed.g2.bx.psu.edu/repos/iuc/geopandas_table2geojson/geopandas_table2geojson/1.0.1+galaxy0	Table to GeoJSON					
@@ -9803,6 +9854,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/meme_meme/meme_meme/4.11.0.1	MEME	- Multiple Em
 toolshed.g2.bx.psu.edu/repos/iuc/meme_meme/meme_meme/4.11.2.0	MEME	- Multiple Em for Motif Elicitation				
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_degap_seqs/mothur_degap_seqs/1.36.1.0	Degap.seqs	Remove gap characters from sequences		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_degap_seqs/mothur_degap_seqs/1.39.5.0	Degap.seqs	Remove gap characters from sequences		topic_3697	mothur	mothur
+toolshed.g2.bx.psu.edu/repos/iuc/mags_visualization_sample_heatmap/mags_visualization_sample_heatmap/0.0.11+galaxy0	MAGs-visualization sample-heatmap	Create a sample heatmap plot				
 toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_metrics/snapatac2_metrics/2.8.0+galaxy0	SnapATAC2 Metrics	and quality control	operation_0314,operation_3891,operation_3935	topic_3173,topic_2229,topic_3168,topic_0102,topic_3940		
 toolshed.g2.bx.psu.edu/repos/iuc/paffy_upconvert/paffy_upconvert/3.1.4+galaxy0	Paffy upconvert	translates coordinates of PAF alignments to refer to extracted subsequences				
 toolshed.g2.bx.psu.edu/repos/iuc/paffy_upconvert/paffy_upconvert/2.9.9+galaxy0	Paffy upconvert	translates coordinates of PAF alignments to refer to extracted subsequences				
@@ -9950,6 +10002,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/migmap/migmap/1.0.3+galaxy1	MiGMAP	mapper for f
 toolshed.g2.bx.psu.edu/repos/iuc/migmap/migmap/1.0.2.1	MiGMAP	mapper for full-length T- and B-cell repertoire sequencing			MiGMAP	MiGMAP
 toolshed.g2.bx.psu.edu/repos/iuc/migmap/migmap/1.0.3+galaxy2	MiGMAP	mapper for full-length T- and B-cell repertoire sequencing			MiGMAP	MiGMAP
 toolshed.g2.bx.psu.edu/repos/iuc/migmap/migmap/1.0.3	MiGMAP	mapper for full-length T- and B-cell repertoire sequencing			MiGMAP	MiGMAP
+toolshed.g2.bx.psu.edu/repos/iuc/mags_visualization_drep_cluster_func/mags_visualization_drep_cluster_func/0.0.11+galaxy0	MAGs-visualization drep-cluster-func	Create a dRep cluster plot with functional annotation				
 toolshed.g2.bx.psu.edu/repos/iuc/tesseract/tesseract/5.5.1+galaxy2	Tesseract	Optical Character Recognition				
 toolshed.g2.bx.psu.edu/repos/iuc/tesseract/tesseract/5.5.2+galaxy1	Tesseract	Optical Character Recognition				
 toolshed.g2.bx.psu.edu/repos/iuc/tesseract/tesseract/5.5.1+galaxy0	Tesseract	Optical Character Recognition				
@@ -9983,6 +10036,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/minia/minia/3.2.4	Minia	Short-read assembler ba
 toolshed.g2.bx.psu.edu/repos/iuc/minia/minia/3.2.1	Minia	Short-read assembler based on a de Bruijn graph				
 toolshed.g2.bx.psu.edu/repos/iuc/minia/minia/3.2.6	Minia	Short-read assembler based on a de Bruijn graph	operation_0525	topic_0196	minia	Minia
 toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_barplot/ggplot2_barplot/3.5.1+galaxy0	Barplot w ggplot2	Barplot visualization tool using ggplot2				
+toolshed.g2.bx.psu.edu/repos/iuc/obi_taxonomy/obi_taxonomy/4.4.46+galaxy0	obitaxonomy	manage and request a taxonomy database				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_taxonomy/obi_taxonomy/4.4.42+galaxy0	obitaxonomy	manage and request a taxonomy database				
 toolshed.g2.bx.psu.edu/repos/iuc/obi_taxonomy/obi_taxonomy/4.4.45+galaxy0	obitaxonomy	manage and request a taxonomy database				
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_mergeoutputs/kaiju_mergeoutputs/1.10.1+galaxy2	kaiju-mergeOutputs		operation_3460	topic_3174		
@@ -10046,6 +10100,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/miniasm/miniasm/0.3_r179+galaxy1	miniasm	Ultraf
 toolshed.g2.bx.psu.edu/repos/iuc/miniasm/miniasm/0.3+galaxy1	miniasm	Ultrafast de novo assembly for long noisy reads	operation_0524	topic_0622,topic_0196	miniasm	miniasm
 toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/4.4.41+galaxy0	obigrep	Filters sequence file	operation_2403	topic_3168,topic_0080,topic_0654		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/4.4.0	obigrep	Filters sequence file	operation_2403	topic_0080,topic_3168,topic_0654		
+toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/4.4.46+galaxy0	obigrep	Filters sequence file	operation_2403	topic_3168,topic_0080,topic_0654		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/1.2.13	obigrep	Filters sequence file	operation_2403	topic_0080,topic_0654,topic_3168	obitools	OBITools
 toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/4.4.42+galaxy0	obigrep	Filters sequence file	operation_2403	topic_0654,topic_3168,topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/obi_grep/obi_grep/4.4.45+galaxy0	obigrep	Filters sequence file	operation_2403	topic_3168,topic_0080,topic_0654		
@@ -10061,6 +10116,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/pairtools_stats/pairtools_stats/1.1.3+galaxy1	P
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_stats/pairtools_stats/1.1.2+galaxy0	Pairtools Stats	Calculates pairs statistics for input pairs and pairsam files.				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_stats/pairtools_stats/1.1.3+galaxy6	Pairtools Stats	Calculates pairs statistics for input pairs and pairsam files.				
 toolshed.g2.bx.psu.edu/repos/iuc/pairtools_stats/pairtools_stats/1.1.3+galaxy5	Pairtools Stats	Calculates pairs statistics for input pairs and pairsam files.				
+toolshed.g2.bx.psu.edu/repos/iuc/mags_visualization_taxa_sankey/mags_visualization_taxa_sankey/0.0.11+galaxy0	MAGs-visualization taxa-sankey	Create GTDB taxonomy Sankey plots				
 toolshed.g2.bx.psu.edu/repos/iuc/dada2_dada/dada2_dada/1.20+galaxy1	dada2: dada	Remove sequencing errors	operation_3227,operation_3200	topic_3697,topic_3174,topic_0199,topic_3168	dada2	dada2
 toolshed.g2.bx.psu.edu/repos/iuc/dada2_dada/dada2_dada/1.28+galaxy0	dada2: dada	Remove sequencing errors	operation_3200,operation_3227	topic_3697,topic_3168,topic_3174,topic_0199	dada2	dada2
 toolshed.g2.bx.psu.edu/repos/iuc/dada2_dada/dada2_dada/1.30.0+galaxy0	dada2: dada	Remove sequencing errors	operation_3227,operation_3200	topic_3697,topic_0199,topic_3168,topic_3174	dada2	dada2
@@ -10141,6 +10197,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bcftools/bcftools_view/0.1.19.0	bcftools view	C
 toolshed.g2.bx.psu.edu/repos/iuc/qiime_filter_fasta/qiime_filter_fasta/1.9.1.0	Filter fasta	to remove sequences based on input criteria (filter_fasta)	operation_2945	topic_3070	qiime	QIIME
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_denovomap/stacks2_denovomap/2.55+galaxy2	Stacks2: de novo map	the Stacks pipeline without a reference genome (denovo_map.pl)	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_denovomap/stacks2_denovomap/2.4+galaxy0	Stacks2: de novo map	the Stacks pipeline without a reference genome (denovo_map.pl)	operation_2409	topic_0102,topic_3056	stacks	Stacks
+toolshed.g2.bx.psu.edu/repos/iuc/stacks2_denovomap/stacks2_denovomap/2.55+galaxy5	Stacks2: de novo map	the Stacks pipeline without a reference genome (denovo_map.pl)	operation_2409	topic_0102,topic_3056		
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_denovomap/stacks2_denovomap/2.55+galaxy3	Stacks2: de novo map	the Stacks pipeline without a reference genome (denovo_map.pl)	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_denovomap/stacks2_denovomap/2.53+galaxy0	Stacks2: de novo map	the Stacks pipeline without a reference genome (denovo_map.pl)	operation_2409	topic_0102,topic_3056	stacks	Stacks
 toolshed.g2.bx.psu.edu/repos/iuc/stacks2_denovomap/stacks2_denovomap/2.4+galaxy1	Stacks2: de novo map	the Stacks pipeline without a reference genome (denovo_map.pl)	operation_2409	topic_3056,topic_0102	stacks	Stacks
@@ -11719,6 +11776,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/keras_model_config/keras_model_config/0.4
 toolshed.g2.bx.psu.edu/repos/bgruening/keras_model_config/keras_model_config/0.4.0	Create a deep learning model architecture	using Keras	operation_3659,operation_2990,operation_3935,operation_3432	topic_3474,topic_0092	scikit-learn	scikit-learn
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_detailview/3dtrees_detailview/1.1.0+galaxy0	3Dtrees: DetailView	species prediction on segmented point cloud.				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_detailview/3dtrees_detailview/1.0.0+galaxy0	3Dtrees: DetailView	species prediction on segmented point cloud.				
+toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_detailview/3dtrees_detailview/1.1.1+galaxy0	3Dtrees: DetailView	species prediction on segmented point cloud.				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_detailview/3dtrees_detailview/1.0.1+galaxy0	3Dtrees: DetailView	species prediction on segmented point cloud.				
 toolshed.g2.bx.psu.edu/repos/bgruening/mavedb_importer/mavedb_importer/0.9	MaveDB	import MAVE data				
 toolshed.g2.bx.psu.edu/repos/bgruening/ctb_machine_learning/ctb_mds_plot/0.1	MDS Scatter Plot	of molecule similarity				
@@ -11730,6 +11788,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/imagemagick_image_montage/imagemagick_ima
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_gray_to_color/cp_gray_to_color/3.1.9+galaxy1	GrayToColor	with CellProfiler	operation_3443		CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_gray_to_color/cp_gray_to_color/3.1.9+galaxy0	GrayToColor	take grayscale images and produces a color image from them			CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_gray_to_color/cp_gray_to_color/3.1.9	GrayToColor	take grayscale images and produces a color image from them			CellProfiler	CellProfiler
+toolshed.g2.bx.psu.edu/repos/bgruening/kat_gcp/kat_gcp/2.4.2+galaxy0	KAT GCP	GC vs Coverage analysis of k-mers	operation_0236,operation_0253	topic_0080,topic_0622		
 toolshed.g2.bx.psu.edu/repos/bgruening/plotly_ml_performance_plots/plotly_ml_performance_plots/0.3	Plot confusion matrix, precision, recall and ROC and AUC curves	of tabular data	operation_2990,operation_3935,operation_3659,operation_3432	topic_0092,topic_3474	scikit-learn	scikit-learn
 toolshed.g2.bx.psu.edu/repos/bgruening/plotly_ml_performance_plots/plotly_ml_performance_plots/0.1	Plot confusion matrix, precision, recall and ROC and AUC curves	of tabular data	operation_3935,operation_2990,operation_3432,operation_3659	topic_0092,topic_3474	scikit-learn	scikit-learn
 toolshed.g2.bx.psu.edu/repos/bgruening/plotly_ml_performance_plots/plotly_ml_performance_plots/0.2	Plot confusion matrix, precision, recall and ROC and AUC curves	of tabular data	operation_3432,operation_2990,operation_3659,operation_3935	topic_0092,topic_3474	scikit-learn	scikit-learn
@@ -12060,6 +12119,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/kmetashot/kmetashot/2.0+galaxy2	kMetaShot
 toolshed.g2.bx.psu.edu/repos/bgruening/tgsgapcloser/tgsgapcloser/1.0.3+galaxy0	TGS-GapCloser	fills the N-gap of error-prone long reads			TGS-GapCloser	TGS-GapCloser
 toolshed.g2.bx.psu.edu/repos/bgruening/dotknot/dotknot/1.3.1	DotKnot	pseudoknot prediction in a given RNA sequence				
 toolshed.g2.bx.psu.edu/repos/bgruening/netboxr/netboxr/1.6.0	netboxr	enables automated discovery of biological process modules by network analysis.				
+toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_forestmamba/3dtrees_forestmamba/1.0.0+galaxy0	3Dtrees: ForestMamba	Forest instance and semantic segmentation of point clouds using the ForestMamba model.				
 toolshed.g2.bx.psu.edu/repos/bgruening/glimmer_acgt_content/glimmer_acgt_content/3.02+galaxy2	ACGT Content	of windows in each sequence	operation_2403,operation_3197	topic_0080		
 toolshed.g2.bx.psu.edu/repos/bgruening/racon/racon/1.4.20+galaxy0	Racon	Consensus module for raw de novo DNA assembly of long uncorrected reads.			Racon	Racon
 toolshed.g2.bx.psu.edu/repos/bgruening/racon/racon/1.3.1.1	Racon	Consensus module for raw de novo DNA assembly of long uncorrected reads.			Racon	Racon
@@ -12632,6 +12692,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_chicplotviewpoint/hicexplorer
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_segmentanytree/3dtrees_segmentanytree/1.1.0+galaxy0	3Dtrees: SegmentAnyTree	Forest instance segmentation.				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_segmentanytree/3dtrees_segmentanytree/1.2.2+galaxy0	3Dtrees: SegmentAnyTree	Forest instance segmentation.				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_segmentanytree/3dtrees_segmentanytree/1.2.1+galaxy0	3Dtrees: SegmentAnyTree	Forest instance segmentation.				
+toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_segmentanytree/3dtrees_segmentanytree/1.2.3+galaxy0	3Dtrees: SegmentAnyTree	Forest instance segmentation.				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_segmentanytree/3dtrees_segmentanytree/1.2.0+galaxy0	3Dtrees: SegmentAnyTree	Forest instance segmentation.				
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_mask_image/cp_mask_image/3.1.9+galaxy1	MaskImage	with CellProfiler	operation_3443		CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_mask_image/cp_mask_image/3.1.9+galaxy0	MaskImage	hide portions of an image based on previously identified objects			CellProfiler	CellProfiler
@@ -12716,6 +12777,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/antismash/antismash/6.1.1+galaxy1	Antisma
 toolshed.g2.bx.psu.edu/repos/bgruening/kat_filter_seq/kat_filter_seq/2.4.2+galaxy0	KAT Filter Seq	filters sequences based on k-mer content	operation_0253,operation_0236	topic_0080,topic_0622		
 toolshed.g2.bx.psu.edu/repos/bgruening/ctb_im_o3dalign/ctb_im_o3dalign/1.1.3+galaxy0	Open 3D Align	with RDKit				
 toolshed.g2.bx.psu.edu/repos/bgruening/ctb_im_o3dalign/ctb_im_o3dalign/1.1.4+galaxy0	Open 3D Align	with RDKit				
+toolshed.g2.bx.psu.edu/repos/bgruening/kat_comp/kat_comp/2.4.2+galaxy0	KAT Comp	compares k-mer count hashes	operation_0236,operation_0253	topic_0080,topic_0622		
 toolshed.g2.bx.psu.edu/repos/bgruening/hicup_hicup/hicup_hicup/0.5.10.0	Hicup Pipeline	controls the other programs in the HiCUP pipeline.	operation_3198	topic_3173	hicup	HiCUP
 toolshed.g2.bx.psu.edu/repos/bgruening/hicup_hicup/hicup_hicup/0.1.0	Hicup Pipeline	controls the other programs in the HiCUP pipeline.	operation_3198	topic_3173	hicup	HiCUP
 toolshed.g2.bx.psu.edu/repos/bgruening/hicup_hicup/hicup_hicup/0.9.2+galaxy0	Hicup Pipeline	controls the other programs in the HiCUP pipeline.	operation_3198	topic_3173	hicup	HiCUP
@@ -12759,6 +12821,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/wordcloud/wordcloud/1.9.4+galaxy2	Generat
 toolshed.g2.bx.psu.edu/repos/bgruening/wordcloud/wordcloud/1.9.4+galaxy3	Generate a word cloud	with highly customizable appearance				
 toolshed.g2.bx.psu.edu/repos/bgruening/wordcloud/wordcloud/1.9.4+galaxy1	Generate a word cloud	with highly customizable appearance				
 toolshed.g2.bx.psu.edu/repos/bgruening/wordcloud/wordcloud/1.9.4+galaxy0	Generate a word cloud	with highly customizable appearance				
+toolshed.g2.bx.psu.edu/repos/bgruening/kat_hist/kat_hist/2.4.2+galaxy0	KAT Histogram	creates a histogram of k-mer occurrences	operation_0236,operation_0253	topic_0080,topic_0622		
 toolshed.g2.bx.psu.edu/repos/bgruening/pandas_rolling_window/pandas_rolling_window/0.1	Rolling window	over a dataframe (e.g. for data smoothing)				
 toolshed.g2.bx.psu.edu/repos/bgruening/chembl/chembl/0.1.0	Search ChEMBL database	for compounds which are similar to a SMILES string	operation_2422	topic_3369,topic_0154,topic_2258	chembl	ChEMBL
 toolshed.g2.bx.psu.edu/repos/bgruening/chembl/chembl/0.10.1+galaxy4	Search ChEMBL database	for compounds which are similar to a SMILES string	operation_2422	topic_2258,topic_0154,topic_3369	chembl	ChEMBL
@@ -13092,9 +13155,11 @@ toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_gc_bias/deeptools_compu
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_smart_tile/3dtrees_smart_tile/2.0.0+galaxy0	3DTrees: SmartTile	Create COPC tiles, subsample outputs, filter border overlap, and remap prediction dimensions				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_smart_tile/3dtrees_smart_tile/1.1.0+galaxy0	3DTrees: SmartTile	Subsampling, tiling, merging and matching of (multiple) point clouds				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_smart_tile/3dtrees_smart_tile/1.0.2+galaxy0	3DTrees: SmartTile	Subsampling, tiling, merging and matching of (multiple) point clouds				
+toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_smart_tile/3dtrees_smart_tile/2.3+galaxy0	3DTrees: SmartTile	Tile, merge and remap point clouds				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_smart_tile/3dtrees_smart_tile/2.1.0+galaxy0	3DTrees: SmartTile	Create COPC tiles, subsample outputs, filter border overlap, and remap prediction dimensions				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_smart_tile/3dtrees_smart_tile/1.0.0+galaxy0	3DTrees: SmartTile	Subsampling, tiling, merging and matching of (multiple) point clouds				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_smart_tile/3dtrees_smart_tile/2.0.1+galaxy0	3DTrees: SmartTile	Create COPC tiles, subsample outputs, filter border overlap, and remap prediction dimensions				
+toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_smart_tile/3dtrees_smart_tile/2.2+galaxy15	3DTrees: SmartTile	Tile, merge and remap point clouds				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_smart_tile/3dtrees_smart_tile/1.0.1+galaxy0	3DTrees: SmartTile	Subsampling, tiling, merging and matching of (multiple) point clouds				
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_track_objects/cp_track_objects/3.1.9+galaxy1	TrackObjects	with CellProfiler	operation_3443		CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_track_objects/cp_track_objects/3.1.9+galaxy0	TrackObjects	tracking objects throughout sequential frames of a series of images			CellProfiler	CellProfiler
@@ -13156,7 +13221,9 @@ toolshed.g2.bx.psu.edu/repos/bgruening/glimmer3/glimmer_not-knowlegde-based/0.2	
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_potree/3dtrees_potree/1.1.0+galaxy0	3Dtrees: Potree Converter	Convert LAS/LAZ point clouds to Potree octree format for web visualization				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_potree/3dtrees_potree/1.0.0+galaxy1	3Dtrees: Potree Converter	Convert LAS/LAZ point clouds to Potree octree format for web visualization				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_potree/3dtrees_potree/1.0.2+galaxy0	3Dtrees: Potree Converter	Convert LAS/LAZ point clouds to Potree octree format for web visualization				
+toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_potree/3dtrees_potree/1.2.1+galaxy0	3Dtrees: Potree Converter	Convert LAS/LAZ point clouds to Potree octree format for web visualization				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_potree/3dtrees_potree/1.0.0+galaxy0	3Dtrees: Potree Converter	Convert LAS/LAZ point clouds to Potree octree format for web visualization				
+toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_potree/3dtrees_potree/1.2.0+galaxy0	3Dtrees: Potree Converter	Convert LAS/LAZ point clouds to Potree octree format for web visualization				
 toolshed.g2.bx.psu.edu/repos/bgruening/3dtrees_potree/3dtrees_potree/1.0.1+galaxy0	3Dtrees: Potree Converter	Convert LAS/LAZ point clouds to Potree octree format for web visualization				
 toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_alignmentsieve/deeptools_alignmentsieve/3.3.2.0.0	alignmentsieve	Filter BAM/CRAM files according to specified parameters	operation_3435,operation_0337	topic_0622,topic_3169	deeptools	DeepTools
 toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_alignmentsieve/deeptools_alignmentsieve/3.3.0.0.0	alignmentsieve	Filter BAM/CRAM files according to specified parameters	operation_0337,operation_3435	topic_3169,topic_0622	deeptools	DeepTools
@@ -13794,6 +13861,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_chicsignificantinteractions/h
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_chicsignificantinteractions/hicexplorer_chicsignificantinteractions/3.4.3.0	chicSignificantInteractions	computes viewpoints with the given reference points and a background model	operation_0337,operation_2428,operation_3435	topic_3295,topic_3169,topic_0769,topic_0654,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/bgruening/openduck_run_smd/openduck_run_smd/0.1.1	Run OpenDUck	steered molecular dynamics runs				
 toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/2.33.0+galaxy0	LLM Hub	Call any LLM				
+toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/2.41.1+galaxy1	LLM Hub	Call any LLM				
 toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/2.36.0+galaxy0	LLM Hub	Call any LLM				
 toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/1.101.0+galaxy0	LLM Hub	Call any LLM				
 toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/2.31.0+galaxy0	LLM Hub	Call any LLM				
@@ -14507,6 +14575,7 @@ toolshed.g2.bx.psu.edu/repos/iss/chewbbaca/chewBBACA/2.0	chewBBACA	BSR-Based All
 toolshed.g2.bx.psu.edu/repos/maciek/spamr_vet_tools/quast_get_fasta/0.1.0+galaxy0	QUAST Analysis and FASTA Generator	Extracts QUAST metrics and generates FASTA files from JSON input.				
 toolshed.g2.bx.psu.edu/repos/maciek/spamr_vet_tools/quality_script_fastp_bracken/0.1.0+galaxy0	Quality Control FastP Bracken	Quality control using FastP and Bracken				
 toolshed.g2.bx.psu.edu/repos/maciek/spamr_vet_tools/mlst_amr_staramr/0.1.0+galaxy0	MLST, AMRfinder, and STARamr Analysis	Extracts MLST, AMRfinder Plus, and STARamr results from JSON input.				
+toolshed.g2.bx.psu.edu/repos/maciek/fbqs_integrator/fbqs_integrator/1.0.1	FBQS Integrator	Merge quality-checked outputs from Fastp, Bracken and QUAST into consolidated STARAMR Excel report				
 toolshed.g2.bx.psu.edu/repos/maciek/fbqs_integrator/fbqs_integrator/1.0.0	FBQS Integrator	Merge quality-checked outputs from Fastp, Bracken and QUAST into consolidated STARAMR Excel report				
 toolshed.g2.bx.psu.edu/repos/yguitton/withinvariation/mixomics_multilevel/0.5.0	Multilevel	Data transformation: Within matrix decomposition for repeated measurements (cross-over design) with mixOmics package	operation_3203,operation_0226,operation_3501,operation_3214,operation_0337,operation_2238,operation_3694	topic_3307,topic_2259,topic_3172	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/yguitton/metams_rungc/metams_runGC/3.0.0+metaMS1.24.0-galaxy0	metaMS.runGC	GC-MS data preprocessing using metaMS package				
@@ -21372,6 +21441,7 @@ toolshed.g2.bx.psu.edu/repos/ethevenot/profia/profia/3.1.0	proFIA	Preprocessing 
 toolshed.g2.bx.psu.edu/repos/ethevenot/profia/profia/3.0.0	proFIA	Preprocessing of FIA-HRMS data	operation_3203,operation_0226,operation_3501,operation_3214,operation_0337,operation_2238,operation_3694	topic_3307,topic_2259,topic_3172	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/ethevenot/profia/profia/3.0.4	proFIA	Preprocessing of FIA-HRMS data	operation_3203,operation_0226,operation_3501,operation_3214,operation_0337,operation_2238,operation_3694	topic_3307,topic_2259,topic_3172	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/ethevenot/heatmap/Heatmap/2.2.0	Heatmap	Heatmap of the dataMatrix				
+toolshed.g2.bx.psu.edu/repos/ethevenot/heatmap/Heatmap/2.2.2+galaxy1	Heatmap	Heatmap of the dataMatrix				
 toolshed.g2.bx.psu.edu/repos/ethevenot/heatmap/Heatmap/2.2.2	Heatmap	Heatmap of the dataMatrix				
 toolshed.g2.bx.psu.edu/repos/ethevenot/biosigner/biosigner/2.2.6	Biosigner	Molecular signature discovery from omics data	operation_0226,operation_3694,operation_3203,operation_0337,operation_3214,operation_3501,operation_2238	topic_2259,topic_3307,topic_3172	workflow4metabolomics	Workflow4Metabolomics
 toolshed.g2.bx.psu.edu/repos/ethevenot/biosigner/biosigner/2.2.4	Biosigner	Molecular signature discovery from omics data	operation_3501,operation_0226,operation_3214,operation_2238,operation_3694,operation_0337,operation_3203	topic_2259,topic_3307,topic_3172	workflow4metabolomics	Workflow4Metabolomics
@@ -23565,6 +23635,7 @@ toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/ms2snoop/ms2snoop/2.2.1+galax
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/ms2snoop/ms2snoop/1.0.0	MS2 Snoop	MS1/MS2 spectra and associated adducts extraction and cleaning				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/ms2snoop/ms2snoop/1.0.1+galaxy0	MS2 Snoop	MS1/MS2 spectra and associated adducts extraction and cleaning	operation_3803,operation_3860	topic_0091,topic_3370		
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/influx_si/influx_si/7.0.1+galaxy1	influx_si	Estimate metabolic fluxes and concentrations by fitting simulated labeling in metabolites to NMR/MS measurements				
+toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/influx_si/influx_si/7.4.3+galaxy1	influx_si	Estimate metabolic fluxes and concentrations by fitting simulated labeling in metabolites to NMR/MS measurements				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/influx_si/influx_si/5.1.0+galaxy0	influx_si	metabolic flux analysis				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/influx_si/influx_si/5.1.0+galaxy1	influx_si	metabolic flux analysis				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/influx_si/influx_si/7.4.3+galaxy0	influx_si	Estimate metabolic fluxes and concentrations by fitting simulated labeling in metabolites to NMR/MS measurements				
@@ -23589,12 +23660,14 @@ toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/camera_groupfwhm/CAMERA_group
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/xcms_plot_eic/xcms_plot_eic/4.4.0+galaxy0	xcms plot eic	Plot the extracted ion chromatogram (EIC) from mzML file			XCMS	xcms
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/xcms_plot_eic/xcms_plot_eic/4.0.0+galaxy0	xcms plot eic	Plot the extracted ion chromatogram (EIC) from mzML file			XCMS	xcms
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/influx_si_data_manager/influx_data_manager/1.0.2+galaxy0	Influx Data Connector: Handling influx_si data inputs in Galaxy workflows					
+toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/influx_si_data_manager/influx_data_manager/1.0.3+galaxy1	Influx Data Connector: Handling influx_si data inputs in Galaxy workflows					
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/influx_si_data_manager/influx_data_manager/1.0.0+galaxy0	Influx Data Connector: Handling influx_si data inputs in Galaxy workflows					
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/physiofit/physiofit/2.1.0+galaxy0	PhysioFit	Extracellular flux analysis				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/physiofit/physiofit/3.3.2+galaxy0	PhysioFit: extracellular flux calculation	PhysioFit is a scientific tool designed to quantify cell growth parameters and uptake and production fluxes				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/physiofit/physiofit/3.3.5+galaxy0	PhysioFit: extracellular flux calculation	PhysioFit is a scientific tool designed to quantify cell growth parameters and uptake and production fluxes				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/physiofit/physiofit/2.2.1+galaxy0	PhysioFit	Extracellular flux analysis				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/physiofit/physiofit/3.3.4+galaxy0	PhysioFit: extracellular flux calculation	PhysioFit is a scientific tool designed to quantify cell growth parameters and uptake and production fluxes				
+toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/physiofit/physiofit/3.4.0+galaxy1	PhysioFit: extracellular flux calculation	PhysioFit is a scientific tool designed to quantify cell growth parameters and uptake and production fluxes				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/physiofit/physiofit/3.4.0+galaxy0	PhysioFit: extracellular flux calculation	PhysioFit is a scientific tool designed to quantify cell growth parameters and uptake and production fluxes				
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/xcms_refine/abims_xcms_refine/3.12.0+galaxy1	xcms refineChromPeaks (refine)	Remove or merge chromatographic peaks based on specific criteria.	operation_3695,operation_3634,operation_3215,operation_3628,operation_2428,operation_3203,operation_3694	topic_3383,topic_0092,topic_3172	xcms	xcms
 toolshed.g2.bx.psu.edu/repos/workflow4metabolomics/xcms_refine/abims_xcms_refine/3.12.0+galaxy0	xcms refineChromPeaks (refine)	Remove or merge chromatographic peaks based on specific criteria.	operation_3695,operation_3634,operation_3694,operation_3215,operation_2428,operation_3628,operation_3203	topic_0092,topic_3383,topic_3172	xcms	xcms
