@@ -2854,6 +2854,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/dada2_learnerrors/dada2_learnErrors/1.28+galaxy
 toolshed.g2.bx.psu.edu/repos/iuc/dada2_learnerrors/dada2_learnErrors/1.34.0+galaxy1	dada2: learnErrors	Learn Error rates	operation_3200,operation_3227	topic_3697,topic_3168,topic_3174,topic_0199		
 toolshed.g2.bx.psu.edu/repos/iuc/dada2_learnerrors/dada2_learnErrors/1.28+galaxy1	dada2: learnErrors	Learn Error rates	operation_3200,operation_3227	topic_3697,topic_3168,topic_3174,topic_0199	dada2	dada2
 toolshed.g2.bx.psu.edu/repos/iuc/dada2_learnerrors/dada2_learnErrors/1.12+galaxy0	dada2: learnErrors	Learn Error rates				
+toolshed.g2.bx.psu.edu/repos/iuc/vsnp_add_zero_coverage/vsnp_add_zero_coverage/3.0.6+galaxy1	vSNP: add zero coverage					
 toolshed.g2.bx.psu.edu/repos/iuc/virhunter/virhunter/1.0.0+galaxy1	virhunter	Deep learning method to identify viruses in sequencing datasets..	operation_2995	topic_0781	virhunter	VirHunter
 toolshed.g2.bx.psu.edu/repos/iuc/virhunter/virhunter/1.0.0+galaxy3	virhunter	Deep learning method to identify viruses in sequencing datasets	operation_2995	topic_0781	virhunter	VirHunter
 toolshed.g2.bx.psu.edu/repos/iuc/virhunter/virhunter/1.0.0+galaxy0	virhunter	Deep learning method to identify viruses in sequencing datasets..	operation_2995	topic_0781	virhunter	VirHunter
@@ -2992,6 +2993,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bio_hansel/bio_hansel/2.6.1+galaxy0	Salmonella 
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_find_cutoffs/pimento_find_cutoffs/1.2.0+galaxy0	PIMENTO Find cutoffs	Identifies potential primer cutoff points from base-conservation vectors				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_find_cutoffs/pimento_find_cutoffs/1.0.2+galaxy0	PIMENTO Find cutoffs	Identifies potential primer cutoff points from base-conservation vectors				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_find_cutoffs/pimento_find_cutoffs/1.0.3+galaxy0	PIMENTO Find cutoffs	Identifies potential primer cutoff points from base-conservation vectors				
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_find_cutoffs/pimento_find_cutoffs/1.2.1+galaxy0	PIMENTO Find cutoffs	Identifies potential primer cutoff points from base-conservation vectors				
 toolshed.g2.bx.psu.edu/repos/iuc/enasearch_retrieve_data/enasearch_retrieve_data/0.1.1.0	Retrieve ENA data	(other than taxon and project)	operation_2422,operation_0310,operation_3431,operation_0346	topic_0219,topic_3512,topic_0749,topic_3511	ena	European Nucleotide Archive (ENA)
 toolshed.g2.bx.psu.edu/repos/iuc/onto_tk_term_id_vs_term_name/onto_tk_term_id_vs_term_name/1.45.0	Get all the term IDs and term names	of a given OBO ontology	operation_0315,operation_0313,operation_0533,operation_2495,operation_0314	topic_3297,topic_0602,topic_0203,topic_3518,topic_0749	onto-tools	Onto-Tools
 toolshed.g2.bx.psu.edu/repos/iuc/picrust2_add_descriptions/picrust2_add_descriptions/2.5.3+galaxy0	PICRUSt2 Add descriptions	column to a function abundance table	operation_3478,operation_2495,operation_3797,operation_3928	topic_3293,topic_3174,topic_3301,topic_3837	picrust2	PICRUSt2
@@ -3041,6 +3043,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/16.42.0+
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/16.41.0+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_2409,operation_0338,operation_2422	topic_3071	ncbi_datasets	NCBI Datasets
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/18.24.0+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_2409,operation_2422,operation_0338	topic_3071		
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/18.14.0+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_2422,operation_0338,operation_2409	topic_3071		
+toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/18.33.1+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_2422,operation_0338,operation_2409	topic_3071		
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/17.1.0+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_2422,operation_0338,operation_2409	topic_3071	ncbi_datasets	NCBI Datasets
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/18.5.1+galaxy0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_2409,operation_0338,operation_2422	topic_3071		
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_genome/12.32.0	NCBI Datasets Genomes	download genome sequence, annotation and metadata	operation_0224,operation_0308,operation_3761,operation_3431	topic_3366,topic_0602,topic_3325,topic_3489,topic_3473	ncbi_resources	NCBI Resources
@@ -3074,6 +3077,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/16.42.0+ga
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/16.41.0+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_2422,operation_0338,operation_2409	topic_3071	ncbi_datasets	NCBI Datasets
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/18.24.0+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_0338,operation_2409,operation_2422	topic_3071		
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/18.14.0+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_2409,operation_0338,operation_2422	topic_3071		
+toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/18.33.1+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_0338,operation_2422,operation_2409	topic_3071		
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/17.1.0+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_2422,operation_2409,operation_0338	topic_3071	ncbi_datasets	NCBI Datasets
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/18.5.1+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_0338,operation_2409,operation_2422	topic_3071		
 toolshed.g2.bx.psu.edu/repos/iuc/ncbi_datasets/datasets_download_gene/18.23.0+galaxy0	NCBI Datasets Gene	download gene sequences and metadata	operation_2422,operation_0338,operation_2409	topic_3071		
@@ -3349,6 +3353,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/transit_tn5gaps/transit_tn5gaps/3.0.2+galaxy0	T
 toolshed.g2.bx.psu.edu/repos/iuc/transit_tn5gaps/transit_tn5gaps/3.2.3+galaxy0	TRANSIT Tn5Gaps	- determine essential genes	operation_0427	topic_3168,topic_0798,topic_0654		
 toolshed.g2.bx.psu.edu/repos/iuc/syri/syri/1.7.1+galaxy0	SyRI	Synteny and Rearrangement Identifier			SyRI	SyRI
 toolshed.g2.bx.psu.edu/repos/iuc/syri/syri/1.7.0+galaxy0	SyRI	Synteny and Rearrangement Identifier			SyRI	SyRI
+toolshed.g2.bx.psu.edu/repos/iuc/syri/syri/1.8.2+galaxy0	SyRI	Synteny and Rearrangement Identifier				
 toolshed.g2.bx.psu.edu/repos/iuc/taffy_stats/taffy_stats/0.0.3+galaxy0	Taffy stats	prints statistics from a TAF or MAF file				
 toolshed.g2.bx.psu.edu/repos/iuc/usher_matutils/usher_matutils/0.2.1+galaxy0	UShER matUtils	analyze, edit, and manipulate mutation annotated tree files			usher	usher
 toolshed.g2.bx.psu.edu/repos/iuc/usher_matutils/usher_matutils/0.6.6+galaxy0	UShER matUtils	analyze, edit, and manipulate mutation annotated tree files				
@@ -4468,6 +4473,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ucsc_fatovcf/fatovcf/473+galaxy0	faToVcf	Conver
 toolshed.g2.bx.psu.edu/repos/iuc/ucsc_fatovcf/fatovcf/482+galaxy0	faToVcf	Convert a FASTA alignment file to Variant Call Format (VCF) single-nucleotide diffs				
 toolshed.g2.bx.psu.edu/repos/iuc/ucsc_fatovcf/fatovcf/426+galaxy0	faToVcf	Convert a FASTA alignment file to Variant Call Format (VCF) single-nucleotide diffs			UCSC_Genome_Browser_Utilities	UCSC Genome Browser Utilities
 toolshed.g2.bx.psu.edu/repos/iuc/deepmicro/deepmicro/1.4+galaxy1	DeepMicro	Representation learning and classification framework			DeepMicro	DeepMicro
+toolshed.g2.bx.psu.edu/repos/iuc/deepmicro/deepmicro/1.4+galaxy3	DeepMicro	Representation learning and classification framework				
 toolshed.g2.bx.psu.edu/repos/iuc/deepmicro/deepmicro/1.4+galaxy2	DeepMicro	Representation learning and classification framework			DeepMicro	DeepMicro
 toolshed.g2.bx.psu.edu/repos/iuc/deepmicro/deepmicro/1.4+galaxy0	DeepMicro	Representation learning and classification framework			DeepMicro	DeepMicro
 toolshed.g2.bx.psu.edu/repos/iuc/tetyper/tetyper/1.1+galaxy0	TETyper	Transposable Element Typer				
@@ -4824,6 +4830,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/tesseract/tesseract/5.5.1+galaxy0	Tesseract	Opt
 toolshed.g2.bx.psu.edu/repos/iuc/tesseract/tesseract/5.5.2+galaxy2	Tesseract	Optical Character Recognition				
 toolshed.g2.bx.psu.edu/repos/iuc/tesseract/tesseract/5.5.2+galaxy0	Tesseract	Optical Character Recognition				
 toolshed.g2.bx.psu.edu/repos/iuc/tesseract/tesseract/5.5.1+galaxy2	Tesseract	Optical Character Recognition				
+toolshed.g2.bx.psu.edu/repos/iuc/tesseract/tesseract/5.5.3+galaxy0	Tesseract	Optical Character Recognition				
 toolshed.g2.bx.psu.edu/repos/iuc/tesseract/tesseract/5.5.2+galaxy4	Tesseract	Optical Character Recognition				
 toolshed.g2.bx.psu.edu/repos/iuc/tesseract/tesseract/5.0.0+galaxy0	Tesseract	Optical Character Recognition				
 toolshed.g2.bx.psu.edu/repos/iuc/tesseract/tesseract/5.5.1+galaxy1	Tesseract	Optical Character Recognition				
@@ -5145,6 +5152,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.9.0+galaxy0	ENA Upload 
 toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.7.1+galaxy1	ENA Upload tool	Submission of (meta)data to the European Nucleotide Archive (ENA)	operation_3431,operation_0346,operation_0310,operation_2422	topic_3512,topic_0219,topic_0749,topic_3511	ena	European Nucleotide Archive (ENA)
 toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.3.3	ENA Upload tool		operation_2422,operation_3431,operation_0346,operation_0310	topic_0219,topic_3512,topic_0749,topic_3511	ena	European Nucleotide Archive (ENA)
 toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.4.1	ENA Upload tool		operation_2422,operation_0310,operation_3431,operation_0346	topic_0219,topic_3512,topic_0749,topic_3511	ena	European Nucleotide Archive (ENA)
+toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.10.2+galaxy0	ENA Upload tool	Submission of (meta)data to the European Nucleotide Archive (ENA)	operation_0310,operation_0346,operation_3431,operation_2422	topic_3511,topic_3512,topic_0749,topic_0219		
 toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.5.3	ENA Upload tool		operation_0310,operation_0346,operation_2422,operation_3431	topic_3511,topic_0749,topic_0219,topic_3512	ena	European Nucleotide Archive (ENA)
 toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.3	ENA Upload tool		operation_2422,operation_0346,operation_3431,operation_0310	topic_3512,topic_0219,topic_3511,topic_0749	ena	European Nucleotide Archive (ENA)
 toolshed.g2.bx.psu.edu/repos/iuc/ena_upload/ena_upload/0.10.0+galaxy0	ENA Upload tool	Submission of (meta)data to the European Nucleotide Archive (ENA)	operation_2422,operation_3431,operation_0310,operation_0346	topic_3512,topic_3511,topic_0749,topic_0219		
@@ -5432,6 +5440,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/mummer_nucmer/mummer_nucmer/4.0.0rc1+galaxy3	Nu
 toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schicclusterminhash/schicexplorer_schicclusterminhash/1.0	scHicClusterMinHash	clusters single-cell Hi-C interaction matrices with MinHash dimension reduction	operation_2428,operation_0337,operation_3435	topic_0654,topic_0769,topic_3169,topic_3295,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schicclusterminhash/schicexplorer_schicclusterminhash/4.1	scHicClusterMinHash	clusters single-cell Hi-C interaction matrices with MinHash dimension reduction	operation_0337,operation_2428,operation_3435	topic_3295,topic_3169,topic_0769,topic_0654,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/iuc/schicexplorer_schicclusterminhash/schicexplorer_schicclusterminhash/4.0	scHicClusterMinHash	clusters single-cell Hi-C interaction matrices with MinHash dimension reduction	operation_0337,operation_3435,operation_2428	topic_0769,topic_0654,topic_3169,topic_3295,topic_3940	hicexplorer	HiCExplorer
+toolshed.g2.bx.psu.edu/repos/iuc/vsnp_build_tables/vsnp_build_tables/3.0.6+galaxy1	vSNP: build tables					
 toolshed.g2.bx.psu.edu/repos/iuc/lorikeet_spoligotype/lorikeet_spoligotype/17+galaxy0	lorikeet spoligotyping	M. tuberculosis DNA fingerprinting			lorikeet	lorikeet
 toolshed.g2.bx.psu.edu/repos/iuc/lorikeet_spoligotype/lorikeet_spoligotype/20+galaxy0	lorikeet spoligotyping	M. tuberculosis DNA fingerprinting			lorikeet	lorikeet
 toolshed.g2.bx.psu.edu/repos/iuc/b2btools_single_sequence/b2btools_single_sequence/3.0.5+galaxy0	b2bTools: Biophysical predictors for single sequences	from their amino-acid sequences	operation_3092,operation_3904,operation_0267		b2btools	b2bTools
@@ -5664,6 +5673,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/porechop/porechop/0.2.4	Porechop	adapter trimme
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_auto/pimento_auto/1.2.0+galaxy0	PIMENTO Primer cutoff prediction	Infers primers by predicting optimal cutoff points from read conservation patterns				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_auto/pimento_auto/1.0.2+galaxy0	PIMENTO Primer cutoff prediction	Infers primers by predicting optimal cutoff points from read conservation patterns				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_auto/pimento_auto/1.0.3+galaxy0	PIMENTO Primer cutoff prediction	Infers primers by predicting optimal cutoff points from read conservation patterns				
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_auto/pimento_auto/1.2.1+galaxy0	PIMENTO Primer cutoff prediction	Infers primers by predicting optimal cutoff points from read conservation patterns				
 toolshed.g2.bx.psu.edu/repos/iuc/ucsc_chainantirepeat/ucsc_chainantirepeat/469+galaxy0	chainAntiRepeat	Remove repeated chains			UCSC_Genome_Browser_Utilities	UCSC Genome Browser Utilities
 toolshed.g2.bx.psu.edu/repos/iuc/ucsc_chainantirepeat/ucsc_chainantirepeat/482+galaxy0	chainAntiRepeat	Remove repeated chains				
 toolshed.g2.bx.psu.edu/repos/iuc/spades_plasmidspades/spades_plasmidspades/3.15.4+galaxy0	plasmidSPAdes	extract and assembly plasmids from WGS data	operation_0525	topic_0622,topic_0196	plasmidspades	plasmidspades
@@ -5936,6 +5946,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/structure/structure/2.3.4+galaxy1	Structure	usi
 toolshed.g2.bx.psu.edu/repos/iuc/structure/structure/2.3.4	Structure	using multi-locus genotype data to investigate population structure				
 toolshed.g2.bx.psu.edu/repos/iuc/mist_dists/mist_dists/1.2.0+galaxy0	Minimap2-inferred sequence typing (MiST) dists	Builds distance and allele matrices from MiST output files				
 toolshed.g2.bx.psu.edu/repos/iuc/mist_dists/mist_dists/1.1.0+galaxy0	Minimap2-inferred sequence typing (MiST) dists	Builds distance and allele matrices from MiST output files				
+toolshed.g2.bx.psu.edu/repos/iuc/mist_dists/mist_dists/1.3.0+galaxy0	Minimap2-inferred sequence typing (MiST) dists	Builds distance and allele matrices from MiST output files				
 toolshed.g2.bx.psu.edu/repos/iuc/mykrobe_genotype/mykrobe_genotype/0.7.0	mkyrobe genotype	Antibiotic resistance predictions				
 toolshed.g2.bx.psu.edu/repos/iuc/mykrobe_genotype/mykrobe_genotype/0.6.1	mkyrobe genotype	Antibiotic resistance predictions				
 toolshed.g2.bx.psu.edu/repos/iuc/mykrobe_genotype/mykrobe_genotype/0.5.6	mkyrobe genotype	Antibiotic resistance predictions				
@@ -6085,6 +6096,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/gemini_lof_sieve/gemini_lof_sieve/0.18.1.0	GEMI
 toolshed.g2.bx.psu.edu/repos/iuc/gemini_lof_sieve/gemini_lof_sieve/0.18.1.1	GEMINI lof_sieve	Filter LoF variants by transcript position and type	operation_3197,operation_2403	topic_0080	gemini	GEMINI
 toolshed.g2.bx.psu.edu/repos/iuc/gemini_lof_sieve/gemini_lof_sieve/0.20.1	GEMINI lof_sieve	Filter LoF variants by transcript position and type	operation_3197,operation_2403	topic_0080	gemini	GEMINI
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_addtaxonnames/kaiju_addtaxonnames/1.10.1+galaxy1	kaiju-addTaxonNames		operation_3460	topic_3174	kaiju	Kaiju
+toolshed.g2.bx.psu.edu/repos/iuc/kaiju_addtaxonnames/kaiju_addtaxonnames/1.10.2+galaxy0	kaiju-addTaxonNames		operation_3460	topic_3174		
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_addtaxonnames/kaiju_addtaxonnames/1.10.1+galaxy0	kaiju-addTaxonNames		operation_3460	topic_3174	kaiju	Kaiju
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_addtaxonnames/kaiju_addtaxonnames/1.10.1+galaxy2	kaiju-addTaxonNames		operation_3460	topic_3174		
 toolshed.g2.bx.psu.edu/repos/iuc/graphlan_annotate/graphlan_annotate/1.0.0.0	Generation, personalization and annotation of tree	for GraPhlAn	operation_3460,operation_0567,operation_0326,operation_0323	topic_0194,topic_3174,topic_3944,topic_3293	graphlan	GraPhlAn
@@ -6494,6 +6506,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/sinto_barcode/sinto_barcode/0.10.1+galaxy0	Sint
 toolshed.g2.bx.psu.edu/repos/iuc/sinto_barcode/sinto_barcode/0.9.0+galaxy0	Sinto barcode	add cell barcodes to FASTQ read names				
 toolshed.g2.bx.psu.edu/repos/iuc/sinto_barcode/sinto_barcode/0.9.0+galaxy1	Sinto barcode	add cell barcodes to FASTQ read names				
 toolshed.g2.bx.psu.edu/repos/iuc/mmseqs2_easy_linsearch/mmseqs2_easy_linsearch/17-b804f+galaxy1	MMseqs2 easy-linsearch	for fast homology search scaling linearly				
+toolshed.g2.bx.psu.edu/repos/iuc/vsnp_determine_ref_from_data/vsnp_determine_ref_from_data/3.0.6+galaxy1	vSNP: determine reference	from input data				
 toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.2.1	CoverM-CONTIG					
 toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.6.1+galaxy0	CoverM contig	Calculate coverage of individual contigs				
 toolshed.g2.bx.psu.edu/repos/iuc/coverm_contig/coverm_contig/0.6.1+galaxy2	CoverM contig	Calculate read coverage per contig	operation_0495	topic_0091	coverm	CoverM
@@ -6506,6 +6519,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/humann2_rna_dna_norm/humann2_rna_dna_norm/0.11.
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_rna_dna_norm/humann2_rna_dna_norm/0.11.1.0	Normalize	combined meta'omic sequencing data	operation_3929		humann2	HUMAnN2
 toolshed.g2.bx.psu.edu/repos/iuc/bayescan/BayeScan/2.1	BayeScan	Detecting natural selection from population-based genetic data				
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_mergeoutputs/kaiju_mergeoutputs/1.10.1+galaxy1	kaiju-mergeOutputs		operation_3460	topic_3174	kaiju	Kaiju
+toolshed.g2.bx.psu.edu/repos/iuc/kaiju_mergeoutputs/kaiju_mergeoutputs/1.10.2+galaxy0	kaiju-mergeOutputs		operation_3460	topic_3174		
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_mergeoutputs/kaiju_mergeoutputs/1.10.1+galaxy0	kaiju-mergeOutputs		operation_3460	topic_3174	kaiju	Kaiju
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_mergeoutputs/kaiju_mergeoutputs/1.10.1+galaxy2	kaiju-mergeOutputs		operation_3460	topic_3174		
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_consensus_seqs/mothur_consensus_seqs/1.36.1.0	Consensus.seqs	Find a consensus sequence for each OTU or phylotype		topic_3697	mothur	mothur
@@ -7379,8 +7393,11 @@ toolshed.g2.bx.psu.edu/repos/iuc/sina/sina/1.7.2+galaxy0	SINA	reference based mu
 toolshed.g2.bx.psu.edu/repos/iuc/meme_chip/meme_chip/4.11.2+galaxy1	MEME-ChIP	- motif discovery, enrichment analysis and clustering on large nucleotide datasets	operation_0239,operation_2403	topic_0654,topic_3511,topic_3510	meme	MEME
 toolshed.g2.bx.psu.edu/repos/iuc/meme_chip/meme_chip/4.11.2	MEME-ChIP	- motif discovery, enrichment analysis and clustering on large nucleotide datasets	operation_0239,operation_2403	topic_0654,topic_3511,topic_3510	meme	MEME
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju2krona/kaiju_kaiju2krona/1.10.1+galaxy1	kaiju2krona		operation_3460	topic_3174	kaiju	Kaiju
+toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju2krona/kaiju_kaiju2krona/1.10.2+galaxy0	kaiju2krona		operation_3460	topic_3174		
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju2krona/kaiju_kaiju2krona/1.10.1+galaxy0	kaiju2krona		operation_3460	topic_3174	kaiju	Kaiju
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju2krona/kaiju_kaiju2krona/1.10.1+galaxy2	kaiju2krona		operation_3460	topic_3174		
+toolshed.g2.bx.psu.edu/repos/iuc/vsnp_statistics/vsnp_statistics/3.0.6+galaxy1	vSNP: statistics					
+toolshed.g2.bx.psu.edu/repos/iuc/bigscape/bigscape/1.1.9+galaxy3	BiG-SCAPE	Construct sequence similarity networks of BGCs and group them into GCF				
 toolshed.g2.bx.psu.edu/repos/iuc/bigscape/bigscape/1.1.9+galaxy2	BiG-SCAPE	Construct sequence similarity networks of BGCs and group them into GCF			BiG-SCAPE	BiG-SCAPE
 toolshed.g2.bx.psu.edu/repos/iuc/bigscape/bigscape/1.1.9+galaxy0	BiG-SCAPE	Construct sequence similarity networks of BGCs and group them into GCF				
 toolshed.g2.bx.psu.edu/repos/iuc/bigscape/bigscape/1.1.9+galaxy1	BiG-SCAPE	Construct sequence similarity networks of BGCs and group them into GCF			BiG-SCAPE	BiG-SCAPE
@@ -7740,6 +7757,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/gemini_de_novo/gemini_de_novo/0.18.1.1	GEMINI d
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_choose_primer_cutoff/pimento_choose_primer_cutoff/1.2.0+galaxy0	PIMENTO Choose primer cutoff	Selects optimal primer cutoff and generates final inferred primer sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_choose_primer_cutoff/pimento_choose_primer_cutoff/1.0.2+galaxy0	PIMENTO Choose primer cutoff	Selects optimal primer cutoff and generates final inferred primer sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_choose_primer_cutoff/pimento_choose_primer_cutoff/1.0.3+galaxy0	PIMENTO Choose primer cutoff	Selects optimal primer cutoff and generates final inferred primer sequences				
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_choose_primer_cutoff/pimento_choose_primer_cutoff/1.2.1+galaxy0	PIMENTO Choose primer cutoff	Selects optimal primer cutoff and generates final inferred primer sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/column_remove_by_header/column_remove_by_header/1.0	Remove columns	by heading				
 toolshed.g2.bx.psu.edu/repos/iuc/column_remove_by_header/column_remove_by_header/0.0.1	Remove columns	by heading				
 toolshed.g2.bx.psu.edu/repos/iuc/fairy_cov/fairy_cov/0.5.7+galaxy1	Fairy coverage	Create coverage file for specific binners				
@@ -7935,6 +7953,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ete_treeviewer/ete_treeviewer/3.1.3+galaxy0	ETE
 toolshed.g2.bx.psu.edu/repos/iuc/liftoff/liftoff/1.6.3+galaxy0	Liftoff	Lift gene annotations between genome assemblies				
 toolshed.g2.bx.psu.edu/repos/iuc/mist_call/mist_call/1.2.0+galaxy0	Minimap2-inferred sequence typing (MiST) call	Calls alleles from a FASTA file				
 toolshed.g2.bx.psu.edu/repos/iuc/mist_call/mist_call/1.1.0+galaxy0	Minimap2-inferred sequence typing (MiST) call	Calls alleles from a FASTA file				
+toolshed.g2.bx.psu.edu/repos/iuc/mist_call/mist_call/1.3.0+galaxy0	Minimap2-inferred sequence typing (MiST) call	Calls alleles from a FASTA file				
 toolshed.g2.bx.psu.edu/repos/iuc/pcdl_make_cell_vtk/pcdl_make_cell_vtk/3.0.1+galaxy0	pcdl_make_cell_vtk					
 toolshed.g2.bx.psu.edu/repos/iuc/getitd/getitd/1.5.16+galaxy0	getITD	detect FLT3-ITDs from amplicon NGS data				
 toolshed.g2.bx.psu.edu/repos/iuc/humann2_unpack_pathways/humann2_unpack_pathways/0.11.1.1	Unpack pathway abundances to show genes included		operation_3929		humann2	HUMAnN2
@@ -8024,10 +8043,12 @@ toolshed.g2.bx.psu.edu/repos/iuc/mothur_get_groups/mothur_get_groups/1.39.5.0	Ge
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_gen_bcv/pimento_gen_bcv/1.2.0+galaxy0	PIMENTO Generate base-conservation vector(s)	for primer fastq files				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_gen_bcv/pimento_gen_bcv/1.0.2+galaxy0	PIMENTO Generate base-conservation vector(s)	for primer fastq files				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_gen_bcv/pimento_gen_bcv/1.0.3+galaxy0	PIMENTO Generate base-conservation vector(s)	for primer fastq files				
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_gen_bcv/pimento_gen_bcv/1.2.1+galaxy0	PIMENTO Generate base-conservation vector(s)	for primer fastq files				
 toolshed.g2.bx.psu.edu/repos/iuc/paffy_view/paffy_view/2.9.9+galaxy1	Paffy view	prints and extract stats about PAF alignments				
 toolshed.g2.bx.psu.edu/repos/iuc/paffy_view/paffy_view/2.9.9+galaxy0	Paffy view	prints and extract stats about PAF alignments				
 toolshed.g2.bx.psu.edu/repos/iuc/paffy_view/paffy_view/3.1.4+galaxy0	Paffy view	prints and extract stats about PAF alignments				
 toolshed.g2.bx.psu.edu/repos/iuc/swissmodel_modelling_api/swissmodel_modelling_api/2.0.0	SWISS-MODEL Modelling API	Fully automated protein structure homology-modelling	operation_0477,operation_0479	topic_2814,topic_0082,topic_0078,topic_0602,topic_2275		
+toolshed.g2.bx.psu.edu/repos/iuc/swissmodel_modelling_api/swissmodel_modelling_api/3.0.1+galaxy0	SWISS-MODEL Modelling API	Fully automated protein structure homology-modelling	operation_0477,operation_0479	topic_0082,topic_0602,topic_0078,topic_2275,topic_2814		
 toolshed.g2.bx.psu.edu/repos/iuc/swissmodel_modelling_api/swissmodel_modelling_api/2.0.0+galaxy0	SWISS-MODEL Modelling API	Fully automated protein structure homology-modelling	operation_0477,operation_0479	topic_2814,topic_0082,topic_0078,topic_0602,topic_2275		
 toolshed.g2.bx.psu.edu/repos/iuc/swissmodel_modelling_api/swissmodel_modelling_api/3.0.0+galaxy0	SWISS-MODEL Modelling API	Fully automated protein structure homology-modelling	operation_0479,operation_0477	topic_0082,topic_2814,topic_0602,topic_2275,topic_0078		
 toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.3.0	Query Tabular	using sqlite sql				
@@ -8183,6 +8204,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/iqtree/iqtree/1.5.5.1	IQ-TREE	Phylogenomic / ev
 toolshed.g2.bx.psu.edu/repos/iuc/iqtree/iqtree/2.1.2+galaxy1	IQ-TREE	Phylogenomic / evolutionary tree construction from multiple sequences	operation_0324,operation_2403	topic_3293	iqtree	iqtree
 toolshed.g2.bx.psu.edu/repos/iuc/iqtree/iqtree/2.1.2+galaxy2	IQ-TREE	Phylogenomic / evolutionary tree construction from multiple sequences	operation_2403,operation_0324	topic_3293	iqtree	iqtree
 toolshed.g2.bx.psu.edu/repos/iuc/iqtree/iqtree/2.1.2+galaxy0	IQ-TREE	Phylogenomic / evolutionary tree construction from multiple sequences	operation_2403,operation_0324	topic_3293	iqtree	iqtree
+toolshed.g2.bx.psu.edu/repos/iuc/iqtree/iqtree/3.1.3+galaxy0	IQ-TREE	Phylogenomic / evolutionary tree construction from multiple sequences	operation_0324,operation_2403	topic_3293		
 toolshed.g2.bx.psu.edu/repos/iuc/iqtree/iqtree/1.5.5	IQ-TREE	Phylogenomic / evolutionary tree construction from multiple sequences	operation_2403,operation_0324	topic_3293	iqtree	iqtree
 toolshed.g2.bx.psu.edu/repos/iuc/qiime_pick_otus/qiime_pick_otus/1.9.1.0	Perform OTU picking	(pick_otus)	operation_2945	topic_3070	qiime	QIIME
 toolshed.g2.bx.psu.edu/repos/iuc/resize_coordinate_window/resize_coordinate_window/1.0.0	Resize coordinate window	of GFF data				
@@ -8645,6 +8667,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/falco/falco/1.2.2+galaxy0	Falco	A high throughp
 toolshed.g2.bx.psu.edu/repos/iuc/falco/falco/1.3.0+galaxy0	Falco	An alternative, more performant implementation of FastQC for high throughput sequence quality control	operation_0337,operation_3218,operation_3198	topic_0769,topic_3382,topic_0102		
 toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualpos/poretools_qualpos/0.6.1a1.1	Generate box-whisker	plot of quality score distribution over positions in nanopore reads	operation_2478	topic_0654,topic_3168	poretools	Poretools
 toolshed.g2.bx.psu.edu/repos/iuc/poretools_qualpos/poretools_qualpos/0.6.1a1.0	Generate box-whisker	plot of quality score distribution over positions in nanopore reads	operation_2478	topic_0654,topic_3168	poretools	Poretools
+toolshed.g2.bx.psu.edu/repos/iuc/barcode_splitter/barcode_splitter/0.18.4.1	Barcode Splitter	Split sequence files using multiple sets of barcodes				
 toolshed.g2.bx.psu.edu/repos/iuc/pmids_to_pubtator_matrix/pmids_to_pubtator_matrix/0.0.2+galaxy0	PMIDs to PubTator	binary matrix	operation_2421,operation_3431,operation_3436	topic_3068,topic_3366,topic_3571,topic_3325,topic_3303,topic_3070		
 toolshed.g2.bx.psu.edu/repos/iuc/pmids_to_pubtator_matrix/pmids_to_pubtator_matrix/0.0.2	PMIDs to PubTator	binary matrix			pubmed	PubMed
 toolshed.g2.bx.psu.edu/repos/iuc/amas_summary/amas_summary/1.0+galaxy0	AMAS summary	summarise multiple alignments	operation_2478,operation_2479	topic_2269,topic_0080,topic_0194,topic_3293		
@@ -8671,6 +8694,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/sexdeterrmine/sexdeterrmine/1.1.2+galaxy1	Sex.D
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_are_there_primers/pimento_are_there_primers/1.2.0+galaxy0	PIMENTO Are there primers?	Checks for the presence of primers in input reads				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_are_there_primers/pimento_are_there_primers/1.0.2+galaxy0	PIMENTO Are there primers?	Checks for the presence of primers in input reads				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_are_there_primers/pimento_are_there_primers/1.0.3+galaxy0	PIMENTO Are there primers?	Checks for the presence of primers in input reads				
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_are_there_primers/pimento_are_there_primers/1.2.1+galaxy0	PIMENTO Are there primers?	Checks for the presence of primers in input reads				
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho/proteinortho/6.0.14+galaxy2.9.1	Proteinortho	detects orthologous proteins/genes within different species	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho/proteinortho/6.3.1+galaxy2	Proteinortho	detects orthologous proteins/genes within different species	operation_3663	topic_0084	proteinortho	Proteinortho
 toolshed.g2.bx.psu.edu/repos/iuc/proteinortho/proteinortho/6.3.5+galaxy0	Proteinortho	detects orthologous proteins/genes within different species	operation_3663	topic_0084	proteinortho	Proteinortho
@@ -8906,6 +8930,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/meryl_arithmetic_kmers/meryl_arithmetic_kmers/1
 toolshed.g2.bx.psu.edu/repos/iuc/checkm2/checkm2/1.0.2+galaxy0	checkm2	Rapid assessment of genome bin quality using machine learning			checkm	CheckM
 toolshed.g2.bx.psu.edu/repos/iuc/checkm2/checkm2/1.0.2+galaxy2	checkm2	Rapid assessment of genome bin quality using machine learning	operation_0004	topic_3293,topic_0194,topic_0622,topic_3174,topic_0637		
 toolshed.g2.bx.psu.edu/repos/iuc/checkm2/checkm2/1.0.2+galaxy1	checkm2	Rapid assessment of genome bin quality using machine learning	operation_0004	topic_0637,topic_3174,topic_0622,topic_3293,topic_0194	checkm	CheckM
+toolshed.g2.bx.psu.edu/repos/iuc/checkm2/checkm2/1.1.0+galaxy1	checkm2	Rapid assessment of genome bin quality using machine learning	operation_0004	topic_0622,topic_0194,topic_0637,topic_3293,topic_3174		
 toolshed.g2.bx.psu.edu/repos/iuc/checkm2/checkm2/1.1.0+galaxy0	checkm2	Rapid assessment of genome bin quality using machine learning	operation_0004	topic_0622,topic_3174,topic_0637,topic_3293,topic_0194		
 toolshed.g2.bx.psu.edu/repos/iuc/ancombc/ancombc/1.4.0+galaxy0	ANCOM-BC	differential abundance analysis			ancombc	ANCOMBC
 toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_mapped/bamtools_split_mapped/2.5.3+galaxy0	Split BAM by reads mapping status	into a mapped and an unmapped dataset	operation_0258,operation_2409	topic_3168,topic_3071,topic_0080		
@@ -8976,6 +9001,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/cwpair2/cwpair2/1.0.0	CWPair2	find matched pair
 toolshed.g2.bx.psu.edu/repos/iuc/cwpair2/cwpair2/1.1.0	CWPair2	find matched pairs and unmatched orphans				
 toolshed.g2.bx.psu.edu/repos/iuc/cwpair2/cwpair2/1.1.1	CWPair2	find matched pairs and unmatched orphans				
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju/kaiju_kaiju/1.10.1+galaxy1	kaiju		operation_3460	topic_3174	kaiju	Kaiju
+toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju/kaiju_kaiju/1.10.2+galaxy0	kaiju		operation_3460	topic_3174		
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju/kaiju_kaiju/1.10.1+galaxy0	kaiju		operation_3460	topic_3174	kaiju	Kaiju
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju/kaiju_kaiju/1.10.1+galaxy2	kaiju		operation_3460	topic_3174		
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_indicator/mothur_indicator/1.36.1.0	Indicator	Identify indicator "species" for nodes on a tree		topic_3697	mothur	mothur
@@ -9184,6 +9210,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/humann2_split_table/humann2_split_table/0.9.9.0
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_std/pimento_std/1.2.0+galaxy0	PIMENTO Standard primer matching	Finds best-matching primers in reads using a fuzzy search against a standard primer library				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_std/pimento_std/1.0.2+galaxy0	PIMENTO Standard primer matching	Finds best-matching primers in reads using a fuzzy search against a standard primer library				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_std/pimento_std/1.0.3+galaxy0	PIMENTO Standard primer matching	Finds best-matching primers in reads using a fuzzy search against a standard primer library				
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_std/pimento_std/1.2.1+galaxy0	PIMENTO Standard primer matching	Finds best-matching primers in reads using a fuzzy search against a standard primer library				
 toolshed.g2.bx.psu.edu/repos/iuc/pcdl_get_substrate_list/pcdl_get_substrate_list/3.0.1+galaxy0	pcdl_get_substrate_list					
 toolshed.g2.bx.psu.edu/repos/iuc/tag_pileup_frequency/tag_pileup_frequency/1.0.0	Tag pileup frequency					
 toolshed.g2.bx.psu.edu/repos/iuc/tag_pileup_frequency/tag_pileup_frequency/1.0.1	Tag pileup frequency					
@@ -10202,6 +10229,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bracken/est_abundance/2.7+galaxy0	Estimate Abun
 toolshed.g2.bx.psu.edu/repos/iuc/bracken/est_abundance/2.7+galaxy1	Estimate Abundance at Taxonomic Level	Bayesian Reestimation of Abundance with Kraken	operation_2238	topic_3174,topic_3697	bracken	Bracken
 toolshed.g2.bx.psu.edu/repos/iuc/bracken/est_abundance/@VERSION@+galaxy0	Bracken	to re-estimate abundance at a taxonomic level from kraken output	operation_2238	topic_3174,topic_3697	bracken	Bracken
 toolshed.g2.bx.psu.edu/repos/iuc/bracken/est_abundance/2.6.1+galaxy0	Estimate Abundance at Taxonomic Level	Bayesian Reestimation of Abundance with KrakEN	operation_2238	topic_3174,topic_3697	bracken	Bracken
+toolshed.g2.bx.psu.edu/repos/iuc/vsnp_get_snps/vsnp_get_snps/3.0.6+galaxy1	vSNP: get SNPs					
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_cnv/bcftools_cnv/1.10	bcftools cnv	Call copy number variation from VCF B-allele frequency (BAF) and Log R Ratio intensity (LRR) values	operation_2409,operation_3227	topic_3517,topic_2885,topic_0199,topic_3516	bcftools	BCFtools
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_cnv/bcftools_cnv/1.3.0	bcftools cnv	Call copy number variation from VCF B-allele frequency (BAF) and Log R Ratio intensity (LRR) values	operation_2409,operation_3227	topic_3517,topic_2885,topic_0199,topic_3516	bcftools	BCFtools
 toolshed.g2.bx.psu.edu/repos/iuc/bcftools_cnv/bcftools_cnv/1.10+galaxy1	bcftools cnv	Call copy number variation from VCF B-allele frequency (BAF) and Log R Ratio intensity (LRR) values	operation_3227,operation_2409	topic_0199,topic_3516,topic_2885,topic_3517	bcftools	BCFtools
@@ -10622,12 +10650,14 @@ toolshed.g2.bx.psu.edu/repos/iuc/text_to_wordmatrix/text_to_wordmatrix/0.0.2	Tex
 toolshed.g2.bx.psu.edu/repos/iuc/export2graphlan/export2graphlan/0.19	Export to GraPhlAn		operation_3460,operation_0323,operation_0567,operation_0326	topic_0194,topic_3174,topic_3944,topic_3293	graphlan	GraPhlAn
 toolshed.g2.bx.psu.edu/repos/iuc/export2graphlan/export2graphlan/0.20+galaxy0	Export to GraPhlAn		operation_3434	topic_3360,topic_0637,topic_3172	export2graphlan	export2graphlan
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju2table/kaiju_kaiju2table/1.10.1+galaxy1	kaiju2table		operation_3460	topic_3174	kaiju	Kaiju
+toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju2table/kaiju_kaiju2table/1.10.2+galaxy0	kaiju2table		operation_3460	topic_3174		
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju2table/kaiju_kaiju2table/1.10.1+galaxy0	kaiju2table		operation_3460	topic_3174	kaiju	Kaiju
 toolshed.g2.bx.psu.edu/repos/iuc/kaiju_kaiju2table/kaiju_kaiju2table/1.10.1+galaxy2	kaiju2table		operation_3460	topic_3174		
 toolshed.g2.bx.psu.edu/repos/iuc/seqkit_grep/seqkit_grep/2.10.1+galaxy0	SeqKit grep	grep-like tools for FASTA/Q files				
 toolshed.g2.bx.psu.edu/repos/iuc/seqkit_grep/seqkit_grep/2.12.0+galaxy0	SeqKit grep	grep-like tools for FASTA/Q files				
 toolshed.g2.bx.psu.edu/repos/iuc/seqkit_grep/seqkit_grep/2.10.0+galaxy2	SeqKit grep	grep-like tools for FASTA/Q files				
 toolshed.g2.bx.psu.edu/repos/iuc/seqkit_grep/seqkit_grep/2.13.0+galaxy0	SeqKit grep	grep-like tools for FASTA/Q files	operation_0371,operation_0372,operation_0233,operation_3192	topic_3489,topic_0080		
+toolshed.g2.bx.psu.edu/repos/iuc/compleasm/compleasm/0.2.9+galaxy0	compleasm	completeness of genome assemblies				
 toolshed.g2.bx.psu.edu/repos/iuc/compleasm/compleasm/0.2.6+galaxy2	compleasm	completeness of genome assemblies			compleasm	compleasm
 toolshed.g2.bx.psu.edu/repos/iuc/compleasm/compleasm/0.2.8+galaxy0	compleasm	completeness of genome assemblies				
 toolshed.g2.bx.psu.edu/repos/iuc/compleasm/compleasm/0.2.5+galaxy0	compleasm	completeness of genome assemblies			compleasm	compleasm
@@ -14827,6 +14857,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/2.1.25+galaxy0	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/2.0.8.0	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/2.1.12+galaxy0	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0080,topic_0078		
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24.1	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0078,topic_0080	diamond	Diamond
+toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/2.2.4+galaxy1	Diamond	align sequences against a protein database	operation_0258	topic_0078,topic_0080		
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/2.0.8.1	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0080,topic_0078	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.1.6.0	Diamond	alignment tool for short sequences against a protein database	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/2.1.16+galaxy0	Diamond	align short sequences against a protein database	operation_0258	topic_0080,topic_0078		
@@ -14842,6 +14873,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/0.9.21	Diamond	ge
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/2.1.13+galaxy1	Diamond view	generate formatted output from DAA files	operation_0258	topic_0080,topic_0078		
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/2.1.25+galaxy0	Diamond view	generate formatted output from DAA files	operation_0258	topic_0080,topic_0078		
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/2.1.12+galaxy0	Diamond view	generate formatted output from DAA files	operation_0258	topic_0080,topic_0078		
+toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/2.2.4+galaxy1	Diamond view	generate formatted output from DAA files	operation_0258	topic_0078,topic_0080		
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/0.9.29	Diamond view	generate formatted output from DAA files	operation_0258	topic_0080,topic_0078	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/2.0.8.1	Diamond view	generate formatted output from DAA files	operation_0258	topic_0080,topic_0078	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_view/2.1.16+galaxy0	Diamond view	generate formatted output from DAA files	operation_0258	topic_0078,topic_0080		
@@ -14858,6 +14890,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/0.9.21	Diamond 
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/2.1.13+galaxy1	Diamond makedb	build database from a FASTA file	operation_0258	topic_0080,topic_0078		
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/2.1.25+galaxy0	Diamond makedb	build database from a FASTA file	operation_0258	topic_0078,topic_0080		
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/2.1.12+galaxy0	Diamond makedb	Build database from a FASTA file	operation_0258	topic_0080,topic_0078		
+toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/2.2.4+galaxy1	Diamond makedb	build database from a FASTA file	operation_0258	topic_0080,topic_0078		
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/0.9.29	Diamond makedb	Build database from a FASTA file	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/0.6.13	Diamond makedb	Build database from a FASTA file	operation_0258	topic_0078,topic_0080	diamond	Diamond
 toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond_makedb/2.1.16+galaxy0	Diamond makedb	build database from a FASTA file	operation_0258	topic_0078,topic_0080		
@@ -16606,6 +16639,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/2.32.0+galaxy0	LLM Hub	Ca
 toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/2.41.1+galaxy1	LLM Hub	Call any LLM				
 toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/2.38.0+galaxy0	LLM Hub	Call any LLM				
 toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/2.31.0+galaxy0	LLM Hub	Call any LLM				
+toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/2.51.0+galaxy0	LLM Hub	Call any LLM				
 toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/1.100.0+galaxy1	LLM Hub	Call any LLM				
 toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/2.41.1+galaxy2	LLM Hub	Call any LLM				
 toolshed.g2.bx.psu.edu/repos/bgruening/llm_hub/llm_hub/2.41.0+galaxy0	LLM Hub	Call any LLM				
@@ -22764,6 +22798,7 @@ toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_a
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.2.0	AquaINFRA OGC API Processes					
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.13.0	AquaINFRA OGC API Processes					
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.1.0	AquaINFRA OGC API Processes					
+toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.17.0	AquaINFRA OGC API Processes					
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.3.0	AquaINFRA OGC API Processes					
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.16.0	AquaINFRA OGC API Processes					
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.6.0	AquaINFRA OGC API Processes					
