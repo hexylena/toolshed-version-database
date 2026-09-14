@@ -1693,6 +1693,7 @@ toolshed.g2.bx.psu.edu/repos/galaxyp/diann/diann/1.8.1+galaxy3	DIA-NN	is a softw
 toolshed.g2.bx.psu.edu/repos/galaxyp/diann/diann/1.8.1+galaxy5	DIA-NN	is a software for DIA/SWATH data processing				
 toolshed.g2.bx.psu.edu/repos/galaxyp/diann/diann/1.8.1+galaxy1	DIA-NN	is a software for DIA/SWATH data processing				
 toolshed.g2.bx.psu.edu/repos/galaxyp/diann/diann/1.8.1+galaxy4	DIA-NN	is a software for DIA/SWATH data processing				
+toolshed.g2.bx.psu.edu/repos/galaxyp/glycombo/glycombo/1.0.0+galaxy0	GlyCombo	Identify glycan and polysaccharide compositions from mass spectrometry files				
 toolshed.g2.bx.psu.edu/repos/galaxyp/openms_featurelinkerunlabeledkd/FeatureLinkerUnlabeledKD/2.6+galaxy0	FeatureLinkerUnlabeledKD	Groups corresponding features from multiple maps.				
 toolshed.g2.bx.psu.edu/repos/galaxyp/openms_featurelinkerunlabeledkd/FeatureLinkerUnlabeledKD/2.3.0	FeatureLinkerUnlabeledKD	Groups corresponding features from multiple maps.				
 toolshed.g2.bx.psu.edu/repos/galaxyp/openms_featurelinkerunlabeledkd/FeatureLinkerUnlabeledKD/2.2.0	FeatureLinkerUnlabeledKD	Groups corresponding features from multiple maps.				
@@ -2798,6 +2799,7 @@ toolshed.g2.bx.psu.edu/repos/galaxyp/fastg2protlib/fastg2protlib-peptides/1.0.2	
 toolshed.g2.bx.psu.edu/repos/galaxyp/fastg2protlib/fastg2protlib-validate/1.0.2	FASTG2Protlib-Validate	Validate a candidate protein library				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe_manifest_generator/23.0+galaxy4	FragPipe Manifest Generator	Generate a FragPipe Manifest File (Experimental Design File)				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe_manifest_generator/23.0+galaxy0	FragPipe Manifest Generator	Generate a FragPipe Manifest File (Experimental Design File)				
+toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe_manifest_generator/23.0+galaxy5	FragPipe Manifest Generator	Generate a FragPipe Manifest File (Experimental Design File)				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe_manifest_generator/23.0+galaxy2	FragPipe Manifest Generator	Generate a FragPipe Manifest File (Experimental Design File)				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe_manifest_generator/23.0+galaxy1	FragPipe Manifest Generator	Generate a FragPipe Manifest File (Experimental Design File)				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe_manifest_generator/23.0+galaxy3	FragPipe Manifest Generator	Generate a FragPipe Manifest File (Experimental Design File)				
@@ -2808,6 +2810,7 @@ toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy0	FragPipe -  
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/23.0+galaxy0	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy1	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy5	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
+toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/23.0+galaxy5	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/23.0+galaxy2	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/23.0+galaxy1	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
 toolshed.g2.bx.psu.edu/repos/galaxyp/fragpipe/fragpipe/20.0+galaxy3	FragPipe -  Academic Research and Education User License (Non-Commercial)	Data analysis for mass spectrometry-based proteomics				
@@ -5853,6 +5856,7 @@ toolshed.g2.bx.psu.edu/repos/imgteam/image_math/image_math/1.26.4+galaxy0	Proces
 toolshed.g2.bx.psu.edu/repos/imgteam/image_math/image_math/2.3.5+galaxy0	Process images using arithmetic expressions	with NumPy	operation_3443			
 toolshed.g2.bx.psu.edu/repos/imgteam/image_math/image_math/1.26.4+galaxy1	Process images using arithmetic expressions	with NumPy	operation_3443			
 toolshed.g2.bx.psu.edu/repos/imgteam/image_math/image_math/1.26.4+galaxy2	Process images using arithmetic expressions	with NumPy	operation_3443			
+toolshed.g2.bx.psu.edu/repos/imgteam/highdicom_dicom2text/highdicom_dicom2text/0.27.0+galaxy1	Export DICOM metadata	with highdicom	operation_3443	topic_0091,topic_3382		
 toolshed.g2.bx.psu.edu/repos/imgteam/highdicom_dicom2text/highdicom_dicom2text/0.27.0+galaxy0	Export DICOM metadata	with highdicom	operation_3443	topic_3382,topic_0091		
 toolshed.g2.bx.psu.edu/repos/imgteam/morphological_operations/morphological_operations/1.12.0+galaxy1	Apply a morphological operation	with SciPy	operation_3443			
 toolshed.g2.bx.psu.edu/repos/imgteam/morphological_operations/morphological_operations/1.12.0+galaxy0	Apply a morphological operation	with SciPy	operation_3443			
@@ -5924,6 +5928,7 @@ toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_compose_raw/imagej2_bunwar
 toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_compose_raw/imagej2_bunwarpj_compose_raw/3.0.0	Compose two raw transformations	into another raw transformation with bUnwarpJ	operation_0337,operation_3443,operation_3553	topic_3382	imagej	ImageJ2
 toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_compose_raw/imagej2_bunwarpj_compose_raw/3.0.1	Compose two raw transformations	with ImageJ2	operation_3443	topic_3382	imagej	ImageJ2
 toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_compose_raw/imagej2_bunwarpj_compose_raw/20240614+galaxy0	Compose two raw transformations	with ImageJ2	operation_3443	topic_3382	imagej	ImageJ2
+toolshed.g2.bx.psu.edu/repos/imgteam/highdicom_dicom2tiff/highdicom_dicom2tiff/0.27.0+galaxy1	Convert DICOM to TIFF	with highdicom	operation_3443	topic_0091,topic_3382		
 toolshed.g2.bx.psu.edu/repos/imgteam/highdicom_dicom2tiff/highdicom_dicom2tiff/0.27.0+galaxy0	Convert DICOM to TIFF	with highdicom	operation_3443	topic_3382,topic_0091		
 toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_analyze_skeleton/imagej2_analyze_skeleton/20240614+galaxy1	Analyze skeleton	with ImageJ2	operation_3443	topic_3382		
 toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_analyze_skeleton/imagej2_analyze_skeleton/3.0.0	Analyze skeleton		operation_3443,operation_0337,operation_3553	topic_3382	imagej	ImageJ2
@@ -6057,6 +6062,7 @@ toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_bunwarpj_compose_elastic/imagej2_bu
 toolshed.g2.bx.psu.edu/repos/imgteam/bfconvert/ip_convertimage/0.4	Convert image	Convert image				
 toolshed.g2.bx.psu.edu/repos/imgteam/bfconvert/ip_convertimage/6.7.0+galaxy1	Convert image	Convert image				
 toolshed.g2.bx.psu.edu/repos/imgteam/bfconvert/ip_convertimage/6.7.0+galaxy3	Convert image format	with Bioformats	operation_3443			
+toolshed.g2.bx.psu.edu/repos/imgteam/bfconvert/ip_convertimage/8.0.0+galaxy0	Convert image format	with Bioformats	operation_3443			
 toolshed.g2.bx.psu.edu/repos/imgteam/bfconvert/ip_convertimage/6.7.0+galaxy4	Convert image format	with Bioformats	operation_3443			
 toolshed.g2.bx.psu.edu/repos/imgteam/bfconvert/ip_convertimage/6.7.0+galaxy2	Convert image format	with Bioformats	operation_3443			
 toolshed.g2.bx.psu.edu/repos/imgteam/bfconvert/ip_convertimage/0.3	Convert image format	with Bioformats	operation_3443			
@@ -6124,6 +6130,7 @@ toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_watershed_binary/imagej2_watershed_
 toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_watershed_binary/imagej2_watershed_binary/3.0.2	Perform segmentation using watershed transformation	with ImageJ2	operation_3443	topic_3382	imagej	ImageJ2
 toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_watershed_binary/imagej2_watershed_binary/3.0.1	Watershed segmentation	of binary image	operation_3443,operation_0337,operation_3553	topic_3382	imagej	ImageJ2
 toolshed.g2.bx.psu.edu/repos/imgteam/imagej2_watershed_binary/imagej2_watershed_binary/20240614+galaxy0	Perform segmentation using watershed transformation	with ImageJ2	operation_3443	topic_3382	imagej	ImageJ2
+toolshed.g2.bx.psu.edu/repos/galaxy-australia/sylph_tax_taxprof/sylph_tax_taxprof/1.9.1+galaxy0	sylph-tax taxprof	Generate taxonomic profiles from sylph output				
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/kaptive_assembly/kaptive_assembly/3.2.2+galaxy0	Kaptive 3: Assembly	K/O loci typing from genome assemblies				
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado/dorado/0.9.5+bd7fb217+galaxy1	Dorado	basecaller for raw Oxford Nanopore data				
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/dorado/dorado/0.7.3+6e6c45c+galaxy0	Dorado	basecaller for raw Oxford Nanopore data			dorado	Dorado
@@ -6161,6 +6168,7 @@ toolshed.g2.bx.psu.edu/repos/galaxy-australia/cactus_export/cactus_export/2.0.5+
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/smudgeplot/smudgeplot/0.2.5+galaxy+2	Smudgeplot	inference of ploidy and heterozygosity structure using whole genome sequencing	operation_3472,operation_3192,operation_3196	topic_0196,topic_0199,topic_3315	smudgeplots	Smudgeplots
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/smudgeplot/smudgeplot/0.2.5+galaxy+1	Smudgeplot	inference of ploidy and heterozygosity structure using whole genome sequencing	operation_3196,operation_3192,operation_3472	topic_0199,topic_3315,topic_0196	smudgeplots	Smudgeplots
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/smudgeplot/smudgeplot/0.2.5+galaxy3	Smudgeplot	inference of ploidy and heterozygosity structure using whole genome sequencing	operation_3192,operation_3472,operation_3196	topic_3315,topic_0199,topic_0196	smudgeplots	Smudgeplots
+toolshed.g2.bx.psu.edu/repos/galaxy-australia/sylph_tax_merge/sylph_tax_merge/1.9.1+galaxy0	sylph-tax merge	Merge sylphmpa profiles into a single table				
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/hapcut2/hapcut2/1.3.3+galaxy0+ga1	Hapcut2	haplotype assembly for diploid organisms	operation_3225,operation_0487			
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/hapcut2/hapcut2/1.3.4+galaxy1	Hapcut2	haplotype assembly for diploid organisms	operation_3225,operation_0487			
 toolshed.g2.bx.psu.edu/repos/galaxy-australia/aarnet_filesender/aarnet_filesender/v3.0.0+galaxy0	AARNet FileSender	transfer files with AARNet's FileSender Service				
@@ -7473,148 +7481,218 @@ toolshed.g2.bx.psu.edu/repos/jay/pdaug_tsvtofasta/pdaug_tsvtofasta/0.1.0	PDAUG T
 toolshed.g2.bx.psu.edu/repos/jay/pdaug_sequence_property_based_descriptors/pdaug_sequence_property_based_descriptors/0.1.0	PDAUG Sequence Property Based Descriptors	Calculates sequence based descriptors of the peptide sequences				
 toolshed.g2.bx.psu.edu/repos/jay/pdaug_ml_models/pdaug_ml_models/0.1.0	PDAUG ML Models	Machine learning modeling				
 toolshed.g2.bx.psu.edu/repos/brenninc/samtools_flag_filter_1_2/samtools_flag_filter/0.1	Samtools flag_filter	Use Samtools' view tool to filter alignments based on the flag field.				
+toolshed.g2.bx.psu.edu/repos/ecology/mean_geom/Mean_geom/0.1.0+galaxy1	Geometric means	- calcul of the geometric means for the "bois mort" indicator				
 toolshed.g2.bx.psu.edu/repos/ecology/mean_geom/Mean_geom/0.1.0+galaxy0	Geometric means	- calcul of the geometric means for the "bois mort" indicator				
 toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_autocor_acf/regionalgam_autocor_acf/1.5	Autocorrelation test	check for temporal autocorrelation in the residuals				
+toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_autocor_acf/regionalgam_autocor_acf/1.5+galaxy1	Autocorrelation test	check for temporal autocorrelation in the residuals		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_keep_remove_individuals/population_genomics_vcf_keep_remove_individuals/0.1.0	Keep or remove selected individuals	from a VCF				
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_keep_remove_individuals/population_genomics_vcf_keep_remove_individuals/0.2.0	Keep or remove selected individuals	from a VCF				
+toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_keep_remove_individuals/population_genomics_vcf_keep_remove_individuals/0.2.0+galaxy1	Keep or remove selected individuals	from a VCF				
 toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_gls_adjusted/regionalgam_gls_adjusted/1.5	Linear regression ajusted	for autocorrelation in the residuals				
+toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_gls_adjusted/regionalgam_gls_adjusted/1.5+galaxy1	Linear regression ajusted	for autocorrelation in the residuals		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_idvalid/vigiechiro_idvalid/0.1.1	Tadarida identifications validation	Integrate identifications from animal detection on acoustic recordings				
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_idvalid/vigiechiro_idvalid/0.1.0	Tadarida identifications validation	Integrate identifications from animal detection on acoustic recordings				
+toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_idvalid/vigiechiro_idvalid/0.1.1+galaxy1	Tadarida identifications validation	Integrate identifications from animal detection on acoustic recordings				
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_mapplot/xarray_mapplot/0.20.2+galaxy0	NetCDF xarray map plotting	Visualize netCDF variables on a geographical map		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_mapplot/xarray_mapplot/0.18.2+galaxy0	NetCDF xarray map plotting	Visualize netCDF variables on a geographical map		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_mapplot/xarray_mapplot/2022.3.0+galaxy0	NetCDF xarray map plotting	Visualize netCDF variables on a geographical map		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/xarray_mapplot/xarray_mapplot/2022.3.0+galaxy1	NetCDF xarray map plotting	Visualize netCDF variables on a geographical map		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/sanntis_marine/sanntis_marine/0.9.3.5+galaxy2	Sanntis biosynthetic gene clusters	in genomic and metagenomic data		topic_3387		
 toolshed.g2.bx.psu.edu/repos/ecology/sanntis_marine/sanntis_marine/0.9.3.5+galaxy1	Sanntis biosynthetic gene clusters	in genomic and metagenomic data		topic_3387		
 toolshed.g2.bx.psu.edu/repos/ecology/sanntis_marine/sanntis_marine/0.9.3.5+galaxy0	Sanntis biosynthetic gene clusters	in genomic and metagenomic data		topic_3387		
 toolshed.g2.bx.psu.edu/repos/ecology/ecology_presence_abs_abund/ecology_presence_abs_abund/0.0.0	Presence-absence and abundance	Community abundance map, presence barplot and rarefaction curves		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/ecology_presence_abs_abund/ecology_presence_abs_abund/0.0.0+galaxy1	Presence-absence and abundance	Community abundance map, presence barplot and rarefaction curves		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/sdmpredictors_list_layers/sdmpredictors_list_layers/0.2.15+galaxy1	SdmPredictors List Layers	from environmental predictors for species distribution modeling				
 toolshed.g2.bx.psu.edu/repos/ecology/sdmpredictors_list_layers/sdmpredictors_list_layers/0.2.15+galaxy0	SdmPredictors List Layers	from environmental predictors for species distribution modeling				
 toolshed.g2.bx.psu.edu/repos/ecology/srs_metadata/srs_metadata/0.0.1	Validate ISO 19139	metadata documents				
+toolshed.g2.bx.psu.edu/repos/ecology/srs_metadata/srs_metadata/0.0.1+galaxy1	Validate ISO 19139	metadata documents				
+toolshed.g2.bx.psu.edu/repos/ecology/eml2eal/eml2eal/0.1.2+galaxy1	EML to EAL	Create EAL templates from EML metadata				
 toolshed.g2.bx.psu.edu/repos/ecology/eml2eal/eml2eal/0.1.0+galaxy0	EML to EAL	Create EAL templates from EML metadata				
 toolshed.g2.bx.psu.edu/repos/ecology/eml2eal/eml2eal/0.1.2+galaxy0	EML to EAL	Create EAL templates from EML metadata				
 toolshed.g2.bx.psu.edu/repos/ecology/stoc_maketable/stoceps_maketablecarrer/0.0.1	Preprocess population data	for evolution trend analyzes				
+toolshed.g2.bx.psu.edu/repos/ecology/stoc_maketable/stoceps_maketablecarrer/0.0.2+galaxy1	Preprocess population data	for evolution trend analyzes		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/stoc_maketable/stoceps_maketablecarrer/0.0.2	Preprocess population data	for evolution trend analyzes				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_biogeochemical_calibration/tool_biogeochemical_calibration/2.1+galaxy2	BioGeoChemical calibration	for sensors according to Argo recommendations				
+toolshed.g2.bx.psu.edu/repos/ecology/tool_biogeochemical_calibration/tool_biogeochemical_calibration/2.1+galaxy3	BioGeoChemical calibration	for sensors according to Argo recommendations				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_biogeochemical_calibration/tool_biogeochemical_calibration/1.0+galaxy0	BioGeoChemical calibration	for sensors according to Argo recommendations				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_biogeochemical_calibration/tool_biogeochemical_calibration/1.0+galaxy2	BioGeoChemical calibration	for sensors according to Argo recommendations				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_biogeochemical_calibration/tool_biogeochemical_calibration/1.0+galaxy0.1	BioGeoChemical calibration	for sensors according to Argo recommendations				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_biogeochemical_calibration/tool_biogeochemical_calibration/1.0+galaxy1	BioGeoChemical calibration	for sensors according to Argo recommendations				
+toolshed.g2.bx.psu.edu/repos/ecology/dapc_kmeans/dapc_kmeans/0.1.0+galaxy1	Discriminant analysis of principal components (DAPC) to genotype data	using Kmeans or a k-fixed (SNPs and SSRs).				
 toolshed.g2.bx.psu.edu/repos/ecology/dapc_kmeans/dapc_kmeans/0.1.0	Discriminant analysis of principal components (DAPC) to genotype data	using Kmeans or a k-fixed (SNPs and SSRs).				
+toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_brt_analysis/ecoregion_brt_analysis/0.1.2+galaxy1	BRT tool prediction	for species distribution modelling				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_brt_analysis/ecoregion_brt_analysis/0.1.0+galaxy0	BRT tool prediction	for species distribution modelling				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_brt_analysis/ecoregion_brt_analysis/0.1.2+galaxy0	BRT tool prediction	for species distribution modelling				
 toolshed.g2.bx.psu.edu/repos/ecology/stoc_mainglm_group/stoceps_glm_group/0.0.1	Estimate temporal population evolution	by specialization group				
+toolshed.g2.bx.psu.edu/repos/ecology/stoc_mainglm_group/stoceps_glm_group/0.0.2+galaxy1	Estimate temporal population variation	by specialization group		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/stoc_mainglm_group/stoceps_glm_group/0.0.2	Estimate temporal population variation	by specialization group				
 toolshed.g2.bx.psu.edu/repos/ecology/srs_spectral_indices/srs_spectral_indices/0.0.1	Compute spectral indices	as NDVI from remote sensing data				
+toolshed.g2.bx.psu.edu/repos/ecology/srs_spectral_indices/srs_spectral_indices/0.0.1+galaxy1	Compute spectral indices	as NDVI from remote sensing data				
 toolshed.g2.bx.psu.edu/repos/ecology/cb_div/cb_div/0.0.0	Diversity	indicators				
+toolshed.g2.bx.psu.edu/repos/ecology/cb_div/cb_div/0.0.0+galaxy1	Diversity	indicators				
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_communitymetrics/pampa_communitymetrics/0.0.1	Calculate community metrics	calculate community metrics from abundance data				
+toolshed.g2.bx.psu.edu/repos/ecology/pampa_communitymetrics/pampa_communitymetrics/0.0.2+galaxy1	Calculate community metrics	calculate community metrics from abundance data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_communitymetrics/pampa_communitymetrics/0.0.2	Calculate community metrics	calculate community metrics from abundance data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/srs_process_data/srs_process_data/0.0.1	Compare diversity indicators	with remote sensing data				
+toolshed.g2.bx.psu.edu/repos/ecology/srs_process_data/srs_process_data/0.0.1+galaxy1	Compare diversity indicators	with remote sensing data				
+toolshed.g2.bx.psu.edu/repos/ecology/lea_snmf_application/LEA_snmf_application/0.1.0+galaxy1	Genetic Clustering	with LEA (sNMF) for VCF or SSR data				
 toolshed.g2.bx.psu.edu/repos/ecology/lea_snmf_application/LEA_snmf_application/0.1.0	Genetic Clustering	with LEA (sNMF) for VCF or SSR data				
+toolshed.g2.bx.psu.edu/repos/ecology/claraguess/ClaraGuess/0.1.2+galaxy1	Clara Estimate and Clustering	Environmental clustering using CLARA and BRT predictions				
 toolshed.g2.bx.psu.edu/repos/ecology/claraguess/ClaraGuess/0.1.1	Clara Estimate and Clustering	Environmental clustering using CLARA and BRT predictions				
 toolshed.g2.bx.psu.edu/repos/ecology/claraguess/ClaraGuess/0.1.2	Clara Estimate and Clustering	Environmental clustering using CLARA and BRT predictions				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_ogrinfo/gdal_ogrinfo/3.0.0	OGR Informations	lists information about an OGR supported data source				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_ogrinfo/gdal_ogrinfo/2.4.0	OGR Informations	lists information about an OGR supported data source				
+toolshed.g2.bx.psu.edu/repos/ecology/gdal_ogrinfo/gdal_ogrinfo/3.0.0+galaxy1	OGR Informations	lists information about an OGR supported data source				
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_glmcomm/pampa_glmcomm/0.0.1	Compute GLM on community data	Compute a GLM of your choice on community data		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/pampa_glmcomm/pampa_glmcomm/0.0.2+galaxy1	Compute GLM on community data	Compute a GLM of your choice on community data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_glmcomm/pampa_glmcomm/0.0.2	Compute GLM on community data	Compute a GLM of your choice on community data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_plot_trend/regionalgam_plot_trend/1.5	Plot abundance	with trend line				
+toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_plot_trend/regionalgam_plot_trend/1.5+galaxy1	Plot abundance	with trend line		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/ecology_beta_diversity/ecology_beta_diversity/0.0.0	Local Contributions to Beta Diversity (LCBD)	Computes a measure of beta diversity, SCBD and representations		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/ecology_beta_diversity/ecology_beta_diversity/0.0.0+galaxy1	Local Contributions to Beta Diversity (LCBD)	Computes a measure of beta diversity, SCBD and representations		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_glmsp/pampa_glmsp/0.0.1	Compute GLM on population data	Compute a GLM of your choice on population data		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/pampa_glmsp/pampa_glmsp/0.0.2+galaxy1	Compute GLM on population data	Compute a GLM of your choice on population data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_glmsp/pampa_glmsp/0.0.2	Compute GLM on population data	Compute a GLM of your choice on population data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/sam3_semantic_segmentation/sam3_semantic_segmentation/1.0.1+galaxy5	SAM3 Semantic Segmentation	SAM3 performs text-prompted semantic segmentation on images or videos.				
 toolshed.g2.bx.psu.edu/repos/ecology/sam3_semantic_segmentation/sam3_semantic_segmentation/1.0.1+galaxy3	SAM3 Semantic Segmentation	SAM3 performs text-prompted semantic segmentation on images or videos.				
 toolshed.g2.bx.psu.edu/repos/ecology/sam3_semantic_segmentation/sam3_semantic_segmentation/1.0.1+galaxy2	SAM3 Semantic Segmentation	SAM3 performs text-prompted semantic segmentation on images or videos.				
+toolshed.g2.bx.psu.edu/repos/ecology/sam3_semantic_segmentation/sam3_semantic_segmentation/1.0.1+galaxy7	SAM3 Semantic Segmentation	SAM3 performs text-prompted semantic segmentation on images or videos.				
 toolshed.g2.bx.psu.edu/repos/ecology/sam3_semantic_segmentation/sam3_semantic_segmentation/1.0.0+galaxy0	SAM3 Semantic Segmentation	SAM3 performs text-prompted semantic segmentation on images or videos.				
 toolshed.g2.bx.psu.edu/repos/ecology/sam3_semantic_segmentation/sam3_semantic_segmentation/1.0.1+galaxy4	SAM3 Semantic Segmentation	SAM3 performs text-prompted semantic segmentation on images or videos.				
 toolshed.g2.bx.psu.edu/repos/ecology/sam3_semantic_segmentation/sam3_semantic_segmentation/1.0.0+galaxy1	SAM3 Semantic Segmentation	SAM3 performs text-prompted semantic segmentation on images or videos.				
 toolshed.g2.bx.psu.edu/repos/ecology/sam3_semantic_segmentation/sam3_semantic_segmentation/1.0.1+galaxy6	SAM3 Semantic Segmentation	SAM3 performs text-prompted semantic segmentation on images or videos.				
 toolshed.g2.bx.psu.edu/repos/ecology/retrieve_bold/retrieve_bold/1.3.0+galaxy0	Retrieve bold	Functions to search in Bold and download the available sequences of each subtaxa (get_fasta)				
+toolshed.g2.bx.psu.edu/repos/ecology/divand_full_analysis/divand_full_analysis/0.1.0+galaxy1	DIVAnd	Data-Interpolating Variational Analysis in n dimensions				
 toolshed.g2.bx.psu.edu/repos/ecology/divand_full_analysis/divand_full_analysis/0.1.0+galaxy0	DIVAnd	Data-Interpolating Variational Analysis in n dimensions				
 toolshed.g2.bx.psu.edu/repos/ecology/stoc_trend_indic/stoceps_trend_indic/0.0.1	Temporal trend indicator	using GlmmTMB or GAM models				
+toolshed.g2.bx.psu.edu/repos/ecology/stoc_trend_indic/stoceps_trend_indic/0.0.2+galaxy1	Temporal trend indicator	using GlmmTMB or GAM models		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/stoc_trend_indic/stoceps_trend_indic/0.0.2	Temporal trend indicator	using GlmmTMB or GAM models				
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_presabs/pampa_presabs/0.0.1	Calculate presence absence table	calculate presence absence table from observation data				
+toolshed.g2.bx.psu.edu/repos/ecology/pampa_presabs/pampa_presabs/0.0.2+galaxy1	Calculate presence absence table	calculate presence absence table from observation data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_presabs/pampa_presabs/0.0.2	Calculate presence absence table	calculate presence absence table from observation data		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/interpolation_run_idw_interpolation/interpolation_run_idw_interpolation/1.0+galaxy1	Run interpolation	based on Inverse Distance Weighting (IDW)				
 toolshed.g2.bx.psu.edu/repos/ecology/interpolation_run_idw_interpolation/interpolation_run_idw_interpolation/1.0	Run interpolation	based on Inverse Distance Weighting (IDW)				
 toolshed.g2.bx.psu.edu/repos/ecology/stoc_filteringsp/stoceps_filteringsp/0.0.1	Filter species	with rare and low abundances				
+toolshed.g2.bx.psu.edu/repos/ecology/stoc_filteringsp/stoceps_filteringsp/0.0.2+galaxy1	Filter species	with rare and low abundances		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/stoc_filteringsp/stoceps_filteringsp/0.0.2	Filter species	with rare and low abundances				
 toolshed.g2.bx.psu.edu/repos/ecology/eal_table_template/eal_table_template/0.1.1+galaxy0	Make templates for data tables	attributes and categorical variables for EML metadata creation				
+toolshed.g2.bx.psu.edu/repos/ecology/eal_table_template/eal_table_template/0.1.2+galaxy1	Make templates for data tables	attributes and categorical variables for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/eal_table_template/eal_table_template/0.1.0+galaxy0	Make templates for data tables	attributes and categorical variables for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/eal_table_template/eal_table_template/0.1.2+galaxy0	Make templates for data tables	attributes and categorical variables for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/stoc_mainglm/stoceps_glm/0.0.1	Estimate temporal population evolution	by species				
+toolshed.g2.bx.psu.edu/repos/ecology/stoc_mainglm/stoceps_glm/0.0.2+galaxy1	Estimate temporal population variation	by species		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/stoc_mainglm/stoceps_glm/0.0.2	Estimate temporal population variation	by species				
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_coords_info/xarray_coords_info/0.20.2+galaxy0	NetCDF xarray Coordinate Info	Get values for each coordinate of a Netcdf file		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_coords_info/xarray_coords_info/@TOOL_VERSION+galaxy0	NetCDF xarray Coordinate Info	Get values for each coordinate of a Netcdf file		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_coords_info/xarray_coords_info/0.18.2+galaxy0	NetCDF xarray Coordinate Info	Get values for each coordinate of a Netcdf file		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_coords_info/xarray_coords_info/2022.3.0+galaxy0	NetCDF xarray Coordinate Info	Get values for each coordinate of a Netcdf file		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/xarray_coords_info/xarray_coords_info/2022.3.0+galaxy1	NetCDF xarray Coordinate Info	Get values for each coordinate of a Netcdf file		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_cluster_estimate/ecoregion_cluster_estimate/0.1.2+galaxy1	ClusterEstimate	Find an optimal number of cluster with SIH index				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_cluster_estimate/ecoregion_cluster_estimate/0.1.0+galaxy0	ClusterEstimate	Find an optimal number of cluster with SIH index				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_cluster_estimate/ecoregion_cluster_estimate/0.1.2+galaxy0	ClusterEstimate	Find an optimal number of cluster with SIH index				
 toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_ab_index/regionalgam_ab_index/1.5	Abundance index	computation across species, sites and years				
+toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_ab_index/regionalgam_ab_index/1.5+galaxy1	Abundance index	computation across species, sites and years		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_bilanenrichirp/vigiechiro_bilanenrichirp/0.1.1	Advanced restitution: 'Routier'or 'Pedestre' protocols	from Animal Detection on Acoustic Recordings				
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_bilanenrichirp/vigiechiro_bilanenrichirp/0.1.0	Advanced restitution: 'Routier'or 'Pedestre' protocols	from Animal Detection on Acoustic Recordings				
+toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_bilanenrichirp/vigiechiro_bilanenrichirp/0.1.1+galaxy1	Advanced restitution: 'Routier'or 'Pedestre' protocols	from Animal Detection on Acoustic Recordings		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_subset/population_genomics_vcf_subset/0.1.0	Subsetting SNPs at random from a VCF file	given a chosen number of SNPs to use				
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_subset/population_genomics_vcf_subset/0.2.0	Subsetting SNPs at random from a VCF file	given a chosen number of SNPs to use				
+toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_subset/population_genomics_vcf_subset/0.2.0+galaxy1	Subsetting SNPs at random from a VCF file	given a chosen number of SNPs to use				
 toolshed.g2.bx.psu.edu/repos/ecology/cb_ivr/cb_ivr/0.0.0	IVR	indicator				
+toolshed.g2.bx.psu.edu/repos/ecology/cb_ivr/cb_ivr/0.0.0+galaxy1	IVR	indicator				
 toolshed.g2.bx.psu.edu/repos/ecology/ab1_fastq_converter/ab1_fastq_converter/1.20.0	ab1 to FASTQ converter					
+toolshed.g2.bx.psu.edu/repos/ecology/ab1_fastq_converter/ab1_fastq_converter/1.20.0+galaxy1	ab1 to FASTQ converter					
 toolshed.g2.bx.psu.edu/repos/ecology/otb_mean_shift_smoothing/otb_mean_shift_smoothing/1.0	OTB.MeanShiftSmoothing	smooths an image using the MeanShift algorithm				
+toolshed.g2.bx.psu.edu/repos/ecology/annotations_template/annotations_template/0.1.2+galaxy1	Make annotations template	from scratch or from EML metadata file				
 toolshed.g2.bx.psu.edu/repos/ecology/annotations_template/annotations_template/0.1.0+galaxy0	Make annotations template	from scratch or from EML metadata file				
 toolshed.g2.bx.psu.edu/repos/ecology/annotations_template/annotations_template/0.1.2+galaxy0	Make annotations template	from scratch or from EML metadata file				
 toolshed.g2.bx.psu.edu/repos/ecology/phylogenetic_occupancy_matcher/phylogenetic_occupancy_matcher/1.0+galaxy0	PhylOccuMatcher	match phylogenetic and occupancy data				
+toolshed.g2.bx.psu.edu/repos/ecology/phylogenetic_occupancy_matcher/phylogenetic_occupancy_matcher/1.0+galaxy1	PhylOccuMatcher	match phylogenetic and occupancy data				
 toolshed.g2.bx.psu.edu/repos/ecology/taxo_cov_template/taxo_cov_template/0.1.1+galaxy0	Make taxonomic coverage template	for EML metadata creation				
+toolshed.g2.bx.psu.edu/repos/ecology/taxo_cov_template/taxo_cov_template/0.1.2+galaxy1	Make taxonomic coverage template	for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/taxo_cov_template/taxo_cov_template/0.1.0+galaxy0	Make taxonomic coverage template	for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/taxo_cov_template/taxo_cov_template/0.1.2+galaxy0	Make taxonomic coverage template	for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/pyproj_coordinate_transform/pyproj_coordinate_transform/1.0.0+galaxy0	Pyproj coordinate transform	Projection and coordinate transformation				
+toolshed.g2.bx.psu.edu/repos/ecology/aligned_to_consensus/aligned_to_consensus/1.0.0+galaxy1	Consensus sequence from aligned FASTA					
 toolshed.g2.bx.psu.edu/repos/ecology/aligned_to_consensus/aligned_to_consensus/1.0.0	Consensus sequence from aligned FASTA					
 toolshed.g2.bx.psu.edu/repos/ecology/hirondelle_crim/hirondelle_crim/0.1.0	Hirondelle CRIM OGC API Processes	executes remote processes.				
 toolshed.g2.bx.psu.edu/repos/ecology/hirondelle_crim/hirondelle_crim/0.2.0	Hirondelle CRIM OGC API Processes	executes remote processes.				
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_bilanenrichipf/vigiechiro_bilanenrichipf/0.1.1	Advanced restitution: 'Point fixe' protocol	from Animal Detection on Acoustic Recordings				
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_bilanenrichipf/vigiechiro_bilanenrichipf/0.1.0	Advanced restitution: 'Point fixe' protocol	from Animal Detection on Acoustic Recordings				
+toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_bilanenrichipf/vigiechiro_bilanenrichipf/0.1.1+galaxy1	Advanced restitution: 'Point fixe' protocol	from Animal Detection on Acoustic Recordings		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_select/xarray_select/0.15.1	NetCDF xarray Selection	extracts variable values with custom conditions on dimensions		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_select/xarray_select/0.20.2+galaxy0	NetCDF xarray Selection	extracts variable values with custom conditions on dimensions		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_select/xarray_select/0.18.2+galaxy0	NetCDF xarray Selection	extracts variable values with custom conditions on dimensions		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_select/xarray_select/2022.3.0+galaxy0	NetCDF xarray Selection	extracts variable values with custom conditions on dimensions		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/xarray_select/xarray_select/2022.3.0+galaxy1	NetCDF xarray Selection	extracts variable values with custom conditions on dimensions		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/cmems_download_ic_bc/cmems_download_ic_bc/2.0.0+galaxy1	Copernicus CMEMS Downloader for AquaINFRA marine model	Download data from the Copernicus Marine Service to provide as input to the AquaINFRA marine model. Products: Mediterranean Sea Physics Analysis and Forecast or Mediterranean Sea Physics Reanalysis, depending on the selected temporal period.				
 toolshed.g2.bx.psu.edu/repos/ecology/cmems_download_ic_bc/cmems_download_ic_bc/2.0.0	Copernicus CMEMS Downloader for AquaINFRA marine model	Download data from the Copernicus Marine Service to provide as input to the AquaINFRA marine model. Products: Mediterranean Sea Physics Analysis and Forecast or Mediterranean Sea Physics Reanalysis, depending on the selected temporal period.				
 toolshed.g2.bx.psu.edu/repos/ecology/cmems_download_ic_bc/cmems_download_ic_bc/1.0.1	Copernicus CMEMS Downloader for AquaINFRA marine model	Download data from the Copernicus Marine Service to provide as input to the AquaINFRA marine model. Products: Mediterranean Sea Physics Analysis and Forecast or Mediterranean Sea Physics Reanalysis, depending on the selected temporal period.				
 toolshed.g2.bx.psu.edu/repos/ecology/cmems_download_ic_bc/cmems_download_ic_bc/1.0.0	Copernicus CMEMS Downloader for AquaINFRA marine model	Download data from the Copernicus Marine Service to provide as input to the AquaINFRA marine model. Products: Mediterranean Sea Physics Analysis and Forecast or Mediterranean Sea Physics Reanalysis, depending on the selected temporal period.				
 toolshed.g2.bx.psu.edu/repos/ecology/ecology_homogeneity_normality/ecology_homogeneity_normality/0.0.0	Homoscedasticity and normality	Checks the homogeneity of the variance and the normality of the distribution		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/ecology_homogeneity_normality/ecology_homogeneity_normality/0.0.0+galaxy1	Homoscedasticity and normality	Checks the homogeneity of the variance and the normality of the distribution		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdal_merge/gdal_gdal_merge/3.0.0	GDAL Merge	mosaics a set of images				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdal_merge/gdal_gdal_merge/2.4.0	GDAL Merge	mosaics a set of images				
+toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdal_merge/gdal_gdal_merge/3.0.0+galaxy1	GDAL Merge	mosaics a set of images		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_importer/aquainfra_importer/1.0+galaxy1	AquaINFRA Importer	downloads content via the AquaINFRA interaction platform				
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_importer/aquainfra_importer/1.0	AquaINFRA Importer	downloads content via the AquaINFRA interaction platform				
+toolshed.g2.bx.psu.edu/repos/ecology/ssrfilter/ssrfilter/0.1.0+galaxy1	Filtering SSR	for missing data (individuals and loci), and null alleles.				
 toolshed.g2.bx.psu.edu/repos/ecology/ssrfilter/ssrfilter/0.1.0	Filtering SSR	for missing data (individuals and loci), and null alleles.				
 toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_gls/regionalgam_gls/1.5	Model temporal trend	with a simple linear regression				
+toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_gls/regionalgam_gls/1.5+galaxy1	Model temporal trend	with a simple linear regression		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/geo_cov_template/geo_cov_template/0.1.2+galaxy1	Make geographic coverage template	for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/geo_cov_template/geo_cov_template/0.1.0+galaxy0	Make geographic coverage template	for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/geo_cov_template/geo_cov_template/0.1.2+galaxy0	Make geographic coverage template	for EML metadata creation				
+toolshed.g2.bx.psu.edu/repos/ecology/ccds_download_era5_af/ccds_download_era5_af/2.0.0+galaxy1	Copernicus CDS Downloader for AquaINFRA marine model	Download ERA5 data from the Copernicus Climate Data Store to provide as input to the AquaINFRA marine model. Products: ERA5 hourly data on single levels from 1940 to present, Reanalysis.				
 toolshed.g2.bx.psu.edu/repos/ecology/ccds_download_era5_af/ccds_download_era5_af/2.0.0	Copernicus CDS Downloader for AquaINFRA marine model	Download ERA5 data from the Copernicus Climate Data Store to provide as input to the AquaINFRA marine model. Products: ERA5 hourly data on single levels from 1940 to present, Reanalysis.				
 toolshed.g2.bx.psu.edu/repos/ecology/ccds_download_era5_af/ccds_download_era5_af/1.0.1	Copernicus CDS Downloader for AquaINFRA marine model	Download ERA5 data from the Copernicus Climate Data Store to provide as input to the AquaINFRA marine model. Products: ERA5 hourly data on single levels from 1940 to present, Reanalysis.				
 toolshed.g2.bx.psu.edu/repos/ecology/ccds_download_era5_af/ccds_download_era5_af/1.0.0	Copernicus CDS Downloader for AquaINFRA marine model	Download ERA5 data from the Copernicus Climate Data Store to provide as input to the AquaINFRA marine model. Products: ERA5 hourly data on single levels from 1940 to present, Reanalysis.				
 toolshed.g2.bx.psu.edu/repos/ecology/ccds_download_era5_af/ccds_download_era5_af/1.0.2	Copernicus CDS Downloader for AquaINFRA marine model	Download ERA5 data from the Copernicus Climate Data Store to provide as input to the AquaINFRA marine model. Products: ERA5 hourly data on single levels from 1940 to present, Reanalysis.				
+toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_eco_map/ecoregion_eco_map/0.1.2+galaxy1	EcoMap	Create map from cluster to visualize ecoregions				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_eco_map/ecoregion_eco_map/0.1.0+galaxy0	EcoMap	Create map from cluster to visualize ecoregions				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_eco_map/ecoregion_eco_map/0.1.2+galaxy0	EcoMap	Create map from cluster to visualize ecoregions				
 toolshed.g2.bx.psu.edu/repos/ecology/srs_global_indices/srs_global_indices/0.0.1	Compute biodiversity indices	from remote sensing data				
+toolshed.g2.bx.psu.edu/repos/ecology/srs_global_indices/srs_global_indices/0.0.1+galaxy1	Compute biodiversity indices	from remote sensing data				
+toolshed.g2.bx.psu.edu/repos/ecology/bgc_canyon_b/bgc_canyon_b/0.9.3+galaxy1	Canyon-B	estimation of ocean CO2 variables and nutrient concentrations				
 toolshed.g2.bx.psu.edu/repos/ecology/bgc_canyon_b/bgc_canyon_b/0.9.3+galaxy0	Canyon-B	estimation of ocean CO2 variables and nutrient concentrations				
 toolshed.g2.bx.psu.edu/repos/ecology/iabiodiv_smartbiodiv_med_environ/iabiodiv_smartbiodiv_med_environ/0.0.1	Adds environment variables	From Copernicus and etopo given geolocalized and timestamped observations				
+toolshed.g2.bx.psu.edu/repos/ecology/iabiodiv_smartbiodiv_med_environ/iabiodiv_smartbiodiv_med_environ/0.1.2+galaxy1	Adds environment variables	From Copernicus and etopo given geolocalized and timestamped observations				
 toolshed.g2.bx.psu.edu/repos/ecology/iabiodiv_smartbiodiv_med_environ/iabiodiv_smartbiodiv_med_environ/0.1.1	Adds environment variables	From Copernicus and etopo given geolocalized and timestamped observations				
 toolshed.g2.bx.psu.edu/repos/ecology/iabiodiv_smartbiodiv_med_environ/iabiodiv_smartbiodiv_med_environ/0.1.0	Adds environment variables	From Copernicus and etopo given geolocalized and timestamped observations				
 toolshed.g2.bx.psu.edu/repos/ecology/iabiodiv_smartbiodiv_med_environ/iabiodiv_smartbiodiv_med_environ/0.1.2	Adds environment variables	From Copernicus and etopo given geolocalized and timestamped observations				
 toolshed.g2.bx.psu.edu/repos/ecology/entities_template/entities_template/0.1.1+galaxy0	Make entities templates for raster, vector and other entities files	for EML metadata creation				
+toolshed.g2.bx.psu.edu/repos/ecology/entities_template/entities_template/0.1.2+galaxy1	Make entities templates for raster, vector and other entities files	for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/entities_template/entities_template/0.1.2+galaxy0	Make entities templates for raster, vector and other entities files	for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/raster_template/raster_template/0.1.1+galaxy0	Make templates for raster files	attributes for EML metadata creation				
+toolshed.g2.bx.psu.edu/repos/ecology/raster_template/raster_template/0.1.2+galaxy1	Make templates for raster files	attributes for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/raster_template/raster_template/0.1.2+galaxy0	Make templates for raster files	attributes for EML metadata creation				
+toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_clara_cluster/ecoregion_clara_cluster/0.1.2+galaxy1	ClaraClust	Make cluster from BRT prediction with Clara algorithm				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_clara_cluster/ecoregion_clara_cluster/0.1.0+galaxy0	ClaraClust	Make cluster from BRT prediction with Clara algorithm				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_clara_cluster/ecoregion_clara_cluster/0.1.2+galaxy0	ClaraClust	Make cluster from BRT prediction with Clara algorithm				
+toolshed.g2.bx.psu.edu/repos/ecology/effective_population_size_ld_method/effective_population_size_ld_method/0.2.2+galaxy1	LDNe estimation	using RLDNe package and NeEstimator.				
 toolshed.g2.bx.psu.edu/repos/ecology/effective_population_size_ld_method/effective_population_size_ld_method/0.1.1	LDNe estimation	using RLDNe package and NeEstimator.				
 toolshed.g2.bx.psu.edu/repos/ecology/effective_population_size_ld_method/effective_population_size_ld_method/0.1.0	LDNe estimation	using RLDNe package and NeEstimator.				
 toolshed.g2.bx.psu.edu/repos/ecology/effective_population_size_ld_method/effective_population_size_ld_method/0.2.1	LDNe estimation	using RLDNe package and NeEstimator.				
 toolshed.g2.bx.psu.edu/repos/ecology/effective_population_size_ld_method/effective_population_size_ld_method/0.2.0	LDNe estimation	using RLDNe package and NeEstimator.				
 toolshed.g2.bx.psu.edu/repos/ecology/effective_population_size_ld_method/effective_population_size_ld_method/0.2.2	LDNe estimation	using RLDNe package and NeEstimator.				
+toolshed.g2.bx.psu.edu/repos/ecology/wormsmeasurements/WormsMeasurements/0.1.2+galaxy1	Enrich dataset with WoRMS	Enrich dataset with measurement type data from WoRMS				
 toolshed.g2.bx.psu.edu/repos/ecology/wormsmeasurements/WormsMeasurements/0.1.1	Enrich dataset with WoRMS	Enrich dataset with measurement type data from WoRMS				
 toolshed.g2.bx.psu.edu/repos/ecology/wormsmeasurements/WormsMeasurements/0.1.2	Enrich dataset with WoRMS	Enrich dataset with measurement type data from WoRMS				
 toolshed.g2.bx.psu.edu/repos/ecology/wildlife_megadetector_huggingface/wildlife_megadetector_huggingface/0.1.1+galaxy0	Wildlife Detection	Detect and classify wildlife species in images and videos using MegaDetector and Hugging Face models (AI).				
+toolshed.g2.bx.psu.edu/repos/ecology/wildlife_megadetector_huggingface/wildlife_megadetector_huggingface/0.1.2+galaxy1	DeepForestVision	DeepForestVision is an AI model designed to identify wildlife on camera trap images and videos from African tropical forests.				
 toolshed.g2.bx.psu.edu/repos/ecology/wildlife_megadetector_huggingface/wildlife_megadetector_huggingface/0.1.0+galaxy0	Wildlife Detection	Detect and classify wildlife species in images and videos using MegaDetector and Hugging Face models.				
 toolshed.g2.bx.psu.edu/repos/ecology/wildlife_megadetector_huggingface/wildlife_megadetector_huggingface/0.1.2+galaxy0	DeepForestVision	DeepForestVision is an AI model designed to identify wildlife on camera trap images and videos from African tropical forests.				
+toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_taxa_seeker/ecoregion_taxa_seeker/0.1.2+galaxy1	TaxaSeeker	for recover list of taxa				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_taxa_seeker/ecoregion_taxa_seeker/0.1.0+galaxy0	TaxaSeeker	for recover list of taxa				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_taxa_seeker/ecoregion_taxa_seeker/0.1.2+galaxy0	TaxaSeeker	for recover list of taxa				
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_filtering/population_genomics_vcf_filtering/0.1.0	VCF filtering	of individuals and variants				
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_filtering/population_genomics_vcf_filtering/0.2.0	VCF filtering	of individuals and variants				
+toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_vcf_filtering/population_genomics_vcf_filtering/0.2.0+galaxy1	VCF filtering	of individuals and variants				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdalinfo/gdal_gdalinfo/3.0.0	GDAL Informations	lists information about a raster dataset				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdalinfo/gdal_gdalinfo/2.4.0	GDAL Informations	lists information about a raster dataset				
+toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdalinfo/gdal_gdalinfo/3.0.0+galaxy1	GDAL Informations	lists information about a raster dataset		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/phylo_index/phylo_index/1.0+galaxy0	PhyloIndex	compute phylodiversity index based on matched phylogenetic and occupancy data				
+toolshed.g2.bx.psu.edu/repos/ecology/phylo_index/phylo_index/1.0+galaxy1	PhyloIndex	compute phylodiversity index based on matched phylogenetic and occupancy data				
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.4.0	AquaINFRA OGC API Processes					
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.11.0	AquaINFRA OGC API Processes					
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.3.0	AquaINFRA OGC API Processes					
@@ -7631,55 +7709,84 @@ toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_a
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.17.0	AquaINFRA OGC API Processes					
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.2.0	AquaINFRA OGC API Processes					
 toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.9.0	AquaINFRA OGC API Processes					
+toolshed.g2.bx.psu.edu/repos/ecology/aquainfra_ogc_api_processes/aquainfra_ogc_api_processes/0.18.0+galaxy2	AquaINFRA OGC API Processes					
+toolshed.g2.bx.psu.edu/repos/ecology/xarray_import_data/xarray_import_data/0.1.0+galaxy1	Xarray Import Data	Import a dataset from an OPeNDAP URL and convert it to a local NetCDF file using xarray.				
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_import_data/xarray_import_data/0.1.0	Xarray Import Data	Import a dataset from an OPeNDAP URL and convert it to a local NetCDF file using xarray.				
 toolshed.g2.bx.psu.edu/repos/ecology/otb_band_math/otb_band_math/1.0	OTB.BandMath	outputs a monoband image as a result of a mathematical operation on several multi-band images				
+toolshed.g2.bx.psu.edu/repos/ecology/indicspecies/indicspecies/1.7.15+galaxy1	Indicspecies	to identify indicator species within clusters/groups				
 toolshed.g2.bx.psu.edu/repos/ecology/indicspecies/indicspecies/1.7.15+galaxy0	Indicspecies	to identify indicator species within clusters/groups				
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_idcorrect_2ndlayer/vigiechiro_idcorrect_2ndlayer/0.1.1	Tadarida data cleaner	clean data from animal detection on acoustic recordings				
 toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_idcorrect_2ndlayer/vigiechiro_idcorrect_2ndlayer/0.1.0	Tadarida data cleaner	clean data from animal detection on acoustic recordings				
+toolshed.g2.bx.psu.edu/repos/ecology/vigiechiro_idcorrect_2ndlayer/vigiechiro_idcorrect_2ndlayer/0.1.1+galaxy1	Tadarida data cleaner	clean data from animal detection on acoustic recordings		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdalwarp/gdal_gdalwarp/3.0.0	GDAL Warp	image reprojection and warping utility				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdalwarp/gdal_gdalwarp/2.4.0	GDAL Warp	image reprojection and warping utility				
+toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdalwarp/gdal_gdalwarp/3.0.0+galaxy1	GDAL Warp	image reprojection and warping utility		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/eal_templates/eal_templates/0.1.1+galaxy0	Make templates	for core features of a data package for EML metadata creation				
+toolshed.g2.bx.psu.edu/repos/ecology/eal_templates/eal_templates/0.1.2+galaxy1	Make templates	for core features of a data package for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/eal_templates/eal_templates/0.1.0+galaxy0	Make templates	for core features of a data package for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/eal_templates/eal_templates/0.1.2+galaxy0	Make templates	for core features of a data package for EML metadata creation				
+toolshed.g2.bx.psu.edu/repos/ecology/data_paper_from_eml/data_paper_from_EML/0.1.0+galaxy1	Make data paper sketches	from EML				
 toolshed.g2.bx.psu.edu/repos/ecology/data_paper_from_eml/data_paper_from_EML/0.1.0+galaxy0	Make data paper sketches	from EML				
+toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_geonearestneighbor/ecoregion_GeoNearestNeighbor/0.1.2+galaxy1	GeoNearestNeighbor	Merge two data tables by finding the closest points based on latitude and longitude coordinates (WGS84 projection).				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_geonearestneighbor/ecoregion_GeoNearestNeighbor/0.1.0+galaxy0	GeoNearestNeighbor	Merge two data tables by finding the closest points based on latitude and longitude coordinates (WGS84 projection).				
 toolshed.g2.bx.psu.edu/repos/ecology/ecoregion_geonearestneighbor/ecoregion_GeoNearestNeighbor/0.1.2+galaxy0	GeoNearestNeighbor	Merge two data tables by finding the closest points based on latitude and longitude coordinates (WGS84 projection).				
 toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_flight_curve/regionalgam_flight_curve/1.5	Flight curve	compute the regional expected pattern of abundance				
+toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_flight_curve/regionalgam_flight_curve/1.5+galaxy1	Flight curve	compute the regional expected pattern of abundance		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/get_safran_data_geosas_api/get_safran_data_geosas_api/4.0.0+galaxy1	SAFRAN Climate Data Extractor	Download SAFRAN daily climate reanalysis data from the GEOSAS OGC-EDR API (France, 1958–present)				
 toolshed.g2.bx.psu.edu/repos/ecology/xmlstarlet/xmlstarlet/1.6.1	xmlstarlet	convert a metadata XML file in one standard to another				
+toolshed.g2.bx.psu.edu/repos/ecology/xmlstarlet/xmlstarlet/1.6.1+galaxy1	xmlstarlet	convert a metadata XML file in one standard to another				
 toolshed.g2.bx.psu.edu/repos/ecology/cb_dissim/cb_dissim/0.0.0	QECB-Dissimilarity	indicator				
+toolshed.g2.bx.psu.edu/repos/ecology/cb_dissim/cb_dissim/0.0.0+galaxy1	QECB-Dissimilarity	indicator				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_ogr2ogr/gdal_ogr2ogr/3.0.0	OGR2ogr	converts simple features data between file formats				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_ogr2ogr/gdal_ogr2ogr/2.4.0	OGR2ogr	converts simple features data between file formats				
+toolshed.g2.bx.psu.edu/repos/ecology/gdal_ogr2ogr/gdal_ogr2ogr/3.0.0+galaxy1	OGR2ogr	converts simple features data between file formats		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdaladdo/gdal_gdaladdo/3.0.0	GDAL addo	builds or rebuilds overview images				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdaladdo/gdal_gdaladdo/2.4.0	GDAL addo	builds or rebuilds overview images				
+toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdaladdo/gdal_gdaladdo/3.0.0+galaxy1	GDAL addo	builds or rebuilds overview images		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/copernicusmarine/copernicusmarine/2.3.0+galaxy1	Copernicus Marine Data Store	retrieve marine data				
 toolshed.g2.bx.psu.edu/repos/ecology/copernicusmarine/copernicusmarine/1.3.3+galaxy2	Copernicus Marine Data Store	retrieve marine data				
 toolshed.g2.bx.psu.edu/repos/ecology/copernicusmarine/copernicusmarine/1.3.3+galaxy0	Copernicue Marine Data Store	retrieve marine data				
 toolshed.g2.bx.psu.edu/repos/ecology/copernicusmarine/copernicusmarine/1.3.3+galaxy1	Copernicus Marine Data Store	retrieve marine data				
 toolshed.g2.bx.psu.edu/repos/ecology/copernicusmarine/copernicusmarine/2.3.0+galaxy0	Copernicus Marine Data Store	retrieve marine data				
 toolshed.g2.bx.psu.edu/repos/ecology/srs_preprocess_s2/srs_preprocess_s2/0.0.1	Preprocess sentinel 2 data	read, crop, resample and write it as a raster stack				
+toolshed.g2.bx.psu.edu/repos/ecology/srs_preprocess_s2/srs_preprocess_s2/0.0.1+galaxy1	Preprocess sentinel 2 data	read, crop, resample and write it as a raster stack				
 toolshed.g2.bx.psu.edu/repos/ecology/estimate_endem/estimate_endem/0.1.1+galaxy0	EstimEndem	of each cell of a spatial grid				
 toolshed.g2.bx.psu.edu/repos/ecology/estimate_endem/estimate_endem/0.1.0+galaxy0	EstimEndem	of each cell of a spatial grid				
+toolshed.g2.bx.psu.edu/repos/ecology/estimate_endem/estimate_endem/0.1.1+galaxy1	EstimEndem	of each cell of a spatial grid				
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_split_vcf_by_pop/population_genomics_split_vcf_by_pop/0.1.0	Split VCF by pop	from an individuals/population table				
 toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_split_vcf_by_pop/population_genomics_split_vcf_by_pop/0.2.0	Split VCF by pop	from an individuals/population table				
+toolshed.g2.bx.psu.edu/repos/ecology/population_genomics_split_vcf_by_pop/population_genomics_split_vcf_by_pop/0.2.0+galaxy1	Split VCF by pop	from an individuals/population table				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdal_translate/gdal_gdal_translate/3.0.0	GDAL Translate	converts raster data between different formats.				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdal_translate/gdal_gdal_translate/2.4.0	GDAL Translate	converts raster data between different formats.				
+toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdal_translate/gdal_gdal_translate/3.0.0+galaxy1	GDAL Translate	converts raster data between different formats.		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/vector_template/vector_template/0.1.2+galaxy1	Make templates for vector files	attributes for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/vector_template/vector_template/0.1.0+galaxy0	Make templates for vector files	attributes for EML metadata creation				
 toolshed.g2.bx.psu.edu/repos/ecology/vector_template/vector_template/0.1.2+galaxy0	Make templates for vector files	attributes for EML metadata creation				
+toolshed.g2.bx.psu.edu/repos/ecology/eml_validate/eml_validate/0.1.2+galaxy1	Eml validate:	check if your EML file is valid				
 toolshed.g2.bx.psu.edu/repos/ecology/eml_validate/eml_validate/0.1.0	Eml validate:	check if your EML file is valid				
 toolshed.g2.bx.psu.edu/repos/ecology/eml_validate/eml_validate/0.1.2	Eml validate:	check if your EML file is valid				
+toolshed.g2.bx.psu.edu/repos/ecology/obis_data/obis_data/0.0.2+galaxy1	OBIS occurences	retrieve data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/obis_data/obis_data/0.0.2	OBIS occurences	retrieve data		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/map_shp/Map_shp/0.1.0+galaxy1	Make a map with a shapefile					
 toolshed.g2.bx.psu.edu/repos/ecology/map_shp/Map_shp/0.1.0+galaxy0	Make a map with a shapefile					
 toolshed.g2.bx.psu.edu/repos/ecology/ecology_link_between_var/ecology_link_between_var/0.0.0	Variables exploration	Shows interaction, correlation, colinearity, produces a PCA and computes VIF for biodiversity abundance data		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/ecology_link_between_var/ecology_link_between_var/0.0.0+galaxy1	Variables exploration	Shows interaction, correlation, colinearity, produces a PCA and computes VIF for biodiversity abundance data		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/tool_anonymization/tool_anonymization/0.0.0	Spatial coordinates anonymization	without loss of the spatial relationships				
+toolshed.g2.bx.psu.edu/repos/ecology/tool_anonymization/tool_anonymization/0.0.0+galaxy1	Spatial coordinates anonymization	without loss of the spatial relationships				
 toolshed.g2.bx.psu.edu/repos/ecology/srs_pca/srs_pca/0.0.1	Compute a PCA raster	from remote sensing data				
+toolshed.g2.bx.psu.edu/repos/ecology/srs_pca/srs_pca/0.0.1+galaxy1	Compute a PCA raster	from remote sensing data				
 toolshed.g2.bx.psu.edu/repos/ecology/crsconverter/crsconverter/1.0+galaxy0	CRSconverter	from environmental predictors for species distribution modeling				
+toolshed.g2.bx.psu.edu/repos/ecology/crsconverter/crsconverter/1.1+galaxy1	CRSconverter	from environmental predictors for species distribution modeling				
 toolshed.g2.bx.psu.edu/repos/ecology/crsconverter/crsconverter/1.1+galaxy0	CRSconverter	from environmental predictors for species distribution modeling				
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_metadata_info/xarray_metadata_info/0.15.1	NetCDF xarray Metadata Info	summarize content of a Netcdf file		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_metadata_info/xarray_metadata_info/0.20.2+galaxy0	NetCDF xarray Metadata Info	summarize content of a Netcdf file		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_metadata_info/xarray_metadata_info/0.18.2+galaxy0	NetCDF xarray Metadata Info	summarize content of a Netcdf file		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_metadata_info/xarray_metadata_info/2022.3.0+galaxy0	NetCDF xarray Metadata Info	summarize content of a Netcdf file		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/xarray_metadata_info/xarray_metadata_info/2022.3.0+galaxy1	NetCDF xarray Metadata Info	summarize content of a Netcdf file		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/obisindicators/obisindicators/0.0.1	Ocean biodiversity indicators	from OBIS		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/obisindicators/obisindicators/0.0.2+galaxy1	Ocean biodiversity indicators	from OBIS		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/obisindicators/obisindicators/0.0.2	Ocean biodiversity indicators	from OBIS		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/bar_plot/bar_plot/0.1.0+galaxy1	Bar plot	for simple discrete data				
 toolshed.g2.bx.psu.edu/repos/ecology/bar_plot/bar_plot/0.1.0+galaxy0	Bar plot	for simple discrete data				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_odv_history/tool_odv_history/1.0+galaxy0	ODV history manager	reports user action performed with ODV				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_odv_history/tool_odv_history/1.2+galaxy1	ODV history manager	reports user action performed with ODV				
@@ -7687,35 +7794,50 @@ toolshed.g2.bx.psu.edu/repos/ecology/tool_odv_history/tool_odv_history/1.1+galax
 toolshed.g2.bx.psu.edu/repos/ecology/tool_odv_history/tool_odv_history/1.2+galaxy2	ODV history manager	reports user action performed with ODV				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_odv_history/tool_odv_history/1.1+galaxy0.1	ODV history manager	reports user action performed with ODV				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_odv_history/tool_odv_history/1.0+galaxy0.1	ODV history manager	reports user action performed with ODV				
+toolshed.g2.bx.psu.edu/repos/ecology/tool_odv_history/tool_odv_history/1.2+galaxy3	ODV history manager	reports user action performed with ODV				
 toolshed.g2.bx.psu.edu/repos/ecology/timeseries_extraction/timeseries_extraction/2022.3.0+galaxy0	NetCDF timeseries Extractor	Extract and plot time series		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/timeseries_extraction/timeseries_extraction/2022.3.0+galaxy1	NetCDF timeseries Extractor	Extract and plot time series		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/population_genetics_stats/population_genetics_stats/0.1.0	Population Genetics Statistics:	He, Hobs, Fis, allelic richness and pairwise values (Fst, DJost, Gst Nei)				
 toolshed.g2.bx.psu.edu/repos/ecology/population_genetics_stats/population_genetics_stats/0.2.0	Population Genetics Statistics:	He, Hobs, Fis, allelic richness and pairwise values (Fst, DJost, Gst Nei)				
+toolshed.g2.bx.psu.edu/repos/ecology/population_genetics_stats/population_genetics_stats/0.2.0+galaxy1	Population Genetics Statistics:	He, Hobs, Fis, allelic richness and pairwise values (Fst, DJost, Gst Nei)				
+toolshed.g2.bx.psu.edu/repos/ecology/pampa_plotglm/pampa_plotglm/0.0.2+galaxy1	Create a plot from GLM data	as temporal trend		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/pampa_plotglm/pampa_plotglm/0.0.2	Create a plot from GLM data	as temporal trend		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdalbuildvrt/gdal_gdalbuildvrt/3.0.0	GDAL Build VRT	builds a VRT from a list of datasets				
 toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdalbuildvrt/gdal_gdalbuildvrt/2.4.0	GDAL Build VRT	builds a VRT from a list of datasets				
+toolshed.g2.bx.psu.edu/repos/ecology/gdal_gdalbuildvrt/gdal_gdalbuildvrt/3.0.0+galaxy1	GDAL Build VRT	builds a VRT from a list of datasets		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/nfdi4earth_os4a/nfdi4earth_os4a/1.2+galaxy1	NFDI4Earth OneStop4All Importer	downloads content via NFDI4Earth's OneStop4All search user interface				
 toolshed.g2.bx.psu.edu/repos/ecology/nfdi4earth_os4a/nfdi4earth_os4a/1.2	NFDI4Earth OneStop4All Importer	downloads content via NFDI4Earth's OneStop4All search user interface				
 toolshed.g2.bx.psu.edu/repos/ecology/nfdi4earth_os4a/nfdi4earth_os4a/1.1	NFDI4Earth OneStop4All Importer	downloads content via NFDI4Earth's OS4A search user interface				
 toolshed.g2.bx.psu.edu/repos/ecology/nfdi4earth_os4a/nfdi4earth_os4a/1.0	NFDI4Earth OneStop4All Importer	downloads content via NFDI4Earth's OS4A search user interface				
 toolshed.g2.bx.psu.edu/repos/ecology/spocc_occ/spocc_occ/0.9.0	Get species occurrences data	from GBIF, ALA, iNAT and others				
 toolshed.g2.bx.psu.edu/repos/ecology/spocc_occ/spocc_occ/1.2.2	Get species occurrences data	from GBIF, OBIS, ALA, iNAT and others		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/spocc_occ/spocc_occ/1.2.2+galaxy1	Get species occurrences data	from GBIF, OBIS, ALA, iNAT and others		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/earthdata_api/earthdata_api/0.1.0+galaxy1	earthdata API	Fetching EarthData (NASA environment database)				
 toolshed.g2.bx.psu.edu/repos/ecology/earthdata_api/earthdata_api/0.1.0+galaxy0	earthdata API	Fetching EarthData (NASA environment database)				
+toolshed.g2.bx.psu.edu/repos/ecology/argo_getdata/argo_getdata/0.1.15+galaxy1	Argo data access	for global ocean in situ observing system				
 toolshed.g2.bx.psu.edu/repos/ecology/argo_getdata/argo_getdata/0.1.15+galaxy0	Argo data access	for global ocean in situ observing system				
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_netcdf2netcdf/xarray_netcdf2netcdf/0.20.2+galaxy0	NetCDF xarray operations	manipulate xarray from netCDF and save back to netCDF		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_netcdf2netcdf/xarray_netcdf2netcdf/0.18.2+galaxy0	NetCDF xarray operations	manipulate xarray from netCDF and save back to netCDF		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/xarray_netcdf2netcdf/xarray_netcdf2netcdf/2022.3.0+galaxy0	NetCDF xarray operations	manipulate xarray from netCDF and save back to netCDF		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/xarray_netcdf2netcdf/xarray_netcdf2netcdf/2022.3.0+galaxy1	NetCDF xarray operations	manipulate xarray from netCDF and save back to netCDF		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/ecology_stat_presence_abs/ecology_stat_presence_abs/0.0.0	Statistics on presence-absence	of a numeric variable		topic_0610,topic_3050		
+toolshed.g2.bx.psu.edu/repos/ecology/ecology_stat_presence_abs/ecology_stat_presence_abs/0.0.0+galaxy1	Statistics on presence-absence	of a numeric variable		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/zoo_project_ogc_api_processes/zoo_project_ogc_api_processes/0.1.0	Zoo Project OGC API Processes	executes remote OTB processes				
 toolshed.g2.bx.psu.edu/repos/ecology/makeeml/makeeml/0.1.2+galaxy1	Make EML	Create EML from EAL templates				
 toolshed.g2.bx.psu.edu/repos/ecology/makeeml/makeeml/0.1.0+galaxy0	Make EML	Create EML from EAL templates				
 toolshed.g2.bx.psu.edu/repos/ecology/makeeml/makeeml/0.1.1+galaxy1	Make EML	Create EML from EAL templates				
+toolshed.g2.bx.psu.edu/repos/ecology/makeeml/makeeml/0.1.2+galaxy2	Make EML	Create EML from EAL templates				
 toolshed.g2.bx.psu.edu/repos/ecology/landcover_subindicator/landcover_subindicator/0.1.0+galaxy0	Land cover degradation	subindicator to track land changes				
+toolshed.g2.bx.psu.edu/repos/ecology/genetic_format_conversion/genetic_format_conversion/0.2.1+galaxy1	Genetic format conversion	using PGDSpider and additional conversion modules.				
 toolshed.g2.bx.psu.edu/repos/ecology/genetic_format_conversion/genetic_format_conversion/0.1.0	Genetic format conversion	using PGDSpider and additional conversion modules.				
 toolshed.g2.bx.psu.edu/repos/ecology/genetic_format_conversion/genetic_format_conversion/0.2.1	Genetic format conversion	using PGDSpider and additional conversion modules.				
 toolshed.g2.bx.psu.edu/repos/ecology/genetic_format_conversion/genetic_format_conversion/0.2.0	Genetic format conversion	using PGDSpider and additional conversion modules.				
+toolshed.g2.bx.psu.edu/repos/ecology/harmonize_insitu_to_netcdf/harmonize_insitu_to_netcdf/3.0+galaxy2	QCV harmonizer	and aggregator of in-situ marine physical and biogeochemical data				
 toolshed.g2.bx.psu.edu/repos/ecology/harmonize_insitu_to_netcdf/harmonize_insitu_to_netcdf/2.0+galaxy0	QCV harmonizer	and aggregator of in-situ marine physical and biogeochemical data				
 toolshed.g2.bx.psu.edu/repos/ecology/harmonize_insitu_to_netcdf/harmonize_insitu_to_netcdf/3.0+galaxy1	QCV harmonizer	and aggregator of in-situ marine physical and biogeochemical data				
 toolshed.g2.bx.psu.edu/repos/ecology/harmonize_insitu_to_netcdf/harmonize_insitu_to_netcdf/1.1+galaxy0	QCV harmonizer	and aggregator of insitu marine physical and biogeochemical data				
 toolshed.g2.bx.psu.edu/repos/ecology/harmonize_insitu_to_netcdf/harmonize_insitu_to_netcdf/2.0+galaxy1	QCV harmonizer	and aggregator of in-situ marine physical and biogeochemical data				
+toolshed.g2.bx.psu.edu/repos/ecology/tool_odv/tool_odv/1.3+galaxy3	ODV collection manager	tool for qualificiation and validation				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_odv/tool_odv/1.3+galaxy1	ODV collection manager	tool for qualificiation and validation				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_odv/tool_odv/1.2+galaxy1	ODV collection manager	tool for qualificiation and validation				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_odv/tool_odv/1.1+galaxy0	ODV collection manager	tool for qualificiation and validation				
@@ -7724,7 +7846,9 @@ toolshed.g2.bx.psu.edu/repos/ecology/tool_odv/tool_odv/0.2+galaxy0	ODV collectio
 toolshed.g2.bx.psu.edu/repos/ecology/tool_odv/tool_odv/1.3+galaxy2	ODV collection manager	tool for qualificiation and validation				
 toolshed.g2.bx.psu.edu/repos/ecology/tool_odv/tool_odv/1.2+galaxy0.1	ODV collection manager	tool for qualificiation and validation				
 toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_glmmpql/regionalgam_glmmpql/1.5	Expected temporal trend	of species abundance				
+toolshed.g2.bx.psu.edu/repos/ecology/regionalgam_glmmpql/regionalgam_glmmpql/1.5+galaxy1	Expected temporal trend	of species abundance		topic_0610,topic_3050		
 toolshed.g2.bx.psu.edu/repos/ecology/srs_diversity_maps/srs_diversity_maps/0.0.1	Map diversity	from remote sensing data				
+toolshed.g2.bx.psu.edu/repos/ecology/srs_diversity_maps/srs_diversity_maps/0.0.1+galaxy1	Map diversity	from remote sensing data				
 toolshed.g2.bx.psu.edu/repos/brasset_jensen/srnapipe/sRNAPipe/1.1.1	sRNAPipe	In-depth study of small RNA				
 toolshed.g2.bx.psu.edu/repos/brasset_jensen/srnapipe/sRNAPipe/0.0.1	sRNAPipe	In-depth study of small RNA				
 toolshed.g2.bx.psu.edu/repos/brasset_jensen/srnapipe/sRNAPipe/1.2	sRNAPipe	In-depth study of small RNA				
@@ -7915,6 +8039,7 @@ toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.16	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.7	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.14	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
+toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.17.1	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.3	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.14.3	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
 toolshed.g2.bx.psu.edu/repos/rheiland/physicell_studio/interactive_tool_pcstudio/0.11	PhysiCell Studio	Interactive tool to create, simulate, and visualize a multicellular model using PhysiCell				
@@ -8807,6 +8932,7 @@ toolshed.g2.bx.psu.edu/repos/genouest/braker/braker/2.1.6+galaxy1	Braker genome 
 toolshed.g2.bx.psu.edu/repos/genouest/braker/braker/3.0.3+galaxy0	Braker genome annotation					
 toolshed.g2.bx.psu.edu/repos/genouest/braker/braker/2.1.6+galaxy0	Braker genome annotation					
 toolshed.g2.bx.psu.edu/repos/genouest/helixer/helixer/0.3.1	Helixer	gene calling				
+toolshed.g2.bx.psu.edu/repos/genouest/helixer/helixer/0.3.7+galaxy0	Helixer	gene calling	operation_0362,operation_2454	topic_0080,topic_3512		
 toolshed.g2.bx.psu.edu/repos/genouest/helixer/helixer/0.3.3+galaxy1	Helixer	gene calling	operation_2454,operation_0362	topic_0080,topic_3512	helixer	Helixer
 toolshed.g2.bx.psu.edu/repos/genouest/helixer/helixer/0.3.6+galaxy0	Helixer	gene calling	operation_0362,operation_2454	topic_3512,topic_0080		
 toolshed.g2.bx.psu.edu/repos/genouest/helixer/helixer/0.3.2+galaxy1	Helixer	gene calling	operation_0362,operation_2454	topic_0080,topic_3512	helixer	Helixer
@@ -8873,6 +8999,7 @@ toolshed.g2.bx.psu.edu/repos/iracooke/tpp_prophets/pepxml_to_table_1/1.1.1	PepXM
 toolshed.g2.bx.psu.edu/repos/iracooke/tpp_prophets/pepxml_to_table_1/1.0.1	PepXML to Table	Converts a pepXML file to a tab delimited text file				
 toolshed.g2.bx.psu.edu/repos/iracooke/tpp_prophets/pepxml_to_table_1/1.1.0	PepXML to Table	Converts a pepXML file to a tab delimited text file				
 toolshed.g2.bx.psu.edu/repos/iracooke/tpp_prophets/pepxml_to_table_1/1.0.0	PepXML to Table	Converts a pepXML file to a tab delimited text file				
+toolshed.g2.bx.psu.edu/repos/ufz/microsim/microsim/0.1.0+galaxy0	microsim	pore-scale pseudo-3D Stokes flow simulation from a PGM geometry				
 toolshed.g2.bx.psu.edu/repos/ufz/omero_import/omero_import/5.18.0+galaxy6	OMERO Image Import with secret	with omero-py	operation_3443	topic_0092,topic_3382		
 toolshed.g2.bx.psu.edu/repos/ufz/omero_import/omero_import/5.18.0+galaxy5	OMERO Image Import with secret	with omero-py	operation_3443	topic_3382,topic_0092		
 toolshed.g2.bx.psu.edu/repos/ufz/omero_import/omero_import/5.21.2+galaxy0	OMERO Image Import	with omero-py	operation_3443	topic_0092,topic_3382		
@@ -9194,6 +9321,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/tn93_cluster/tn93_cluster/1.0.14+galaxy0	TN93 C
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_cluster/tn93_cluster/1.0.6	TN93 Cluster	sequences that lie within a specific distance of each other				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_cluster/tn93_cluster/1.0.15+galaxy0	TN93 Cluster	sequences that lie within a specific distance of each other				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_cluster/tn93_cluster/1.0.6+galaxy1	TN93 Cluster	sequences that lie within a specific distance of each other				
+toolshed.g2.bx.psu.edu/repos/iuc/tn93_cluster/tn93_cluster/1.0.17+galaxy0	TN93 Cluster	sequences that lie within a specific distance of each other				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_cluster/tn93_cluster/1.0.16+galaxy0	TN93 Cluster	sequences that lie within a specific distance of each other				
 toolshed.g2.bx.psu.edu/repos/iuc/humann_rename_table/humann_rename_table/3.0.0+galaxy0	Rename features	of a HUMAnN generated table	operation_2478,operation_0324	topic_3174,topic_0194	humann	humann
 toolshed.g2.bx.psu.edu/repos/iuc/humann_rename_table/humann_rename_table/3.6.0+galaxy0	Rename features	of a HUMAnN generated table	operation_2478,operation_0324	topic_3174,topic_0194	humann	humann
@@ -9300,6 +9428,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/mothur_merge_groups/mothur_merge_groups/1.39.5.
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_merge_groups/mothur_merge_groups/1.36.1.0	Merge.groups	Merge groups in a shared file		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/sansa_annotate/sansa_annotate/0.0.8+galaxy0	sansa annotate	structural variants	operation_3197	topic_3175		
 toolshed.g2.bx.psu.edu/repos/iuc/sansa_annotate/sansa_annotate/0.2.1+galaxy0	sansa annotate	structural variants	operation_3197	topic_3175		
+toolshed.g2.bx.psu.edu/repos/iuc/sansa_annotate/sansa_annotate/0.3.1+galaxy0	sansa annotate	structural variants	operation_3197	topic_3175		
 toolshed.g2.bx.psu.edu/repos/iuc/sansa_annotate/sansa_annotate/0.0.7+galaxy0	sansa annotate	structural variants				
 toolshed.g2.bx.psu.edu/repos/iuc/sansa_annotate/sansa_annotate/0.2.5+galaxy0	sansa annotate	structural variants	operation_3197	topic_3175		
 toolshed.g2.bx.psu.edu/repos/iuc/sansa_annotate/sansa_annotate/0.2.2+galaxy0	sansa annotate	structural variants	operation_3197	topic_3175		
@@ -9633,6 +9762,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.46.2+galaxy0	NanoPlot	Plott
 toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.25.0+galaxy0	NanoPlot	Plotting suite for Oxford Nanopore sequencing data and alignments	operation_2940,operation_2943	topic_0622	nanoplot	NanoPlot
 toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.47.0+galaxy0	NanoPlot	Plotting suite for Oxford Nanopore sequencing data and alignments	operation_2940,operation_2943	topic_0622		
 toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.47.2+galaxy0	NanoPlot	Plotting suite for Oxford Nanopore sequencing data and alignments	operation_2943,operation_2940	topic_0622		
+toolshed.g2.bx.psu.edu/repos/iuc/nanoplot/nanoplot/1.48.0+galaxy0	NanoPlot	Plotting suite for Oxford Nanopore sequencing data and alignments	operation_2940,operation_2943	topic_0622		
 toolshed.g2.bx.psu.edu/repos/iuc/ucsc_maffrag/ucsc_maffrag/482+galaxy0	mafFrag	Extract MAF sequences for a region from database				
 toolshed.g2.bx.psu.edu/repos/iuc/enzywizard_hydrocluster/enzywizard_hydrocluster/1.0.2+galaxy0	EnzyWizard Hydrocluster	Detect hydrophobic clusters from a cleaned protein structure				
 toolshed.g2.bx.psu.edu/repos/iuc/gemini_pathways/gemini_pathways/0.20.1	GEMINI pathways	Map genes and variants to KEGG pathways	operation_2403,operation_3197	topic_0080	gemini	GEMINI
@@ -9714,6 +9844,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/tn93/tn93/1.0.4	TN93	compute distances between 
 toolshed.g2.bx.psu.edu/repos/iuc/tn93/tn93/1.0.6	TN93	compute distances between aligned sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93/tn93/1.0.15+galaxy0	TN93	compute distances between aligned sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93/tn93/1.0.6+galaxy1	TN93	compute distances between aligned sequences				
+toolshed.g2.bx.psu.edu/repos/iuc/tn93/tn93/1.0.17+galaxy0	TN93	compute distances between aligned sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93/tn93/1.0.16+galaxy0	TN93	compute distances between aligned sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357	Convert GTF to BED12					
 toolshed.g2.bx.psu.edu/repos/iuc/funannotate_annotate/funannotate_annotate/1.8.15+galaxy1	Funannotate functional	annotation	operation_0362	topic_0622	funannotate	funannotate
@@ -10470,6 +10601,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/crossmap_wig/crossmap_wig/0.7.3+galaxy0	CrossMa
 toolshed.g2.bx.psu.edu/repos/iuc/crossmap_wig/crossmap_wig/0.3.7+galaxy1	CrossMap Wig	Convert genome coordinates or annotation files between genome assemblies	operation_3267		crossmap	CrossMap
 toolshed.g2.bx.psu.edu/repos/iuc/preseq_lc_extrap/preseq_lc_extrap/3.2.0+galaxy0	Preseq lc_extrap	Yield Extrapolation				
 toolshed.g2.bx.psu.edu/repos/iuc/dada2_mergesequencetables/dada2_mergeSequenceTables/1.38.0+galaxy1	dada2: mergeSequenceTables	merge 2 or more sequence tables together	operation_3227,operation_3200	topic_3697,topic_0199,topic_3174,topic_3168		
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_choose_primer_cutoff/pimento_choose_primer_cutoff/1.3.2+galaxy0	PIMENTO Choose primer cutoff	Selects optimal primer cutoff and generates final inferred primer sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_choose_primer_cutoff/pimento_choose_primer_cutoff/1.3.0+galaxy0	PIMENTO Choose primer cutoff	Selects optimal primer cutoff and generates final inferred primer sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_choose_primer_cutoff/pimento_choose_primer_cutoff/1.0.3+galaxy0	PIMENTO Choose primer cutoff	Selects optimal primer cutoff and generates final inferred primer sequences				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_choose_primer_cutoff/pimento_choose_primer_cutoff/1.0.2+galaxy0	PIMENTO Choose primer cutoff	Selects optimal primer cutoff and generates final inferred primer sequences				
@@ -10831,6 +10963,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/ruvseq/ruvseq/1.26.0+galaxy0	Remove Unwanted Va
 toolshed.g2.bx.psu.edu/repos/iuc/ruvseq/ruvseq/1.26.0+galaxy1	Remove Unwanted Variation	from RNA-seq data	operation_3223	topic_0203,topic_3170	ruvseq	RUVSeq
 toolshed.g2.bx.psu.edu/repos/iuc/ruvseq/ruvseq/1.16.0+galaxy1	Remove Unwanted Variation	from RNA-seq data	operation_3223	topic_3170,topic_0203	ruvseq	RUVSeq
 toolshed.g2.bx.psu.edu/repos/iuc/ruvseq/ruvseq/1.12.0	Remove Unwanted Variation	from RNA-seq data	operation_3223	topic_3170,topic_0203	ruvseq	RUVSeq
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_are_there_primers/pimento_are_there_primers/1.3.2+galaxy0	PIMENTO Are there primers?	Checks for the presence of primers in input reads				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_are_there_primers/pimento_are_there_primers/1.3.0+galaxy0	PIMENTO Are there primers?	Checks for the presence of primers in input reads				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_are_there_primers/pimento_are_there_primers/1.0.3+galaxy0	PIMENTO Are there primers?	Checks for the presence of primers in input reads				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_are_there_primers/pimento_are_there_primers/1.0.2+galaxy0	PIMENTO Are there primers?	Checks for the presence of primers in input reads				
@@ -11192,6 +11325,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/tn93_filter/tn93_filter/1.0.14+galaxy0	TN93 Fil
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_filter/tn93_filter/1.0.6	TN93 Filter	- remove sequences from a reference that are within a given distance of of a cluster				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_filter/tn93_filter/1.0.15+galaxy0	TN93 Filter	- remove sequences from a reference that are within a given distance of of a cluster				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_filter/tn93_filter/1.0.6+galaxy1	TN93 Filter	- remove sequences from a reference that are within a given distance of of a cluster				
+toolshed.g2.bx.psu.edu/repos/iuc/tn93_filter/tn93_filter/1.0.17+galaxy0	TN93 Filter	- remove sequences from a reference that are within a given distance of of a cluster				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_filter/tn93_filter/1.0.16+galaxy0	TN93 Filter	- remove sequences from a reference that are within a given distance of of a cluster				
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_fade/hyphy_fade/2.5.11+galaxy0	HyPhy-FADE	: FUBAR* Approach to Directional Evolution (*Fast    Unconstrained Bayesian Approximation)			HyPhy	HyPhy
 toolshed.g2.bx.psu.edu/repos/iuc/hyphy_fade/hyphy_fade/2.5.93+galaxy2	HyPhy-FADE	: FUBAR* Approach to Directional Evolution (*Fast    Unconstrained Bayesian Approximation)				
@@ -13557,6 +13691,8 @@ toolshed.g2.bx.psu.edu/repos/iuc/tasmanian_mismatch/tasmanian_mismatch/1.0.7	Ana
 toolshed.g2.bx.psu.edu/repos/iuc/tasmanian_mismatch/tasmanian_mismatch/2.0.3+galaxy0	Analysis of artifacts with Tasmanian	Quantify, visualize and summarize mismatches in deep sequencing data	operation_3218,operation_0564,operation_3197	topic_3168,topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/tasmanian_mismatch/tasmanian_mismatch/0.1.3	Analysis of artifacts with Tasmanian	Quantify, visualize and summarize mismatches in deep sequencing data				
 toolshed.g2.bx.psu.edu/repos/iuc/tasmanian_mismatch/tasmanian_mismatch/1.0.9+galaxy1	Analysis of artifacts with Tasmanian	Quantify, visualize and summarize mismatches in deep sequencing data	operation_3218,operation_0564,operation_3197	topic_3168,topic_0080		
+toolshed.g2.bx.psu.edu/repos/iuc/tasmanian_mismatch/tasmanian_mismatch/2.0.4+galaxy0	Analysis of artifacts with Tasmanian	Quantify, visualize and summarize mismatches in deep sequencing data	operation_3218,operation_0564,operation_3197	topic_3168,topic_0080		
+toolshed.g2.bx.psu.edu/repos/iuc/tasmanian_mismatch/tasmanian_mismatch/2.0.5+galaxy0	Analysis of artifacts with Tasmanian	Quantify, visualize and summarize mismatches in deep sequencing data	operation_3218,operation_0564,operation_3197	topic_3168,topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/tasmanian_mismatch/tasmanian_mismatch/1.0.9	Analysis of artifacts with Tasmanian	Quantify, visualize and summarize mismatches in deep sequencing data	operation_3218,operation_0564,operation_3197	topic_3168,topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/seaborn/seaborn/0.13.2+galaxy0	seaborn	generate various plots using seaborn	operation_0337	topic_0092		
 toolshed.g2.bx.psu.edu/repos/iuc/seaborn/seaborn/0.13.2+galaxy1	seaborn	generate various plots using seaborn	operation_0337	topic_0092		
@@ -14416,6 +14552,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_preprocessing/snapatac2_preprocessing
 toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_preprocessing/snapatac2_preprocessing/2.6.4+galaxy1	SnapATAC2 Preprocessing	and integration				
 toolshed.g2.bx.psu.edu/repos/iuc/snapatac2_preprocessing/snapatac2_preprocessing/2.8.0+galaxy0	SnapATAC2 Preprocessing	and integration	operation_3891,operation_0314,operation_3935	topic_0102,topic_2229,topic_3940,topic_3173,topic_3168		
 toolshed.g2.bx.psu.edu/repos/iuc/raxmlng/raxmlng/1.2.2+galaxy0	RAxML-NG	Maximum Likelihood based inference of large phylogenetic trees				
+toolshed.g2.bx.psu.edu/repos/iuc/raxmlng/raxmlng/2.0.3+galaxy0	RAxML-NG	Maximum Likelihood based inference of large phylogenetic trees				
 toolshed.g2.bx.psu.edu/repos/iuc/raxmlng/raxmlng/2.0.1+galaxy1	RAxML-NG	Maximum Likelihood based inference of large phylogenetic trees				
 toolshed.g2.bx.psu.edu/repos/iuc/raxmlng/raxmlng/2.0.2+galaxy0	RAxML-NG	Maximum Likelihood based inference of large phylogenetic trees				
 toolshed.g2.bx.psu.edu/repos/iuc/raxmlng/raxmlng/2.0.1+galaxy2	RAxML-NG	Maximum Likelihood based inference of large phylogenetic trees				
@@ -14479,6 +14616,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/idr_download_by_ids/idr_download_by_ids/0.30	ID
 toolshed.g2.bx.psu.edu/repos/iuc/idr_download_by_ids/idr_download_by_ids/0.9	Download IDR/OMERO		operation_3443			
 toolshed.g2.bx.psu.edu/repos/iuc/idr_download_by_ids/idr_download_by_ids/0.40	IDR Download	- download images from the Image Data Resource using image IDs				
 toolshed.g2.bx.psu.edu/repos/iuc/poretools_nucdist/poretools_nucdist/0.6.1a1.0	Show nucleotide	distribution in nanopore sequencing reads	operation_2478	topic_0654,topic_3168	poretools	Poretools
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_gen_bcv/pimento_gen_bcv/1.3.2+galaxy0	PIMENTO Generate base-conservation vector(s)	for primer fastq files				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_gen_bcv/pimento_gen_bcv/1.3.0+galaxy0	PIMENTO Generate base-conservation vector(s)	for primer fastq files				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_gen_bcv/pimento_gen_bcv/1.0.3+galaxy0	PIMENTO Generate base-conservation vector(s)	for primer fastq files				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_gen_bcv/pimento_gen_bcv/1.0.2+galaxy0	PIMENTO Generate base-conservation vector(s)	for primer fastq files				
@@ -14609,6 +14747,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/delly_cnv/delly_cnv/0.8.7+galaxy0	Delly cnv	dis
 toolshed.g2.bx.psu.edu/repos/iuc/exonerate/exonerate/2.4.0+galaxy1	Exonerate	pairwise sequence comparison	operation_0302,operation_3182,operation_0491	topic_0080,topic_0160,topic_0602	exonerate	Exonerate
 toolshed.g2.bx.psu.edu/repos/iuc/exonerate/exonerate/2.4.0	Exonerate	pairwise sequence comparison	operation_0491,operation_3182,operation_0302	topic_0602,topic_0080,topic_0160	exonerate	Exonerate
 toolshed.g2.bx.psu.edu/repos/iuc/exonerate/exonerate/2.4.0+galaxy2	Exonerate	pairwise sequence comparison	operation_0491,operation_3182,operation_0302	topic_0160,topic_0602,topic_0080	exonerate	Exonerate
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_auto/pimento_auto/1.3.2+galaxy0	PIMENTO Primer cutoff prediction	Infers primers by predicting optimal cutoff points from read conservation patterns				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_auto/pimento_auto/1.3.0+galaxy0	PIMENTO Primer cutoff prediction	Infers primers by predicting optimal cutoff points from read conservation patterns				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_auto/pimento_auto/1.0.3+galaxy0	PIMENTO Primer cutoff prediction	Infers primers by predicting optimal cutoff points from read conservation patterns				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_auto/pimento_auto/1.0.2+galaxy0	PIMENTO Primer cutoff prediction	Infers primers by predicting optimal cutoff points from read conservation patterns				
@@ -14717,6 +14856,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/checkm_lineage_set/checkm_lineage_set/1.2.4+gal
 toolshed.g2.bx.psu.edu/repos/iuc/checkm_lineage_set/checkm_lineage_set/1.2.0+galaxy0	CheckM lineage_set	Infer lineage-specific marker sets for each bin	operation_0004	topic_0194,topic_0622,topic_3293,topic_3174,topic_0637	checkm	CheckM
 toolshed.g2.bx.psu.edu/repos/iuc/checkm_lineage_set/checkm_lineage_set/1.2.5+galaxy0	CheckM lineage_set	Infer lineage-specific marker sets for each bin	operation_0004	topic_0622,topic_0637,topic_3174,topic_0194,topic_3293		
 toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.2.21+galaxy1	Map with KMA		operation_3198	topic_0080	kma	KMA
+toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.6.15+galaxy0	Map with KMA		operation_3198	topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.5.1+galaxy0	Map with KMA		operation_3198	topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.6.11+galaxy0	Map with KMA		operation_3198	topic_0080		
 toolshed.g2.bx.psu.edu/repos/iuc/kma/kma_map/1.2.21+galaxy0	Map with KMA		operation_3198	topic_0080	kma	KMA
@@ -14785,6 +14925,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_seqs/mothur_remove_seqs/1.39.5.0	
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_remove_seqs/mothur_remove_seqs/1.36.1.0	Remove.seqs	Remove sequences by name		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/odgi_build/odgi_build/0.3+galaxy1	odgi build	construct a dynamic succinct variation graph	operation_0337,operation_3745,operation_3802	topic_0654,topic_0780,topic_0621,topic_0622,topic_0199	odgi	ODGI
 toolshed.g2.bx.psu.edu/repos/iuc/odgi_build/odgi_build/0.3	odgi build	construct a dynamic succinct variation graph	operation_0337,operation_3802,operation_3745	topic_0622,topic_0654,topic_0621,topic_0780,topic_0199	odgi	ODGI
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_find_cutoffs/pimento_find_cutoffs/1.3.2+galaxy0	PIMENTO Find cutoffs	Identifies potential primer cutoff points from base-conservation vectors				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_find_cutoffs/pimento_find_cutoffs/1.3.0+galaxy0	PIMENTO Find cutoffs	Identifies potential primer cutoff points from base-conservation vectors				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_find_cutoffs/pimento_find_cutoffs/1.0.3+galaxy0	PIMENTO Find cutoffs	Identifies potential primer cutoff points from base-conservation vectors				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_find_cutoffs/pimento_find_cutoffs/1.0.2+galaxy0	PIMENTO Find cutoffs	Identifies potential primer cutoff points from base-conservation vectors				
@@ -15968,6 +16109,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/tn93_readreduce/tn93_readreduce/1.0.4	Merge mat
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_readreduce/tn93_readreduce/1.0.6	Merge matching reads	into clusters with TN-93				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_readreduce/tn93_readreduce/1.0.15+galaxy0	Merge matching reads	into clusters with TN-93				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_readreduce/tn93_readreduce/1.0.6+galaxy1	Merge matching reads	into clusters with TN-93				
+toolshed.g2.bx.psu.edu/repos/iuc/tn93_readreduce/tn93_readreduce/1.0.17+galaxy0	Merge matching reads	into clusters with TN-93				
 toolshed.g2.bx.psu.edu/repos/iuc/tn93_readreduce/tn93_readreduce/1.0.16+galaxy0	Merge matching reads	into clusters with TN-93				
 toolshed.g2.bx.psu.edu/repos/iuc/pcdl_make_graph_gml/pcdl_make_graph_gml/3.0.1+galaxy0	pcdl_make_graph_gml					
 toolshed.g2.bx.psu.edu/repos/iuc/episcanpy_build_matrix/episcanpy_build_matrix/0.3.2+galaxy1	Build count matrix	with EpiScanpy	operation_3501,operation_3557	topic_3173,topic_0654,topic_2229	episcanpy	epiScanpy
@@ -16850,6 +16992,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_tag/bamtools_split_tag/2.5.2+gal
 toolshed.g2.bx.psu.edu/repos/iuc/ensembl_vep/ensembl_vep/109.3+galaxy0	Predict variant effects	with VEP				
 toolshed.g2.bx.psu.edu/repos/iuc/ensembl_vep/ensembl_vep/110.1+galaxy0	Predict variant effects	with VEP				
 toolshed.g2.bx.psu.edu/repos/iuc/ensembl_vep/ensembl_vep/116.0+galaxy0	Predict variant effects	with VEP				
+toolshed.g2.bx.psu.edu/repos/iuc/ensembl_vep/ensembl_vep/116.2+galaxy0	Predict variant effects	with VEP				
 toolshed.g2.bx.psu.edu/repos/iuc/ensembl_vep/ensembl_vep/116.1+galaxy0	Predict variant effects	with VEP				
 toolshed.g2.bx.psu.edu/repos/iuc/ensembl_vep/ensembl_vep/115.1+galaxy0	Predict variant effects	with VEP				
 toolshed.g2.bx.psu.edu/repos/iuc/ensembl_vep/ensembl_vep/106.1	Predict variant effects	with VEP				
@@ -16971,6 +17114,7 @@ toolshed.g2.bx.psu.edu/repos/iuc/vcontact2_gene2genome/vcontact2_gene2genome/0.1
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_rarefaction_single/mothur_rarefaction_single/1.39.5.0	Rarefaction.single	Generate intra-sample rarefaction curves for OTUs		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/mothur_rarefaction_single/mothur_rarefaction_single/1.36.1.0	Rarefaction.single	Generate intra-sample rarefaction curves for OTUs		topic_3697	mothur	mothur
 toolshed.g2.bx.psu.edu/repos/iuc/decontaminator/decontaminator/1.0.0+galaxy0	decontaminator	Decontaminator is a deep learning helping tool that filters out phage or fungi contigs from plant virome RNAseq assemblies			decontaminator	decontaminator
+toolshed.g2.bx.psu.edu/repos/iuc/pimento_std/pimento_std/1.3.2+galaxy0	PIMENTO Standard primer matching	Finds best-matching primers in reads using a fuzzy search against a standard primer library				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_std/pimento_std/1.3.0+galaxy0	PIMENTO Standard primer matching	Finds best-matching primers in reads using a fuzzy search against a standard primer library				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_std/pimento_std/1.0.3+galaxy0	PIMENTO Standard primer matching	Finds best-matching primers in reads using a fuzzy search against a standard primer library				
 toolshed.g2.bx.psu.edu/repos/iuc/pimento_std/pimento_std/1.0.2+galaxy0	PIMENTO Standard primer matching	Finds best-matching primers in reads using a fuzzy search against a standard primer library				
@@ -17770,8 +17914,10 @@ toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_index/0.9.0+galaxy0	LexicMap 
 toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_index/0.8.1+galaxy0	LexicMap Index	Builds LexicMap index				
 toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_index/0.8.0+galaxy1	LexicMap Index	Builds LexicMap index				
 toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_index/0.8.0+galaxy0	LexicMap Index	Builds LexicMap index				
+toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_search/0.9.0+galaxy4	LexicMap Search	nucleotide sequence tool for querying genomes				
 toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_search/0.7.0+galaxy0	LexicMap Search	nucleotide sequence tool for querying genomes				
 toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_search/0.7.0+galaxy1	LexicMap Search	nucleotide sequence tool for querying genomes				
+toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_search/0.9.0+galaxy3	LexicMap Search	nucleotide sequence tool for querying genomes				
 toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_search/0.9.0+galaxy0	LexicMap Search	nucleotide sequence tool for querying genomes				
 toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_search/0.8.1+galaxy0	LexicMap Search	nucleotide sequence tool for querying genomes				
 toolshed.g2.bx.psu.edu/repos/iuc/lexicmap/lexicmap_search/0.9.0+galaxy1	LexicMap Search	nucleotide sequence tool for querying genomes				
@@ -22299,6 +22445,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/nanopolish_polya/nanopolish_polya/0.1.0	N
 toolshed.g2.bx.psu.edu/repos/bgruening/nanopolish_polya/nanopolish_polya/0.13.2+galaxy0	Nanopolish polyA	- Estimate the length of the poly-A tail on direct RNA reads.	operation_2429,operation_0310,operation_2238,operation_3204,operation_3197	topic_2269,topic_0080,topic_3168,topic_0199	nanopolish	nanopolish
 toolshed.g2.bx.psu.edu/repos/bgruening/nanopolish_polya/nanopolish_polya/0.11.1	Nanopolish polyA	- Estimate the length of the poly-A tail on direct RNA reads.	operation_2238,operation_2429,operation_3204,operation_3197,operation_0310	topic_0080,topic_0199,topic_3168,topic_2269	nanopolish	nanopolish
 toolshed.g2.bx.psu.edu/repos/bgruening/nanopolish_polya/nanopolish_polya/0.14.0+galaxy0	Nanopolish polyA	- Estimate the length of the poly-A tail on direct RNA reads.	operation_2429,operation_0310,operation_2238,operation_3204,operation_3197	topic_2269,topic_0080,topic_3168,topic_0199	nanopolish	nanopolish
+toolshed.g2.bx.psu.edu/repos/bgruening/simorgh/simorgh/1.0.0+galaxy0	SIMORGH	Deep learning framework for apo-state and cryptic pocket prediction				
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_identify_primary_objects/cp_identify_primary_objects/3.1.9+galaxy2	IdentifyPrimaryObjects	with CellProfiler	operation_3443		CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_identify_primary_objects/cp_identify_primary_objects/3.1.9+galaxy1	IdentifyPrimaryObjects	identify biological objects of interest			CellProfiler	CellProfiler
 toolshed.g2.bx.psu.edu/repos/bgruening/cp_identify_primary_objects/cp_identify_primary_objects/3.1.9	IdentifyPrimaryObjects	identify biological objects of interest			CellProfiler	CellProfiler
@@ -23000,6 +23147,8 @@ toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicplotdistvscounts/hicexplor
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicplotdistvscounts/hicexplorer_hicplotdistvscounts/3.4.1.0	hicPlotDistVsCounts	compute distance vs Hi-C counts plot per chromosome	operation_0337,operation_3435,operation_2428	topic_0654,topic_0769,topic_3295,topic_3940,topic_3169	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicplotdistvscounts/hicexplorer_hicplotdistvscounts/3.3.1.0	hicPlotDistVsCounts	compute distance vs Hi-C counts plot per chromosome	operation_0337,operation_3435,operation_2428	topic_0769,topic_0654,topic_3169,topic_3295,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicplotdistvscounts/hicexplorer_hicplotdistvscounts/3.7.5+galaxy1	hicPlotDistVsCounts	compute distance vs Hi-C counts plot per chromosome	operation_0337,operation_3435,operation_2428	topic_0654,topic_3295,topic_0769,topic_3940,topic_3169	hicexplorer	HiCExplorer
+toolshed.g2.bx.psu.edu/repos/bgruening/new_fave_extract/new_fave_extract/1.3.0+galaxy0	Vowel formant extraction	with new-fave				
+toolshed.g2.bx.psu.edu/repos/bgruening/new_fave_extract/new_fave_extract/1.2.1+galaxy0	Vowel formant extraction	with new-fave				
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicquickqc/hicexplorer_hicquickqc/3.7.2+galaxy0	hicQuickQC	get a first quality estimate of Hi-C data	operation_0337,operation_3435,operation_2428	topic_0769,topic_0654,topic_3169,topic_3295,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicquickqc/hicexplorer_hicquickqc/3.6+galaxy0	hicQuickQC	get a first quality estimate of Hi-C data	operation_0337,operation_3435,operation_2428	topic_0769,topic_0654,topic_3169,topic_3295,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicquickqc/hicexplorer_hicquickqc/3.4.2.0	hicQuickQC	get a first quality estimate of Hi-C data	operation_0337,operation_2428,operation_3435	topic_3940,topic_0654,topic_3295,topic_3169,topic_0769	hicexplorer	HiCExplorer
@@ -23201,6 +23350,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.1.2-
 toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.0.7+galaxy2	RepeatMasker	screen DNA sequences for interspersed repeats and low complexity regions				
 toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.0.9	RepeatMasker	screen DNA sequences for interspersed repeats and low complexity regions				
 toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/0.1.2	RepeatMasker	screen DNA sequences for interspersed repeats and low complexity regions	operation_0237	topic_0157	repeatmasker	RepeatMasker
+toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.2.4+galaxy0	RepeatMasker	screen DNA sequences for interspersed repeats and low complexity regions	operation_0237	topic_0157		
 toolshed.g2.bx.psu.edu/repos/bgruening/ctb_im_pbf_ev/ctb_im_pbf_ev/1.1.4+galaxy0	Calculate plane of best fit for molecules	using RDKit				
 toolshed.g2.bx.psu.edu/repos/bgruening/ctb_im_pbf_ev/ctb_im_pbf_ev/1.1.3+galaxy0	Calculate plane of best fit for molecules	using RDKit				
 toolshed.g2.bx.psu.edu/repos/bgruening/flye/flye/2.9.5+galaxy0	Flye	de novo assembler for single molecule sequencing reads	operation_0525	topic_0196	Flye	Flye
@@ -23609,6 +23759,7 @@ toolshed.g2.bx.psu.edu/repos/bgruening/sambamba_sort/sambamba_sort/1.0.1+galaxy1
 toolshed.g2.bx.psu.edu/repos/bgruening/sambamba_sort/sambamba_sort/1.0.1+galaxy2	Sambamba sort	Tool to sort BAM files				
 toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/2020.03.4+galaxy0	Enumerate changes	calculated with Dimorphite DL and RDKit			RDKit	RDKit
 toolshed.g2.bx.psu.edu/repos/bgruening/enumerate_charges/enumerate_charges/0.1	Enumerate changes	calculated with Dimorphite DL and RDKit			RDKit	RDKit
+toolshed.g2.bx.psu.edu/repos/bgruening/get_pdb/get_pdb/0.1.1	Get PDB file	from Protein Data Bank	operation_2422,operation_2406	topic_1317,topic_2814,topic_0611,topic_0593		
 toolshed.g2.bx.psu.edu/repos/bgruening/get_pdb/get_pdb/0.1.0	Get PDB file	from Protein Data Bank	operation_2406,operation_2422	topic_0593,topic_0611,topic_1317,topic_2814	pdb	The Protein Data Bank (PDB)
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicplotsvl/hicexplorer_hicplotsvl/3.7.2+galaxy0	hicPlotSVL	plots the relation of short vs long range contacts	operation_0337,operation_2428,operation_3435	topic_3295,topic_3169,topic_0769,topic_0654,topic_3940	hicexplorer	HiCExplorer
 toolshed.g2.bx.psu.edu/repos/bgruening/hicexplorer_hicplotsvl/hicexplorer_hicplotsvl/3.6+galaxy0	hicPlotSVL	plots the relation of short vs long range contacts	operation_0337,operation_3435,operation_2428	topic_0654,topic_0769,topic_3295,topic_3940,topic_3169	hicexplorer	HiCExplorer
